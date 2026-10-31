@@ -1,0 +1,100 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "088cbb5a41b2197b4fcdaedc9bf0ea8945928c26b1c3685cd2d08479c4d22498",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Contents and table identifiers, with publication links; no statistical observations.",
+  "template_from": "d75c8199ab338cd73cd3a3a4a7f979a1b1d6b669726a76d28d6ef11e4e333582",
+  "agent_notes": "Contents has five numeric table identifiers B7:B11, not observations. They are declared as table_number metadata. The automatic non-data numeric-cell check still flags these; retain contents classification for human review.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "B7:B11"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-10-31T10:20:45Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 5 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101935Z-79eeb3ecf51a",
+    "started_at": "2026-10-31T10:19:35Z",
+    "workbook": "79eeb3ecf51a2cdc048b5143f599c6069e1b67cc30e74edf9c171045bde13de1--federal-defendants-australia-2015-16-cube-1-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19178-cf13-767e-8057-534bd2b20438",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "0e5aed204b44b43c97004097242dadfa2554610080ced51616513190124aa7f7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `79eeb3ecf51a2cdc048b5143f599c6069e1b67cc30e74edf9c171045bde13de1--federal-defendants-australia-2015-16-cube-1-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2015-16\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 088cbb5a41b2197b4fcdaedc9bf0ea8945928c26b1c3685cd2d08479c4d22498 | missing |\n| \"Table 1\" | e71342242f639d7522f1c2a1228657dd48564d5d03dfd1d54c6d218e7f7f0f8a | missing |\n| \"Table 2\" | 8a5d178262a720f2923475a7b2084bfb861725f6229cbd8c49255bee5e245620 | missing |\n| \"Table 3\" | 3d54a2ec78752523b45f015a3c935c06442684d698da48d29fcd9906dd06f0dd | missing |\n| \"Table 4\" | 55c28b231e74acadb5c5d6da8a72126eea57fd6249b1b04062ad328c244071dc | missing |\n| \"Table 5\" | edf6cb9604abdc20e9cd10d490bd66890d7dca2e070e9dbed2f59654ca47491f | missing |\n| \"Explanatory Notes\" | b6d6be117863da307b857682489311278afdcc65ba16228a1ab42a9c6e1e8194 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101935Z-79eeb3ecf51a.jsonl"
+  }
+}

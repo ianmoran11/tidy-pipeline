@@ -1,0 +1,910 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "eb0942143613d9dca92b63c8904adf75aa88cd9e3bbcb6b701a6e900a1c342a9",
+  "sheet": "Table 1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "aaf5647846c15a5e07de9154b1e359cc184728d0597d44bfacee4573e26c9aea",
+  "agent_notes": "All published Total and Persons rows retained. NSW locations are grouped by the published Full-time prisoners / Periodic Detainees headings. Leading spaces and labels are preserved. Persons rows are state-wide totals, not individual prison locations. The final ACT block covers sentenced prisoners in New South Wales prisons and remains distinct from the ACT prison-location block.",
+  "new_dimensions": [
+    {
+      "name": "prison_location",
+      "description": "Named prison, correctional centre or detention location, including published Total rows.",
+      "example_labels": [
+        "Bathurst",
+        "Total"
+      ]
+    },
+    {
+      "name": "prison_type",
+      "description": "Published prison grouping distinguishing full-time prisoners and periodic detainees.",
+      "example_labels": [
+        "   Full-time prisoners",
+        "   Periodic Detainees"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "locations_11",
+      "range": "A10:B70",
+      "values_range": "B11:B70",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "sex",
+          "cells": "A9"
+        },
+        {
+          "name": "prison_type",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A11:A70"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_72",
+      "range": "A71:B88",
+      "values_range": "B72:B88",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "sex",
+          "cells": "A9"
+        },
+        {
+          "name": "prison_type",
+          "cells": "A71"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A72:A88"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_91",
+      "range": "A90:B126",
+      "values_range": "B91:B126",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "sex",
+          "cells": "A89"
+        },
+        {
+          "name": "prison_type",
+          "cells": "A90"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A91:A126"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_128",
+      "range": "A127:B144",
+      "values_range": "B128:B144",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "sex",
+          "cells": "A89"
+        },
+        {
+          "name": "prison_type",
+          "cells": "A127"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A128:A144"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_148",
+      "range": "A147:B160",
+      "values_range": "B148:B160",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A146"
+        },
+        {
+          "name": "sex",
+          "cells": "A147"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A148:A160"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_162",
+      "range": "A161:B165",
+      "values_range": "B162:B165",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A146"
+        },
+        {
+          "name": "sex",
+          "cells": "A161"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A162:A165"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_169",
+      "range": "A168:B183",
+      "values_range": "B169:B183",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A167"
+        },
+        {
+          "name": "sex",
+          "cells": "A168"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A169:A183"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_185",
+      "range": "A184:B190",
+      "values_range": "B185:B190",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A167"
+        },
+        {
+          "name": "sex",
+          "cells": "A184"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A185:A190"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_194",
+      "range": "A193:B203",
+      "values_range": "B194:B203",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A192"
+        },
+        {
+          "name": "sex",
+          "cells": "A193"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A194:A203"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_205",
+      "range": "A204:B209",
+      "values_range": "B205:B209",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A192"
+        },
+        {
+          "name": "sex",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A205:A209"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_213",
+      "range": "A212:B224",
+      "values_range": "B213:B224",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A211"
+        },
+        {
+          "name": "sex",
+          "cells": "A212"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A213:A224"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_226",
+      "range": "A225:B232",
+      "values_range": "B226:B232",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A211"
+        },
+        {
+          "name": "sex",
+          "cells": "A225"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A226:A232"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_236",
+      "range": "A235:B241",
+      "values_range": "B236:B241",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A234"
+        },
+        {
+          "name": "sex",
+          "cells": "A235"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A236:A241"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_243",
+      "range": "A242:B245",
+      "values_range": "B243:B245",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A234"
+        },
+        {
+          "name": "sex",
+          "cells": "A242"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A243:A245"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_249",
+      "range": "A248:B251",
+      "values_range": "B249:B251",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A247"
+        },
+        {
+          "name": "sex",
+          "cells": "A248"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A249:A251"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_253",
+      "range": "A252:B255",
+      "values_range": "B253:B255",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A247"
+        },
+        {
+          "name": "sex",
+          "cells": "A252"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A253:A255"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_259",
+      "range": "A258:B261",
+      "values_range": "B259:B261",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A257"
+        },
+        {
+          "name": "sex",
+          "cells": "A258"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A259:A261"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_263",
+      "range": "A262:B265",
+      "values_range": "B263:B265",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A257"
+        },
+        {
+          "name": "sex",
+          "cells": "A262"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A263:A265"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_269",
+      "range": "A268:B282",
+      "values_range": "B269:B282",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A267"
+        },
+        {
+          "name": "sex",
+          "cells": "A268"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A269:A282"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "locations_284",
+      "range": "A283:B285",
+      "values_range": "B284:B285",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A267"
+        },
+        {
+          "name": "sex",
+          "cells": "A283"
+        }
+      ],
+      "headers": [
+        {
+          "name": "prison_location",
+          "caption": "Prison",
+          "direction": "W",
+          "cells": "A284:A285"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_145",
+      "range": "A145:B145",
+      "values_range": "B145",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A145"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_166",
+      "range": "A166:B166",
+      "values_range": "B166",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A146"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A166"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_191",
+      "range": "A191:B191",
+      "values_range": "B191",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A167"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A191"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_210",
+      "range": "A210:B210",
+      "values_range": "B210",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A192"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A210"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_233",
+      "range": "A233:B233",
+      "values_range": "B233",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A211"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A233"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_246",
+      "range": "A246:B246",
+      "values_range": "B246",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A234"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A246"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_256",
+      "range": "A256:B256",
+      "values_range": "B256",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A247"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A256"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_266",
+      "range": "A266:B266",
+      "values_range": "B266",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A257"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A266"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "persons_286",
+      "range": "A286:B286",
+      "values_range": "B286",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A267"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A286"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:32:02Z",
+    "tool_version": "0.2.0",
+    "records": 248,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T113134Z-44ef98bdf105",
+    "started_at": "2026-10-31T11:31:35Z",
+    "workbook": "44ef98bdf1052800d1d0c916a51ff7530ff21024839aeaceb88e61b740231cdf--prisoners-australia-2007-cube-48-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191ba-b9de-71cb-9098-ab83dc00e977",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5386f249997a00388d47ad942e8c1368fe7a0be4e98c771110b819b33b6bd898",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `44ef98bdf1052800d1d0c916a51ff7530ff21024839aeaceb88e61b740231cdf--prisoners-australia-2007-cube-48-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2007\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 1\" | eb0942143613d9dca92b63c8904adf75aa88cd9e3bbcb6b701a6e900a1c342a9 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T113134Z-44ef98bdf105.jsonl"
+  }
+}

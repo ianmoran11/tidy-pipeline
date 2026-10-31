@@ -1,0 +1,158 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b9a7a3c115b444dc44bd138249f36d5945a5fffc9db2562ea59affd7981b5e0f",
+  "sheet": "Table 5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "edf6cb9604abdc20e9cd10d490bd66890d7dca2e070e9dbed2f59654ca47491f",
+  "agent_notes": "Totals retained. Mean and Median (years/weeks) remain published labels on the age/duration axis and are statistics, not counts.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "period_2014_15",
+      "range": "A8:I20",
+      "values_range": "B9:I20",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal federal offence (ANZSOC)",
+          "direction": "W",
+          "cells": "A9:A20"
+        },
+        {
+          "name": "case_duration",
+          "direction": "N",
+          "cells": "B7:I7"
+        }
+      ]
+    },
+    {
+      "name": "period_2013_14",
+      "range": "A21:I33",
+      "values_range": "B22:I33",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal federal offence (ANZSOC)",
+          "direction": "W",
+          "cells": "A22:A33"
+        },
+        {
+          "name": "case_duration",
+          "direction": "N",
+          "cells": "B7:I7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:06:23Z",
+    "tool_version": "0.2.0",
+    "records": 192,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T110528Z-376a7de30991",
+    "started_at": "2026-10-31T11:05:29Z",
+    "workbook": "376a7de309918ac11bdebf0c447052eb72d2fa435e6a16d3a16868b366d3a9eb--federal-defendants-australia-2014-15-cube-1-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191a2-d440-77f2-bdcd-fcacad613836",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "482b97c5f7bc2a9c0ea21c767f107d01fbfcd384d672acd3addbed70f7d74f16",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `376a7de309918ac11bdebf0c447052eb72d2fa435e6a16d3a16868b366d3a9eb--federal-defendants-australia-2014-15-cube-1-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2014-15\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"List of Tables\" | 2b62e3439b1dab03c13637fcf41fcaec8d840ac85fdce0718c8b6d36c0683ea1 | missing |\n| \"Table 1\" | a2572d53ea980bffd1b5755b7942a4e8f25e1b21b952b46ffe4a0754d6386bea | missing |\n| \"Table 2\" | 43f00470d9946b128e75724a0f6378ab2693eba3671e9c2c3c8ceb4f05505cee | missing |\n| \"Table 3\" | f57949ea9e3d759c1bd71d68fdeb7747365f7f2d1e341ee2a80acfa8385c4b3a | missing |\n| \"Table 4\" | b482c407d91f7396861b4c95d4e3f9e9fc751cbac889d8015aea2d64defadbc4 | missing |\n| \"Table 5\" | b9a7a3c115b444dc44bd138249f36d5945a5fffc9db2562ea59affd7981b5e0f | missing |\n| \"Explanatory Notes\" | c3a0c36ca36d59eb517edfe6a023f3c304deca6971f0e77fdf9657f3af933e4c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T110528Z-376a7de30991.jsonl"
+  }
+}

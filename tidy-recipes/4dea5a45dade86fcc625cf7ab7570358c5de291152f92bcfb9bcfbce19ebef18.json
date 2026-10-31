@@ -1,0 +1,91 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4dea5a45dade86fcc625cf7ab7570358c5de291152f92bcfb9bcfbce19ebef18",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Workbook contents and further-information links; no statistical data.",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-10-31T08:58:22Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T085730Z-b3d54735103e",
+    "started_at": "2026-10-31T08:57:31Z",
+    "workbook": "b3d54735103ea11d7d0cc96cd3b0e413957eb53501b7ae971c299305a9c54db9--prisoners-australia-2025-federal-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1912d-aaf7-766f-9f64-f5c288bf7776",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "c88a2d81a9d1fb26c167500373c22ca6ce59a7511bac446f9e3283d3a3ebd9b2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b3d54735103ea11d7d0cc96cd3b0e413957eb53501b7ae971c299305a9c54db9--prisoners-australia-2025-federal-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2025\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 4dea5a45dade86fcc625cf7ab7570358c5de291152f92bcfb9bcfbce19ebef18 | missing |\n| \"Table 36\" | 392dea40918da9cc22715fb31eca29e90677fd0b243192bd617bdca161309880 | missing |\n| \"Table 37\" | 81a1fcca3fe08357c0b687b3f75bcfe066eaae1c0abc4542de21eab17b5550e9 | missing |\n| \"Table 38\" | edc6ee4ec17242d0bec5e5cd3e8a4c5c62863e1b4e15a50d54ab6b7ae88cd138 | missing |\n| \"Table 39\" | b27f2e6895a5398bf2926d4aafa2697f35522d112b4e473d67cdea4ec2b673d4 | missing |\n| \"Further information\" | 855f32a91d83d163bc8b1e6bb2f7851fbf36ba609c354858c0c6870aa19ad19e | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (c90bed80eabd8ab3134b40122e232db5514e05330a534a0bdf50dda3fcfe1348). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T085730Z-b3d54735103e.jsonl"
+  }
+}

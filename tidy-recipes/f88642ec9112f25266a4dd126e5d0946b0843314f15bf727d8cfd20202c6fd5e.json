@@ -1,0 +1,177 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f88642ec9112f25266a4dd126e5d0946b0843314f15bf727d8cfd20202c6fd5e",
+  "sheet": "Table 8A.8",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Row-label nesting is retained in table section/group/subgroup/component metadata. All published total and subtotal rows are retained and are not additive to their components. Published footnote markers, units, and missing-value symbols are preserved.",
+  "meta_data": [
+    {
+      "name": "table_identifier",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C30,A32,C32,A33,C33,A34,C34,A35,C35,A36,C36,A37,C37,A38,C38,A39,C39,A41,E41"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "E6:U17",
+      "values_range": "M6:U17",
+      "meta_data": [
+        {
+          "name": "section",
+          "cells": "A3"
+        },
+        {
+          "name": "group",
+          "cells": "B4"
+        },
+        {
+          "name": "year",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "E6,E7,E8,E9,E10,E11,E12,E13,E14,E15,E16,E17"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L6:L17"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "D19:U28",
+      "values_range": "M19:U28",
+      "meta_data": [
+        {
+          "name": "section",
+          "cells": "A3"
+        },
+        {
+          "name": "group",
+          "cells": "B4"
+        },
+        {
+          "name": "subgroup",
+          "cells": "C18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "year",
+          "direction": "W",
+          "cells": "D19,D20,D21,D22,D23,D24,D25,D26,D27,D28"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L19:L28"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:37:12Z",
+    "tool_version": "0.2.0",
+    "records": 198,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T063535Z-da496f121b27",
+    "started_at": "2026-10-31T06:35:35Z",
+    "workbook": "da496f121b27771c356b2d75b2fd2d72efb5f2575088426ee859b84e94eec135--report-on-government-services-justice-2020-corrective-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190ab-b9bb-7737-8bee-c220a8f6232d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "4bc91debad84f0585c9f0550df475212e64dc44d9f6fb15947d805c77a427efe",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `da496f121b27771c356b2d75b2fd2d72efb5f2575088426ee859b84e94eec135--report-on-government-services-justice-2020-corrective-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2020 — Justice\n- Sheets needing a recipe: 22 of 22\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0995fe471ec658e84099b5f0e607455d50cfdeb15df930b3148b4ed8bcdf80a3 | missing |\n| \"Table 8A.1\" | a22613484b7fa3ee78d59a523e1084f897359fa7eaebffcdd71c605b45544713 | missing |\n| \"Table 8A.2\" | 336e36ce7bed3209d46846ffd66d819a6384bf6f6fd58e549b9c31714194ce14 | missing |\n| \"Table 8A.3\" | 7c26b20b4904601283d9eb8ddd6c2e6cd02115e57b99b1673e024d9fc36c19d1 | missing |\n| \"Table 8A.4\" | 7f92b0a3c87e25c1368b61136dc9a4dc36e916ba4854cf9c89c28eea16b3c001 | missing |\n| \"Table 8A.5\" | d20ebf8323f65882fb5fbd798c5b0bececbef355390771f64d954b1c8cc0c008 | missing |\n| \"Table 8A.6\" | a877005c40772f03a208dd3b9267a1a1335d45e7cea1c2f05538e3abc20e9aab | missing |\n| \"Table 8A.7\" | f514c010812600a3411f8eeeacdf2f0b01ad101f0cbb202c9bf1ba9eda9d6f2d | missing |\n| \"Table 8A.8\" | f88642ec9112f25266a4dd126e5d0946b0843314f15bf727d8cfd20202c6fd5e | missing |\n| \"Table 8A.9\" | bc44be0cbc53c226efd3a71e77d46872fed9481cccc9372ab1b5d08d8ab9de67 | missing |\n| \"Table 8A.10\" | f78dc8794b4ab6418fe452e2241d848048f0668efd545b33b68a98c63d779adc | missing |\n| \"Table 8A.11\" | 46a4131c3d448bdbd50111460b3c27d24a7328b1a3b4843f6797d0fdd797442c | missing |\n| \"Table 8A.12\" | b5cdd46da4b5950a9f3e5830d58892f90783b8fe76c43721fd075e382f5c1893 | missing |\n| \"Table 8A.13\" | 208937432684ced9ed3731c2207f3202b233a8d9d3e319fe5548cf76a0336b6b | missing |\n| \"Table 8A.14\" | b4aac7d70192226d5bfd72482be0856efc6452b53b054040039901f861f398b3 | missing |\n| \"Table 8A.15\" | a2ed801a4c9ac0c590feca8f63524cd09d27fc2e53276fa6d6820ee9d976b5ff | missing |\n| \"Table 8A.16\" | 7996fba6d9d4092dc65b2a695e9d5dd0c9f222f7433772b20c373d04ff1aaf4b | missing |\n| \"Table 8A.17\" | 1b05604b9faf8a7b54961222854ad37cf2b009a9a81909a3a2f7128d54547dd9 | missing |\n| \"Table 8A.18\" | dbfa4817bec2432be38dc638dcda3e7258c8626475f343e6a56d44deacf02a14 | missing |\n| \"Table 8A.19\" | 03ae416ec76cca0a0b0522edcc9a2d34ed367d3a298c48a36a1df13518a11319 | missing |\n| \"Table 8A.20\" | ca349ecf22542c467319e9aea73bb83057055a0f6d456f210b9d9bd76041ecfd | missing |\n| \"Table 8A.21\" | cab42cb20960d3f0bea57eb7465eb43b4babd926b6641c5f97f91aebd65d609e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/da496f121b27771c356b2d75b2fd2d72efb5f2575088426ee859b84e94eec135.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

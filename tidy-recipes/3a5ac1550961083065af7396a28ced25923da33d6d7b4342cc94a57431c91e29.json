@@ -1,0 +1,293 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "3a5ac1550961083065af7396a28ced25923da33d6d7b4342cc94a57431c91e29",
+  "sheet": "Table_6",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Sex captions group indented proceeding-frequency rows. Total rows and Indigenous-status Total columns retained. Mean rows in NUMBER blocks describe mean times proceeded against, not offender counts.",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_males",
+      "range": "A8:M15",
+      "values_range": "B9:M15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times proceeded against by police",
+          "direction": "W",
+          "cells": "A9:A15"
+        },
+        {
+          "name": "year",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "Indigenous status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "number_females",
+      "range": "A16:M23",
+      "values_range": "B17:M23",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times proceeded against by police",
+          "direction": "W",
+          "cells": "A17:A23"
+        },
+        {
+          "name": "year",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "Indigenous status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "number_persons",
+      "range": "A24:M31",
+      "values_range": "B25:M31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times proceeded against by police",
+          "direction": "W",
+          "cells": "A25:A31"
+        },
+        {
+          "name": "year",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "Indigenous status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_males",
+      "range": "A33:M39",
+      "values_range": "B34:M39",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A32"
+        },
+        {
+          "name": "sex",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times proceeded against by police",
+          "direction": "W",
+          "cells": "A34:A39"
+        },
+        {
+          "name": "year",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "Indigenous status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_females",
+      "range": "A40:M46",
+      "values_range": "B41:M46",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A32"
+        },
+        {
+          "name": "sex",
+          "cells": "A40"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times proceeded against by police",
+          "direction": "W",
+          "cells": "A41:A46"
+        },
+        {
+          "name": "year",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "Indigenous status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_persons",
+      "range": "A47:M53",
+      "values_range": "B48:M53",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A32"
+        },
+        {
+          "name": "sex",
+          "cells": "A47"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times proceeded against by police",
+          "direction": "W",
+          "cells": "A48:A53"
+        },
+        {
+          "name": "year",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "Indigenous status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:37:25Z",
+    "tool_version": "0.2.0",
+    "records": 468,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T063632Z-1d4ff37ca911",
+    "started_at": "2026-10-31T06:36:32Z",
+    "workbook": "1d4ff37ca911784ce500dca82bdc780512ee14e359941048dfa28fff19825158--recorded-crime-offenders-2010-11-cube-12-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190ac-9806-7223-b815-68d1333d28ea",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "4b7a2882d5a01edcdc75c4d26a15a7d1e8bc11e92af121a653edce59cd4f4287",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1d4ff37ca911784ce500dca82bdc780512ee14e359941048dfa28fff19825158--recorded-crime-offenders-2010-11-cube-12-source.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e453f435c322a4cdcb6b048e875c8fc27f006103ae783673047b1770a974130e | missing |\n| \"Table_1\" | c93f335c4cbf016cb63cd95dcc51dfec12b2de135b917f94891e338fec0966ac | missing |\n| \"Table_2\" | c27f431bfe18b3226a49a08981b1c5bda8a7da02fb1833ddb5a2abfad5d48eaf | missing |\n| \"Table_3\" | da69a2522d7b67718928cf811ecfd5f16352bd0f18f7ccd428aa51b7dd48521f | missing |\n| \"Table_4\" | 1e1de79d174ef976066ccd7ff520e6205e599becefbc87852eea80585380a072 | missing |\n| \"Table_5\" | 0814de3c6bb25197b7089c29852fa9e17798f2e12df49751507b592f787cf3b4 | missing |\n| \"Table_6\" | 3a5ac1550961083065af7396a28ced25923da33d6d7b4342cc94a57431c91e29 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/1d4ff37ca911784ce500dca82bdc780512ee14e359941048dfa28fff19825158.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

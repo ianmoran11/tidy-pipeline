@@ -1,0 +1,133 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "3d81e7cf5c0eda4ff73f86ff438774884a7e7c927313d1e21a329adae55924d2",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "890553164643fe179379e234e457f12b4fe948545f11de104eb8b00a16e224cc",
+  "agent_notes": "ANZSCO three-digit occupation groups; All occupations and All methods of setting pay are totals. Full-time non-managerial employees paid at the adult rate, as stated in A4. Estimates; blank cells excluded without imputation, and label-only occupation row retained as header.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "earnings_and_hours_estimates",
+      "range": "A5:Y107",
+      "values_range": "T9:Y9,B10:Y10,B11:Y11,N12:Y12,B13:Y13,H14:M14,T14:Y14,B15:Y15,B16:Y16,B17:Y17,B18:Y18,H19:Y19,B20:Y20,B21:Y21,H22:Y22,B23:Y23,B24:Y24,B25:Y25,B26:Y26,B27:Y27,B28:Y28,B29:Y29,B30:Y30,B31:Y31,H32:Y32,B33:Y33,B34:Y34,H35:M35,T35:Y35,H36:M36,T36:Y36,B37:Y37,B38:Y38,H39:M39,T39:Y39,H40:M40,T40:Y40,B41:Y41,B42:Y42,B43:Y43,B44:Y44,B45:Y45,B46:Y46,B47:Y47,H48:Y48,B49:Y49,B50:Y50,H51:M51,T51:Y51,B52:Y52,B53:Y53,B54:Y54,B55:Y55,B56:Y56,B57:Y57,B58:G58,N58:Y58,B59:G59,N59:Y59,N60:Y60,T61:Y61,N62:Y62,B63:Y63,B64:Y64,B65:Y65,B66:Y66,B67:Y67,B68:Y68,H69:M69,T69:Y69,B70:Y70,B71:Y71,B72:Y72,B73:Y73,B74:Y74,B75:Y75,B76:Y76,H77:M77,T77:Y77,B78:Y78,B79:Y79,B80:Y80,B81:Y81,B82:Y82,B83:Y83,B84:Y84,B85:Y85,B86:Y86,B87:Y87,T88:Y88,B89:Y89,B90:Y90,B91:Y91,B92:Y92,H93:M93,T93:Y93,B94:Y94,B95:Y95,B96:Y96,B97:Y97,B98:Y98,B99:Y99,B100:Y100,B101:Y101,B102:Y102,B103:Y103,B104:Y104,B105:Y105,B106:Y106,B107:Y107",
+      "headers": [
+        {
+          "name": "method_of_setting_pay",
+          "direction": "NNW",
+          "cells": "B5,H5,N5,T5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:Y6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:Y7"
+        },
+        {
+          "name": "occupation",
+          "direction": "W",
+          "cells": "A8:A107"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T08:55:06Z",
+    "tool_version": "0.2.0",
+    "records": 2142,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T085430Z-655ddcd5bb8f",
+    "started_at": "2026-10-31T08:54:31Z",
+    "workbook": "655ddcd5bb8f2dc2ba7603de08ddae41b572e7c4af3b56a81eef59c3f954543f--employee-earnings-and-hours-australia-2025-cube-14-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1912a-ec4f-72dd-a165-0bfd19b8b469",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "19fcbd15bf5bdcd206b69fb357fc4e2e2c340386c51675d53a90829900940617",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `655ddcd5bb8f2dc2ba7603de08ddae41b572e7c4af3b56a81eef59c3f954543f--employee-earnings-and-hours-australia-2025-cube-14-source.xlsx`.\n\n- Publication: Employee Earnings and Hours, Australia (Australian Bureau of Statistics)\n- Release or year: May 2025\n- Sheets needing a recipe: 3 of 3\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 01f3d8d58f234952a38bac31763b275e3d6e3c4cec086dd4e53f5f61720bbfd5 | missing |\n| \"Table_1\" | 3d81e7cf5c0eda4ff73f86ff438774884a7e7c927313d1e21a329adae55924d2 | missing |\n| \"Table_2\" | 673bc90dd3d3244bb369da0b063a008bdf3ade9ad3f45a28551e3566c617b7f4 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T085430Z-655ddcd5bb8f.jsonl"
+  }
+}

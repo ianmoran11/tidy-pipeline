@@ -1,0 +1,171 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ba99fb7510ef61a7b62b8da1b4c144b7e14b7740ce77dda0ed944cb5064a7f3e",
+  "sheet": "A",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "101de6e60db5d15af6b53d8d4e560c16db0d63f92a267657478caa9389e7b5e7",
+  "agent_notes": "First two blocks are age-standardised imprisonment rates; the final block is the published Indigenous to non-Indigenous rate ratio, not an additional population. Australia totals are retained alongside states and territories. Published values are preserved without correction. The state label 'ACT Total' and the NSW non-Indigenous 2000 rate of 256.9 are retained exactly as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "indigenous",
+      "range": "A4:J12",
+      "values_range": "B6:J12",
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "A6:A12"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A5"
+        }
+      ]
+    },
+    {
+      "name": "non_indigenous",
+      "range": "A13:J20",
+      "values_range": "B14:J20",
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "A14:A20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A13"
+        }
+      ]
+    },
+    {
+      "name": "ratio",
+      "range": "A21:J28",
+      "values_range": "B22:J28",
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "A22:A28"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A21"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:35:21Z",
+    "tool_version": "0.2.0",
+    "records": 189,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T113458Z-52564ec35e52",
+    "started_at": "2026-10-31T11:34:59Z",
+    "workbook": "52564ec35e5207aa1e5ae54053e867edce2b00234cb8c75082b3fcc77cbdd7c1--prisoners-australia-2006-cube-16-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191bd-d684-741d-9f83-7b4e22e85f7d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "c3ac85c114f97e5003f6013ec4f18fe3fee47bb576124e861d7c481da100b875",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `52564ec35e5207aa1e5ae54053e867edce2b00234cb8c75082b3fcc77cbdd7c1--prisoners-australia-2006-cube-16-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2006\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"A\" | ba99fb7510ef61a7b62b8da1b4c144b7e14b7740ce77dda0ed944cb5064a7f3e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T113458Z-52564ec35e52.jsonl"
+  }
+}

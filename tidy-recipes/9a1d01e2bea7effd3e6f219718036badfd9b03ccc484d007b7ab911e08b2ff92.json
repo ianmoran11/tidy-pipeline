@@ -1,0 +1,588 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "9a1d01e2bea7effd3e6f219718036badfd9b03ccc484d007b7ab911e08b2ff92",
+  "sheet": "Table 1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "2e8f76c8dadda1b8cd2682287deb701df55f3b416ad0684a112421c46a9b8596",
+  "agent_notes": "All offence Total rows and published zeros retained. State labels distinguish ACT IN ACT and ACT IN NSW; AUSTRALIA is a national total. ACT IN ACT has counts only: C142:F159 are blank and produce no records. Counts have no sentence basis; means/medians retain month units in their measure labels. Apparent source anomalies are preserved exactly, notably Tasmania's Unknown row (401 prisoners) and zero Total row; no relabelling or numerical correction has been made.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_1_count",
+      "range": "A9:B26",
+      "values_range": "B9:B26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A9:A26"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_1_sentence_length",
+      "range": "C9:F26",
+      "values_range": "C9:F26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A9:A26"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_2_count",
+      "range": "A28:B45",
+      "values_range": "B28:B45",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A28:A45"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_2_sentence_length",
+      "range": "C28:F45",
+      "values_range": "C28:F45",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A28:A45"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_3_count",
+      "range": "A47:B64",
+      "values_range": "B47:B64",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A47:A64"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_3_sentence_length",
+      "range": "C47:F64",
+      "values_range": "C47:F64",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A47:A64"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_4_count",
+      "range": "A66:B83",
+      "values_range": "B66:B83",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A65"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A66:A83"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_4_sentence_length",
+      "range": "C66:F83",
+      "values_range": "C66:F83",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A65"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A66:A83"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_5_count",
+      "range": "A85:B102",
+      "values_range": "B85:B102",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A84"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A85:A102"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_5_sentence_length",
+      "range": "C85:F102",
+      "values_range": "C85:F102",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A84"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A85:A102"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_6_count",
+      "range": "A104:B121",
+      "values_range": "B104:B121",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A103"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A104:A121"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_6_sentence_length",
+      "range": "C104:F121",
+      "values_range": "C104:F121",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A103"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A104:A121"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_7_count",
+      "range": "A123:B140",
+      "values_range": "B123:B140",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A122"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A123:A140"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_7_sentence_length",
+      "range": "C123:F140",
+      "values_range": "C123:F140",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A122"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A123:A140"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_8_count",
+      "range": "A142:B159",
+      "values_range": "B142:B159",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A142:A159"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_9_count",
+      "range": "A161:B178",
+      "values_range": "B161:B178",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A160"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A161:A178"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_9_sentence_length",
+      "range": "C161:F178",
+      "values_range": "C161:F178",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A160"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A161:A178"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    },
+    {
+      "name": "state_10_count",
+      "range": "A180:B197",
+      "values_range": "B180:B197",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A179"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A180:A197"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "state_10_sentence_length",
+      "range": "C180:F197",
+      "values_range": "C180:F197",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A179"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A180:A197"
+        },
+        {
+          "name": "sentence_basis",
+          "direction": "NNW",
+          "cells": "C6,E6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7:F7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:34:22Z",
+    "tool_version": "0.2.0",
+    "records": 828,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T113357Z-e6e693cf7177",
+    "started_at": "2026-10-31T11:33:58Z",
+    "workbook": "e6e693cf7177d282f1b3f0c40a9cc4a0b69bc2522321a81c3ec609d2ecb07bde--prisoners-australia-2007-cube-31-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191bc-e528-72ed-98c9-86917b944e85",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "245860b050d906432dad6e23490ffc10420bcdc536ed476630c99e88bf275b7f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e6e693cf7177d282f1b3f0c40a9cc4a0b69bc2522321a81c3ec609d2ecb07bde--prisoners-australia-2007-cube-31-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2007\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 1\" | 9a1d01e2bea7effd3e6f219718036badfd9b03ccc484d007b7ab911e08b2ff92 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T113357Z-e6e693cf7177.jsonl"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ebce48f1a21e86ebeb9acedd88f08284432719a96e51404183154f57680bdcbb",
+  "sheet": "Table S144",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals and aggregate categories are retained, including Persons, Total and Australia excl NT where present. Published notes specify age eligibility and population estimation caveats.",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A3:B3"
+    },
+    {
+      "name": "notes",
+      "cells": "A34:A36"
+    },
+    {
+      "name": "source",
+      "cells": "A38"
+    }
+  ],
+  "tables": [
+    {
+      "name": "population",
+      "range": "A3:L33",
+      "values_range": "C4:L33",
+      "headers": [
+        {
+          "name": "Year",
+          "direction": "WNW",
+          "cells": "A4,A7,A10,A13,A16,A19,A22,A25,A28,A31"
+        },
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "B4:B33"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C3:L3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:33:10Z",
+    "tool_version": "0.2.0",
+    "records": 300,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T063116Z-80b2c299c011",
+    "started_at": "2026-10-31T06:31:16Z",
+    "workbook": "80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482--aihw-youth-justice-australia-2024-25-population-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190a7-c637-76a7-8f73-617c17b2946e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "1f1547922cf1d5036c556d777effadcd006aa02157991fdac6afdf4d87e81a76",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482--aihw-youth-justice-australia-2024-25-population-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a5d4e3008b974cc0e79a32f2c0e511efd29ae84caebc00a561a66820a719d56b | missing |\n| \"Notes and Symbols\" | 78d784211916843abcfdb908249862facaef7fc8440ee23c2479d27e9285f85c | missing |\n| \"Table S142\" | 7cb0c4aa62cbc2a4ea4955fe6a22a5a5ffc7f69d2ccf5b68f62b51850c6d5599 | missing |\n| \"Table S143\" | 01dda72e4721a3ef3f3361fc4f26b69d4a62cf36b07612c0d1b22ce6e848e509 | missing |\n| \"Table S144\" | ebce48f1a21e86ebeb9acedd88f08284432719a96e51404183154f57680bdcbb | missing |\n| \"Table S145\" | 05fb76483c98867caa4f15a2853e9e6283ac20e3349542b5231a08aeb6741ab7 | missing |\n| \"Table S146\" | bf55b5de08dd503dda7a7202efc054a9175e092d04a296f6d951993127482e15 | missing |\n| \"Table S147\" | a4b6c7846de3566b64e52f88c1ca0978f6bae26bc32c30297e5dc033ba25e574 | missing |\n| \"Table S148\" | 01ba149a701b7d9114fce52d2a0364a5148d1eecf56fbf53a9be7e5c2718f643 | missing |\n| \"Table S149\" | 3c5ec158517a19e65dce040c3d5b3ca18b819f52e2eb20d142e6d4e8669de231 | missing |\n| \"Table S150\" | 9401e5143744b8039c5ef69456e5f10fa7f5c5da88f047464eb0d71a4f8a2ab3 | missing |\n| \"Table S151\" | 72fbe4992bc4d4c7db1781e7a46f0a2107a0d1448690da3678419f5353b9339f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

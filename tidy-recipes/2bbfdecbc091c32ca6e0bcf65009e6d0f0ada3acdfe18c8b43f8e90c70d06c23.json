@@ -1,0 +1,210 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "2bbfdecbc091c32ca6e0bcf65009e6d0f0ada3acdfe18c8b43f8e90c70d06c23",
+  "sheet": "Table 65",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "b4d551a81ffaa4266d63097d8fe5f7ccc37c017b051ff824fe3484a8192dc792",
+  "agent_notes": "Australian Capital Territory and fixed court coverage are specified in the title. Published totals and nested subtotals are retained and are not additive: adjudicated/guilty outcomes, monetary penalties/fines, and nominal penalties/diversion. Offence divisions and subdivisions retain published labels and indentation. Text symbols remain values; footnotes preserve comparability and perturbation caveats.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A18,A30,A41"
+    },
+    {
+      "name": "notes",
+      "cells": "A52:A61"
+    }
+  ],
+  "tables": [
+    {
+      "name": "method_of_finalisation_0",
+      "range": "A8:S16",
+      "values_range": "B8:S16",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:S5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A8:A16"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_1",
+      "range": "A19:S28",
+      "values_range": "B19:S28",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:S5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A19:A28"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_2",
+      "range": "A31:S39",
+      "values_range": "B31:S39",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:S5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A31:A39"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_3",
+      "range": "A42:S51",
+      "values_range": "B42:S51",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:S5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A42:A51"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:00:39Z",
+    "tool_version": "0.2.0",
+    "records": 684,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T085947Z-8d2297dbeec5",
+    "started_at": "2026-10-31T08:59:48Z",
+    "workbook": "8d2297dbeec5850e64dc238239d27b4591adb4c3b821b167247ed9a5dface9e8--criminal-courts-2024-25-cube-11-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1912f-c12a-70c0-8cbb-3eaf46c54bb6",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "43553269f6adfef4a123d45520a1350a9c6407c67aa6f75b4a3b5f4aaf92d836",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8d2297dbeec5850e64dc238239d27b4591adb4c3b821b167247ed9a5dface9e8--criminal-courts-2024-25-cube-11-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2024\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 389cc182189fedce6903da4f41b27a1cf438e234eb5bbb6950c7f96a43a7e07d | missing |\n| \"Table 63\" | d0077c02977c163c9133a9c72108ac1761e62527ed6616160449c4bc7a4affad | missing |\n| \"Table 64\" | 013a205ae9b97666cc8ce9420605dfd5ba077a75e2932d4490d36595897d40d0 | missing |\n| \"Table 65\" | 2bbfdecbc091c32ca6e0bcf65009e6d0f0ada3acdfe18c8b43f8e90c70d06c23 | missing |\n| \"Table 66\" | 253fa1c1ac4ffcc8276630e19cbd18b6d3f4c63bcd285f576eb4db78bc817935 | missing |\n| \"Table 67\" | c184d26319965a02cf6758c7b6e7fed83f743f25fb2e8608d342e7fb2217e605 | missing |\n| \"Table 68\" | fa40d7f9099f869c5e709e657bd510121231636dbc4f4494aabe34d517438918 | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (a062c33cfe6fd96368ad04582f579efe09d7ce04d1a0debf3200f69101b5e18d). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T085947Z-8d2297dbeec5.jsonl"
+  }
+}

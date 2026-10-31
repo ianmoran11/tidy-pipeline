@@ -1,0 +1,168 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "46a272ce477c53ef7c02b0dc5f020fecd5b0fdd9eef9a68666a7873deca8e77c",
+  "sheet": "Table 9",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "048f5e1809a3f68f82cdf9b31a01ce4797046f0e008e74d1fc41432a1c95713b",
+  "agent_notes": "All published total rows retained; totals include unspecified offence groups and need not equal component sums due to perturbation. Federal offence groups are not ANZSOC categories. The second block's total row is labelled as finalised in the source; retained verbatim under the guilty-outcome population.",
+  "new_dimensions": [
+    {
+      "name": "principal_federal_offence_group",
+      "description": "Principal federal offence classified into the ABS federal offence groups, an alternative to ANZSOC.",
+      "example_labels": [
+        "Aviation",
+        "Communications",
+        "Tax"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A62:A68"
+    }
+  ],
+  "tables": [
+    {
+      "name": "finalised_excluding_transfers",
+      "range": "A4:J32",
+      "values_range": "B6:J32",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_federal_offence_group",
+          "caption": "Principal federal offence group",
+          "direction": "W",
+          "cells": "A6:A32"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ]
+    },
+    {
+      "name": "guilty_outcome",
+      "range": "A33:J60",
+      "values_range": "B34:J60",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_federal_offence_group",
+          "caption": "Principal federal offence group",
+          "direction": "W",
+          "cells": "A34:A60"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:11:31Z",
+    "tool_version": "0.2.0",
+    "records": 486,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T091042Z-8e371130b71e",
+    "started_at": "2026-10-31T09:10:45Z",
+    "workbook": "8e371130b71e5f8235ef67a1338f0bec56eac9c7d8e409173b59c84f757516b8--federal-defendants-australia-2023-24-federal-offence-group-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19139-cbc7-74a0-92b1-5dcecb71c5b1",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "bd5bd715d611e965800506a3d70899ed1ca24403e321af51b405b8eb5531e4eb",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8e371130b71e5f8235ef67a1338f0bec56eac9c7d8e409173b59c84f757516b8--federal-defendants-australia-2023-24-federal-offence-group-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2023\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 21a0b67d29270d06ef372a8ef35c007ad09ab1a7863601586c784d49601f656c | missing |\n| \"Table 6\" | 4d78747061c3f6a8ac9449b1e5b4c7ccbee0eeb5f8c53cc95adee6fb7612e1e7 | missing |\n| \"Table 7\" | 60896718a7459b512e6efc1dde87a05fa99484dc4aa8cd8eff2e18754b810b80 | missing |\n| \"Table 8\" | c721f90059ae39be96262f0a3c4de6846344db39e38b590e8e095c295b92ee3c | missing |\n| \"Table 9\" | 46a272ce477c53ef7c02b0dc5f020fecd5b0fdd9eef9a68666a7873deca8e77c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T091042Z-8e371130b71e.jsonl"
+  }
+}

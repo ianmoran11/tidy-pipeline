@@ -1,0 +1,829 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b860c5931c45db8f70642b3213b2a88d7bd482e97503f4a14b38971225903a27",
+  "sheet": "FDV Table 8",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published indents and subtotal/total rows are retained. Offence divisions and subdivisions, adjudicated/guilty subtotals and their components, and monetary penalties/Fines are overlapping hierarchies, not additive categories. Mean/median age remain age_group labels; mean/median weeks use case_duration. State or Australia coverage is stated in the title where not a separate heading. Suppression and not-applicable markers are retained; see published footnotes for comparability and classification changes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4,A6,A10,A23,A28,A32,A42,A54,A58,A71,A76,A80,A90,A102,A106,A119,A124,A128,A138,A150,A154,A167,A172,A176,A186,A198,A202,A215,A220,A224,A234"
+    },
+    {
+      "name": "notes",
+      "cells": "A246,A247,A248,A249,A250,A251,A252,A253,A254,A255"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_7",
+      "range": "A7:K8",
+      "values_range": "B7:K8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A7:A8",
+          "caption": "Sex"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_11",
+      "range": "A11:K21",
+      "values_range": "B11:K21",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A11:A21",
+          "caption": "Age"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_24",
+      "range": "A24:K26",
+      "values_range": "B24:K26",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A24:A26",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_29",
+      "range": "A29:K30",
+      "values_range": "B29:K30",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A29:A30",
+          "caption": "Duration"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_33",
+      "range": "A33:K40",
+      "values_range": "B33:K40",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A33:A40",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_43",
+      "range": "A43:K52",
+      "values_range": "B43:K52",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A43:A52",
+          "caption": "Principal sentence(e)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "sex_55",
+      "range": "A55:K56",
+      "values_range": "B55:K56",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A55:A56",
+          "caption": "Sex"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_59",
+      "range": "A59:K69",
+      "values_range": "B59:K69",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A59:A69",
+          "caption": "Age"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_72",
+      "range": "A72:K74",
+      "values_range": "B72:K74",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A72:A74",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_77",
+      "range": "A77:K78",
+      "values_range": "B77:K78",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A77:A78",
+          "caption": "Duration"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_81",
+      "range": "A81:K88",
+      "values_range": "B81:K88",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A81:A88",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_91",
+      "range": "A91:K100",
+      "values_range": "B91:K100",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A91:A100",
+          "caption": "Principal sentence(e)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "sex_103",
+      "range": "A103:K104",
+      "values_range": "B103:K104",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A103:A104",
+          "caption": "Sex"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_107",
+      "range": "A107:K117",
+      "values_range": "B107:K117",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A107:A117",
+          "caption": "Age"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_120",
+      "range": "A120:K122",
+      "values_range": "B120:K122",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A120:A122",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_125",
+      "range": "A125:K126",
+      "values_range": "B125:K126",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A125:A126",
+          "caption": "Duration"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_129",
+      "range": "A129:K136",
+      "values_range": "B129:K136",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A129:A136",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_139",
+      "range": "A139:K148",
+      "values_range": "B139:K148",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A139:A148",
+          "caption": "Principal sentence(e)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "sex_151",
+      "range": "A151:K152",
+      "values_range": "B151:K152",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A151:A152",
+          "caption": "Sex"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_155",
+      "range": "A155:K165",
+      "values_range": "B155:K165",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A155:A165",
+          "caption": "Age"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_168",
+      "range": "A168:K170",
+      "values_range": "B168:K170",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A168:A170",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_173",
+      "range": "A173:K174",
+      "values_range": "B173:K174",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A173:A174",
+          "caption": "Duration"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_177",
+      "range": "A177:K184",
+      "values_range": "B177:K184",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A177:A184",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_187",
+      "range": "A187:K196",
+      "values_range": "B187:K196",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A187:A196",
+          "caption": "Principal sentence(e)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "sex_199",
+      "range": "A199:K200",
+      "values_range": "B199:K200",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B197"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A199:A200",
+          "caption": "Sex"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_203",
+      "range": "A203:K213",
+      "values_range": "B203:K213",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B197"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A203:A213",
+          "caption": "Age"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_216",
+      "range": "A216:K218",
+      "values_range": "B216:K218",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B197"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A216:A218",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_221",
+      "range": "A221:K222",
+      "values_range": "B221:K222",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B197"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A221:A222",
+          "caption": "Duration"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_225",
+      "range": "A225:K232",
+      "values_range": "B225:K232",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B197"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A225:A232",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_235",
+      "range": "A235:K244",
+      "values_range": "B235:K244",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B197"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A235:A244",
+          "caption": "Principal sentence(e)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B4:K4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:08:09Z",
+    "tool_version": "0.2.0",
+    "records": 1800,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T090603Z-65e4e00dc406",
+    "started_at": "2026-10-31T09:06:04Z",
+    "workbook": "65e4e00dc4062415fb33e6716135b5f18751a1b6589ed01af1943542c5b59815--criminal-courts-2023-24-cube-16-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19135-7f86-7286-8eec-7d978dc34f32",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4c1d58cae2f049113f5ce1e3370030c53986b04fbc8bb4090f379afd3a5a2cc4",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `65e4e00dc4062415fb33e6716135b5f18751a1b6589ed01af1943542c5b59815--criminal-courts-2023-24-cube-16-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2023\n- Sheets needing a recipe: 14 of 14\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 813131356788cc9d5b54bb1bf574253026bb8a11cc1966e45434929d6cf5b6d9 | missing |\n| \"FDV Table 1\" | 7cac1af5cbea6b50ca77ff02baeb018df2f3d6337bc18cbfb44ea416057d59e3 | missing |\n| \"FDV Table 2\" | f77961dd276c76ecd834ee5c0ba93ca08260ad7cc1a9973bdb39dde4e119c254 | missing |\n| \"FDV Table 3\" | 24ca438174c36b16c93703bb77eed01b2282c2a3011bd3a2129ad9342259ea03 | missing |\n| \"FDV Table 4\" | 6461102ac61d7b6b5969ab3aca1f164438e63e3821356f5a2f2751fd56418f28 | missing |\n| \"FDV Table 5\" | c15ee40ca9157a70922b19c4a48efac69e75220eb0bed5d5bb577b9d39da64cd | missing |\n| \"FDV Table 6\" | b3a60735dd50bfd758ba38e745d49f57e3960027f604edae9bec18cc3b46d9c4 | missing |\n| \"FDV Table 7\" | cb1d34fc657d46284d464344fe7990559913fe673a3a7804d5f96061acb947f6 | missing |\n| \"FDV Table 8\" | b860c5931c45db8f70642b3213b2a88d7bd482e97503f4a14b38971225903a27 | missing |\n| \"FDV Table 9\" | 33313e90290e6339d67f0768ef242746c0a6f4fe5c2c7a38e6e8668c929f7832 | missing |\n| \"FDV Table 10\" | 6b030de613d18a64431f6cba7ac2ce0676e938480e240e85c93afac146e76423 | missing |\n| \"FDV Table 11\" | 8325dc1b9266cca68d27a6542741d99bcc54e7da8aae2fde0d602d2970e63d92 | missing |\n| \"FDV Table 12\" | 9479878d3234848fccc0869a4bd259b4a3d23c487bade227b3ba762045358ea5 | missing |\n| \"FDV Table 13\" | 3c764bce432252add8ce6659bb7ff05215b6b58032fb2b1b47c05093b990b713 | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (52118023aefddf18a8197ea44c2de441050383c083d1505c99a41e0fd2a146fc). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T090603Z-65e4e00dc406.jsonl"
+  }
+}

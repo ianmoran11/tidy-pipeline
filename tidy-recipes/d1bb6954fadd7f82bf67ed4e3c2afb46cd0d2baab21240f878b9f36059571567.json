@@ -1,0 +1,284 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d1bb6954fadd7f82bf67ed4e3c2afb46cd0d2baab21240f878b9f36059571567",
+  "sheet": "Table_13",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "c34f532907b2cf6ef18dc2d375449313d2127234dbfe88c7a0bfcac12533f300",
+  "agent_notes": "Age-axis comparison columns Youth offenders and All offenders retained alongside ages 10–19; these are population totals, not single ages. All Total rows retained. Release is 2013–14 (A2); title does not explicitly state the reference period.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,B5"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_males",
+      "range": "A6:M24",
+      "values_range": "B9:M24",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A8"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A9:A24"
+        },
+        {
+          "name": "age_group",
+          "caption": "AGE (YEARS)",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "number_females",
+      "range": "A25:M41",
+      "values_range": "B26:M41",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A25"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A26:A41"
+        },
+        {
+          "name": "age_group",
+          "caption": "AGE (YEARS)",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "number_persons",
+      "range": "A42:M58",
+      "values_range": "B43:M58",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A42"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A43:A58"
+        },
+        {
+          "name": "age_group",
+          "caption": "AGE (YEARS)",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "rate_males",
+      "range": "A60:M76",
+      "values_range": "B61:M76",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A60"
+        },
+        {
+          "name": "measure",
+          "cells": "A59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A61:A76"
+        },
+        {
+          "name": "age_group",
+          "caption": "AGE (YEARS)",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "rate_females",
+      "range": "A77:M93",
+      "values_range": "B78:M93",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A77"
+        },
+        {
+          "name": "measure",
+          "cells": "A59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A78:A93"
+        },
+        {
+          "name": "age_group",
+          "caption": "AGE (YEARS)",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "rate_persons",
+      "range": "A94:M110",
+      "values_range": "B95:M110",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A94"
+        },
+        {
+          "name": "measure",
+          "cells": "A59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A95:A110"
+        },
+        {
+          "name": "age_group",
+          "caption": "AGE (YEARS)",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:11:46Z",
+    "tool_version": "0.2.0",
+    "records": 1152,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T111054Z-b58502dbf208",
+    "started_at": "2026-10-31T11:11:00Z",
+    "workbook": "b58502dbf208fce9dcf1cfc517074d65b2a477abeb96ceb661945fe1c5af8622--recorded-crime-offenders-2013-14-cube-3-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191a7-e089-70dd-9667-f8bdfd7194a9",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ff171e988b906ec9310b0bca1aa63204da94a2b86443bfe2fda44282c3fb6271",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b58502dbf208fce9dcf1cfc517074d65b2a477abeb96ceb661945fe1c5af8622--recorded-crime-offenders-2013-14-cube-3-source.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2013-14\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6585fddf1f03f6273888ff4345af2daf2cfb6d3dbc6bf868b42ab07d451a73cb | missing |\n| \"Table_11\" | a795e5f1fd8bbd6809d2b1637baced684f8f909ca5ade49b8568db1e10dbb7af | missing |\n| \"Table_12\" | 36cdf43e594777c8cb1471c89d033ac48539e94292e19f6f6bdd42ad6dbf44b3 | missing |\n| \"Table_13\" | d1bb6954fadd7f82bf67ed4e3c2afb46cd0d2baab21240f878b9f36059571567 | missing |\n| \"Table_14\" | 9a7355154f6aded03fe296e9a3f18d46932750abb59c641ae8437b5c3c396291 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T111054Z-b58502dbf208.jsonl"
+  }
+}

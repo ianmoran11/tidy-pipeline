@@ -1,0 +1,66 @@
+# Published (displayed) values: the stored number rounded the way Excel shows it
+# under the cell's number format, e.g. 2.37887238760836 with format "0.0" -> "2.4".
+
+# tidyxl 1.0.10 misreports Excel's built-in formats 3, 4 and 37-40 with ";" in
+# place of the thousands separator ("#;##0.00" for "#,##0.00"), which reads as
+# two format sections. Restore the real format strings.
+TIDYXL_BUILTIN_FIXES <- c(
+  "#;##0" = "#,##0",
+  "#;##0.00" = "#,##0.00",
+  "#;##0 ;(#;##0)" = "#,##0 ;(#,##0)",
+  "#;##0 ;[Red](#;##0)" = "#,##0 ;[Red](#,##0)",
+  "#;##0.00;(#;##0.00)" = "#,##0.00;(#,##0.00)",
+  "#;##0.00;[Red](#;##0.00)" = "#,##0.00;[Red](#,##0.00)"
+)
+
+fix_numfmt <- function(numfmt) {
+  fixed <- unname(TIDYXL_BUILTIN_FIXES[numfmt])
+  ifelse(is.na(fixed), numfmt, fixed)
+}
+
+# Decimal places shown by an Excel number format for a value of this sign.
+# NA for formats left as stored: General, text, percentages, scientific, fractions.
+format_decimals <- function(numfmt, x) {
+  numfmt <- fix_numfmt(numfmt)
+  mapply(function(fmt, v) {
+    if (is.na(fmt) || fmt %in% c("General", "@")) return(NA_integer_)
+    # drop quoted text, escaped characters, [colour/locale] blocks and _/* padding
+    f <- gsub('"[^"]*"|\\\\.|\\[[^]]*\\]|[_*].', "", fmt)
+    sections <- strsplit(f, ";", fixed = TRUE)[[1]]
+    s <- if (!is.na(v) && v < 0 && length(sections) >= 2) sections[2]
+         else if (!is.na(v) && v == 0 && length(sections) >= 3) sections[3]
+         else sections[1]
+    if (grepl("[eE][+-]|/|%", s)) return(NA_integer_)
+    dec <- regmatches(s, regexpr("(?<=\\.)[0#?]+", s, perl = TRUE))
+    if (length(dec)) nchar(dec) else 0L
+  }, numfmt, x, USE.NAMES = FALSE)
+}
+
+# Round like Excel's display: take the 15-significant-digit decimal form and round
+# half away from zero. R's round() differs: round(2.5) is 2, round(2.675, 2) is 2.67.
+excel_round <- function(x, digits) {
+  mapply(function(v, d) {
+    if (is.na(v) || is.na(d) || !is.finite(v)) return(v)
+    s <- sprintf("%.14e", abs(v))
+    mantissa <- gsub(".", "", sub("e.*$", "", s), fixed = TRUE)
+    exponent <- as.integer(sub("^.*e", "", s))
+    keep <- exponent + 1L + d
+    if (keep < 0L) return(0)
+    if (keep >= 15L) return(v)
+    kept <- if (keep > 0L) as.numeric(substr(mantissa, 1L, keep)) else 0
+    if (substr(mantissa, keep + 1L, keep + 1L) >= "5") kept <- kept + 1
+    sign(v) * kept / 10^(keep - exponent - 1L)
+  }, x, digits, USE.NAMES = FALSE)
+}
+
+# Number as text without scientific notation (as.character(100000) is "1e+05")
+number_text <- function(x) {
+  out <- trimws(formatC(x, digits = 15, format = "fg"))
+  out[is.na(x)] <- NA_character_
+  out
+}
+
+published_value <- function(x, numfmt) {
+  d <- format_decimals(numfmt, x)
+  number_text(ifelse(is.na(d), x, excel_round(x, d)))
+}

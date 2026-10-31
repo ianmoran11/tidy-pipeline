@@ -1,0 +1,281 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "81d7e36e841c0f87aabe3e9cb912f4a857c61a06d2351437e79464f38dacea4a",
+  "sheet": "Table_37",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "6e5e668f88408dcab7f2191e1f33e34c94c503bbee1dc377598af03807160e80",
+  "agent_notes": "Selected countries and each jurisdiction's overall Total are retained. Totals include countries not individually listed; do not sum the selected countries as an exhaustive breakdown.",
+  "new_dimensions": [
+    {
+      "name": "country_of_birth",
+      "description": "Selected country of birth of federal prisoners, including published overseas-born and overall totals.",
+      "example_labels": [
+        "Australia",
+        "China",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_1",
+      "range": "A7:B17",
+      "values_range": "B8:B17",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A7"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A8:A17"
+        }
+      ]
+    },
+    {
+      "name": "state_2",
+      "range": "A18:B26",
+      "values_range": "B19:B26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A18"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A19:A26"
+        }
+      ]
+    },
+    {
+      "name": "state_3",
+      "range": "A27:B30",
+      "values_range": "B28:B30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A28:A30"
+        }
+      ]
+    },
+    {
+      "name": "state_4",
+      "range": "A31:B39",
+      "values_range": "B32:B39",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A31"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A32:A39"
+        }
+      ]
+    },
+    {
+      "name": "state_5",
+      "range": "A40:B42",
+      "values_range": "B41:B42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A40"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A41:A42"
+        }
+      ]
+    },
+    {
+      "name": "state_6",
+      "range": "A43:B48",
+      "values_range": "B44:B48",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A44:A48"
+        }
+      ]
+    },
+    {
+      "name": "state_7",
+      "range": "A49:B51",
+      "values_range": "B50:B51",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A49"
+        },
+        {
+          "name": "unit",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "caption": "State and country of birth",
+          "direction": "W",
+          "cells": "A50:A51"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:12:09Z",
+    "tool_version": "0.2.0",
+    "records": 38,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101123Z-0925bf11226b",
+    "started_at": "2026-10-31T10:11:25Z",
+    "workbook": "0925bf11226b7690761093e5cb2a4e59740d3dc0eab2ffa2b37ea4087bf4e107--prisoners-australia-2017-cube-3-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19171-551e-7094-9ffe-70ec17aa87ca",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1e51c598e32f4ab11e95bec866095b8623d14a744b2b16b45d9e9ab7c2f281aa",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0925bf11226b7690761093e5cb2a4e59740d3dc0eab2ffa2b37ea4087bf4e107--prisoners-australia-2017-cube-3-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2017\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | eb533ed911af239befa0bcb24e7bf18f39bab98830b45076484e12934aa78112 | missing |\n| \"Table_36\" | 9f1cf24e6c189d2361a44c5cf6112a7bbfa47c974571dbb29cd4a356847e800d | missing |\n| \"Table_37\" | 81d7e36e841c0f87aabe3e9cb912f4a857c61a06d2351437e79464f38dacea4a | missing |\n| \"Table_38\" | 206a5709580b95c0d665b28c212eacbeca87c8fac7c7d73469bfa3364a69fb4e | missing |\n| \"Table_39\" | b7f7d8c0a4d4224fe8a9bbcda94b587ebd028743fa877b33cc8d93c59b49c35b | missing |\n| \"Explanatory Notes\" | 5762e014cd5a737ea7917e43b757eda5e0c2dd8de5d9d3fa9704f15f0691478f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101123Z-0925bf11226b.jsonl"
+  }
+}

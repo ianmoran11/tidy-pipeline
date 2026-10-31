@@ -1,0 +1,224 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0457f64432ca731c30f60d333ab2f1f983d00fb8a1c2e2fa1fd1a230783ff7e4",
+  "sheet": "Table 6",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals and subtotals retained. Offence divisions, subdivisions and groups remain together with original labels and indentation. Mean/median age or duration remain published labels on their respective axes. Template discovery failed due to an unrelated missing Table 80 in the candidate index; recipe constructed from source grids.",
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "case_duration_8",
+      "range": "A8:M16",
+      "values_range": "B8:M8,B9:M9,B10:M10,B11:M11,B12:M12,B13:M13,B15:M15,B16:M16",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:M5"
+        },
+        {
+          "name": "period",
+          "direction": "NNW",
+          "cells": "B6,H6"
+        },
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A8,A9,A10,A11,A12,A13,A15,A16",
+          "caption": "Duration "
+        }
+      ]
+    },
+    {
+      "name": "case_duration_18",
+      "range": "A18:M26",
+      "values_range": "B18:M18,B19:M19,B20:M20,B21:M21,B22:M22,B23:M23,B25:M25,B26:M26",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B17"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:M5"
+        },
+        {
+          "name": "period",
+          "direction": "NNW",
+          "cells": "B6,H6"
+        },
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A18,A19,A20,A21,A22,A23,A25,A26",
+          "caption": "Duration "
+        }
+      ]
+    },
+    {
+      "name": "case_duration_28",
+      "range": "A28:M36",
+      "values_range": "B28:M28,B29:M29,B30:M30,B31:M31,B32:M32,B33:M33,B35:M35,B36:M36",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:M5"
+        },
+        {
+          "name": "period",
+          "direction": "NNW",
+          "cells": "B6,H6"
+        },
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A28,A29,A30,A31,A32,A33,A35,A36",
+          "caption": "Duration "
+        }
+      ]
+    },
+    {
+      "name": "case_duration_38",
+      "range": "A38:M46",
+      "values_range": "B38:M38,B39:M39,B40:M40,B41:M41,B42:M42,B43:M43,B45:M45,B46:M46",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B37"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:M5"
+        },
+        {
+          "name": "period",
+          "direction": "NNW",
+          "cells": "B6,H6"
+        },
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A38,A39,A40,A41,A42,A43,A45,A46",
+          "caption": "Duration "
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:16:44Z",
+    "tool_version": "0.2.0",
+    "records": 384,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T091515Z-9fd38cfca91c",
+    "started_at": "2026-10-31T09:15:16Z",
+    "workbook": "9fd38cfca91c5a601b40d2a5e3d85eb875630cc600ecceb3e7ee37f0f5d64340--criminal-courts-2022-23-cube-1-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1913d-ea42-7172-99db-f64945b1ba13",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e5e51aadde8304a9a908bfb26cb5c62e93109d2d01638738ea592ba2614a3728",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9fd38cfca91c5a601b40d2a5e3d85eb875630cc600ecceb3e7ee37f0f5d64340--criminal-courts-2022-23-cube-1-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 4fe8559f5687abd71533c69e6dde4acc3202a501cc6d6bd4d59aab05f8a6ee59 | missing |\n| \"Table 1\" | 9acc68571fd506a0dd3b1fe260ebb6a8eeb6c14d8d725f454bf401e80c670640 | missing |\n| \"Table 2\" | 31399d358581e3cd178c239fd76eda6fc0e5187d71c6ece056e25e71ab758e5e | missing |\n| \"Table 3\" | ff97ccac278adc2867e27bf1c1d5df1e184a073dcdee1ff1ec8f1c94641f756b | missing |\n| \"Table 4\" | d2a0f5c16e4f9689c749c5d659adf53ccd9f8ef96129f9cf4026ebda2b952f5c | missing |\n| \"Table 5\" | c53a5956d2d61ff87b2a0d22a83de822d63eb7f7117155c311388e4437c3005e | missing |\n| \"Table 6\" | 0457f64432ca731c30f60d333ab2f1f983d00fb8a1c2e2fa1fd1a230783ff7e4 | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (9a9a18151fc6ccb58fa831a0628f13cd867486873b206ae32e4ab327bd903eba). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T091515Z-9fd38cfca91c.jsonl"
+  }
+}

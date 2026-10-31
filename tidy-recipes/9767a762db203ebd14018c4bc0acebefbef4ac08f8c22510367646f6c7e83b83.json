@@ -1,0 +1,675 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "9767a762db203ebd14018c4bc0acebefbef4ac08f8c22510367646f6c7e83b83",
+  "sheet": "Table 15",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Crude and age-standardised rate bases retained separately; Ratio(c) is an Indigenous/non-Indigenous rate ratio, encoded as measure rather than Indigenous status. Rates are per 100,000 persons aged 10 and over. ACT only publishes crude Indigenous rates. Unavailable values retained; revisions and comparability caveats are in sheet notes.",
+  "new_dimensions": [
+    {
+      "name": "defendant_rate_basis",
+      "description": "Whether defendant rates and their Indigenous/non-Indigenous ratios are crude or age standardised.",
+      "example_labels": [
+        "Crude(b)",
+        "Age standardised(d)"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A54:A68"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_1_rate_1",
+      "range": "A5:I8",
+      "values_range": "B7:I8",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B5"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A7:A8"
+        }
+      ]
+    },
+    {
+      "name": "state_1_rate_1_ratio",
+      "range": "A9:I9",
+      "values_range": "B9:I9",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B5"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_1_rate_2",
+      "range": "A10:I12",
+      "values_range": "B11:I12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B5"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A11:A12"
+        }
+      ]
+    },
+    {
+      "name": "state_1_rate_2_ratio",
+      "range": "A13:I13",
+      "values_range": "B13:I13",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B5"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A10"
+        },
+        {
+          "name": "measure",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_2_rate_1",
+      "range": "A14:I17",
+      "values_range": "B16:I17",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B14"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A16:A17"
+        }
+      ]
+    },
+    {
+      "name": "state_2_rate_1_ratio",
+      "range": "A18:I18",
+      "values_range": "B18:I18",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B14"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A15"
+        },
+        {
+          "name": "measure",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_2_rate_2",
+      "range": "A19:I21",
+      "values_range": "B20:I21",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B14"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A19"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A20:A21"
+        }
+      ]
+    },
+    {
+      "name": "state_2_rate_2_ratio",
+      "range": "A22:I22",
+      "values_range": "B22:I22",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B14"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A19"
+        },
+        {
+          "name": "measure",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_3_rate_1",
+      "range": "A23:I26",
+      "values_range": "B25:I26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B23"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A25:A26"
+        }
+      ]
+    },
+    {
+      "name": "state_3_rate_1_ratio",
+      "range": "A27:I27",
+      "values_range": "B27:I27",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B23"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A24"
+        },
+        {
+          "name": "measure",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_3_rate_2",
+      "range": "A28:I30",
+      "values_range": "B29:I30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B23"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A29:A30"
+        }
+      ]
+    },
+    {
+      "name": "state_3_rate_2_ratio",
+      "range": "A31:I31",
+      "values_range": "B31:I31",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B23"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A28"
+        },
+        {
+          "name": "measure",
+          "cells": "A31"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_4_rate_1",
+      "range": "A32:I35",
+      "values_range": "B34:I35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B32"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A34:A35"
+        }
+      ]
+    },
+    {
+      "name": "state_4_rate_1_ratio",
+      "range": "A36:I36",
+      "values_range": "B36:I36",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B32"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A33"
+        },
+        {
+          "name": "measure",
+          "cells": "A36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_4_rate_2",
+      "range": "A37:I39",
+      "values_range": "B38:I39",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B32"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A37"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A38:A39"
+        }
+      ]
+    },
+    {
+      "name": "state_4_rate_2_ratio",
+      "range": "A40:I40",
+      "values_range": "B40:I40",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B32"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A37"
+        },
+        {
+          "name": "measure",
+          "cells": "A40"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_5_rate_1",
+      "range": "A41:I44",
+      "values_range": "B43:I44",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B41"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A43:A44"
+        }
+      ]
+    },
+    {
+      "name": "state_5_rate_1_ratio",
+      "range": "A45:I45",
+      "values_range": "B45:I45",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B41"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A42"
+        },
+        {
+          "name": "measure",
+          "cells": "A45"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_5_rate_2",
+      "range": "A46:I48",
+      "values_range": "B47:I48",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B41"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A47:A48"
+        }
+      ]
+    },
+    {
+      "name": "state_5_rate_2_ratio",
+      "range": "A49:I49",
+      "values_range": "B49:I49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B41"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A46"
+        },
+        {
+          "name": "measure",
+          "cells": "A49"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        }
+      ]
+    },
+    {
+      "name": "state_6_rate_1",
+      "range": "A50:I52",
+      "values_range": "B52:I52",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B50"
+        },
+        {
+          "name": "defendant_rate_basis",
+          "cells": "A51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:I4"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A52:A52"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:06:37Z",
+    "tool_version": "0.2.0",
+    "records": 248,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T090529Z-411615185492",
+    "started_at": "2026-10-31T09:05:30Z",
+    "workbook": "4116151854920814783f6708e099662ab00073ea9553d58f7784ff91fb4baa2a--criminal-courts-2023-24-cube-3-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19134-fb61-7457-afda-6208839a4ee8",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e74beb4f32ef8bf2a71ee42fd98ffad9e1b9daa3cc08dc6a9c3c2fc772e4e5da",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4116151854920814783f6708e099662ab00073ea9553d58f7784ff91fb4baa2a--criminal-courts-2023-24-cube-3-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2023\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 81b9f2c5ccb9d95b464ec4cf0bddd5139abe7ceafe316a17e14cc0505d80ea25 | missing |\n| \"Table 12\" | 065893b9ee60a36eeaa7a30be7605aaeb66a8a76c8c5c5f1c33bcde0d8884018 | missing |\n| \"Table 13\" | 8757a1c26d3c712c37c16711ff0c6268ffc950595250d2af51b6018037023949 | missing |\n| \"Table 14\" | 682cb2bacb67a6705449c9a6ab8aa8196b91a0ed3063fe210e31694bbc1e5fb7 | missing |\n| \"Table 15\" | 9767a762db203ebd14018c4bc0acebefbef4ac08f8c22510367646f6c7e83b83 | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (c6abfc74ce76e317e0655d9af2418e4af3dd0be3bd8388f867a7e3831956cc70). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T090529Z-411615185492.jsonl"
+  }
+}

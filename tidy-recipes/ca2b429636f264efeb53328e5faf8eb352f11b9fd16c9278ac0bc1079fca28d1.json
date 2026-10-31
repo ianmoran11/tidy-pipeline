@@ -1,0 +1,103 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ca2b429636f264efeb53328e5faf8eb352f11b9fd16c9278ac0bc1079fca28d1",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook table index and publication links; numeric entries are table numbers, not statistical values.",
+  "agent_notes": "Contents only: B6:B16 are the sequential table identifiers 1–11, paired with table titles in C6:C16, not statistical observations. The non-data checker flags these numeric identifiers; retain kind contents for human review.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-10-31T10:05:01Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 11 numeric cells, e.g. B6, B7, B8, B9, B10"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T100241Z-4b804c75ca8d",
+    "started_at": "2026-10-31T10:02:46Z",
+    "workbook": "4b804c75ca8d586ea9607a6bfd676b40a1f83d8b557bbee07155faefda958228--recorded-crime-offenders-2021-22-cube-6-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19169-66cc-7592-8569-e7e4e5d3a072",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "78fc3d4204a25d021b43d501c152e5ab8948beaeea9d138429730627472e5ad5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4b804c75ca8d586ea9607a6bfd676b40a1f83d8b557bbee07155faefda958228--recorded-crime-offenders-2021-22-cube-6-source.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2021\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | ca2b429636f264efeb53328e5faf8eb352f11b9fd16c9278ac0bc1079fca28d1 | missing |\n| \"Table 1\" | 427aa2c104b034e9a3b9f5ee5b280afa3ec464b7ea3027988a0c6b904a471cfd | missing |\n| \"Table 2\" | 879d2d3eeace92fbde6bba2994c3670a6bf8ca6c8fb36a8b8ddea6f78ff00da2 | missing |\n| \"Table 3\" | 648fce205e970e080ed46e0d785d2abb22998bb1acc2eb849afbcfebf369df67 | missing |\n| \"Table 4\" | be1312363e8dba8765ae8ca72286883b7bc40fb123730f2a38fa2bf57a1b8167 | missing |\n| \"Table 5\" | 47cc04df390fede2de9889ac220535605b813b3b4e7448ea7a1af5c13efd6d6f | missing |\n| \"Table 6\" | 80de8d8beefa1cc90a4f807b36084567785182d6f1ef47c3712cb799a3a17509 | missing |\n| \"Table 7\" | dff2fa3d586154bfe716ef7deedfbd668163a0539a4ae8e16636db4768b8c890 | missing |\n| \"Table 8\" | 41257d3bed24cc9f3a5ef2d1569f00f6f0578b9087586db50301e89eae4a0746 | missing |\n| \"Table 9\" | f35313f2566988981edc9245c2f3a7b37e507194605bf9659b02571fd475f282 | missing |\n| \"Table 10\" | 96411186f10f0dcb9c40b2c49a31cf6cdd91be38291101fd9bc561fdfa7fe63c | missing |\n| \"Table 11\" | 033bfc9780cec46c875a218df43f252a26235df5b179f21cd066bc388507e105 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T100241Z-4b804c75ca8d.jsonl"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "674abbc872b6a2be65752b367f28795e428b8178fbd8bdc3be97715764e68bca",
+  "sheet": "Table 1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "ad499f85a8b36cbd3fc34aee266f32423899edb3d66e8e122958d185a6bbb49d",
+  "agent_notes": "Expected time to serve bands use sentence_length; Periodic detention and Total remain on that axis. Life and Other are indented children of Indeterminate, represented by sentence_length_group. All totals retained: ACT in ACT and ACT in NSW overlap ACT Total; Aust. overlaps state counts.",
+  "new_dimensions": [
+    {
+      "name": "sentence_length_group",
+      "description": "Published grouping of sentence lengths or expected time to serve, identifying indeterminate sentences.",
+      "example_labels": [
+        "Indeterminate"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sentence",
+      "range": "A7:L17",
+      "values_range": "B8:L17",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "cells": "A8:A17",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "B7:L7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "indeterminate",
+      "range": "A18:L20",
+      "values_range": "B19:L20",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "cells": "A19:A20",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "B7:L7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sentence_length_group",
+          "cells": "A18"
+        }
+      ]
+    },
+    {
+      "name": "total",
+      "range": "A21:L21",
+      "values_range": "B21:L21",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "cells": "A21",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "B7:L7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:31:35Z",
+    "tool_version": "0.2.0",
+    "records": 143,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T113113Z-2d9cc21980d9",
+    "started_at": "2026-10-31T11:31:14Z",
+    "workbook": "2d9cc21980d9efdda39d3c541a78a7e9239ad4a971a8832a52781a9ef50058f5--prisoners-australia-2007-cube-29-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191ba-66cb-76a1-acd9-1f03e21b1fed",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "62894930d7d65223de4356edf438b7f0e1c1f7aeb4ab1f20f9447a80bf90fc10",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2d9cc21980d9efdda39d3c541a78a7e9239ad4a971a8832a52781a9ef50058f5--prisoners-australia-2007-cube-29-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2007\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 1\" | 674abbc872b6a2be65752b367f28795e428b8178fbd8bdc3be97715764e68bca | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T113113Z-2d9cc21980d9.jsonl"
+  }
+}

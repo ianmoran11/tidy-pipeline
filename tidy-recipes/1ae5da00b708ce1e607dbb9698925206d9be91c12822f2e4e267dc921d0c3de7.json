@@ -1,0 +1,85 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "1ae5da00b708ce1e607dbb9698925206d9be91c12822f2e4e267dc921d0c3de7",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Contents page with table listing, publication links and inquiry information; no statistical data.",
+  "template_from": "6c8436fa210af95d13a766b84cc42d9f1858dd9a34abe03dbf98123c2f397dc5",
+  "agent_notes": "Contents only; no statistical table.",
+  "validation": {
+    "checked_at": "2026-10-31T07:04:43Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T070414Z-121cef3ae605",
+    "started_at": "2026-10-31T07:04:15Z",
+    "workbook": "121cef3ae6056fac5ee9180a33065507d5cdec0715ce041cf70e42d30b5f45bf--employee-earnings-and-hours-australia-2021-cube-12-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": true,
+      "service_tier": "priority",
+      "session_id": "01a190c5-f730-745a-a0f5-d41229240f7f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "bc376e6eaf84f5caacc8fb1b5773b2da505eb189ae2ce2bd92bc07390e068310",
+        "SKILL.md": "d4ee632bc5f7c1c2feea4d4165d414570cbdee99a8d6a46261edf15e6ade835a"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "95c7b1780147af8dd06efc6838b82489814450600975a5a911891e774aef98b9",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `121cef3ae6056fac5ee9180a33065507d5cdec0715ce041cf70e42d30b5f45bf--employee-earnings-and-hours-australia-2021-cube-12-source.xlsx`.\n\n- Publication: Employee Earnings and Hours, Australia (Australian Bureau of Statistics)\n- Release or year: May 2021\n- Sheets needing a recipe: 3 of 3\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 1ae5da00b708ce1e607dbb9698925206d9be91c12822f2e4e267dc921d0c3de7 | missing |\n| \"Table_1\" | a39c7da7032ee5d950ac18539020d185b516cf90c92f033bbcbf70d37a3f8509 | missing |\n| \"Table_2\" | 3d1c25120896c37bde92c18001b67c2db31173bceb8f132cd46b84eba9b8906a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T070414Z-121cef3ae605.jsonl"
+  }
+}

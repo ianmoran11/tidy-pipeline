@@ -1,0 +1,1413 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "72816956735dd5fff81244315c5ee165bc15ea2871b9c16395525d0a09136e04",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Eight jurisdiction blocks with five tables each. Adjudicated outcomes is a parent without values, scoped to Acquitted, Proven guilty and Total. All published totals are retained: Total within adjudicated outcomes, Total finalised, Total adjudicated and Total proven guilty. Offence categories and sex/organisation categories retain their published labels. Number columns cover five financial years; the final column is percentage change, not a further annual count. Published totals need not equal visible categories.",
+  "meta_data": [
+    {
+      "name": "publication",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_1_sex",
+      "range": "A9:G12",
+      "values_range": "B10:G12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A10:A12"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_adjudicated_outcomes",
+      "range": "A13:G17",
+      "values_range": "B15:G17",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A13"
+        },
+        {
+          "name": "outcome",
+          "cells": "A14"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A15:A17"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_other_finalisation_and_total",
+      "range": "A18:G20",
+      "values_range": "B18:G20",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A18:A20"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_principal_offence",
+      "range": "A21:G38",
+      "values_range": "B22:G38",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A22:A38"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_sentence_outcomes",
+      "range": "A39:G42",
+      "values_range": "B40:G42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A39"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A40:A42"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_2_sex",
+      "range": "A44:G47",
+      "values_range": "B45:G47",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A45:A47"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_2_adjudicated_outcomes",
+      "range": "A48:G52",
+      "values_range": "B50:G52",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A48"
+        },
+        {
+          "name": "outcome",
+          "cells": "A49"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A50:A52"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_2_other_finalisation_and_total",
+      "range": "A53:G55",
+      "values_range": "B53:G55",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A53:A55"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_2_principal_offence",
+      "range": "A56:G73",
+      "values_range": "B57:G73",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A56"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A57:A73"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_2_sentence_outcomes",
+      "range": "A74:G77",
+      "values_range": "B75:G77",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A74"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A75:A77"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_3_sex",
+      "range": "A79:G82",
+      "values_range": "B80:G82",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A79"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A80:A82"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_3_adjudicated_outcomes",
+      "range": "A83:G87",
+      "values_range": "B85:G87",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A83"
+        },
+        {
+          "name": "outcome",
+          "cells": "A84"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A85:A87"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_3_other_finalisation_and_total",
+      "range": "A88:G90",
+      "values_range": "B88:G90",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A83"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A88:A90"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_3_principal_offence",
+      "range": "A91:G108",
+      "values_range": "B92:G108",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A91"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A92:A108"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_3_sentence_outcomes",
+      "range": "A109:G112",
+      "values_range": "B110:G112",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A109"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A110:A112"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_4_sex",
+      "range": "A114:G117",
+      "values_range": "B115:G117",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A113"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A115:A117"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_4_adjudicated_outcomes",
+      "range": "A118:G122",
+      "values_range": "B120:G122",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A113"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A118"
+        },
+        {
+          "name": "outcome",
+          "cells": "A119"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A120:A122"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_4_other_finalisation_and_total",
+      "range": "A123:G125",
+      "values_range": "B123:G125",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A113"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A123:A125"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_4_principal_offence",
+      "range": "A126:G143",
+      "values_range": "B127:G143",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A113"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A127:A143"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_4_sentence_outcomes",
+      "range": "A144:G147",
+      "values_range": "B145:G147",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A113"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A144"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A145:A147"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_5_sex",
+      "range": "A149:G152",
+      "values_range": "B150:G152",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A148"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A149"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A150:A152"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_5_adjudicated_outcomes",
+      "range": "A153:G157",
+      "values_range": "B155:G157",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A148"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A153"
+        },
+        {
+          "name": "outcome",
+          "cells": "A154"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A155:A157"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_5_other_finalisation_and_total",
+      "range": "A158:G160",
+      "values_range": "B158:G160",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A148"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A153"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A158:A160"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_5_principal_offence",
+      "range": "A161:G178",
+      "values_range": "B162:G178",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A148"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A161"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A162:A178"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_5_sentence_outcomes",
+      "range": "A179:G182",
+      "values_range": "B180:G182",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A148"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A179"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A180:A182"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_6_sex",
+      "range": "A184:G187",
+      "values_range": "B185:G187",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A183"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A184"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A185:A187"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_6_adjudicated_outcomes",
+      "range": "A188:G192",
+      "values_range": "B190:G192",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A183"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A188"
+        },
+        {
+          "name": "outcome",
+          "cells": "A189"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A190:A192"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_6_other_finalisation_and_total",
+      "range": "A193:G195",
+      "values_range": "B193:G195",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A183"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A188"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A193:A195"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_6_principal_offence",
+      "range": "A196:G213",
+      "values_range": "B197:G213",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A183"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A196"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A197:A213"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_6_sentence_outcomes",
+      "range": "A214:G217",
+      "values_range": "B215:G217",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A183"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A214"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A215:A217"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_7_sex",
+      "range": "A219:G222",
+      "values_range": "B220:G222",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A218"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A219"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A220:A222"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_7_adjudicated_outcomes",
+      "range": "A223:G227",
+      "values_range": "B225:G227",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A218"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A223"
+        },
+        {
+          "name": "outcome",
+          "cells": "A224"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A225:A227"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_7_other_finalisation_and_total",
+      "range": "A228:G230",
+      "values_range": "B228:G230",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A218"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A223"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A228:A230"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_7_principal_offence",
+      "range": "A231:G248",
+      "values_range": "B232:G248",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A218"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A231"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A232:A248"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_7_sentence_outcomes",
+      "range": "A249:G252",
+      "values_range": "B250:G252",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A218"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A249"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A250:A252"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_8_sex",
+      "range": "A254:G257",
+      "values_range": "B255:G257",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A253"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A254"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sex",
+          "direction": "W",
+          "cells": "A255:A257"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_8_adjudicated_outcomes",
+      "range": "A258:G262",
+      "values_range": "B260:G262",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A253"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A258"
+        },
+        {
+          "name": "outcome",
+          "cells": "A259"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A260:A262"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_8_other_finalisation_and_total",
+      "range": "A263:G265",
+      "values_range": "B263:G265",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A253"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A258"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Method of finalisation",
+          "direction": "W",
+          "cells": "A263:A265"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_8_principal_offence",
+      "range": "A266:G283",
+      "values_range": "B267:G283",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A253"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A266"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Principal offence",
+          "direction": "W",
+          "cells": "A267:A283"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    },
+    {
+      "name": "state_8_sentence_outcomes",
+      "range": "A284:G287",
+      "values_range": "B285:G287",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A253"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A284"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Sentence outcomes",
+          "direction": "W",
+          "cells": "A285:A287"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:G6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:43:11Z",
+    "tool_version": "0.2.0",
+    "records": 1392,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T064237Z-1ad67b2e427d",
+    "started_at": "2026-10-31T06:42:37Z",
+    "workbook": "1ad67b2e427d900070ebc84d9ecd16a7de57c80249a6da3741d527ec66074eb8--criminal-courts-australia-2010-11-cube-5-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190b2-288e-7796-8f34-126232c9e38a",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "56bade26f3d01dee67a3de0c5beada40e31863a81a7027ce555ae807b59dff1c",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1ad67b2e427d900070ebc84d9ecd16a7de57c80249a6da3741d527ec66074eb8--criminal-courts-australia-2010-11-cube-5-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 918a56e5c83e37d079d278c869fb9af7b1ad781c527a11da549443ab7e73430a | missing |\n| \"Table_1\" | 72816956735dd5fff81244315c5ee165bc15ea2871b9c16395525d0a09136e04 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/1ad67b2e427d900070ebc84d9ecd16a7de57c80249a6da3741d527ec66074eb8.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

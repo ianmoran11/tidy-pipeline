@@ -1,0 +1,100 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6237989254a36f8d28a833284a83500f1e1664a75300ff04570b8ed8a4ded24e",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Workbook contents and links; no statistical data.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-10-31T09:18:11Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T091541Z-d68421b80c9d",
+    "started_at": "2026-10-31T09:15:42Z",
+    "workbook": "d68421b80c9d7c2c90184fa22c6951224c036361c378c11d607129bae75ea54e--criminal-courts-2022-23-cube-15-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1913e-51ed-77a5-9b74-e1531ef0068f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5088be6e824c403ab900177f7557e818cb721cad269a7eab2be6effd01199b59",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d68421b80c9d7c2c90184fa22c6951224c036361c378c11d607129bae75ea54e--criminal-courts-2022-23-cube-15-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 14 of 14\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6237989254a36f8d28a833284a83500f1e1664a75300ff04570b8ed8a4ded24e | missing |\n| \"FDV Table 1\" | ec8dab18a6e9d3a639ade5f38b2bae05975d675eca07ca0f5eb9fdb0a0c9cdaa | missing |\n| \"FDV Table 2\" | 0b71050fd5ec6b82822e65dca5cdf35b04230a9e99ac5ab3494424a88f667139 | missing |\n| \"FDV Table 3\" | 81f956ad1e9d3ab2ea38b075f594083f3b235495aa3a090c9bb0e913c707a5a1 | missing |\n| \"FDV Table 4\" | 1e32f2877dcea7460517222c4f0baf49e40124a4c45b88aa63caa26802a725ad | missing |\n| \"FDV Table 5\" | ab1af8f7c08e97e4baa563b7b28b191ff906c42d399e875370bfe1eeb75d3722 | missing |\n| \"FDV Table 6\" | 6fb4193e0bb17bad82009178c88f84f841965f32b1b1161471865682a564b33a | missing |\n| \"FDV Table 7\" | b499b8d6c0e3a5a264c478178c2072e302d7d782fbfb5642f6ada5716e7a7859 | missing |\n| \"FDV Table 8\" | a3aeb60f7216f87a9ebcabc3d3787ccd60e9468a1783589b707454dd1eb37144 | missing |\n| \"FDV Table 9\" | ec693d107d16bade237e78e9cdf75184261f8e0ae3969a3e9a4721c5d3e16bc5 | missing |\n| \"FDV Table 10\" | 9bc9990f302320e53f7a2be3288621aa5e815c0345f33af797d367ada593eacf | missing |\n| \"FDV Table 11\" | dbc995865cd90a10075d09b264f370eaa5105c405f9c5d75963a9565f790d8a8 | missing |\n| \"FDV Table 12\" | 7fcb91ef777abe40f8253ecc63391da58ed4a5e4f446618498e5836a8cf2bbe1 | missing |\n| \"FDV Table 13\" | 664c0543a77f2af216c834b41f586b5788096eaa65d56a5acdb5f620c366d7c3 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T091541Z-d68421b80c9d.jsonl"
+  }
+}

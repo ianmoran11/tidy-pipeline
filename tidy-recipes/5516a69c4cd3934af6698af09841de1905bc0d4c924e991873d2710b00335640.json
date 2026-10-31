@@ -1,0 +1,372 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5516a69c4cd3934af6698af09841de1905bc0d4c924e991873d2710b00335640",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "0b65ba118004e6b663dc87077ed41c0c1c254f444a10dedf45d2f3914abc83b7",
+  "agent_notes": "All published totals are retained and overlap their component categories; do not sum totals and components together. Estimates and standard errors are separate blocks. Structurally blank value cells are excluded without imputation. Sex headings apply to the following employee categories.",
+  "new_dimensions": [
+    {
+      "name": "employment_status",
+      "description": "Whether employees work full-time or part-time, including all employees.",
+      "example_labels": [
+        "Full-time employees",
+        "Part-time employees",
+        "All employees"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "estimate_1",
+      "range": "A7:E19",
+      "values_range": "B9,C9,D9,E9,B10,C10,D10,E10,B11,C11,D11,E11,B13,C13,D13,E13,B14,C14,D14,E14,B15,C15,D15,E15,B17,C17,D17,E17,B18,C18,D18,E18,B19,C19,D19,E19",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A9,A10,A11,A13,A14,A15,A17,A18,A19"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A8,A12,A16"
+        }
+      ]
+    },
+    {
+      "name": "estimate_2",
+      "range": "A20:E32",
+      "values_range": "B22,C22,D22,E22,B23,C23,D23,E23,B24,C24,D24,E24,B26,C26,D26,E26,B27,C27,D27,E27,B28,C28,D28,E28,B30,C30,D30,E30,B31,C31,D31,E31,B32,C32,D32,E32",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A20"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A22,A23,A24,A26,A27,A28,A30,A31,A32"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A21,A25,A29"
+        }
+      ]
+    },
+    {
+      "name": "estimate_3",
+      "range": "A33:E45",
+      "values_range": "B35,C35,D35,E35,B36,C36,D36,E36,B37,C37,D37,E37,B39,C39,D39,E39,B40,C40,D40,E40,B41,C41,D41,E41,B43,C43,D43,E43,B44,C44,D44,E44,B45,C45,D45,E45",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A35,A36,A37,A39,A40,A41,A43,A44,A45"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A34,A38,A42"
+        }
+      ]
+    },
+    {
+      "name": "estimate_4",
+      "range": "A46:E58",
+      "values_range": "B48,C48,D48,E48,B49,C49,D49,E49,B50,C50,D50,E50,B52,C52,D52,E52,B53,C53,D53,E53,B54,C54,D54,E54,B56,C56,D56,E56,B57,C57,D57,E57,B58,C58,D58,E58",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A48,A49,A50,A52,A53,A54,A56,A57,A58"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A47,A51,A55"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_1",
+      "range": "A60:E72",
+      "values_range": "B62,C62,D62,E62,B63,C63,D63,E63,B64,C64,D64,E64,B66,C66,D66,E66,B67,C67,D67,E67,B68,C68,D68,E68,B70,C70,D70,E70,B71,C71,D71,E71,B72,C72,D72,E72",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A59"
+        },
+        {
+          "name": "measure",
+          "cells": "A60"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A62,A63,A64,A66,A67,A68,A70,A71,A72"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A61,A65,A69"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_2",
+      "range": "A73:E85",
+      "values_range": "B75,C75,D75,E75,B76,C76,D76,E76,B77,C77,D77,E77,B79,C79,D79,E79,B80,C80,D80,E80,B81,C81,D81,E81,B83,C83,D83,E83,B84,C84,D84,E84,B85,C85,D85,E85",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A59"
+        },
+        {
+          "name": "measure",
+          "cells": "A73"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A75,A76,A77,A79,A80,A81,A83,A84,A85"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A74,A78,A82"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_3",
+      "range": "A86:E98",
+      "values_range": "B88,C88,D88,E88,B89,C89,D89,E89,B90,C90,D90,E90,B92,C92,D92,E92,B93,C93,D93,E93,B94,C94,D94,E94,B96,C96,D96,E96,B97,C97,D97,E97,B98,C98,D98,E98",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A59"
+        },
+        {
+          "name": "measure",
+          "cells": "A86"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A88,A89,A90,A92,A93,A94,A96,A97,A98"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A87,A91,A95"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_4",
+      "range": "A99:E111",
+      "values_range": "B101,C101,D101,E101,B102,C102,D102,E102,B103,C103,D103,E103,B105,C105,D105,E105,B106,C106,D106,E106,B107,C107,D107,E107,B109,C109,D109,E109,B110,C110,D110,E110,B111,C111,D111,E111",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A59"
+        },
+        {
+          "name": "measure",
+          "cells": "A99"
+        }
+      ],
+      "headers": [
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        },
+        {
+          "name": "employment_status",
+          "direction": "W",
+          "cells": "A101,A102,A103,A105,A106,A107,A109,A110,A111"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A100,A104,A108"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:08:55Z",
+    "tool_version": "0.2.0",
+    "records": 288,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T090744Z-04c962d49ff0",
+    "started_at": "2026-10-31T09:07:46Z",
+    "workbook": "04c962d49ff030d627d0154ba453984042bc6dd935da14e17f1417b9e71d8c9e--employee-earnings-and-hours-australia-2023-cube-4-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19137-0cb5-77a3-8470-920a7de7b3ee",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7add1328137d388d32e50e85c6c08c294fd8bb6fe02ccab70d4101594d4325c5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `04c962d49ff030d627d0154ba453984042bc6dd935da14e17f1417b9e71d8c9e--employee-earnings-and-hours-australia-2023-cube-4-source.xlsx`.\n\n- Publication: Employee Earnings and Hours, Australia (Australian Bureau of Statistics)\n- Release or year: May 2023\n- Sheets needing a recipe: 15 of 15\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 2d49f5da4056f09ef14a6fd2ed0f8825a73741a3c176d892655143d884ed0ac4 | missing |\n| \"Table_1\" | 5516a69c4cd3934af6698af09841de1905bc0d4c924e991873d2710b00335640 | missing |\n| \"Table_2\" | b5e91ff51f76e910664305b88e2e0fe3a4affd06ed5f1ab48f009bf0cb0f2f6a | missing |\n| \"Table_3\" | 3789005968a4bfac9c5647717249b4ae0d324d1ae1468f964d1381088c267e29 | missing |\n| \"Table_4\" | a1fa493df40ea0ca52f2d3097a61d0ffcb0692d09ce58fb02165bfb2dd668823 | missing |\n| \"Table_5\" | 77cf066631bef25d62b75ea8629b1f64a8cabcf2a600fd967dd14566aa45e582 | missing |\n| \"Table_6\" | 8009b41ba4ed63e67c64e62f91136c4134930bf169f2630139d2bcd7351d3b58 | missing |\n| \"Table_7\" | 8376c623cddcf59da78dc9dda2555555abc578eea791d21163b8728a7186f7c3 | missing |\n| \"Table_8\" | 2e2ce7a32ef5e353b6ab6e64a83fd7f1c6b3d1b9599ecb363e83ba69496ed36f | missing |\n| \"Table_9\" | 68509b6eb99ddeb06f03e76df0b34a562cdb19c01f55298b1db624e16720de38 | missing |\n| \"Table_10\" | e489fbbcf6fab209616c0809d13f2fb441688565bf897fb6df799b080b276b4d | missing |\n| \"Table_11\" | 6f6a02582d59818262e1380ce14d5aed54d5a2f29e23594241fb38e8e45ae7c8 | missing |\n| \"Table_12\" | 985e3b70b7deeda30f901d19150af5cf73b70e7cdcd8019ec84d826755f89b1e | missing |\n| \"Table_13\" | 3635c62caf121952c234a8451da5c6959afd62c1e0b2a17a5ebf63d5c8a4f803 | missing |\n| \"Table_14\" | 9a2a78aad83751abcd6c1fdf04746a0b7d7dbbbb131eda81f6cb3d0baf63937d | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T090744Z-04c962d49ff0.jsonl"
+  }
+}

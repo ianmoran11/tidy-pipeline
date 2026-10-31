@@ -1,0 +1,178 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b363a82f2107d7bd04199640c536cc4d3968353671031b296872cfa2b972a559",
+  "sheet": "Table 7",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "cbf6d9f814c79836318b40a3156b044010d01c2a3b28106c80ead1ef8bb07849",
+  "agent_notes": "Published total rows retained. Federal offence groups are distinct from ANZSOC. Two blocks count finalised and proven guilty defendants. Blank source value cells omitted, not treated as zero; Security in the guilty block has no published values. Blank source value cells omitted without imputation; all populated cells and total rows/columns retained.",
+  "new_dimensions": [
+    {
+      "name": "principal_federal_offence_group",
+      "description": "Principal federal offence classified into the ABS federal offence groups, an alternative to ANZSOC.",
+      "example_labels": [
+        "Aviation",
+        "Communications",
+        "Tax"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "finalised",
+      "range": "A6:Q35",
+      "values_range": "B9,C9,D9,E9,F9,G9,H9,I9,J9,K9,L9,M9,N9,O9,P9,Q9,B10,C10,D10,E10,F10,G10,H10,I10,J10,K10,L10,M10,N10,O10,P10,Q10,B11,C11,D11,E11,F11,G11,H11,I11,J11,K11,L11,M11,N11,O11,P11,Q11,B12,C12,D12,E12,F12,G12,H12,I12,J12,K12,L12,M12,N12,O12,P12,Q12,B13,C13,D13,E13,F13,G13,H13,I13,J13,K13,L13,M13,N13,O13,P13,Q13,B14,C14,D14,E14,F14,G14,H14,I14,J14,K14,L14,M14,N14,O14,P14,Q14,B15,C15,D15,E15,F15,G15,H15,I15,J15,K15,L15,M15,N15,O15,P15,Q15,B16,C16,D16,E16,F16,G16,H16,I16,J16,K16,L16,M16,N16,O16,P16,Q16,B17,C17,D17,E17,F17,G17,H17,I17,J17,K17,L17,M17,N17,O17,P17,Q17,B18,C18,D18,E18,F18,G18,H18,I18,J18,K18,L18,M18,N18,O18,P18,Q18,B19,C19,D19,E19,F19,G19,H19,I19,J19,K19,L19,M19,N19,O19,P19,Q19,B20,C20,D20,E20,F20,G20,H20,I20,J20,K20,L20,M20,N20,O20,P20,Q20,B21,D21,F21,H21,J21,L21,N21,P21,B22,C22,D22,E22,F22,G22,H22,I22,J22,K22,L22,M22,N22,O22,P22,Q22,B23,C23,D23,E23,F23,G23,H23,I23,J23,K23,L23,M23,N23,O23,P23,Q23,B24,C24,D24,E24,F24,G24,H24,I24,J24,K24,L24,M24,N24,O24,P24,Q24,B25,C25,D25,E25,F25,G25,H25,I25,J25,K25,L25,M25,N25,O25,P25,Q25,B26,C26,D26,E26,F26,G26,H26,I26,J26,K26,L26,M26,N26,O26,P26,Q26,B27,C27,D27,E27,F27,G27,H27,I27,J27,K27,L27,M27,N27,O27,P27,Q27,B28,C28,D28,E28,F28,G28,H28,I28,J28,K28,L28,M28,N28,O28,P28,Q28,B29,C29,D29,E29,F29,G29,H29,I29,J29,K29,L29,M29,N29,O29,P29,Q29,C30,E30,G30,I30,K30,M30,O30,Q30,B31,C31,D31,E31,F31,G31,H31,I31,J31,K31,L31,M31,N31,O31,P31,Q31,B32,C32,D32,E32,F32,G32,H32,I32,J32,K32,L32,M32,N32,O32,P32,Q32,B33,C33,D33,E33,F33,G33,H33,I33,J33,K33,L33,M33,N33,O33,P33,Q33,B34,D34,F34,H34,J34,L34,N34,P34,B35,C35,D35,E35,F35,G35,H35,I35,J35,K35,L35,M35,N35,O35,P35,Q35",
+      "headers": [
+        {
+          "name": "principal_federal_offence_group",
+          "caption": "Principal federal offence group",
+          "direction": "W",
+          "cells": "A9:A35"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6,N6,P6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "proven_guilty",
+      "range": "A36:Q63",
+      "values_range": "B37,C37,D37,F37,G37,H37,I37,J37,K37,L37,M37,N37,O37,P37,Q37,B38,C38,D38,E38,F38,G38,H38,I38,J38,K38,L38,M38,N38,O38,P38,Q38,B39,C39,D39,E39,F39,G39,H39,I39,J39,K39,L39,M39,N39,O39,P39,Q39,B40,C40,D40,E40,F40,G40,H40,I40,J40,K40,L40,M40,N40,O40,P40,Q40,C41,E41,G41,I41,K41,M41,O41,Q41,B42,C42,D42,E42,F42,G42,H42,I42,J42,K42,L42,M42,N42,O42,P42,Q42,C43,E43,G43,I43,K43,M43,O43,Q43,B44,C44,D44,E44,F44,G44,H44,I44,J44,K44,L44,M44,N44,O44,P44,Q44,B45,C45,D45,E45,F45,G45,H45,I45,J45,K45,L45,M45,N45,O45,P45,Q45,B46,C46,D46,E46,F46,G46,H46,I46,J46,K46,L46,M46,N46,O46,P46,Q46,B47,C47,D47,E47,F47,G47,H47,I47,J47,K47,L47,M47,N47,O47,P47,Q47,B48,C48,D48,E48,F48,G48,H48,I48,J48,K48,L48,M48,N48,O48,P48,Q48,B49,C49,D49,E49,F49,G49,H49,I49,J49,K49,L49,M49,N49,O49,P49,Q49,B50,C50,D50,E50,F50,G50,H50,I50,J50,K50,L50,M50,N50,O50,P50,Q50,B51,C51,D51,E51,F51,G51,H51,I51,J51,K51,L51,M51,N51,O51,P51,Q51,B52,C52,D52,E52,F52,G52,H52,I52,J52,K52,L52,M52,N52,O52,P52,Q52,B53,C53,D53,E53,F53,G53,H53,I53,J53,K53,L53,M53,N53,O53,P53,Q53,B54,C54,D54,E54,F54,G54,H54,I54,J54,K54,L54,M54,N54,O54,P54,Q54,C55,E55,G55,I55,K55,M55,O55,Q55,B56,C56,D56,E56,F56,G56,H56,I56,J56,K56,L56,M56,N56,O56,P56,Q56,B58,C58,D58,E58,F58,G58,H58,I58,J58,K58,L58,M58,N58,O58,P58,Q58,B59,C59,D59,E59,F59,G59,H59,I59,J59,K59,L59,M59,N59,O59,P59,Q59,B60,C60,D60,E60,F60,G60,H60,I60,J60,K60,L60,M60,N60,O60,P60,Q60,B61,C61,D61,E61,F61,G61,H61,I61,J61,K61,L61,M61,N61,O61,P61,Q61,B62,D62,F62,H62,J62,L62,N62,P62,B63,C63,D63,E63,F63,G63,H63,I63,J63,K63,L63,M63,N63,O63,P63,Q63",
+      "headers": [
+        {
+          "name": "principal_federal_offence_group",
+          "caption": "Principal federal offence group",
+          "direction": "W",
+          "cells": "A37:A63"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6,N6,P6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B36"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:10:53Z",
+    "tool_version": "0.2.0",
+    "records": 791,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T100959Z-8ec0d6ae7b68",
+    "started_at": "2026-10-31T10:10:01Z",
+    "workbook": "8ec0d6ae7b68e88c7ec39a8446ca91d73dbd3f151b50f6b959eb34fdd68d8ede--federal-defendants-australia-2018-19-cube-2-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19170-0b8c-7607-968f-0aea61dcab10",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "00909d885295f296106ba9c5b6b8a47037ccdcfc59ba6c542af7f4669cc2313c",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8ec0d6ae7b68e88c7ec39a8446ca91d73dbd3f151b50f6b959eb34fdd68d8ede--federal-defendants-australia-2018-19-cube-2-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | ae429bed6d2edceb1ab8df8adfb405ce9ee2bef4d06f8b258fd0f177ba392bc5 | missing |\n| \"Table 5\" | 40171647e168970bf80c64bdec920c23e6cf1987166faa6e3b178848a0778e99 | missing |\n| \"Table 6\" | 563a87df1ecdde5565ed4dab92ffaa35aebc7700a3c439331e18ab1cbb9a8ae8 | missing |\n| \"Table 7\" | b363a82f2107d7bd04199640c536cc4d3968353671031b296872cfa2b972a559 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T100959Z-8ec0d6ae7b68.jsonl"
+  }
+}

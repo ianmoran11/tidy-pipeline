@@ -1,0 +1,142 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "49131b2b16a59e12e80bcbd99b2602ba5b1ede4f84cc5c72b0d092e640245289",
+  "sheet": "Table CA.5",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Return measures retained separately; corrective-services returns include a prison sentence or community corrections order as defined in the notes.",
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "A11:C12"
+    },
+    {
+      "name": "source",
+      "cells": "A14,E14"
+    }
+  ],
+  "tables": [
+    {
+      "name": "returns",
+      "range": "A2:U9",
+      "values_range": "M5:U6,M8:U9",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "measure",
+          "direction": "WNW",
+          "cells": "B4,B7"
+        },
+        {
+          "name": "year",
+          "direction": "W",
+          "cells": "C5:C6,C8:C9"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L5:L6,L8:L9"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:33:30Z",
+    "tool_version": "0.2.0",
+    "records": 36,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T063257Z-059f3653a94f",
+    "started_at": "2026-10-31T06:32:57Z",
+    "workbook": "059f3653a94f9de34c4837f90ea7f2dab0eb22128133b00dc0b0edf95e578dd4--report-on-government-services-justice-2020-sector-overview-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190a9-4f93-71a5-8735-1d469907112c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "a0f3b70746ba2896ddd7f5a65ca41c1887178ff5fee6c9aca37b5510f1226da6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `059f3653a94f9de34c4837f90ea7f2dab0eb22128133b00dc0b0edf95e578dd4--report-on-government-services-justice-2020-sector-overview-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2020 — Justice\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 4e61adbb3d335f624495d67895f821bda8a2e4fed9c86176b7557ad6206fe480 | missing |\n| \"Table CA.1\" | d32b7e85d7806ca3575ecc27ddc9e4fd8d8d7b79e8d958dc9f569e348de079ed | missing |\n| \"Table CA.2\" | 03d425ab78fe0eaf6aa5f7c9b275467dfcf6912393086f5f2758d47ab78a4b1f | missing |\n| \"Table CA.3\" | f0fe0b89143e734f4783572a7c3901669466a7e98375a534b7261ad977c256e0 | missing |\n| \"Table CA.4\" | 8516e5dbcb91c1a9a9cd64fe55f0be2684451c02da30f005822503278c489f7f | missing |\n| \"Table CA.5\" | 49131b2b16a59e12e80bcbd99b2602ba5b1ede4f84cc5c72b0d092e640245289 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/059f3653a94f9de34c4837f90ea7f2dab0eb22128133b00dc0b0edf95e578dd4.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

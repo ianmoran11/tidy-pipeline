@@ -1,0 +1,302 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b5508d04bdd23de73f4491e614808bafed3c874c9f0889af29114628ecf23155",
+  "sheet": "Table_9",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "5b8641b8948ecdf2844f76363a737e68cf8728ed6233fe3d0f17bca94c85986a",
+  "agent_notes": "All employees. Published totals and all-category columns overlap components and must not be added to them. Estimates and standard errors are separate blocks. Only populated source values are included; blanks are not zero. Percentile, quartile, median and average labels are retained as measures. Sex blocks include Persons totals. Full-time adult-rate columns, where present, are subsets of full-time totals.",
+  "new_dimensions": [
+    {
+      "name": "weekly_total_cash_earnings_band",
+      "description": "Published bands of weekly total cash earnings, including the total.",
+      "example_labels": [
+        "Under $200",
+        "$3,500 and over",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "estimate_8",
+      "range": "A8:J44",
+      "values_range": "B9,C9,D9,E9,F9,G9,H9,I9,J9,C10,D10,F10,G10,H10,I10,J10,B11,C11,D11,E11,F11,G11,H11,I11,J11,B12,C12,D12,E12,F12,G12,H12,I12,J12,B13,C13,D13,E13,F13,G13,H13,I13,J13,B14,C14,D14,E14,F14,G14,H14,I14,J14,B15,C15,D15,E15,F15,G15,H15,I15,J15,B16,C16,D16,E16,F16,G16,H16,I16,J16,B17,C17,D17,E17,F17,G17,H17,I17,J17,B18,C18,D18,E18,F18,G18,H18,I18,J18,B19,C19,D19,E19,F19,G19,H19,I19,J19,B20,C20,D20,E20,F20,G20,H20,I20,J20,B21,C21,D21,E21,F21,G21,H21,I21,J21,B22,C22,D22,E22,F22,G22,H22,I22,J22,B23,C23,D23,E23,F23,G23,H23,I23,J23,B24,C24,D24,E24,F24,G24,H24,I24,J24,B25,C25,D25,E25,F25,G25,H25,I25,J25,B26,C26,D26,E26,F26,G26,H26,I26,J26,B27,C27,D27,E27,F27,G27,H27,I27,J27,B28,C28,D28,E28,F28,G28,H28,I28,J28,B29,C29,D29,E29,F29,G29,H29,I29,J29,B30,C30,D30,E30,F30,G30,H30,I30,J30,B31,C31,D31,E31,F31,G31,H31,I31,J31,B32,C32,D32,E32,F32,G32,H32,I32,J32,B33,C33,D33,E33,F33,H33,J33,B34,C34,D34,E34,F34,G34,J34,B35,C35,D35,E35,F35,G35,H35,I35,J35,B36,C36,D36,E36,F36,G36,H36,I36,J36,B37,C37,D37,E37,F37,H37,J37,B38,C38,D38,E38,F38,I38,J38,B39,C39,D39,E39,F39,G39,J39,C40,D40,F40,H40,J40,B41,C41,E41,F41,H41,I41,J41,B42,C42,F42,J42,B43,C43,D43,E43,F43,H43,J43,B44,C44,D44,E44,F44,G44,H44,I44,J44",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "occupation",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A9:A44"
+        }
+      ]
+    },
+    {
+      "name": "estimate_45",
+      "range": "A45:J81",
+      "values_range": "B46,C46,D46,E46,F46,G46,H46,I46,J46,C47,D47,F47,G47,H47,I47,J47,B48,C48,D48,E48,F48,G48,H48,I48,J48,B49,C49,D49,E49,F49,G49,H49,I49,J49,B50,C50,D50,E50,F50,G50,H50,I50,J50,B51,C51,D51,E51,F51,G51,H51,I51,J51,B52,C52,D52,E52,F52,G52,H52,I52,J52,B53,C53,D53,E53,F53,G53,H53,I53,J53,B54,C54,D54,E54,F54,G54,H54,I54,J54,B55,C55,D55,E55,F55,G55,H55,I55,J55,B56,C56,D56,E56,F56,G56,H56,I56,J56,B57,C57,D57,E57,F57,G57,H57,I57,J57,B58,C58,D58,E58,F58,G58,H58,I58,J58,B59,C59,D59,E59,F59,G59,H59,I59,J59,B60,C60,D60,E60,F60,G60,H60,I60,J60,B61,C61,D61,E61,F61,G61,H61,I61,J61,B62,C62,D62,E62,F62,G62,H62,I62,J62,B63,C63,D63,E63,F63,G63,H63,I63,J63,B64,C64,D64,E64,F64,G64,H64,I64,J64,B65,C65,D65,E65,F65,G65,H65,I65,J65,B66,C66,D66,E66,F66,G66,H66,I66,J66,B67,C67,D67,E67,F67,G67,H67,I67,J67,B68,C68,D68,E68,F68,G68,H68,I68,J68,B69,C69,D69,E69,F69,G69,H69,I69,J69,B70,C70,D70,E70,F70,H70,J70,B71,C71,D71,E71,F71,G71,J71,B72,C72,D72,E72,F72,G72,H72,J72,B73,C73,D73,E73,F73,H73,J73,B74,C74,D74,E74,F74,H74,J74,B75,C75,D75,E75,F75,J75,B76,C76,D76,F76,J76,C77,F77,H77,J77,B78,C78,E78,F78,H78,J78,B79,C79,F79,J79,B80,C80,D80,E80,F80,H80,J80,B81,C81,D81,E81,F81,G81,H81,I81,J81",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A45"
+        }
+      ],
+      "headers": [
+        {
+          "name": "occupation",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A46:A81"
+        }
+      ]
+    },
+    {
+      "name": "estimate_82",
+      "range": "A82:J118",
+      "values_range": "B83,C83,D83,E83,F83,G83,H83,I83,J83,B84,C84,D84,E84,F84,G84,H84,I84,J84,B85,C85,D85,E85,F85,G85,H85,I85,J85,B86,C86,D86,E86,F86,G86,H86,I86,J86,B87,C87,D87,E87,F87,G87,H87,I87,J87,B88,C88,D88,E88,F88,G88,H88,I88,J88,B89,C89,D89,E89,F89,G89,H89,I89,J89,B90,C90,D90,E90,F90,G90,H90,I90,J90,B91,C91,D91,E91,F91,G91,H91,I91,J91,B92,C92,D92,E92,F92,G92,H92,I92,J92,B93,C93,D93,E93,F93,G93,H93,I93,J93,B94,C94,D94,E94,F94,G94,H94,I94,J94,B95,C95,D95,E95,F95,G95,H95,I95,J95,B96,C96,D96,E96,F96,G96,H96,I96,J96,B97,C97,D97,E97,F97,G97,H97,I97,J97,B98,C98,D98,E98,F98,G98,H98,I98,J98,B99,C99,D99,E99,F99,G99,H99,I99,J99,B100,C100,D100,E100,F100,G100,H100,I100,J100,B101,C101,D101,E101,F101,G101,H101,I101,J101,B102,C102,D102,E102,F102,G102,H102,I102,J102,B103,C103,D103,E103,F103,G103,H103,I103,J103,B104,C104,D104,E104,F104,G104,H104,I104,J104,B105,C105,D105,E105,F105,G105,H105,I105,J105,B106,C106,D106,E106,F106,G106,H106,I106,J106,B107,C107,D107,E107,F107,H107,J107,B108,C108,D108,E108,F108,G108,J108,B109,C109,D109,E109,F109,G109,H109,I109,J109,B110,C110,D110,E110,F110,H110,J110,B111,C111,D111,E111,F111,H111,J111,B112,C112,D112,E112,F112,G112,H112,I112,J112,B113,C113,D113,E113,F113,G113,J113,B114,C114,D114,E114,F114,H114,J114,B115,C115,D115,E115,F115,G115,H115,I115,J115,B116,C116,D116,E116,F116,H116,J116,B117,C117,D117,E117,F117,H117,J117,B118,C118,D118,E118,F118,G118,H118,I118,J118",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A82"
+        }
+      ],
+      "headers": [
+        {
+          "name": "occupation",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A83:A118"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_121",
+      "range": "A121:J157",
+      "values_range": "B122,C122,D122,E122,F122,G122,H122,I122,J122,C123,D123,F123,G123,H123,I123,J123,B124,C124,D124,E124,F124,G124,H124,I124,J124,B125,C125,D125,E125,F125,G125,H125,I125,J125,B126,C126,D126,E126,F126,G126,H126,I126,J126,B127,C127,D127,E127,F127,G127,H127,I127,J127,B128,C128,D128,E128,F128,G128,H128,I128,J128,B129,C129,D129,E129,F129,G129,H129,I129,J129,B130,C130,D130,E130,F130,G130,H130,I130,J130,B131,C131,D131,E131,F131,G131,H131,I131,J131,B132,C132,D132,E132,F132,G132,H132,I132,J132,B133,C133,D133,E133,F133,G133,H133,I133,J133,B134,C134,D134,E134,F134,G134,H134,I134,J134,B135,C135,D135,E135,F135,G135,H135,I135,J135,B136,C136,D136,E136,F136,G136,H136,I136,J136,B137,C137,D137,E137,F137,G137,H137,I137,J137,B138,C138,D138,E138,F138,G138,H138,I138,J138,B139,C139,D139,E139,F139,G139,H139,I139,J139,B140,C140,D140,E140,F140,G140,H140,I140,J140,B141,C141,D141,E141,F141,G141,H141,I141,J141,B142,C142,D142,E142,F142,G142,H142,I142,J142,B143,C143,D143,E143,F143,G143,H143,I143,J143,B144,C144,D144,E144,F144,G144,H144,I144,J144,B145,C145,D145,E145,F145,G145,H145,I145,J145,B146,C146,D146,E146,F146,H146,J146,B147,C147,D147,E147,F147,G147,J147,B148,C148,D148,E148,F148,G148,H148,I148,J148,B149,C149,D149,E149,F149,G149,H149,I149,J149,B150,C150,D150,E150,F150,H150,J150,B151,C151,D151,E151,F151,I151,J151,B152,C152,D152,E152,F152,G152,J152,C153,D153,F153,H153,J153,B154,C154,E154,F154,H154,I154,J154,B155,C155,F155,J155,B156,C156,D156,E156,F156,H156,J156,B157,C157,D157,E157,F157,G157,H157,I157,J157",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A119"
+        },
+        {
+          "name": "measure",
+          "cells": "A120"
+        },
+        {
+          "name": "sex",
+          "cells": "A121"
+        }
+      ],
+      "headers": [
+        {
+          "name": "occupation",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A122:A157"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_158",
+      "range": "A158:J194",
+      "values_range": "B159,C159,D159,E159,F159,G159,H159,I159,J159,C160,D160,F160,G160,H160,I160,J160,B161,C161,D161,E161,F161,G161,H161,I161,J161,B162,C162,D162,E162,F162,G162,H162,I162,J162,B163,C163,D163,E163,F163,G163,H163,I163,J163,B164,C164,D164,E164,F164,G164,H164,I164,J164,B165,C165,D165,E165,F165,G165,H165,I165,J165,B166,C166,D166,E166,F166,G166,H166,I166,J166,B167,C167,D167,E167,F167,G167,H167,I167,J167,B168,C168,D168,E168,F168,G168,H168,I168,J168,B169,C169,D169,E169,F169,G169,H169,I169,J169,B170,C170,D170,E170,F170,G170,H170,I170,J170,B171,C171,D171,E171,F171,G171,H171,I171,J171,B172,C172,D172,E172,F172,G172,H172,I172,J172,B173,C173,D173,E173,F173,G173,H173,I173,J173,B174,C174,D174,E174,F174,G174,H174,I174,J174,B175,C175,D175,E175,F175,G175,H175,I175,J175,B176,C176,D176,E176,F176,G176,H176,I176,J176,B177,C177,D177,E177,F177,G177,H177,I177,J177,B178,C178,D178,E178,F178,G178,H178,I178,J178,B179,C179,D179,E179,F179,G179,H179,I179,J179,B180,C180,D180,E180,F180,G180,H180,I180,J180,B181,C181,D181,E181,F181,G181,H181,I181,J181,B182,C182,D182,E182,F182,G182,H182,I182,J182,B183,C183,D183,E183,F183,H183,J183,B184,C184,D184,E184,F184,G184,J184,B185,C185,D185,E185,F185,G185,H185,J185,B186,C186,D186,E186,F186,H186,J186,B187,C187,D187,E187,F187,H187,J187,B188,C188,D188,E188,F188,J188,B189,C189,D189,F189,J189,C190,F190,H190,J190,B191,C191,E191,F191,H191,J191,B192,C192,F192,J192,B193,C193,D193,E193,F193,H193,J193,B194,C194,D194,E194,F194,G194,H194,I194,J194",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A119"
+        },
+        {
+          "name": "measure",
+          "cells": "A120"
+        },
+        {
+          "name": "sex",
+          "cells": "A158"
+        }
+      ],
+      "headers": [
+        {
+          "name": "occupation",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A159:A194"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_195",
+      "range": "A195:J231",
+      "values_range": "B196,C196,D196,E196,F196,G196,H196,I196,J196,B197,C197,D197,E197,F197,G197,H197,I197,J197,B198,C198,D198,E198,F198,G198,H198,I198,J198,B199,C199,D199,E199,F199,G199,H199,I199,J199,B200,C200,D200,E200,F200,G200,H200,I200,J200,B201,C201,D201,E201,F201,G201,H201,I201,J201,B202,C202,D202,E202,F202,G202,H202,I202,J202,B203,C203,D203,E203,F203,G203,H203,I203,J203,B204,C204,D204,E204,F204,G204,H204,I204,J204,B205,C205,D205,E205,F205,G205,H205,I205,J205,B206,C206,D206,E206,F206,G206,H206,I206,J206,B207,C207,D207,E207,F207,G207,H207,I207,J207,B208,C208,D208,E208,F208,G208,H208,I208,J208,B209,C209,D209,E209,F209,G209,H209,I209,J209,B210,C210,D210,E210,F210,G210,H210,I210,J210,B211,C211,D211,E211,F211,G211,H211,I211,J211,B212,C212,D212,E212,F212,G212,H212,I212,J212,B213,C213,D213,E213,F213,G213,H213,I213,J213,B214,C214,D214,E214,F214,G214,H214,I214,J214,B215,C215,D215,E215,F215,G215,H215,I215,J215,B216,C216,D216,E216,F216,G216,H216,I216,J216,B217,C217,D217,E217,F217,G217,H217,I217,J217,B218,C218,D218,E218,F218,G218,H218,I218,J218,B219,C219,D219,E219,F219,G219,H219,I219,J219,B220,C220,D220,E220,F220,H220,J220,B221,C221,D221,E221,F221,G221,J221,B222,C222,D222,E222,F222,G222,H222,I222,J222,B223,C223,D223,E223,F223,H223,J223,B224,C224,D224,E224,F224,H224,J224,B225,C225,D225,E225,F225,G225,H225,I225,J225,B226,C226,D226,E226,F226,G226,J226,B227,C227,D227,E227,F227,H227,J227,B228,C228,D228,E228,F228,G228,H228,I228,J228,B229,C229,D229,E229,F229,H229,J229,B230,C230,D230,E230,F230,H230,J230,B231,C231,D231,E231,F231,G231,H231,I231,J231",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A119"
+        },
+        {
+          "name": "measure",
+          "cells": "A120"
+        },
+        {
+          "name": "sex",
+          "cells": "A195"
+        }
+      ],
+      "headers": [
+        {
+          "name": "occupation",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A196:A231"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:10:26Z",
+    "tool_version": "0.2.0",
+    "records": 1796,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T090905Z-49d6f7f44d03",
+    "started_at": "2026-10-31T09:09:07Z",
+    "workbook": "49d6f7f44d0335cf56806ac993e8fd1bc0c3247740add2b174f8496b9459dc4f--employee-earnings-and-hours-australia-2023-cube-3-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19138-49c0-70c5-a2e0-1f87bcb33014",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "879d0ad9c0ce64b145f7d1cb909989152fe775adb2670207436a14b912bb54ce",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `49d6f7f44d0335cf56806ac993e8fd1bc0c3247740add2b174f8496b9459dc4f--employee-earnings-and-hours-australia-2023-cube-3-source.xlsx`.\n\n- Publication: Employee Earnings and Hours, Australia (Australian Bureau of Statistics)\n- Release or year: May 2023\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 60eb1f4db731253794f88b3742cb170bba09eabd3cadd06e0abcf76fedb50a1d | missing |\n| \"Table_1\" | cc9109538798e93fb8c986db400309355209abebcd5d24140a7b198e5252fa13 | missing |\n| \"Table_2\" | 0c4c8e07a4fb74334034ec202b81ff0a82519d5cfee06b3476f3fce636dc6f49 | missing |\n| \"Table_3\" | e6a83147ecc92f161db1777007c56ed519d572bc1155bd746e687591cba06dac | missing |\n| \"Table_4\" | 11563200e737a0bbb1d7673e0514a420c66d79dd5a276dd240d6b1be15d3713d | missing |\n| \"Table_5\" | d20868db8a133b3b7df9f1acdee2f3f4976a93d5c077cce3a92f9f2b6489d450 | missing |\n| \"Table_6\" | 2550f8ae238f64d814741cd79effa8e5510be08261141e6c73f42dc56b042fcb | missing |\n| \"Table_7\" | 6d640d66a6752b86d212e810257c0f4e5f5343262a72b67d098a1391e45f53cd | missing |\n| \"Table_8\" | 5bb5daa93b8c96975b32a1741c04b2b903ca460bec7e8c5ae90191e12443eba4 | missing |\n| \"Table_9\" | b5508d04bdd23de73f4491e614808bafed3c874c9f0889af29114628ecf23155 | missing |\n| \"Table_10\" | fcd0755560036b3dabb367ecca8aaab2ea6799a2cd16a7b0c6ae728917e47534 | missing |\n| \"Table_11\" | b241717be4fff4647c297ca6e53117b497132659fb78ed39d59deccb32c143f6 | missing |\n| \"Table_12\" | 1efa60f2318e48c8619d9244ce35c9d36d69c4170a67e557eaa4890619241511 | missing |\n| \"Table_13\" | 98626a5df64947b6c06c6de09acda90f43808adf3c7beecb4e6e1bd8f991b92c | missing |\n| \"Table_14\" | c38d6b31892341210c9b31170372d17449b5e9e07cfcf0b0489ec6a40daebfed | missing |\n| \"Table_15\" | 9fd738e1c14292faa31f32beab6700854962edfa12374730ab129405691b2e74 | missing |\n| \"Table_16\" | e0d9d4464dc33d9fd4d56615e722b3181515c53fd8f0b440373d4a156a2ca10f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T090905Z-49d6f7f44d03.jsonl"
+  }
+}

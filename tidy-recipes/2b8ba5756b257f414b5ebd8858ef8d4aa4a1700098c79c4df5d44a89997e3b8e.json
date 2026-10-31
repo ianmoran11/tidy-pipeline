@@ -1,0 +1,168 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "2b8ba5756b257f414b5ebd8858ef8d4aa4a1700098c79c4df5d44a89997e3b8e",
+  "sheet": "Table 5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "40171647e168970bf80c64bdec920c23e6cf1987166faa6e3b178848a0778e99",
+  "agent_notes": "All published totals and subtotals retained; these overlap component categories. Federal offence groups are distinct from ANZSOC and declared separately. Blank source cells omitted without imputation, including rows with no published values; published labels and zeros retained.",
+  "new_dimensions": [
+    {
+      "name": "principal_federal_offence_group",
+      "description": "Principal federal offence classified into the ABS federal offence groups, an alternative to ANZSOC.",
+      "example_labels": [
+        "Aviation",
+        "Communications",
+        "Tax"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "2017_18",
+      "range": "A6:G34",
+      "values_range": "B8,C8,D8,E8,F8,G8,B9,C9,D9,E9,F9,G9,B10,C10,D10,E10,F10,G10,B11,C11,D11,E11,F11,G11,B12,C12,D12,E12,F12,G12,B13,C13,D13,E13,F13,G13,B14,C14,D14,E14,F14,G14,B15,C15,D15,E15,F15,G15,B16,C16,D16,E16,F16,G16,B17,C17,D17,E17,F17,G17,B18,C18,D18,E18,F18,G18,B19,C19,D19,E19,F19,G19,B20,C20,D20,E20,F20,G20,B21,C21,D21,E21,F21,G21,B22,C22,D22,E22,F22,G22,B23,C23,D23,E23,F23,G23,B24,C24,D24,E24,F24,G24,B25,C25,D25,E25,F25,G25,B26,C26,D26,E26,F26,G26,B27,C27,D27,E27,F27,G27,B28,C28,D28,E28,F28,G28,B29,C29,D29,E29,F29,G29,B30,C30,D30,E30,F30,G30,B31,C31,D31,E31,F31,G31,B32,C32,D32,E32,F32,G32,B33,C33,D33,E33,F33,G33,B34,C34,D34,E34,F34,G34",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_federal_offence_group",
+          "caption": "Principal Federal Offence Group",
+          "direction": "W",
+          "cells": "A8:A34"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B6:G6"
+        }
+      ]
+    },
+    {
+      "name": "2016_17",
+      "range": "A35:G62",
+      "values_range": "B36,C36,D36,E36,F36,G36,B37,C37,D37,E37,F37,G37,B38,C38,D38,E38,F38,G38,B39,C39,D39,E39,F39,G39,B40,C40,D40,E40,F40,G40,B41,C41,D41,E41,F41,G41,B42,C42,D42,E42,F42,G42,B43,C43,D43,E43,F43,G43,B44,C44,D44,E44,F44,G44,B45,C45,D45,E45,F45,G45,B46,C46,D46,E46,F46,G46,B47,C47,D47,E47,F47,G47,B48,C48,D48,E48,F48,G48,B49,C49,D49,E49,F49,G49,B50,C50,D50,E50,F50,G50,B51,C51,D51,E51,F51,G51,B52,C52,D52,E52,F52,G52,B53,C53,D53,E53,F53,G53,G54,B55,C55,D55,E55,F55,G55,B56,C56,D56,E56,F56,G56,B57,C57,D57,E57,F57,G57,B58,C58,D58,E58,F58,G58,B59,C59,D59,E59,F59,G59,B60,C60,D60,E60,F60,G60,B61,C61,D61,E61,F61,G61,B62,C62,D62,E62,F62,G62",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_federal_offence_group",
+          "caption": "Principal Federal Offence Group",
+          "direction": "W",
+          "cells": "A36:A62"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B6:G6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:11:38Z",
+    "tool_version": "0.2.0",
+    "records": 319,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101057Z-84210e1cd9db",
+    "started_at": "2026-10-31T10:10:57Z",
+    "workbook": "84210e1cd9dbc400a201a4a45d2153831ff64a093882058b3ae0c8238831e9d8--federal-defendants-australia-2017-18-cube-2-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19170-e782-73c0-9b1a-ee52a1b96349",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "26f8346bd70b413182f704a240708de4eb9e4f692aa176e45b9d89d280993286",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `84210e1cd9dbc400a201a4a45d2153831ff64a093882058b3ae0c8238831e9d8--federal-defendants-australia-2017-18-cube-2-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2017-18\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | afbc8a2575ea4d6143c428422e787f30b428facafd91aa095e26ea08db2ef293 | missing |\n| \"Table 5\" | 2b8ba5756b257f414b5ebd8858ef8d4aa4a1700098c79c4df5d44a89997e3b8e | missing |\n| \"Table 6\" | decd75a6f4d0cc30fe647f16ba4b9199872b3d933a2a444ba2eae04b6e2deaef | missing |\n| \"Table 7\" | 9ec71e98b452b4c286897a4eaba63a8a417b288973de08cd0d94f827460d893c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101057Z-84210e1cd9db.jsonl"
+  }
+}

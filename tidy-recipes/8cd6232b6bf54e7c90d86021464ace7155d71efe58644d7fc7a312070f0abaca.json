@@ -1,0 +1,514 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "8cd6232b6bf54e7c90d86021464ace7155d71efe58644d7fc7a312070f0abaca",
+  "sheet": "Table 3",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "a19b33063b87e4c14c45a1ab6651bfe364fc8e8f49b2ff310e31db4e440a9029",
+  "agent_notes": "All totals retained. Offence division, subdivision and group rows are overlapping hierarchies, not additive categories. Adjudicated outcomes and proven guilty are subtotals; sentence parent rows are subtotals and Fines is nested under Monetary orders. Mean/median age and duration remain as published labels in age_group and case_duration. Published spelling errors are preserved. Blank source cells are excluded, not interpreted as zero.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A8,A13,A18,A22,A32,A36,A55,A60,A65,A69,A76,A80"
+    }
+  ],
+  "tables": [
+    {
+      "name": "court_level_9",
+      "range": "A9:Q11",
+      "values_range": "B9:Q11",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "court_level",
+          "direction": "W",
+          "cells": "A9:A11",
+          "caption": "Court level"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "sex_14",
+      "range": "A14:Q16",
+      "values_range": "B14:Q16",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A14:A16",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_19",
+      "range": "A19:Q20",
+      "values_range": "B19:Q20",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A19:A20",
+          "caption": "Age"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_23",
+      "range": "A23:Q30",
+      "values_range": "B23:Q25,B26:I28,L26:Q28,B29:Q30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A23:A30",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_33",
+      "range": "A33:Q34",
+      "values_range": "B33:Q34",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A33:A34",
+          "caption": "Duration from initiation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_37",
+      "range": "A37:Q52",
+      "values_range": "B37:Q52",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A37:A52",
+          "caption": "Principal federal offence (ANZSOC)"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "measure_53",
+      "range": "A53:Q53",
+      "values_range": "B53:Q53",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A53:A53"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "court_level_56",
+      "range": "A56:Q58",
+      "values_range": "B56:Q58",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "court_level",
+          "direction": "W",
+          "cells": "A56:A58",
+          "caption": "Court level"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "sex_61",
+      "range": "A61:Q63",
+      "values_range": "B61:Q63",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A61:A63",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_66",
+      "range": "A66:Q67",
+      "values_range": "B66:Q67",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A66:A67",
+          "caption": "Age"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_70",
+      "range": "A70:Q74",
+      "values_range": "B70:Q74",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A70:A74",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_77",
+      "range": "A77:Q78",
+      "values_range": "B77:Q78",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A77:A78",
+          "caption": "Duration from initiation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_81",
+      "range": "A81:Q96",
+      "values_range": "B81:Q96",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A81:A96",
+          "caption": "Principal federal offence (ANZSOC)"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    },
+    {
+      "name": "measure_97",
+      "range": "A97:Q97",
+      "values_range": "B97:Q97",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A97:A97"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5,J5,L5,N5,P5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:14:41Z",
+    "tool_version": "0.2.0",
+    "records": 1066,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101343Z-2f748242bd2f",
+    "started_at": "2026-10-31T10:13:46Z",
+    "workbook": "2f748242bd2f959a2112b80588aeda102300f797e9d2757252ff73e380a009f5--federal-defendants-australia-2016-17-cube-1-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19173-7c2d-7036-a716-3bb6ab22fec4",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "32bb7d2bfdd14ca932d2ea3865bc4181442c8e9b2330620c7cf2b814d707d4e5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2f748242bd2f959a2112b80588aeda102300f797e9d2757252ff73e380a009f5--federal-defendants-australia-2016-17-cube-1-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2016-17\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6210ed6e226e7d6bb937d2079f2075b9a44912b62f97b2194d63661fb4794336 | missing |\n| \"Table 1\" | aa05c3f517010fcdcac41935324d52765ddc841c956fa0154088877cb0d4f442 | missing |\n| \"Table 2\" | d676c5b2172bab12420e14cab79f79c9bd1a4dceb007afe8f287d7a5a5330d99 | missing |\n| \"Table 3\" | 8cd6232b6bf54e7c90d86021464ace7155d71efe58644d7fc7a312070f0abaca | missing |\n| \"Table 4\" | 5d7cd0072bd9cfdc2e51916e1d851c3ea8c2d6a9a288f116b3cba15647c437b3 | missing |\n| \"Explanatory Notes\" | 710bd45450f2838d3b7ef988778e53981cb3e7a3cf6d0f2fa45cb17b9891c30b | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101343Z-2f748242bd2f.jsonl"
+  }
+}

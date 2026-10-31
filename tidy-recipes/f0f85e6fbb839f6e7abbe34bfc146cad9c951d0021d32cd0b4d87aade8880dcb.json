@@ -1,0 +1,814 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f0f85e6fbb839f6e7abbe34bfc146cad9c951d0021d32cd0b4d87aade8880dcb",
+  "sheet": "Table 8",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "5525d36a393ebc754aba1491a7299f24d90b227900750c688a585dd322f472c0",
+  "agent_notes": "ANZSOC parent and child rows are retained together; parent rows are subtotals, not additive to children. Total guilty outcome is retained at the end of the sentence section. Age means and medians remain published age-axis labels; duration means and medians use measure. Custodial and non-custodial sentence headings have no values and are encoded as principal_sentence_group; each group's totals and overall total are retained. Blank custody-in-community cells for WA and SA are omitted rather than treated as values.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A12,A25,A29,A47,A60,A65,A78,A82,A100,A113,A118,A131,A135,A153,A166,A170,A186,A190,A208"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_8_B",
+      "range": "A8:J10",
+      "values_range": "B8:J10",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A8:A10",
+          "direction": "W",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "age_group_13_B",
+      "range": "A13:J23",
+      "values_range": "B13:J23",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A13:A23",
+          "direction": "W",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "measure_26_B",
+      "range": "A26:J27",
+      "values_range": "B26:J27",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A26:A27",
+          "direction": "W",
+          "caption": "Duration from initiation to finalisation"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_30_B",
+      "range": "A30:J45",
+      "values_range": "B30:J45",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A30:A45",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_49_B",
+      "range": "A49:J52",
+      "values_range": "B49:J49,B50:E50,H50:J50,B51:J52",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A49:A52",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_54_B",
+      "range": "A54:J57",
+      "values_range": "B54:J57",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A54:A57",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_58_B",
+      "range": "A58:J58",
+      "values_range": "B58:J58",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A58:A58",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "sex_61_B",
+      "range": "A61:J63",
+      "values_range": "B61:J63",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A61:A63",
+          "direction": "W",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "age_group_66_B",
+      "range": "A66:J76",
+      "values_range": "B66:J76",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A66:A76",
+          "direction": "W",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "measure_79_B",
+      "range": "A79:J80",
+      "values_range": "B79:J80",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A79:A80",
+          "direction": "W",
+          "caption": "Duration from initiation to finalisation"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_83_B",
+      "range": "A83:J98",
+      "values_range": "B83:J98",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A83:A98",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_102_B",
+      "range": "A102:J105",
+      "values_range": "B102:J102,B103:E103,H103:J103,B104:J105",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A102:A105",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_107_B",
+      "range": "A107:J110",
+      "values_range": "B107:J110",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A106"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A107:A110",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_111_B",
+      "range": "A111:J111",
+      "values_range": "B111:J111",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A111:A111",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "sex_114_B",
+      "range": "A114:J116",
+      "values_range": "B114:J116",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A114:A116",
+          "direction": "W",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "age_group_119_B",
+      "range": "A119:J129",
+      "values_range": "B119:J129",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A119:A129",
+          "direction": "W",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "measure_132_B",
+      "range": "A132:J133",
+      "values_range": "B132:J133",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A132:A133",
+          "direction": "W",
+          "caption": "Duration from initiation to finalisation"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_136_B",
+      "range": "A136:J151",
+      "values_range": "B136:J151",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A136:A151",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_155_B",
+      "range": "A155:J158",
+      "values_range": "B155:J155,B156:E156,H156:J156,B157:J158",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A154"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A155:A158",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_160_B",
+      "range": "A160:J163",
+      "values_range": "B160:J163",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A159"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A160:A163",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_164_B",
+      "range": "A164:J164",
+      "values_range": "B164:J164",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B112"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A164:A164",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "sex_167_B",
+      "range": "A167:J168",
+      "values_range": "B167:J168",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A167:A168",
+          "direction": "W",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "age_group_171_B",
+      "range": "A171:J184",
+      "values_range": "B171:J184",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A171:A184",
+          "direction": "W",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "measure_187_B",
+      "range": "A187:J188",
+      "values_range": "B187:J188",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A187:A188",
+          "direction": "W",
+          "caption": "Duration from initiation to finalisation"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_191_B",
+      "range": "A191:J206",
+      "values_range": "B191:J206",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A191:A206",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_210_B",
+      "range": "A210:J213",
+      "values_range": "B210:J210,B211:E211,H211:J211,B212:J213",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A209"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A210:A213",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_215_B",
+      "range": "A215:J218",
+      "values_range": "B215:J218",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A214"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A215:A218",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_219_B",
+      "range": "A219:J219",
+      "values_range": "B219:J219",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "cells": "A219:A219",
+          "direction": "W",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:18:07Z",
+    "tool_version": "0.2.0",
+    "records": 1486,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101629Z-2f40d5edcfdd",
+    "started_at": "2026-10-31T10:16:30Z",
+    "workbook": "2f40d5edcfdd8bf3520249bded4c5ecb4530b8807b1a5487010a1988d091d32a--criminal-courts-australia-2015-16-cube-2-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19175-f8db-76ee-a218-89d90f7c9824",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "23ffa099bdf04a608ec2992986d4ba958d3ae63163c39364d292cc450f371ae0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2f40d5edcfdd8bf3520249bded4c5ecb4530b8807b1a5487010a1988d091d32a--criminal-courts-australia-2015-16-cube-2-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2015-16\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | b02c84565503cf2cbd40a3ebe4693242ad790610c455bde4ea10cbb483f07558 | missing |\n| \"Table 7\" | 488e0a57104ba6a4b5c0dce9d33941699a41fd590cabbaea0e1fba4f36e6febf | missing |\n| \"Table 8\" | f0f85e6fbb839f6e7abbe34bfc146cad9c951d0021d32cd0b4d87aade8880dcb | missing |\n| \"Table 9\" | f35a0ad1fb514ba26111c5a9c33e3905ba32d2d71b53921e756aa2be30a68011 | missing |\n| \"Table 10\" | d050510f2b2e759e7194eb78251ada03d56283c24cc822669b7f7341340d8408 | missing |\n| \"Table 11\" | d96bbccbfed317722e93744f99334a67e94c307a4f55a7b16f089fdecbd591b0 | missing |\n| \"Explanatory Notes\" | fc66d9a65b978984ec912cc893ef8fa68a2b4b862605f5026c59a7785b17d88e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101629Z-2f40d5edcfdd.jsonl"
+  }
+}

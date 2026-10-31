@@ -1,0 +1,152 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "732128e19263610e5fb48eab61ac6fcb04b2c17d5ae53d6b8b08343337175e7c",
+  "sheet": "Table_7",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "b168bba7db840b7d8247ca4702cdcbe20b1b2dcd04a7b6c061ccf980796a4a30",
+  "agent_notes": "Offence divisions and overall Total row retained, with no nested row hierarchy. Sentence-length Total count and percentage columns are distinguished by unit. Mean and Median are separate measures in months. State, reference year and sentence population remain in the published title/subtitle; no separate court-level label is present. Published values are preserved without reconciliation.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sentence_length_distribution",
+      "range": "A5:E23",
+      "values_range": "B7:E23",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A7:A23"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:E6"
+        }
+      ]
+    },
+    {
+      "name": "sentence_length_summary",
+      "range": "F5:G23",
+      "values_range": "F7:G23",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A7:A23"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F5:G5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F6:G6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:25:43Z",
+    "tool_version": "0.2.0",
+    "records": 102,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T112452Z-90ac2671dc7f",
+    "started_at": "2026-10-31T11:24:57Z",
+    "workbook": "90ac2671dc7f9c3b31efb8c103d301cf8c5e93c681991bfbc03242aaf4826efe--criminal-courts-australia-2009-10-cube-10-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191b4-a459-74e4-8b65-bd1eb98aafd5",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "2b03e7767029dda7b821369a241776e2ca1d674f15220367a7ea94aa6be8accf",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `90ac2671dc7f9c3b31efb8c103d301cf8c5e93c681991bfbc03242aaf4826efe--criminal-courts-australia-2009-10-cube-10-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | cee505a126c14cda003355280c9c7ea104f60656dc8cdeb1bb075c9b1d10a81f | missing |\n| \"Table_1\" | facd58cbc944dcba05bf479fd637eccb05edacdbed19e68472cdbcf0c96ec338 | missing |\n| \"Table_2\" | 69eca59004c85940f9bfdfd725f84f0bd3b2281d4fca2efd257bd990c7b63174 | missing |\n| \"Table_3\" | 56fa55e1ea296b1d9b18f8c4670bf3faeb9ff3d7106dedf289b32d6c3fabcd54 | missing |\n| \"Table_4\" | 22ac3e995641ec9525c475aa487cfab9177628556b0aede3b5582184f6c52ace | missing |\n| \"Table_5\" | c657cd31f792e3aec6f949f67568d46eedb1bee0c254edbb7d5e438937ea7112 | missing |\n| \"Table_6\" | f951f1d35ca112ab4c88b1b7ac65dfa5e4ee9af355a748b406211e1d49520ef8 | missing |\n| \"Table_7\" | 732128e19263610e5fb48eab61ac6fcb04b2c17d5ae53d6b8b08343337175e7c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T112452Z-90ac2671dc7f.jsonl"
+  }
+}

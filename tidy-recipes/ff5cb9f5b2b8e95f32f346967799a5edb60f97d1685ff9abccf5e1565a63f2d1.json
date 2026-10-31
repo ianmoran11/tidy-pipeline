@@ -1,0 +1,380 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ff5cb9f5b2b8e95f32f346967799a5edb60f97d1685ff9abccf5e1565a63f2d1",
+  "sheet": "Table_3",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "d719fd52a54432f5b43471447c57168bb73d437c25809c137f4c8f8f84718e16",
+  "agent_notes": "Published indents are retained in source labels. Acquitted, Proven guilty and Total belong to Adjudicated outcomes; Total is its subtotal. Total finalised, Total adjudicated and Total proven guilty are retained and use their respective published denominators; totals must not be added to detail rows. Sex totals may exclude unknown sex. ",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_sex",
+      "range": "A7:J10",
+      "values_range": "B8:J10",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A7"
+        },
+        {
+          "name": "measure",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A8:A10"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "number_adjudicated_outcomes",
+      "range": "A11:J15",
+      "values_range": "B13:J15",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A11"
+        },
+        {
+          "name": "measure",
+          "cells": "A6"
+        },
+        {
+          "name": "outcome group",
+          "cells": "A12"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A13:A15"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "number_other_finalisations_and_total",
+      "range": "A16:J18",
+      "values_range": "B16:J18",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A11"
+        },
+        {
+          "name": "measure",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A16:A18"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "number_principal_offence",
+      "range": "A19:J36",
+      "values_range": "B20:J36",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A19"
+        },
+        {
+          "name": "measure",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A20:A36"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "number_sentence_outcomes",
+      "range": "A37:J40",
+      "values_range": "B38:J40",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A37"
+        },
+        {
+          "name": "measure",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A38:A40"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "proportion_sex",
+      "range": "A42:J45",
+      "values_range": "B43:J45",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A42"
+        },
+        {
+          "name": "measure",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A43:A45"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "proportion_adjudicated_outcomes",
+      "range": "A46:J50",
+      "values_range": "B48:J50",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A46"
+        },
+        {
+          "name": "measure",
+          "cells": "A41"
+        },
+        {
+          "name": "outcome group",
+          "cells": "A47"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A48:A50"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "proportion_other_finalisations_and_total",
+      "range": "A51:J53",
+      "values_range": "B51:J53",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A46"
+        },
+        {
+          "name": "measure",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A51:A53"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "proportion_principal_offence",
+      "range": "A54:J71",
+      "values_range": "B55:J71",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A54"
+        },
+        {
+          "name": "measure",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A55:A71"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "proportion_sentence_outcomes",
+      "range": "A72:J75",
+      "values_range": "B73:J75",
+      "meta_data": [
+        {
+          "name": "characteristic",
+          "cells": "A72"
+        },
+        {
+          "name": "measure",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "category",
+          "direction": "W",
+          "cells": "A73:A75"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:44:16Z",
+    "tool_version": "0.2.0",
+    "records": 522,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T064353Z-f79f162c55fb",
+    "started_at": "2026-10-31T06:43:53Z",
+    "workbook": "f79f162c55fbbf7715b2420081f3423dc3dee53fa810cdd07740b32a54ef4a1c--criminal-courts-australia-2010-11-cube-1-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190b3-517d-77e5-9679-2a36e75536c9",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7cb59f075484d8eb940912f8622fb45f6144cbe1d0ece21bf3f07efac5a21af3"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "65e2e3eb655f4ab556d7e95657aa655f4ba1d025b1bf93a96a5513b62863037b",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f79f162c55fbbf7715b2420081f3423dc3dee53fa810cdd07740b32a54ef4a1c--criminal-courts-australia-2010-11-cube-1-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 3fb8516a561d686703c0c5d12575fa41b6d44ba56db5a2d2ccd185609e15ae7f | missing |\n| \"Table_1\" | c004eb62384da3594ef6d1969f42111ccb941eec3aef9681eb32417992542e88 | missing |\n| \"Table_2\" | dfad9145568f209a716bf34477f86c9c0428cd50cf72066668784846749cde78 | missing |\n| \"Table_3\" | ff5cb9f5b2b8e95f32f346967799a5edb60f97d1685ff9abccf5e1565a63f2d1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/f79f162c55fbbf7715b2420081f3423dc3dee53fa810cdd07740b32a54ef4a1c.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e73a3342bd1d217a66db9fa1d9bc168249f8befa5300eb0b4d9ac994276d1985",
+  "sheet": "Explanatory Notes",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Text-only explanatory notes on scope, methods, classifications and comparability; no statistical value cells.",
+  "validation": {
+    "checked_at": "2026-10-31T10:17:00Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101606Z-1cf09154231a",
+    "started_at": "2026-10-31T10:16:07Z",
+    "workbook": "1cf09154231a91aaac772dfcacc2e8bca50f5c8ffd725e12eb82abaeca043ff9--criminal-courts-australia-2015-16-cube-9-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19175-a1b2-72d0-b33a-6749f28d5410",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a721db889436e47386b13498514cf9d95dc03f2009bad38d7cc2c49d57231bab",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1cf09154231a91aaac772dfcacc2e8bca50f5c8ffd725e12eb82abaeca043ff9--criminal-courts-australia-2015-16-cube-9-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2015-16\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e58e68e0ee5c925f1c807e815f1c47a80fa2f5e4b9bc22285340ee9db32ecf7a | missing |\n| \"Table 35\" | cc017a4ba251e769d45f4da20e58b2b3f3d412310301a14047d7303d5eb9badb | missing |\n| \"Table 36\" | d1086202b0681a4a53862581d83717e9df356e04028a7085f8a86786503ae6ea | missing |\n| \"Table 37\" | 3be860d66a8b65fa92e69ca96d2f1a86a9bd10babac397e552cba9c13e750956 | missing |\n| \"Table 38\" | a1a1b0ea2834483c5707fc3916e5317fbc350c5e2cbcfb7b603257cf7e373743 | missing |\n| \"Explanatory Notes\" | e73a3342bd1d217a66db9fa1d9bc168249f8befa5300eb0b4d9ac994276d1985 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101606Z-1cf09154231a.jsonl"
+  }
+}

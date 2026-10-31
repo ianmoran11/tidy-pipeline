@@ -1,0 +1,234 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d40579e05cdd1e902f62acbe38a03447793afd9812df5bad5e79cf73bb217803",
+  "sheet": "FDV Table 22",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Experimental FDV breach-of-violence-orders defendant data; jurisdiction and population are stated in the table title. Mean (years) and Median (years) remain published age labels, not counts. All totals retained. Adjudicated outcomes and Guilty outcome are parent subtotals; indented guilty finding/plea/ex-parte are nested categories. Fines is a subset of Monetary penalties. Do not sum hierarchical rows. Template search unavailable due to unrelated missing Table 80. Indigenous status values exist only for 2021–22 and 2022–23; earlier blank cells are excluded.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A6,A11,A15,A25,A30,A41"
+    }
+  ],
+  "tables": [
+    {
+      "name": "court_level",
+      "range": "A7:F9",
+      "values_range": "B7:F9",
+      "headers": [
+        {
+          "name": "court_level",
+          "direction": "W",
+          "cells": "A7:A9",
+          "caption": "Court level "
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "sex",
+      "range": "A12:F13",
+      "values_range": "B12:F13",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A12:A13",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "age",
+      "range": "A16:F23",
+      "values_range": "B16:F23",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A16:A23",
+          "caption": "Age"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status",
+      "range": "A26:F27",
+      "values_range": "E26:F27",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A26:A27",
+          "caption": "Indigenous status "
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "total_excluding_transfers",
+      "range": "A28:F28",
+      "values_range": "B28:F28",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A28"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "finalisation",
+      "range": "A31:F39",
+      "values_range": "B31:F39",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A31:A39",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "sentence",
+      "range": "A42:F51",
+      "values_range": "B42:F51",
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A42:A51",
+          "caption": "Principal sentence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:16:42Z",
+    "tool_version": "0.2.0",
+    "records": 169,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T091540Z-bece9e301160",
+    "started_at": "2026-10-31T09:15:41Z",
+    "workbook": "bece9e301160f84a1c98b1d3dc8842a53812211954b049f8004d21579729162d--criminal-courts-2022-23-cube-16-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1913e-4f24-751b-bedd-7428e5fa5d2f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "f3c07a05addec1beeb47ff29e1515f537d149e4992db1ed10ee9b9143c8cc2a6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `bece9e301160f84a1c98b1d3dc8842a53812211954b049f8004d21579729162d--criminal-courts-2022-23-cube-16-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c52337f302155c0ebf91f24346abdff4a9bc5d115b24c0136ed8863795e418fa | missing |\n| \"FDV Table 14\" | b1a4237ad16762ed1f18daac5529d4a033aa130eb5d617fe1a2605a153c1b38b | missing |\n| \"FDV Table 15\" | 757c0323627df917226acf039db2a0674318dd34481fa9c0955c8e5facd30b38 | missing |\n| \"FDV Table 16\" | 1045ee3472225b6d39b5e3e8201becd0c38dcb6f6666b00d560ce5df223461d2 | missing |\n| \"FDV Table 17\" | bc641749db2c5bfb0bf4dd843d2380faada87dcbc921e2a3dad9fe90c60c9f94 | missing |\n| \"FDV Table 18\" | 5904ffa3323f0cec11432448b8963e43b7834e105c40eb545769408dc5af7c23 | missing |\n| \"FDV Table 19\" | 5346c8c1f185acf6e37069941903a6f587c86b41aadeebc3c96625820c9c724a | missing |\n| \"FDV Table 20\" | 51454c32a0330d41bcd27f3d5c180922a373f97f2c9b723b91b721e0bcf9f2ca | missing |\n| \"FDV Table 21\" | 97d7f247e4ddf0a880a37ffb5668369046dad73c3ff834d5bbe0caee4011ad06 | missing |\n| \"FDV Table 22\" | d40579e05cdd1e902f62acbe38a03447793afd9812df5bad5e79cf73bb217803 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T091540Z-bece9e301160.jsonl"
+  }
+}

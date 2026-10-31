@@ -1,0 +1,965 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4dbcdde359c30464e248c7948fa312fe9fd5ede9947461d72c61dd45dea24800",
+  "sheet": "Table 38",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "edc6ee4ec17242d0bec5e5cd3e8a4c5c62863e1b4e15a50d54ab6b7ae88cd138",
+  "agent_notes": "Total rows include unknown characteristics and are retained separately. Sex and Indigenous status are separate dimensions; mean and median age (years) are measures, not age bands. Published perturbations can make components differ from totals. Suppression and unavailable markers are retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A8,A11,A14,A20,A23,A26,A32,A35,A38,A44,A47,A50,A56,A59,A62,A68,A71,A74,A80,A83,A86,A92,A95,A98,A104,A107,A110"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_total",
+      "range": "A5:L7",
+      "values_range": "B7:L7",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A7"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_1_sex",
+      "range": "A9:L10",
+      "values_range": "B9:L10",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A9:A10"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_1_age",
+      "range": "A12:L13",
+      "values_range": "B12:L13",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A12:A13"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_1_indigenous_status",
+      "range": "A15:L17",
+      "values_range": "B15:L17",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A15:A17"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_2_total",
+      "range": "A19:L19",
+      "values_range": "B19:L19",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A19"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_2_sex",
+      "range": "A21:L22",
+      "values_range": "B21:L22",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A21:A22"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_2_age",
+      "range": "A24:L25",
+      "values_range": "B24:L25",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_2_indigenous_status",
+      "range": "A27:L29",
+      "values_range": "B27:L29",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A27:A29"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_3_total",
+      "range": "A31:L31",
+      "values_range": "B31:L31",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A31"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_3_sex",
+      "range": "A33:L34",
+      "values_range": "B33:L34",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A33:A34"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_3_age",
+      "range": "A36:L37",
+      "values_range": "B36:L37",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A36:A37"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_3_indigenous_status",
+      "range": "A39:L41",
+      "values_range": "B39:L41",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A39:A41"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_4_total",
+      "range": "A43:L43",
+      "values_range": "B43:L43",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A43"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_4_sex",
+      "range": "A45:L46",
+      "values_range": "B45:L46",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A45:A46"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_4_age",
+      "range": "A48:L49",
+      "values_range": "B48:L49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A48:A49"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_4_indigenous_status",
+      "range": "A51:L53",
+      "values_range": "B51:L53",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A51:A53"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_5_total",
+      "range": "A55:L55",
+      "values_range": "B55:L55",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A55"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_5_sex",
+      "range": "A57:L58",
+      "values_range": "B57:L58",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A57:A58"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_5_age",
+      "range": "A60:L61",
+      "values_range": "B60:L61",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A60:A61"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_5_indigenous_status",
+      "range": "A63:L65",
+      "values_range": "B63:L65",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A63:A65"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_6_total",
+      "range": "A67:L67",
+      "values_range": "B67:L67",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A66"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A67"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_6_sex",
+      "range": "A69:L70",
+      "values_range": "B69:L70",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A66"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A69:A70"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_6_age",
+      "range": "A72:L73",
+      "values_range": "B72:L73",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A66"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A72:A73"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_6_indigenous_status",
+      "range": "A75:L77",
+      "values_range": "B75:L77",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A66"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A75:A77"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_7_total",
+      "range": "A79:L79",
+      "values_range": "B79:L79",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A79"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_7_sex",
+      "range": "A81:L82",
+      "values_range": "B81:L82",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A81:A82"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_7_age",
+      "range": "A84:L85",
+      "values_range": "B84:L85",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A84:A85"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_7_indigenous_status",
+      "range": "A87:L89",
+      "values_range": "B87:L89",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A87:A89"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_8_total",
+      "range": "A91:L91",
+      "values_range": "B91:L91",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A90"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A91"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_8_sex",
+      "range": "A93:L94",
+      "values_range": "B93:L94",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A90"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A93:A94"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_8_age",
+      "range": "A96:L97",
+      "values_range": "B96:L97",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A90"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A96:A97"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_8_indigenous_status",
+      "range": "A99:L101",
+      "values_range": "B99:L101",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A90"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A99:A101"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_9_total",
+      "range": "A103:L103",
+      "values_range": "B103:L103",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A103"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_9_sex",
+      "range": "A105:L106",
+      "values_range": "B105:L106",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A105:A106"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_9_age",
+      "range": "A108:L109",
+      "values_range": "B108:L109",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A108:A109"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    },
+    {
+      "name": "block_9_indigenous_status",
+      "range": "A111:L113",
+      "values_range": "B111:L113",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "A111:A113"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:L5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:03:11Z",
+    "tool_version": "0.2.0",
+    "records": 792,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T090210Z-235c26385312",
+    "started_at": "2026-10-31T09:02:12Z",
+    "workbook": "235c2638531272d18b0122475514ebcc6f615e89673e1e6bcb84ef4ae2321893--prisoners-australia-2024-federal-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19131-f3ae-7189-9ce3-a3ac05ba0c35",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "743b40358dda3f15072b3366f520af93c47767d388b6c7cb1e81af975808a01f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `235c2638531272d18b0122475514ebcc6f615e89673e1e6bcb84ef4ae2321893--prisoners-australia-2024-federal-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2024\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e3e520c4c5ea73864c89836dd1e52fda19e1ae6ba0213851cd6e5c9656ba0b72 | missing |\n| \"Table 36\" | 26290262016edcfd6b42a7d73514ab5722c0433580e409c4d085173f18793c80 | missing |\n| \"Table 37\" | 80d3252b32886575d9eda86990c4e9de90beae7b58076084af70d4fb3b7cd426 | missing |\n| \"Table 38\" | 4dbcdde359c30464e248c7948fa312fe9fd5ede9947461d72c61dd45dea24800 | missing |\n| \"Table 39\" | 6666d49fa4c23e648d17fc992c9536c318fcf575f0ade33e6298c1e999e0a696 | missing |\n| \"Further information\" | 67498a8e9b09b4681cc9fa33b4e6140a414fed5a96067cff81056779f762b4dc | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (cc84df5591282fea5380980b17cce94e3700bdf3ec798b3d2c7aa739de2b5c63). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T090210Z-235c26385312.jsonl"
+  }
+}

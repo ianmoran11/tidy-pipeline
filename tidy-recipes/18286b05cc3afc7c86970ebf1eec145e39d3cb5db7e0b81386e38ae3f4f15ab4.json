@@ -1,0 +1,209 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "18286b05cc3afc7c86970ebf1eec145e39d3cb5db7e0b81386e38ae3f4f15ab4",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Four blocks separate employee counts and earnings, estimates and standard errors. All ages rows and All rates of pay columns are published totals and retained. Age categories share one hierarchy level. Blank rate-by-age intersections are omitted, not imputed as zero. Copyright excluded.",
+  "meta_data": [
+    {
+      "name": "publication",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "employees_estimate",
+      "range": "A5:E16",
+      "values_range": "C8,E8,B9:E9,B10:B14,D10:E14,E15,B16:E16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "statistic",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age",
+          "direction": "W",
+          "cells": "A8:A16"
+        },
+        {
+          "name": "rate of pay",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "earnings_estimate",
+      "range": "A17:E26",
+      "values_range": "C18,E18,B19:E19,B20:B24,D20:E24,E25,B26:E26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A17"
+        },
+        {
+          "name": "statistic",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age",
+          "direction": "W",
+          "cells": "A18:A26"
+        },
+        {
+          "name": "rate of pay",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "employees_standard_error",
+      "range": "A27:E37",
+      "values_range": "C29,E29,B30:E30,B31:B35,D31:E35,E36,B37:E37",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A28"
+        },
+        {
+          "name": "statistic",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age",
+          "direction": "W",
+          "cells": "A29:A37"
+        },
+        {
+          "name": "rate of pay",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "earnings_standard_error",
+      "range": "A38:E47",
+      "values_range": "C39,E39,B40:E40,B41:B45,D41:E45,E46,B47:E47",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A38"
+        },
+        {
+          "name": "statistic",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age",
+          "direction": "W",
+          "cells": "A39:A47"
+        },
+        {
+          "name": "rate of pay",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:32:46Z",
+    "tool_version": "0.2.0",
+    "records": 104,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T063116Z-75e05af1fd46",
+    "started_at": "2026-10-31T06:31:16Z",
+    "workbook": "75e05af1fd46fb78eddf9445ffeb53c7e466ab6af292ac28c9d5b90f63335d37--employee-earnings-and-hours-australia-2021-cube-10-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190a7-c628-736b-a10a-1f0125188028",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "84b0e588e759361e25d8f6aca3c7fbb3dc60b7d86efb64a02a5b4b40bffd601a",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `75e05af1fd46fb78eddf9445ffeb53c7e466ab6af292ac28c9d5b90f63335d37--employee-earnings-and-hours-australia-2021-cube-10-source.xlsx`.\n\n- Publication: Employee Earnings and Hours, Australia (Australian Bureau of Statistics)\n- Release or year: May 2021\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6c8436fa210af95d13a766b84cc42d9f1858dd9a34abe03dbf98123c2f397dc5 | missing |\n| \"Table_1\" | 18286b05cc3afc7c86970ebf1eec145e39d3cb5db7e0b81386e38ae3f4f15ab4 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/75e05af1fd46fb78eddf9445ffeb53c7e466ab6af292ac28c9d5b90f63335d37.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}

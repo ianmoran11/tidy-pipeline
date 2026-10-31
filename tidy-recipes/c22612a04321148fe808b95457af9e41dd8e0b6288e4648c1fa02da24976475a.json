@@ -1,0 +1,817 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c22612a04321148fe808b95457af9e41dd8e0b6288e4648c1fa02da24976475a",
+  "sheet": "Table 54",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "3bea22340169d5f1b65dd52cee4fe108335937ba816f763567848c76716ba251",
+  "agent_notes": "All published totals retained. Blank cells are structurally absent, not zero-filled. Reference period and sentencing population are identified by publication subtitle and title. Mean and Median columns are measures separate from sentence-length/fine bands; Total is retained alongside bands. Percentage rows retain their published (%) row label and omit count units.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A5"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_bands",
+      "range": "B10:F25",
+      "values_range": "B10:F10,B11:F11,B12:F12,B13:F13,B14:F14,B15:F15,B16:F16,B17:F17,B18:F18,B19:F19,B20:F20,B21:F21,B22:F22,B23:F23,B24:F24,B25:F25",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23,A24,A25",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "block_1_bands_percent",
+      "range": "B26:F26",
+      "values_range": "B26:F26",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A26",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "block_1_statistics",
+      "range": "G10:H25",
+      "values_range": "G10:H10,G11:H11,G12:H12,G13:H13,G14:H14,G15:H15,G16:H16,G17:H17,G18:H18,G19:H19,G20:H20,G21:H21,G22:H22,G23:H23,G24:H24,G25:H25",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23,A24,A25",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "block_2_bands",
+      "range": "B28:F43",
+      "values_range": "B28:F28,B29:F29,B30:F30,B31:F31,B32:F32,B33:F33,B34:F34,B35:F35,B36:F36,B37:F37,B38:F38,B39:F39,B40:F40,B41:F41,B42:F42,B43:F43",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,A43",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "block_2_bands_percent",
+      "range": "B44:F44",
+      "values_range": "B44:F44",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A44",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "block_2_statistics",
+      "range": "G28:H43",
+      "values_range": "G28:H28,G29:H29,G30:H30,G31:H31,G32:H32,G33:H33,G34:H34,G35:H35,G36:H36,G37:H37,G38:H38,G39:H39,G40:H40,G41:H41,G42:H42,G43:H43",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,A43",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "block_3_bands",
+      "range": "B46:F61",
+      "values_range": "B46:F46,B47:F47,B48:F48,B49:F49,B50:F50,B51:F51,B52:F52,B53:F53,B54:F54,B55:F55,B56:F56,B57:F57,B58:F58,B59:F59,B60:F60,B61:F61",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A45"
+        }
+      ]
+    },
+    {
+      "name": "block_3_bands_percent",
+      "range": "B62:F62",
+      "values_range": "B62:F62",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A62",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A45"
+        }
+      ]
+    },
+    {
+      "name": "block_3_statistics",
+      "range": "G46:H61",
+      "values_range": "G46:H46,G47:H47,G48:H48,G49:H49,G50:H50,G51:H51,G52:H52,G53:H53,G54:H54,G55:H55,G56:H56,G57:H57,G58:H58,G59:H59,G60:H60,G61:H61",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A45"
+        }
+      ]
+    },
+    {
+      "name": "block_4_bands",
+      "range": "B64:F79",
+      "values_range": "B64:F64,B65:F65,B66:F66,B67:F67,B68:F68,B69:F69,B70:F70,B71:F71,B72:F72,B73:F73,B74:F74,B75:F75,B76:F76,B77:F77,B78:F78,B79:F79",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76,A77,A78,A79",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A63"
+        }
+      ]
+    },
+    {
+      "name": "block_4_bands_percent",
+      "range": "B80:F80",
+      "values_range": "B80:F80",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A80",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A63"
+        }
+      ]
+    },
+    {
+      "name": "block_4_statistics",
+      "range": "G64:H79",
+      "values_range": "G64:H64,G65:H65,G66:H66,G67:H67,G68:H68,G69:H69,G70:H70,G71:H71,G72:H72,G73:H73,G74:H74,G75:H75,G76:H76,G77:H77,G78:H78,G79:H79",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76,A77,A78,A79",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A63"
+        }
+      ]
+    },
+    {
+      "name": "block_5_bands",
+      "range": "B82:F97",
+      "values_range": "B82:F82,B83:F83,B84:F84,B85:F85,B86:F86,B87:F87,B88:F88,B89:F89,B90:F90,B91:F91,B92:F92,B93:F93,B94:F94,B95:F95,B96:F96,B97:F97",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A82,A83,A84,A85,A86,A87,A88,A89,A90,A91,A92,A93,A94,A95,A96,A97",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A81"
+        }
+      ]
+    },
+    {
+      "name": "block_5_bands_percent",
+      "range": "B98:F98",
+      "values_range": "B98:F98",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A98",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A81"
+        }
+      ]
+    },
+    {
+      "name": "block_5_statistics",
+      "range": "G82:H97",
+      "values_range": "G82:H82,G83:H83,G84:H84,G85:H85,G86:H86,G87:H87,G88:H88,G89:H89,G90:H90,G91:H91,G92:H92,G93:H93,G94:H94,G95:H95,G96:H96,G97:H97",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A82,A83,A84,A85,A86,A87,A88,A89,A90,A91,A92,A93,A94,A95,A96,A97",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A81"
+        }
+      ]
+    },
+    {
+      "name": "block_6_bands",
+      "range": "B100:F115",
+      "values_range": "B100:F100,B101:F101,B102:F102,B103:F103,B104:F104,B105:F105,B106:F106,B107:F107,B108:F108,B109:F109,B110:F110,B111:F111,B112:F112,B113:F113,B114:F114,B115:F115",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A100,A101,A102,A103,A104,A105,A106,A107,A108,A109,A110,A111,A112,A113,A114,A115",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A99"
+        }
+      ]
+    },
+    {
+      "name": "block_6_bands_percent",
+      "range": "B116:F116",
+      "values_range": "B116:F116",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A116",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A99"
+        }
+      ]
+    },
+    {
+      "name": "block_6_statistics",
+      "range": "G100:H115",
+      "values_range": "G100:H100,G101:H101,G102:H102,G103:H103,G104:H104,G105:H105,G106:H106,G107:H107,G108:H108,G109:H109,G110:H110,G111:H111,G112:H112,G113:H113,G114:H114,G115:H115",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A100,A101,A102,A103,A104,A105,A106,A107,A108,A109,A110,A111,A112,A113,A114,A115",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A99"
+        }
+      ]
+    },
+    {
+      "name": "block_7_bands",
+      "range": "B118:F133",
+      "values_range": "B118:F118,B119:F119,B120:F120,B121:F121,B122:F122,B123:F123,B124:F124,B125:F125,B126:F126,B127:F127,B128:F128,B129:F129,B130:F130,B131:F131,B132:F132,B133:F133",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A118,A119,A120,A121,A122,A123,A124,A125,A126,A127,A128,A129,A130,A131,A132,A133",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_bands_percent",
+      "range": "B134:F134",
+      "values_range": "B134:F134",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A134",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_statistics",
+      "range": "G118:H133",
+      "values_range": "G118:H118,G119:H119,G120:H120,G121:H121,G122:H122,G123:H123,G124:H124,G125:H125,G126:H126,G127:H127,G128:H128,G129:H129,G130:H130,G131:H131,G132:H132,G133:H133",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A118,A119,A120,A121,A122,A123,A124,A125,A126,A127,A128,A129,A130,A131,A132,A133",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        }
+      ]
+    },
+    {
+      "name": "block_8_bands",
+      "range": "B136:F151",
+      "values_range": "B136:F136,B137:F137,B138:F138,B139:F139,B140:F140,B141:F141,B142:F142,B143:F143,B144:F144,B145:F145,B146:F146,B147:F147,B148:F148,B149:F149,B150:F150,B151:F151",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A136,A137,A138,A139,A140,A141,A142,A143,A144,A145,A146,A147,A148,A149,A150,A151",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A135"
+        }
+      ]
+    },
+    {
+      "name": "block_8_bands_percent",
+      "range": "B152:F152",
+      "values_range": "B152:F152",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A152",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A135"
+        }
+      ]
+    },
+    {
+      "name": "block_8_statistics",
+      "range": "G136:H151",
+      "values_range": "G136:H136,G137:H137,G138:H138,G139:H139,G140:H140,G141:H141,G142:H142,G143:H143,G144:H144,G145:H145,G146:H146,G147:H147,G148:H148,G149:H149,G150:H150,G151:H151",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A136,A137,A138,A139,A140,A141,A142,A143,A144,A145,A146,A147,A148,A149,A150,A151",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A135"
+        }
+      ]
+    },
+    {
+      "name": "block_9_bands",
+      "range": "B154:F169",
+      "values_range": "B154:F154,B155:F155,B156:F156,B157:F157,B158:F158,B159:F159,B160:F160,B161:F161,B162:F162,B163:F163,B164:F164,B165:F165,B166:F166,B167:F167,B168:F168,B169:F169",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A154,A155,A156,A157,A158,A159,A160,A161,A162,A163,A164,A165,A166,A167,A168,A169",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "B8,C8,D8,E8,F8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A153"
+        }
+      ]
+    },
+    {
+      "name": "block_9_bands_percent",
+      "range": "B170:F170",
+      "values_range": "B170:F170",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A170",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7,C7,D7,E7,F7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A153"
+        }
+      ]
+    },
+    {
+      "name": "block_9_statistics",
+      "range": "G154:H169",
+      "values_range": "G154:H154,G155:H155,G156:H156,G157:H157,G158:H158,G159:H159,G160:H160,G161:H161,G162:H162,G163:H163,G164:H164,G165:H165,G166:H166,G167:H167,G168:H168,G169:H169",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A154,A155,A156,A157,A158,A159,A160,A161,A162,A163,A164,A165,A166,A167,A168,A169",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "G7,H7",
+          "direction": "N"
+        },
+        {
+          "name": "unit",
+          "cells": "G8,H8",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A153"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:13:15Z",
+    "tool_version": "0.2.0",
+    "records": 1053,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T111151Z-5b52c3addf2b",
+    "started_at": "2026-10-31T11:11:52Z",
+    "workbook": "5b52c3addf2b3e26d68e50836375a02d3aa19b408811e872148ce76c14afb1ff--criminal-courts-australia-2012-13-cube-11-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191a8-a96b-7381-a9c6-6bc91c762196",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5eac5fd8c0582627fa35899521d08dbbd9b4850607897aa7c94cd1412cdfe1a0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5b52c3addf2b3e26d68e50836375a02d3aa19b408811e872148ce76c14afb1ff--criminal-courts-australia-2012-13-cube-11-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2012-13\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"List of tables\" | 200c9ae39ce015a950445d4dd4982d9377e24ee44c8badc2deebd7d3a42b79b8 | missing |\n| \"Table 52\" | 7d7c41a41c9cb848387724ffb7839ae798cc61982101e46d5a097ca814636d52 | missing |\n| \"Table 53\" | 74b04353194f1d4f1bfa8b352761dc35192b5fd6adc4b44933659d041890d4f5 | missing |\n| \"Table 54\" | c22612a04321148fe808b95457af9e41dd8e0b6288e4648c1fa02da24976475a | missing |\n| \"Table 55\" | 52054435eca8eb997f80fe831aa5e21e88304c44984034642e4343aece48f448 | missing |\n| \"Table 56\" | c293e9bbe7d81bca06c8d5a3464006d04ff2a85a4d900f0bdab9bb8ef8ddc94a | missing |\n| \"Table 57\" | ae85009fc4670ceba8cc4c82f9e5d5d3f277add3481b85ad8bbbd75f550845be | missing |\n| \"Table 58\" | cefcaca55096c6d813d5fac31ed47675db50300309fe603bf52e644b6f33ebbf | missing |\n| \"Table 59\" | 294c50c95962db2c462a19cfd965078ab9105cb9d8dc68e708488eb99785c9a0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T111151Z-5b52c3addf2b.jsonl"
+  }
+}

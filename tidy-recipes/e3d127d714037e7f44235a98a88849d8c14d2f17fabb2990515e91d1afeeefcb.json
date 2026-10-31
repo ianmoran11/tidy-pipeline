@@ -1,0 +1,201 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e3d127d714037e7f44235a98a88849d8c14d2f17fabb2990515e91d1afeeefcb",
+  "sheet": "Table 33",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "54e523b5c6ec2b75bd7bce0bde51b72f0ad3b855f2d8b1aa045e5817cd6c90ee",
+  "agent_notes": "All published offence divisions and total rows retained, including totals with unknown principal offence or method. Geography is given in the table title. Random adjustment can cause discrepancies.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "A59:A64"
+    }
+  ],
+  "tables": [
+    {
+      "name": "court action",
+      "range": "A5:AC23",
+      "values_range": "B8:AC23",
+      "meta_data": [
+        {
+          "name": "method_of_proceeding",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence(a)(b)",
+          "direction": "W",
+          "cells": "A8:A23"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AC6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,P5"
+        }
+      ]
+    },
+    {
+      "name": "non-court action",
+      "range": "A24:AC40",
+      "values_range": "B25:AC40",
+      "meta_data": [
+        {
+          "name": "method_of_proceeding",
+          "cells": "B24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence(a)(b)",
+          "direction": "W",
+          "cells": "A25:A40"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AC6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,P5"
+        }
+      ]
+    },
+    {
+      "name": "total proceedings",
+      "range": "A41:AC57",
+      "values_range": "B42:AC57",
+      "meta_data": [
+        {
+          "name": "method_of_proceeding",
+          "cells": "B41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence(a)(b)",
+          "direction": "W",
+          "cells": "A42:A57"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AC6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,P5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:04:22Z",
+    "tool_version": "0.2.0",
+    "records": 1344,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T100316Z-e62c23e9b7d1",
+    "started_at": "2026-10-31T10:03:24Z",
+    "workbook": "e62c23e9b7d18328fd8ee5df896b49ee47224e750bc76a6adf1e5610b23a27aa--recorded-crime-offenders-2021-22-cube-5-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19169-fc20-776c-b072-6cd55e7bf544",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "0a1d6cfdc87adae11467676d9689163a01eaf35ba869204e0a2b912fd22e4792",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e62c23e9b7d18328fd8ee5df896b49ee47224e750bc76a6adf1e5610b23a27aa--recorded-crime-offenders-2021-22-cube-5-source.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2021\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d331889b897afed1ab068c3c8d23fd40a2eff6e7e6cc6be28ac77e08dc75eb74 | missing |\n| \"Table 27\" | 397fc44a9ede0830b8569ebade99532de2b1deb84211ac81791f1bf6ecbef37d | missing |\n| \"Table 28\" | d9e593122232ff5b6f0cf80b2f5f50b550ddd8414c967dfb8b3100dc40328bdd | missing |\n| \"Table 29\" | 3d3ce3c0babce89a742776773ad88c296ab78515d545be956e56680185c8812a | missing |\n| \"Table 30\" | 963ff6f3e6ff02d2dc2751b7b22720585c35eee45248b4af410d151a5a202d9d | missing |\n| \"Table 31\" | 7ec76027f21ccc46805f033386b319d238a09922dfead7a65194e0db64bb00a3 | missing |\n| \"Table 32\" | 9f91cbcb54f783bfb0d56245050bd1c6beacb37dddccae1eea67c91e382de9c3 | missing |\n| \"Table 33\" | e3d127d714037e7f44235a98a88849d8c14d2f17fabb2990515e91d1afeeefcb | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T100316Z-e62c23e9b7d1.jsonl"
+  }
+}

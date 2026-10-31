@@ -1,0 +1,290 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c084cbaf5977c14eea34d9275502911f17347be11f881d6b4a8bff42849755cb",
+  "sheet": "Table_4",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "83d531f37ae3e77f5466c34c66d945eb56fdd4b351b153e1b8527bf27cc2cc96",
+  "agent_notes": "Total adjudicated and overall Total are overlapping aggregates; all published totals retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_6",
+      "range": "A7:F23",
+      "values_range": "B7:F23",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A7:A23"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_24",
+      "range": "A25:F41",
+      "values_range": "B25:F41",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A25:A41"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_42",
+      "range": "A43:F59",
+      "values_range": "B43:F59",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A43:A59"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_60",
+      "range": "A61:F77",
+      "values_range": "B61:F77",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A60"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A61:A77"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_78",
+      "range": "A79:F95",
+      "values_range": "B79:F95",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A78"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A79:A95"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_96",
+      "range": "A97:F113",
+      "values_range": "B97:F113",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A97:A113"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_114",
+      "range": "A115:F131",
+      "values_range": "B115:F131",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A115:A131"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    },
+    {
+      "name": "state_132",
+      "range": "A133:F149",
+      "values_range": "B133:F149",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A132"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A133:A149"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:F5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:26:21Z",
+    "tool_version": "0.2.0",
+    "records": 680,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T112502Z-ae9f9f74a9fc",
+    "started_at": "2026-10-31T11:25:03Z",
+    "workbook": "ae9f9f74a9fc2feccf05ff69ef76e34e08a8c6dc02170c666e24ed0fbf7827b0--criminal-courts-australia-2009-10-cube-8-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191b4-be40-717c-88f7-01f93ee92ff2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "40c3ad615bdb85292e7df4e44e4db598246b80a44b7799647ca3f6b6696a4792",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ae9f9f74a9fc2feccf05ff69ef76e34e08a8c6dc02170c666e24ed0fbf7827b0--criminal-courts-australia-2009-10-cube-8-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 67fdf17a1c9b36ac485d740beebde3f2490ccaf7de348bbfcd768e9fdcadf0ed | missing |\n| \"Table_1\" | 928f2844d9a0c62f2f21054d8f4f7f1d71f6f4680aa555230221c05595b57296 | missing |\n| \"Table_2\" | 30057c0e44ab803c91846818641d2a337ec8f47927252167dfbe7057806c4f7a | missing |\n| \"Table_3\" | 774e9e925d7a8bd37311236706624de035b8c0e1092ff2346b770c381c2fc4fe | missing |\n| \"Table_4\" | c084cbaf5977c14eea34d9275502911f17347be11f881d6b4a8bff42849755cb | missing |\n| \"Table_5\" | 9c94883ff75f0b0520ce4444cf033f922eebb59cc850c4bfcebb45309ffb02e3 | missing |\n| \"Table_6\" | 49f279c6558d25381d32a3c8778a809ac05fea8b4672da6d47aacce658a29c64 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T112502Z-ae9f9f74a9fc.jsonl"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4b7e74a30b03c4da0693e6f3322305a1582aff25b2473c6a9d954ef74cfcb05f",
+  "sheet": "A",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "3ad98d8c2361dbe59c94eb074ce7688570c7b99979eb7ace78f48407bd9b3433",
+  "agent_notes": "Estimated resident population, not prisoner counts. Published Total adult population and Total population rows are retained on the age_group axis and overlap component age bands; PERSONS and Aust. also include their component totals. Do not sum all records. State label ACT Total is preserved exactly as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "males",
+      "range": "A5:J21",
+      "values_range": "B6:J21",
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age group (years)",
+          "direction": "W",
+          "cells": "A6:A21"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A5"
+        }
+      ]
+    },
+    {
+      "name": "females",
+      "range": "A22:J38",
+      "values_range": "B23:J38",
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age group (years)",
+          "direction": "W",
+          "cells": "A23:A38"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A22"
+        }
+      ]
+    },
+    {
+      "name": "persons",
+      "range": "A39:J55",
+      "values_range": "B40:J55",
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age group (years)",
+          "direction": "W",
+          "cells": "A40:A55"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A39"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:36:14Z",
+    "tool_version": "0.2.0",
+    "records": 432,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T113554Z-a66820ef030a",
+    "started_at": "2026-10-31T11:35:55Z",
+    "workbook": "a66820ef030a0f505c39b286f3ce6364a03862052aa0e961597e888e38e4e786--prisoners-australia-2006-cube-18-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191be-b0cc-7784-b51d-13f3a0881319",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a7a160f35e49b0451aeb3658029d1df6dd0bcdde9d6fa81a24f73ceeb9f70ecb",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a66820ef030a0f505c39b286f3ce6364a03862052aa0e961597e888e38e4e786--prisoners-australia-2006-cube-18-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2006\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"A\" | 4b7e74a30b03c4da0693e6f3322305a1582aff25b2473c6a9d954ef74cfcb05f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T113554Z-a66820ef030a.jsonl"
+  }
+}

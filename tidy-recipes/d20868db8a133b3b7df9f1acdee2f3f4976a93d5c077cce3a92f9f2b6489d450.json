@@ -1,0 +1,189 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d20868db8a133b3b7df9f1acdee2f3f4976a93d5c077cce3a92f9f2b6489d450",
+  "sheet": "Table_5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "e8df8397bdc348e8571cc7d117c13fe4dd543dd77c843fe955f215c8ed5f54d9",
+  "agent_notes": "All employees. Published totals and all-category columns overlap components and must not be added to them. Estimates and standard errors are separate blocks. Only populated source values are included; blanks are not zero. Percentile, quartile, median and average labels are retained as measures. Sex blocks include Persons totals. Full-time adult-rate columns, where present, are subsets of full-time totals.",
+  "new_dimensions": [
+    {
+      "name": "employment_status",
+      "description": "Full-time or part-time employment status, including all employees.",
+      "example_labels": [
+        "Full-time employees",
+        "Part-time employees",
+        "All employees"
+      ]
+    },
+    {
+      "name": "weekly_total_cash_earnings_band",
+      "description": "Published weekly total cash earnings dollar bands, including the total across bands.",
+      "example_labels": [
+        "Under $200",
+        "$3,500 and over",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "estimate_1",
+      "range": "A8:E44",
+      "values_range": "B9,C9,D9,E9,B10,C10,D10,E10,B11,C11,D11,E11,C12,D12,E12,B13,C13,D13,E13,B14,C14,D14,E14,B15,C15,D15,E15,B16,C16,D16,E16,B17,C17,D17,E17,B18,C18,D18,E18,B19,C19,D19,E19,C20,D20,E20,B21,C21,D21,E21,B22,C22,D22,E22,B23,C23,D23,E23,B24,C24,D24,E24,B25,C25,D25,E25,B26,C26,D26,E26,B27,C27,D27,E27,B28,C28,D28,E28,B29,C29,D29,E29,C30,D30,E30,C31,D31,E31,C32,D32,E32,B33,C33,D33,E33,C34,D34,E34,B35,C35,D35,E35,C36,D36,E36,B37,C37,D37,E37,C38,D38,E38,B39,C39,D39,E39,B40,C40,D40,E40,B41,C41,D41,E41,B42,C42,D42,E42,C43,D43,E43,B44,C44,D44,E44",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A7"
+        },
+        {
+          "name": "measure",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "employment_status",
+          "direction": "NNW",
+          "cells": "B5,D5,E5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A9:A44"
+        },
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B6:E6"
+        }
+      ]
+    },
+    {
+      "name": "standard_error_1",
+      "range": "A46:E82",
+      "values_range": "B47,C47,D47,E47,B48,C48,D48,E48,B49,C49,D49,E49,C50,D50,E50,B51,C51,D51,E51,B52,C52,D52,E52,B53,C53,D53,E53,B54,C54,D54,E54,B55,C55,D55,E55,B56,C56,D56,E56,B57,C57,D57,E57,C58,D58,E58,B59,C59,D59,E59,B60,C60,D60,E60,B61,C61,D61,E61,B62,C62,D62,E62,B63,C63,D63,E63,B64,C64,D64,E64,B65,C65,D65,E65,B66,C66,D66,E66,B67,C67,D67,E67,C68,D68,E68,C69,D69,E69,C70,D70,E70,B71,C71,D71,E71,C72,D72,E72,B73,C73,D73,E73,C74,D74,E74,B75,C75,D75,E75,C76,D76,E76,B77,C77,D77,E77,B78,C78,D78,E78,B79,C79,D79,E79,B80,C80,D80,E80,C81,D81,E81,B82,C82,D82,E82",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A45"
+        },
+        {
+          "name": "measure",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "employment_status",
+          "direction": "NNW",
+          "cells": "B5,D5,E5"
+        },
+        {
+          "name": "weekly_total_cash_earnings_band",
+          "direction": "W",
+          "cells": "A47:A82"
+        },
+        {
+          "name": "rate_of_pay",
+          "direction": "N",
+          "cells": "B6:E6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T09:10:23Z",
+    "tool_version": "0.2.0",
+    "records": 270,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T090905Z-49d6f7f44d03",
+    "started_at": "2026-10-31T09:09:07Z",
+    "workbook": "49d6f7f44d0335cf56806ac993e8fd1bc0c3247740add2b174f8496b9459dc4f--employee-earnings-and-hours-australia-2023-cube-3-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19138-49c0-70c5-a2e0-1f87bcb33014",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "879d0ad9c0ce64b145f7d1cb909989152fe775adb2670207436a14b912bb54ce",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `49d6f7f44d0335cf56806ac993e8fd1bc0c3247740add2b174f8496b9459dc4f--employee-earnings-and-hours-australia-2023-cube-3-source.xlsx`.\n\n- Publication: Employee Earnings and Hours, Australia (Australian Bureau of Statistics)\n- Release or year: May 2023\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 60eb1f4db731253794f88b3742cb170bba09eabd3cadd06e0abcf76fedb50a1d | missing |\n| \"Table_1\" | cc9109538798e93fb8c986db400309355209abebcd5d24140a7b198e5252fa13 | missing |\n| \"Table_2\" | 0c4c8e07a4fb74334034ec202b81ff0a82519d5cfee06b3476f3fce636dc6f49 | missing |\n| \"Table_3\" | e6a83147ecc92f161db1777007c56ed519d572bc1155bd746e687591cba06dac | missing |\n| \"Table_4\" | 11563200e737a0bbb1d7673e0514a420c66d79dd5a276dd240d6b1be15d3713d | missing |\n| \"Table_5\" | d20868db8a133b3b7df9f1acdee2f3f4976a93d5c077cce3a92f9f2b6489d450 | missing |\n| \"Table_6\" | 2550f8ae238f64d814741cd79effa8e5510be08261141e6c73f42dc56b042fcb | missing |\n| \"Table_7\" | 6d640d66a6752b86d212e810257c0f4e5f5343262a72b67d098a1391e45f53cd | missing |\n| \"Table_8\" | 5bb5daa93b8c96975b32a1741c04b2b903ca460bec7e8c5ae90191e12443eba4 | missing |\n| \"Table_9\" | b5508d04bdd23de73f4491e614808bafed3c874c9f0889af29114628ecf23155 | missing |\n| \"Table_10\" | fcd0755560036b3dabb367ecca8aaab2ea6799a2cd16a7b0c6ae728917e47534 | missing |\n| \"Table_11\" | b241717be4fff4647c297ca6e53117b497132659fb78ed39d59deccb32c143f6 | missing |\n| \"Table_12\" | 1efa60f2318e48c8619d9244ce35c9d36d69c4170a67e557eaa4890619241511 | missing |\n| \"Table_13\" | 98626a5df64947b6c06c6de09acda90f43808adf3c7beecb4e6e1bd8f991b92c | missing |\n| \"Table_14\" | c38d6b31892341210c9b31170372d17449b5e9e07cfcf0b0489ec6a40daebfed | missing |\n| \"Table_15\" | 9fd738e1c14292faa31f32beab6700854962edfa12374730ab129405691b2e74 | missing |\n| \"Table_16\" | e0d9d4464dc33d9fd4d56615e722b3181515c53fd8f0b440373d4a156a2ca10f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T090905Z-49d6f7f44d03.jsonl"
+  }
+}

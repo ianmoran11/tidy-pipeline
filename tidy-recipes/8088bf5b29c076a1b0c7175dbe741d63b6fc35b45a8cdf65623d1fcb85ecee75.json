@@ -1,0 +1,198 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "8088bf5b29c076a1b0c7175dbe741d63b6fc35b45a8cdf65623d1fcb85ecee75",
+  "sheet": "Table 1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "6a9f8bfd62304f56d77ae8786d936012cb1b64536d346be9db1422b7e025549f",
+  "agent_notes": "Population is Indigenous sentenced prisoners, as published in A4. Offence total rows and sentence-length total columns are retained and overlap components. Sentence-length count columns include Periodic detention, Life, Other and Total; percentage, mean and median columns are separate measures. Published values and differences between sentence-basis totals are preserved.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "length_8",
+      "range": "A8:N26",
+      "values_range": "B9:N26",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A9:A26",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7:N7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sentence_basis",
+          "cells": "A8"
+        }
+      ]
+    },
+    {
+      "name": "summary_8",
+      "range": "O9:Q26",
+      "values_range": "O9:Q26",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A9:A26",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "O7:Q7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sentence_basis",
+          "cells": "A8"
+        }
+      ]
+    },
+    {
+      "name": "length_27",
+      "range": "A27:N45",
+      "values_range": "B28:N45",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A28:A45",
+          "direction": "W"
+        },
+        {
+          "name": "sentence_length",
+          "cells": "B7:N7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sentence_basis",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "summary_27",
+      "range": "O28:Q45",
+      "values_range": "O28:Q45",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A28:A45",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "O7:Q7",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sentence_basis",
+          "cells": "A27"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T11:31:09Z",
+    "tool_version": "0.2.0",
+    "records": 576,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T113049Z-0215eb0a5127",
+    "started_at": "2026-10-31T11:30:50Z",
+    "workbook": "0215eb0a51276cc2bd7dfa1ffb9667705562ad2c1edfb67ab8016c252f6149c4--prisoners-australia-2007-cube-11-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a191ba-08e4-7665-8561-daea80fbcfdb",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e217d30d44d20a52d719ebfe4f94d5cdb819585fa0961873301480daea3a02c6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0215eb0a51276cc2bd7dfa1ffb9667705562ad2c1edfb67ab8016c252f6149c4--prisoners-australia-2007-cube-11-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2007\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 1\" | 8088bf5b29c076a1b0c7175dbe741d63b6fc35b45a8cdf65623d1fcb85ecee75 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T113049Z-0215eb0a5127.jsonl"
+  }
+}

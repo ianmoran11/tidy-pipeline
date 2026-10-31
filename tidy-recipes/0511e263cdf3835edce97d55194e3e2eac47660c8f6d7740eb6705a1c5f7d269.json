@@ -1,0 +1,196 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0511e263cdf3835edce97d55194e3e2eac47660c8f6d7740eb6705a1c5f7d269",
+  "sheet": "Table 41",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "d1db098c3bcc6340446c84e47d365e5880764d9749c9e99c4bf2168bb12a6a15",
+  "agent_notes": "Nested finalisation subtotals and all totals retained; adjudicated outcomes includes acquitted/proven guilty, and proven guilty includes plea/finding/ex-parte where published. Sentence totals are distinguished by principal_sentence_group. Northern Territory and court level appear in the title; reference period is 2015–16 in the publication banner.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A6,A16"
+    }
+  ],
+  "tables": [
+    {
+      "name": "method_of_finalisation",
+      "range": "A7:R15",
+      "values_range": "B7:R15",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A7:A15"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        }
+      ]
+    },
+    {
+      "name": "custodial_sentences",
+      "range": "A18:R21",
+      "values_range": "B18:R21",
+      "meta_data": [
+        {
+          "name": "principal_sentence_group",
+          "cells": "A17"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A18:A21"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        }
+      ]
+    },
+    {
+      "name": "non_custodial_sentences",
+      "range": "A23:R26",
+      "values_range": "B23:R26",
+      "meta_data": [
+        {
+          "name": "principal_sentence_group",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A23:A26"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        }
+      ]
+    },
+    {
+      "name": "total_proven_guilty",
+      "range": "A27:R27",
+      "values_range": "B27:R27",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A27:A27"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T10:18:52Z",
+    "tool_version": "0.2.0",
+    "records": 306,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T101812Z-a9b70e13c5af",
+    "started_at": "2026-10-31T10:18:13Z",
+    "workbook": "a9b70e13c5af99323a2f2a67875104b2e1837fd1043bd98f82b06c88f82d0ea0--criminal-courts-australia-2015-16-cube-10-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19177-8ce7-7184-97d8-b8d78c034159",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "eff02fe7bda6caead6c23d75ef89189db1a7bd56c1186a6e69cb404d7abc5c81",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a9b70e13c5af99323a2f2a67875104b2e1837fd1043bd98f82b06c88f82d0ea0--criminal-courts-australia-2015-16-cube-10-source.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2015-16\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 480fbb293a3fed53e86a2e19dd2b5c1bd2cd4c9edfc1b44f0cbdee1d7c8f0964 | missing |\n| \"Table 39\" | 07ae2b0c44ed0d0395fb0cee047410ce55ba0bb641b73441568d7214e649da16 | missing |\n| \"Table 40\" | 883256918ae52014304414a02fee13bf17ab27be20d11daeda21522ae3f0f5d0 | missing |\n| \"Table 41\" | 0511e263cdf3835edce97d55194e3e2eac47660c8f6d7740eb6705a1c5f7d269 | missing |\n| \"Table 42\" | 457bdba8db2ccb67f34a8b2c3e1a5bf8eb324b523992d4d18a03ea76c7e2aaa7 | missing |\n| \"Explanatory Notes\" | 408f13ccc6ee188bb65e8e39801daddf8e3680df6cfce58543b1d36ae6648a85 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T101812Z-a9b70e13c5af.jsonl"
+  }
+}

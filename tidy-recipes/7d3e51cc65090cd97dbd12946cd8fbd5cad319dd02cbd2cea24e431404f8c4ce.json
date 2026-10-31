@@ -1,0 +1,197 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "7d3e51cc65090cd97dbd12946cd8fbd5cad319dd02cbd2cea24e431404f8c4ce",
+  "sheet": "Table 6",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published labels, footnote markers and all totals retained. Totals overlap component categories and should not be summed with them; perturbation can prevent additivity.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A61:A66"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_8",
+      "range": "A8:G24",
+      "values_range": "B8:G24",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A8:A24",
+          "direction": "W"
+        },
+        {
+          "name": "indigenous_status",
+          "cells": "B5,D5,F5",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "B6:G6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A7"
+        }
+      ]
+    },
+    {
+      "name": "sex_26",
+      "range": "A26:G42",
+      "values_range": "B26:G42",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A26:A42",
+          "direction": "W"
+        },
+        {
+          "name": "indigenous_status",
+          "cells": "B5,D5,F5",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "B6:G6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A25"
+        }
+      ]
+    },
+    {
+      "name": "sex_44",
+      "range": "A44:G60",
+      "values_range": "B44:G60",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A44:A60",
+          "direction": "W"
+        },
+        {
+          "name": "indigenous_status",
+          "cells": "B5,D5,F5",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "B6:G6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A43"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T08:58:08Z",
+    "tool_version": "0.2.0",
+    "records": 306,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T085613Z-28af38975131",
+    "started_at": "2026-10-31T08:56:17Z",
+    "workbook": "28af3897513142d7080f02a0cee4a21d763f1b633aaf8e0cee9e53561f0a317c--prisoners-australia-2025-national-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1912c-89c9-777e-93f1-96114d5b5c18",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e3dbaa7a0fd111b1e04bb54d7c0f8b9349bae00acb81caf5b72c5943bbdd5864",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `28af3897513142d7080f02a0cee4a21d763f1b633aaf8e0cee9e53561f0a317c--prisoners-australia-2025-national-source.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2025\n- Sheets needing a recipe: 16 of 16\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0462ba3c17bab1ce8c9cb1a5b07aa36b803fbd139ae2306de06a26e9beaab9ce | missing |\n| \"Table 1\" | 0e78d52485eb89d5222364bd5f5d485f47c445f606001d72c750644e54dcfd14 | missing |\n| \"Table 2\" | 8ebc4eca1981ec5d960900f4dd0ce9ef19ab716d181b24ce0e5b89b5e22db156 | missing |\n| \"Table 3\" | 3894b6e666385b1c1a889269fea4420674aff9629d192948b7d9b0bdf49e8b80 | missing |\n| \"Table 4\" | 1a720707d372d24d4568332e36e44eff8d5e2e5637da4669d8e4cc3c8010f968 | missing |\n| \"Table 5\" | eff7d0c7ce32c47649c13119e4bc3a3638d17b036005a52b315fd2c35857668a | missing |\n| \"Table 6\" | 7d3e51cc65090cd97dbd12946cd8fbd5cad319dd02cbd2cea24e431404f8c4ce | missing |\n| \"Table 7\" | 25a6c021e82c80f5d8c8f4a097926d0857adc0366b8a61e43bd6452237392556 | missing |\n| \"Table 8\" | fe4ee1ecceb10497dfbb630afa9712ea918515041a985950c6e5257145ed8769 | missing |\n| \"Table 9\" | 304d7544edca6289b67ba6a15ef79afd6886cf35621a8cb1862c55d2ebac9790 | missing |\n| \"Table 10\" | 7933e2d4f989db54756c74f5534956c9334b8ab9cdc12d6b687a2977d35dbcf1 | missing |\n| \"Table 11\" | 0d266f474194764bb65a3bc9ffe7ffbf1d9b36ea4ec7778305c8aa4df59f6445 | missing |\n| \"Table 12\" | 3dbaabc86e3a7feae287a401d72e301038284d28727eef7d9d8f4f530e426162 | missing |\n| \"Table 13\" | 23c62754e286ce2a83c603f2fa41815a7e70344b85588023646af07a6144042d | missing |\n| \"Table 14\" | 96c35008471d4bbf0cbff98e22e441645f7cf24141339b9a4e417a13a8026863 | missing |\n| \"Further information\" | acdd5caefd79cfbfb7058d684047c04456ff0894678a39b57cdd08fc9f9ea33c | missing |\n\nRelated workbooks:\n- A normalized copy of this workbook exists (d6e2f3e3e2a7a86b990fd89066e8f5f3d4bea5d2d217925083d27eb3a36a021a; fea82708f82cef5e8d58b44edc16e56158f9416755d69336e36c6ce03cb95a93). Layout should match.\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261031T085613Z-28af38975131.jsonl"
+  }
+}

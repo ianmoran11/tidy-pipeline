@@ -1,0 +1,433 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6de84127f0a1be9b6a285ae552ab5794c9f5190373d22bb2db82bdf0307cb3d4",
+  "sheet": "Table 1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Court and sex categories retain source indents. Adjudicated outcomes contain Acquitted and Proven guilty and their Total adjudicated subtotal. Total finalised defendants retained. Age and duration statistics have published units in labels; corresponding proportion rows are blank and retained only as metadata.",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release_date",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8"
+    },
+    {
+      "name": "unpopulated_characteristics",
+      "cells": "A47:A49,A59:A61"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_court",
+      "range": "A11:E13",
+      "values_range": "B11:E13",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A11:A13"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "number_sex",
+      "range": "A16:E18",
+      "values_range": "B16:E18",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A16:A18"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "age",
+      "range": "A21:E22",
+      "values_range": "B21:E22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A20"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A21:A22"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "number_adjudicated",
+      "range": "A25:E28",
+      "values_range": "B26:E28",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A24"
+        },
+        {
+          "name": "outcome",
+          "cells": "A25"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A26:A28"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "number_other_finalisation",
+      "range": "A29:E30",
+      "values_range": "B29:E30",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A29:A30"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "duration",
+      "range": "A33:E34",
+      "values_range": "B33:E34",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A32"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A33:A34"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "number_total",
+      "range": "A35:E35",
+      "values_range": "B35:E35",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A35:A35"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "proportion_court",
+      "range": "A38:E40",
+      "values_range": "B38:E40",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A36"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A37"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A38:A40"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "proportion_sex",
+      "range": "A43:E45",
+      "values_range": "B43:E45",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A36"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A43:A45"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "proportion_adjudicated",
+      "range": "A52:E55",
+      "values_range": "B53:E55",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A36"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A51"
+        },
+        {
+          "name": "outcome",
+          "cells": "A52"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A53:A55"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "proportion_other_finalisation",
+      "range": "A56:E57",
+      "values_range": "B56:E57",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A36"
+        },
+        {
+          "name": "characteristic",
+          "cells": "A51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A56:A57"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    },
+    {
+      "name": "proportion_total",
+      "range": "A62:E62",
+      "values_range": "B62:E62",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Summary characteristics",
+          "direction": "W",
+          "cells": "A62:A62"
+        },
+        {
+          "name": "year",
+          "direction": "N",
+          "cells": "B8:E8"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-31T06:36:00Z",
+    "tool_version": "0.2.0",
+    "records": 112,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261031T063436Z-a0f17e5ba3d1",
+    "started_at": "2026-10-31T06:34:36Z",
+    "workbook": "a0f17e5ba3d14d9185ae3067e871bdc9479ed564f4f734f4b65a9fe3e966e0b8--federal-defendants-australia-2013-14-cube-1-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "session_id": "01a190aa-d330-76d2-94bd-86995659229d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
+        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
+        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
+        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
+        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+      }
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
+      "sha256": "c48a399831d3d5a2d76d33e3fcab31926d42343adabaaa1af0835629d26832b5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a0f17e5ba3d14d9185ae3067e871bdc9479ed564f4f734f4b65a9fe3e966e0b8--federal-defendants-australia-2013-14-cube-1-source.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2013-14\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"List of Tables\" | d75c8199ab338cd73cd3a3a4a7f979a1b1d6b669726a76d28d6ef11e4e333582 | missing |\n| \"Table 1\" | 6de84127f0a1be9b6a285ae552ab5794c9f5190373d22bb2db82bdf0307cb3d4 | missing |\n| \"Table 2\" | 3710635389cf10b1dd2df5c92fc0ed7d7546697645fa38239a05f06b2ff8f096 | missing |\n| \"Table 3\" | bd6c7060fb21954c303f041998ffc6939763e8a2196ff264e1b950081dd866ad | missing |\n| \"Table 4\" | 06c4d1cab46c852200d1643f207e47fc32cf7b73517574644a6044533a43fb6e | missing |\n| \"Table 5\" | 6b49771238d85bb150c41c9b6b37270fd294ff5bd1d54a0b95b93083d91ed3b7 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+    },
+    "log": "agents/logs/a0f17e5ba3d14d9185ae3067e871bdc9479ed564f4f734f4b65a9fe3e966e0b8.jsonl",
+    "backfilled": {
+      "at": "2026-10-31T06:58:48Z",
+      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
+    }
+  }
+}
