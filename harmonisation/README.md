@@ -26,9 +26,11 @@ For each record, in order:
    "age_group":  { "Median (years)": { "measure": "Median age", "unit": "years", "age_group": "Total", "_replace": ["measure", "unit"] } },
    "measure":    { "Female": { "sex": "Females", "measure": null } }
    ```
-4. **`from_title`.** Dimensions still missing are taken from the table title and
-   subtitle. Rules run in order; the first rule for a dimension with exactly one
-   distinct match wins. `values` maps the lower-case match to a canonical label,
+4. **`from_title`.** Dimensions still missing are taken from the table title, then
+   from the subtitle for any still missing. The subtitle always names the release
+   period ("Recorded Crime - Offenders, 2010–11"), so it is read separately and
+   can't outvote a table period in the title. Rules run in order; the first rule for
+   a dimension with exactly one distinct match wins. `values` maps the lower-case match to a canonical label,
    `value` gives a fixed label, and `replace` applies regex replacements.
 
    ```json

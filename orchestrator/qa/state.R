@@ -1,0 +1,10 @@
+suppressMessages({library(dplyr); library(purrr)})
+m <- readr::read_csv("source_metadata.csv", show_col_types = FALSE, col_types = readr::cols(.default = "c"), trim_ws = FALSE)
+files <- list.files("tidy-recipes", pattern = "^[0-9a-f]{64}\\.json$", full.names = TRUE)
+r <- map_dfr(files, function(p) { s <- jsonlite::read_json(p); tibble(sheet_sha256 = sub("\\.json$", "", basename(p)), kind = s$kind, status = s$status,
+  method = s$generation$method %||% NA, version = s$version, dict_ok = TRUE) }) %>% left_join(m %>% select(sheet_sha256, publication_id, reference_only), by = "sheet_sha256")
+cat("recipes:", nrow(r), "\n"); print(count(r, status)); print(count(r, kind))
+act <- m %>% filter(reference_only == "FALSE")
+cat("active sheets:", nrow(act), "| with recipe:", sum(act$sheet_sha256 %in% r$sheet_sha256), "\n")
+print(act %>% mutate(has = sheet_sha256 %in% r$sheet_sha256) %>% group_by(publication_id) %>% summarise(sheets = n(), recipes = sum(has), left = sum(!has)))
+q <- readr::read_csv("agents/queue.csv", show_col_types = FALSE); cat("queue: workbooks", nrow(q), "done", sum(q$done), "\n")

@@ -22,12 +22,17 @@
     },
     {
       "dimension": "court_level",
-      "pattern": "(?<![A-Za-z])(Higher Courts|Magistrates'? Courts|Children's Courts)(?![A-Za-z])",
+      "pattern": "(?<![A-Za-z])(Higher Courts?|Magistrates'? Courts?|Children's Courts?|All Courts)(?![A-Za-z])",
       "values": {
         "higher courts": "Higher Courts",
         "magistrates' courts": "Magistrates' Courts",
         "magistrates courts": "Magistrates' Courts",
-        "children's courts": "Children's Courts"
+        "children's courts": "Children's Courts",
+        "higher court": "Higher Courts",
+        "magistrates' court": "Magistrates' Courts",
+        "magistrates court": "Magistrates' Courts",
+        "children's court": "Children's Courts",
+        "all courts": "All Courts"
       }
     },
     {
@@ -51,14 +56,25 @@
     },
     {
       "dimension": "period",
-      "pattern": "(?<!to )(?<![0-9–-])((?:19|20)[0-9]{2}[–-][0-9]{2})\\s*(?:\\([^)]*\\))?\\s*(?=/|$)",
+      "pattern": "(?<!to )(?<![0-9])(?<![0-9][–-])((?:19|20)[0-9]{2}[–-][0-9]{2})\\s*(?:\\([^)]*\\))?\\s*(?=/|$)",
       "replace": [
-        ["^([0-9]{4})-([0-9]{2})$", "\\1–\\2"]
+        [
+          "^([0-9]{4})-([0-9]{2})$",
+          "\\1–\\2"
+        ]
       ]
     },
     {
       "dimension": "period",
       "pattern": ", ((?:19|20)[0-9]{2})\\s*(?=/|$)"
+    },
+    {
+      "dimension": "principal_offence",
+      "pattern": "(?:^| / )Table [0-9]+[a-z]? Federal defendants[^,]*, (.+?), Summary characteristics"
+    },
+    {
+      "dimension": "principal_offence",
+      "pattern": "Family and domestic violence defendants (?:finalised|with a guilty outcome), ([^,]+), (?:New South Wales|Victoria|Queensland|South Australia|Western Australia|Tasmania|Northern Territory|Australian Capital Territory|Australia)(?:,|$| / )"
     }
   ],
   "split": {
@@ -197,6 +213,18 @@
       "Indigenous children on care and protection orders": {
         "indigenous_status": "Aboriginal and Torres Strait Islander",
         "population": "Children on care and protection orders"
+      },
+      "Defendants finalised (excluding transfers to other court levels)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "Defendants finalised (excluding transfer to other court levels)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "Finalised (excluding transfer to other court levels)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
       }
     },
     "time_on_remand": {
@@ -496,6 +524,22 @@
         "measure": "Median length",
         "unit": "days",
         "period": "2024–25"
+      },
+      "FEDERAL DEFENDANTS FINALISED": {
+        "population": "Federal defendants finalised",
+        "measure": "Number"
+      },
+      "FEDERAL DEFENDANTS PROVEN GUILTY": {
+        "population": "Federal defendants with a guilty outcome",
+        "measure": "Number"
+      },
+      "ALL PRISONERS": {
+        "population": "Prisoners",
+        "measure": "Number"
+      },
+      "TOTAL SENTENCED PRISONERS": {
+        "population": "Sentenced prisoners",
+        "measure": "Number"
       }
     },
     "sentence_length": {

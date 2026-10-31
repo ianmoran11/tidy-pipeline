@@ -4,7 +4,8 @@
 #   2. stacked characteristic/category pairs become the named dimension ("unstack");
 #   3. compound labels are split into several dimensions ("split");
 #   4. missing dimensions come from the table title ("from_title", one match only),
-#      then period falls back to the release's reference period ("fallback_periods");
+#      then from the subtitle (which names the release period, so it must not
+#      outvote the title), then period falls back to the release's reference period;
 #   5. reference_date is added from period ("reference_dates").
 # Dimensions added or changed by steps 3-5 are listed in .derived. row, col, address and
 # .value never change; a split that contradicts a label already on the record is an error.
@@ -39,10 +40,10 @@ harmonise <- function(sheet_result, harmonisation_spec) {
     }
     rec
   }
-  sheet_title <- unlist(sheet_result$sheet_metata[c("table_title", "table_subtitle")])
+  sheet_title <- unlist(sheet_result$sheet_metata[["table_title"]]); subtitle <- unlist(sheet_result$sheet_metata[["table_subtitle"]])
   sheet_result$tables <- lapply(sheet_result$tables, function(table) {
     meta <- table$meta_data_list
-    constants <- from_title(paste(c(unlist(meta[["table_title"]]), sheet_title), collapse = " / "))
+    constants <- from_title(paste(subtitle, collapse = " / "), from_title(paste(c(unlist(meta[["table_title"]]), sheet_title), collapse = " / ")))
     labels <- lapply(meta[setdiff(names(meta), c("table_title", "table_subtitle", "notes", "source"))], paste, collapse = " ")
     table$tidy_table_list <- lapply(table$tidy_table_list, function(rec) {
       rec <- base <- unstack(c(rec, labels[setdiff(names(labels), names(rec))]))

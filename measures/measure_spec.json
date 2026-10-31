@@ -1,0 +1,690 @@
+{
+  "description": "Stage 4 (identify): what each record counts. See measures/README.md.",
+  "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+[a-z]?\\s*[:.–-]?\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
+  "replace_labels": {
+    "population": [
+      "Total"
+    ]
+  },
+  "title_flags": [
+    {
+      "pattern": "^ANZSOC 2023\\b|Preliminary ANZSOC 2023",
+      "set": {
+        "offence_classification": "ANZSOC 2023 (preliminary)"
+      }
+    },
+    {
+      "pattern": "Experimental data",
+      "set": {
+        "data_status": "Experimental"
+      }
+    },
+    {
+      "pattern": "45130DO00[26]_(200910|201011)",
+      "set": {
+        "court_level": "Higher Courts"
+      }
+    },
+    {
+      "pattern": "45130DO00[37]_(200910|201011)",
+      "set": {
+        "court_level": "Magistrates' Courts"
+      }
+    },
+    {
+      "pattern": "45130DO00[48]_(200910|201011)",
+      "set": {
+        "court_level": "Children's Courts"
+      }
+    },
+    {
+      "pattern": "45130DO005_200910",
+      "set": {
+        "court_level": "All Courts"
+      }
+    },
+    {
+      "pattern": "aggregate sentence length",
+      "set": {
+        "sentence_basis": "Aggregate sentence length"
+      }
+    },
+    {
+      "pattern": "expected time to serve",
+      "set": {
+        "sentence_basis": "Expected time to serve"
+      }
+    }
+  ],
+  "measure_from_unit": {
+    "no.": "Number",
+    "%": "Proportion"
+  },
+  "default_measure": {
+    "criminal-courts-australia": "Number",
+    "federal-defendants-australia": "Number",
+    "prisoners-australia": "Number",
+    "recorded-crime-offenders": "Number"
+  },
+  "subjects": {
+    "aihw-youth-justice-australia": {
+      "population of young people aged 10–17": {
+        "population": "Young people aged 10–17",
+        "measure": "Population"
+      }
+    },
+    "criminal-courts-australia": {
+      "court level and principal offence by principal sentence": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "custodial sentence by all courts": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "All Courts"
+      },
+      "custodial sentence by children's court": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "Children's Courts"
+      },
+      "custodial sentence by higher courts": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "Higher Courts"
+      },
+      "custodial sentence by magistrates' court": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "Magistrates' Courts"
+      },
+      "defendants adjudicated": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants adjudicated - children's courts": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants adjudicated - higher courts": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants adjudicated - magistrates' courts": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants finalised": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised (excluding traffic offences)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding traffic offences"
+      },
+      "defendants finalised (excluding transfers and organisations)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding transfers and organisations"
+      },
+      "defendants finalised (excluding transfers and traffic offences)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding transfers and traffic offences"
+      },
+      "defendants finalised (excluding transfers)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "defendants finalised - children's courts": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised - higher courts": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised - magistrates' courts": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised and with a guilty outcome": {
+        "population": "Defendants finalised"
+      },
+      "defendants given a fine": {
+        "population": "Defendants given a fine"
+      },
+      "defendants given community service orders": {
+        "population": "Defendants sentenced to a community service order"
+      },
+      "defendants given custody in a correctional institution": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants given fines": {
+        "population": "Defendants given a fine"
+      },
+      "defendants proven guilty": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants proven guilty (excluding traffic offences)": {
+        "population": "Defendants with a guilty outcome",
+        "scope": "Excluding traffic offences"
+      },
+      "defendants proven guilty - children's courts": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants proven guilty - higher courts": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants proven guilty - magistrates' courts": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants sentenced to a custodial order": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order - children's courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order – combined all courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order – higher courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order – magistrates' courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custody in a correctional institution": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to a fully suspended sentence": {
+        "population": "Defendants sentenced to a fully suspended sentence"
+      },
+      "defendants sentenced to community service / work": {
+        "population": "Defendants sentenced to community service / work"
+      },
+      "defendants sentenced to community service order": {
+        "population": "Defendants sentenced to a community service order"
+      },
+      "defendants sentenced to custody in a correctional institution (excluding traffic offences)": {
+        "population": "Defendants sentenced to custody in a correctional institution",
+        "scope": "Excluding traffic offences"
+      },
+      "defendants sentenced to custody in a correctional institution - all courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution - children's courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution - higher courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution - magistrates' courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – all courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – children's courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – higher courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – magistrates' courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in the community": {
+        "population": "Defendants sentenced to custody in the community"
+      },
+      "defendants with a guilty outcome": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants with a guilty outcome (excluding traffic offences)": {
+        "population": "Defendants with a guilty outcome",
+        "scope": "Excluding traffic offences"
+      },
+      "duration from initiation to finalisation": {
+        "population": "Defendants finalised"
+      },
+      "family and domestic violence defendants finalised": {
+        "population": "Family and domestic violence defendants finalised"
+      },
+      "family and domestic violence defendants finalised for a breach of violence order and at least one other fdv offence": {
+        "population": "Family and domestic violence defendants finalised for a breach of violence order and at least one other family and domestic violence offence"
+      },
+      "family and domestic violence defendants proven guilty": {
+        "population": "Family and domestic violence defendants with a guilty outcome"
+      },
+      "family and domestic violence defendants with a guilty outcome": {
+        "population": "Family and domestic violence defendants with a guilty outcome"
+      },
+      "family and domestic violence offences": {
+        "population": "Family and domestic violence offences"
+      },
+      "length of community service order": {
+        "population": "Defendants sentenced to a community service order"
+      },
+      "length of custody": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "length of custody in a correctional institution": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "length of custody in a correctional institution (excluding traffic offences)": {
+        "population": "Defendants sentenced to custody in a correctional institution",
+        "scope": "Excluding traffic offences"
+      },
+      "rate of defendants finalised (excluding transfers and traffic offences)": {
+        "population": "Defendants finalised",
+        "measure": "Rate",
+        "scope": "Excluding transfers and traffic offences"
+      },
+      "summary characteristics of all defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of all defendants - combined all courts": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants (excluding traffic offences)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding traffic offences"
+      },
+      "summary characteristics of defendants - children's courts": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants - higher courts": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants - magistrates' courts": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes for all defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants - children's courts": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants - higher courts": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants - magistrates' courts": {
+        "population": "Defendants finalised"
+      },
+      "value of fine": {
+        "population": "Defendants given a fine"
+      },
+      "youth defendants finalised": {
+        "population": "Youth defendants finalised"
+      },
+      "youth defendants finalised (excluding transfers and traffic offences)": {
+        "population": "Youth defendants finalised",
+        "scope": "Excluding transfers and traffic offences"
+      },
+      "youth defendants finalised (excluding transfers)": {
+        "population": "Youth defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "youth defendants with a guilty outcome": {
+        "population": "Youth defendants with a guilty outcome"
+      }
+    },
+    "employee-earnings-hours-australia": {
+      "all employees": {
+        "population": "All employees"
+      },
+      "all employees excluding owner managers of incorporated enterprises": {
+        "population": "All employees",
+        "scope": "Excluding owner managers of incorporated enterprises"
+      },
+      "full-time non-managerial employees paid at the adult rate": {
+        "population": "Full-time non-managerial employees paid at the adult rate"
+      },
+      "non-managerial employees": {
+        "population": "Non-managerial employees"
+      }
+    },
+    "federal-defendants-australia": {
+      "federal defendants": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised (excluding organisations)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding organisations"
+      },
+      "federal defendants finalised (excluding transfers)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "federal defendants finalised (excluding transfers) and with a guilty outcome": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "federal defendants finalised and guilty outcome": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised and proven guilty": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised and with a guilty outcome": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised with a guilty outcome": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty (excluding organisations)": {
+        "population": "Federal defendants with a guilty outcome",
+        "scope": "Excluding organisations"
+      },
+      "federal defendants with a guilty outcome": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal offences": {
+        "population": "Federal offences"
+      }
+    },
+    "pc-report-on-government-services-justice": {
+      "adults discharged from community corrections orders who returned to corrective services with a new correctional sanction within two years": {
+        "population": "Adults discharged from community corrections orders",
+        "measure": "Proportion returning within two years"
+      },
+      "adults released from prison who returned to prison or to corrective services with a new correctional sanction within two years": {
+        "population": "Adults released from prison",
+        "measure": "Proportion returning within two years"
+      },
+      "assaults in custody": {
+        "population": "Prisoners",
+        "measure": "Assaults in custody"
+      },
+      "community corrections offender population (average daily number)": {
+        "population": "Community corrections offenders",
+        "measure": "Average daily number"
+      },
+      "community corrections offender population (average daily number) and rates per 100 000 relevant adults": {
+        "population": "Community corrections offenders"
+      },
+      "community corrections offender-to-staff ratio": {
+        "population": "Community corrections offenders",
+        "measure": "Offender-to-staff ratio"
+      },
+      "completion of community corrections orders": {
+        "population": "Community corrections orders",
+        "measure": "Proportion completed"
+      },
+      "correctional custodial facilities": {
+        "population": "Correctional custodial facilities"
+      },
+      "deaths from apparent unnatural causes": {
+        "population": "Prisoners",
+        "measure": "Deaths from apparent unnatural causes"
+      },
+      "deaths from apparent unnatural causes by indigenous status": {
+        "population": "Prisoners",
+        "measure": "Deaths from apparent unnatural causes"
+      },
+      "escapes per 100 prisoners": {
+        "population": "Prisoners",
+        "measure": "Escapes per 100 prisoners"
+      },
+      "imprisonment and community corrections population rate per 100 000 adults": {
+        "population": "Prisoners and community corrections offenders"
+      },
+      "number of times offenders proceeded against by police": {
+        "population": "Offenders",
+        "measure": "Number"
+      },
+      "prison design capacity utilisation": {
+        "population": "Prisons",
+        "measure": "Design capacity utilisation"
+      },
+      "prisoner education and training (per cent of eligible prisoners)": {
+        "population": "Eligible prisoners",
+        "measure": "Proportion in education and training",
+        "unit": "%"
+      },
+      "prisoner employment (per cent of eligible prisoners)": {
+        "population": "Eligible prisoners",
+        "measure": "Proportion employed",
+        "unit": "%"
+      },
+      "prisoner employment by indigenous status (per cent of eligible prisoners)": {
+        "population": "Eligible prisoners",
+        "measure": "Proportion employed",
+        "unit": "%"
+      },
+      "prisoner population (average daily number)": {
+        "population": "Prisoners",
+        "measure": "Average daily number"
+      },
+      "prisoner population (average daily number) and rates per 100 000 relevant adults": {
+        "population": "Prisoners"
+      },
+      "real net operating expenditure": {
+        "population": "Corrective services",
+        "measure": "Real net operating expenditure"
+      },
+      "real net operating expenditure per prisoner and per offender per day": {
+        "population": "Prisoners and community corrections offenders",
+        "measure": "Real net operating expenditure per day"
+      },
+      "real recurrent expenditure (less revenue from own sources) on justice services by australian": {
+        "population": "Justice services",
+        "measure": "Real recurrent expenditure"
+      },
+      "real recurrent expenditure (less revenue from own sources) per person on justice services": {
+        "population": "Justice services",
+        "measure": "Real recurrent expenditure per person"
+      },
+      "recurrent expenditure": {
+        "population": "Corrective services",
+        "measure": "Recurrent expenditure"
+      },
+      "recurrent expenditure per prisoner and per offender per day": {
+        "population": "Prisoners and community corrections offenders",
+        "measure": "Recurrent expenditure per day"
+      },
+      "time out-of-cells (average hours per day)": {
+        "population": "Prisoners",
+        "measure": "Time out of cells",
+        "unit": "hours per day"
+      }
+    },
+    "prisoners-australia": {
+      "aboriginal and torres strait islander sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
+      },
+      "age standardised imprisonment rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Age standardised"
+      },
+      "age standardised imprisonment rates": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Age standardised"
+      },
+      "all sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "crude imprisonment rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Crude"
+      },
+      "crude imprisonment rates": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Crude"
+      },
+      "estimated adult resident population": {
+        "population": "Adults",
+        "measure": "Estimated resident population"
+      },
+      "estimated indigenous population": {
+        "population": "Aboriginal and Torres Strait Islander people",
+        "measure": "Estimated resident population"
+      },
+      "estimated resident population": {
+        "population": "Persons",
+        "measure": "Estimated resident population"
+      },
+      "federal offences": {
+        "population": "Federal prisoners and parolees"
+      },
+      "federal parolees": {
+        "population": "Federal parolees"
+      },
+      "federal prisoners": {
+        "population": "Federal prisoners"
+      },
+      "federal prisoners and parolees": {
+        "population": "Federal prisoners and parolees"
+      },
+      "imprisonment rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate"
+      },
+      "imprisonment rates": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate"
+      },
+      "indicative impact of classification changes": {
+        "population": "Prisoners",
+        "scope": "Indicative impact of classification changes"
+      },
+      "indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
+      },
+      "mean and median age of periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "mean and median age of prisoners": {
+        "population": "Prisoners"
+      },
+      "mean and median aggregate sentence length of sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "mean and median expected time to serve of sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "non-indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Non-Indigenous"
+      },
+      "non-indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Non-Indigenous"
+      },
+      "number of prisoners": {
+        "population": "Prisoners",
+        "measure": "Number"
+      },
+      "number of sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "measure": "Number"
+      },
+      "number of unsentenced prisoners": {
+        "population": "Unsentenced prisoners",
+        "measure": "Number"
+      },
+      "periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "prisoner characteristics": {
+        "population": "Prisoners"
+      },
+      "prisoners": {
+        "population": "Prisoners"
+      },
+      "prisoners aged 50 years and over": {
+        "population": "Prisoners",
+        "age_group": "50 years and over"
+      },
+      "proportion of prisoners": {
+        "population": "Prisoners",
+        "measure": "Proportion"
+      },
+      "selected prisoner characteristics": {
+        "population": "Prisoners"
+      },
+      "sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "sentencing characteristics": {
+        "population": "Sentenced prisoners"
+      },
+      "table 33 sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "table 34 prisoners": {
+        "population": "Prisoners"
+      },
+      "table 36 prisoners": {
+        "population": "Prisoners"
+      },
+      "table 44 periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "time on remand as at 30 june 2006 for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      }
+    },
+    "recorded-crime-offenders": {
+      "covid-19 related proceedings": {
+        "population": "COVID-19 related proceedings"
+      },
+      "family and domestic violence offender rate": {
+        "population": "Offenders of family and domestic violence",
+        "measure": "Offender rate"
+      },
+      "family and domestic violence related proceedings": {
+        "population": "Family and domestic violence related proceedings"
+      },
+      "family and domestic violence related proceedings by court action": {
+        "population": "Family and domestic violence related proceedings",
+        "scope": "Court actions"
+      },
+      "offender rate": {
+        "population": "Offenders",
+        "measure": "Offender rate"
+      },
+      "offenders": {
+        "population": "Offenders"
+      },
+      "offenders of covid-19 related offences": {
+        "population": "Offenders of COVID-19 related offences"
+      },
+      "offenders of family and domestic violence": {
+        "population": "Offenders of family and domestic violence"
+      },
+      "offenders of fdv related breach of violence and non-violence orders": {
+        "population": "Offenders of family and domestic violence related breach of violence and non-violence orders"
+      },
+      "offenders of fdv-related breach of violence and non-violence orders": {
+        "population": "Offenders of family and domestic violence related breach of violence and non-violence orders"
+      },
+      "police proceedings": {
+        "population": "Police proceedings"
+      },
+      "police proceedings – court actions": {
+        "population": "Police proceedings",
+        "scope": "Court actions"
+      },
+      "proceedings of family and domestic violence": {
+        "population": "Family and domestic violence related proceedings"
+      },
+      "selected offenders": {
+        "population": "Selected offenders"
+      },
+      "youth offender rate": {
+        "population": "Youth offenders",
+        "measure": "Offender rate"
+      },
+      "youth offenders": {
+        "population": "Youth offenders"
+      }
+    }
+  }
+}

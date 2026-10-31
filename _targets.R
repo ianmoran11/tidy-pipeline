@@ -25,5 +25,20 @@ list(
   tar_target(harmonisation_spec_file, "harmonisation/harmonisation_spec.json", format = "file"),
   tar_target(harmonisation_spec, jsonlite::read_json(harmonisation_spec_file)),
   tar_target(data_harmonised, harmonise(data_normalised, harmonisation_spec), pattern = map(data_normalised), iteration = "list"),
-  tar_target(harmonisation_gaps, harmonisation_report(data_harmonised))
+  tar_target(harmonisation_gaps, harmonisation_report(data_harmonised)),
+  tar_target(measure_spec_file, "measures/measure_spec.json", format = "file"),
+  tar_target(measure_spec, jsonlite::read_json(measure_spec_file)),
+  tar_target(data_identified, identify(data_harmonised, measure_spec), pattern = map(data_harmonised), iteration = "list"),
+  tar_target(integration_spec_file, "integration/integration_spec.json", format = "file"),
+  tar_target(integration_spec, jsonlite::read_json(integration_spec_file)),
+  tar_target(integrated, assemble(data_identified, source_metadata_df, integration_spec)),
+  tar_target(value_spec_file, "integration/value_spec.json", format = "file"),
+  tar_target(value_spec, jsonlite::read_json(value_spec_file)),
+  tar_target(observations_typed, type_values(integrated$observations, integrated$sources, value_spec)),
+  tar_target(reconcile_spec_file, "integration/reconcile_spec.json", format = "file"),
+  tar_target(reconcile_spec, jsonlite::read_json(reconcile_spec_file)),
+  tar_target(observations, reconcile(observations_typed, integrated$sources, reconcile_spec)),
+  tar_target(integration_gaps, integration_report(observations, integrated$series, integrated$sources)),
+  tar_target(integrated_files, write_integrated(list(observations = observations, series = integrated$series,
+                                                     measures = integrated$measures, sources = integrated$sources)), format = "file")
 )
