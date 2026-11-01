@@ -18,6 +18,77 @@ dictionary.
 | `measures.csv` | measure: the measure catalogue |
 | `sources.csv` | source sheet: publication, release, workbook, sheet, title |
 
+### Data model
+
+```mermaid
+erDiagram
+    SOURCES ||--o{ OBSERVATIONS : "sheet_sha256"
+    SERIES ||--o{ OBSERVATIONS : "series_id"
+    MEASURES ||--o{ SERIES : "measure_id"
+
+    OBSERVATIONS {
+        string series_id FK
+        string period "as published, e.g. 2023–24"
+        date reference_date "end of the period"
+        float value "the number, rounded as published"
+        string value_status "published, blank, not_published, not_available, ..."
+        string value_flag "rse_25_to_50, rse_over_50, revised, footnote"
+        string published_text "the cell as displayed"
+        string release_id "the release that published it"
+        int n_releases "releases publishing this series and period"
+        bool is_latest "one per series and period"
+        bool differs_from_latest "revised in a later release"
+        string sheet_sha256 FK
+        string address "source cell, e.g. B12"
+        string derived "fields not read from the cell's own labels"
+    }
+    SERIES {
+        string series_id PK
+        string measure_id FK
+        string publication_id
+        string population "who is counted"
+        string measure
+        string unit
+        string estimate_type "e.g. Relative standard error"
+        string state
+        string sex
+        string age_group
+        string principal_offence "and about 180 more dimension columns"
+    }
+    MEASURES {
+        string measure_id PK
+        string publication_id
+        string population
+        string scope
+        string measure
+        string unit
+        string rate_standardisation
+        string estimate_type
+        string data_status
+        string offence_classification
+        int series "number of series"
+    }
+    SOURCES {
+        string sheet_sha256 PK "sha256 of source workbook sha256 / sheet name"
+        string publication_id
+        string publication
+        string publisher
+        string release_id
+        string release
+        date release_date
+        string xlsx_file
+        string sheet
+        string subject "who the title says is counted"
+        string title
+    }
+```
+
+A *series* is everything that identifies a value except its period: the publication,
+what is counted (the measure fields, which make up `measure_id`) and one column per
+dimension. A dimension a series doesn't have is empty, which means its total.
+`release_id` in `observations` names the release; `sources.csv` gives its date and
+name.
+
 ```r
 library(dplyr)
 obs <- readr::read_csv("observations.csv")
@@ -27,6 +98,64 @@ obs |> filter(is_latest) |> inner_join(series, by = "series_id") |>
 ```
 
 ## How it works
+
+```mermaid
+flowchart TD
+    subgraph SRC["Sources: get_source_data.R, outside targets"]
+        sel["sources/dataset_selection.json<br/>one switch per release"]
+        cat["sources/catalogues/*.csv<br/>source files, pinned by SHA-256"]
+        gsd["get_source_data.R<br/>download, check SHA-256, convert XLS with Excel"]
+        files[("source-spreadsheets-xlsx/<br/>source-originals/")]
+        meta["source_metadata.csv<br/>one row per sheet"]
+        sel --> gsd
+        cat --> gsd
+        gsd --> files
+        gsd --> meta
+    end
+
+    subgraph REC["Recipes: LLM agents"]
+        dict["dictionary/dimensions.csv<br/>dimension names"]
+        agents["agents/run_agents.sh<br/>Pi coding agent + recipe validator"]
+        recipes["tidy-recipes/*.json<br/>one recipe per sheet"]
+        dict --> agents
+        agents --> recipes
+    end
+    files --> agents
+
+    subgraph TAR["targets pipeline: _targets.R"]
+        selected["selected_sheets<br/>select_sheets()"]
+        subgraph PER["per sheet: one branch each"]
+            data["data<br/>process_recipe()"]
+            norm["data_normalised<br/>normalise()"]
+            harm["data_harmonised<br/>harmonise()"]
+            iden["data_identified<br/>identify()"]
+        end
+        subgraph WHOLE["whole dataset"]
+            asm["integrated<br/>assemble()"]
+            typ["observations_typed<br/>type_values()"]
+            recon["observations<br/>reconcile()"]
+        end
+        csv[("integrated/*.csv")]
+        selected --> data --> norm --> harm --> iden --> asm --> typ --> recon --> csv
+    end
+    sel --> selected
+    meta --> selected
+    recipes --> selected
+    files --> data
+
+    nspec(["normalisation_spec.json<br/>names, spellings, cleaning"]) -.-> norm
+    hspec(["harmonisation_spec.json<br/>splits, title rules, dates"]) -.-> harm
+    mspec(["measure_spec.json<br/>title subjects"]) -.-> iden
+    ispec(["integration_spec.json<br/>table layout"]) -.-> asm
+    vspec(["value_spec.json<br/>symbols, quality markers"]) -.-> typ
+    rspec(["reconcile_spec.json<br/>release order"]) -.-> recon
+```
+
+Each stage is a short R function driven by a JSON spec. The specs hold the knowledge
+about the sources, so adding a publication mostly means adding spec entries, not code.
+Every data target also has a check function (`R/check_*.R`, 78 tests); failures are
+collected in the `check_failures` target. Switching a release on or off, or editing one
+recipe, reruns only the affected branches.
 
 ```
 sources/dataset_selection.json   release switches (true/false) and pinned source catalogues
