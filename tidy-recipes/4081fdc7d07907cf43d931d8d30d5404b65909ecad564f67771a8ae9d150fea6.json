@@ -1,0 +1,220 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4081fdc7d07907cf43d931d8d30d5404b65909ecad564f67771a8ae9d150fea6",
+  "sheet": "Table_5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "6196d8e2aeb8a44c976504b3df549e7e2978a39070558682064d06276daadbc3",
+  "agent_notes": "Victims of physical assault; victim sex is distinct from offender sex. State and survey period are in the published title/subtitle. Indented relationship categories retained with Total offenders known as a subtotal, and overall Total retained separately. Blank value cells omitted, not zero; published zeros retained. Combined measure/RSE captions preserved verbatim under measure, with separate units.",
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A13,A20"
+    }
+  ],
+  "tables": [
+    {
+      "name": "offender_sex",
+      "range": "A9:M12",
+      "values_range": "B9:M12",
+      "headers": [
+        {
+          "name": "offender_sex",
+          "direction": "W",
+          "cells": "A9:A12",
+          "caption": "Sex of offender"
+        },
+        {
+          "name": "sex",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:M7"
+        }
+      ]
+    },
+    {
+      "name": "offender_relationship",
+      "range": "A14:M19",
+      "values_range": "B14:M19",
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A14:A19",
+          "caption": "Relationship to offender"
+        },
+        {
+          "name": "sex",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:M7"
+        }
+      ]
+    },
+    {
+      "name": "offender_cohabitation",
+      "range": "A21:M22",
+      "values_range": "B21:M22",
+      "headers": [
+        {
+          "name": "offender_cohabitation",
+          "direction": "W",
+          "cells": "A21:A22",
+          "caption": "Whether living with offender"
+        },
+        {
+          "name": "sex",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:M7"
+        }
+      ]
+    },
+    {
+      "name": "total",
+      "range": "A23:M23",
+      "values_range": "B23:M23",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A23:A23"
+        },
+        {
+          "name": "sex",
+          "direction": "NNW",
+          "cells": "B5,F5,J5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:M7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:36:09Z",
+    "tool_version": "0.2.0",
+    "records": 156,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123446Z-d653d22dda9b",
+    "started_at": "2026-11-01T12:34:51Z",
+    "workbook": "d653d22dda9b43089fd79871ef0f92a101712712b2c85c1cfdb38881e92442ad--45300do008_200910.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971b-0057-730a-bb4c-c14019e442e9",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a52fa32e239c33ada908acc0990c4e537df4618e24141d7012a39ab9525f2a60",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d653d22dda9b43089fd79871ef0f92a101712712b2c85c1cfdb38881e92442ad--45300do008_200910.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c07dfb2982b8c46dc704b33337c3c5099d9d61e5d7c9f77f199780f5effbbbc8 | missing |\n| \"Table_1\" | db7b8b643cbd5f5a3cb9d5ec2f60b5fb7559f5fbe48f16319f7ca164abc33f74 | missing |\n| \"Table_2\" | e58b3e6f9272a20414c0abfce96f5562807df471ce71dfc5616c3bc068c1a2e4 | missing |\n| \"Table_3\" | 21d3509444008657d61c519ccd195dbdcb7c29fe41b6c3f84cd0f8e55104713a | missing |\n| \"Table_4\" | 01d5419fed309b75c298cf488602f01d237943b6fe098cd01fee3039daf92bdf | missing |\n| \"Table_5\" | 4081fdc7d07907cf43d931d8d30d5404b65909ecad564f67771a8ae9d150fea6 | missing |\n| \"Table_6\" | 33328ad1528375aee6567f8ac1d8d3566279823ff5c99ee88941acc2d26b633b | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123446Z-d653d22dda9b.jsonl"
+  }
+}

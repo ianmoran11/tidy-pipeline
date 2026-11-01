@@ -1,0 +1,226 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4d80b9a7839624455073ee09a91bd04adeb89b3e5dabc730f0e3cdb5c52e0652",
+  "sheet": "Table 19",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "bed4dfbf9355af9d0373a06bd95dec8593189236d55c233eb17997fcf314df0a",
+  "agent_notes": "Published labels preserved. Totals and subtotals are retained, not additive to their components. Blank source cells omitted, not imputed. Reference year and offence appear in title. Location hierarchy: Community contains Transport, Street/footpath and Other community location; Other Location contains Retail, Recreational and Other.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A8,A17,A32,A41"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group_9",
+      "range": "A9:M15",
+      "values_range": "B9:M9,B10:M10,B11:M11,B12:M12,B13:M13,B14:M14,B15:M15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A9,A10,A11,A12,A13,A14,A15",
+          "caption": "Age"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_18",
+      "range": "A18:M30",
+      "values_range": "B18:M18,B19:M19,B20:M20,B21:M21,B22:M22,B24:M24,B25:M25,B26:M26,B27:M27,B29:M29,B30:M30",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A18,A19,A20,A21,A22,A24,A25,A26,A27,A29,A30",
+          "caption": "Location of offence"
+        }
+      ]
+    },
+    {
+      "name": "age_group_33",
+      "range": "A33:M39",
+      "values_range": "B33:M33,B34:M34,B35:M35,B36:M36,B37:M37,B38:M38,B39:M39",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B31"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A33,A34,A35,A36,A37,A38,A39",
+          "caption": "Age"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_42",
+      "range": "A42:M54",
+      "values_range": "B42:M42,B43:M43,B44:M44,B45:M45,B46:M46,B48:M48,B49:M49,B50:M50,B51:M51,B53:M53,B54:M54",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B31"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        },
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A42,A43,A44,A45,A46,A48,A49,A50,A51,A53,A54",
+          "caption": "Location of offence"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:18:40Z",
+    "tool_version": "0.2.0",
+    "records": 432,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T141647Z-ff83856b7d26",
+    "started_at": "2026-11-01T14:16:49Z",
+    "workbook": "ff83856b7d26398a09139cad80851e83d84f79827a8b35848ef656cdd38c1f27--victims-of-crime-indigenous-status-selected-states-and-territories.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19778-5a14-7604-9d54-c7d51e417a94",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9fad6f7ddcb16fff67c1ef4f329f1331ae31ec56fac16ec89fc34a7727aa51f2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ff83856b7d26398a09139cad80851e83d84f79827a8b35848ef656cdd38c1f27--victims-of-crime-indigenous-status-selected-states-and-territories.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2016\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f7a00834aab2e1c8b2404634e15e72b558c3dd55eac0cf20638ca300cb2f13fe | missing |\n| \"Table 16\" | a12d43d946b2e1772d7dfa7d9c6db518f92075084ed1bc8026096cc661383632 | missing |\n| \"Table 17\" | eccad9810b0d53a099a5257cf9390cc66313c04fa484a25c3569fa359ff920d5 | missing |\n| \"Table 18\" | 0b20a5a7b9949d5ddf9306e14d31a380188f74f82a96453e00a186efabe3706f | missing |\n| \"Table 19\" | 4d80b9a7839624455073ee09a91bd04adeb89b3e5dabc730f0e3cdb5c52e0652 | missing |\n| \"Table 20\" | 6e299a1ffe18ce1358c033b984ed7ec6c8962fd743c8e61e841f573c74c5d095 | missing |\n| \"Table 21\" | da2dcd87d2163dc082a2b4e10b45f827c5b2bee3a84d1fa7280f05966d1b76d6 | missing |\n| \"Explanatory Notes\" | 5de1224ada97d7da2894a8ea69bf98cccac94d228300073ff2247026dffd277d | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T141647Z-ff83856b7d26.jsonl"
+  }
+}

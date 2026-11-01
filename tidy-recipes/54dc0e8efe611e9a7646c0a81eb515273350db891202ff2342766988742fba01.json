@@ -1,0 +1,111 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "54dc0e8efe611e9a7646c0a81eb515273350db891202ff2342766988742fba01",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Contents page listing the 15 data-item catalogue sheets; numbers are table identifiers, not statistical observations.",
+  "agent_notes": "The 15 numeric cells B9:B23 are contents table identifiers (1–15), not observations. Correctly classified as contents; automated numeric-cell guard requires reviewer acknowledgement.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2,A4"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "B7"
+    },
+    {
+      "name": "notes",
+      "cells": "B8:C23,B26,B28,B31,B33"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T12:29:55Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 15 numeric cells, e.g. B9, B10, B11, B12, B13"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T122900Z-cfc57e62d210",
+    "started_at": "2026-11-01T12:29:01Z",
+    "workbook": "cfc57e62d210bd557c2622516a8fe964442177e41cede1efd4dcbe5b4b5a42d7--45300do002_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19715-a953-704b-9419-b39728aacb94",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "2f83c51c49a0688dcb503a56807e0c18e9475df67c6305d6fd15107b16bb6f02",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cfc57e62d210bd557c2622516a8fe964442177e41cede1efd4dcbe5b4b5a42d7--45300do002_200809.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 16 of 16\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 54dc0e8efe611e9a7646c0a81eb515273350db891202ff2342766988742fba01 | missing |\n| \"Demographics\" | 66d676cc9dfeea72295e52aa6df926fb531c2aae71d187fd400d905ca8fa8a90 | missing |\n| \"Education\" | a0bd643f409e7d8f1ecaebcefc1d7ddc1049166c2b4f98db248e75f2131f63b4 | missing |\n| \"Labour Force\" | d78902a22eb91dcfa01433d041418a4c4923b00c8c5a01f6435600aa2508e4e7 | missing |\n| \"Income\" | dc44ad37a307f9f9823502fd6ce94c04b60542822ff861ed3933b0e3c157b5b9 | missing |\n| \"Feelings of Safety\" | fe1fe00a9521e07e8a6a352a4b4d3af10512a3d598e944aedec12f924017f25e | missing |\n| \"Physical Assault\" | c2672583afb813cb334d84d5ab0e34713c7ba42d8eac24ce0b9de2c128163cd9 | missing |\n| \"Threatened Assault\" | 8f05aaa73744d4469cac817090f4f9c2da47345d3e59f6bb64ffd36d801d5ce1 | missing |\n| \"Robbery\" | 49e51a1aff30f87b134c89bcbf4d020c5741272754e733ed139a0c97e02ad8c0 | missing |\n| \"Sexual Assault\" | 60342fd411ba6196f761daf5bc9339ea0ec67fb3b40be13056292d5cd60620f0 | missing |\n| \"Break-ins\" | dff7447f5f14e95871d3adcaf7fbfe7bddcc60b1ac96a5e07607cecbe4114796 | missing |\n| \"Attempted Break-ins\" | bd1b493ac208a64bb57d2c755149d97adc745df7d190eac26aeee86e9530a9e2 | missing |\n| \"Motor Vehicle Theft\" | ac21fe4185a48e2fb9a30de320062616f1625803a88a1439daf088776e4f4360 | missing |\n| \"Theft from a Motor Vehicle\" | 85de68ddb6d11dcbf045c89481b52794e37ffeb10406c8cda7c3c5dee463a2f3 | missing |\n| \"Other Theft\" | 65a91226730af88f99f31bee9184d37f92eb67a7b8cbc4f77a8126d981d7ffc5 | missing |\n| \"Malicious Property Damage\" | f8cdb97394c49710fd22b81b633276ae66bbd779b2999adeb61c8c07404969b3 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T122900Z-cfc57e62d210.jsonl"
+  }
+}

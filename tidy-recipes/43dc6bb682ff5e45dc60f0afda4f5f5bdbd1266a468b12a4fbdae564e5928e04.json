@@ -1,0 +1,192 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "43dc6bb682ff5e45dc60f0afda4f5f5bdbd1266a468b12a4fbdae564e5928e04",
+  "sheet": "Table_5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "63e28b6be768278cbff76104f7b14d1ec2a41d4094aa3fbde409e0a6246917ae",
+  "agent_notes": "State/territory is identified in A4; reference year 2009 is in A2. Residential and Community introduce indented location categories; total residential, total community, overall totals and offence totals are retained. Blank source cells are not zero; values_range includes only populated cells. Published discrepancies between totals and components are retained. The pipeline emits some null-valued records within header spans despite populated-only values_range; these do not represent zero.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A11"
+    }
+  ],
+  "tables": [
+    {
+      "name": "individual_offences",
+      "range": "B6:E20",
+      "values_range": "B8,C8,D8,E8,B9,C9,D9,E9,B10,C10,D10,E10,B12,C12,D12,E12,B13,C13,D13,E13,B14,C14,D14,E14,B15,C15,D15,E15,B16,C16,D16,E16,B17,C17,D17,B18,C18,D18,B19,C19,D19,B20,C20,D20,E20",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A8:A10,A12:A20"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:E6"
+        }
+      ]
+    },
+    {
+      "name": "robbery",
+      "range": "F6:H20",
+      "values_range": "F8,G8,H8,F9,G9,H9,F10,G10,H10,F12,G12,H12,F13,G13,H13,F14,G14,H14,F15,G15,H15,F16,G16,H16,F17,G17,H17,F18,G18,H18,F19,G19,H19,F20,G20,H20",
+      "meta_data": [
+        {
+          "name": "victim_offence_group",
+          "cells": "F5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A8:A10,A12:A20"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "F6:H6"
+        }
+      ]
+    },
+    {
+      "name": "unlawful_entry",
+      "range": "I6:K20",
+      "values_range": "I8,J8,K8,I9,J9,K9,I10,J10,K10,I12,J12,K12,I13,J13,K13,I14,J14,K14,I15,J15,K15,I16,J16,K16,I17,J17,K17,I18,J18,K18,I19,J19,K19,I20,J20,K20",
+      "meta_data": [
+        {
+          "name": "victim_offence_group",
+          "cells": "I5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A8:A10,A12:A20"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "I6:K6"
+        }
+      ]
+    },
+    {
+      "name": "theft",
+      "range": "L6:M20",
+      "values_range": "L8,M8,L9,M9,L10,M10,L12,M12,L13,M13,L14,M14,L15,M15,L16,M16,L17,M17,L18,M18,L19,M19,L20,M20",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A8:A10,A12:A20"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "L6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:00:12Z",
+    "tool_version": "0.2.0",
+    "records": 144,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T135854Z-7da695a4d4bd",
+    "started_at": "2026-11-01T13:58:55Z",
+    "workbook": "7da695a4d4bd8a91465d2ea41692f6301005731928d083d9c8af095cfb54421d--45100do002_2009.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19767-f9b6-7694-9b2c-b7a7b664182f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "20ca50bade74b6b30a588fbe68290a8398f3e96106cdb0ae00a64b055d1f9dae",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `7da695a4d4bd8a91465d2ea41692f6301005731928d083d9c8af095cfb54421d--45100do002_2009.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2009\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 2cba1314d33eebfd9131fc4aa1aa188f4ff9abfc0d0cde4918dace748559f863 | missing |\n| \"Table_1\" | 9019da26863f073cb002ce48616343e951ff1aede61068d185652ec4137adca5 | missing |\n| \"Table_2\" | 51191598358b3a0ee95aecb6bb06dd90b6e1da450aa6c76ad82c13497100557d | missing |\n| \"Table_3\" | e0daa5544f91317e1ab9e25a243e0687dae67fc253e7e473ba241498c3c08516 | missing |\n| \"Table_4\" | d07bd720369792c69e4532121919ce49a8e10de1c9d378088b95b5887773c815 | missing |\n| \"Table_5\" | 43dc6bb682ff5e45dc60f0afda4f5f5bdbd1266a468b12a4fbdae564e5928e04 | missing |\n| \"Table_6\" | 7c1475d65f6d2469f993f452543afcf5c0f8f20834c6e24beeeff1c7fe776d04 | missing |\n| \"Table_7\" | cfbabf9b4dcb8c038b0a202ce571975ada0eb3a9cd84a0bc95999dd20bdd4d63 | missing |\n| \"Table_8\" | 33a5e9a3f751ce3f1e19b24e3cc84d34e5fbaf4233bdd1c19bd43ae29a20f8ee | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T135854Z-7da695a4d4bd.jsonl"
+  }
+}

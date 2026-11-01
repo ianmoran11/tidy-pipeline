@@ -1,0 +1,137 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "95bacbbf457901bd3ddf62b93f00e980e58d083f9dd826c396b6e536d347d7b0",
+  "sheet": "Table_5",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Flat crime categories; no row subtotals. All households columns retained for every crime. Published composite measure headings retain RSE wording; RSE columns are relative standard errors, not estimates. State and reference period are embedded in the title/publication banner, not standalone cell labels.",
+  "new_dimensions": [
+    {
+      "name": "household_crime_type",
+      "description": "Type of selected household crime experienced, not a principal-offence classification.",
+      "example_labels": [
+        "Break-in",
+        "Attempted break-in",
+        "Other theft"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "household_crime",
+      "range": "A5:M12",
+      "values_range": "B7:M12",
+      "headers": [
+        {
+          "name": "household_crime_type",
+          "direction": "W",
+          "cells": "A7:A12"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:M5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:11:43Z",
+    "tool_version": "0.2.0",
+    "records": 72,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T121048Z-0f36ad5aa088",
+    "started_at": "2026-11-01T12:10:49Z",
+    "workbook": "0f36ad5aa0885ba23f2de0eba494173da079174e55b95db7c19f7e2704a8f62d--45300do005_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19705-0197-70c0-89a4-4da916d73acf",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "bb64136504066e4d1ec57ebe31a2c44ce6f15075bcc848fb420825d6669a733b",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0f36ad5aa0885ba23f2de0eba494173da079174e55b95db7c19f7e2704a8f62d--45300do005_200809.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c118dcbb54b204f5c500aaba709f14826e43a93ebbb801c349e576cdf6201138 | missing |\n| \"Table_1\" | f913f31ba07350d0cc2afdf106ceaa4cf216f38138d03acb9e711ba62b85c115 | missing |\n| \"Table_2\" | e26ccaf18f4697b8d4de19ecbe3eecb7f88e517aa949c3b1e6af63347abadba8 | missing |\n| \"Table_3\" | c9ca40eb59bfcb36afc32529da063b8ef1f838bce29e089d329cdf0e359f8be7 | missing |\n| \"Table_4\" | e514f5d1b9f64e92b440dd26ea11aff05015cee2fb62b9df5a3ddc5577e5e713 | missing |\n| \"Table_5\" | 95bacbbf457901bd3ddf62b93f00e980e58d083f9dd826c396b6e536d347d7b0 | missing |\n| \"Table_6\" | 94865842cd20071ec9a1f8ae4fc65a657d5b76e1d51dc010645a1615cdef2150 | missing |\n| \"Table_7\" | f9e48c7a540098d5a467a2a9f8544e6aaedb6596db139e9e65832eedbc4d4d49 | missing |\n| \"Table_8\" | 8b4a654b9cdbe6018374eeff666a23c8eace0eac0b36ba6d7d3c026cae252c46 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T121048Z-0f36ad5aa088.jsonl"
+  }
+}

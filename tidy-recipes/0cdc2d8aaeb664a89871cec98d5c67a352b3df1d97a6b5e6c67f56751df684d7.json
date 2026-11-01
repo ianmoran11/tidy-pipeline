@@ -1,0 +1,148 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0cdc2d8aaeb664a89871cec98d5c67a352b3df1d97a6b5e6c67f56751df684d7",
+  "sheet": "Table 3a",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "fca0dda04f5a96d9924eb8df260e0905d96941fea38b272fcfc6bb1afef07042",
+  "agent_notes": "Published total row and Total opinion-source columns retained; issues and opinion sources overlap and must not be summed. Population: persons aged 18 years and over reporting at least one large or moderate social disorder issue. State is embedded in A4; reference period 2010-11 is embedded in A2. All values are relative standard errors (%) identified by A8 RSE; Persons and Percent identify the underlying estimate measures.",
+  "new_dimensions": [
+    {
+      "name": "social_disorder_issue",
+      "description": "Perceived social disorder issue in the local area, including published totals."
+    },
+    {
+      "name": "social_disorder_opinion_source",
+      "description": "Experience or information influencing the respondent's opinion about social disorder."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "social_disorder",
+      "range": "A5:I21",
+      "values_range": "B9:I21",
+      "headers": [
+        {
+          "name": "social_disorder_issue",
+          "direction": "W",
+          "cells": "A9:A21"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:I6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:I7"
+        },
+        {
+          "name": "social_disorder_opinion_source",
+          "direction": "NNW",
+          "cells": "B5,D5,F5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A8"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:39:14Z",
+    "tool_version": "0.2.0",
+    "records": 104,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123743Z-2ee4a7890e57",
+    "started_at": "2026-11-01T12:37:47Z",
+    "workbook": "2ee4a7890e57d789feefef959074be9e0f02a956e2e92ce64eb1acb2f7cb4ef2--45300do017_201011.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971d-b11f-7774-999e-710c32b9fcaa",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3de1920ad881e20b25568aaa5c179a551522d3aa9bc55c7baf9421baf91e31db",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2ee4a7890e57d789feefef959074be9e0f02a956e2e92ce64eb1acb2f7cb4ef2--45300do017_201011.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 996396bc0f0063dcf50fe0f411b1864e3beace5c9bf1889c40cb0c44835528b1 | missing |\n| \"Table 1\" | 04a257fd358f75bbdc38e976c3b5cdfcfb60e273620554e61eafee7b6230fc7a | missing |\n| \"Table 1a\" | 2a38327caa0ee7a06a56379875a8a2a8870b84dcd33d2aa994d68879a9fc1f1b | missing |\n| \"Table 2\" | 956f70f31709db190688252def61d7ca115fc3f042671ed5c0ad40e5105e4b21 | missing |\n| \"Table 2a\" | 8b472e489bb73514b62bb9ab648037806dec92d528814bc4d4f4bd3a00302ed1 | missing |\n| \"Table 3\" | dcb39c2745f8d6dd7ae013f21621be8e0b857a9e5377c2e86843fa0e13ec84b9 | missing |\n| \"Table 3a\" | 0cdc2d8aaeb664a89871cec98d5c67a352b3df1d97a6b5e6c67f56751df684d7 | missing |\n| \"Table 4\" | 886eabb654a2924563cc9cbefbf193ec8522f049f36a39bfbbb775a170ec3cc5 | missing |\n| \"Table 4a\" | 1d9b987361cd72fc824973355e7fd9064b13c5856a7fbe6baa62b768e17a83bd | missing |\n| \"Table 5\" | 91de11e1ca4016b52d902f3a507347372515144b7e2edffe0e5ff3304a8e6ad7 | missing |\n| \"Table 5a\" | a70ff7d5136fe4d7c848e20d70da3b6b80e678504d55983670c74808500c588b | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123743Z-2ee4a7890e57.jsonl"
+  }
+}

@@ -1,0 +1,1778 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "faaf481bf85d97d7c12a96cc3d297fb704ef1c02cda2caa1841410ddc44bb303",
+  "sheet": "Table 35",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "2bde78cbaaff7eee070243405f94f1dff9b5830ef970433210a394e383816071",
+  "agent_notes": "FDV population, reference period and geography are specified in the published title. All parent subtotals, indented child rows and totals retained; rows overlap and must not be summed indiscriminately. Weapon-type rows are components of weapon-used counts. Labels and suppression symbols preserved. Age at report and age at incident are distinguished.",
+  "new_dimensions": [
+    {
+      "name": "age_reference",
+      "description": "Whether victim age is measured at report or at incident.",
+      "example_labels": [
+        "Age at report",
+        "Age at incident"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "release",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A9,A21,A29,A34,A38,A49,A62,A74,A82,A87,A91,A102,A115,A127,A135,A140,A144,A155,A168,A180,A188,A193,A197,A208,A221,A233,A238,A242,A253,A266,A278,A286,A291,A295,A306,A319,A331,A339,A344,A348,A359,A372,A384,A392,A397,A401,A412"
+    },
+    {
+      "name": "notes",
+      "cells": "A425,A426,A427,A428,A429,A430,A431,A432,A433,A434,A435,A436,A437,A438,A439,A440,A441,A442,A443"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group_10",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A10:A19",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A10:G19",
+      "values_range": "B10:G19"
+    },
+    {
+      "name": "offender_relationship_22",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A22:A27",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A22:G27",
+      "values_range": "B22:G27"
+    },
+    {
+      "name": "incident_location_30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A30:A32",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A30:G32",
+      "values_range": "B30:G32"
+    },
+    {
+      "name": "weapon_use_35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A35:A36",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A35:G36",
+      "values_range": "B35:G36"
+    },
+    {
+      "name": "time_to_report_39",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A39:A47",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A39:G47",
+      "values_range": "B39:G47"
+    },
+    {
+      "name": "age_group_50",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A49"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A50:A59",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A50:G59",
+      "values_range": "B50:G59"
+    },
+    {
+      "name": "population_60",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A60:A60"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A60:G60",
+      "values_range": "B60:G60"
+    },
+    {
+      "name": "age_group_63",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A62"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A63:A72",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A63:G72",
+      "values_range": "B63:G72"
+    },
+    {
+      "name": "offender_relationship_75",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A75:A80",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A75:G80",
+      "values_range": "B75:G80"
+    },
+    {
+      "name": "incident_location_83",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A83:A85",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A83:G85",
+      "values_range": "B83:G85"
+    },
+    {
+      "name": "weapon_use_88",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A88:A89",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A88:G89",
+      "values_range": "B88:G89"
+    },
+    {
+      "name": "time_to_report_92",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A92:A100",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A92:G100",
+      "values_range": "B92:G100"
+    },
+    {
+      "name": "age_group_103",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A103:A112",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A103:G112",
+      "values_range": "B103:G112"
+    },
+    {
+      "name": "population_113",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A113:A113"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A113:G113",
+      "values_range": "B113:G113"
+    },
+    {
+      "name": "age_group_116",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A115"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A116:A125",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A116:G125",
+      "values_range": "B116:G125"
+    },
+    {
+      "name": "offender_relationship_128",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A128:A133",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A128:G133",
+      "values_range": "B128:G133"
+    },
+    {
+      "name": "incident_location_136",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A136:A138",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A136:G138",
+      "values_range": "B136:G138"
+    },
+    {
+      "name": "weapon_use_141",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A141:A142",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A141:G142",
+      "values_range": "B141:G142"
+    },
+    {
+      "name": "time_to_report_145",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A145:A153",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A145:G153",
+      "values_range": "B145:G153"
+    },
+    {
+      "name": "age_group_156",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A155"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A156:A165",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A156:G165",
+      "values_range": "B156:G165"
+    },
+    {
+      "name": "population_166",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B114"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A166:A166"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A166:G166",
+      "values_range": "B166:G166"
+    },
+    {
+      "name": "age_group_169",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A168"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A169:A178",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A169:G178",
+      "values_range": "B169:G178"
+    },
+    {
+      "name": "offender_relationship_181",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A181:A186",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A181:G186",
+      "values_range": "B181:G186"
+    },
+    {
+      "name": "incident_location_189",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A189:A191",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A189:G191",
+      "values_range": "B189:G191"
+    },
+    {
+      "name": "weapon_use_194",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A194:A195",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A194:G195",
+      "values_range": "B194:G195"
+    },
+    {
+      "name": "time_to_report_198",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A198:A206",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A198:G206",
+      "values_range": "B198:G206"
+    },
+    {
+      "name": "age_group_209",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A208"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A209:A218",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A209:G218",
+      "values_range": "B209:G218"
+    },
+    {
+      "name": "population_219",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B167"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A219:A219"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A219:G219",
+      "values_range": "B219:G219"
+    },
+    {
+      "name": "age_group_222",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B220"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A221"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A222:A231",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A222:G231",
+      "values_range": "B222:G231"
+    },
+    {
+      "name": "incident_location_234",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B220"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A234:A236",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A234:G236",
+      "values_range": "B234:G236"
+    },
+    {
+      "name": "weapon_use_239",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B220"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A239:A240",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A239:G240",
+      "values_range": "B239:G240"
+    },
+    {
+      "name": "time_to_report_243",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B220"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A243:A251",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A243:G251",
+      "values_range": "B243:G251"
+    },
+    {
+      "name": "age_group_254",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B220"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A253"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A254:A263",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A254:G263",
+      "values_range": "B254:G263"
+    },
+    {
+      "name": "population_264",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B220"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A264:A264"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A264:G264",
+      "values_range": "B264:G264"
+    },
+    {
+      "name": "age_group_267",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A266"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A267:A276",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A267:G276",
+      "values_range": "B267:G276"
+    },
+    {
+      "name": "offender_relationship_279",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A279:A284",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A279:G284",
+      "values_range": "B279:G284"
+    },
+    {
+      "name": "incident_location_287",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A287:A289",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A287:G289",
+      "values_range": "B287:G289"
+    },
+    {
+      "name": "weapon_use_292",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A292:A293",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A292:G293",
+      "values_range": "B292:G293"
+    },
+    {
+      "name": "time_to_report_296",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A296:A304",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A296:G304",
+      "values_range": "B296:G304"
+    },
+    {
+      "name": "age_group_307",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A306"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A307:A316",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A307:G316",
+      "values_range": "B307:G316"
+    },
+    {
+      "name": "population_317",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A317:A317"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A317:G317",
+      "values_range": "B317:G317"
+    },
+    {
+      "name": "age_group_320",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A319"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A320:A329",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A320:G329",
+      "values_range": "B320:G329"
+    },
+    {
+      "name": "offender_relationship_332",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A332:A337",
+          "caption": "Relationship of offender to victim(n)"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A332:G337",
+      "values_range": "B332:G337"
+    },
+    {
+      "name": "incident_location_340",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A340:A342",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A340:G342",
+      "values_range": "B340:G342"
+    },
+    {
+      "name": "weapon_use_345",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A345:A346",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A345:G346",
+      "values_range": "B345:G346"
+    },
+    {
+      "name": "time_to_report_349",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A349:A357",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A349:G357",
+      "values_range": "B349:G357"
+    },
+    {
+      "name": "age_group_360",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A359"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A360:A369",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A360:G369",
+      "values_range": "B360:G369"
+    },
+    {
+      "name": "population_370",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A370:A370"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A370:G370",
+      "values_range": "B370:G370"
+    },
+    {
+      "name": "age_group_373",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A372"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A373:A382",
+          "caption": "Age at report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A373:G382",
+      "values_range": "B373:G382"
+    },
+    {
+      "name": "offender_relationship_385",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A385:A390",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A385:G390",
+      "values_range": "B385:G390"
+    },
+    {
+      "name": "incident_location_393",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A393:A395",
+          "caption": "Location"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A393:G395",
+      "values_range": "B393:G395"
+    },
+    {
+      "name": "weapon_use_398",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A398:A399",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A398:G399",
+      "values_range": "B398:G399"
+    },
+    {
+      "name": "time_to_report_402",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A402:A410",
+          "caption": "Time to report"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A402:G410",
+      "values_range": "B402:G410"
+    },
+    {
+      "name": "age_group_413",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A412"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A413:A422",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A413:G422",
+      "values_range": "B413:G422"
+    },
+    {
+      "name": "population_423",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B371"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A423:A423"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B7:G7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ],
+      "range": "A423:G423",
+      "values_range": "B423:G423"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:31:38Z",
+    "tool_version": "0.2.0",
+    "records": 1932,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142854Z-f03a1bfc14f6",
+    "started_at": "2026-11-01T14:28:56Z",
+    "workbook": "f03a1bfc14f66b482d63049db3bbf6781516af9e481c60ff7befa2b3f392fd93--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19783-734d-7401-9514-55291fc5d7fd",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1e74636762c329102f375803b05c16bf3ca6371a2aee803be441eed08e3ffff0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f03a1bfc14f66b482d63049db3bbf6781516af9e481c60ff7befa2b3f392fd93--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2023\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 99f338f5e8397263156d2c757238962684841ddd8b6daa1b3e8b37336ee2c605 | missing |\n| \"Table 29\" | 21ce36c7223194f0b12bc161685b0e6cfff6501a4ebd20d7495d043aa96e95d2 | missing |\n| \"Table 30\" | 0e4f2473846714b06a759b843d7bc4866c2f6abb27ad5c28e851c7f463da4ba7 | missing |\n| \"Table 31\" | 4acb467e128e87ad601735edf98d2826f50bd5a83b5996584c8df17ac1093751 | missing |\n| \"Table 32\" | 91ceac20d02152a1e9eaf2770e22bcf84da3be7a7f7b1f2ef89b8ada2a1e94f1 | missing |\n| \"Table 33\" | 60902d0775a11416d15eda321339bd09a8f2ea667d51f99886470f39471f670e | missing |\n| \"Table 34\" | ef3ee8aef8090fd56fb3e63f42ec5505b806f6e45edd9e0760c4701cb01a0270 | missing |\n| \"Table 35\" | faaf481bf85d97d7c12a96cc3d297fb704ef1c02cda2caa1841410ddc44bb303 | missing |\n| \"Table 36\" | 5ddb0ca867f08d2d23f39debbef4f0040c2146d93f20106762791a8e97935703 | missing |\n| \"Table 37\" | 1ae8848fb057564651e01bbf37b54047b866e7a36467597a01b3d42293b084e0 | missing |\n| \"Table 38\" | cdb6fceb9b567d29e7802be475886b3d310a2da86d075fd0c68ec18307b0b6a7 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142854Z-f03a1bfc14f6.jsonl"
+  }
+}

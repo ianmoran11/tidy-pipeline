@@ -1,0 +1,443 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5c44aa6604d22a76e2a3fbc5a543bca1a7476f4cac69f50d28f7382bff90a2f9",
+  "sheet": "Table 13",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "263e4c5ea795be57f1f534554f99bd4f1bbeb1e86248c0e2314957dbb225dece",
+  "agent_notes": "All totals retained. Total number of incidents counts incidents, not households; final Total counts victim households. Non-reporting reasons are nested under non-reporting; property categories may overlap and are not additive. Published captions, labels and percentage bases are unchanged. Crime and reference period are in the title/banner. Most-recent-incident context is retained in incident_scope.",
+  "new_dimensions": [
+    {
+      "name": "victimisation_status",
+      "description": "Whether a household was a victim or non-victim of the selected crime."
+    },
+    {
+      "name": "incident_scope",
+      "description": "Whether characteristics concern the most recent incident."
+    },
+    {
+      "name": "offender_confrontation",
+      "description": "Whether offenders confronted anyone during the most recent break-in."
+    },
+    {
+      "name": "offender_other_action",
+      "description": "Whether offenders did anything else during the most recent break-in."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A10,A16,A19,A27,A30,A42,A45,A48"
+    }
+  ],
+  "tables": [
+    {
+      "name": "victimisation_status",
+      "range": "A8:C9",
+      "values_range": "B8:C9",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victimisation_status",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "number_of_incidents",
+      "range": "A11:C14",
+      "values_range": "B11:C14",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "number_of_incidents",
+          "direction": "W",
+          "cells": "A11:A14",
+          "caption": "Victims with one or multiple incidents"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "police_reporting_status",
+      "range": "A17:C18",
+      "values_range": "B17:C18",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "direction": "W",
+          "cells": "A17:A18",
+          "caption": "Reported most recent incident to police"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "reason_not_reported_to_police",
+      "range": "A20:C26",
+      "values_range": "B20:C26",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "reason_not_reported_to_police",
+          "direction": "W",
+          "cells": "A20:A26",
+          "caption": "Main reason not reported to police"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "property_theft_status",
+      "range": "A28:C29",
+      "values_range": "B28:C29",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_theft_status",
+          "direction": "W",
+          "cells": "A28:A29",
+          "caption": "Whether property stolen"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "stolen_property_type",
+      "range": "A31:C41",
+      "values_range": "B31:C41",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stolen_property_type",
+          "direction": "W",
+          "cells": "A31:A41",
+          "caption": "Type of property stolen"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "property_damage_status",
+      "range": "A43:C44",
+      "values_range": "B43:C44",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_damage_status",
+          "direction": "W",
+          "cells": "A43:A44",
+          "caption": "Whether property was damaged"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "offender_confrontation",
+      "range": "A46:C47",
+      "values_range": "B46:C47",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_confrontation",
+          "direction": "W",
+          "cells": "A46:A47",
+          "caption": "Whether offenders confronted anyone"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "offender_other_action",
+      "range": "A49:C50",
+      "values_range": "B49:C50",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        },
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_other_action",
+          "direction": "W",
+          "cells": "A49:A50",
+          "caption": "Whether offenders did anything else"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A51:C51",
+      "values_range": "B51:C51",
+      "meta_data": [
+        {
+          "name": "incident_scope",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A51:A51"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:40:56Z",
+    "tool_version": "0.2.0",
+    "records": 70,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123917Z-4fce8c08b1c5",
+    "started_at": "2026-11-01T12:39:18Z",
+    "workbook": "4fce8c08b1c5dbaafa468b1aebabafe6f525fa662863faa724959bb141646af3--45300DO003_201011.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971f-1598-74fa-b478-7d2870977adb",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ee9e2ee1f516eef4c83705d0e879504e50359f8158261521387337038774d484",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4fce8c08b1c5dbaafa468b1aebabafe6f525fa662863faa724959bb141646af3--45300DO003_201011.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 13 of 13\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 849d91cfb9ac62b1d04bfd88b308c4d03d8db55da1a31edcde32aabe484e8570 | missing |\n| \"Table 13\" | 5c44aa6604d22a76e2a3fbc5a543bca1a7476f4cac69f50d28f7382bff90a2f9 | missing |\n| \"Table 13a\" | 015a7fcc9f64af622297c090d876846fdf9d54a9e9cd7b6f9fcd50c07a7a31d6 | missing |\n| \"Table 14\" | 2f6bae87f3978bef91f50bb2d306e6ef22186a7a99c3deb4ef0d672729f89f50 | missing |\n| \"Table 14a\" | cf255689370fda8836f98929772324927fc30f2105c336c84630ce1d2fa7cc95 | missing |\n| \"Table 15\" | 6304b9292e0ef4e6de5e80ac9858f11513e7eb6d89c00711227b1eaac321fba9 | missing |\n| \"Table 15a\" | 5eb5a2e51fc9117c03fb9aed54f8f77298b6dad0008a9686f3564a462b73571c | missing |\n| \"Table 16\" | 363f28e690ef47af04be29847f725087abfe21ce2888a7a57fa6eea515af5ead | missing |\n| \"Table 16a\" | 3962bb9efc9a3ac65fd445824f4efda640b2b4205a638478bc580324486bfafc | missing |\n| \"Table 17\" | 74acc04ba5666260cf5f682d4b538162d4ffac7302013ce3db9ad0edc493124b | missing |\n| \"Table 17a\" | 8d75de0fa251ca715c2e18f5cf0b345713b3d673eac32bba87bec24db41ee5ad | missing |\n| \"Table 18\" | 2f06e2349bf5bc53147298dce33ba33f7c164e3bbe5cba3bc82cebeaf04238b3 | missing |\n| \"Table 18a\" | d5614b99a83ee38a3fd10e5bbc5d2f65ed885fba9dcc637a6f50db1fd82901a1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123917Z-4fce8c08b1c5.jsonl"
+  }
+}

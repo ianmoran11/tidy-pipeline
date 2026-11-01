@@ -1,0 +1,1027 @@
+{
+  "description": "Rules applied by harmonise() in R/harmonise.R after normalise(); see harmonisation/README.md. First version generated from the data; edit this file directly.",
+  "from_title": [
+    {
+      "dimension": "state",
+      "pattern": "(?<![A-Za-z])(New South Wales|Victoria|Queeensland|Queensland|South Australia|Western Australia|Tasmania|Northern Territory|Australian Capital Territory)(?![A-Za-z])",
+      "values": {
+        "new south wales": "NSW",
+        "victoria": "Vic.",
+        "queensland": "Qld",
+        "south australia": "SA",
+        "western australia": "WA",
+        "tasmania": "Tas.",
+        "northern territory": "NT",
+        "australian capital territory": "ACT",
+        "queeensland": "Qld"
+      }
+    },
+    {
+      "dimension": "state",
+      "pattern": "–\\s*(Australia)(?![A-Za-z])",
+      "value": "Australia"
+    },
+    {
+      "dimension": "court_level",
+      "pattern": "(?<![A-Za-z])(Magistrates'? (?:&|and) Children's Courts|Higher Courts?|Magistrates'? Courts?|Children's Courts?|All Courts)(?![A-Za-z])",
+      "values": {
+        "higher courts": "Higher Courts",
+        "magistrates' courts": "Magistrates' Courts",
+        "magistrates courts": "Magistrates' Courts",
+        "children's courts": "Children's Courts",
+        "higher court": "Higher Courts",
+        "magistrates' court": "Magistrates' Courts",
+        "magistrates court": "Magistrates' Courts",
+        "children's court": "Children's Courts",
+        "all courts": "All Courts",
+        "magistrates' & children's courts": "Magistrates' and Children's Courts",
+        "magistrates' and children's courts": "Magistrates' and Children's Courts",
+        "magistrates & children's courts": "Magistrates' and Children's Courts"
+      }
+    },
+    {
+      "dimension": "estimate_type",
+      "pattern": "(?<![A-Za-z])(Relative standard errors?|Standard errors?)(?![A-Za-z])",
+      "values": {
+        "standard error": "Standard error",
+        "standard errors": "Standard error",
+        "relative standard error": "Relative standard error",
+        "relative standard errors": "Relative standard error"
+      }
+    },
+    {
+      "dimension": "indigenous_status",
+      "pattern": "^Table [A-Z]?[0-9.]+[a-z]?:? (Aboriginal and Torres Strait Islander)",
+      "value": "Aboriginal and Torres Strait Islander"
+    },
+    {
+      "dimension": "period",
+      "pattern": "(?<![0-9])((?:[0-9]{1,2} )?(?:January|February|March|April|May|June|July|August|September|October|November|December) (?:19|20)[0-9]{2})(?![0-9])"
+    },
+    {
+      "dimension": "period",
+      "pattern": "(?<!to )(?<![0-9])(?<![0-9][–-])((?:19|20)[0-9]{2}[–-][0-9]{2})\\s*(?:\\([^)]*\\))?\\s*(?=/|$)",
+      "replace": [
+        [
+          "^([0-9]{4})-([0-9]{2})$",
+          "\\1–\\2"
+        ]
+      ]
+    },
+    {
+      "dimension": "period",
+      "pattern": ", ((?:19|20)[0-9]{2})\\s*(?=/|$)"
+    },
+    {
+      "dimension": "period",
+      "pattern": "(?<=[A-Za-z])\\s*[–-]\\s*((?:19|20)[0-9]{2})(?:\\s+revised)?\\s*(?=/|$)"
+    },
+    {
+      "dimension": "principal_offence",
+      "pattern": "(?:^| / )Table [0-9]+[a-z]? Federal defendants[^,]*, (.+?), Summary characteristics"
+    },
+    {
+      "dimension": "principal_offence",
+      "pattern": "Family and domestic violence defendants (?:finalised|with a guilty outcome), ([^,]+), (?:New South Wales|Victoria|Queensland|South Australia|Western Australia|Tasmania|Northern Territory|Australian Capital Territory|Australia)(?:,|$| / )"
+    }
+  ],
+  "split": {
+    "state": {
+      "NEW SOUTH WALES (%)": {
+        "state": "NSW",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "QUEENSLAND (%)": {
+        "state": "Qld",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "NORTHERN TERRITORY (%)": {
+        "state": "NT",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      }
+    },
+    "indigenous_status": {
+      "Non-Indigenous rate": {
+        "indigenous_status": "Non-Indigenous",
+        "measure": "Rate",
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Rate ratio Indigenous/Non-Indigenous": {
+        "measure": "Rate ratio Indigenous/non-Indigenous",
+        "indigenous_status": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Aboriginal and Torres Strait Islander (%)": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "population": {
+      "Indigenous children": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children"
+      },
+      "Non-Indigenous children": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children"
+      },
+      "Unknown Indigenous status": {
+        "indigenous_status": "Unknown",
+        "population": "Children"
+      },
+      "All children": {
+        "indigenous_status": "Total",
+        "population": "Children"
+      },
+      "Indigenous children in out-of-home care": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children in out-of-home care"
+      },
+      "Non-Indigenous children in out-of-home care": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children in out-of-home care"
+      },
+      "All children in out-of-home care": {
+        "indigenous_status": "Total",
+        "population": "Children in out-of-home care"
+      },
+      "Indigenous children on third-party orders": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children on third-party orders"
+      },
+      "Non-Indigenous children on third-party orders": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children on third-party orders"
+      },
+      "All children on third-party orders": {
+        "indigenous_status": "Total",
+        "population": "Children on third-party orders"
+      },
+      "Indigenous children in out-of-home care or on third-party orders": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children in out-of-home care or on third-party orders"
+      },
+      "Non-Indigenous children in out-of-home care or on third-party orders": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children in out-of-home care or on third-party orders"
+      },
+      "All children in out-of-home care or on third-party orders": {
+        "indigenous_status": "Total",
+        "population": "Children in out-of-home care or on third-party orders"
+      },
+      "Unknown Indigenous Status": {
+        "indigenous_status": "Unknown",
+        "population": "Children"
+      },
+      "All Children": {
+        "indigenous_status": "Total",
+        "population": "Children"
+      },
+      "Non–Indigenous children": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children"
+      },
+      "Non-Indigenous children receiving child protection services": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children receiving child protection services"
+      },
+      "Non-Indigenous children who were the subject of substantiations": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children who were the subject of substantiations"
+      },
+      "Non-Indigenous children on care and protection orders": {
+        "indigenous_status": "Non-Indigenous",
+        "population": "Children on care and protection orders"
+      },
+      "Indigenous": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": null
+      },
+      "Non-Indigenous": {
+        "indigenous_status": "Non-Indigenous",
+        "population": null
+      },
+      "Indigenous children receiving child protection services": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children receiving child protection services"
+      },
+      "Indigenous children who were the subject of substantiations": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children who were the subject of substantiations"
+      },
+      "Indigenous children on care and protection orders": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Children on care and protection orders"
+      },
+      "Defendants finalised (excluding transfers to other court levels)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "Defendants finalised (excluding transfer to other court levels)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "Finalised (excluding transfer to other court levels)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      }
+    },
+    "time_on_remand": {
+      "Mean (months)": {
+        "measure": "Mean time on remand",
+        "unit": "months",
+        "time_on_remand": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (months)": {
+        "measure": "Median time on remand",
+        "unit": "months",
+        "time_on_remand": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "principal_offence": {
+      "All principal offences (%)": {
+        "principal_offence": "All principal offences",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "All principal proven offences (%)": {
+        "principal_offence": "All principal proven offences",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "All principal proven offences (no.)": {
+        "principal_offence": "All principal proven offences",
+        "unit": "no.",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Total males with a guilty outcome": {
+        "sex": "Males",
+        "principal_offence": "Total"
+      },
+      "Total females with a guilty outcome": {
+        "sex": "Females",
+        "principal_offence": "Total"
+      }
+    },
+    "age_group": {
+      "Mean (years)": {
+        "measure": "Mean age",
+        "unit": "years",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (years)": {
+        "measure": "Median age",
+        "unit": "years",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean age (years)": {
+        "measure": "Mean age",
+        "unit": "years",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median age (years)": {
+        "measure": "Median age",
+        "unit": "years",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean age": {
+        "measure": "Mean age",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median age": {
+        "measure": "Median age",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Proportion of all offenders": {
+        "measure": "Proportion of all offenders",
+        "age_group": "Total",
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Mean": {
+        "measure": "Mean age",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median": {
+        "measure": "Median age",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total males finalised": {
+        "sex": "Males",
+        "age_group": "Total"
+      },
+      "Total females finalised": {
+        "sex": "Females",
+        "age_group": "Total"
+      },
+      "Rate ratio Indigenous/non-Indigenous": {
+        "measure": "Rate ratio Indigenous/non-Indigenous",
+        "age_group": "Total",
+        "_replace": [
+          "measure"
+        ]
+      }
+    },
+    "case_duration": {
+      "Mean (weeks)": {
+        "measure": "Mean case duration",
+        "unit": "weeks",
+        "case_duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (weeks)": {
+        "measure": "Median case duration",
+        "unit": "weeks",
+        "case_duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (years)": {
+        "measure": "Mean case duration",
+        "unit": "years",
+        "case_duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (years)": {
+        "measure": "Median case duration",
+        "unit": "years",
+        "case_duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "times_proceeded_against": {
+      "Mean": {
+        "measure": "Mean times proceeded against",
+        "times_proceeded_against": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean times proceeded against": {
+        "measure": "Mean times proceeded against",
+        "times_proceeded_against": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "measure": {
+      "Change from 2008 to 2009": {
+        "measure": "Change",
+        "period": "2008 to 2009"
+      },
+      "Indicative change (excluding classification impacts) 2008 to 2009": {
+        "measure": "Indicative change (excluding classification impacts)",
+        "period": "2008 to 2009"
+      },
+      "Male imprisonment rate": {
+        "sex": "Males",
+        "measure": "Imprisonment rate"
+      },
+      "Female imprisonment rate": {
+        "sex": "Females",
+        "measure": "Imprisonment rate"
+      },
+      "Aboriginal and Torres Strait Islander": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": null
+      },
+      "Aboriginal and Torres Strait Islander (%)": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Proportion",
+        "unit": "%"
+      },
+      "Male rate": {
+        "sex": "Males",
+        "measure": "Rate"
+      },
+      "Female rate": {
+        "sex": "Females",
+        "measure": "Rate"
+      },
+      "NEW SOUTH WALES (%)": {
+        "state": "NSW",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "QUEENSLAND (%)": {
+        "state": "Qld",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "NORTHERN TERRITORY (%)": {
+        "state": "NT",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Male": {
+        "sex": "Males",
+        "measure": null
+      },
+      "Female": {
+        "sex": "Females",
+        "measure": null
+      },
+      "Non-Indigenous": {
+        "indigenous_status": "Non-Indigenous",
+        "measure": null
+      },
+      "Indigenous status unknown": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": null
+      },
+      "Females": {
+        "sex": "Females",
+        "measure": null
+      },
+      "Indigenous": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": null
+      },
+      "Percentage of all children substantiated in 2019–20": {
+        "measure": "Percentage of all children substantiated",
+        "period": "2019–20"
+      },
+      "FEMALES": {
+        "sex": "Females",
+        "measure": null
+      },
+      "INDIGENOUS": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": null
+      },
+      "Median length (number of days in 2024–25)": {
+        "measure": "Median length",
+        "unit": "days",
+        "period": "2024–25"
+      },
+      "FEDERAL DEFENDANTS FINALISED": {
+        "population": "Federal defendants finalised",
+        "measure": "Number"
+      },
+      "FEDERAL DEFENDANTS PROVEN GUILTY": {
+        "population": "Federal defendants with a guilty outcome",
+        "measure": "Number"
+      },
+      "ALL PRISONERS": {
+        "population": "Prisoners",
+        "measure": "Number"
+      },
+      "TOTAL SENTENCED PRISONERS": {
+        "population": "Sentenced prisoners",
+        "measure": "Number"
+      },
+      "NUMBER IN SUPREME COURT": {
+        "court_level": "Supreme Court",
+        "measure": "Number"
+      },
+      "NUMBER IN INTERMEDIATE COURT": {
+        "court_level": "Intermediate Court",
+        "measure": "Number"
+      },
+      "TOTAL NUMBER IN HIGHER COURTS": {
+        "court_level": "Higher Courts",
+        "measure": "Number"
+      },
+      "PROPORTION IN HIGHER COURTS (%)": {
+        "court_level": "Higher Courts",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Total finalised (excluding transfer to other court levels)": {
+        "scope": "Excluding transfers",
+        "measure": "Number"
+      }
+    },
+    "sentence_length": {
+      "Mean aggregate sentence length (years)": {
+        "measure": "Mean aggregate sentence length",
+        "unit": "years",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median aggregate sentence length (years)": {
+        "measure": "Median aggregate sentence length",
+        "unit": "years",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (years)": {
+        "measure": "Mean sentence length",
+        "unit": "years",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (years)": {
+        "measure": "Median sentence length",
+        "unit": "years",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (months)": {
+        "measure": "Mean sentence length",
+        "unit": "months",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (months)": {
+        "measure": "Median sentence length",
+        "unit": "months",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total (%)": {
+        "sentence_length": "Total",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Mean": {
+        "measure": "Mean sentence length",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median": {
+        "measure": "Median sentence length",
+        "sentence_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "group": {
+      "Rate per 100 prisoners": {
+        "measure": "Rate per 100 prisoners",
+        "group": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Aboriginal and Torres Strait Islander": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "group": null
+      },
+      "Non-Indigenous": {
+        "indigenous_status": "Non-Indigenous",
+        "group": null
+      }
+    },
+    "parole_order_length": {
+      "Mean order length (years)": {
+        "measure": "Mean parole order length",
+        "unit": "years",
+        "parole_order_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median order length (years)": {
+        "measure": "Median parole order length",
+        "unit": "years",
+        "parole_order_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (months)": {
+        "measure": "Mean parole order length",
+        "unit": "months",
+        "parole_order_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (months)": {
+        "measure": "Median parole order length",
+        "unit": "months",
+        "parole_order_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (years)": {
+        "measure": "Mean parole order length",
+        "unit": "years",
+        "parole_order_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (years)": {
+        "measure": "Median parole order length",
+        "unit": "years",
+        "parole_order_length": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "reunification_status": {
+      "Not reunified in 2020–21": {
+        "reunification_status": "Not reunified",
+        "period": "2020–21"
+      },
+      "Reunified in 2020–21": {
+        "reunification_status": "Reunified",
+        "period": "2020–21"
+      }
+    },
+    "duration": {
+      "Mean (weeks)": {
+        "measure": "Mean duration",
+        "unit": "weeks",
+        "duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (weeks)": {
+        "measure": "Median duration",
+        "unit": "weeks",
+        "duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "subgroup": {
+      "Aboriginal and Torres Strait Islander prisoners": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "subgroup": null
+      },
+      "Non-Indigenous prisoners": {
+        "indigenous_status": "Non-Indigenous",
+        "subgroup": null
+      },
+      "Rate per 100 prisoners": {
+        "measure": "Rate per 100 prisoners",
+        "subgroup": null,
+        "_replace": [
+          "measure"
+        ]
+      }
+    },
+    "order outcome": {
+      "Did not receive a third-party order in 2020–21": {
+        "order outcome": "Did not receive a third-party order",
+        "period": "2020–21"
+      },
+      "Received a third-party order in 2020–21": {
+        "order outcome": "Received a third-party order",
+        "period": "2020–21"
+      }
+    },
+    "section": {
+      "Crude imprisonment rate per 100 000 adults": {
+        "measure": "Crude imprisonment rate per 100 000 adults",
+        "section": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Age-standardised imprisonment rate per 100 000 adults": {
+        "measure": "Age-standardised imprisonment rate per 100 000 adults",
+        "section": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Crude community corrections rate per 100 000 adults": {
+        "measure": "Crude community corrections rate per 100 000 adults",
+        "section": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Age-standardised community corrections rate per 100 000 adults": {
+        "measure": "Age-standardised community corrections rate per 100 000 adults",
+        "section": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Imprisonment rate per 100 000 adults": {
+        "measure": "Imprisonment rate per 100 000 adults",
+        "section": null,
+        "_replace": [
+          "measure"
+        ]
+      },
+      "Community corrections rate per 100 000 adults": {
+        "measure": "Community corrections rate per 100 000 adults",
+        "section": null,
+        "_replace": [
+          "measure"
+        ]
+      }
+    }
+  },
+  "unstack": {
+    "characteristic": {
+      "value_from": "category",
+      "names": {
+        "Age": "age_group",
+        "Age group": "age_group",
+        "Court level": "court_level",
+        "Duration from initiation to finalisation": "case_duration",
+        "Method of finalisation": "method_of_finalisation",
+        "Principal offence": "principal_offence",
+        "Sentence outcomes": "principal_sentence",
+        "Sex": "sex"
+      }
+    }
+  },
+  "fallback_periods": {
+    "2018-19": "2018–19",
+    "2022-23": "2022–23",
+    "2023-05": "May 2023",
+    "2016-17": "2016–17",
+    "2021-22": "2021–22",
+    "2014-15": "2014–15",
+    "2015-16": "2015–16",
+    "2021-05": "May 2021",
+    "2025-05": "May 2025",
+    "2010-11": "2010–11",
+    "2012-13": "2012–13",
+    "2023-24": "2023–24",
+    "2009-10": "2009–10",
+    "2017-18": "2017–18",
+    "2013-14": "2013–14",
+    "2024-25": "2024–25",
+    "2020-21": "2020–21",
+    "2011-12": "2011–12"
+  },
+  "reference_dates": {
+    "default": {
+      "2004–05": "2005-06-30",
+      "2005–06": "2006-06-30",
+      "2006–07": "2007-06-30",
+      "2007–08": "2008-06-30",
+      "2008–09": "2009-06-30",
+      "2008–09 to 2009–10": "2010-06-30",
+      "2009–10": "2010-06-30",
+      "2009–10 to 2010–11": "2011-06-30",
+      "2010–11": "2011-06-30",
+      "2011–12": "2012-06-30",
+      "2011–12 to 2012–13": "2013-06-30",
+      "2012–13": "2013-06-30",
+      "2013–14": "2014-06-30",
+      "2014–15": "2015-06-30",
+      "2014–15 to 2018–19": "2019-06-30",
+      "2015–16": "2016-06-30",
+      "2016–17": "2017-06-30",
+      "2016–17 to 2020–21": "2021-06-30",
+      "2017–18": "2018-06-30",
+      "2018–19": "2019-06-30",
+      "2019–20": "2020-06-30",
+      "2020–21": "2021-06-30",
+      "2021-2022": "2022-06-30",
+      "2021–22": "2022-06-30",
+      "2022–23": "2023-06-30",
+      "2023–24": "2024-06-30",
+      "2024–25": "2025-06-30",
+      "30 June 2006": "2006-06-30",
+      "30 JUNE 2006": "2006-06-30",
+      "30 June 2007": "2007-06-30",
+      "30 June 2008": "2008-06-30",
+      "30 June 2013": "2013-06-30",
+      "30 June 2014": "2014-06-30",
+      "30 June 2015": "2015-06-30",
+      "30 June 2016": "2016-06-30",
+      "30 June 2017": "2017-06-30",
+      "30 June 2018": "2018-06-30",
+      "30 June 2019": "2019-06-30",
+      "30 June 2020": "2020-06-30",
+      "30 June 2021": "2021-06-30",
+      "30 June 2022": "2022-06-30",
+      "30 June 2023": "2023-06-30",
+      "30 June 2024": "2024-06-30",
+      "30 June 2025": "2025-06-30",
+      "Dec 2015": "2015-12-31",
+      "Dec 2016": "2016-12-31",
+      "Dec 2017": "2017-12-31",
+      "Dec 2018": "2018-12-31",
+      "Dec 2019": "2019-12-31",
+      "Dec 2020": "2020-12-31",
+      "Dec 2021": "2021-12-31",
+      "Dec 2022": "2022-12-31",
+      "Dec 2023": "2023-12-31",
+      "Dec 2024": "2024-12-31",
+      "December 2024": "2024-12-31",
+      "Latest 5 years (2017–18 to 2021–22)": "2022-06-30",
+      "Latest 5 years (2018–19 to 2022–23)": "2023-06-30",
+      "Latest 5 years (2019–20 to 2023–24)": "2024-06-30",
+      "May 2021": "2021-05-31",
+      "May 2023": "2023-05-31",
+      "May 2025": "2025-05-31",
+      "Previous 5 years ( 2012–13 to 2016–17)": "2017-06-30",
+      "Previous 5 years (2012–13 to 2016–17)": "2017-06-30",
+      "Previous 5 years (2013–14 to 2017–18)": "2018-06-30",
+      "Previous 5 years (2014–15 to 2018–19)": "2019-06-30",
+      "1996–97": "1997-06-30",
+      "1997–98": "1998-06-30",
+      "1998–99": "1999-06-30",
+      "1999–00": "2000-06-30",
+      "2000–01": "2001-06-30",
+      "2001-02": "2002-06-30",
+      "2001–02": "2002-06-30",
+      "2001–02 to 2002–03": "2003-06-30",
+      "2002–03": "2003-06-30",
+      "2002–03 to 2003–04": "2004-06-30",
+      "2003–04": "2004-06-30",
+      "2003–04 to 2004–05": "2005-06-30",
+      "2004–05 to 2005–06": "2006-06-30",
+      "2005-06": "2006-06-30",
+      "2006–07 to 2007–08": "2008-06-30",
+      "2010–11 to 2011–12": "2012-06-30",
+      "30 June 2004": "2004-06-30",
+      "30 JUNE 2004": "2004-06-30",
+      "1996-97": "1997-06-30",
+      "1997-98": "1998-06-30",
+      "1998-99": "1999-06-30",
+      "1999-00": "2000-06-30",
+      "2000-01": "2001-06-30",
+      "2002-03": "2003-06-30",
+      "2003-04": "2004-06-30",
+      "2004-05": "2005-06-30",
+      "2005–06 to 2006–07": "2007-06-30",
+      "2005–06 to 2011–12": "2012-06-30",
+      "2006-07 to 2007-08": "2008-06-30",
+      "2006–07 to 2011–12": "2012-06-30",
+      "2007–08 to 2008–09": "2009-06-30",
+      "30 June 2002": "2002-06-30",
+      "30 JUNE 2002": "2002-06-30",
+      "30 June 2003": "2003-06-30",
+      "30 JUNE 2003": "2003-06-30",
+      "30 June 2005": "2005-06-30",
+      "30 JUNE 2005": "2005-06-30"
+    },
+    "prisoners-australia": {
+      "2011": "2011-06-30",
+      "2012": "2012-06-30",
+      "2013": "2013-06-30",
+      "2014": "2014-06-30",
+      "2015": "2015-06-30",
+      "2016": "2016-06-30",
+      "2017": "2017-06-30",
+      "2018": "2018-06-30",
+      "2019": "2019-06-30",
+      "2020": "2020-06-30",
+      "2021": "2021-06-30",
+      "2024": "2024-06-30",
+      "2008": "2008-06-30",
+      "2023": "2023-06-30",
+      "2025": "2025-06-30",
+      "2007": "2007-06-30",
+      "2009": "2009-06-30",
+      "2010": "2010-06-30",
+      "2006": "2006-06-30",
+      "2022": "2022-06-30",
+      "2002": "2002-06-30",
+      "2003": "2003-06-30",
+      "2004": "2004-06-30",
+      "2005": "2005-06-30",
+      "2001": "2001-06-30",
+      "2008 to 2009": "2009-06-30",
+      "2014 to 2015": "2015-06-30",
+      "2000": "2000-06-30",
+      "2013 to 2014": "2014-06-30",
+      "1999": "1999-06-30",
+      "2011 to 2012": "2012-06-30",
+      "2012 to 2013": "2013-06-30",
+      "1998": "1998-06-30",
+      "1996": "1996-06-30",
+      "1997": "1997-06-30",
+      "2011r": "2011-06-30"
+    },
+    "aihw-child-protection-australia": {
+      "2017": "2017-06-30",
+      "2018": "2018-06-30",
+      "2019": "2019-06-30",
+      "2020": "2020-06-30",
+      "2021": "2021-06-30",
+      "2016": "2016-06-30"
+    }
+  }
+}

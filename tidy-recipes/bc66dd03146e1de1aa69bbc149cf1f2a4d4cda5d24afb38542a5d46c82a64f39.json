@@ -1,0 +1,89 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "bc66dd03146e1de1aa69bbc149cf1f2a4d4cda5d24afb38542a5d46c82a64f39",
+  "sheet": "Explanatory Notes",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Explanatory text on collection methodology, definitions and comparability; no statistical table.",
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T14:17:16Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T141510Z-81d6b5908626",
+    "started_at": "2026-11-01T14:15:12Z",
+    "workbook": "81d6b59086268d284b28495ab8ca89105ab0c35c0cad556dc2c3b721e7752c2a--victims-of-crime-relationship-of-offender-to-victims.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19776-e05b-75bf-878e-c76037faeb33",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "2f6b39f526b0013a5f60c96e14c2c98472097317f097bfd2d54d472d41bdd364",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `81d6b59086268d284b28495ab8ca89105ab0c35c0cad556dc2c3b721e7752c2a--victims-of-crime-relationship-of-offender-to-victims.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2016\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c8884b4bc3c409843d6fb6d484a37c7ef599f7965a50e23ab96295155e9eb9ba | missing |\n| \"Table 11 \" | 7678fd35092e217f6528aa323c363006496e0c17b876cde919745a2728c40d15 | missing |\n| \"Table 12\" | 9275575666cfe727fb1d669346e47c4d21f2a6d289bc7e2455b5d51de9b8ef43 | missing |\n| \"Table 13\" | 2361f065976b33b4d39d027dd1ad8b3037da53eb5343376397177c923a3f63e4 | missing |\n| \"Table 14\" | d82198204d6cad73674263c630246fa6669ac3b490929de696bf13ffb087f9e4 | missing |\n| \"Table 15\" | 3acad63b4f85f77b1d92a39c5f18322cd13735d69eb5644951d646b08faac736 | missing |\n| \"Explanatory Notes\" | bc66dd03146e1de1aa69bbc149cf1f2a4d4cda5d24afb38542a5d46c82a64f39 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T141510Z-81d6b5908626.jsonl"
+  }
+}

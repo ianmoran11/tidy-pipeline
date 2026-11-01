@@ -1,0 +1,980 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0c355113a7c7454192ee81a37dec9ae11b160e954c197728fea221a6f4571ef9",
+  "sheet": "Table 12a",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "e3061ab03eaa0e6de1fb9e625af2c2f41c10f0011dc9feebdc434b45094c3213",
+  "agent_notes": "Published labels and totals retained. Total employed, total intimate partner and total offenders known overlap their component rows and are not additive. Medical treatment relates to physically injured victims. Crime, period and age scope are given by title/banner. RSE is estimate_type from the published title; Only cells shown in the grid are selected; the pipeline may additionally retain underlying blank-valued worksheet cells as null records. No values are imputed. Rows with no published values are retained as annotations.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A11,A23,A26,A29,A32,A41,A47"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_B_0",
+      "range": "B9:F10",
+      "values_range": "B9,C9,D9,E9,F9,B10,C10,D10,E10,F10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "sex_G_1",
+      "range": "G9:G10",
+      "values_range": "G9,G10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "sex_H_2",
+      "range": "H9:L10",
+      "values_range": "H9,I9,J9,K9,L9,H10,I10,J10,K10,L10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_B_3",
+      "range": "B12:F22",
+      "values_range": "B12,C12,D12,E12,F12,B13,C13,D13,E13,F13,B14,C14,D14,E14,F14,B15,C15,D15,E15,F15,B16,C16,D16,E16,F16,B17,C17,D17,E17,F17,B18,C18,D18,E18,F18,B19,C19,D19,E19,F19,B20,C20,D20,E20,F20,B21,C21,D21,E21,F21,B22,C22,D22,E22,F22",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_G_4",
+      "range": "G12:G22",
+      "values_range": "G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_H_5",
+      "range": "H12:L22",
+      "values_range": "H12,I12,J12,K12,L12,H13,I13,J13,K13,L13,H14,I14,J14,K14,L14,H15,I15,J15,K15,L15,H16,I16,J16,K16,L16,H17,I17,J17,K17,L17,H18,I18,J18,K18,L18,H19,I19,J19,K19,L19,H20,I20,J20,K20,L20,H21,I21,J21,K21,L21,H22,I22,J22,K22,L22",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "marital_status_B_6",
+      "range": "B24:F25",
+      "values_range": "B24,C24,D24,E24,F24,B25,C25,D25,E25,F25",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A24,A25",
+          "caption": "Marital status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "marital_status_G_7",
+      "range": "G24:G25",
+      "values_range": "G24,G25",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A24,A25",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "marital_status_H_8",
+      "range": "H24:L25",
+      "values_range": "H24,I24,J24,K24,L24,H25,I25,J25,K25,L25",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A24,A25",
+          "caption": "Marital status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_B_9",
+      "range": "B27:F28",
+      "values_range": "B27,C27,D27,E27,F27,B28,C28,D28,E28,F28",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A27,A28",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_G_10",
+      "range": "G27:G28",
+      "values_range": "G27,G28",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A27,A28",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_H_11",
+      "range": "H27:L28",
+      "values_range": "H27,I27,J27,K27,L27,H28,I28,J28,K28,L28",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A27,A28",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_area_B_12",
+      "range": "B30:F31",
+      "values_range": "B30,C30,D30,E30,F30,B31,C31,D31,E31,F31",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A30,A31",
+          "caption": "Greater Capital City Statistical Areas"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_area_G_13",
+      "range": "G30:G31",
+      "values_range": "G30,G31",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A30,A31",
+          "caption": "Greater Capital City Statistical Areas"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_area_H_14",
+      "range": "H30:L31",
+      "values_range": "H30,I30,J30,K30,L30,H31,I31,J31,K31,L31",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A30,A31",
+          "caption": "Greater Capital City Statistical Areas"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_B_15",
+      "range": "B33:F40",
+      "values_range": "B33,C33,E33,F33,B34,C34,E34,F34,B35,C35,D35,E35,F35,B36,C36,D36,E36,F36,B37,C37,D37,E37,F37,B38,C38,D38,E38,F38,F39,B40,C40,D40,E40,F40",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A33,A34,A35,A36,A37,A38,A39,A40",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_G_16",
+      "range": "G33:G40",
+      "values_range": "G33,G34,G35,G36,G37,G38,G39,G40",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A33,A34,A35,A36,A37,A38,A39,A40",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_H_17",
+      "range": "H33:L40",
+      "values_range": "H33,I33,K33,L33,H34,I34,K34,L34,H35,I35,J35,K35,L35,H36,I36,J36,K36,L36,H37,I37,J37,K37,L37,H38,I38,J38,K38,L38,L39,H40,I40,J40,K40,L40",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A33,A34,A35,A36,A37,A38,A39,A40",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status_B_18",
+      "range": "B42:F46",
+      "values_range": "B42,C42,D42,E42,F42,B43,C43,D43,E43,F43,B44,C44,D44,E44,F44,B45,C45,D45,E45,F45,B46,C46,D46,E46,F46",
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A42,A43,A44,A45,A46",
+          "caption": "Labour force status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status_G_19",
+      "range": "G42:G46",
+      "values_range": "G42,G43,G44,G45,G46",
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A42,A43,A44,A45,A46",
+          "caption": "Labour force status"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status_H_20",
+      "range": "H42:L46",
+      "values_range": "H42,I42,J42,K42,L42,H43,I43,J43,K43,L43,H44,I44,J44,K44,L44,H45,I45,J45,K45,L45,H46,I46,J46,K46,L46",
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A42,A43,A44,A45,A46",
+          "caption": "Labour force status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile_B_21",
+      "range": "B48:F52",
+      "values_range": "B48,C48,D48,E48,F48,B49,C49,D49,E49,F49,B50,C50,D50,E50,F50,B51,C51,D51,E51,F51,B52,C52,D52,E52,F52",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A48,A49,A50,A51,A52",
+          "caption": "Equivalised weekly household income"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile_G_22",
+      "range": "G48:G52",
+      "values_range": "G48,G49,G50,G51,G52",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A48,A49,A50,A51,A52",
+          "caption": "Equivalised weekly household income"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile_H_23",
+      "range": "H48:L52",
+      "values_range": "H48,I48,J48,K48,L48,H49,I49,J49,K49,L49,H50,I50,J50,K50,L50,H51,I51,J51,K51,L51,H52,I52,J52,K52,L52",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A48,A49,A50,A51,A52",
+          "caption": "Equivalised weekly household income"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "population_B_24",
+      "range": "B53:F53",
+      "values_range": "B53,C53,D53,E53,F53",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A53"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:F6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "population_G_25",
+      "range": "G53:G53",
+      "values_range": "G53",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A53"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7:G7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "population_H_26",
+      "range": "H53:L53",
+      "values_range": "H53,I53,J53,K53,L53",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A53"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "H6:L6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7:L7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:04:40Z",
+    "tool_version": "0.2.0",
+    "records": 418,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T125931Z-465ce9f7a3ea",
+    "started_at": "2026-11-01T12:59:36Z",
+    "workbook": "465ce9f7a3ea30eedf99b9868f9165eb06a39e8b6491e872c3c62af61b4d0cd1--personal-crime-tables-12-to-19a-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19731-abe6-775f-9e3e-f7b94b2cb7ff",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7e557ef3143d08d7c6290ce8f1247f447281add7ffcd72d806e1f33f8145e8cf",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `465ce9f7a3ea30eedf99b9868f9165eb06a39e8b6491e872c3c62af61b4d0cd1--personal-crime-tables-12-to-19a-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2013-14\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 107285c7a9a60b578b47df385af463d02c23b7bc6bf639a5ec884437c8fde457 | missing |\n| \"Table 12\" | 3632868390db6090644f19503a3fa0d2bbbd2d98427e051228b115c83330fa00 | missing |\n| \"Table 12a\" | 0c355113a7c7454192ee81a37dec9ae11b160e954c197728fea221a6f4571ef9 | missing |\n| \"Table 13\" | 73992e83883eefd6f621de1151fadc192625ff8d97d2a3a478f296d003530aef | missing |\n| \"Table 13a\" | 71f45c36b07860213ccb03950d0bbf6fa7d4693e84ca314906f61aa9af98d251 | missing |\n| \"Table 14\" | 6cf686605736e0c5f7c2c7f43aaef7bd08fc5712f80a7b1baf837179bc0e8bac | missing |\n| \"Table 14a\" | c0f7d4f44fc7a82037f26a4335f6f793e876510b154b284d92d290125f9db1b6 | missing |\n| \"Table 15\" | e884b5c3984cabe61c447defc9586f8c52e53f14819f0c9c34ef0cfb8f72a1d5 | missing |\n| \"Table 15a\" | a4f5f81be0aac3ad9ca6b89ec5d4d25d381aba3729ab79c5b3c1bd0df2554000 | missing |\n| \"Table 16\" | 03ae3d105975c1924362ecdf724e63adf2e479b8e05ba8771130659d8fb0a125 | missing |\n| \"Table 16a\" | caed6164f533ecf17af321422c01a6965439040ade7e0b5f6d16f5b46ddedf9f | missing |\n| \"Table 17\" | 3889fad6679e930112724cfd3862bac6b6fc45333ea911460b72d46a9c4a179f | missing |\n| \"Table 17a\" | 879bfa8756883e92560949e77290ab4e6a34ba018233826ea03ec4d38c16d3e6 | missing |\n| \"Table 18\" | c04f83bc4fe6eb2bc867dc70fee4c09a9bbe88daaf75caca25e1c5195713ab15 | missing |\n| \"Table 18a\" | 9d25141d886091cfaaab664105a3527062db19b02d96970ca74cbaf9a873fc59 | missing |\n| \"Table 19\" | 6ba3c40ae0564d8a5df7ec227fd1c9a59a56aa9fdb5996bd43560523596afde7 | missing |\n| \"Table 19a\" | 5df6353de8f79e89389c77b83117c0114a7f6217063e011d5eb1452d78cecd35 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T125931Z-465ce9f7a3ea.jsonl"
+  }
+}

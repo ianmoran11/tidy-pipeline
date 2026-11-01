@@ -1,0 +1,104 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "8bc08cb973fe7579df6c5ac291a65d602c1bf5f19ece9be256a364185dfaa0c5",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook table index and links; numbers identify tables, not statistical observations.",
+  "template_from": "3c7b3e6390547ec3b47e728e0ae350807c1ab44ecd6ba80d5002d3898a41fbc7",
+  "agent_notes": "Contents only. B7:B11 are table identifiers 1–5, not observations. The numeric-cell guard flags this index; retain contents classification for human review.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T14:22:34Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 5 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142126Z-2295b390cfd5",
+    "started_at": "2026-11-01T14:21:27Z",
+    "workbook": "2295b390cfd5b6276c271d9a2fea256df36116332d2d595c15b06afc41ac8da0--1.-Victims-of-Crime-Australia.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1977c-98b3-74ac-873b-66ba1f481859",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5943c342171d5cca6e810fdba3ae1747150ba09259e7246b00a413b6d29af1b2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2295b390cfd5b6276c271d9a2fea256df36116332d2d595c15b06afc41ac8da0--1.-Victims-of-Crime-Australia.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2019\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 8bc08cb973fe7579df6c5ac291a65d602c1bf5f19ece9be256a364185dfaa0c5 | missing |\n| \"Table 1\" | 3e56e566bc38c35c4ec28499d577bb51a9c23a31ab8bc891556b9b4d5084a3d7 | missing |\n| \"Table 2\" | 3083f2889c286802183b1f0b36a753565a820c1955871ba24992657911bc6fbb | missing |\n| \"Table 3\" | 5ab03f16dd3d7014ca4d7fad58cb10a4d202ddb3b101d30a72bbc89a28babf3e | missing |\n| \"Table 4\" | 051f99c1c5bd6421e8e476894412a396ecf04a1165d7da75daa00aa704233693 | missing |\n| \"Table 5\" | 41257635f4bd23d0ad0f5c30e1506acbb30bf7af9e7b202751d1d8a6014184c1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142126Z-2295b390cfd5.jsonl"
+  }
+}

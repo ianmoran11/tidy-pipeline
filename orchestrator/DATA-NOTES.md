@@ -18,6 +18,37 @@ known AIHW 2024–25 publisher revision. Test downloads of ABS URLs worked, incl
 Defendants archives each contain a member named `45150do003_201011.xls`; their bytes
 and SHAs differ.
 
+## Victims publications (admitted 2026-11-01/02)
+
+**Crime Victimisation, Australia** (ABS 4530.0, a household survey; 17 releases,
+2008–09 to 2024–25, 175 workbooks, 2,501 sheets):
+- **Estimates and RSEs.** Each estimate table has relative standard error (RSE)
+  companions. From about 2010–11 these are separate sheets ("Table 5a … : Relative
+  standard error"; letters a/b/c/d). Older releases put "RSE OF …" blocks beside the
+  estimates. Both end up in `estimate_type`.
+- **Asterisks from number formats.** Estimates with high RSEs are marked `*` (RSE
+  25–50%) and `**` (over 50%), mostly by the number format, not the cell text.
+- **Population.** Persons aged 15 and over; sexual assault is asked of people aged 18
+  and over. Household crimes count households.
+- **Pooled periods.** Some tables pool two years ("2019–21" = 2019–20 and 2020–21).
+- **Upper-case labels** in older releases, normalised to sentence case.
+
+**Recorded Crime – Victims** (ABS 4510.0, police records; 22 releases, 2004 to 2025,
+221 workbooks, 1,330 sheets):
+- **Calendar years** (reference date 31 December).
+- **Age basis.** Tables give age "at incident" or "at report", often only in the title.
+- **Family and domestic violence tables** cover offences that are FDV-related, which
+  becomes `scope`.
+- **Revisions.** Earlier releases' values for the same series and period are often
+  revised: 88.8% equal to the latest release, 96% within 5%. 2005–2013 releases agree
+  least, with a median ratio of 1.00.
+- **Title quirks:** a 2008 table titled "…Australia–2007 revised" holds revised 2007
+  figures, and one title spells "Queeensland".
+
+**Title quirk (all publications).** Some titles have no space after the table number
+("Table 6PERSONS AGED…"). The measure spec's subject pattern takes a table letter only
+in lower case, so the subject keeps its first letter.
+
 ## Source package (`source-spreadsheets-xlsx/`)
 
 - 621 XLSX workbooks converted from the original package: 311 XLS files converted by

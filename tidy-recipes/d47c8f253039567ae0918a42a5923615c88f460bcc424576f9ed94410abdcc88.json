@@ -1,0 +1,447 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d47c8f253039567ae0918a42a5923615c88f460bcc424576f9ed94410abdcc88",
+  "sheet": "Table 3a",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Section headings retained as captions; Total is the all-victim total, not a weapon category. Total number of incidents is retained with incident-count rows and counts incidents rather than victims. Cohabitation is nested under known offenders; percentages are as published. RSE sheets contain relative standard errors for both measures; block labels retain the RSE qualifier. State, crime and age scope are published in the table title.",
+  "new_dimensions": [
+    {
+      "name": "victimisation_status",
+      "description": "Whether a person was a victim or non victim of the selected crime, including all-victim totals.",
+      "example_labels": [
+        "Victim",
+        "Non victim",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A11,A17,A20,A26,A30,A33,A36,A41"
+    }
+  ],
+  "tables": [
+    {
+      "name": "victimisation_status_9",
+      "range": "A9:C10",
+      "values_range": "B9:C10",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A8"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victimisation_status",
+          "direction": "W",
+          "cells": "A9:A10"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "number_of_incidents_12",
+      "range": "A12:C15",
+      "values_range": "B12:C15",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A8"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "number_of_incidents",
+          "direction": "W",
+          "cells": "A12:A15",
+          "caption": "Victims with one or multiple incidents"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "police_reporting_status_18",
+      "range": "A18:C19",
+      "values_range": "B18:C19",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "direction": "W",
+          "cells": "A18:A19",
+          "caption": "Reported most recent incident to police"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "reason_not_reported_to_police_21",
+      "range": "A21:C25",
+      "values_range": "B21:C25",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "reason_not_reported_to_police",
+          "direction": "W",
+          "cells": "A21:A25",
+          "caption": "Main reason not reported to police"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "offender_sex_27",
+      "range": "A27:C29",
+      "values_range": "B27:C29",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_sex",
+          "direction": "W",
+          "cells": "A27:A29",
+          "caption": "Sex of offender"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "offender_relationship_31",
+      "range": "A31:C32",
+      "values_range": "B31:C32",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A31:A32",
+          "caption": "Relationship to offender"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "offender_cohabitation_34",
+      "range": "A34:C35",
+      "values_range": "B34:C35",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_cohabitation",
+          "direction": "W",
+          "cells": "A34:A35",
+          "caption": "Whether living with offender"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_37",
+      "range": "A37:C40",
+      "values_range": "B37:C40",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A37:A40",
+          "caption": "Location of incident"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_42",
+      "range": "A42:C43",
+      "values_range": "B42:C43",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A42:A43",
+          "caption": "Whether weapon used"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    },
+    {
+      "name": "victimisation_status_44",
+      "range": "A44:C44",
+      "values_range": "B44:C44",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A16"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victimisation_status",
+          "direction": "W",
+          "cells": "A44:A44"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:C7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:37:38Z",
+    "tool_version": "0.2.0",
+    "records": 54,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123617Z-177bdd0fb062",
+    "started_at": "2026-11-01T12:36:18Z",
+    "workbook": "177bdd0fb0623cec7902264bae2047ab1c6b05b3b98904807f7a1ff5e7160f46--45300do010_201011.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971c-529a-7114-ab1d-449b0c263bd2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4748058260d2b9a76e42b6e3451ed359c00eb019a03cb72f328a1b9b42cf9db1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `177bdd0fb0623cec7902264bae2047ab1c6b05b3b98904807f7a1ff5e7160f46--45300do010_201011.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 13 of 13\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | bcd4af2ef0cde57e47ecd24298d7d80e7c7d9eaaecfc3c527769357f94371817 | missing |\n| \"Table 1\" | 7f28044fab43282e50b2de6384afd294213ac3e9188e468db9171b744023b130 | missing |\n| \"Table 1a\" | 033a721ba2a9e76162a860e90f6970489295fcff33b6153319fc205b3f5788cc | missing |\n| \"Table 2\" | 5b971849f4f17bac82ce166a3e9ecb30d0dfebb814ade8f7207cb03e658b80d7 | missing |\n| \"Table 2a\" | b6c8af8fc6d2d05ddb1c686a0a1bf4dcfaf0c6137386d82a0739b2ba2da6ca08 | missing |\n| \"Table 3\" | 224fa212ffce59d2e5a905f68ac05ddb63f023a528c5e8048abbb4030cbd33b1 | missing |\n| \"Table 3a\" | d47c8f253039567ae0918a42a5923615c88f460bcc424576f9ed94410abdcc88 | missing |\n| \"Table 4\" | 4ced45e583a2305862a1ad1686b11698e73f53352a8c61dd991145f994aaf440 | missing |\n| \"Table 4a\" | 7f02b819d8b4ffe2aa1f860162d386ba794733718f45463b3982242f3db91f15 | missing |\n| \"Table 5\" | 561d8dab96aabe1721c0c064387e51a2c957b5569a694fbc3a8d5e29fafd79c0 | missing |\n| \"Table 5a\" | 4c9c395980ad632250a816b449e117493285f38999b9a27c618e62ce04858a65 | missing |\n| \"Table 6\" | b14caa83951cbcf0cdc3ca821afc0c179b78eb5bd77798dbe6a1e2c071cd2c02 | missing |\n| \"Table 6a\" | 35cd01063822aa8ef23c7d1de36a6487d264622c444ca35c00e34c4fd022bd11 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123617Z-177bdd0fb062.jsonl"
+  }
+}

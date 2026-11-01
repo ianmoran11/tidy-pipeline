@@ -1,0 +1,107 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "8ae04ad7b186a929431f61b759c4c24e69f54c83b3d82ad2e0be9d5df4e993c6",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook table directory and publication links; numbers are table identifiers, not statistics.",
+  "template_from": "279d4aad594efb838b7a0eb30b3505068d3033cc6152bea282a731d17ce7c49c",
+  "agent_notes": "The five numeric cells B7:B11 are table numbers (6–10) in the workbook directory, not statistical observations. Retain kind contents; the automatic numeric-cell check requires human review.",
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_number",
+      "cells": "B7:B11"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T14:16:19Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 5 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T141403Z-9999d619d403",
+    "started_at": "2026-11-01T14:14:05Z",
+    "workbook": "9999d619d40381490a7ad9f61e5c4f746b155aaf91cdc5d11f1ece399224c96b--victims-of-crime-selected-offences-states-and-territories.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19775-da26-77e9-b46b-605aeba79e40",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "34ae0394247903e23c6451da24ad9d206cf471b15a15a838165807161981157e",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9999d619d40381490a7ad9f61e5c4f746b155aaf91cdc5d11f1ece399224c96b--victims-of-crime-selected-offences-states-and-territories.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2015\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 8ae04ad7b186a929431f61b759c4c24e69f54c83b3d82ad2e0be9d5df4e993c6 | missing |\n| \"Table 6\" | 10e929b2593d4cba4f11dcf70d9df42a8c2cf9d1557e7d9c97cd73e278b76c7b | missing |\n| \"Table 7\" | e30809d3ebc1bbebc65fc192933e828a69a5f10a6b7d482d36103d2d902274c7 | missing |\n| \"Table 8\" | b4d3a936b251ecc49397ef57928ac9c65c8d35b46d7f8f05a6cf5c7200da54ad | missing |\n| \"Table 9\" | 54f19f1e3c162fc33d12da33669e1b5cfa67d4c8133c0708527769757c5d37ce | missing |\n| \"Table 10\" | bf460f3419481f865a2f0e510c4ac9dbcb1c49989adf05caba3b0eed71ce26db | missing |\n| \"Explanatory Notes\" | 6064645e99f3476bb4cb47bf6af651556b901f78b0d3b446afb7b2b51e472275 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T141403Z-9999d619d403.jsonl"
+  }
+}

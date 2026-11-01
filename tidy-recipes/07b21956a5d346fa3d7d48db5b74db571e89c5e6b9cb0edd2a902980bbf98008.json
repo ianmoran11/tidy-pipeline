@@ -1,0 +1,366 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "07b21956a5d346fa3d7d48db5b74db571e89c5e6b9cb0edd2a902980bbf98008",
+  "sheet": "Table 22",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals and subtotals retained, including overlapping parent and child categories; do not sum all rows. Footnotes and np values retained. B4 'Known to victim' groups the first three relationship column blocks; the specific family, non-family and total-known labels identify them without extending that heading to Stranger or Total. Age/time parent rows and their indented subdivisions overlap. Offence and count measure are specified by the table title.",
+  "new_dimensions": [
+    {
+      "name": "offender_relationship",
+      "description": "Relationship of the offender to the victim as recorded by police.",
+      "example_labels": [
+        "Family member(b)",
+        "Stranger ",
+        "Total(e)"
+      ]
+    },
+    {
+      "name": "time_to_report",
+      "description": "Elapsed time between a sexual assault and its report to police.",
+      "example_labels": [
+        "Less than 1 year",
+        "20 years and over"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "A266:A281"
+    },
+    {
+      "name": "annotations",
+      "cells": "B4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_1",
+      "range": "A4:BI43",
+      "values_range": "B9:BI11,B13:BI19,B21:BI23,B25:BI31,B33:BI35,B37:BI43",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A9:A11,A13:A19,A21:A23,A25:A31,A33:A35,A37:A43"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A8,A20,A32"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    },
+    {
+      "name": "state_2",
+      "range": "A44:BI80",
+      "values_range": "B46:BI48,B50:BI56,B58:BI60,B62:BI68,B70:BI72,B74:BI80",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A46:A48,A50:A56,A58:A60,A62:A68,A70:A72,A74:A80"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A45,A57,A69"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    },
+    {
+      "name": "state_3",
+      "range": "A81:BI117",
+      "values_range": "B83:BI85,B87:BI93,B95:BI97,B99:BI105,B107:BI109,B111:BI117",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B81"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A83:A85,A87:A93,A95:A97,A99:A105,A107:A109,A111:A117"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A82,A94,A106"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    },
+    {
+      "name": "state_4",
+      "range": "A118:BI154",
+      "values_range": "B120:BI122,B124:BI130,B132:BI134,B136:BI142,B144:BI146,B148:BI154",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A120:A122,A124:A130,A132:A134,A136:A142,A144:A146,A148:A154"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A119,A131,A143"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    },
+    {
+      "name": "state_5",
+      "range": "A155:BI191",
+      "values_range": "B157:BI159,B161:BI167,B169:BI171,B173:BI179,B181:BI183,B185:BI191",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B155"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A157:A159,A161:A167,A169:A171,A173:A179,A181:A183,A185:A191"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A156,A168,A180"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    },
+    {
+      "name": "state_6",
+      "range": "A192:BI228",
+      "values_range": "B194:BI196,B198:BI204,B206:BI208,B210:BI216,B218:BI220,B222:BI228",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B192"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A194:A196,A198:A204,A206:A208,A210:A216,A218:A220,A222:A228"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A193,A205,A217"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    },
+    {
+      "name": "state_7",
+      "range": "A229:BI265",
+      "values_range": "B231:BI233,B235:BI241,B243:BI245,B247:BI253,B255:BI257,B259:BI265",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B229"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A231:A233,A235:A241,A243:A245,A247:A253,A255:A257,A259:A265"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A230,A242,A254"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:BI6"
+        },
+        {
+          "name": "offender_relationship",
+          "direction": "NNW",
+          "cells": "B5,N5,Z5,AL5,AX5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:14:38Z",
+    "tool_version": "0.2.0",
+    "records": 12600,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T121235Z-4f0a7139721d",
+    "started_at": "2026-11-01T12:12:36Z",
+    "workbook": "4f0a7139721de626918ee25f254bdc3c66e59f315c585a5171594e44698e3a3b--3.-Victims-of-crime-relationship-of-offender-to-victims-Tables-17-to-22-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19706-a02b-70f3-a0a3-3e54522dd106",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "79d35ccabaa8c6fa0f88cdcae1b6b1e91c2d7dbb518e9eacaaeb18ede74b4603",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4f0a7139721de626918ee25f254bdc3c66e59f315c585a5171594e44698e3a3b--3.-Victims-of-crime-relationship-of-offender-to-victims-Tables-17-to-22-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2025\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d2afe6236621fc5885b86d68b14e8caf25c0272ef3349fc6e9887245a974cf20 | missing |\n| \"Table 17\" | b038c8f8000ddf2e2de5b8cdc8e3bb4e5ab5ea6277f352f2f407dbcb6d08d423 | missing |\n| \"Table 18\" | f4f51e389d8783cb43fe27d00b6d77151adb8c434edd2ca0fddcfcec3ab600fe | missing |\n| \"Table 19\" | 446af6665dca57e4bf6efb1aec5f408cb0ddf76fc004ecad39429084da0021c4 | missing |\n| \"Table 20\" | 03538545ee86646b7a3b52edd683bae3dff4bfdd41289eb2b616b41c54e41989 | missing |\n| \"Table 21\" | 8f14730acf6a3c9fb0bf73a314716bacc39e315790a4ec306ecddeed5c6047e0 | missing |\n| \"Table 22\" | 07b21956a5d346fa3d7d48db5b74db571e89c5e6b9cb0edd2a902980bbf98008 | missing |\n| \"Further information\" | 49e0a0ad88c47c4c926378d7b97cc2a3780d07d543c95336de58a929fe6d54b2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T121235Z-4f0a7139721d.jsonl"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "8f8f037c4a390054e2efceca88b7f011d55b60fa25978e8e6c578b7d7f9d9512",
+  "sheet": "Table 28",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "e73f0f714ff2388ed5eb235cafec0fd26744c98519115221bffeb3feb959d9d9",
+  "agent_notes": "Published labels and totals retained. Indented crime, employment and birthplace rows are nested categories; total assault, total employed, total born overseas and overall totals are not additive to their children. Blank data cells are excluded, not imputed. Tasmania; 2011–12 except explicit time-series periods. Estimates as published; units are taken verbatim, including unusual units in Table 1.",
+  "new_dimensions": [
+    {
+      "name": "justice_information_source",
+      "description": "Source of information influencing views of the justice system, including no opinion, don't know and total."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_0",
+      "range": "B9:D15",
+      "values_range": "B9:D9,B10:D10,B11:D11,B12:D12,B13:D13,B14:D14,B15:D15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "justice_information_source",
+          "cells": "A9,A10,A11,A12,A13,A14,A15",
+          "direction": "W",
+          "caption": "Source of information"
+        },
+        {
+          "name": "unit",
+          "cells": "B7:D7",
+          "direction": "N"
+        },
+        {
+          "name": "service",
+          "cells": "B6:D6",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "block_1",
+      "range": "E9:G15",
+      "values_range": "E9:G9,E10:G10,E11:G11,E12:G12,E13:G13,E14:G14,E15:G15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "justice_information_source",
+          "cells": "A9,A10,A11,A12,A13,A14,A15",
+          "direction": "W",
+          "caption": "Source of information"
+        },
+        {
+          "name": "unit",
+          "cells": "E7:G7",
+          "direction": "N"
+        },
+        {
+          "name": "service",
+          "cells": "E6:G6",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:56:26Z",
+    "tool_version": "0.2.0",
+    "records": 42,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T125320Z-b71f8da1ff57",
+    "started_at": "2026-11-01T12:53:24Z",
+    "workbook": "b71f8da1ff57a6ccd453f38cfadfdc60f46061644abb0c90a1a737b3b70bad3c--45300DO012_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1972b-fd92-7520-a900-a95190219eeb",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "895a5ee5d53f5f48ea15a118bbeeb3f2ea58af0be7e5f830ff54ee550d61e2e0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b71f8da1ff57a6ccd453f38cfadfdc60f46061644abb0c90a1a737b3b70bad3c--45300DO012_201112.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 29 of 29\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0585236929de96dba0a038cde7d40a4ea4bb7a27fd69676c3878177419d53578 | missing |\n| \"Table 1\" | bafeac95cd64966c889e1f4c484e247417a90899459844088658c901d4301a3c | missing |\n| \"Table 1a\" | e0e2e9fb438c0803b380336442ffc3c7a2f92e3a9b0ad064ac2044fa34d9813a | missing |\n| \"Table 4\" | da429297bbb478dd681ff8f3298254d94147f70e013b9718e563932cf7459fb7 | missing |\n| \"Table 4a\" | 47d77fb1002274d7c634fcf1b6bfc30a5257ca1057e5e0e204662a411673bbe0 | missing |\n| \"Table 5\" | df51af655077e0331025ea6bdfa3eb6049f84fa444881e6dc0d169bd343c47f1 | missing |\n| \"Table 5a\" | 0b9c3b16bc309527e931e9f1af260c31140aadd91891846ee12dcf87115d9878 | missing |\n| \"Table 10\" | e14a53c2829a0bd0401d9650c9632c6c33d6c785a54b6a98b35769fb77a2dfcb | missing |\n| \"Table 10a\" | be1125530ef48d7f08bdc5dbe2a757483f16854380673cea474426862649a9ac | missing |\n| \"Table 11\" | 96eb5122a19d0bd5e780971eabd2feae23f1e0b14ad3c667ff544383790abc1f | missing |\n| \"Table 11a\" | ccca40b17d1fc234f5cb7a08d6e5761bd8925145226f69f94aa9e9a3bef6fb3a | missing |\n| \"Table 12\" | 88e69d5d27c55496c0715627fe5b34f2e7d37acaf05d90da8c73244a422baf16 | missing |\n| \"Table 12a\" | 56b06e47e707ae98171b0da01f69556cc7ff9c9c44d583806cac7864d56dbcb5 | missing |\n| \"Table 13\" | 8c8764a6bf56ec8d1d6deeab99cab0339b1a81488cb1ece89d9e2a601fb54afd | missing |\n| \"Table 13a\" | b3170e88ada086a508428cc90b98776a3e24ea12488ccd10f41f4a5e52ea9191 | missing |\n| \"Table 19\" | 5c918e0fd04fc356919e1e61f2ce511f8f3b65abc18d4e838fa52cec55b8891c | missing |\n| \"Table 19a\" | 5a31e1129a29ee372689d4e2d038dce74d365f17a8d603a82d23ebbfe42cfc81 | missing |\n| \"Table 23\" | fd7ae515d8e1c202a016f9e226e77239e70912aa053e533e4c87e604806d2c49 | missing |\n| \"Table 23a\" | d4bea16b68aa8aeab9d7b0449dad1bd78f53ac0dba826caa83fc4282de13ad89 | missing |\n| \"Table 24\" | 643aa62b1939121300073116f49680cca240859362eeae757f008a7f6cb76d01 | missing |\n| \"Table 24a\" | 6ba7b162678170c8b05e91245a40ded1c6c18ca535d11d98feeba038dd802c9e | missing |\n| \"Table 25\" | 057de143878dea44cde9522c55a30861f2d2a4a34e6a8a67ba724214707ba943 | missing |\n| \"Table 25a\" | 3f07056059242d9431aa645f4db6ba36c835937fc9c04c7a5fb8baeb99589dce | missing |\n| \"Table 26\" | f415335fb5178ebff658678d11369e3a877535bf01b343b7c045b9e2e643b829 | missing |\n| \"Table 26a\" | 340aa21cf0ec3d97162186652d7ca149832790d9b7c44a06b95e2e1d8adac03f | missing |\n| \"Table 27\" | 2928ba78aba8908b83a2ef92fe3f3b7111a4e8ab545a9d09dc4a989d2ab75337 | missing |\n| \"Table 27a\" | f6ad7cd719ded4a8f5bbc8a4f1195f8a623a3c500422fbcef30304b4be73d781 | missing |\n| \"Table 28\" | 8f8f037c4a390054e2efceca88b7f011d55b60fa25978e8e6c578b7d7f9d9512 | missing |\n| \"Table 28a\" | 27d19f9d6a3223063d8c16431874fa27bf3e318206ceee532ac511dc4421ecb0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T125320Z-b71f8da1ff57.jsonl"
+  }
+}

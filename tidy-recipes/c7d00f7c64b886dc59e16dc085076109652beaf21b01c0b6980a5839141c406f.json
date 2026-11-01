@@ -1,0 +1,213 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c7d00f7c64b886dc59e16dc085076109652beaf21b01c0b6980a5839141c406f",
+  "sheet": "Table 22a",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "0a57da523843c73e56db36a6c0e68a98e6f9c26d371dd91582100941dc67bf70",
+  "agent_notes": "Indented rows are categories under their published characteristic captions. The final total is retained separately, not repeated for each characteristic. Multiple-response property/evidence categories may not sum to totals; random adjustment also affects additivity. This sheet reports relative standard errors (%) as identified in its table title, not estimates. Location rows labelled Residential and Non-residential, where present, are subtotals; indented locations are their children, retained in the same dimension.",
+  "new_dimensions": [
+    {
+      "name": "attempted_break_in_evidence",
+      "description": "Evidence of the most recent attempted break-in.",
+      "example_labels": [
+        "Door/window was damaged/tampered with"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A10,A17"
+    },
+    {
+      "name": "notes",
+      "cells": "A26:A32"
+    }
+  ],
+  "tables": [
+    {
+      "name": "police_reporting_status",
+      "range": "A8:C9",
+      "values_range": "B8:C9",
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "direction": "W",
+          "cells": "A8:A9",
+          "caption": "Whether reported most recent incident to police(a)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "reason_not_reporting_to_police",
+      "range": "A11:C16",
+      "values_range": "B11:C16",
+      "headers": [
+        {
+          "name": "reason_not_reported_to_police",
+          "direction": "W",
+          "cells": "A11:A16",
+          "caption": "Main reason not reported to police"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "attempted_break_in_evidence",
+      "range": "A18:C23",
+      "values_range": "B18:C23",
+      "headers": [
+        {
+          "name": "attempted_break_in_evidence",
+          "direction": "W",
+          "cells": "A18:A23",
+          "caption": "Evidence of attempted break-in(c)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A24:C24",
+      "values_range": "B24:C24",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A24:A24"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:18:05Z",
+    "tool_version": "0.2.0",
+    "records": 30,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T131451Z-a911fc041a9a",
+    "started_at": "2026-11-01T13:14:53Z",
+    "workbook": "a911fc041a9ab421811de474dbd89fe2a2c7f72a1010aa1aaace1da209cc1b5f--household-crime-tables-19-to-26a-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1973f-a7d5-705d-abf0-306075718b5b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5f06dc15556a108aaca201737e0bef67c5ba6113833195d43d748fc32e185107",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a911fc041a9ab421811de474dbd89fe2a2c7f72a1010aa1aaace1da209cc1b5f--household-crime-tables-19-to-26a-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9d86faa76a59023f93baab948b7c771432ca709c727a7338439300cdb19aad64 | missing |\n| \"Table 19\" | 35ab9ea5bdabb5d1b7db095638503b4b4a1a1a1a0589a2274d67916452ab9e79 | missing |\n| \"Table 19a\" | 97cb9bfceba3834bf05342e18b5eef317089dae5edb451b8b38af247b6c2aac1 | missing |\n| \"Table 20\" | 542d3a3ee17eb88dc12e7a821e90921b21acb82a368e21356de698cffb2f9fe2 | missing |\n| \"Table 20a\" | ef244ea66538a53d2f99fd95af2bac272cfddee8ad36564a2dd679f0926e4ca2 | missing |\n| \"Table 21\" | 004e8dc10d00ea365782f15a12ae7080c218a956d74b7a53999c5abcdff8d546 | missing |\n| \"Table 21a\" | f0de0b6e4c9b08502e052328b907828f2bd727ef2c63044428978a48ca2aa458 | missing |\n| \"Table 22\" | d333763579d74d2868ab7f45ff155436616e36bdeb4d9dc3044e5c70084cc55a | missing |\n| \"Table 22a\" | c7d00f7c64b886dc59e16dc085076109652beaf21b01c0b6980a5839141c406f | missing |\n| \"Table 23\" | 2bbf5dc74b30fe2709dd3a2d1f019a168f0c9da88206b59c775af5d72bbd26a3 | missing |\n| \"Table 23a\" | 598ae992540e5de1de7095c3943c9b6e58e5c1c3273a03ff131966a20d1c3e67 | missing |\n| \"Table 24\" | 90c838391fbd044d615f9a617ee98567d5b612a0757f373eb63ab6c4df0b9e9e | missing |\n| \"Table 24a\" | b14b88a89bcb213e910f75a56d00a3a6e574ecaf307c46d21149a838a17d4cac | missing |\n| \"Table 25\" | 206c73bc54c9604dc4a227cd8a2a8f276f27b316c13ccf3c77e19247711cb636 | missing |\n| \"Table 25a\" | cca12a7b2560b41a2517c8a37aa059a7fdf62fc0bff5eea760489ef60b518040 | missing |\n| \"Table 26\" | ae724bf402403883132d9880c8b7cb6f6f4d67a893cfb3b117ee59f244a30029 | missing |\n| \"Table 26a\" | bd982cc86dd8b994aa20893b61b4da5d46970550d335a0888ca3ba7f0c1dd148 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T131451Z-a911fc041a9a.jsonl"
+  }
+}

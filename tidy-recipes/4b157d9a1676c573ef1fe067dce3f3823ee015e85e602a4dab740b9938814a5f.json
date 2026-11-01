@@ -1,0 +1,266 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4b157d9a1676c573ef1fe067dce3f3823ee015e85e602a4dab740b9938814a5f",
+  "sheet": "Table 16",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Each offence block contains sex headings and indented age groups, including published Total rows. Persons includes all sexes and is not additive to Males/Females. Geography is published in the table title (Table 13 spells Queeensland). Age basis separates incident age from report age; proportions and counts are distinct measures.",
+  "new_dimensions": [
+    {
+      "name": "age_basis",
+      "description": "Whether victim age is measured at the incident or at report to police.",
+      "example_labels": [
+        "Age at incident",
+        "Age at report"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "release",
+      "cells": "A2:A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "offence_1",
+      "range": "A5:Y14",
+      "values_range": "B10:Y14",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A10:A14"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A9"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Y7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,N5"
+        },
+        {
+          "name": "age_basis",
+          "direction": "NNW",
+          "cells": "B6,H6,N6,T6"
+        }
+      ]
+    },
+    {
+      "name": "offence_2",
+      "range": "A15:Y48",
+      "values_range": "B17:Y26,B28:Y37,B39:Y48",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A17:A26,A28:A37,A39:A48"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A16,A27,A38"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Y7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,N5"
+        },
+        {
+          "name": "age_basis",
+          "direction": "NNW",
+          "cells": "B6,H6,N6,T6"
+        }
+      ]
+    },
+    {
+      "name": "offence_3",
+      "range": "A49:Y82",
+      "values_range": "B51:Y60,B62:Y71,B73:Y82",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B49"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A51:A60,A62:A71,A73:A82"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A50,A61,A72"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Y7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,N5"
+        },
+        {
+          "name": "age_basis",
+          "direction": "NNW",
+          "cells": "B6,H6,N6,T6"
+        }
+      ]
+    },
+    {
+      "name": "offence_4",
+      "range": "A83:Y116",
+      "values_range": "B85:Y94,B96:Y105,B107:Y116",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B83"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A85:A94,A96:A105,A107:A116"
+        },
+        {
+          "name": "sex",
+          "direction": "WNW",
+          "cells": "A84,A95,A106"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Y7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,N5"
+        },
+        {
+          "name": "age_basis",
+          "direction": "NNW",
+          "cells": "B6,H6,N6,T6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:23:23Z",
+    "tool_version": "0.2.0",
+    "records": 2280,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142144Z-4d0460d5acce",
+    "started_at": "2026-11-01T14:21:46Z",
+    "workbook": "4d0460d5accec114e4d4958bb8f6ec609c7b0cf70db70aceefd990b813422ee2--8.-Victims-age-at-incident-and-report-selected-offences.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1977c-e386-7187-a036-c00db980249d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "017a23a617d662408f039eda51ef0ea2d36626949cd7cf307d0b2d57fa74bfdf",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4d0460d5accec114e4d4958bb8f6ec609c7b0cf70db70aceefd990b813422ee2--8.-Victims-age-at-incident-and-report-selected-offences.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2019\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents \" | 3c0ba242416900a5bd47335733e75ee969fbde7114e0fa3c4c387ff7b85d11a2 | missing |\n| \"Table 10\" | 926d9545487bbf0f2d1d5fa45927c1fbbc378a9dc79f48a872785be533479c1a | missing |\n| \"Table 11 \" | 7f72c0bf457a07f2f002dc04ee167d2e38597cd804a7706be8a47dfaf3dc745a | missing |\n| \"Table 12\" | aec4ffbe25257f63bebb2110e4ca835b365a9b79733b2518435e585aaa3001b8 | missing |\n| \"Table 13\" | 0f4bac5c1f4abd66e0e95888968236ca62a868e13bba33b8da1d869b34cea9f7 | missing |\n| \"Table 14\" | 13e9c4fe5c58ba04c9e18e6c684668e66e0d7fccab5f524c8539c3d8324d8074 | missing |\n| \"Table 15\" | 1bb45452166678a95a11a07ed2267a6e758b07488a9fabb3b752d20610c17d58 | missing |\n| \"Table 16\" | 4b157d9a1676c573ef1fe067dce3f3823ee015e85e602a4dab740b9938814a5f | missing |\n| \"Table 17\" | 6b97287d704b1a8faa1aab30e799842c7a733a00f41321e8a63b5687356a68e9 | missing |\n| \"Table 18\" | 8aebdddde1e5dcdf766673484016de601555a8fe72ebda70b09ad810b0e4134a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142144Z-4d0460d5acce.jsonl"
+  }
+}

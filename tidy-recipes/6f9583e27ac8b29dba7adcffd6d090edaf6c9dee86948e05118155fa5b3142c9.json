@@ -1,0 +1,402 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6f9583e27ac8b29dba7adcffd6d090edaf6c9dee86948e05118155fa5b3142c9",
+  "sheet": "A",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "858bd1b51010ab23a40bc210c28ff9ed6b69dcc6f772f663b039dd529ec9bb40",
+  "agent_notes": "Victoria is identified in the table title. NUMBER and INDEXED RATE are separate measures. Published indentation is preserved. Total homicide, robbery and unlawful entry rows are subtotals retained alongside their components; offence-group headings apply only within their blocks.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_homicide",
+      "range": "A6:K11",
+      "values_range": "B7:K11",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A7:A11"
+        }
+      ]
+    },
+    {
+      "name": "number_assault_and_abduction",
+      "range": "A12:K14",
+      "values_range": "B12:K14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A12:A14"
+        }
+      ]
+    },
+    {
+      "name": "number_robbery",
+      "range": "A15:K18",
+      "values_range": "B16:K18",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A16:A18"
+        }
+      ]
+    },
+    {
+      "name": "number_blackmail",
+      "range": "A19:K19",
+      "values_range": "B19:K19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A19"
+        }
+      ]
+    },
+    {
+      "name": "number_unlawful_entry",
+      "range": "A20:K23",
+      "values_range": "B21:K23",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A20"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A21:A23"
+        }
+      ]
+    },
+    {
+      "name": "number_theft",
+      "range": "A24:K25",
+      "values_range": "B24:K25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A24:A25"
+        }
+      ]
+    },
+    {
+      "name": "indexed_rate_homicide",
+      "range": "A27:K32",
+      "values_range": "B28:K32",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A28:A32"
+        }
+      ]
+    },
+    {
+      "name": "indexed_rate_assault_and_abduction",
+      "range": "A33:K35",
+      "values_range": "B33:K35",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A33:A35"
+        }
+      ]
+    },
+    {
+      "name": "indexed_rate_robbery",
+      "range": "A36:K39",
+      "values_range": "B37:K39",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A37:A39"
+        }
+      ]
+    },
+    {
+      "name": "indexed_rate_blackmail",
+      "range": "A40:K40",
+      "values_range": "B40:K40",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A40"
+        }
+      ]
+    },
+    {
+      "name": "indexed_rate_unlawful_entry",
+      "range": "A41:K44",
+      "values_range": "B42:K44",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A42:A44"
+        }
+      ]
+    },
+    {
+      "name": "indexed_rate_theft",
+      "range": "A45:K46",
+      "values_range": "B45:K46",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4:K4"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A45:A46"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:49:26Z",
+    "tool_version": "0.2.0",
+    "records": 340,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T134857Z-a9340232b8ed",
+    "started_at": "2026-11-01T13:48:59Z",
+    "workbook": "a9340232b8ed65d938932b29a3bcd2825e033223d58e3ebcb1ab8cbbb9f927eb--45100_Table10_2005.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1975e-de22-70fe-9a26-2ed4c4d25a0a",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3ff73e9fb915b725ee44747f1eccd2a660fd11ad7f298ce7f77c3f018dda9822",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a9340232b8ed65d938932b29a3bcd2825e033223d58e3ebcb1ab8cbbb9f927eb--45100_Table10_2005.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2005\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"A\" | 6f9583e27ac8b29dba7adcffd6d090edaf6c9dee86948e05118155fa5b3142c9 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T134857Z-a9340232b8ed.jsonl"
+  }
+}

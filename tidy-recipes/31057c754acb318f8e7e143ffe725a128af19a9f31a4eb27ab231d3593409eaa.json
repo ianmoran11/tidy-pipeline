@@ -1,0 +1,100 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "31057c754acb318f8e7e143ffe725a128af19a9f31a4eb27ab231d3593409eaa",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Contents and links to the eight statistical tables; no statistical data.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T12:31:06Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T122842Z-bbd7605237ea",
+    "started_at": "2026-11-01T12:28:47Z",
+    "workbook": "bbd7605237ea3a8ff8400816700ae64bf6765c457a02a6c115a006d9f9fa64dc--45300do012_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19715-71cf-74ed-9f4f-9d142e98a1de",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b72035d5a11c9a7a99192eee84a99ebb6cc231d67900ab112494f6ffc2c45cf7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `bbd7605237ea3a8ff8400816700ae64bf6765c457a02a6c115a006d9f9fa64dc--45300do012_200809.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 31057c754acb318f8e7e143ffe725a128af19a9f31a4eb27ab231d3593409eaa | missing |\n| \"Table_1\" | 1f61be5e17ab63f302e969f78f0ff9ea75039db1436eae9c6798f68a62d86355 | missing |\n| \"Table_2\" | f532068f835e754b1c38853419dd91076483cad3c5f7f44cdfb1fc012143eb76 | missing |\n| \"Table_3\" | e587303fdd835c87f4c418476d920fc9dfc93ef6b366ee98f582fcd94c36b13d | missing |\n| \"Table_4\" | 7af70759dce5af4611c62de755c5485e4ea5905d6b6607d9211bbbefd6398acd | missing |\n| \"Table_5\" | 5348e5cf4c6956b2ca16cc65435fc5b460128ac543acbb9f7bfab22e8fae4a8c | missing |\n| \"Table_6\" | 39f577723205954160c06d65d5e77f7a67a3971a48cb0ebaabbd1c0224ff966f | missing |\n| \"Table_7\" | a973ce3c821e0d6194de715fb06174c44c7e1b3611901cde1f0be1e190ff0964 | missing |\n| \"Table_8\" | 520758023702d6478f63f4d6055489efb9309be0044165a55d2d41ef045ceb31 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T122842Z-bbd7605237ea.jsonl"
+  }
+}

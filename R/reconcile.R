@@ -13,7 +13,11 @@ reconcile <- function(observations, sources, reconcile_spec) {
   releases$release_end <- dplyr::coalesce(unname(overrides[releases$release_id]), releases$release_end)
   obs <- dplyr::left_join(dplyr::select(obs, -release_date), releases, by = "release_id")
   obs <- dplyr::arrange(obs, series_id, period, dplyr::desc(release_end), dplyr::desc(release_date), is.na(value), sheet_sha256, address)
-  obs <- dplyr::mutate(dplyr::group_by(obs, series_id, period), n_releases = dplyr::n_distinct(release_id), is_latest = dplyr::row_number() == 1,
-                       differs_from_latest = release_id != release_id[1] & !(published_text %in% published_text[1]))
-  dplyr::select(dplyr::ungroup(obs), -release_date, -release_end)
+  # vectorised over the sorted rows: each series-and-period group's first row is its latest
+  key <- paste(obs$series_id, obs$period); first <- !duplicated(key); group <- cumsum(first); top <- which(first)[group]
+  a <- obs$published_text; b <- a[top]; same_text <- (is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & a == b)
+  obs$n_releases <- tabulate(group[!duplicated(paste(key, obs$release_id))], nbins = max(group, 0))[group]
+  obs$is_latest <- first
+  obs$differs_from_latest <- obs$release_id != obs$release_id[top] & !same_text
+  dplyr::select(obs, -release_date, -release_end)
 }

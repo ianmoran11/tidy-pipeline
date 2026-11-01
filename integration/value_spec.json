@@ -2,6 +2,28 @@
   "description": "Stage 6 (type_values): what each publisher's symbols mean. Symbols are matched after squishing spaces; a publication's own entries win over 'default'. 'value' is set only where the symbol stands for a number.",
   "number_status": "published",
   "blank_status": "blank",
+  "markers": [
+    {
+      "pattern": "^(?:\\([a-z]{1,2}\\))+\\s*(?=[-*r0-9.])",
+      "flag": "footnote",
+      "description": "footnote markers attached to the number, e.g. (b)(c)25.3"
+    },
+    {
+      "pattern": "^r(?=-?[0-9.])",
+      "flag": "revised",
+      "description": "r revised since the previous release"
+    },
+    {
+      "pattern": "^\\*\\*\\s*(?=-?[0-9.])",
+      "flag": "rse_over_50",
+      "description": "** estimate has a relative standard error over 50% (ABS, RoGS): too unreliable for general use"
+    },
+    {
+      "pattern": "^\\*\\s*(?=-?[0-9.])",
+      "flag": "rse_25_to_50",
+      "description": "* estimate has a relative standard error of 25% to 50% (ABS, RoGS): use with caution"
+    }
+  ],
   "symbols": {
     "default": {
       "np": {
@@ -80,6 +102,41 @@
       "-": {
         "status": "nil_or_rounded_to_zero",
         "value": 0
+      }
+    },
+    "266f325a1dde5ccd454d8cb74f1a2aed9e424f0fe0744639dc62636ddeaa8bfc--Personal-crime-Tables-8a-to-16b-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "2a067d9dc2f431a4ab553ffd722a79db666cee792ba1f5446846fcc1fe5d8298--Personal-crime-Tables-9a-to-18b-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "b3ea3454fbcb60cf815cca26726c4898625b5d221662ca18be8737384b463ed3--Personal-crime-Tables-9-to-18a-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "b7b91b05609bc6d979d692a0abf6468390994620d41316857ba6dd7ceef2d6f4--Personal-crime-Tables-9a-to-18b-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "bab394d9fda12c398df8e96580a16bfafad27158f6ca7f29a1ec082ebc8776a6--personal-crime-tables-9-to-18a-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "d58f6e417d25436d26fcccfa0a52606afc04ef270ad753580c6b681ddcf83705--Personal-crime-Tables-8a-to-17b-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "efa2b87f0918177aa1b72ccddbc9d1a35e66236d1a53bfbcecc97fc36d0cac1b--Personal-crime-Tables-9a-to-18b-.xlsx": {
+      "na": {
+        "status": "not_applicable"
       }
     },
     "28af3897513142d7080f02a0cee4a21d763f1b633aaf8e0cee9e53561f0a317c--prisoners-australia-2025-national-source.xlsx": {
@@ -243,6 +300,66 @@
       }
     },
     "fb37f859475895a759239505bbe170052c407902d3aa33cad9b23c39b94a675d--2.-Offenders-states-and-territories.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "0952932e3858407655947faca32cc6d6f5aac6cb0c8bda0bee77475e79e2798e--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "53fece51e8431d90fda81a5b46d9c4bb1bf4451be02fc4164413d34d53197c73--2.-Victims-of-crime-states-and-territories-Tables-9-to-16-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "5b95cc2676d60b0cb7b4c7970331cdd3978e0c0f21720ad2e7242812f86ba721--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "6467198af786d422d57edef9bcd4cd81c206d4c0414ab0bcbe1fdf32b20cf067--2.-Victims-of-crime-states-and-territories-Tables-9-to-16-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "78f1b8bb71b4869b5e80e1f7bb8732bcedbea9a37040a7bffe916aa41175d9a4--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "83a7ae3678ae2d6d6ae7d5b53cc59db7c8dacc35d57d0d8d992a538ca371d262--2.-Victims-of-crime-states-and-territories-Tables-9-to-16-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "9b5afb50c85d1bf9e65b61b21646417d5cef7a8ceeb7c15fe76d849e6327c3a4--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "ba41aa1dc99cb1e2053a271b3c4138cecc8738fec0b59de02830609cbe3b7491--2.-Victims-of-crime-states-and-territories-Tables-9-to-16-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "eaa6cfd9ade69046b7a613818c5f7095712b8f3534eaafb7cf9bd72cd8a81da8--2.-Victims-of-crime-states-and-territories-Tables-9-to-16-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "ece5d82f081e8aeea0b70477370e1ccfaea43203caca0a7b17571aafa1bb30f2--2.-Victims-of-crime-states-and-territories-Tables-9-to-16-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "f03a1bfc14f66b482d63049db3bbf6781516af9e481c60ff7befa2b3f392fd93--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx": {
+      "na": {
+        "status": "not_applicable"
+      }
+    },
+    "ff62b774b3b642a68e868e5ac222da9dad7686107cd93bf07c0a3c512f9f6975--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx": {
       "na": {
         "status": "not_applicable"
       }

@@ -3,8 +3,7 @@
 # published blanks, so they become records with .value NA (type_values() gives them
 # the blank status). Rows or columns that are blank throughout are not recovered:
 # recipes usually leave them out of the table, labels included.
-blank_value_cells <- function(table_spec, sheet_data) {
-  values <- expand_excel_range(table_spec[["values_range"]])
+blank_value_cells <- function(table_spec, sheet_data, values = expand_excel_range(table_spec[["values_range"]])) {
   headers <- unlist(lapply(table_spec[["headers"]], function(h) expand_excel_range(h[["cells"]])))
   coords <- cellranger::as.cell_addr_v(values, strict = FALSE)
   grid <- expand.grid(row = unique(cellranger::addr_row(coords)), col = unique(cellranger::addr_col(coords)))

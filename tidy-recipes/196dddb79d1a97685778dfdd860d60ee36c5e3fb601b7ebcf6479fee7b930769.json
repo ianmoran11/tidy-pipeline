@@ -1,0 +1,182 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "196dddb79d1a97685778dfdd860d60ee36c5e3fb601b7ebcf6479fee7b930769",
+  "sheet": "Table 23b",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "586fcf356e64c9186ce4233b1e22bdef37209da549873a7aea865fbc0c8b922f",
+  "agent_notes": "Indented rows are categories under their published characteristic captions. The final total is retained separately, not repeated for each characteristic. Multiple-response property/evidence categories may not sum to totals; random adjustment also affects additivity. This sheet reports relative standard errors (%) as identified in its table title, not estimates. Location rows labelled Residential and Non-residential, where present, are subtotals; indented locations are their children, retained in the same dimension.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A10"
+    },
+    {
+      "name": "notes",
+      "cells": "A15:A18"
+    }
+  ],
+  "tables": [
+    {
+      "name": "police_reporting_status",
+      "range": "A8:C9",
+      "values_range": "B8:C9",
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "direction": "W",
+          "cells": "A8:A9",
+          "caption": "Whether reported most recent incident to police"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "incident_location",
+      "range": "A11:C13",
+      "values_range": "B11:C13",
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A11:A13",
+          "caption": "Location of incident"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A14:C14",
+      "values_range": "B14:C14",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A14:A14"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:46:22Z",
+    "tool_version": "0.2.0",
+    "records": 12,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T134157Z-5754fa6f59eb",
+    "started_at": "2026-11-01T13:42:11Z",
+    "workbook": "5754fa6f59eb1df38b478a58ff166176576769f3b0c9f47e56fd689de8d0bbb7--Household-crime-Tables-19a-to-26b-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19758-a5db-746d-ade6-cad8ee7d9352",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4dc8cfada2d339a3e00854a0829cac53eee684de5734b47d7bd3ad1544ef5563",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5754fa6f59eb1df38b478a58ff166176576769f3b0c9f47e56fd689de8d0bbb7--Household-crime-Tables-19a-to-26b-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2024-25\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | de7f5732736de54c94152a638c2762060ffdf8e8b767eaa8da94193d1abc69c2 | missing |\n| \"Table 19a\" | 454ad5444473cc23762f7703587a53d2f7bf8f32519b2bbb188e9cfffe76225f | missing |\n| \"Table 19b\" | 0369b644e1edd8ae3eb79a2e6db77bc61d72d7d130f60f9c064a29f1fea2f0d5 | missing |\n| \"Table 20a\" | ccd6690402425aa378caeb239f14dd019dfc2501a12397edba8906504d3b0a9b | missing |\n| \"Table 20b\" | 01151bad807a21914cbce8851b244a4b7678f89c265afb26119cebe02763d2ce | missing |\n| \"Table 21a\" | 02f88559f7de76c9e30ddc4f2ce4a84710eb3edfa74973b199561fca456e62bd | missing |\n| \"Table 21b\" | 914d04282f1198935569236ce260538ad78861c9fee183e4b70b0c6f3f2007d5 | missing |\n| \"Table 22a\" | 566a8d34a7d5f00f6f09f722436a5c9da1fe60a25c9c729118094e770731e77f | missing |\n| \"Table 22b\" | 8b4fcf48a5c4e3aa29bddbe2ca4033bfb366f6a7986b8dbd3565a0579b41a7c7 | missing |\n| \"Table 23a\" | 2253b4ffa3311a0e2894f293266260f12ddeff3c78852c75a9b0048c33e00d62 | missing |\n| \"Table 23b\" | 196dddb79d1a97685778dfdd860d60ee36c5e3fb601b7ebcf6479fee7b930769 | missing |\n| \"Table 24a\" | 7287f109148f62e64e9cec84490292aa3aab2c35a6bed9e6288dece32002c153 | missing |\n| \"Table 24b\" | 6c8af9c3c7e1a1891a019ef2750329774c32eae88852903555eb5566f8940c44 | missing |\n| \"Table 25a\" | 4532bfc966ee8389ad15f6d147aa5172ddbc74efc46c5fbf999eef1df20dc751 | missing |\n| \"Table 25b\" | 0323849c734fa0a17565aacd43960e376181a6066d4d86e054f7546355fe0d07 | missing |\n| \"Table 26a\" | 536a222abbdb66b4c7e0bde4b799a4a0a3185b0f13a9b63eae191ad77783ed1f | missing |\n| \"Table 26b\" | 0de34fb9ae484cc6ee33e32cd774e167f5816f35e56dd3f73bdb4b3ee4a147ce | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T134157Z-5754fa6f59eb.jsonl"
+  }
+}

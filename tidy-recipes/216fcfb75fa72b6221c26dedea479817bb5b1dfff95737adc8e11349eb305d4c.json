@@ -1,0 +1,129 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "216fcfb75fa72b6221c26dedea479817bb5b1dfff95737adc8e11349eb305d4c",
+  "sheet": "NT",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals retained without recomputation; totals can include unspecified age or sex and need not equal displayed components. State from A4; reference year 2006 in title. Sex total row retained exactly as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "victims_by_sex",
+      "range": "A6:E11",
+      "values_range": "B8:E9,B11:E11",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A8:A9,A11"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:E6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:52:58Z",
+    "tool_version": "0.2.0",
+    "records": 12,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T135155Z-8fe105d32a41",
+    "started_at": "2026-11-01T13:51:57Z",
+    "workbook": "8fe105d32a41c7a79beb0725676ca084d996fcdeec7037129ea81d8bc71e2683--45100_Table16_2006.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19761-9823-7301-9b84-e255cac09f96",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "45762d950ed05879d612112697d5adb617a3f7c2bf9906cad25edc40529a64e9",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8fe105d32a41c7a79beb0725676ca084d996fcdeec7037129ea81d8bc71e2683--45100_Table16_2006.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2006\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"NSW\" | ebb1ef7003f884e77f1eedd52abcd715302f4f5c647f6a443a33b6559d777e06 | missing |\n| \"VIC\" | bd59265a3d689b7cd833979b12a84282220e4832b6906a580170d5113dd4be41 | missing |\n| \"QLD\" | f1896bf4ad0d394acfb48ab333711139a302ded64c9ebef3868a59c4ba9127af | missing |\n| \"SA\" | 0560c231f66224b04a8e73d10e2c910fc8f42252b3dff03d9e44ad5a40978ffa | missing |\n| \"WA\" | d8eb17908c4dc4c5d3ab24bb5ff90bf482b0c87ac5efa2f10f00042746b6aa6f | missing |\n| \"TAS\" | 89c98c99a08e03a9afdae755683cc02283e51b73b7f843eb69e63f1b5bd3bc22 | missing |\n| \"NT\" | 216fcfb75fa72b6221c26dedea479817bb5b1dfff95737adc8e11349eb305d4c | missing |\n| \"ACT\" | ae57264e326202c3b6ed0d0ae1f20d67fec39c6fe0849b7bf1030690832e6e87 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T135155Z-8fe105d32a41.jsonl"
+  }
+}

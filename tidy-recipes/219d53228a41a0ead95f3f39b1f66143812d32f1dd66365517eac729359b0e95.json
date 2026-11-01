@@ -1,0 +1,146 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "219d53228a41a0ead95f3f39b1f66143812d32f1dd66365517eac729359b0e95",
+  "sheet": "Table 7d",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "1725da0a0dab7a010b63f2be9b1db67ca38ac5b3a041f48bf26194b817ed1068",
+  "agent_notes": "National household crime time series. Published period footnote markers retained, including revised 2013–14 police-reporting RSEs where noted. Title supplies estimate/RSE context.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A15:A17"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8"
+    }
+  ],
+  "tables": [
+    {
+      "name": "household_crime",
+      "range": "A9:Q14",
+      "values_range": "B9:Q14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A9:A14"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:Q6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:Q7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:44:57Z",
+    "tool_version": "0.2.0",
+    "records": 96,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T133913Z-e6696b1528c2",
+    "started_at": "2026-11-01T13:39:19Z",
+    "workbook": "e6696b1528c2001fb477c89035104b70accfdb3315af27969f1b8027a8f37899--National-summary-and-time-series-Tables-1a-to-8d-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19756-09c3-777f-b0e4-489b7b132465",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e1ed8a33192fe50cb5cb4a2701f4e4cd61fe2293fb2c811732ffa7dbe3aebde2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e6696b1528c2001fb477c89035104b70accfdb3315af27969f1b8027a8f37899--National-summary-and-time-series-Tables-1a-to-8d-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2023-24\n- Sheets needing a recipe: 31 of 31\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 856d43427e28792d8a801bcbd117dc34627de416da7576beb8acf029fb22948c | missing |\n| \"Table 1a\" | a6e345059c464f17f3679c7c4af1f5f084bda109a7275d93d554af1e93996d41 | missing |\n| \"Table 1b\" | e8d33dd814e6580da4491d40af5e6d25b092ea835f9719cfb707196b533318f4 | missing |\n| \"Table 2a\" | 4e8039c3f71c68a9f906d5eb7649f6cba56d86c6715859f1773c3d0bbac1e1e0 | missing |\n| \"Table 2b\" | a2180308d28862132c6a769bcf3dbcdceb692a0107c02e3c1adfab45a353e72f | missing |\n| \"Table 2c\" | 118506ffe3f1a53342587384eb2d14fd9e67f9015531e5140bb6ce2d02fea40d | missing |\n| \"Table 2d\" | e217e48b1fb3095b66fcc796670cb708264b515875615d79faf0fd989d1f113c | missing |\n| \"Table 3a\" | 8187e73dc403474f4c9d28859cb6956d6265dc5e6984112ee64d609bc4739128 | missing |\n| \"Table 3b\" | fbd4ebaec1e0979310994fec24efd1755722823e54d4dcf73b741ecdaf7d0251 | missing |\n| \"Table 3c\" | 685eeb14c58b6b4ff0cd21b3d94c54499824631c49659d00bd273015fd8f2918 | missing |\n| \"Table 3d\" | e64d4576420d1c7a98a1970c9fb8e144adec76d4e32b0821720cd4272fcac45d | missing |\n| \"Table 4a\" | 79dd5a9a9e8674e70e3b8dbc3672ee30e31e089667ef99fdf702724e3c9c389d | missing |\n| \"Table 4b\" | 399339050b3d1cad54e15b696d9553246ec938becaf2f1688077103a045ab3e9 | missing |\n| \"Table 4c\" | 25578bb225f4f788a221ef5667cc62a65bf4bb708e055ca5887a33e6c76780be | missing |\n| \"Table 4d\" | 8e1349dec46afe49cdf941737a76ec0fdc03158de0cad7c3f621f67ac3acd5f9 | missing |\n| \"Table 5a\" | 898a2705935b7d6f18f758250abac91534bb801b11089a4c3a4392b9caa883f0 | missing |\n| \"Table 5b\" | 6b5d2a8df6fb37aa18b486080aace4b097e4994334b7bc75130a4cb8c16ed765 | missing |\n| \"Table 5c\" | 33016a8226132b94b2b0075647e6742038a936ebee572e62478539456cad6af6 | missing |\n| \"Table 5d\" | 975e3002981298eca3801e081c8e287cd6ac862b518bf821d0c065700da834f9 | missing |\n| \"Table 6a\" | 41d675e823d2628184b4a9042698f5ee049b432c203ba7aeae353c9cf472710b | missing |\n| \"Table 6b\" | ac2ab884de9d063d3e76f3b5f9cc9da8a2113c211ed78e56a56eeff5912b95d9 | missing |\n| \"Table 6c\" | 250d5f2c830b4bf0b5ef2b9da81434d80a056be33623cbded4ff7c12dd3872da | missing |\n| \"Table 6d\" | a0be1e89fdc22975d6c2cee249c40b9deddd1caf45bbad7ccad96d8a1d4a2eec | missing |\n| \"Table 7a\" | 97030eaf736558bab04bbde3ca4ee97bd2c71a7b7974c6e30e730a34ceadf339 | missing |\n| \"Table 7b\" | 187d71202a3a1d4fb1964b25daf2849115cdfdecb39101f900a6f6fda3be18f1 | missing |\n| \"Table 7c\" | 9e82c4a884c4774a9a1031edbe70556df279558b1cd99118ed190691a7b9a6da | missing |\n| \"Table 7d\" | 219d53228a41a0ead95f3f39b1f66143812d32f1dd66365517eac729359b0e95 | missing |\n| \"Table 8a\" | f2ab2e942f320774a950232e6878f4fabe29f808f8d08234d4a17ee0dfd364a6 | missing |\n| \"Table 8b\" | bf37eaf559a46cd5c0c572960247779a81d09f22c56848c6dfd53818571861d5 | missing |\n| \"Table 8c\" | 1301d9019f110294a0468991b3123f935dbc44cec321b6c56c4543cf68e6c78d | missing |\n| \"Table 8d\" | 6c8dd8451ecdfea73f6bb08f3153617ac4e050a537e01988643fe3d7f074292c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T133913Z-e6696b1528c2.jsonl"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d126ce804602172da65b1e1cda44f349ce9ce215d8926a2ba4ab3e017101057b",
+  "sheet": "Threatened Assault",
+  "kind": "notes",
+  "status": "needs_review",
+  "reason": "Survey data-item dictionary listing variable names, populations, category codes and labels; no statistical table.",
+  "template_from": "b1ef6244efe75b244e782af938ce2d83f2ffe5b1a63bc142849885e0145bb9dd",
+  "agent_notes": "Numeric cells are response/category codes and special missing-value codes, not counts or statistical estimates. Codebook body preserved as notes metadata, including hierarchical categories, totals and multiple-response items. No observations manufactured from category codes. The non-data numeric-cell validation gate requires human review. Remaining run failure: kind notes but the sheet has 8 numeric cells, e.g. A9, A10, A11, A20, A21 Retaining the correct non-statistical classification; changing category codes into estimates would misrepresent the source.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,C7,D7"
+    },
+    {
+      "name": "notes",
+      "cells": "C8,D8,A8,B9,A9,B10,A10,B11,A11,C13,D13,A13,B14,B15,A15,B16,A16,B17,A17,A19,B20,C20,D20,A20,B21,A21,B22,A22,B23,A23,B24,A24,A26,B27,C27,D27,A27,B28,B29,A29,B30,A30,B31,A31"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T13:16:14Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind notes but the sheet has 8 numeric cells, e.g. A9, A10, A11, A20, A21"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T131240Z-db4d4f4d7d29",
+    "started_at": "2026-11-01T13:12:49Z",
+    "workbook": "db4d4f4d7d29cc7006661974a570f9af0b1e1de0894d05b9a3f03b7fcb827fff--Data-item-list.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1973d-c680-725c-a7cc-f8992cfd06a5",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "097c8b8156a52a95d041a4a42b0eb8702a188217fb47ceefcc9be95e9f38a539",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `db4d4f4d7d29cc7006661974a570f9af0b1e1de0894d05b9a3f03b7fcb827fff--Data-item-list.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2017-18\n- Sheets needing a recipe: 24 of 24\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 7592b3e20c46084434c5b552a836e9354e99154d0c5279066d9d13eb8fe396ce | missing |\n| \"Demographics\" | d1574c54fcefd3995dee0753f7b54c5420a36a8fec9bedf01e697905b0bf6964 | missing |\n| \"Geography\" | c319825cc773e7076e35afdd3f35006147c15c91f9da0bba4d1ba14509088b3f | missing |\n| \"Labour Force\" | 22e60596672eebf91a2c0c9ef4328f338eb9ad245970ce2b6948226b291613ef | missing |\n| \"Education\" | 1232704a58ef1736a78eaf374550b6da5ac11679649c06e0c88ab62f25ce2acf | missing |\n| \"Income\" | 7d95cabc744eded2ff33a854f45e1422e6b9e71f1cf37ab3d29d5ebdc278693d | missing |\n| \"Total Assault\" | 3867825a5b76c0b0a17b07ea281a77c125243ccb463094e8af22883cd0c814a5 | missing |\n| \"Physical Assault\" | 411d1041fe6486dbd9b9677162e3d10db9564f67236d4339a8dc0c1ecd91e043 | missing |\n| \"Threatened Assault\" | d126ce804602172da65b1e1cda44f349ce9ce215d8926a2ba4ab3e017101057b | missing |\n| \"Threatened Assault F2F\" | 2c4e257d236d5c8056223302e9ed36649e869dbac6c6bb7cff8980223e409f51 | missing |\n| \"Threatened Assault Non F2F\" | 749b93ed2283591211a8a339330ea7141b5f4c71fc4de088868508b7b6126d06 | missing |\n| \"Robbery\" | 9e5bd62c291cc01fb6984b8b5ef189b4942e8a885159f242693cc409a9b06e3d | missing |\n| \"Sexual Assault\" | 4e6107742463da9398ac9276aa5918f3f51357db2e9d53bfd812441c6d8e57e8 | missing |\n| \"Break-ins\" | e79d95011a924b696f9420b8a7e116d9432c9dba399a24f41138710e3dbbef63 | missing |\n| \"Attempted Break-ins\" | 040ed22e98e5046ff25aed2e063bd15d3424ca25b8e6b2e4585cef156977019b | missing |\n| \"Motor Vehicle Theft\" | d7b7087e679732f725dd9220726cab6a1639534dd3df1e547e0a95a4f49a699c | missing |\n| \"Theft from Motor Vehicle\" | 734bd871c313855980ebece5c51072bf89194f3df31b05a01148ff3b1a9cf15e | missing |\n| \"Other Theft\" | e4eb19115ed410a926d2c4d71d79888fd11d9918e343cd01f9b02a895e6e750c | missing |\n| \"Malicious Property Damage\" | 3e81e34245e5af0e6f8794e8ee6a41e19b7c15214d6b76db0ba221dc8f0158d4 | missing |\n| \"Personal Crime Summary\" | 08d3e3c374723f01f7c553fdc83f5d0a1a3998c6786ba7607b40a56b348034fb | missing |\n| \"Household Crime Summary\" | a3be8f89e5f3506e28dd4033f5933bdb957cc0c25233ff92e9bf4190e3ddbf65 | missing |\n| \"Person Crime Incident Level\" | b7dcda58bf9abf7ecfa008283026a9870950d16467ad39b857ed2f0f41e71db7 | missing |\n| \"Household Crime Incident Level\" | 35e26e37fa9d8fd83bf65b3ebb843afe429c70532e41ff2ffec25b4c17707e2a | missing |\n| \"Home Security Measures\" | ab808e97e04289070de4d51c42f0efddd94a68758b4f442b75f318393d8053e5 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T131240Z-db4d4f4d7d29.jsonl"
+  }
+}

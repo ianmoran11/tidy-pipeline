@@ -1,6 +1,6 @@
 {
   "description": "Stage 4 (identify): what each record counts. See measures/README.md.",
-  "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+[a-z]?\\s*[:.–-]?\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
+  "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+(?-i:[a-z])?\\s*[:.–-]?\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
   "replace_labels": {
     "population": [
       "Total"
@@ -90,17 +90,31 @@
       "set": {
         "scope": "Excluding road traffic offences"
       }
+    },
+    {
+      "pattern": "age at incident(?! and report)",
+      "set": {
+        "age_basis": "Age at incident"
+      }
+    },
+    {
+      "pattern": "(?<!incident and )age at report",
+      "set": {
+        "age_basis": "Age at report"
+      }
     }
   ],
   "measure_from_unit": {
     "no.": "Number",
-    "%": "Proportion"
+    "%": "Proportion",
+    "'000": "Number"
   },
   "default_measure": {
     "criminal-courts-australia": "Number",
     "federal-defendants-australia": "Number",
     "prisoners-australia": "Number",
-    "recorded-crime-offenders": "Number"
+    "recorded-crime-offenders": "Number",
+    "recorded-crime-victims": "Number"
   },
   "subjects": {
     "aihw-youth-justice-australia": {
@@ -1064,6 +1078,554 @@
       },
       "table 25 youth offenders": {
         "population": "Youth offenders"
+      }
+    },
+    "crime-victimisation-australia": {
+      "household experience of break-in in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Break-in"
+      },
+      "persons aged 15 years and over": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons aged 15 years and over who experienced selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons aged 18 years and over": {
+        "population": "Persons aged 18 years and over"
+      },
+      "victims of other theft": {
+        "population": "Households",
+        "crime_type": "Other theft"
+      },
+      "victims of selected personal and household crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "households": {
+        "population": "Households"
+      },
+      "experience of selected household crimes in the last 12 months": {
+        "population": "Households"
+      },
+      "persons aged 15 years and over who experienced face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "experience of selected personal crimes in the last 12 months": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of physical assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault"
+      },
+      "household experience of malicious property damage in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Malicious property damage"
+      },
+      "populations": {
+        "population": "Persons and households",
+        "measure": "Population estimate"
+      },
+      "victims of break-in": {
+        "population": "Households",
+        "crime_type": "Break-in"
+      },
+      "victims of motor vehicle theft": {
+        "population": "Households",
+        "crime_type": "Motor vehicle theft"
+      },
+      "persons and households": {
+        "population": "Persons and households"
+      },
+      "females aged 18 years and over": {
+        "population": "Persons aged 18 years and over",
+        "sex": "Females"
+      },
+      "victims of malicious property damage": {
+        "population": "Households",
+        "crime_type": "Malicious property damage"
+      },
+      "victims of theft from a motor vehicle": {
+        "population": "Households",
+        "crime_type": "Theft from a motor vehicle"
+      },
+      "persons aged 18 years and over who experienced face-to-face threatened assault": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "household experience of theft from a motor vehicle": {
+        "population": "Households",
+        "crime_type": "Theft from a motor vehicle"
+      },
+      "victims of selected household crimes": {
+        "population": "Households"
+      },
+      "persons aged 18 years and over reporting at least one large or moderate social disorder issue": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Reporting at least one large or moderate social disorder issue"
+      },
+      "persons aged 15 years and over who experienced non-face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Non-face-to-face threatened assault"
+      },
+      "persons aged 15 years and over who experienced selected personal crimes in the last 12 months": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of robbery": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "persons aged 15 years and over who experienced physical assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault"
+      },
+      "households which experienced selected household crimes": {
+        "population": "Households"
+      },
+      "household experience of motor vehicle theft in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Motor vehicle theft"
+      },
+      "victims of face-to-face threatened assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "persons aged 15 years and over who experienced robbery in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "household experience of attempted break-in in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Attempted break-in"
+      },
+      "all households": {
+        "population": "Households"
+      },
+      "all persons": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of physical assault aged 18 years and over": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault aged 18 years and over"
+      },
+      "household experience of motor vehicle theft": {
+        "population": "Households",
+        "crime_type": "Motor vehicle theft"
+      },
+      "persons aged 18 years and over who experienced physical assault or face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Physical assault or face-to-face threatened assault"
+      },
+      "all persons and households": {
+        "population": "Persons and households"
+      },
+      "household experience of other theft in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Other theft"
+      },
+      "victims of selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of face-to-face threatened assault aged 18 years and over": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault aged 18 years and over"
+      },
+      "persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Physical assault and face-to-face threatened assault"
+      },
+      "all persons reporting at least one large or moderate social disorder issue": {
+        "population": "Persons aged 15 years and over",
+        "scope": "Reporting at least one large or moderate social disorder issue"
+      },
+      "persons aged 15 years and over and households": {
+        "population": "Persons aged 15 years and over",
+        "scope": "And households"
+      },
+      "household experience of theft from a motor vehicle in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Theft from a motor vehicle"
+      },
+      "persons aged 15 years and over who experienced non face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Non face-to-face threatened assault"
+      },
+      "victims of attempted break-in": {
+        "population": "Households",
+        "crime_type": "Attempted break-in"
+      },
+      "incidents of selected personal and household crimes": {
+        "population": "Incidents"
+      },
+      "households that experienced selected household crimes in the last 12 months": {
+        "population": "Households"
+      },
+      "household experience of attempted break-in": {
+        "population": "Households",
+        "crime_type": "Attempted break-in"
+      },
+      "experience of sexual assault in the last 12 months by states and territories": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Sexual assault"
+      },
+      "experience of robbery in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "persons aged 18 years and over who experienced physical assault": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Physical assault"
+      },
+      "experience of sexual assault and robbery in the last 12 months by states and territories": {
+        "population": "Persons aged 15 years and over"
+      },
+      "experience of selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "household experience of break-in": {
+        "population": "Households",
+        "crime_type": "Break-in"
+      },
+      "household experience of other theft": {
+        "population": "Households",
+        "crime_type": "Other theft"
+      },
+      "experience of selected household crimes": {
+        "population": "Households"
+      },
+      "household experience of malicious property damage": {
+        "population": "Households",
+        "crime_type": "Malicious property damage"
+      },
+      "persons who experienced selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of selected personal and household crime": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons aged 18 years and over who believed alcohol or any other substance contributed to the most recent incident of physical assault or face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Who believed alcohol or any other substance contributed to the most recent incident of physical assault or face-to-face threatened assault"
+      },
+      "victims of non face-to-face threatened assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Non face-to-face threatened assault"
+      },
+      "persons who experienced physical assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault"
+      },
+      "persons who experienced robbery in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "victims of selected household crime": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons who experienced face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "6. all persons": {
+        "population": "Persons aged 15 years and over"
+      },
+      "all persons aged 18 years and over": {
+        "population": "Persons aged 18 years and over"
+      },
+      "victims of phsyical assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Phsyical assault"
+      },
+      "15. all persons": {
+        "population": "Persons aged 15 years and over"
+      },
+      "all persons aged 18 years and over reporting at least one social disorder issue": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Reporting at least one social disorder issue"
+      },
+      "victims of face-to-face threatened assaultincident": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assaultincident"
+      },
+      "all persons aged 18 years and over reporting at least one large or moderate social disorder issue": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Reporting at least one large or moderate social disorder issue"
+      }
+    },
+    "recorded-crime-victims": {
+      "victims": {
+        "population": "Victims"
+      },
+      "victims of sexual assault": {
+        "population": "Victims",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of homicide": {
+        "population": "Victims",
+        "victim_offence": "Homicide"
+      },
+      "victims of assault": {
+        "population": "Victims",
+        "victim_offence": "Assault"
+      },
+      "person victims": {
+        "population": "Victims"
+      },
+      "person victimisation rate": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "victims of crime": {
+        "population": "Victims",
+        "victim_offence": "Crime"
+      },
+      "aboriginal and torres strait islander victims of robbery": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "victim_offence": "Robbery"
+      },
+      "victims of assault and sexual assault": {
+        "population": "Victims",
+        "victim_offence": "Assault and sexual assault"
+      },
+      "victimisation rate": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "aboriginal and torres strait islander victims of sexual assault": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of armed robbery": {
+        "population": "Victims",
+        "victim_offence": "Armed robbery"
+      },
+      "victims of family and domestic violence related assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Assault"
+      },
+      "victims of family and domestic violence related offences by sex": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "By sex"
+      },
+      "victims of robbery": {
+        "population": "Victims",
+        "victim_offence": "Robbery"
+      },
+      "proportion (%) victims": {
+        "population": "Victims",
+        "measure": "Proportion",
+        "unit": "%"
+      },
+      "aboriginal and torres strait islander victims of assault": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "victim_offence": "Assault"
+      },
+      "victims of family and domestic violence-related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of kidnapping/abduction": {
+        "population": "Victims",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "victims of family and domestic violence–related kidnapping/abduction": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "victims of unlawful entry with intent - other": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent - Other"
+      },
+      "victims of family and domestic violence–related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of family and domestic violence-related assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Assault"
+      },
+      "aboriginal and torres strait islander victims": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims"
+      },
+      "victims of blackmail/extortion": {
+        "population": "Victims",
+        "victim_offence": "Blackmail/extortion"
+      },
+      "aboriginal and torres strait islander victims of family and domestic violence related offences": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of family and domestic violence-related offences by sex": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "By sex"
+      },
+      "victims of family and domestic violence–related homicide": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide"
+      },
+      "victims of motor vehicle theft": {
+        "population": "Victims",
+        "victim_offence": "Motor vehicle theft"
+      },
+      "victims of family and domestic violence related homicide and related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide and related offences"
+      },
+      "person victimisation rates": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "victims of family and domestic violence-related homicide and related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide and related offences"
+      },
+      "victims of family and domestic violence-related sexual assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of family and domestic violence": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of family and domestic violence related sexual assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of family and domestic violence–related offences by sex": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "By sex"
+      },
+      "victims of unarmed robbery": {
+        "population": "Victims",
+        "victim_offence": "Unarmed robbery"
+      },
+      "victims of family and domestic violence-related kidnapping/abduction": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "estimated resident population – 2003–2004": {
+        "population": "Persons",
+        "measure": "Estimated resident population"
+      },
+      "victims of family and domestic violence–related sexual assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Sexual assault"
+      },
+      "number of victims": {
+        "population": "Victims"
+      },
+      "victims of murder": {
+        "population": "Victims",
+        "victim_offence": "Murder"
+      },
+      "victims of attempted murder": {
+        "population": "Victims",
+        "victim_offence": "Attempted murder"
+      },
+      "victims of family and domestic violence–related assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Assault"
+      },
+      "relationship of offender to victim": {
+        "population": "Victims"
+      },
+      "victims of family and domestic violence related kidnapping/abduction": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "victims of family and domestic violence-related homicide": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide"
+      },
+      "victims of unlawful entry with intent- other": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent- other"
+      },
+      "victims blackmail/extortion": {
+        "population": "Victims",
+        "victim_offence": "Blackmail/extortion"
+      },
+      "victims of manslaughter": {
+        "population": "Victims",
+        "victim_offence": "Manslaughter"
+      },
+      "indigenous status": {
+        "population": "Victims"
+      },
+      "victims of family and domestic violence related homicide": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide"
+      },
+      "victims of unlawful entry with intent involving the taking of property": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent involving the taking of property"
+      },
+      "anzsoc23 table 1 victims": {
+        "offence_classification": "ANZSOC 2023",
+        "population": "Victims"
+      },
+      "proportion of victims": {
+        "population": "Victims",
+        "measure": "Proportion"
+      },
+      "victims of unlawful entry with intent": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent"
+      },
+      "victimisation rates": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "victims of driving causing death": {
+        "population": "Victims",
+        "victim_offence": "Driving causing death"
+      },
+      "victims of sexual assault proportions": {
+        "population": "Victims",
+        "victim_offence": "Sexual assault proportions"
+      },
+      "aboriginal and torres strait islander victims of family and domestic violence-related offences": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of homicide and related offences": {
+        "population": "Victims",
+        "victim_offence": "Homicide and related offences"
+      },
+      "motor vehicles on register – 2004": {
+        "population": "Motor vehicles",
+        "measure": "Number on register"
+      },
+      "victims of other theft": {
+        "population": "Victims",
+        "victim_offence": "Other theft"
+      },
+      "estimated resident population – 2004": {
+        "population": "Persons",
+        "measure": "Estimated resident population"
       }
     }
   }

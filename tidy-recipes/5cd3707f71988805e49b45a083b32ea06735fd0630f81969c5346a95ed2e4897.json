@@ -1,0 +1,747 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5cd3707f71988805e49b45a083b32ea06735fd0630f81969c5346a95ed2e4897",
+  "sheet": "Table_6",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "d29cc2de7aa90519615939e9192f257ccd87fb634466e81d820f11df9fa80270",
+  "agent_notes": "Sections describe most recent break-in. Row labels have one indent level; no nested subtotals. Total is retained separately as population=Total. Property types may overlap. Counts and percents retain published headings; RSE columns use estimate_type and the corresponding estimate measure. State, crime and period are specified in the table title, not standalone cells.",
+  "new_dimensions": [
+    {
+      "name": "offender_confrontation",
+      "description": "Whether offenders confronted anyone during the most recent break-in.",
+      "example_labels": [
+        "Offenders confronted someone",
+        "Offenders did not confront anyone"
+      ]
+    },
+    {
+      "name": "offender_other_action",
+      "description": "Whether the offender did anything else during the most recent break-in.",
+      "example_labels": [
+        "Yes",
+        "No"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A10,A17,A20,A23"
+    }
+  ],
+  "tables": [
+    {
+      "name": "property_theft_status_B",
+      "range": "B8:B9",
+      "values_range": "B8:B9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_theft_status",
+          "caption": "Whether property stolen",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "property_theft_status_C",
+      "range": "C8:C9",
+      "values_range": "C8:C9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_theft_status",
+          "caption": "Whether property stolen",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C6"
+        }
+      ]
+    },
+    {
+      "name": "property_theft_status_D",
+      "range": "D8:D9",
+      "values_range": "D8:D9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_theft_status",
+          "caption": "Whether property stolen",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "property_theft_status_E",
+      "range": "E8:E9",
+      "values_range": "E8:E9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_theft_status",
+          "caption": "Whether property stolen",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E6"
+        }
+      ]
+    },
+    {
+      "name": "stolen_property_type_B",
+      "range": "B11:B16",
+      "values_range": "B11:B16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stolen_property_type",
+          "caption": "Type of property stolen",
+          "direction": "W",
+          "cells": "A11:A16"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "stolen_property_type_C",
+      "range": "C11:C16",
+      "values_range": "C11:C16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stolen_property_type",
+          "caption": "Type of property stolen",
+          "direction": "W",
+          "cells": "A11:A16"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C6"
+        }
+      ]
+    },
+    {
+      "name": "stolen_property_type_D",
+      "range": "D11:D16",
+      "values_range": "D11:D16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stolen_property_type",
+          "caption": "Type of property stolen",
+          "direction": "W",
+          "cells": "A11:A16"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "stolen_property_type_E",
+      "range": "E11:E16",
+      "values_range": "E11:E16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stolen_property_type",
+          "caption": "Type of property stolen",
+          "direction": "W",
+          "cells": "A11:A16"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E6"
+        }
+      ]
+    },
+    {
+      "name": "property_damage_status_B",
+      "range": "B18:B19",
+      "values_range": "B18:B19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_damage_status",
+          "caption": "Whether property was damaged",
+          "direction": "W",
+          "cells": "A18:A19"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "property_damage_status_C",
+      "range": "C18:C19",
+      "values_range": "C18:C19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_damage_status",
+          "caption": "Whether property was damaged",
+          "direction": "W",
+          "cells": "A18:A19"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C6"
+        }
+      ]
+    },
+    {
+      "name": "property_damage_status_D",
+      "range": "D18:D19",
+      "values_range": "D18:D19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_damage_status",
+          "caption": "Whether property was damaged",
+          "direction": "W",
+          "cells": "A18:A19"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "property_damage_status_E",
+      "range": "E18:E19",
+      "values_range": "E18:E19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "property_damage_status",
+          "caption": "Whether property was damaged",
+          "direction": "W",
+          "cells": "A18:A19"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E6"
+        }
+      ]
+    },
+    {
+      "name": "offender_confrontation_B",
+      "range": "B21:B22",
+      "values_range": "B21:B22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_confrontation",
+          "caption": "Whether offenders confronted anyone",
+          "direction": "W",
+          "cells": "A21:A22"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "offender_confrontation_C",
+      "range": "C21:C22",
+      "values_range": "C21:C22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_confrontation",
+          "caption": "Whether offenders confronted anyone",
+          "direction": "W",
+          "cells": "A21:A22"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C6"
+        }
+      ]
+    },
+    {
+      "name": "offender_confrontation_D",
+      "range": "D21:D22",
+      "values_range": "D21:D22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_confrontation",
+          "caption": "Whether offenders confronted anyone",
+          "direction": "W",
+          "cells": "A21:A22"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "offender_confrontation_E",
+      "range": "E21:E22",
+      "values_range": "E21:E22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_confrontation",
+          "caption": "Whether offenders confronted anyone",
+          "direction": "W",
+          "cells": "A21:A22"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E6"
+        }
+      ]
+    },
+    {
+      "name": "offender_other_action_B",
+      "range": "B24:B25",
+      "values_range": "B24:B25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_other_action",
+          "caption": "Whether offender did anything else",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "offender_other_action_C",
+      "range": "C24:C25",
+      "values_range": "C24:C25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_other_action",
+          "caption": "Whether offender did anything else",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C6"
+        }
+      ]
+    },
+    {
+      "name": "offender_other_action_D",
+      "range": "D24:D25",
+      "values_range": "D24:D25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_other_action",
+          "caption": "Whether offender did anything else",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "offender_other_action_E",
+      "range": "E24:E25",
+      "values_range": "E24:E25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_other_action",
+          "caption": "Whether offender did anything else",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E6"
+        }
+      ]
+    },
+    {
+      "name": "population_B",
+      "range": "B26:B26",
+      "values_range": "B26:B26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A26:A26"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "population_C",
+      "range": "C26:C26",
+      "values_range": "C26:C26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A26:A26"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C6"
+        }
+      ]
+    },
+    {
+      "name": "population_D",
+      "range": "D26:D26",
+      "values_range": "D26:D26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A26:A26"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "population_E",
+      "range": "E26:E26",
+      "values_range": "E26:E26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "D5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "E5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A26:A26"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:29:41Z",
+    "tool_version": "0.2.0",
+    "records": 60,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T122852Z-be8da4b447f1",
+    "started_at": "2026-11-01T12:28:55Z",
+    "workbook": "be8da4b447f1827bc71f677e786550f9d4b7c96ccdc0836d5c97925aa18d9016--45300do015_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19715-9377-73fb-942c-ede5d1875b43",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ad8713ae7a0befe55c56a6c6ad04dd2c193f98f985948a1645e5f43ea12bf7f0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `be8da4b447f1827bc71f677e786550f9d4b7c96ccdc0836d5c97925aa18d9016--45300do015_200809.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | cd197ab60c272463c7e4c71f13db8b3871a0cbe03050b36973850f5f51317e91 | missing |\n| \"Table_1\" | a6f06456a9dfa7b9a5554230aeb0a483e2f751904d5f8849266c503656e72123 | missing |\n| \"Table_2\" | 0bf77d7d2e8170e909d9cd600c6f0012e31482edabc413703ce1d4d4ffa1d156 | missing |\n| \"Table_3\" | 2d9f93bd97ca0d887f7e9d23d69cdd0a5e9e2e777c4a704d2e454ed773995f3a | missing |\n| \"Table_4\" | 49a5981ccf6a3ef979f20cc6cd843ea3530a17fdd532e4d4d8b6f5435ecbf0de | missing |\n| \"Table_5\" | 72570e1f3218f37f3822d2fe2241cc184362bf2379e0aa6049ada4e95965bc2f | missing |\n| \"Table_6\" | 5cd3707f71988805e49b45a083b32ea06735fd0630f81969c5346a95ed2e4897 | missing |\n| \"Table_7\" | b394daef31e12a973897dc47073afcb6cc6379c897aacedfc14914a2d0d50f21 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T122852Z-be8da4b447f1.jsonl"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "64123f6d147b79a7e6287753b884de040c373e1b138ed8515c38629188137cb2",
+  "sheet": "Table 1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "16e9410f298e1bfdbb8abc2ae00ee44080340e6e758a7e6308feb98ee1a52b14",
+  "agent_notes": "Published totals and nested subtotal rows are retained alongside their component rows; they are not mutually exclusive categories. Indented labels identify subdivisions. Footnote markers and confidentiality symbols are preserved. See sheet notes for revisions, exclusions and random adjustment caveats.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "release",
+      "cells": "A4"
+    },
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "A40:A58"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A6:AF29",
+      "values_range": "B8:AF11,B13:AF13,B15:AF15,B17:AF19,B21:AF21,B23:AF25,B27:AF27,B29:AF29",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "caption": "Offence",
+          "direction": "W",
+          "cells": "A8:A11,A13:A13,A15:A15,A17:A19,A21:A21,A23:A25,A27:A27,A29:A29"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AF6"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A30:AF38",
+      "values_range": "B31:AF34,B36:AF36,B38:AF38",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "caption": "Offence",
+          "direction": "W",
+          "cells": "A31:A34,A36:A36,A38:A38"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AF6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:29:28Z",
+    "tool_version": "0.2.0",
+    "records": 651,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142739Z-1304e9404b06",
+    "started_at": "2026-11-01T14:27:40Z",
+    "workbook": "1304e9404b06919b122fd957d3556baf8b10a89ccdc30b56cb30daf35e10b345--1.-Victims-of-crime-Australia-Tables-1-to-8-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19782-4984-7775-89f8-132fe7101bdd",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "90f663a7c64a93a20bbaff9b9947936bbecb8abccaff9b37c1e93bc26d42ee4d",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1304e9404b06919b122fd957d3556baf8b10a89ccdc30b56cb30daf35e10b345--1.-Victims-of-crime-Australia-Tables-1-to-8-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2023\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 032d5b3a80479a373adb87574f8bd9f4c352e01db31f8928fd9cc3722b20a4f5 | missing |\n| \"Table 1\" | 64123f6d147b79a7e6287753b884de040c373e1b138ed8515c38629188137cb2 | missing |\n| \"Table 2\" | 2cf83b406bd0bf5b810a36393b8a195c1d60cc0b1da23197388daa4d95c315e4 | missing |\n| \"Table 3\" | 861bafcb7e7855e6047bb73922a6b84d2c9c72b93e01e055ea0a6087b429903d | missing |\n| \"Table 4\" | fc52105dc811332d5b034db2e595dfabeaa9bd8b3fe823e62a31b195d4a5a1cd | missing |\n| \"Table 5\" | b945eaa635cf25980b46cb2b0c93db9ef0b74a8f69d2cbb355dd62e1f23b2ac0 | missing |\n| \"Table 6\" | d28a5bef7205b5a702903a478db2057f9223c00c6abcf57fa67e21aa30066a4b | missing |\n| \"Table 7\" | f555f2b9d20cef33319dc186a7338c138e403944c595e14422317a01b1b9569c | missing |\n| \"Table 8\" | ff85594e1c8d67d341aeb4d4729815930fdd998cd83f11b531e9a12f1b5fae72 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142739Z-1304e9404b06.jsonl"
+  }
+}

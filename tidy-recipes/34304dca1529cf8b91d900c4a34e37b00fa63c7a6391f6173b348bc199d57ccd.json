@@ -1,0 +1,110 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "34304dca1529cf8b91d900c4a34e37b00fa63c7a6391f6173b348bc199d57ccd",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Index of workbook tables and links to supporting information; no statistical data table.",
+  "agent_notes": "B7:B11 contain table numbers 11–15 in the contents index, not statistical observations.",
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_number",
+      "cells": "B7:B11"
+    },
+    {
+      "name": "table_title",
+      "cells": "C7:C11"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T12:12:44Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 5 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T121048Z-0f7664135af5",
+    "started_at": "2026-11-01T12:10:49Z",
+    "workbook": "0f7664135af5c5581e517df65da8b81128931b19842163cb486ae199ac24d924--3.-victims-of-crime-relationship-of-offender-to-victims.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19705-0195-729f-9141-8ac8623ffc83",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4e773ab1b4b265166776d498f10204f2a1ebd1173d734b731897ad7970218423",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0f7664135af5c5581e517df65da8b81128931b19842163cb486ae199ac24d924--3.-victims-of-crime-relationship-of-offender-to-victims.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2018\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 34304dca1529cf8b91d900c4a34e37b00fa63c7a6391f6173b348bc199d57ccd | missing |\n| \"Table 11 \" | 47ce1330721faa32875b4078fb61ef17c3788bac17aa4788b0987e9e54dd2cde | missing |\n| \"Table 12\" | de5fabdec36312a0dfeac84d884520a44bf11e7892e0cf0cb229701e3614064f | missing |\n| \"Table 13\" | 31426e906abc1891cf3fc9ea65c44e4c6af4ca565585418d4b1be0b85879af1c | missing |\n| \"Table 14\" | 17edc10c4dded997d65ddb2c927959a941f54453169e2f2f25302f8acb3e243e | missing |\n| \"Table 15\" | a55b143d70996eb41b8c8e40d4ea99f3efcc3809c04774a72ea70d624904fe37 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T121048Z-0f7664135af5.jsonl"
+  }
+}

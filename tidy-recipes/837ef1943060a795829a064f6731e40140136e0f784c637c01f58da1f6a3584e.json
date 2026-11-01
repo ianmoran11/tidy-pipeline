@@ -1,0 +1,206 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "837ef1943060a795829a064f6731e40140136e0f784c637c01f58da1f6a3584e",
+  "sheet": "Table 38b",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "d55903649ebd8f12e6aa64b5c14a956a073037e12083ae0b10907044c731cdb8",
+  "agent_notes": "Australia totals retained. Age thresholds overlap; household and person populations are not additive. Pooled periods and footnotes preserved verbatim. Relative standard error identified by table title; zero values retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4,B5"
+    },
+    {
+      "name": "notes",
+      "cells": "A14:A19"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group_9",
+      "range": "A8:J9",
+      "values_range": "B9:J9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B8"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "population_10",
+      "range": "A10:J10",
+      "values_range": "B10:J10",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B8"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A10"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "age_group_12",
+      "range": "A11:J13",
+      "values_range": "B12:J13",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B11"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12:A13"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:38:41Z",
+    "tool_version": "0.2.0",
+    "records": 36,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T133654Z-643ef58a75d8",
+    "started_at": "2026-11-01T13:37:00Z",
+    "workbook": "643ef58a75d8b5d26809fb9e0f2cbfbda735ccdc4b54dad504fac43a5802e0f6--Populations-Tables-37a-to-38b-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19753-e6c7-7618-950c-e550f5b7891d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a34759b35290aa6a94af9903fbecbf6408c41481e93614c6913fc01a7d66c702",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `643ef58a75d8b5d26809fb9e0f2cbfbda735ccdc4b54dad504fac43a5802e0f6--Populations-Tables-37a-to-38b-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2023-24\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 23e3b276f763c5f64f1eecdbbac8afafeada1dd6d54378de6c78518fc96a62c0 | missing |\n| \"Table 37a\" | 4d13e8ad0dcaaa266cebf8bbd25fa7bd615458b92470df8725b92bc39d76b371 | missing |\n| \"Table 37b\" | b9749ac7b0d42c1a5cf1319d1675c710708f38be0493f0847a492b16868a68d9 | missing |\n| \"Table 38a\" | 8fce8a6ee34c0790d0a1e23decaa14238edfc5a2cd5fd15c2df02e6081f43371 | missing |\n| \"Table 38b\" | 837ef1943060a795829a064f6731e40140136e0f784c637c01f58da1f6a3584e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T133654Z-643ef58a75d8.jsonl"
+  }
+}

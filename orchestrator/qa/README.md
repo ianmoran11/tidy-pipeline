@@ -70,6 +70,7 @@ These read the `targets` store, so run `tar_make()` first.
 | `check_harmonised.R` | Values unchanged, gap counts by publication, derived dimensions, before/after examples, no multi-value fields |
 | `after_scan.R` | Compound labels still left after harmonisation (ISSUES.md I12) |
 | `integration_conflicts.R <publication_id> [n] [numbers\|all]` | Values that still can't be told apart, with the tables involved (ISSUES.md I26) |
+| `stage_sheets.R <pub regex> <rows.rds\|-> [cores]` | Runs extraction → normalise → harmonise → identify outside `targets` with the current code and specs. Lists every harmonisation contradiction at once (they stop a build), and writes rows for spec seeds. 9,040 sheets take about 16 min on 6 cores |
 | `review_new_releases.R agents/<batch>.txt …` | For releases the database doesn't cover: check warnings, spec gaps (subjects, symbols, dates, court-level measures), values that can't be told apart, agreement with other releases |
 | `check_integrated.R` | Reads `integrated/*.csv` as an analyst would: links, duplicates, one `is_latest` per series and period, the README example |
 | `blank_cells_vs_reference.R [n]` | Blank-cell records vs the database's blank cells on sampled historical ABS sheets: precision and recall (ISSUES.md I5) |
@@ -83,6 +84,7 @@ overwrites those edits.** They are kept to show how each file was derived.
 | Script | Wrote |
 |---|---|
 | `raw_values.R` → `seed_normalisation_spec.R` | `normalisation/normalisation_spec.json` |
+| `stage_sheets.R` → `seed_victims_specs.R <rows.rds>` | Victims entries in all three specs: sentence case for upper-case labels, RSE spellings, "RSE of X" splits, titles misused as `measure`, title subjects, calendar-year and pooled-year dates. Rerunnable: it replaces its own harmonisation splits (listed under `_victims_seed`) but only adds missing normalisation and subject entries, so start from the pre-seed specs in `seeds/victims_baseline/` to apply rule changes |
 | `seed_measure_spec.R` | `measures/measure_spec.json`. Later edits made directly in the JSON: cube court levels, rate standardisation, `replace_labels`, `sentence_basis` flags |
 | `seed_harmonisation_spec.R` → `seed_harmonisation_dates.R` | `harmonisation/harmonisation_spec.json` (the second adds `reference_dates`) |
 | `names.R` → `build_dictionary.R` | `dictionary/dimensions.csv` |

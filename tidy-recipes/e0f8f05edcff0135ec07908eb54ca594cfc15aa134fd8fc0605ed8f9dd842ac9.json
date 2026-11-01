@@ -1,0 +1,260 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e0f8f05edcff0135ec07908eb54ca594cfc15aa134fd8fc0605ed8f9dd842ac9",
+  "sheet": "Table 36",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "a046feeea999753d482d5b4a42d413b117ab1a8c7cde0947be1b4ae4a8ef897b",
+  "agent_notes": "FDV population, offence, geography and reference time are specified in the published title. Indented age, offence, relationship, location and reporting-delay rows include overlapping parent subtotals; all are retained, so do not sum all rows. Weapon types are components of weapon-used totals. Total rows retained as population labels. Published labels, footnotes and suppression symbols preserved.",
+  "new_dimensions": [
+    {
+      "name": "age_reference",
+      "description": "Whether victim age is measured at report or at incident.",
+      "example_labels": [
+        "Age at report",
+        "Age at incident"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A28,A29,A30,A31,A32,A33,A34"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A6,A10,A17,A21"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_7",
+      "range": "A5:J8",
+      "values_range": "B7:J7,B8:J8",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A7,A8",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_11",
+      "range": "A11:J15",
+      "values_range": "B11:J11,B12:J12,B13:J13,B14:J14,B15:J15",
+      "meta_data": [
+        {
+          "name": "age_reference",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15",
+          "caption": "Age at report"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_18",
+      "range": "A18:J19",
+      "values_range": "B18:J18,B19:J19",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A18,A19",
+          "caption": "Location"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_22",
+      "range": "A22:J22",
+      "values_range": "B22:J22",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A22",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_type_23",
+      "range": "A23:J24",
+      "values_range": "B23:J23,B24:J24",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "weapon_type",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_25",
+      "range": "A25:J25",
+      "values_range": "B25:J25",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A25",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    },
+    {
+      "name": "population_26",
+      "range": "A26:J26",
+      "values_range": "B26:J26",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A26"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:29:41Z",
+    "tool_version": "0.2.0",
+    "records": 126,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142728Z-ff62b774b3b6",
+    "started_at": "2026-11-01T14:27:29Z",
+    "workbook": "ff62b774b3b642a68e868e5ac222da9dad7686107cd93bf07c0a3c512f9f6975--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19782-1da9-701f-8bd9-e4d3a2144302",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b26238e84d2f6f7d12b79bb5d8bcb689aa203f9b4186fd4fd78a81ee2a807a6a",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ff62b774b3b642a68e868e5ac222da9dad7686107cd93bf07c0a3c512f9f6975--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9fe41363fb57ee7e99984eb374ade32bf96ccfa7fcdac3af95853513f2a6f15a | missing |\n| \"Table 29\" | 72c0504d8508de94bf86a53324e15c8b0a5d83a94c3daf7556eb2b8750c55d09 | missing |\n| \"Table 30\" | 49a4fca2bab2d8ddda9f990dab1c22c594031f0681876ee5760dfe8127e278c4 | missing |\n| \"Table 31\" | 267aff0d4f74965684c0f90694feeb92a17d23065c9f52d04650a9bec0277e7d | missing |\n| \"Table 32\" | 52c2456a1b993f74f1f6520bfb44184353ee791fe04f87d326b4ded4901f215c | missing |\n| \"Table 33\" | 9c721298736e7a37a50d3819ea50fa6cd964be716e34aabbd16ebf6aa63b909c | missing |\n| \"Table 34\" | 649ab7f23a56d3706ec2ca781e009e80ce29d856c70087855fb9f2fd214d5f31 | missing |\n| \"Table 35\" | 2bde78cbaaff7eee070243405f94f1dff9b5830ef970433210a394e383816071 | missing |\n| \"Table 36\" | e0f8f05edcff0135ec07908eb54ca594cfc15aa134fd8fc0605ed8f9dd842ac9 | missing |\n| \"Table 37\" | d14e4c892e09715563d420158c371fbaa7ff5544fd0ae991d5ce1f6c9af7fe42 | missing |\n| \"Table 38\" | ff150ecdeeb371ff20847ce656d24bd8616177c6feb49c7c2fe8f79d98db28ca | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142728Z-ff62b774b3b6.jsonl"
+  }
+}

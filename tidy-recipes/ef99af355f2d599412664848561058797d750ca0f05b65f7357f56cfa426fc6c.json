@@ -1,0 +1,230 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ef99af355f2d599412664848561058797d750ca0f05b65f7357f56cfa426fc6c",
+  "sheet": "Table 23",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "89bcb7c285b76dbe784168404aaf58960ac2e299c86d7090b629772f8c8400f6",
+  "agent_notes": "Published totals and indented parent/subtotal rows are retained alongside their components; categories overlap and must not be summed. Random adjustment can cause discrepancies. Single-year population, offence and period are specified by the table title; rate denominators and jurisdiction caveats remain in notes. Queensland assault np observations for 2010–2021 are retained; 2022 assault is published. New South Wales 2022 is not comparable with earlier periods due to Indigenous-status recording changes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "A64:A76"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_0",
+      "range": "A5:AA20",
+      "values_range": "B8:AA8,B10:AA10,B12:AA12,B14:AA14,B16:AA16,B17:AA17,B18:AA18,B20:AA20",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "caption": "Offence",
+          "direction": "W",
+          "cells": "A8,A10,A12,A14,A16,A17,A18,A20"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AA6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1",
+      "range": "A21:AA34",
+      "values_range": "B22:AA22,B24:AA24,B26:AA26,B28:AA28,B30:AA30,B31:AA31,B32:AA32,B34:AA34",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "caption": "Offence",
+          "direction": "W",
+          "cells": "A22,A24,A26,A28,A30,A31,A32,A34"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AA6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,O5"
+        }
+      ]
+    },
+    {
+      "name": "state_2",
+      "range": "A35:AA48",
+      "values_range": "B36:AA36,B38:AA38,B40:AA40,B42:AA42,B44:AA44,B45:AA45,B46:AA46,B48:AA48",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "caption": "Offence",
+          "direction": "W",
+          "cells": "A36,A38,A40,A42,A44,A45,A46,A48"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AA6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,O5"
+        }
+      ]
+    },
+    {
+      "name": "state_3",
+      "range": "A49:AA62",
+      "values_range": "B50:AA50,B52:AA52,B54:AA54,B56:AA56,B58:AA58,B59:AA59,B60:AA60,B62:AA62",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B49"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "caption": "Offence",
+          "direction": "W",
+          "cells": "A50,A52,A54,A56,A58,A59,A60,A62"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:AA6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,O5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:28:03Z",
+    "tool_version": "0.2.0",
+    "records": 832,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142704Z-fa6720dbe3f5",
+    "started_at": "2026-11-01T14:27:05Z",
+    "workbook": "fa6720dbe3f5a958b61e9898c26171fa5c1336bbd35c0c784eabda51663d1cfd--4.-Aboriginal-and-Torres-Strait-Islander-victims-of-crime-selected-states-and-territories-Tables-23-to-28-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19781-c24a-746a-8cd3-2ca725f19c2e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8b016a4af6b12f3398d6d58ba9a852b7d0e930ae47374d58035304b8eb318bcc",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `fa6720dbe3f5a958b61e9898c26171fa5c1336bbd35c0c784eabda51663d1cfd--4.-Aboriginal-and-Torres-Strait-Islander-victims-of-crime-selected-states-and-territories-Tables-23-to-28-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d51e788488c622d7f4ef23d850633a97ee489d2a3a903b5a1753595f1ddf1cfd | missing |\n| \"Table 23\" | ef99af355f2d599412664848561058797d750ca0f05b65f7357f56cfa426fc6c | missing |\n| \"Table 24\" | 425eaeb88f94c7ac551481284788f2d2c882dcc73a33481e9c9f584a30b723a3 | missing |\n| \"Table 25\" | 9ccd41a3210e9be35056360c8db6a4effc6910285242cc03e7b314307b06ebc0 | missing |\n| \"Table 26\" | b40272628821113f9767c4f12a149d4ea9d13eadf97c5a6c01c9f30c19a1c598 | missing |\n| \"Table 27\" | 848360541de5f9f40cd109a2ef3b0cf798d1102320da7f03033bb995a7779c20 | missing |\n| \"Table 28\" | 76e582ab6e86347563d680874121f09d44984e9449d3f4bd3f639ffa079b7d13 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142704Z-fa6720dbe3f5.jsonl"
+  }
+}

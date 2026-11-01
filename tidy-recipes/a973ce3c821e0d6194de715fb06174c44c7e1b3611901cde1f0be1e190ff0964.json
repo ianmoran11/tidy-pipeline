@@ -1,0 +1,1613 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a973ce3c821e0d6194de715fb06174c44c7e1b3611901cde1f0be1e190ff0964",
+  "sheet": "Table_7",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Demographic sections are separate tables; totals and total born overseas are retained. Born overseas groups its indented country categories; Employed groups full-time and part-time. Empty value blocks are omitted, not zero-filled. RSE headings are preserved verbatim as estimate_type, with the adjacent estimate heading as measure. State and period are given in the published sheet title/banner. Table_8 labels the all-persons estimates 'Victims'; retained verbatim under the All persons population heading.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A11,A19,A22,A25"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_crime_estimate_face_to_face",
+      "range": "A9:M10",
+      "values_range": "B9,D9,B10,D10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,D7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sex_crime_estimate_non_face_to_face",
+      "range": "A9:M10",
+      "values_range": "F9,H9,F10,H10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7,H7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sex_crime_estimate_total_assault",
+      "range": "A9:M10",
+      "values_range": "J9,L9,J10,L10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "J7,L7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sex_all_persons_estimate",
+      "range": "N9:O10",
+      "values_range": "N9,N10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_crime_estimate_face_to_face",
+      "range": "A12:M18",
+      "values_range": "B12,D12,B13,D13,B14,D14,B18,D18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,D7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_crime_estimate_non_face_to_face",
+      "range": "A12:M18",
+      "values_range": "F12,H12,F13,H13,F14,H14,F18,H18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7,H7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_crime_estimate_total_assault",
+      "range": "A12:M18",
+      "values_range": "J12,L12,J13,L13,J14,L14,J15,L15,J16,L16,J17,L17,J18,L18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "J7,L7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_all_persons_estimate",
+      "range": "N12:O18",
+      "values_range": "N12,N13,N14,N15,N16,N17,N18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "marital_status_crime_estimate_face_to_face",
+      "range": "A20:M21",
+      "values_range": "B20,D20,B21,D21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,D7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "marital_status_crime_estimate_non_face_to_face",
+      "range": "A20:M21",
+      "values_range": "F20,H20,F21,H21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7,H7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "marital_status_crime_estimate_total_assault",
+      "range": "A20:M21",
+      "values_range": "J20,L20,J21,L21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "J7,L7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "marital_status_all_persons_estimate",
+      "range": "N20:O21",
+      "values_range": "N20,N21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_crime_estimate_face_to_face",
+      "range": "A23:M24",
+      "values_range": "B23,D23,B24,D24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,D7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "country_of_birth_crime_estimate_non_face_to_face",
+      "range": "A23:M24",
+      "values_range": "F23,H23,F24,H24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7,H7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "country_of_birth_crime_estimate_total_assault",
+      "range": "A23:M24",
+      "values_range": "J23,L23,J24,L24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "J7,L7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "country_of_birth_all_persons_estimate",
+      "range": "N23:O24",
+      "values_range": "N23,N24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_crime_estimate_face_to_face",
+      "range": "A26:M28",
+      "values_range": "B26,D26,B27,D27,B28,D28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,D7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "non_school_qualification_crime_estimate_non_face_to_face",
+      "range": "A26:M28",
+      "values_range": "F26,H26,F27,H27,F28,H28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7,H7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "non_school_qualification_crime_estimate_total_assault",
+      "range": "A26:M28",
+      "values_range": "J26,L26,J27,L27,J28,L28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "J7,L7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "non_school_qualification_all_persons_estimate",
+      "range": "N26:O28",
+      "values_range": "N26,N27,N28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "population_crime_estimate_face_to_face",
+      "range": "A29:M29",
+      "values_range": "B29,D29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,D7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_crime_estimate_non_face_to_face",
+      "range": "A29:M29",
+      "values_range": "F29,H29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7,H7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_crime_estimate_total_assault",
+      "range": "A29:M29",
+      "values_range": "J29,L29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "J7,L7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_all_persons_estimate",
+      "range": "N29:O29",
+      "values_range": "N29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_subtitle",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "sex_crime_rse_face_to_face",
+      "range": "A9:M10",
+      "values_range": "C9,E9,C10,E10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C7,E7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "C6,E6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sex_crime_rse_non_face_to_face",
+      "range": "A9:M10",
+      "values_range": "G9,I9,G10,I10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,I7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "G6,I6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sex_crime_rse_total_assault",
+      "range": "A9:M10",
+      "values_range": "K9,M9,K10,M10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,M7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "K6,M6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sex_all_persons_rse",
+      "range": "N9:O10",
+      "values_range": "O9,O10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "O7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "O6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_crime_rse_face_to_face",
+      "range": "A12:M18",
+      "values_range": "C12,E12,C13,E13,C14,E14,C18,E18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C7,E7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "C6,E6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_crime_rse_non_face_to_face",
+      "range": "A12:M18",
+      "values_range": "G12,I12,G13,I13,G14,I14,G18,I18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,I7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "G6,I6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_crime_rse_total_assault",
+      "range": "A12:M18",
+      "values_range": "K12,M12,K13,M13,K14,M14,K15,M15,K16,M16,K17,M17,K18,M18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,M7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "K6,M6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_all_persons_rse",
+      "range": "N12:O18",
+      "values_range": "O12,O13,O14,O15,O16,O17,O18",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15,A16,A17,A18",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "O7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "O6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "marital_status_crime_rse_face_to_face",
+      "range": "A20:M21",
+      "values_range": "C20,E20,C21,E21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C7,E7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "C6,E6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "marital_status_crime_rse_non_face_to_face",
+      "range": "A20:M21",
+      "values_range": "G20,I20,G21,I21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,I7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "G6,I6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "marital_status_crime_rse_total_assault",
+      "range": "A20:M21",
+      "values_range": "K20,M20,K21,M21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,M7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "K6,M6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "marital_status_all_persons_rse",
+      "range": "N20:O21",
+      "values_range": "O20,O21",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A20,A21",
+          "caption": "Marital status"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "O7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "O6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_crime_rse_face_to_face",
+      "range": "A23:M24",
+      "values_range": "C23,E23,C24,E24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C7,E7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "C6,E6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "country_of_birth_crime_rse_non_face_to_face",
+      "range": "A23:M24",
+      "values_range": "G23,I23,G24,I24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,I7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "G6,I6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "country_of_birth_crime_rse_total_assault",
+      "range": "A23:M24",
+      "values_range": "K23,M23,K24,M24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,M7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "K6,M6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "country_of_birth_all_persons_rse",
+      "range": "N23:O24",
+      "values_range": "O23,O24",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A23,A24",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "O7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "O6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_crime_rse_face_to_face",
+      "range": "A26:M28",
+      "values_range": "C26,E26,C27,E27,C28,E28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C7,E7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "C6,E6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "non_school_qualification_crime_rse_non_face_to_face",
+      "range": "A26:M28",
+      "values_range": "G26,I26,G27,I27,G28,I28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,I7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "G6,I6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "non_school_qualification_crime_rse_total_assault",
+      "range": "A26:M28",
+      "values_range": "K26,M26,K27,M27,K28,M28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,M7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "K6,M6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "non_school_qualification_all_persons_rse",
+      "range": "N26:O28",
+      "values_range": "O26,O27,O28",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "O7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "O6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "N5"
+        }
+      ]
+    },
+    {
+      "name": "population_crime_rse_face_to_face",
+      "range": "A29:M29",
+      "values_range": "C29,E29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C7,E7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "C6,E6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_crime_rse_non_face_to_face",
+      "range": "A29:M29",
+      "values_range": "G29,I29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "F6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,I7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "F5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "G6,I6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_crime_rse_total_assault",
+      "range": "A29:M29",
+      "values_range": "K29,M29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "J6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,M7"
+        },
+        {
+          "name": "crime_type",
+          "direction": "NNW",
+          "cells": "J5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "K6,M6"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_all_persons_rse",
+      "range": "N29:O29",
+      "values_range": "O29",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "O7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "O6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_subtitle",
+          "cells": "N5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:31:11Z",
+    "tool_version": "0.2.0",
+    "records": 214,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T122842Z-bbd7605237ea",
+    "started_at": "2026-11-01T12:28:47Z",
+    "workbook": "bbd7605237ea3a8ff8400816700ae64bf6765c457a02a6c115a006d9f9fa64dc--45300do012_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19715-71cf-74ed-9f4f-9d142e98a1de",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b72035d5a11c9a7a99192eee84a99ebb6cc231d67900ab112494f6ffc2c45cf7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `bbd7605237ea3a8ff8400816700ae64bf6765c457a02a6c115a006d9f9fa64dc--45300do012_200809.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 31057c754acb318f8e7e143ffe725a128af19a9f31a4eb27ab231d3593409eaa | missing |\n| \"Table_1\" | 1f61be5e17ab63f302e969f78f0ff9ea75039db1436eae9c6798f68a62d86355 | missing |\n| \"Table_2\" | f532068f835e754b1c38853419dd91076483cad3c5f7f44cdfb1fc012143eb76 | missing |\n| \"Table_3\" | e587303fdd835c87f4c418476d920fc9dfc93ef6b366ee98f582fcd94c36b13d | missing |\n| \"Table_4\" | 7af70759dce5af4611c62de755c5485e4ea5905d6b6607d9211bbbefd6398acd | missing |\n| \"Table_5\" | 5348e5cf4c6956b2ca16cc65435fc5b460128ac543acbb9f7bfab22e8fae4a8c | missing |\n| \"Table_6\" | 39f577723205954160c06d65d5e77f7a67a3971a48cb0ebaabbd1c0224ff966f | missing |\n| \"Table_7\" | a973ce3c821e0d6194de715fb06174c44c7e1b3611901cde1f0be1e190ff0964 | missing |\n| \"Table_8\" | 520758023702d6478f63f4d6055489efb9309be0044165a55d2d41ef045ceb31 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T122842Z-bbd7605237ea.jsonl"
+  }
+}

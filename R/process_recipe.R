@@ -30,12 +30,14 @@ process_recipe <- function(source_metadata_df, recipe_path ){
         table_ls %>% map(function(table_1){
 
         meta_data_list <- table_1[["meta_data"]] %>% map(function(list){list2(!!sym(list[["name"]]) := sheet_data %>% filter(address %in% expand_excel_range(list[["cells"]])) %>% pull(.value))}) %>% purrr::list_flatten()
-        # Published blanks inside the value grid become records with .value NA
-        blanks <- blank_value_cells(table_1, sheet_data)
-        full_table <- map(table_1$headers, ~ one_enhead(.x, sheet_data = sheet_data, table_spec = table_1, blank_cells = blanks)) %>% reduce(full_join)
+        # Value cells (expanded once per table), plus published blanks inside the value grid (.value NA)
+        values <- expand_excel_range(table_1[["values_range"]])
+        values_data <- sheet_data %>% filter(address %in% values) %>% bind_rows(blank_value_cells(table_1, sheet_data, values))
+        full_table <- map(table_1$headers, ~ one_enhead(.x, sheet_data = sheet_data, values_data = values_data)) %>%
+            reduce(full_join, by = c("row", "col", "address", ".value"))
 
         list(
-        tidy_table_list = full_table %>% group_by(row_number()) %>% nest() %>% pull(data) %>% map(as.list),
+        tidy_table_list = purrr::transpose(as.list(full_table)),
         meta_data_list = meta_data_list
         ) 
 

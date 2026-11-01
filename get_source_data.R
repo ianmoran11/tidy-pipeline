@@ -74,15 +74,15 @@ prepare <- function(row) {
   if (file.exists(out)) return("prepared")
   original <- file.path(original_dir, paste0(row$source_sha256, "--", row$original_name))
   if (!file.exists(original)) {
-    download <- tempfile()
-    ok <- tryCatch({ utils::download.file(row$download_url, download, mode = "wb", quiet = TRUE); TRUE }, error = function(e) FALSE, warning = function(w) FALSE)
-    if (!ok) return("download_failed")
-    if (!is.na(row$archive_member)) {
-      if (!row$archive_member %in% utils::unzip(download, list = TRUE)$Name) return("archive_member_missing")
-      download <- utils::unzip(download, files = row$archive_member, exdir = tempfile(), junkpaths = TRUE)
+    # download_url, then source_url: some old ABS download links now answer "Attachment Not Found"
+    for (url in unique(na.omit(c(row$download_url, row$source_url)))) {
+      download <- tempfile()
+      if (!isTRUE(tryCatch(utils::download.file(url, download, mode = "wb", quiet = TRUE) == 0, error = function(e) FALSE, warning = function(w) FALSE))) next
+      members <- tryCatch(utils::unzip(download, list = TRUE)$Name, error = function(e) character())
+      if (!is.na(row$archive_member) && row$archive_member %in% members) download <- utils::unzip(download, files = row$archive_member, exdir = tempfile(), junkpaths = TRUE)
+      if (identical(sha256_file(download), row$source_sha256)) { dir.create(original_dir, showWarnings = FALSE); file.copy(download, original); break }
     }
-    if (!identical(sha256_file(download), row$source_sha256)) return("sha256_mismatch: the publisher's bytes differ (a revision?); review before admitting")
-    dir.create(original_dir, showWarnings = FALSE); file.copy(download, original)
+    if (!file.exists(original)) return("not_matched: no URL gave the pinned bytes (a dead link or a publisher revision?); review before admitting")
   }
   if (format != "xlsx" && excel_failures >= 3) return("conversion_skipped: Excel failed 3 times in a row; check it for an open dialog, then rerun")
   if (format != "xlsx" && has_macros(original, format) && Sys.getenv("EXCEL_MACROS_DISABLED") != "1") return("has_macros: set Excel to disable macros without notification, then rerun with EXCEL_MACROS_DISABLED=1")

@@ -1,0 +1,192 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "66cd7f409d6d228c7df7a15b44f74fa51d7a666f75e22fa35215cdf400b4437e",
+  "sheet": "Table_8",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "7304a0604512d88e8a839a6b96573018d24b13605755b415150db23e2cc71b8f",
+  "agent_notes": "Finalised (A8) groups the indented outcomes in rows 9–11. Total finalised, overall Total, and robbery/unlawful-entry subtotals are retained. Offence group headings are table metadata. Values are victim counts as published. State is embedded in title A4 and reference year in A2; there are no separate state or period cells.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8"
+    }
+  ],
+  "tables": [
+    {
+      "name": "other_offences",
+      "range": "B6:C12",
+      "values_range": "B7:C7,B9:C12",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A7,A9:A12"
+        }
+      ]
+    },
+    {
+      "name": "robbery",
+      "range": "D5:F12",
+      "values_range": "D7:F7,D9:F12",
+      "meta_data": [
+        {
+          "name": "victim_offence_group",
+          "cells": "D5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "D6:F6"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A7,A9:A12"
+        }
+      ]
+    },
+    {
+      "name": "unlawful_entry",
+      "range": "G5:I12",
+      "values_range": "G7:I7,G9:I12",
+      "meta_data": [
+        {
+          "name": "victim_offence_group",
+          "cells": "G5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "G6:I6"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A7,A9:A12"
+        }
+      ]
+    },
+    {
+      "name": "theft",
+      "range": "J6:K12",
+      "values_range": "J7:K7,J9:K12",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "J6:K6"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A7,A9:A12"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:09:19Z",
+    "tool_version": "0.2.0",
+    "records": 50,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T140751Z-1761340dfd3d",
+    "started_at": "2026-11-01T14:07:54Z",
+    "workbook": "1761340dfd3d6cd1b9b00e153e2aaf04f7226184e77033766f9e48b359c8ef82--4510d007_2012.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19770-337b-75d8-a5ab-df2e65d94144",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8c3e65e669b61288d29675be777089534cc9ec9bce4e75e47fb504fd8ef12cde",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1761340dfd3d6cd1b9b00e153e2aaf04f7226184e77033766f9e48b359c8ef82--4510d007_2012.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2012\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0b7731a72313c10e7bfae93000916db242be87b724126ee6abb0a70d9feb5f6b | missing |\n| \"Table_1\" | 9f3c899014893883ddf81400eaeadeeb29e919067f7ffa199826fca9b5381121 | missing |\n| \"Table_2\" | 4d8dbaabaa92df38155063d1a2ab8a8733ed082cc3a71682f611a4322eb94c34 | missing |\n| \"Table_3\" | 20194466c61be69a80df7233d3a62392fd14ea100b60e5a3c6974a46429d91b7 | missing |\n| \"Table_4\" | 31946af467757b6a9977c4b8057d0661e67b8b7187dcb99f31fbb955ffec1740 | missing |\n| \"Table_5\" | abcad7dcf23cb6eefe8a53511dd27a8874334a17e953b3020a397496a854f721 | missing |\n| \"Table_6\" | d078401d1243bfb9fe327ddc6ca9afaace8e2aacb70dd75e56d03cfa874da91f | missing |\n| \"Table_7\" | efffe0efdfcf40e2faa7b7fdbc66d156dd78025554b6b81381c9dfea3cab37d2 | missing |\n| \"Table_8\" | 66cd7f409d6d228c7df7a15b44f74fa51d7a666f75e22fa35215cdf400b4437e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T140751Z-1761340dfd3d.jsonl"
+  }
+}

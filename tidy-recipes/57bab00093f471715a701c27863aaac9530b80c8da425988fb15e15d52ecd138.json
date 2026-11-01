@@ -1,0 +1,1006 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "57bab00093f471715a701c27863aaac9530b80c8da425988fb15e15d52ecd138",
+  "sheet": "Table_24",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Family and non-family sections are nested under known-to-victim headings. All family, non-family, known-to-victim and overall totals are retained; repeated Total labels are distinguished by section metadata. Table 27 counts and 2013 reference period are conveyed by the published title.",
+  "new_dimensions": [
+    {
+      "name": "relationship_to_victim",
+      "description": "Relationship of offender to victim, including relationship totals and unknown relationship."
+    },
+    {
+      "name": "relationship_to_victim_group",
+      "description": "Family or non-family grouping of the offender's relationship to the victim."
+    },
+    {
+      "name": "offender_known_status",
+      "description": "Heading identifying relationships known to the victim."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "family_10",
+      "range": "A6:Q14",
+      "values_range": "B12:Q14",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A9"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A10"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A11"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A12:A14"
+        }
+      ]
+    },
+    {
+      "name": "nonfamily_10",
+      "range": "A15:Q18",
+      "values_range": "B16:Q18",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A9"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A10"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A16:A18"
+        }
+      ]
+    },
+    {
+      "name": "known_total_10",
+      "range": "A19:Q19",
+      "values_range": "B19:Q19",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A9"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A19:A19"
+        }
+      ]
+    },
+    {
+      "name": "other_10",
+      "range": "A20:Q22",
+      "values_range": "B20:Q22",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A9"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A20:A22"
+        }
+      ]
+    },
+    {
+      "name": "family_24",
+      "range": "A25:Q28",
+      "values_range": "B26:Q28",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A23"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A24"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A25"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A26:A28"
+        }
+      ]
+    },
+    {
+      "name": "nonfamily_24",
+      "range": "A29:Q32",
+      "values_range": "B30:Q32",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A23"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A24"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A30:A32"
+        }
+      ]
+    },
+    {
+      "name": "known_total_24",
+      "range": "A33:Q33",
+      "values_range": "B33:Q33",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A23"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A33:A33"
+        }
+      ]
+    },
+    {
+      "name": "other_24",
+      "range": "A34:Q36",
+      "values_range": "B34:Q36",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A23"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A34:A36"
+        }
+      ]
+    },
+    {
+      "name": "family_38",
+      "range": "A39:Q42",
+      "values_range": "B40:Q42",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A37"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A38"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A39"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A40:A42"
+        }
+      ]
+    },
+    {
+      "name": "nonfamily_38",
+      "range": "A43:Q46",
+      "values_range": "B44:Q46",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A37"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A38"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A44:A46"
+        }
+      ]
+    },
+    {
+      "name": "known_total_38",
+      "range": "A47:Q47",
+      "values_range": "B47:Q47",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A37"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A47:A47"
+        }
+      ]
+    },
+    {
+      "name": "other_38",
+      "range": "A48:Q50",
+      "values_range": "B48:Q50",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A37"
+        },
+        {
+          "name": "measure",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A48:A50"
+        }
+      ]
+    },
+    {
+      "name": "family_53",
+      "range": "A54:Q57",
+      "values_range": "B55:Q57",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A52"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A53"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A55:A57"
+        }
+      ]
+    },
+    {
+      "name": "nonfamily_53",
+      "range": "A58:Q61",
+      "values_range": "B59:Q61",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A52"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A53"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A58"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A59:A61"
+        }
+      ]
+    },
+    {
+      "name": "known_total_53",
+      "range": "A62:Q62",
+      "values_range": "B62:Q62",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A52"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A53"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A62:A62"
+        }
+      ]
+    },
+    {
+      "name": "other_53",
+      "range": "A63:Q65",
+      "values_range": "B63:Q65",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A52"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A63:A65"
+        }
+      ]
+    },
+    {
+      "name": "family_67",
+      "range": "A68:Q71",
+      "values_range": "B69:Q71",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A66"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A67"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A68"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A69:A71"
+        }
+      ]
+    },
+    {
+      "name": "nonfamily_67",
+      "range": "A72:Q75",
+      "values_range": "B73:Q75",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A66"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A67"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A72"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A73:A75"
+        }
+      ]
+    },
+    {
+      "name": "known_total_67",
+      "range": "A76:Q76",
+      "values_range": "B76:Q76",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A66"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A67"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A76:A76"
+        }
+      ]
+    },
+    {
+      "name": "other_67",
+      "range": "A77:Q79",
+      "values_range": "B77:Q79",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A66"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A77:A79"
+        }
+      ]
+    },
+    {
+      "name": "family_81",
+      "range": "A82:Q85",
+      "values_range": "B83:Q85",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A80"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A81"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A82"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A83:A85"
+        }
+      ]
+    },
+    {
+      "name": "nonfamily_81",
+      "range": "A86:Q89",
+      "values_range": "B87:Q89",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A80"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A81"
+        },
+        {
+          "name": "relationship_to_victim_group",
+          "cells": "A86"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A87:A89"
+        }
+      ]
+    },
+    {
+      "name": "known_total_81",
+      "range": "A90:Q90",
+      "values_range": "B90:Q90",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A80"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        },
+        {
+          "name": "offender_known_status",
+          "cells": "A81"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A90:A90"
+        }
+      ]
+    },
+    {
+      "name": "other_81",
+      "range": "A91:Q93",
+      "values_range": "B91:Q93",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A80"
+        },
+        {
+          "name": "measure",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B7:Q7"
+        },
+        {
+          "name": "relationship_to_victim",
+          "direction": "W",
+          "cells": "A91:A93"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:16:29Z",
+    "tool_version": "0.2.0",
+    "records": 960,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T121524Z-a67645921cdf",
+    "started_at": "2026-11-01T12:15:25Z",
+    "workbook": "a67645921cdfbf0b73595047d4328b5fe2417f7d06524bdb4397c9213f44c9bb--45100do005_2013.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19709-3616-713a-b1c4-7c26a8e520fd",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ebfc74b5087c4f5951e67e21529a5084d8bd4137b6a0f4a2b17be3c363ba3883",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a67645921cdfbf0b73595047d4328b5fe2417f7d06524bdb4397c9213f44c9bb--45100do005_2013.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2013\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 539bceac3159a6f37c26fa2e356540ee89e9005cce39d8eca60e3f9efea5f9b1 | missing |\n| \"Table_23\" | 4dd5eeec9a95497e8b3b71289ac57a855118c1b8b37f1dcb3f503aed81e1708e | missing |\n| \"Table_24\" | 57bab00093f471715a701c27863aaac9530b80c8da425988fb15e15d52ecd138 | missing |\n| \"Table_25\" | 4dfc8b3393771ef9db4c94f964cca7c804fcead3ea35fa3a2c686af341000f10 | missing |\n| \"Table_26\" | a7cebb7e6fb2dd1e0d5e5b51d615cbbc609b1040f9d9885de5bae03a5f4858b4 | missing |\n| \"Table_27\" | 680f95558ffc75346025c65030a8a8d22e0b00b14748e9db338788f07d0670a1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T121524Z-a67645921cdf.jsonl"
+  }
+}

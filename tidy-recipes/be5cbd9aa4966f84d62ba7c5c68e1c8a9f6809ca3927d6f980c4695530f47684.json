@@ -1,0 +1,316 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "be5cbd9aa4966f84d62ba7c5c68e1c8a9f6809ca3927d6f980c4695530f47684",
+  "sheet": "Table 19",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "35ab9ea5bdabb5d1b7db095638503b4b4a1a1a1a0589a2274d67916452ab9e79",
+  "agent_notes": "Total(c) retained once. H and O are total households (count and percentage respectively), without crime-type labels. SEIFA uses relative Socio-economic Advantage and Disadvantage. Indented quintiles and capital city categories retained. ",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A11,A17"
+    },
+    {
+      "name": "notes",
+      "cells": "A25:A30"
+    }
+  ],
+  "tables": [
+    {
+      "name": "capital_city_area_crime",
+      "range": "B9:N10",
+      "values_range": "B9:G10,I9:N10",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A9:A10",
+          "caption": "Greater capital city statistical areas"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:G6,I6:N6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,I5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:G7,I7:N7"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_area_households",
+      "range": "H9:O10",
+      "values_range": "H9:H10,O9:O10",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A9:A10",
+          "caption": "Greater capital city statistical areas"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "H5,O5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7,O7"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile_crime",
+      "range": "B12:N16",
+      "values_range": "B12:G16,I12:N16",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A12:A16",
+          "caption": "Equivalised weekly household income(a)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:G6,I6:N6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,I5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:G7,I7:N7"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile_households",
+      "range": "H12:O16",
+      "values_range": "H12:H16,O12:O16",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A12:A16",
+          "caption": "Equivalised weekly household income(a)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "H5,O5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7,O7"
+        }
+      ]
+    },
+    {
+      "name": "socioeconomic_area_crime",
+      "range": "B18:N22",
+      "values_range": "B18:G22,I18:N22",
+      "headers": [
+        {
+          "name": "socioeconomic_area",
+          "direction": "W",
+          "cells": "A18:A22",
+          "caption": "Index of relative Socio-economic Advantage and Disadvantage(b)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:G6,I6:N6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,I5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:G7,I7:N7"
+        }
+      ]
+    },
+    {
+      "name": "socioeconomic_area_households",
+      "range": "H18:O22",
+      "values_range": "H18:H22,O18:O22",
+      "headers": [
+        {
+          "name": "socioeconomic_area",
+          "direction": "W",
+          "cells": "A18:A22",
+          "caption": "Index of relative Socio-economic Advantage and Disadvantage(b)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "H5,O5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7,O7"
+        }
+      ]
+    },
+    {
+      "name": "population_crime",
+      "range": "B23:N23",
+      "values_range": "B23:G23,I23:N23",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A23:A23"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:G6,I6:N6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,I5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:G7,I7:N7"
+        }
+      ]
+    },
+    {
+      "name": "population_households",
+      "range": "H23:O23",
+      "values_range": "H23:H23,O23:O23",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A23:A23"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "H5,O5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H7,O7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:20:03Z",
+    "tool_version": "0.2.0",
+    "records": 182,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T131755Z-8a64315fda98",
+    "started_at": "2026-11-01T13:17:57Z",
+    "workbook": "8a64315fda9856a8a934de895f9dd2a355510e59c1ede71cb8fb374aa158aa06--Household-crime-Tables-19-to-26a-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19742-7594-71fb-acf5-11b0f19953c5",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "57f887c352d21a0f6ef68be3ff8d5012de3b1d102791c62bcea075044437bd07",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8a64315fda9856a8a934de895f9dd2a355510e59c1ede71cb8fb374aa158aa06--Household-crime-Tables-19-to-26a-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6c853c1f906559bf8125aca99bd5146ad5bd229dfe148f923b2f8faea55c11aa | missing |\n| \"Table 19\" | be5cbd9aa4966f84d62ba7c5c68e1c8a9f6809ca3927d6f980c4695530f47684 | missing |\n| \"Table 19a\" | 4a41a6f29b4af617b9eb129efeccd3ec30c89e40fd322a204a3ab408c19a80db | missing |\n| \"Table 20\" | 4e87cdd035b321bcac88cdfa0983d029f1c68ace08b328467fc5a6d6784ba75e | missing |\n| \"Table 20a\" | 63e814aa9f347ab429534c7046bae6097f10d5eeca0c4ba78b648116641ecfce | missing |\n| \"Table 21\" | e5ae3c131c3d6df59d0c144bd478da249a32804c02e4b7251f7efd505db1221b | missing |\n| \"Table 21a\" | 269b7f44ef1e4d52394436cb235bc98293e7d8e58e9f6e2c7e128f5efe60c310 | missing |\n| \"Table 22\" | c39ecaa0b0b8f50108c7fb55a9754be933db9546bd951ae000aa05533ddad016 | missing |\n| \"Table 22a\" | fac25e3df85308e05bad0425eb0686d5ff24ce8d0ebe11d363c70f187bd3eda5 | missing |\n| \"Table 23\" | 64904abe173037e1553abb50c33b61c7c35540451d635fa18ac41b6487cb4991 | missing |\n| \"Table 23a\" | 3f0321f5e8b380d613e7d4c0c367d72df01f200db946eac3572178d0ef14d4a8 | missing |\n| \"Table 24\" | 2c3d4432054ffd2335880ba752d0b9f4b1295fdcd5ef1a7ad68512c0fbecfd47 | missing |\n| \"Table 24a\" | da116aef25a1b7db0142f90b8dde3463d5f8302fc2032ab92fe3fdb2f25d4946 | missing |\n| \"Table 25\" | c2390736f1fe181caa3868ac23e15f1d4242c177f10f1414fe7754f84e3d3c7c | missing |\n| \"Table 25a\" | 4920410d08cd5af0ee2d3b5f2338bfd8c2cfd908e1de068b1d166dd508256e3d | missing |\n| \"Table 26\" | ac8a364e788a8496f0400696d5e50ffef1593fe4e59921c7c2f3b0e95dfcd3ec | missing |\n| \"Table 26a\" | e10cdf0a161766644f6badd3ad2670acec43fcadf0d5e0e76822ecbfa5f52030 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T131755Z-8a64315fda98.jsonl"
+  }
+}

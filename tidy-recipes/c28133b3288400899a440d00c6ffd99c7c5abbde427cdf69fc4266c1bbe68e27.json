@@ -1,0 +1,113 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c28133b3288400899a440d00c6ffd99c7c5abbde427cdf69fc4266c1bbe68e27",
+  "sheet": "Labour Force",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Labour Force data-item catalogue: variable labels, coded response categories and eligible populations, with no statistical observations.",
+  "agent_notes": "This workbook is a survey data-item catalogue, not statistical results. Response codes and eligibility descriptions are documentation; no tidy observations are produced.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2,A4"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7:B7"
+    },
+    {
+      "name": "notes",
+      "cells": "A9,B9,A10,A11,A12,A14,B14,A15,A16,A17,A18,A19,A21,B21,A22,A23,A24,A26,B26,A27,A28,A29,A30,A32,B32,A33,A34,A35,A36,A38,B38,A39,A40,A41,A43,B43,A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A56,B56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67,A69,B69,A70,A71,A72,A73,A74,A75,A76,A77,A78,A79,A80,A81,A82,A83,A84,A85,A86,A87,A88,A89,A90,A91,A92,A93,A94,A95,A96,A97,A98,A99,A100,A101,A102,A103,A104,A105,A106,A107,A108,A109,A110,A111,A112,A113,A114,A115,A116,A117,A118,A119,A120,A121,A122,A123,A124,A125,A126,A127,A128,A129,A130,A131,A132,A133,A134,A135,A136,A137,A138,A139,A140,A141,A142,A143,A144,A145,A146,A147,A148,A149,A150,A151,A152,A153,A154,A155,A156,A157,A158,A160,B160,A161,A162,A163,A164,A165,A166,A167,A168,A169,A170,A171,A172,A173,A174,A175,A176,A177,A178,A179,A180,A181"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T12:37:12Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123541Z-dcbfb42dcdbd",
+    "started_at": "2026-11-01T12:35:42Z",
+    "workbook": "dcbfb42dcdbd1b3d23b31895c2189a34a17c57cd2916fd8d190af5c0385d632b--45300_200910.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971b-c634-72c6-adad-0fe2918311ce",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "cf7f96d94632847dd74fb738245b135d9c4c570784a2110a85b14b64763d8238",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `dcbfb42dcdbd1b3d23b31895c2189a34a17c57cd2916fd8d190af5c0385d632b--45300_200910.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 19 of 19\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6b990c2b989d770c84d3fea499ec7280deca09ea609c67dc3c00f8396fd43e5c | missing |\n| \"Demographics\" | 4e10ec95e498470c6819d01cd33fcc193d930d4a9f6e0a3e382a8b96a4afe1f1 | missing |\n| \"Education\" | 300fa8689012c522e8d5f695ddbf2824d9ddaf13a14930b6c6cc1de240575dc4 | missing |\n| \"Labour Force\" | c28133b3288400899a440d00c6ffd99c7c5abbde427cdf69fc4266c1bbe68e27 | missing |\n| \"Income\" | 1d9772a89199ba5ca68086cc12735791028ef2a8d716f29c7d63a53671be94cd | missing |\n| \"Physical Assault\" | 17811c312f4223124f313c7d2b53934362d43998676d7924572cee887e8655e0 | missing |\n| \"Threatened Assault\" | 93a0e52f3e4fea7947abf0244c0be976ca3039612dcaf8ae5984036d201efd9a | missing |\n| \"Robbery\" | f596f7fc364ff89646d59a247658a5111b0d5ec54d67702e25471ac3191376fb | missing |\n| \"Sexual Assault\" | b8805f6578c899974f020b25e61eee9f1ff1600b27cc7d8987ba686c2cd2b159 | missing |\n| \"Personal Crime Summary\" | 7e76883501e55e84e7377c92a6f6c2eac7939e3a234309c7c26b1edab6f6831e | missing |\n| \"Break-ins\" | 46c796fca076ea0519b9b527f3840a1a93a6ee88cee5620e2a31cd9fdd432c85 | missing |\n| \"Attempted Break-ins\" | 258664c3da40ad5cda0fa550560a73cdebd8d5a318ac0bfbebcc5eb0b269ed3d | missing |\n| \"Motor Vehicle Theft\" | 1b51c19816481df76a6458f6edf5d457a24001eabe7972b178bdca3be49d6b79 | missing |\n| \"Theft from a Motor Vehicle\" | 79d15c080bfb72be86615d4e5717c723daa9a6a459eea0bd14e580fcb2e5a8d8 | missing |\n| \"Other Theft\" | 70cf016ae2f2e4d89b9433ed91d772caf124bed91766715239968aa6f8dfe386 | missing |\n| \"Malicious Property Damage\" | 25890820f3b3010329d50ce72b2eb6c41f93ac01379b64ce2d75ae8ba34806f3 | missing |\n| \"Household Crime Summary\" | ee2b340a0854e7107af3a4810a02cd950ec0b028aef688f01b91719af50afdd5 | missing |\n| \"Social Disorder\" | d66f464b0d8614ba9bfb0460edc93a84b2fc724175357025152d37520cbfd371 | missing |\n| \"Explanatory Notes\" | efa340f1d433c7f652e6c76a6f29538cdf963c6386c2c770841c88de1f63945a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123541Z-dcbfb42dcdbd.jsonl"
+  }
+}

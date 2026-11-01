@@ -1,0 +1,283 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "06b7eea0e41f59d1d37379f5ebb2dd959ef225900553cffa640434a68ae930b4",
+  "sheet": "Table 17a",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "879bfa8756883e92560949e77290ab4e6a34ba018233826ea03ec4d38c16d3e6",
+  "agent_notes": "Published labels, indents, subtotal and total rows retained. Total employed, total intimate partner and total offenders known overlap their component rows and are not additive. Alcohol and other-substance rows can overlap; their indented Total is the affirmative subtotal, not the sheet total. Medical-treatment rows refer to physically injured victims. Scope and period are in title/banner. Relative standard error is identified by estimate_type from the published title; blank cells are omitted, not imputed.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A10"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_B_0",
+      "range": "B8:D9",
+      "values_range": "B8,C8,D8,B9,C9,D9",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A8,A9",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:D5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:D6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_B_1_r11_B11",
+      "range": "B11:D11",
+      "values_range": "B11:D11",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A11",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:D5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:D6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_B_1_r12_B12",
+      "range": "B12:D12",
+      "values_range": "B12:D12",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:D5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:D6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_B_1_r13_B13",
+      "range": "B13:D13",
+      "values_range": "B13:D13",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A13",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:D5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:D6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "age_group_B_1_r14_C14",
+      "range": "C14:C14",
+      "values_range": "C14:C14",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A14",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:D5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:D6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    },
+    {
+      "name": "population_B_2",
+      "range": "B15:D15",
+      "values_range": "B15,C15,D15",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A15"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:D5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:D6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:07:20Z",
+    "tool_version": "0.2.0",
+    "records": 19,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T130334Z-fa320f7e38fc",
+    "started_at": "2026-11-01T13:03:36Z",
+    "workbook": "fa320f7e38fcae2776aee83baf2215695014eb9a97a850c26c26a6cb965100f9--personal-crime-tables-12-to-19a-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19735-523a-712a-9161-625ce253fd78",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6e97f870c72d1e3f953ce61a78ed3cffc74fe44664f71eaf315482b28a0d7865",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `fa320f7e38fcae2776aee83baf2215695014eb9a97a850c26c26a6cb965100f9--personal-crime-tables-12-to-19a-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2014-15\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 807bc9e9ee7b1902bdecfb0dd364b0ddfd10d1c116805c3fde2b0859894184f0 | missing |\n| \"Table 12\" | 210238a31efb0404eccd4b0e5e6124543b91eadc05f45606e31a7598a660376c | missing |\n| \"Table 12a\" | d96e34de1a5e8af6d08185cafbe05eaed3c203a75568d1017bc0261b3c4fe5e4 | missing |\n| \"Table 13\" | f362327ff14a7954ce5fe4e1697ce2e7219f61fb0321c3027b7f9e0c2cff526b | missing |\n| \"Table 13a\" | 876d50681529daa2e6e703ec219cafe4058720ffb5739ff677179c5af2f71a06 | missing |\n| \"Table 14\" | 3771dfbbf485fc0f336486e1fdb1982c0d15183f4167553ae5e971ee4fc814ee | missing |\n| \"Table 14a\" | 29a741d4045a538154bcb815db86a9b664c31af9429e6f5a885309cd6ba9ae32 | missing |\n| \"Table 15\" | d0bbce45b2e00e06ecc68336b49e984bcd0ddcbe1bda6019ef3c5799bcd0fcc3 | missing |\n| \"Table 15a\" | 6696b3816e8b531136987940c3620f667953245b569f7b66c0cf39d713459a8c | missing |\n| \"Table 16\" | 1a30861e00a5765d6b2b3758aed8c0b5bd139daefb164df7e0dab484371f567d | missing |\n| \"Table 16a\" | 119977ef9bec0680623e688373785b902f084d923b1675957118d53addba5153 | missing |\n| \"Table 17\" | cf19db4c725597b78d9130a4031f2d9209737f3dcf8193dc621d21aa391a4b57 | missing |\n| \"Table 17a\" | 06b7eea0e41f59d1d37379f5ebb2dd959ef225900553cffa640434a68ae930b4 | missing |\n| \"Table 18\" | 74aafa3f013c58fcc13587bb1623324a6f6f18146aeee6107bf889bf23e43418 | missing |\n| \"Table 18a\" | f17fba2b166f72fac600c40292fe1d28cf44fedb581688b6853df1ee4b0bc58e | missing |\n| \"Table 19\" | 8463172e8eeb0e7d2786d9eb8daec6f1cf6282ac922afcc34211dba8533047a0 | missing |\n| \"Table 19a\" | aefee9848ae2876de27f5dd587654704b977477b18811712c566ffeaf07f0054 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T130334Z-fa320f7e38fc.jsonl"
+  }
+}

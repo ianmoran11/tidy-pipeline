@@ -152,5 +152,13 @@ A cell-by-cell check of 12 converted workbooks (6 with macros) found all 47,173 
 identical to the originals, apart from line breaks inside 6 header cells (`\r\n` in
 the XLSX, read as `\n` from the XLS) and whitespace in one note.
 
+**Second run (2026-11-01/02).** All releases of the two ABS victims publications:
+- 396 workbooks prepared, 68 of them macro workbooks, giving 3,831 sheets;
+- one 2015 Recorded Crime – Victims file came only from `source_url`: its
+  `download_url` now answers "Attachment Not Found".
+
+**Download URLs.** The script tries `download_url`, then `source_url`, and keeps the
+first whose bytes match the pin. The two differ for 627 of the 886 national files.
+
 `build_current_catalogue.R` is history only. It built the first version of
 `current_pipeline.csv` from the original package metadata.

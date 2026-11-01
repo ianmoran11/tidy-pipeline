@@ -1,0 +1,101 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "304f3b9dd76b1af4181c9c75dfb62a246edc40071210d000e1b4cc557699794d",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Workbook table index and publication contact information; no statistical data.",
+  "template_from": "1536b7ddad0b9fab5c525f7f8655dace0092f76d6c062adecadcd2cb1a4a0a20",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T13:25:53Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T132236Z-79d17b39cbc9",
+    "started_at": "2026-11-01T13:22:43Z",
+    "workbook": "79d17b39cbc9cf5f87248feef3d2b728be6bba40e2d5ac48f9b309f0f08e7ddd--State-and-Territory-time-series-pooled-data-Tables-25a-to-29d-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19746-d5a9-7072-a4e7-6a4af6903dcf",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "d18dbc03f979a9cab35479cd051051a19fde4c3c05f42f6b6e18573cf8d5f3f8",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `79d17b39cbc9cf5f87248feef3d2b728be6bba40e2d5ac48f9b309f0f08e7ddd--State-and-Territory-time-series-pooled-data-Tables-25a-to-29d-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2020-21\n- Sheets needing a recipe: 21 of 21\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 304f3b9dd76b1af4181c9c75dfb62a246edc40071210d000e1b4cc557699794d | missing |\n| \"Table 25a\" | 538b892bf0af731284d1dc0b2b46f4cbdcd2d3cdb70cbe73297e51ec6b81e80f | missing |\n| \"Table 25b\" | 08be9397fce643a1eae706bbe629c21b1c736ddc84093b49ce1094104631d270 | missing |\n| \"Table 25c\" | d5acfb5a6c1862e1d0098da8c2d7daa0b4f2716e858ebb7e204008abae0531df | missing |\n| \"Table 25d\" | f6ed1d93f4d2b0072118d7e62ba60adf42227efa783d697e338c7c3340994d75 | missing |\n| \"Table 26a\" | 869691b098e014bb2db6d039be4961675ef8f90f5e566cef1209d231683f6c43 | missing |\n| \"Table 26b\" | 38aad70e37ea221ddebf2cfd31b78049e0494a98fb646da7f9c3a05b6edfdf8a | missing |\n| \"Table 26c\" | a4d5315a9db2cf2b7c3a40f90dc3e250b45904bad7fcd1711bf5ac3ad96a6f68 | missing |\n| \"Table 26d\" | d58ecb1b64f3b51dea3c9b9b65bcf7093c8ae9605886812e1f9914a14fd2968a | missing |\n| \"Table 27a\" | d99ad808ef8cc263b61198be183380385a138f9da0e09302802b5438fb14cca8 | missing |\n| \"Table 27b\" | ba4154d2e942b6f28ce3662fdc7cda71f793bdda44cfed3e0193111a58a74978 | missing |\n| \"Table 27c\" | 1e6a8b458ae1c80e43c928561a3a872d5ae9e8a379cbb8963ea835321dbc5527 | missing |\n| \"Table 27d\" | 6f23536923c16945c96769e4a058695b24af7e1915d8f64993fe3d176886eb72 | missing |\n| \"Table 28a\" | 88de6e7d0055eb263f90d6dad27a2ec117966ac4943bec8e9bf8daec3fc27531 | missing |\n| \"Table 28b\" | 2f6ade3d90f44ab44f3634da5f76eb6c360305ac7e8bc2d2d33f31b2de55c0f2 | missing |\n| \"Table 28c\" | 16e5c35bff013e665e59d8eda8f88546f7a1a5a9a65e2b44d158f76713916cdc | missing |\n| \"Table 28d\" | f281bf42a2119e37afdfdfdc09fff4fe3e2b0b6973399c4dd3cad3e7edbd6af2 | missing |\n| \"Table 29a\" | d33aacf959c9dea57a4c4eed4a44127a1d9c89d5ee37b8e080a4d93fb638df4a | missing |\n| \"Table 29b\" | f319704e9289e3fcd4e1c2e815e47c7bd364b5e25fd85c08b6f8aae131de23cd | missing |\n| \"Table 29c\" | c2b81e108d73e3add4a53f823ab8509be8a03e5686ed46f60e8570a5cba87678 | missing |\n| \"Table 29d\" | b0b6106190d27482f225b5abbf2c38b1509e7b33e94d03658bbe4563966517a9 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T132236Z-79d17b39cbc9.jsonl"
+  }
+}

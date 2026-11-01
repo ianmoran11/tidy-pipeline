@@ -1,0 +1,201 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "56e741caec369d867817c8c3557b66c7b197d4e9e0ed8bc33f4cd17f8cc02c13",
+  "sheet": "Table 8",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "693a557cc18a94362ffecf25f728f5415293ed88b30227f05fa7f320738c3431",
+  "agent_notes": "Published totals and nested subtotal rows are retained alongside their component rows; they are not mutually exclusive categories. Indented labels identify subdivisions. Footnote markers and confidentiality symbols are preserved. Age is age at incident. See sheet notes for revisions, exclusions and random adjustment caveats.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A42:A47"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A4:Y17",
+      "values_range": "B7:Y17",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Sex and age at incident",
+          "direction": "W",
+          "cells": "A7:A17"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:Y5"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B4,N4"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A18:Y29",
+      "values_range": "B19:Y29",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Sex and age at incident",
+          "direction": "W",
+          "cells": "A19:A29"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:Y5"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B4,N4"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "A30:Y41",
+      "values_range": "B31:Y41",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Sex and age at incident",
+          "direction": "W",
+          "cells": "A31:A41"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:Y5"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B4,N4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:33:55Z",
+    "tool_version": "0.2.0",
+    "records": 792,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T143151Z-e1ad40697f74",
+    "started_at": "2026-11-01T14:31:52Z",
+    "workbook": "e1ad40697f74d28bb3a7a111c0f2d899b9389406061e66a559fbe27f07a37e3b--1.-Victims-of-crime-Australia-Tables-1-to-8-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19786-22ad-73ea-8721-8eddb3c1cf7b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "f74b46272c0f16e41b08a0dd0b1987ac465bffc35d3ce738a0bdbcb68b48310e",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e1ad40697f74d28bb3a7a111c0f2d899b9389406061e66a559fbe27f07a37e3b--1.-Victims-of-crime-Australia-Tables-1-to-8-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2025\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0bfd46f2f1a60053741bdde77e3852b98ecf8d565f45a14eb001890d708acb8e | missing |\n| \"Table 1\" | 7e30eabf93e6dce7161ea052a05b8a6f65910eddbadbc7841902161bc4414622 | missing |\n| \"Table 2\" | d46bcf88469a856c2c9833776e9b201cf4a21aa54c875103753514d143fd4214 | missing |\n| \"Table 3\" | 11bea9bb3bcb017dee3b7bdb8f863990ae07c7be7128c1d9f826ef32730f997e | missing |\n| \"Table 4\" | ebdfad2e7e78979b5161d19081660865ad34618c4f797b96a80e243c2d55a9f7 | missing |\n| \"Table 5\" | 93d4ab512d5d87516d8944a7d06274e1218c734853bd31a4ae65e8b28c68e003 | missing |\n| \"Table 6\" | ea448f7c0e6abd591337d24bfc7d7ebc15165b31897d49a8c51e3d512845ac2e | missing |\n| \"Table 7\" | fccb1958d78206acbcc5c31ff2131781b4235c571aa3b6d1b943629e742d129a | missing |\n| \"Table 8\" | 56e741caec369d867817c8c3557b66c7b197d4e9e0ed8bc33f4cd17f8cc02c13 | missing |\n| \"Further information\" | ce2922371e1fa6c21b6f86bfcb9a3062ccf41a333490652e75f2b1f41159819a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T143151Z-e1ad40697f74.jsonl"
+  }
+}

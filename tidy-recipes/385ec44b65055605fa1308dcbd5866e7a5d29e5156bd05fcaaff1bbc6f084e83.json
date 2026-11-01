@@ -1,0 +1,446 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "385ec44b65055605fa1308dcbd5866e7a5d29e5156bd05fcaaff1bbc6f084e83",
+  "sheet": "QLD",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "d6c89fe0acc11b19b35194f7606a7605e6050a328414cd609f39879116533d49",
+  "agent_notes": "All published location labels, subtotals, overall totals and n.p. values retained. H:J are Theft, Other and Total under the parent offence heading H5, scoped only to those columns. Reference year 2006 is in the title/subtitle; no standalone measure or period cell. RESIDENTIAL, COMMUNITY and OTHER group the location rows; Unspecified and overall Total have no location group.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "residential_person_offences",
+      "range": "B8:G12",
+      "values_range": "B10:G12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A10:A12"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:G6"
+        }
+      ]
+    },
+    {
+      "name": "residential_unlawful_entry",
+      "range": "H8:J12",
+      "values_range": "H10:J12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A8"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "H5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A10:A12"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "H6:J6"
+        }
+      ]
+    },
+    {
+      "name": "residential_theft_offences",
+      "range": "K8:L12",
+      "values_range": "K10:L12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A10:A12"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "K6:L6"
+        }
+      ]
+    },
+    {
+      "name": "community_person_offences",
+      "range": "B14:G19",
+      "values_range": "B16:G19",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A14"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A16:A19"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:G6"
+        }
+      ]
+    },
+    {
+      "name": "community_unlawful_entry",
+      "range": "H14:J19",
+      "values_range": "H16:J19",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A14"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "H5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A16:A19"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "H6:J6"
+        }
+      ]
+    },
+    {
+      "name": "community_theft_offences",
+      "range": "K14:L19",
+      "values_range": "K16:L19",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A14"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A16:A19"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "K6:L6"
+        }
+      ]
+    },
+    {
+      "name": "other_person_offences",
+      "range": "B21:G26",
+      "values_range": "B23:G26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A23:A26"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:G6"
+        }
+      ]
+    },
+    {
+      "name": "other_unlawful_entry",
+      "range": "H21:J26",
+      "values_range": "H23:J26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A21"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "H5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A23:A26"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "H6:J6"
+        }
+      ]
+    },
+    {
+      "name": "other_theft_offences",
+      "range": "K21:L26",
+      "values_range": "K23:L26",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "incident_location_group",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A23:A26"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "K6:L6"
+        }
+      ]
+    },
+    {
+      "name": "overall_person_offences",
+      "range": "B28:G30",
+      "values_range": "B28:G28,B30:G30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A28:A28,A30:A30"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B6:G6"
+        }
+      ]
+    },
+    {
+      "name": "overall_unlawful_entry",
+      "range": "H28:J30",
+      "values_range": "H28:J28,H30:J30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "H5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A28:A28,A30:A30"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "H6:J6"
+        }
+      ]
+    },
+    {
+      "name": "overall_theft_offences",
+      "range": "K28:L30",
+      "values_range": "K28:L28,K30:L30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Type of Location",
+          "direction": "W",
+          "cells": "A28:A28,A30:A30"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "K6:L6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:52:28Z",
+    "tool_version": "0.2.0",
+    "records": 143,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T135117Z-5e055e1b430d",
+    "started_at": "2026-11-01T13:51:19Z",
+    "workbook": "5e055e1b430dce7bf4c94b85ec7522e04c12914ed92eec845afd503aeacb9172--45100_Table17_2006.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19761-0184-7594-a445-0950cd668824",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "fe621ca060883a46bbefdd993098a3f98c0c5bc31414f7f2712206b42c1b571a",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5e055e1b430dce7bf4c94b85ec7522e04c12914ed92eec845afd503aeacb9172--45100_Table17_2006.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2006\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"NSW\" | 03e080437edb5d657a8ba9a5115333ef300416ebc246fef97e12a1bbfd6b5d59 | missing |\n| \"VIC\" | 744fc42e3ec6c79f332c8ffe68582e1f5958f7206ccb28c28010257ae81fc47a | missing |\n| \"QLD\" | 385ec44b65055605fa1308dcbd5866e7a5d29e5156bd05fcaaff1bbc6f084e83 | missing |\n| \"SA\" | 587512f55170045e06d8011f982a8898f2e90c830d6693cca23b2f311c6107b9 | missing |\n| \"WA\" | 018e3040632e4102a91d748cc4f30120568aa3003baae5471d6cef7fb02acdc2 | missing |\n| \"TAS\" | 55b34147aca0ac21011024eeb1200a374f07b590228eeb6d5745fed588708ad1 | missing |\n| \"NT\" | 998fad27d9a815869293cfc937693e9e8046ddda745f987f20f1abc611cd663a | missing |\n| \"ACT\" | 91276f6ccb43434e729794c87eca34cb735c274da5f406fb81009b8d88f12918 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T135117Z-5e055e1b430d.jsonl"
+  }
+}

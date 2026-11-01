@@ -34,7 +34,7 @@ sources/dataset_selection.json + sources/catalogues/*.csv (pinned)
   └─> get_source_data.R (outside targets: download, convert, list sheets) ─> source_metadata.csv
 source_metadata.csv ─┐
 dataset_selection ───┴─> selected_sheets   select_sheets()    switched-on releases only (sorted by sheet_sha256)
-tidy-recipes/*.json ─────> recipe_sheets / recipe_files
+tidy-recipes/*.json ─────> recipe_sheets (with recipe_md5)
                           └─> data              process_recipe()   one branch per admitted recipe
                           └─> data_normalised   normalise()        normalisation/normalisation_spec.json
                                └─> data_harmonised  harmonise()    harmonisation/harmonisation_spec.json
@@ -74,8 +74,10 @@ tidy-recipes/*.json ─────> recipe_sheets / recipe_files
 
 ## Checks
 
-Every data target has one check function (`R/check_<target>.R`) and a `<target>_checks`
-target. Inside each function, every test is its own nested function that returns its
+Every data target has one check function (`R/check_<target>.R`). The four per-sheet
+check functions run together in one `sheet_checks` branch per sheet. Separate targets
+quadrupled the number of branches, and `targets`' per-branch bookkeeping, not the
+checks, dominated their time. Each other data target has its own `<target>_checks`. Inside each function, every test is its own nested function that returns its
 failures (nothing when it passes). A named `severity` vector lists the tests.
 
 | Severity | Meaning | On failure |
@@ -86,9 +88,9 @@ failures (nothing when it passes). A named `severity` vector lists the tests.
 Each check returns one row per test: `target`, `sheet_sha256`, `test`, `severity`,
 `passed`, `n_failed`, `examples`.
 
-- **Per-sheet targets** (`data` … `data_identified`) are checked branch by branch
-  (`pattern = map(...)`), each against the branch it came from. Agent batches only
-  re-check the sheets they change.
+- **Per-sheet targets** (`data` … `data_identified`) are checked branch by branch in
+  `sheet_checks`, each against the branch it came from. Agent batches only re-check the
+  sheets they change.
 - **Failed checks don't hold up the build.** Check targets use `error = "continue"`, so
   `tar_make()` finishes and lists them as errored targets.
 - **`tar_read(check_failures)`** has every failed test, warnings included.
@@ -112,20 +114,40 @@ To add a test, add a nested function and a `severity` entry. Remember that
 The checks add about 7 minutes of branch time to a full rebuild. `check_observations()`
 takes 28 seconds; the other whole-table checks take seconds.
 
-## Run times
+## Run times and performance
 
-All specs are hand-edited JSON. Editing a spec reruns only the stages after it:
-- the normalisation spec takes about 11 minutes;
-- the measure or integration specs take about 4 minutes.
+`_targets.R` runs **6 parallel `crew` workers** that store and load their own results, in
+**`qs` format** (packages `crew`, `qs2`). Measured on 5,209 sheets (2026-11-01):
 
-Changing `process_recipe()` or anything it calls (`one_enhead()`,
-`blank_value_cells()`, `published_value()`) rebuilds everything, which takes about
-40–45 minutes for 3,256 recipes with the checks.
+| Situation | Before tuning | Now |
+|---|---|---|
+| Full rebuild (extraction code changed) | about 65 min | 28 min |
+| Nothing changed | 15 s | 17 s |
+| One recipe edited | about 6–7 min | 2.6–3 min |
+| Measure spec edited | about 15 min | about 9 min |
+| `source_metadata.csv` rewritten, no processing field changed | 15 s | about 15 s |
 
-Rewriting `source_metadata.csv` (`get_source_data.R`) takes about 15 seconds of
-`tar_make()` when no sheet's processing fields change. This was tested by adding columns
-to every row: 8 metadata targets reran, no sheet branches. New or changed sheets add
-their own branches plus about 6 minutes of whole-table stages.
+What sets the times now:
+- **Full and spec-change rebuilds:** worker time per branch, about 0.5 s including
+  loading inputs and saving results. A measure-spec edit reruns 5,209 identify and
+  5,209 check branches.
+- **Every change:** the whole-table targets `assemble()` and the harmonisation report
+  (about 2.5 min) reread all sheets.
+
+Run `targets::tar_prune()` now and then: stale branch records from old runs slow
+`targets` down (it took the store from 816 to 334 MB).
+
+What was changed:
+- vectorised `expand_excel_range()` (7.8× faster);
+- each table's value range expanded once;
+- `purrr::transpose()` instead of `group_by()`/`nest()`. Extraction is about 1.9× faster
+  per sheet, and the agents' `run_recipe` tool uses the same code;
+- recipe MD5s in `selected_sheets` instead of 5,209 `tar_files` branches;
+- `sheet_checks`;
+- vectorised `assemble()` (112 → 48 s), `reconcile()` (24 → 4 s), integration report
+  (45 → 4 s) and observations check (42 → 10 s).
+
+All outputs were checked identical before and after.
 
 `source_metadata.csv` (one row per sheet) is written **outside** the pipeline by
 `Rscript get_source_data.R`, from the release switches and pinned catalogues in
@@ -253,8 +275,21 @@ How the three ABS batches were picked: `qa/select_batch.R`.
 - **Sheets without a value change don't rerun downstream.** `targets` compares branch
   outputs, so a `process_recipe()` change that alters only some sheets reruns only
   their downstream branches.
+- **`targets` bookkeeping is per branch and runs in the main process.** With tens of
+  thousands of small branches it, not the work, sets the pace. Parallel workers help
+  less than expected; fewer, larger branches help more.
 - **tidyxl omits truly empty cells.** Blank value cells have to be generated from the
   table grid (`R/blank_value_cells.R`), not read.
+- **A tool-call timeout kills the whole process group,** background `nohup` jobs
+  included. Launch long jobs in their own call, detached with `( nohup … & )`, and poll
+  in separate calls.
+- **Number formats can carry data.** ABS and RoGS mark high-RSE estimates with `"*"`
+  inside the number format; `published_value()` keeps quoted asterisks.
+- **Agents misuse `estimate_type`** for column headings and whole titles. The victims
+  seed normalises those labels to Estimate / Relative standard error.
+- **Case-sensitive bits in case-insensitive regexes.** `regex(..., ignore_case = TRUE)`
+  made `[a-z]?` match the first capital of "Table 6PERSONS". Use `(?-i:...)` for parts
+  that must keep their case.
 - **`paste()` and `paste0()` with a zero-length vector return a string** (`"x "`), not
   nothing. Use `sprintf()` when building lists of failures.
 - **`!` binds more loosely than `%in%`.** `!(a == b) %in% FALSE` means

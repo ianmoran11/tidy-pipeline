@@ -30,6 +30,10 @@ These are settled. Revisit only if the owner asks.
 | 24 | Macro workbooks are converted with Excel set to "Disable all macros without notification" (owner sets it, and resets it afterwards) | `get_source_data.R` (`EXCEL_MACROS_DISABLED=1`) | |
 | 25 | New ABS justice releases: pilot 243 sheets, review, then run the rest (1,710) | `agents/batch-abs-new-*.txt` | 2026-11-01 |
 | 26 | **Generic label cleaning in normalisation** (whitespace, trailing footnote markers, leading revision `r`), as a `clean` section of the spec | `R/normalise.R`, `normalisation/normalisation_spec.json` | 2026-11-01 |
+| 27 | Performance tuning: parallel `crew` workers, `qs` storage, faster extraction, fewer branches (`sheet_checks`, recipe MD5s instead of file targets), vectorised whole-table stages. Outputs unchanged | `_targets.R`, `R/` | 2026-11-01. New dependencies: `crew` (with `mirai`, `nanonext`) and `qs2` |
+| 28 | **All releases of the two ABS victims publications are switched on** (Crime Victimisation, Australia: 17; Recorded Crime – Victims: 22); pilot 239 sheets, then the remaining 3,592 | `sources/dataset_selection.json`, `agents/batch-victims-*.txt` | 2026-11-01/02, run overnight on the owner's instruction |
+| 29 | Survey quality markers are kept: `published_value()` keeps format asterisks, and `value_flag` records `rse_25_to_50`, `rse_over_50`, `revised`, `footnote` | `R/published_value.R`, `R/type_values.R`, `value_spec.json` `markers` | Chosen by the assistant overnight; follows decision 6 (published values) |
+| 30 | 34 dictionary names added for victims dimensions (28 after the pilot, 6 after the full run), each marked "for owner review" | `dictionary/dimensions.csv` | Added so agents in the full run used one name per concept |
 
 Defaults that were never explicitly decided (candidates to confirm with the owner):
 

@@ -1,7 +1,7 @@
 # Scope analysis for a harmonisation stage (read-only).
 suppressMessages({library(dplyr); library(purrr); library(stringr); library(tidyr)})
 d <- targets::tar_read(data_normalised)
-files <- targets::tar_read(recipe_files)
+files <- targets::tar_read(recipe_sheets)$recipe_path
 m <- readr::read_csv("source_metadata.csv", show_col_types = FALSE, col_types = readr::cols(.default = "c"), trim_ws = FALSE)
 sha <- sub("\\.json$", "", basename(files))
 info <- m[match(sha, m$sheet_sha256), c("sheet_sha256", "publication_id", "sheets", "xlsx_file", "reference_period", "asset_year")]

@@ -1,0 +1,280 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "76e582ab6e86347563d680874121f09d44984e9449d3f4bd3f639ffa079b7d13",
+  "sheet": "Table 28",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "882a7163bae1002de9c015dbba1d4e180bc6f38f66321c78c63a85e4fdb3a1e3",
+  "agent_notes": "Published totals and indented parent/subtotal rows are retained alongside their components; categories overlap and must not be summed. Random adjustment can cause discrepancies. Single-year population, offence and period are specified by the table title; rate denominators and jurisdiction caveats remain in notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A11,A18,A24,A28"
+    },
+    {
+      "name": "notes",
+      "cells": "A36:A42"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_number",
+      "range": "A8:E9",
+      "values_range": "B8:E9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "age_number",
+      "range": "A12:E16",
+      "values_range": "B12:E16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age at report",
+          "direction": "W",
+          "cells": "A12:A16"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "location",
+      "range": "A19:E21",
+      "values_range": "B19:E21",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Location of offence",
+          "direction": "W",
+          "cells": "A19:A21"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "total_number",
+      "range": "A22:E22",
+      "values_range": "B22:E22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A22:A22"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "sex_rate",
+      "range": "A25:E26",
+      "values_range": "B25:E26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B23"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A25:A26"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "age_rate",
+      "range": "A29:E33",
+      "values_range": "B29:E33",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B23"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age at report",
+          "direction": "W",
+          "cells": "A29:A33"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "total_rate",
+      "range": "A34:E34",
+      "values_range": "B34:E34",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B23"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A34:A34"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:28:03Z",
+    "tool_version": "0.2.0",
+    "records": 76,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142704Z-fa6720dbe3f5",
+    "started_at": "2026-11-01T14:27:05Z",
+    "workbook": "fa6720dbe3f5a958b61e9898c26171fa5c1336bbd35c0c784eabda51663d1cfd--4.-Aboriginal-and-Torres-Strait-Islander-victims-of-crime-selected-states-and-territories-Tables-23-to-28-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19781-c24a-746a-8cd3-2ca725f19c2e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8b016a4af6b12f3398d6d58ba9a852b7d0e930ae47374d58035304b8eb318bcc",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `fa6720dbe3f5a958b61e9898c26171fa5c1336bbd35c0c784eabda51663d1cfd--4.-Aboriginal-and-Torres-Strait-Islander-victims-of-crime-selected-states-and-territories-Tables-23-to-28-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d51e788488c622d7f4ef23d850633a97ee489d2a3a903b5a1753595f1ddf1cfd | missing |\n| \"Table 23\" | ef99af355f2d599412664848561058797d750ca0f05b65f7357f56cfa426fc6c | missing |\n| \"Table 24\" | 425eaeb88f94c7ac551481284788f2d2c882dcc73a33481e9c9f584a30b723a3 | missing |\n| \"Table 25\" | 9ccd41a3210e9be35056360c8db6a4effc6910285242cc03e7b314307b06ebc0 | missing |\n| \"Table 26\" | b40272628821113f9767c4f12a149d4ea9d13eadf97c5a6c01c9f30c19a1c598 | missing |\n| \"Table 27\" | 848360541de5f9f40cd109a2ef3b0cf798d1102320da7f03033bb995a7779c20 | missing |\n| \"Table 28\" | 76e582ab6e86347563d680874121f09d44984e9449d3f4bd3f639ffa079b7d13 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142704Z-fa6720dbe3f5.jsonl"
+  }
+}

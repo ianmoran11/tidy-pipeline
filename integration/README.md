@@ -24,7 +24,8 @@ All files are UTF-8 CSV. Missing values are empty fields.
 | `reference_date` | ISO date the period ends, e.g. `2024-06-30` |
 | `value` | The number, rounded as published. Symbols that mean nil or rounded to zero are `0`; other symbols and blanks are empty |
 | `value_status` | `published`, `blank` (empty cell in the published table), `not_published`, `not_available`, `not_applicable`, `nil_or_rounded_to_zero` |
-| `published_text` | The cell as displayed, e.g. `1,234` is `1234`, `np`, `–` |
+| `published_text` | The cell as displayed, e.g. `1,234` is `1234`, `np`, `–`, `*7.3` |
+| `value_flag` | A quality marker on a published number, from the value spec's `markers`: `rse_25_to_50` (`*`: relative standard error 25–50%, use with caution), `rse_over_50` (`**`: RSE over 50%, too unreliable for general use), `revised` (`r10,822`), `footnote` (`(b)25.3`). Empty for most values |
 | `release_id` | The release the value comes from (`sources.csv`) |
 | `n_releases` | How many releases publish this series and period |
 | `is_latest` | `TRUE` for exactly one row per series and period: the most recent release's value |
@@ -98,8 +99,17 @@ from 2022. Filter with `is.na(sex) | sex == "Persons"` and remove duplicates.
 - `source_fields`: columns of `sources.csv`.
 
 **`value_spec.json`** (`type_values()`): what each publisher's symbols mean. A
-publication's own entries win over `default`. `value` is set only where a symbol
-stands for a number.
+workbook's own entries (from its legend, `qa/seeds/seed_value_legends.R`) win over its
+publication's, which win over `default`. `value` is set only where a symbol stands for a
+number. `markers` are regexes for leading quality markers. They're removed before the
+number is read and recorded in `value_flag`, applied in order, so a later (more
+specific) marker's flag wins.
+
+Many ABS and RoGS workbooks add the asterisks through the number format
+(`"*"#,##0.0`), not the cell text. `published_value()` keeps them, as Excel displays
+them, so they reach `markers`. Survey estimates and their RSEs are separate series:
+`estimate_type` is `Relative standard error` for the RSE, and empty or `Estimate` for
+the estimate.
 - ABS: `np` not published, `na` not available, `..` not applicable, `–` nil or
   rounded to zero.
 - AIHW: `n.p.`, `n.a.`, `. .`, `—`.

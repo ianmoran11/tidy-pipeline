@@ -1,0 +1,433 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d8bf9423d0983c975fb837152d80a4e8e45d7129aad1a9fb92cdc7ff2488b43b",
+  "sheet": "Table 5a",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Totals in H:I cover all incident counts and are retained separately from the one/two/three-or-more incident columns. Only populated value cells are emitted; source blanks are not zeros. Geography is embedded in the published table title, not in a separate cell. RSE values use the published percent unit and estimate_type RSE. Separate value columns prevent the pipeline from synthesising null combinations at source blanks.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "column_b",
+      "range": "B5:B30",
+      "values_range": "B11,B12,B13,B14,B15,B16,B18,B19,B20,B21,B22,B23,B25,B26,B27,B28,B29,B30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A27,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "B6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "column_c",
+      "range": "C7:C30",
+      "values_range": "C11,C12,C13,C14,C15,C16,C18,C19,C20,C21,C22,C23,C25,C26,C27,C28,C29,C30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A27,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "B6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "C8"
+        }
+      ]
+    },
+    {
+      "name": "column_d",
+      "range": "D6:D30",
+      "values_range": "D11,D12,D13,D14,D15,D16,D18,D19,D20,D21,D22,D23,D25,D26,D28,D29,D30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "D6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "D7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "D8"
+        }
+      ]
+    },
+    {
+      "name": "column_e",
+      "range": "E7:E30",
+      "values_range": "E11,E12,E13,E14,E15,E16,E18,E19,E20,E21,E22,E23,E25,E26,E28,E29,E30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "D6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "E7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "E8"
+        }
+      ]
+    },
+    {
+      "name": "column_f",
+      "range": "F6:F30",
+      "values_range": "F11,F12,F13,F14,F15,F16,F18,F19,F20,F21,F22,F23,F25,F26,F28,F29,F30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "F6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F8"
+        }
+      ]
+    },
+    {
+      "name": "column_g",
+      "range": "G7:G30",
+      "values_range": "G11,G12,G13,G14,G15,G16,G18,G19,G20,G21,G22,G23,G25,G26,G28,G29,G30",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "F6"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G8"
+        }
+      ]
+    },
+    {
+      "name": "column_h",
+      "range": "H5:H30",
+      "values_range": "H11,H12,H13,H14,H15,H16,H18,H19,H20,H21,H22,H23,H25,H26,H27,H28,H29,H30",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A27,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "H7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "H8"
+        }
+      ]
+    },
+    {
+      "name": "column_i",
+      "range": "I7:I30",
+      "values_range": "I11,I12,I13,I14,I15,I16,I18,I19,I20,I21,I22,I23,I25,I26,I27,I28,I29,I30",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A11,A12,A13,A14,A15,A16,A18,A19,A20,A21,A22,A23,A25,A26,A27,A28,A29,A30"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A10,A17,A24"
+        },
+        {
+          "name": "number_of_incidents",
+          "direction": "NNW",
+          "cells": "H5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "I7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "I8"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:40:22Z",
+    "tool_version": "0.2.0",
+    "records": 140,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123727Z-25003a9d37fc",
+    "started_at": "2026-11-01T12:37:30Z",
+    "workbook": "25003a9d37fca337ffdc3daa0a02c998f5960c12fb80ab8bf897611b09d307aa--45300do011_201011.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971d-6e9b-745a-b271-50035ab36771",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4d15d92fcf5600acb9f44afdecb1e4494e5bb6ec9a8d404e6390e95a0cbc346e",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `25003a9d37fca337ffdc3daa0a02c998f5960c12fb80ab8bf897611b09d307aa--45300do011_201011.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2010-11\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9dd55663cd47efbc224f08c258b4a7b397ddcfa4889deeba1c2df8edbcb00f64 | missing |\n| \"Table 1\" | f93295f30af8115bec070539d5b2246a0fc4d14e9ce36f5ed52667c45f180a4b | missing |\n| \"Table 1a\" | 67f14eea6add2347445228c89f536d92ff2fb027b025dae12c2f15e7d8fdefd6 | missing |\n| \"Table 2\" | 52245ab9762e8dc24f838c72bdbc2eea4fc46fe83dc7622f9e422714b4138207 | missing |\n| \"Table 2a\" | c760e86c6243b115bc59fa5186498631646033b1ac50abd8443f54d6f741efe7 | missing |\n| \"Table 3\" | 0df5770a0193328d4f512539d0847225fce6bf58a14dd3e9f0c05f097f538efe | missing |\n| \"Table 3a\" | 5e6c8072a5b9138c863d4e7931bca6ebc45b0c3d83d6b928e2964fd85bc1a3fb | missing |\n| \"Table 4\" | 2437800d90aad1bd2ae08d2a467f866906a33af22741fb2053248c7503f0fc5a | missing |\n| \"Table 4a\" | b407d5487e45f9e38362ee4becd5f9566fa2bbd7124bce1a7ddc878dba907ba4 | missing |\n| \"Table 5\" | ec02530f82b611c700da8e9c8ba852e89f64a25881d635ef3790bee2be4f2813 | missing |\n| \"Table 5a\" | d8bf9423d0983c975fb837152d80a4e8e45d7129aad1a9fb92cdc7ff2488b43b | missing |\n| \"Table 6\" | e2a194b61bfc245eda6faaa43f39e2848b7e575dd12d25ed1cc667f09aa33d08 | missing |\n| \"Table 6a\" | 78d724db823a2d58aab13a2995fccc6ee1de0944879921fc01d41dc057172692 | missing |\n| \"Table 7\" | 635045a4f753ca9de7d65b38e613ae346f3dcd4ce01aa42003617567df83d623 | missing |\n| \"Table 7a\" | 1c1f19a3069960899bd3ea72139e444415759b7897f4b5fd1b3b48f87954384f | missing |\n| \"Table 8\" | 327b9acde19763daf55e3b4ca0843b29c570f103dfe7b4e7567f2e0521b7d9ca | missing |\n| \"Table 8a\" | 1a2010d7f28cf2189f28279e8c1b724f0aced4b26591b0e30ce3e7fdef480ce2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123727Z-25003a9d37fc.jsonl"
+  }
+}

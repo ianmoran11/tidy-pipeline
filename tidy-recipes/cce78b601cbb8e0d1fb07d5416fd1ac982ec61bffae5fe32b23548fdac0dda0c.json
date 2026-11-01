@@ -1,0 +1,218 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "cce78b601cbb8e0d1fb07d5416fd1ac982ec61bffae5fe32b23548fdac0dda0c",
+  "sheet": "Table_5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "0e544bea7bf572222ec0e0f98d7caa67e882704097c8cb696b1ad7c60fc1c18f",
+  "agent_notes": "Counts of sexual assault victims. Reference year 2010 is in A2; offence and jurisdiction are in title A4. Known-to-victim relationships nest family and non-family subdivisions. Subdivision Total rows, Total known to victim and overall Total are retained. I is the all-ages total. Published totals need not equal displayed components.",
+  "new_dimensions": [
+    {
+      "name": "offender_relationship_subgroup",
+      "description": "Family versus non-family subdivision of offenders known to the victim.",
+      "example_labels": [
+        "Family member",
+        "Non-family member"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sexual_assault_family",
+      "range": "A6:I10",
+      "values_range": "B8:I10",
+      "meta_data": [
+        {
+          "name": "offender_relationship_group",
+          "cells": "A6"
+        },
+        {
+          "name": "offender_relationship_subgroup",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A8:A10",
+          "caption": "The offender is . . . "
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "sexual_assault_nonfamily",
+      "range": "A11:I14",
+      "values_range": "B12:I14",
+      "meta_data": [
+        {
+          "name": "offender_relationship_group",
+          "cells": "A6"
+        },
+        {
+          "name": "offender_relationship_subgroup",
+          "cells": "A11"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A12:A14",
+          "caption": "The offender is . . . "
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "sexual_assault_known_total",
+      "range": "A15:I15",
+      "values_range": "B15:I15",
+      "meta_data": [
+        {
+          "name": "offender_relationship_group",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A15:A15",
+          "caption": "The offender is . . . "
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "sexual_assault_other_and_total",
+      "range": "A16:I18",
+      "values_range": "B16:I18",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A16:A18",
+          "caption": "The offender is . . . "
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:06:07Z",
+    "tool_version": "0.2.0",
+    "records": 80,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T140413Z-f3652de8df33",
+    "started_at": "2026-11-01T14:04:17Z",
+    "workbook": "f3652de8df330af9b41a7bb2c65a914edea1f59707589e71618e8bfd0cd66899--45100do009_2010.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1976c-e440-71c3-a5ba-dd0a0627b1f9",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b51d9acbd2c16357432d6b02e512658b37ad74b4513c65b2c831b51f1962cb64",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f3652de8df330af9b41a7bb2c65a914edea1f59707589e71618e8bfd0cd66899--45100do009_2010.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2010\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 34a010a3e95c906e5f102eb687308a99b8cb0e01a1758a5e12b231dfc54dc88b | missing |\n| \"Table_1\" | 88c50db07f5303119ad9cc32bcce4e9f81ea2d5b4a692bae8b65e33d3ad0dc23 | missing |\n| \"Table_2\" | 8b94cb94494284c3e02c351938bd5cd963e8d1c5f2c5c80ddd70f3bef5fa9f6a | missing |\n| \"Table_3\" | 644c6d290b7d351182e4cb4a391c76f02a1b950a6522874b33471d2e4e8fc453 | missing |\n| \"Table_4\" | 6b69ed19849b55b14d3e557d5ed2f38f453039b22a33dc3c6948a1f9ebd9493d | missing |\n| \"Table_5\" | cce78b601cbb8e0d1fb07d5416fd1ac982ec61bffae5fe32b23548fdac0dda0c | missing |\n| \"Table_6\" | 407d8393edc36d38940f5125693f7724cba7c89a165bc871e74f2b08038c49a9 | missing |\n| \"Table_7\" | e2b49f58f90313d5f459ffe32ef891738576b268757dfd39dec818c89f357799 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T140413Z-f3652de8df33.jsonl"
+  }
+}

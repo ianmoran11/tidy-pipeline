@@ -1,0 +1,188 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0a28d19502ad2e2dddd1e09a75f297edda505db33a4e9960d41cc06b912b25f0",
+  "sheet": "A",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "b4bdf53ac9dd9ceb486e0afc4545165f5925222d083b73357feccc6ee75217c4",
+  "agent_notes": "Victimisation rate, New South Wales and reference year 2006 are published in the title. Homicide and Robbery are parent headings for indented offence rows. Total robbery is retained as a subtotal. Driving causing death, Total homicide and related offences, and Other theft have no published values in either column; their labels are retained as worksheet annotations, not fabricated records. Published label whitespace is preserved.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "annotations",
+      "cells": "A9:A10,A19"
+    }
+  ],
+  "tables": [
+    {
+      "name": "homicide",
+      "range": "A4:C8",
+      "values_range": "B6:C8",
+      "meta_data": [
+        {
+          "name": "victim_offence_group",
+          "cells": "A5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A6:A8"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B4:C4"
+        }
+      ]
+    },
+    {
+      "name": "offences",
+      "range": "A11:C13",
+      "values_range": "B11:C13",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A11:A13"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B4:C4"
+        }
+      ]
+    },
+    {
+      "name": "robbery",
+      "range": "A14:C17",
+      "values_range": "B15:C17",
+      "meta_data": [
+        {
+          "name": "victim_offence_group",
+          "cells": "A14"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A15:A17"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B4:C4"
+        }
+      ]
+    },
+    {
+      "name": "blackmail",
+      "range": "A18:C18",
+      "values_range": "B18:C18",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A18"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B4:C4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:51:56Z",
+    "tool_version": "0.2.0",
+    "records": 20,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T135119Z-6bdb751bc17c",
+    "started_at": "2026-11-01T13:51:21Z",
+    "workbook": "6bdb751bc17c89c06a29cdd9c74e2ff8e60bfe0e71c71a1f1cfa75efac4b6f8e--45100_Appendix1_tableA2_2006.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19761-0bcd-7750-b67d-c87e0eeaba4e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "09934fcbad4f9878c6db3ebb49eac345474ad873889bddddd15d73951d2bb51e",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6bdb751bc17c89c06a29cdd9c74e2ff8e60bfe0e71c71a1f1cfa75efac4b6f8e--45100_Appendix1_tableA2_2006.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2006\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"A\" | 0a28d19502ad2e2dddd1e09a75f297edda505db33a4e9960d41cc06b912b25f0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T135119Z-6bdb751bc17c.jsonl"
+  }
+}

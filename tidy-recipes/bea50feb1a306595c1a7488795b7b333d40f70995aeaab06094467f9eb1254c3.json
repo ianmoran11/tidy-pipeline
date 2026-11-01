@@ -1,0 +1,258 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "bea50feb1a306595c1a7488795b7b333d40f70995aeaab06094467f9eb1254c3",
+  "sheet": "Table 29d",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "c4f9638567af901743bed603294dcf190cc48f0075523ee72b33ef43864ba7cb",
+  "agent_notes": "Australia totals retained. Published labels, footnote markers and suppression/reliability symbols preserved verbatim. Pooled estimates represent a 12-month average, not a sum over the pooled years. On RSE sheets the published title identifies estimate type and RSE-prefixed crime labels are retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A49,A50,A51,A52,A53,A54"
+    }
+  ],
+  "tables": [
+    {
+      "name": "crime_8",
+      "range": "A8:L17",
+      "values_range": "B9:L17",
+      "meta_data": [
+        {
+          "name": "crime_type",
+          "cells": "B8"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A9:A17"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:L7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ]
+    },
+    {
+      "name": "crime_18",
+      "range": "A18:L27",
+      "values_range": "B19:L27",
+      "meta_data": [
+        {
+          "name": "crime_type",
+          "cells": "B18"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A19:A27"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:L7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ]
+    },
+    {
+      "name": "crime_28",
+      "range": "A28:L37",
+      "values_range": "B29:L37",
+      "meta_data": [
+        {
+          "name": "crime_type",
+          "cells": "B28"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A29:A37"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:L7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ]
+    },
+    {
+      "name": "crime_38",
+      "range": "A38:L47",
+      "values_range": "B39:L47",
+      "meta_data": [
+        {
+          "name": "crime_type",
+          "cells": "B38"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A39:A47"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:L7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:22:09Z",
+    "tool_version": "0.2.0",
+    "records": 396,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T131929Z-ebaabc80ac94",
+    "started_at": "2026-11-01T13:19:39Z",
+    "workbook": "ebaabc80ac94d169621c89331efcd73a878d7775b71f4b509570e93fb63b4d9a--Pooled-data-time-series-Tables-28a-to-33b-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19744-0acf-765d-98a0-47f63a7138e3",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e6699319a42bbc0267e20144ec569165671feb9a0c6f9de6df93f2e8b70ca925",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ebaabc80ac94d169621c89331efcd73a878d7775b71f4b509570e93fb63b4d9a--Pooled-data-time-series-Tables-28a-to-33b-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 23 of 23\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 02b82a25eb121b18c6ca37381ab196a3f44757a5aba29c83d6532983181f9b30 | missing |\n| \"Table 28a\" | 8d04ca2410600e306307202b0ecacd02867577890f6caa033cedd3617f34d0fc | missing |\n| \"Table 28b\" | 4c39c2475a2a35fd4b5bfab73b1699be8e98fe3b4777b5382d63528e4b395064 | missing |\n| \"Table 28c\" | 6a91bff8828e4d97a543f703dbbb76f129b9af5051853c1bdb8e7d5223fb63f9 | missing |\n| \"Table 28d\" | d832ae67ecb4247fbce546ad546961c7d8b9333a3acce54ca3a5eab3e26c2e78 | missing |\n| \"Table 29a\" | 4582c45d53e2716e4fc37f4e64f2e03bc1e6aa7e1a5a69b8442905f54d0a104a | missing |\n| \"Table 29b\" | 7c9be39c9ac96d85ca613a0ef1e5f92443e60b4a84c2c8726ecfe21f48a4d45a | missing |\n| \"Table 29c\" | 04f4893515ea2f437bd3ff482becb2e468a8906e56d26378dd193fe9b39803ec | missing |\n| \"Table 29d\" | bea50feb1a306595c1a7488795b7b333d40f70995aeaab06094467f9eb1254c3 | missing |\n| \"Table 30a\" | cb8ace35bd3c1cd0a81ed69b47503e9e16c5f095956867d78175e77bde176a8b | missing |\n| \"Table 30b\" | 49cecf030fe1ec85887c22c582f7c3a91d9eebd334e1d69916a9c49aa6257e51 | missing |\n| \"Table 30c\" | 30278fcae8461ec2564ffcc8ff451a1282ac61cd70a5bad6323e45b2d16b3d63 | missing |\n| \"Table 30d\" | 3967756270f45be8fc8b067f65f52295ef9fea66c8fd60aff71d3cb6310e43ff | missing |\n| \"Table 31a\" | 32e9074f5c38ee8834684acf5f76d064b743fab37fa094b5308f51c7a96ef5ce | missing |\n| \"Table 31b\" | b98976bf2a6a3b9f83a286c65caa1d64a3e6eed33ccb64f5d44a2affeaf45b73 | missing |\n| \"Table 31c\" | 100799929da9b6e8d3ebc7db27861859eadd7514dc62439db7518d04056da083 | missing |\n| \"Table 31d\" | 968b7e5fd7652306dd6a77f0abe801e14ed4bc01891f2c76679c53b779f51289 | missing |\n| \"Table 32a\" | a93a259c204ff1075108b4714e28b97791d817a5bb6e91458964376a68ae5b3e | missing |\n| \"Table 32b\" | 7dff230855ca3b57d41fd2a1fb137b3a3cedbe734d608581871849ce0389baa4 | missing |\n| \"Table 32c\" | 59880a49a322bea9939304f256dcf88f3e361cb423d430234e1e806cbcf94087 | missing |\n| \"Table 32d\" | ab6f1c262dbf91ea4a912f9ded271b4355564c067bac11843833c48202e41977 | missing |\n| \"Table 33a\" | 297af1831f041deaaf294bb5c54fb08aa79c0658fec4f895d992428bbb445275 | missing |\n| \"Table 33b\" | bf266875e48e585f7541d490e0ce4e8b5969e8dcb820fe8e3f48e5f269f9b8ba | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T131929Z-ebaabc80ac94.jsonl"
+  }
+}

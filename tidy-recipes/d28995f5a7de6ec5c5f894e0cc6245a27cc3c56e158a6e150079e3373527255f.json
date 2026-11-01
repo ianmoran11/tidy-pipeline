@@ -1,0 +1,1119 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d28995f5a7de6ec5c5f894e0cc6245a27cc3c56e158a6e150079e3373527255f",
+  "sheet": "Table_10",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Investigation finalised introduces indented proceeding outcomes and Total finalised subtotal. Investigation not finalised and overall Total retained. Robbery and unlawful-entry column groups are metadata.",
+  "new_dimensions": [
+    {
+      "name": "recorded_offence",
+      "description": "Offence classification of the recorded crime victim, rather than an offender's principal offence.",
+      "example_labels": [
+        "Murder",
+        "Sexual assault",
+        "Other"
+      ]
+    },
+    {
+      "name": "recorded_offence_division",
+      "description": "Parent offence heading for recorded victim offence categories.",
+      "example_labels": [
+        "ROBBERY",
+        "UNLAWFUL ENTRY WITH INTENT"
+      ]
+    },
+    {
+      "name": "police_investigation_outcome",
+      "description": "Outcome of police investigation at 30 days, including finalisation and proceeding categories and totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A65"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A10,A17,A24,A31,A38,A45,A52,A59"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_8_B",
+      "range": "B9:D14",
+      "values_range": "B9:D9,B11:D14",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A9:A9,A11:A14"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_8_E",
+      "range": "E9:G14",
+      "values_range": "E9:G9,E11:G14",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A9:A9,A11:A14"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_8_H",
+      "range": "H9:H14",
+      "values_range": "H9:H9,H11:H14",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A9:A9,A11:A14"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_8_I",
+      "range": "I9:K14",
+      "values_range": "I9:K9,I11:K14",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A9:A9,A11:A14"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_8_L",
+      "range": "L9:M14",
+      "values_range": "L9:M9,L11:M14",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A9:A9,A11:A14"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_15_B",
+      "range": "B16:D21",
+      "values_range": "B16:D16,B18:D21",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A16:A16,A18:A21"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_15_E",
+      "range": "E16:G21",
+      "values_range": "E16:G16,E18:G21",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B15"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A16:A16,A18:A21"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_15_H",
+      "range": "H16:H21",
+      "values_range": "H16:H16,H18:H21",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A16:A16,A18:A21"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_15_I",
+      "range": "I16:K21",
+      "values_range": "I16:K16,I18:K21",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B15"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A16:A16,A18:A21"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_15_L",
+      "range": "L16:M21",
+      "values_range": "L16:M16,L18:M21",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A16:A16,A18:A21"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_22_B",
+      "range": "B23:D28",
+      "values_range": "B23:D23,B25:D28",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A23:A23,A25:A28"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_22_E",
+      "range": "E23:G28",
+      "values_range": "E23:G23,E25:G28",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B22"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A23:A23,A25:A28"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_22_H",
+      "range": "H23:H28",
+      "values_range": "H23:H23,H25:H28",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A23:A23,A25:A28"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_22_I",
+      "range": "I23:K28",
+      "values_range": "I23:K23,I25:K28",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B22"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A23:A23,A25:A28"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_22_L",
+      "range": "L23:M28",
+      "values_range": "L23:M23,L25:M28",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A23:A23,A25:A28"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_29_B",
+      "range": "B30:D35",
+      "values_range": "B30:D30,B32:D35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A30:A30,A32:A35"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_29_E",
+      "range": "E30:G35",
+      "values_range": "E30:G30,E32:G35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B29"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A30:A30,A32:A35"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_29_H",
+      "range": "H30:H35",
+      "values_range": "H30:H30,H32:H35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A30:A30,A32:A35"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_29_I",
+      "range": "I30:K35",
+      "values_range": "I30:K30,I32:K35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B29"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A30:A30,A32:A35"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_29_L",
+      "range": "L30:M35",
+      "values_range": "L30:M30,L32:M35",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A30:A30,A32:A35"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_36_B",
+      "range": "B37:D42",
+      "values_range": "B37:D37,B39:D42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A37:A37,A39:A42"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_36_E",
+      "range": "E37:G42",
+      "values_range": "E37:G37,E39:G42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B36"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A37:A37,A39:A42"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_36_H",
+      "range": "H37:H42",
+      "values_range": "H37:H37,H39:H42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A37:A37,A39:A42"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_36_I",
+      "range": "I37:K42",
+      "values_range": "I37:K37,I39:K42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B36"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A37:A37,A39:A42"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_36_L",
+      "range": "L37:M42",
+      "values_range": "L37:M37,L39:M42",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A37:A37,A39:A42"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_43_B",
+      "range": "B44:D49",
+      "values_range": "B44:D44,B46:D49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A44:A44,A46:A49"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_43_E",
+      "range": "E44:G49",
+      "values_range": "E44:G44,E46:G49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B43"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A44:A44,A46:A49"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_43_H",
+      "range": "H44:H49",
+      "values_range": "H44:H44,H46:H49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A44:A44,A46:A49"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_43_I",
+      "range": "I44:K49",
+      "values_range": "I44:K44,I46:K49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B43"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A44:A44,A46:A49"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_43_L",
+      "range": "L44:M49",
+      "values_range": "L44:M44,L46:M49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A44:A44,A46:A49"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_50_B",
+      "range": "B51:D56",
+      "values_range": "B51:D51,B53:D56",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B50"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A51:A51,A53:A56"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_50_E",
+      "range": "E51:G56",
+      "values_range": "E51:G51,E53:G56",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B50"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A51:A51,A53:A56"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_50_H",
+      "range": "H51:H56",
+      "values_range": "H51:H51,H53:H56",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B50"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A51:A51,A53:A56"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_50_I",
+      "range": "I51:K56",
+      "values_range": "I51:K51,I53:K56",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B50"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A51:A51,A53:A56"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_50_L",
+      "range": "L51:M56",
+      "values_range": "L51:M51,L53:M56",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B50"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A51:A51,A53:A56"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    },
+    {
+      "name": "state_57_B",
+      "range": "B58:D63",
+      "values_range": "B58:D58,B60:D63",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B57"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A58:A58,A60:A63"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "B7:D7"
+        }
+      ]
+    },
+    {
+      "name": "state_57_E",
+      "range": "E58:G63",
+      "values_range": "E58:G58,E60:G63",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B57"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "E6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A58:A58,A60:A63"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "E7:G7"
+        }
+      ]
+    },
+    {
+      "name": "state_57_H",
+      "range": "H58:H63",
+      "values_range": "H58:H58,H60:H63",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B57"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A58:A58,A60:A63"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "H7:H7"
+        }
+      ]
+    },
+    {
+      "name": "state_57_I",
+      "range": "I58:K63",
+      "values_range": "I58:K58,I60:K63",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B57"
+        },
+        {
+          "name": "recorded_offence_division",
+          "cells": "I6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A58:A58,A60:A63"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "I7:K7"
+        }
+      ]
+    },
+    {
+      "name": "state_57_L",
+      "range": "L58:M63",
+      "values_range": "L58:M58,L60:M63",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B57"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "A58:A58,A60:A63"
+        },
+        {
+          "name": "recorded_offence",
+          "direction": "N",
+          "cells": "L7:M7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:15:44Z",
+    "tool_version": "0.2.0",
+    "records": 480,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T121416Z-7e4a2638888f",
+    "started_at": "2026-11-01T12:14:17Z",
+    "workbook": "7e4a2638888fdf60241afe732d760825d1bbc793c2e07efb35cb33c3cd6135b8--45100do002_2013.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19708-2c95-726e-a305-8d3e53dca16b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ea395979d8aa2c408e27d6f2638e8b9c6538f1651731a8e12ecc4683b5186040",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `7e4a2638888fdf60241afe732d760825d1bbc793c2e07efb35cb33c3cd6135b8--45100do002_2013.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2013\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 3a0e3413e9b3f15fb0726adef47e3bb9f41cf71c224aa5a11fcad1d1805350da | missing |\n| \"Table_6\" | 6d4d721aba2d9ddb89271025f215e00cce9347625f8f124c858e794acc65d1f3 | missing |\n| \"Table_7\" | 3b208a5b947660457fc5ee9f3e269e8e39fb140d574b2574dd05fdca82deab0c | missing |\n| \"Table_8\" | 8a3d3b1d1303af0627d4a3485f597776ceafa04f5e3b77b29dd2e9411d098a2b | missing |\n| \"Table_9\" | d0611fa12625b0597d9009be7aef5ea83de34eb24035ff5111b452f9d2d4c943 | missing |\n| \"Table_10\" | d28995f5a7de6ec5c5f894e0cc6245a27cc3c56e158a6e150079e3373527255f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T121416Z-7e4a2638888f.jsonl"
+  }
+}

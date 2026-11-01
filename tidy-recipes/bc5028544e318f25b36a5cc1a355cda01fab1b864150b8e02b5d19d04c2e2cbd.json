@@ -1,0 +1,127 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "bc5028544e318f25b36a5cc1a355cda01fab1b864150b8e02b5d19d04c2e2cbd",
+  "sheet": "Table_5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "aff32b58432cdf97c3a586ca3b3093f1969efeab67773a39ae75e3340cecb383",
+  "agent_notes": "Rows 7–13 are indented weapon types under 'Weapon used' (A6); row 14 is their subtotal. Row 15 is no weapon used and row 16 the overall total. Published totals and weapon-use statuses are retained alongside weapon types in weapon_type. Totals may differ from displayed component sums; no adjustment is made. State is embedded in the table title and reference year 2012 in the publication subtitle, with no separate cells.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "victims_by_weapon",
+      "range": "A5:F16",
+      "values_range": "B7:F16",
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "B5:F5"
+        },
+        {
+          "name": "weapon_type",
+          "direction": "W",
+          "cells": "A7:A16"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:11:08Z",
+    "tool_version": "0.2.0",
+    "records": 50,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T141001Z-cfdaf7538a5e",
+    "started_at": "2026-11-01T14:10:06Z",
+    "workbook": "cfdaf7538a5e3deb60f2f0a4e98b057f48f84eca73418c17f21e0402744889a2--4510d006_2012.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19772-3566-75c9-9a0b-919feec8b3fd",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "726612c615282dcc06aab8a8e0f8470b6e5119b23ec6a772d18b9595db954a3d",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cfdaf7538a5e3deb60f2f0a4e98b057f48f84eca73418c17f21e0402744889a2--4510d006_2012.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2012\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | dd2e25d70f527b0b0a53654d1778a6de8862a314ab3b71accfe280ebaa350806 | missing |\n| \"Table_1\" | 992df6513dfd783679ab3dffe88654db390da95f560279ade24ff24ab5d7fac1 | missing |\n| \"Table_2\" | 41904762a5008343e3515c2a4892dcc3edbc0be27d6d699bf580015fa6ea567e | missing |\n| \"Table_3\" | 954b12285806b112da006ca287e06f89cfcaca4c57a4751fd9434579985b957f | missing |\n| \"Table_4\" | 8bd9ae2cbf2ec921cccc4edb223ea9e04b04e1ecadc2a7d33cbd2dcfe08f4cf6 | missing |\n| \"Table_5\" | bc5028544e318f25b36a5cc1a355cda01fab1b864150b8e02b5d19d04c2e2cbd | missing |\n| \"Table_6\" | e37f7528d7d2b8a7e892e56405f3f7a628750c80bc9dc6992ad5f3713ce1cb6b | missing |\n| \"Table_7\" | c8afcbfc00596d92b23462ff1685cae23d72d641f3bd3079d64004fcc0e9f099 | missing |\n| \"Table_8\" | a99e8e5aa55cf0747a4e2c4d09f20e0eda2772afab3ea24c0e79f36faf311f30 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T141001Z-cfdaf7538a5e.jsonl"
+  }
+}

@@ -4,7 +4,8 @@
 # population or measure, value statuses, and unrecognised value text.
 integration_report <- function(observations, series, sources) {
   obs <- dplyr::mutate(observations, publication_id = sources$publication_id[match(sheet_sha256, sources$sheet_sha256)])
-  conflicts <- dplyr::summarise(dplyr::group_by(obs, publication_id, release_id, series_id, period), records = dplyr::n(),
+  key <- paste(obs$release_id, obs$series_id, obs$period)  # only one published more than once can conflict
+  conflicts <- dplyr::summarise(dplyr::group_by(obs[key %in% key[duplicated(key)], ], publication_id, release_id, series_id, period), records = dplyr::n(),
     texts = dplyr::n_distinct(published_text), numbers = dplyr::n_distinct(published_text[value_status == "published"]), .groups = "drop")
   conflicts <- dplyr::filter(conflicts, texts > 1)
   list(

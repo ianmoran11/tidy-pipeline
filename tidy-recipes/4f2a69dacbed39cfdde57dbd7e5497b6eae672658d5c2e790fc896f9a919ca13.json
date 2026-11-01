@@ -1,0 +1,1160 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4f2a69dacbed39cfdde57dbd7e5497b6eae672658d5c2e790fc896f9a919ca13",
+  "sheet": "Table_8",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "10c3a7dbb996067e003f17c61fa7f338c4a7186a9c5829c6171f417bbbde8733",
+  "agent_notes": "All homicide, robbery and unlawful-entry subtotals retained. C:E are finalised outcomes including their subtotal; B is not finalised, F overall total. Source discrepancies between sums and totals left unchanged.",
+  "new_dimensions": [
+    {
+      "name": "police_investigation_outcome_group",
+      "description": "Broad finalisation status grouping police investigation outcomes, including the overall total.",
+      "example_labels": [
+        "Finalised",
+        "Investigation not finalised",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "outcome_9_B",
+      "range": "B9:B12",
+      "values_range": "B9:B12",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A8"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A9:A12"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_9_C",
+      "range": "C9:E12",
+      "values_range": "C9:E12",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A8"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A9:A12"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_9_F",
+      "range": "F9:F12",
+      "values_range": "F9:F12",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A8"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A9:A12"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_13_B",
+      "range": "B13:B14",
+      "values_range": "B13:B14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A13:A14"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_13_C",
+      "range": "C13:E14",
+      "values_range": "C13:E14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A13:A14"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_13_F",
+      "range": "F13:F14",
+      "values_range": "F13:F14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A13:A14"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_16_B",
+      "range": "B16:B18",
+      "values_range": "B16:B18",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A15"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A16:A18"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_16_C",
+      "range": "C16:E18",
+      "values_range": "C16:E18",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A15"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A16:A18"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_16_F",
+      "range": "F16:F18",
+      "values_range": "F16:F18",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A15"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A16:A18"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_19_B",
+      "range": "B19:B19",
+      "values_range": "B19:B19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A19:A19"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_19_C",
+      "range": "C19:E19",
+      "values_range": "C19:E19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A19:A19"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_19_F",
+      "range": "F19:F19",
+      "values_range": "F19:F19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A19:A19"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_21_B",
+      "range": "B21:B23",
+      "values_range": "B21:B23",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A20"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A21:A23"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_21_C",
+      "range": "C21:E23",
+      "values_range": "C21:E23",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A20"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A21:A23"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_21_F",
+      "range": "F21:F23",
+      "values_range": "F21:F23",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A20"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A21:A23"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_24_B",
+      "range": "B24:B25",
+      "values_range": "B24:B25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_24_C",
+      "range": "C24:E25",
+      "values_range": "C24:E25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_24_F",
+      "range": "F24:F25",
+      "values_range": "F24:F25",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_28_B",
+      "range": "B28:B31",
+      "values_range": "B28:B31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A27"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A28:A31"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_28_C",
+      "range": "C28:E31",
+      "values_range": "C28:E31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A27"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A28:A31"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_28_F",
+      "range": "F28:F31",
+      "values_range": "F28:F31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A27"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A28:A31"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_32_B",
+      "range": "B32:B33",
+      "values_range": "B32:B33",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A32:A33"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_32_C",
+      "range": "C32:E33",
+      "values_range": "C32:E33",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A32:A33"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_32_F",
+      "range": "F32:F33",
+      "values_range": "F32:F33",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A32:A33"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_35_B",
+      "range": "B35:B37",
+      "values_range": "B35:B37",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A34"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A35:A37"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_35_C",
+      "range": "C35:E37",
+      "values_range": "C35:E37",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A34"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A35:A37"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_35_F",
+      "range": "F35:F37",
+      "values_range": "F35:F37",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A34"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A35:A37"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_38_B",
+      "range": "B38:B38",
+      "values_range": "B38:B38",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A38:A38"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_38_C",
+      "range": "C38:E38",
+      "values_range": "C38:E38",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A38:A38"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_38_F",
+      "range": "F38:F38",
+      "values_range": "F38:F38",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A38:A38"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_40_B",
+      "range": "B40:B42",
+      "values_range": "B40:B42",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A39"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A40:A42"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_40_C",
+      "range": "C40:E42",
+      "values_range": "C40:E42",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A39"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A40:A42"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_40_F",
+      "range": "F40:F42",
+      "values_range": "F40:F42",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "victim_offence_group",
+          "cells": "A39"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A40:A42"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_43_B",
+      "range": "B43:B44",
+      "values_range": "B43:B44",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A43:A44"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "B6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_43_C",
+      "range": "C43:E44",
+      "values_range": "C43:E44",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A43:A44"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "C6:E6"
+        }
+      ]
+    },
+    {
+      "name": "outcome_43_F",
+      "range": "F43:F44",
+      "values_range": "F43:F44",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A26"
+        },
+        {
+          "name": "police_investigation_outcome_group",
+          "cells": "F6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "victim_offence",
+          "direction": "W",
+          "cells": "A43:A44"
+        },
+        {
+          "name": "police_investigation_outcome",
+          "direction": "N",
+          "cells": "F6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:03:10Z",
+    "tool_version": "0.2.0",
+    "records": 150,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T140046Z-f41a85c07f50",
+    "started_at": "2026-11-01T14:00:48Z",
+    "workbook": "f41a85c07f50a79aa9aa098fb490415c7d01a33b68b1d4cfa02d06864a76d7a9--45100do001_2009.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19769-b234-745d-9b01-bcb2eb21ae3c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "c1b1af797bba27b09e8b7c2c4dfcb4e14207cff2ab0979b419338083255ae625",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f41a85c07f50a79aa9aa098fb490415c7d01a33b68b1d4cfa02d06864a76d7a9--45100do001_2009.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2009\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | b89343cd916857884515a4e8708cce14d984634d3b0aeeeff19d212cc3b4b01e | missing |\n| \"Table_1\" | d6fd2e58ccd1bd70e28296e8065811059a42a33d0483fd8c32bd47aa14db7739 | missing |\n| \"Table_2\" | 00891f1e6d23f8049c3b0e409a7501adeccf1c22f60e081933bb51eef78bf34e | missing |\n| \"Table_3\" | eafef652117d61a8fce343f71eac319719acbabc7589cfe0a3b2a68dbd357eb1 | missing |\n| \"Table_4\" | e6c7da6e5b4bf1e23d72c4609d7fb9945ac8449c3d5794cc66ac30bcfc243647 | missing |\n| \"Table_5\" | 1fea49c0c9a928e7017aeeab3107396556180e8c629b9d8e660681e342c13ada | missing |\n| \"Table_6\" | 2167686be54df45420f3ac91c75a16a2dfeb0bf785087d7f78e0ac7acad49bf6 | missing |\n| \"Table_7\" | d1f0bb8bb29ac2cf831b28143a15f88006a1645f3f9daa413d061b9e5af50171 | missing |\n| \"Table_8\" | 4f2a69dacbed39cfdde57dbd7e5497b6eae672658d5c2e790fc896f9a919ca13 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T140046Z-f41a85c07f50.jsonl"
+  }
+}

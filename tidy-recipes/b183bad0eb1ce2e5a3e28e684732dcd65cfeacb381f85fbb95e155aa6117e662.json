@@ -1,0 +1,210 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b183bad0eb1ce2e5a3e28e684732dcd65cfeacb381f85fbb95e155aa6117e662",
+  "sheet": "03 04 Fin Year",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Homicide and related offences (row 8) and Unlawful entry with intent (row 18) are parent totals; their component rows in column B are retained alongside all totals in one offence dimension. Values are victim counts for 2003-2004, stated only in the table title; no separate period or measure cells are published.",
+  "new_dimensions": [
+    {
+      "name": "recorded_offence",
+      "description": "Offence classification of the recorded crime victim, rather than an offender's principal offence.",
+      "example_labels": [
+        "Homicide and related offences",
+        "Murder",
+        "Unlawful entry with intent",
+        "Other "
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "A25:A26"
+    }
+  ],
+  "tables": [
+    {
+      "name": "homicide_total",
+      "range": "A6:K8",
+      "values_range": "C8:K8",
+      "headers": [
+        {
+          "name": "recorded_offence",
+          "caption": "Offence category",
+          "direction": "W",
+          "cells": "A8"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C6:K6"
+        }
+      ]
+    },
+    {
+      "name": "homicide_components",
+      "range": "B9:K12",
+      "values_range": "C9:K12",
+      "headers": [
+        {
+          "name": "recorded_offence",
+          "caption": "Offence category",
+          "direction": "W",
+          "cells": "B9:B12"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C6:K6"
+        }
+      ]
+    },
+    {
+      "name": "other_offences_and_entry_total",
+      "range": "A14:K18",
+      "values_range": "C14:K16,C18:K18",
+      "headers": [
+        {
+          "name": "recorded_offence",
+          "caption": "Offence category",
+          "direction": "W",
+          "cells": "A14:A16,A18"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C6:K6"
+        }
+      ]
+    },
+    {
+      "name": "entry_components",
+      "range": "B19:K20",
+      "values_range": "C19:K20",
+      "headers": [
+        {
+          "name": "recorded_offence",
+          "caption": "Offence category",
+          "direction": "W",
+          "cells": "B19:B20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C6:K6"
+        }
+      ]
+    },
+    {
+      "name": "theft",
+      "range": "A22:K23",
+      "values_range": "C22:K23",
+      "headers": [
+        {
+          "name": "recorded_offence",
+          "caption": "Offence category",
+          "direction": "W",
+          "cells": "A22:A23"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C6:K6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:16:41Z",
+    "tool_version": "0.2.0",
+    "records": 117,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T121557Z-b59279c7f920",
+    "started_at": "2026-11-01T12:15:58Z",
+    "workbook": "b59279c7f920e72f4f012b261bb18518475461d9c6f29730cf7142581657a340--45100_victims-by-financial-year.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19709-b79d-71fe-8bac-17f0c5d0a6af",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "79c25e23631276cfac909dc43a2696d8c10ca47a72d8fee0ece79b40fb70c996",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b59279c7f920e72f4f012b261bb18518475461d9c6f29730cf7142581657a340--45100_victims-by-financial-year.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2004\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"03 04 Fin Year\" | b183bad0eb1ce2e5a3e28e684732dcd65cfeacb381f85fbb95e155aa6117e662 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T121557Z-b59279c7f920.jsonl"
+  }
+}

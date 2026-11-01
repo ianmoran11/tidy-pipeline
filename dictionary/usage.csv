@@ -1,62 +1,137 @@
 name,level,classification,dictionary_name,recipes,publications
-principal_offence,header,dictionary,principal_offence,1116,criminal-courts-australia | federal-defendants-australia | recorded-crime-offenders
-measure,header,dictionary,measure,1089,aihw-child-protection-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-period,header,dictionary,period,921,criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-sex,header,dictionary,sex,773,criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders
-state,header,dictionary,state,749,aihw-child-protection-australia | aihw-youth-justice-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-age_group,header,dictionary,age_group,739,criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders
-method_of_finalisation,header,dictionary,method_of_finalisation,599,criminal-courts-australia | federal-defendants-australia
-principal_sentence,header,dictionary,principal_sentence,588,criminal-courts-australia | federal-defendants-australia
-indigenous_status,header,dictionary,indigenous_status,345,criminal-courts-australia | prisoners-australia | recorded-crime-offenders
-most_serious_offence,header,dictionary,most_serious_offence,315,prisoners-australia
-sentence_length,header,dictionary,sentence_length,244,criminal-courts-australia | prisoners-australia
-unit,header,dictionary,unit,227,criminal-courts-australia | employee-earnings-hours-australia | pc-report-on-government-services-justice | prisoners-australia
-case_duration,header,dictionary,case_duration,194,criminal-courts-australia | federal-defendants-australia
-court_level,header,dictionary,court_level,175,criminal-courts-australia | federal-defendants-australia | prisoners-australia
-population,header,dictionary,population,120,federal-defendants-australia | prisoners-australia | recorded-crime-offenders
-times_proceeded_against,header,dictionary,times_proceeded_against,88,recorded-crime-offenders
+measure,header,dictionary,measure,3291,aihw-child-protection-australia | crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+period,header,dictionary,period,2485,crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+unit,header,dictionary,unit,2280,crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
+principal_offence,header,dictionary,principal_offence,2073,criminal-courts-australia | federal-defendants-australia | recorded-crime-offenders
+state,header,dictionary,state,1961,aihw-child-protection-australia | aihw-youth-justice-australia | crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+age_group,header,dictionary,age_group,1959,crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+sex,header,dictionary,sex,1874,crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+population,header,dictionary,population,1140,crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+principal_sentence,header,dictionary,principal_sentence,1124,criminal-courts-australia | federal-defendants-australia | prisoners-australia
+method_of_finalisation,header,dictionary,method_of_finalisation,1101,criminal-courts-australia | federal-defendants-australia
+incident_location,header,dictionary,incident_location,709,crime-victimisation-australia | recorded-crime-victims
+police_reporting_status,header,dictionary,police_reporting_status,666,crime-victimisation-australia
+indigenous_status,header,dictionary,indigenous_status,641,criminal-courts-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+offender_relationship,header,dictionary,offender_relationship,566,crime-victimisation-australia | recorded-crime-victims
+victim_offence,header,dictionary,victim_offence,512,recorded-crime-victims
+crime_type,header,dictionary,crime_type,417,crime-victimisation-australia
+number_of_incidents,header,dictionary,number_of_incidents,384,crime-victimisation-australia
+reason_not_reported_to_police,header,dictionary,reason_not_reported_to_police,384,crime-victimisation-australia
+sentence_length,header,dictionary,sentence_length,374,criminal-courts-australia | prisoners-australia
+most_serious_offence,header,dictionary,most_serious_offence,371,prisoners-australia
+weapon_use,header,dictionary,weapon_use,360,crime-victimisation-australia | recorded-crime-victims
+case_duration,header,dictionary,case_duration,323,criminal-courts-australia | federal-defendants-australia
+court_level,header,dictionary,court_level,248,criminal-courts-australia | federal-defendants-australia | prisoners-australia
+stolen_property_type,header,dictionary,stolen_property_type,235,crime-victimisation-australia
+country_of_birth,header,dictionary,country_of_birth,222,crime-victimisation-australia | prisoners-australia
+offender_sex,header,dictionary,offender_sex,201,crime-victimisation-australia
+capital_city_area,header,dictionary,capital_city_area,183,crime-victimisation-australia
+victimisation_status,header,dictionary,victimisation_status,173,crime-victimisation-australia
+times_proceeded_against,header,dictionary,times_proceeded_against,171,recorded-crime-offenders
+marital_status,header,dictionary,marital_status,158,crime-victimisation-australia
+non_school_qualification,header,dictionary,non_school_qualification,155,crime-victimisation-australia
+labour_force_status,header,dictionary,labour_force_status,149,crime-victimisation-australia
+weapon_type,header,dictionary,weapon_type,147,recorded-crime-victims
+substance_contribution,header,dictionary,substance_contribution,142,crime-victimisation-australia
+offender_cohabitation,header,dictionary,offender_cohabitation,122,crime-victimisation-australia
+property_theft_status,header,dictionary,property_theft_status,121,crime-victimisation-australia
+police_investigation_outcome,header,dictionary,police_investigation_outcome,116,recorded-crime-victims
+estimate_type,header,dictionary,estimate_type,102,crime-victimisation-australia
+household_income_quintile,header,dictionary,household_income_quintile,100,crime-victimisation-australia
+property_damage_status,header,dictionary,property_damage_status,88,crime-victimisation-australia
+physical_injury,header,dictionary,physical_injury,73,crime-victimisation-australia
+time_to_report,header,dictionary,time_to_report,73,recorded-crime-victims
+damaged_property_type,header,dictionary,damaged_property_type,72,crime-victimisation-australia
 method_of_setting_pay,header,dictionary,method_of_setting_pay,58,employee-earnings-hours-australia
+offender_confrontation,header,dictionary,offender_confrontation,54,crime-victimisation-australia
+offender_other_action,header,dictionary,offender_other_action,52,crime-victimisation-australia
+method_of_proceeding,header,dictionary,method_of_proceeding,51,recorded-crime-offenders
 occupation,header,dictionary,occupation,43,employee-earnings-hours-australia
+socioeconomic_area,header,dictionary,socioeconomic_area,42,crime-victimisation-australia
+principal_sentence_group,header,dictionary,principal_sentence_group,34,criminal-courts-australia | federal-defendants-australia
 rate_of_pay,header,dictionary,rate_of_pay,34,employee-earnings-hours-australia
 industry,header,dictionary,industry,29,employee-earnings-hours-australia
-principal_sentence_group,header,dictionary,principal_sentence_group,29,criminal-courts-australia | federal-defendants-australia
 sector,header,dictionary,sector,25,employee-earnings-hours-australia
 employee_type,header,dictionary,employee_type,24,employee-earnings-hours-australia
-method_of_proceeding,header,dictionary,method_of_proceeding,21,recorded-crime-offenders
+disability_status,header,dictionary,disability_status,16,crime-victimisation-australia
 employer_size,header,dictionary,employer_size,16,employee-earnings-hours-australia
-sentence_basis,header,dictionary,sentence_basis,8,prisoners-australia
-service,header,dictionary,service,2,pc-report-on-government-services-justice
+sentence_basis,header,dictionary,sentence_basis,10,prisoners-australia
+service,header,dictionary,service,10,crime-victimisation-australia | pc-report-on-government-services-justice
+justice_institution,header,dictionary,justice_institution,4,crime-victimisation-australia
+medical_treatment,header,dictionary,medical_treatment,3,crime-victimisation-australia
+offender_relationship_group,header,dictionary,offender_relationship_group,2,crime-victimisation-australia
 time_on_order,header,dictionary,time_on_order,1,prisoners-australia
-legal_status,header,declared new,,108,prisoners-australia
-prior_imprisonment_status,header,declared new,,83,prisoners-australia
-country_of_birth,header,declared new,,57,prisoners-australia
+legal_status,header,declared new,,120,prisoners-australia
+prior_imprisonment_status,header,declared new,,87,prisoners-australia
+attempted_break_in_evidence,header,declared new,,60,crime-victimisation-australia
+federal_offence_group,header,declared new,,60,federal-defendants-australia
+personal_income_source,header,declared new,,52,crime-victimisation-australia
+principal_federal_offence_group,header,declared new,,42,federal-defendants-australia
+household_victimisation_status,header,declared new,,40,crime-victimisation-australia
 Indigenous status,header,alias,indigenous_status,39,aihw-child-protection-australia | aihw-youth-justice-australia | recorded-crime-offenders
-principal_federal_offence_group,header,declared new,,39,federal-defendants-australia
 year,header,alias,period,38,aihw-child-protection-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | recorded-crime-offenders
 Year,header,alias,period,35,aihw-child-protection-australia | aihw-youth-justice-australia | recorded-crime-offenders
+offender_confrontation_status,header,declared new,,34,crime-victimisation-australia
+justice_system_institution,header,declared new,,28,crime-victimisation-australia
+time_on_remand,header,declared new,,28,prisoners-australia
+prison_location,header,declared new,,25,prisoners-australia
+security_classification,header,declared new,,25,prisoners-australia
 Sex,header,alias,sex,23,aihw-child-protection-australia | aihw-youth-justice-australia | criminal-courts-australia
 Age group (years),header,alias,age_group,22,aihw-child-protection-australia | recorded-crime-offenders
+social_disorder_issue,header,declared new,,22,crime-victimisation-australia
 weekly_total_cash_earnings_band,header,declared new,,22,employee-earnings-hours-australia
-prison_location,header,declared new,,19,prisoners-australia
-security_classification,header,declared new,,19,prisoners-australia
-time_on_remand,header,declared new,,19,prisoners-australia
+agreement_response,header,declared new,,20,crime-victimisation-australia
+justice_contact_status,header,declared new,,20,crime-victimisation-australia
+justice_contact_type,header,declared new,,20,crime-victimisation-australia
+justice_information_source,header,declared new,,20,crime-victimisation-australia
+justice_perception_statement,header,declared new,,20,crime-victimisation-australia
+offence_classification_version,header,declared new,,19,criminal-courts-australia
+fine_amount,header,declared new,,18,criminal-courts-australia
 parole_order_length,header,declared new,,18,prisoners-australia
 age,header,alias,age_group,16,aihw-youth-justice-australia | employee-earnings-hours-australia | federal-defendants-australia
 employment_status,header,declared new,,16,employee-earnings-hours-australia
+federal_offence,header,declared new,,16,federal-defendants-australia | prisoners-australia
+household_crime_type,header,declared new,,16,crime-victimisation-australia
+medical_treatment_status,header,declared new,,16,crime-victimisation-australia
+perpetrator_sex,header,declared new,,16,crime-victimisation-australia
+prior_adult_imprisonment,header,declared new,,16,prisoners-australia
+social_disorder_opinion_source,header,declared new,,15,crime-victimisation-australia
 earnings_distribution_statistic,header,declared new,,14,employee-earnings-hours-australia
-federal_offence,header,declared new,,12,federal-defendants-australia | prisoners-australia
+perpetrator_relationship,header,declared new,,14,crime-victimisation-australia
+police_non_reporting_reason,header,declared new,,14,crime-victimisation-australia
+police_offender_proceeding_status,header,declared new,,14,recorded-crime-victims
+threatened_assault_channel,header,declared new,,12,crime-victimisation-australia
+federal_offence_status,header,declared new,,11,criminal-courts-australia
+offence_location,header,declared new,,10,recorded-crime-victims
+offender_additional_action_status,header,declared new,,10,crime-victimisation-australia
+reason_not_reporting_to_police,header,declared new,,10,crime-victimisation-australia
+age_basis,header,declared new,,9,recorded-crime-victims
+custody_facility_type,header,declared new,,9,prisoners-australia
 Principal offence,header,alias,principal_offence,8,criminal-courts-australia | recorded-crime-offenders
 category,header,avoid,category,8,criminal-courts-australia
-federal_offence_status,header,declared new,,8,criminal-courts-australia
+dwelling_type,header,declared new,,8,crime-victimisation-australia
+incident_count_estimate,header,declared new,,8,crime-victimisation-australia
+offender_other_action_status,header,declared new,,8,crime-victimisation-australia
+perpetrator_cohabitation,header,declared new,,8,crime-victimisation-australia
+rate_standardisation,header,declared new,,8,prisoners-australia
+victim_incident_count_measure,header,declared new,,8,crime-victimisation-australia
 weekly_cash_earnings_band,header,declared new,,8,employee-earnings-hours-australia
-custody_facility_type,header,declared new,,7,prisoners-australia
-rate_standardisation,header,declared new,,7,prisoners-australia
-prior_adult_imprisonment,header,declared new,,6,prisoners-australia
+home_security_upgrade_reason,header,declared new,,6,crime-victimisation-australia
+non_face_to_face_threat_type,header,declared new,,6,crime-victimisation-australia
+recorded_offence,header,declared new,,6,recorded-crime-victims
 Remoteness area,header,alias,remoteness_area,5,aihw-child-protection-australia | aihw-youth-justice-australia
-fine_amount,header,declared new,,5,criminal-courts-australia
+fine_value_band,header,declared new,,5,criminal-courts-australia
+victim_status,header,declared new,,5,crime-victimisation-australia
 Indigenous status ,header,alias,indigenous_status,4,aihw-child-protection-australia
 Primary type of abuse or neglect,header,alias,abuse_type,4,aihw-child-protection-australia
-federal_offence_group,header,declared new,,4,federal-defendants-australia
+home_security_feature,header,declared new,,4,crime-victimisation-australia
+home_security_level,header,declared new,,4,crime-victimisation-australia
+incident_count,header,declared new,,4,crime-victimisation-australia
+non_reporting_reason,header,declared new,,4,crime-victimisation-australia
+police_nonreporting_reason,header,declared new,,4,crime-victimisation-australia
+security_awareness_change,header,declared new,,4,crime-victimisation-australia
+sentence_length_label_continuation,header,declared new,,4,prisoners-australia
+threatened_assault_method,header,declared new,,4,crime-victimisation-australia
 Age (years),header,alias,age_group,3,recorded-crime-offenders
 Age group,header,alias,age_group,3,aihw-youth-justice-australia
 Child protection component,header,alias,child_protection_component,3,aihw-child-protection-australia
@@ -66,7 +141,6 @@ Principal sentence,header,alias,principal_sentence,3,criminal-courts-australia
 Selected principal federal offence (ANZSOC),header,alias,principal_offence,3,federal-defendants-australia
 Socioeconomic areas,header,alias,socioeconomic_area,3,aihw-youth-justice-australia
 State/territory,header,alias,state,3,aihw-child-protection-australia
-fine_value_band,header,declared new,,3,criminal-courts-australia
 times proceeded against by police,header,alias,times_proceeded_against,3,recorded-crime-offenders
 Age,header,alias,age_group,2,aihw-youth-justice-australia
 Method of setting pay,header,alias,method_of_setting_pay,2,employee-earnings-hours-australia
@@ -74,7 +148,14 @@ Occupation,header,alias,occupation,2,employee-earnings-hours-australia
 Supervision,header,avoid,supervision,2,aihw-youth-justice-australia
 Type of order,header,alias,order_type,2,aihw-child-protection-australia
 court level,header,alias,court_level,2,criminal-courts-australia
+federal_defendant_summary_item,header,declared new,,2,federal-defendants-australia
+federal_offence_type,header,declared new,,2,federal-defendants-australia
+household_composition,header,declared new,,2,crime-victimisation-australia
+method_of_initiation,header,declared new,,2,criminal-courts-australia
 offence,header,avoid,offence,2,criminal-courts-australia
+offender_victim_relationship,header,declared new,,2,recorded-crime-victims
+physical_injury_status,header,declared new,,2,crime-victimisation-australia
+relationship_to_victim,header,declared new,,2,recorded-crime-victims
 selected_fdv_offence,header,declared new,,2,criminal-courts-australia
 Age Group,header,alias,age_group,1,aihw-youth-justice-australia
 Client type,header,alias,client_type,1,aihw-child-protection-australia
@@ -108,29 +189,39 @@ Time in care,header,alias,time_in_care,1,aihw-child-protection-australia
 Time in continuous placement,header,alias,time_in_placement,1,aihw-child-protection-australia
 Type of action,header,alias,action_type,1,aihw-child-protection-australia
 Type of placement,header,alias,placement_type,1,aihw-child-protection-australia
+additional_offender_action,header,declared new,,1,crime-victimisation-australia
 age group,header,alias,age_group,1,aihw-child-protection-australia
+comparison_basis,header,declared new,,1,federal-defendants-australia
 disability status,header,alias,disability_status,1,aihw-child-protection-australia
 duration,header,avoid,duration,1,federal-defendants-australia
 employer size,header,alias,employer_size,1,employee-earnings-hours-australia
+fdv_flag_status,header,declared new,,1,recorded-crime-victims
+feeling_of_safety,header,declared new,,1,crime-victimisation-australia
 frequency,header,avoid,frequency,1,pc-report-on-government-services-justice
+initial_and_final_plea,header,declared new,,1,criminal-courts-australia
+initial_plea,header,declared new,,1,criminal-courts-australia
 living arrangements,header,alias,living_arrangement,1,aihw-child-protection-australia
 method of finalisation,header,alias,method_of_finalisation,1,federal-defendants-australia
 method of proceeding,header,alias,method_of_proceeding,1,recorded-crime-offenders
 most serious offence,header,alias,most_serious_offence,1,prisoners-australia
 most serious offence/charge,header,alias,most_serious_offence,1,prisoners-australia
 most_serious_offence_anzsoc_2011,header,declared new,,1,prisoners-australia
+perceived_neighbourhood_problem,header,declared new,,1,crime-victimisation-australia
 principal_offence_anzsoc_2011,header,declared new,,1,criminal-courts-australia
+prior_imprisonment,header,declared new,,1,prisoners-australia
 rate of pay,header,alias,rate_of_pay,1,employee-earnings-hours-australia
 sentence length or statistic,header,alias,sentence_length,1,prisoners-australia
+social_disorder_location,header,declared new,,1,crime-victimisation-australia
+social_disorder_magnitude,header,declared new,,1,crime-victimisation-australia
 time,header,avoid,duration,1,aihw-child-protection-australia
 type of employee,header,alias,employee_type,1,employee-earnings-hours-australia
-table_title,sheet meta_data,dictionary,table_title,2668,aihw-youth-justice-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-table_subtitle,sheet meta_data,dictionary,table_subtitle,2491,criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders
-release,sheet meta_data,dictionary,release,2137,criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders
-stub_heading,sheet meta_data,dictionary,stub_heading,2038,aihw-child-protection-australia | aihw-youth-justice-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-notes,sheet meta_data,dictionary,notes,676,aihw-child-protection-australia | aihw-youth-justice-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-sheet_description,sheet meta_data,dictionary,sheet_description,476,criminal-courts-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders
-annotations,sheet meta_data,dictionary,annotations,81,criminal-courts-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders
+table_title,sheet meta_data,dictionary,table_title,7480,aihw-youth-justice-australia | crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+table_subtitle,sheet meta_data,dictionary,table_subtitle,7294,crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+release,sheet meta_data,dictionary,release,6228,crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+stub_heading,sheet meta_data,dictionary,stub_heading,5314,aihw-child-protection-australia | aihw-youth-justice-australia | crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+notes,sheet meta_data,dictionary,notes,2077,aihw-child-protection-australia | aihw-youth-justice-australia | crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+sheet_description,sheet meta_data,dictionary,sheet_description,909,crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+annotations,sheet meta_data,dictionary,annotations,225,crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
 source,sheet meta_data,dictionary,source,14,aihw-youth-justice-australia | pc-report-on-government-services-justice
 table_number,sheet meta_data,dictionary,table_number,5,pc-report-on-government-services-justice
 errata,sheet meta_data,dictionary,errata,1,pc-report-on-government-services-justice
@@ -156,57 +247,99 @@ stub_heading_7,sheet meta_data,numbered,stub_heading,1,aihw-youth-justice-austra
 stub_heading_8,sheet meta_data,numbered,stub_heading,1,aihw-youth-justice-australia
 stub_heading_9,sheet meta_data,numbered,stub_heading,1,aihw-youth-justice-australia
 unpopulated_characteristics,sheet meta_data,alias,annotations,1,federal-defendants-australia
-measure,table meta_data,dictionary,measure,771,aihw-child-protection-australia | aihw-youth-justice-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-sex,table meta_data,dictionary,sex,460,aihw-child-protection-australia | criminal-courts-australia | employee-earnings-hours-australia | prisoners-australia | recorded-crime-offenders
-state,table meta_data,dictionary,state,436,criminal-courts-australia | prisoners-australia | recorded-crime-offenders
-period,table meta_data,dictionary,period,344,criminal-courts-australia | federal-defendants-australia | recorded-crime-offenders
-indigenous_status,table meta_data,dictionary,indigenous_status,280,criminal-courts-australia | prisoners-australia | recorded-crime-offenders
-principal_sentence_group,table meta_data,dictionary,principal_sentence_group,199,criminal-courts-australia | federal-defendants-australia
-court_level,table meta_data,dictionary,court_level,178,criminal-courts-australia | prisoners-australia
-estimate_type,table meta_data,dictionary,estimate_type,172,employee-earnings-hours-australia
-population,table meta_data,dictionary,population,131,aihw-child-protection-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders
-table_title,table meta_data,dictionary,table_title,116,aihw-child-protection-australia | aihw-youth-justice-australia | prisoners-australia
-method_of_finalisation_group,table meta_data,dictionary,method_of_finalisation_group,97,criminal-courts-australia | federal-defendants-australia
-sentence_basis,table meta_data,dictionary,sentence_basis,95,prisoners-australia
-method_of_proceeding,table meta_data,dictionary,method_of_proceeding,76,recorded-crime-offenders
-table_subtitle,table meta_data,dictionary,table_subtitle,39,criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia
-principal_offence_division,table meta_data,dictionary,principal_offence_division,27,criminal-courts-australia | federal-defendants-australia | recorded-crime-offenders
-principal_offence,table meta_data,dictionary,principal_offence,16,criminal-courts-australia | recorded-crime-offenders
-unit,table meta_data,dictionary,unit,13,prisoners-australia
-principal_sentence,table meta_data,dictionary,principal_sentence,12,criminal-courts-australia
-method_of_finalisation,table meta_data,dictionary,method_of_finalisation,8,criminal-courts-australia
+measure,table meta_data,dictionary,measure,2289,aihw-child-protection-australia | aihw-youth-justice-australia | crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+sex,table meta_data,dictionary,sex,1276,aihw-child-protection-australia | crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+estimate_type,table meta_data,dictionary,estimate_type,879,crime-victimisation-australia | employee-earnings-hours-australia
+state,table meta_data,dictionary,state,789,criminal-courts-australia | federal-defendants-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+period,table meta_data,dictionary,period,612,crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | recorded-crime-offenders | recorded-crime-victims
+crime_type,table meta_data,dictionary,crime_type,595,crime-victimisation-australia
+principal_sentence_group,table meta_data,dictionary,principal_sentence_group,491,criminal-courts-australia | federal-defendants-australia
+population,table meta_data,dictionary,population,389,aihw-child-protection-australia | crime-victimisation-australia | criminal-courts-australia | federal-defendants-australia | pc-report-on-government-services-justice | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+indigenous_status,table meta_data,dictionary,indigenous_status,362,criminal-courts-australia | prisoners-australia | recorded-crime-offenders | recorded-crime-victims
+court_level,table meta_data,dictionary,court_level,347,criminal-courts-australia | federal-defendants-australia | prisoners-australia
+method_of_finalisation_group,table meta_data,dictionary,method_of_finalisation_group,301,criminal-courts-australia | federal-defendants-australia
+victim_offence_group,table meta_data,dictionary,victim_offence_group,221,recorded-crime-victims
+victim_offence,table meta_data,dictionary,victim_offence,177,recorded-crime-victims
+offender_relationship_group,table meta_data,dictionary,offender_relationship_group,164,crime-victimisation-australia | recorded-crime-victims
+table_subtitle,table meta_data,dictionary,table_subtitle,147,crime-victimisation-australia | criminal-courts-australia | employee-earnings-hours-australia | federal-defendants-australia | prisoners-australia
+principal_offence_division,table meta_data,dictionary,principal_offence_division,128,criminal-courts-australia | federal-defendants-australia | recorded-crime-offenders
+table_title,table meta_data,dictionary,table_title,117,aihw-child-protection-australia | aihw-youth-justice-australia | federal-defendants-australia | prisoners-australia
+crime_scope,table meta_data,dictionary,crime_scope,98,crime-victimisation-australia
+sentence_basis,table meta_data,dictionary,sentence_basis,98,prisoners-australia
+method_of_proceeding,table meta_data,dictionary,method_of_proceeding,88,recorded-crime-offenders
+unit,table meta_data,dictionary,unit,78,crime-victimisation-australia | criminal-courts-australia | prisoners-australia
+incident_location_group,table meta_data,dictionary,incident_location_group,69,crime-victimisation-australia | recorded-crime-victims
+principal_offence,table meta_data,dictionary,principal_offence,60,criminal-courts-australia | recorded-crime-offenders
+method_of_finalisation,table meta_data,dictionary,method_of_finalisation,59,criminal-courts-australia | federal-defendants-australia
+number_of_incidents,table meta_data,dictionary,number_of_incidents,56,crime-victimisation-australia
+weapon_use,table meta_data,dictionary,weapon_use,32,recorded-crime-victims
+notes,table meta_data,dictionary,notes,27,aihw-youth-justice-australia | crime-victimisation-australia | prisoners-australia
+most_serious_offence,table meta_data,dictionary,most_serious_offence,24,prisoners-australia
+principal_sentence,table meta_data,dictionary,principal_sentence,23,criminal-courts-australia
+incident_location,table meta_data,dictionary,incident_location,14,crime-victimisation-australia
+police_investigation_outcome,table meta_data,dictionary,police_investigation_outcome,14,recorded-crime-victims
+substance_contribution,table meta_data,dictionary,substance_contribution,14,crime-victimisation-australia
+age_group,table meta_data,dictionary,age_group,12,criminal-courts-australia | recorded-crime-victims
+service,table meta_data,dictionary,service,12,crime-victimisation-australia
+physical_injury,table meta_data,dictionary,physical_injury,6,crime-victimisation-australia
+country_of_birth,table meta_data,dictionary,country_of_birth,5,prisoners-australia
 case_duration,table meta_data,dictionary,case_duration,4,criminal-courts-australia
-most_serious_offence,table meta_data,dictionary,most_serious_offence,1,prisoners-australia
-notes,table meta_data,dictionary,notes,1,aihw-youth-justice-australia
+justice_institution,table meta_data,dictionary,justice_institution,4,crime-victimisation-australia
+sentence_length,table meta_data,dictionary,sentence_length,4,prisoners-australia
+indicator,table meta_data,dictionary,indicator,3,federal-defendants-australia
 source,table meta_data,dictionary,source,1,aihw-youth-justice-australia
+offender_relationship_subgroup,table meta_data,declared new,,126,recorded-crime-victims
+most_serious_offence_division,table meta_data,declared new,,46,prisoners-australia
+sentence_length_group,table meta_data,declared new,,44,prisoners-australia
+incident_scope,table meta_data,declared new,,43,crime-victimisation-australia
+age_reference,table meta_data,declared new,,42,recorded-crime-victims
+crime_type_group,table meta_data,declared new,,41,crime-victimisation-australia
+justice_system_institution,table meta_data,declared new,,24,crime-victimisation-australia
+police_investigation_outcome_group,table meta_data,declared new,,23,recorded-crime-victims
 section,table meta_data,avoid,section,21,pc-report-on-government-services-justice
+offender_known_status,table meta_data,declared new,,20,recorded-crime-victims
+legal_status,table meta_data,declared new,,19,prisoners-australia
 group,table meta_data,avoid,group,17,pc-report-on-government-services-justice
+offender_rate_basis,table meta_data,declared new,,16,recorded-crime-offenders
 year,table meta_data,alias,period,16,federal-defendants-australia | pc-report-on-government-services-justice
-change_measure,table meta_data,declared new,,14,prisoners-australia
-most_serious_offence_division,table meta_data,declared new,,14,prisoners-australia
-offender_rate_basis,table meta_data,declared new,,14,recorded-crime-offenders
-legal_status,table meta_data,declared new,,12,prisoners-australia
-sentence_length_group,table meta_data,declared new,,12,prisoners-australia
+change_measure,table meta_data,declared new,,15,prisoners-australia
+age_reference_event,table meta_data,declared new,,13,recorded-crime-victims
 characteristic,table meta_data,avoid,characteristic,11,criminal-courts-australia | federal-defendants-australia
 subgroup,table meta_data,avoid,group,11,pc-report-on-government-services-justice
 measure_transformation,table meta_data,declared new,,9,criminal-courts-australia
 component,table meta_data,avoid,component,7,aihw-child-protection-australia | pc-report-on-government-services-justice
+prison_type,table meta_data,declared new,,7,prisoners-australia
 statistic,table meta_data,avoid,statistic,7,employee-earnings-hours-australia
 age_group_band,table meta_data,declared new,,6,recorded-crime-offenders
+defendant_rate_type,table meta_data,declared new,,6,criminal-courts-australia
+home_security_upgrade_status,table meta_data,declared new,,6,crime-victimisation-australia
 outcome group,table meta_data,alias,method_of_finalisation_group,6,criminal-courts-australia
+crime_domain,table meta_data,declared new,,4,crime-victimisation-australia
 custody_facility_type,table meta_data,declared new,,4,prisoners-australia
-defendant_rate_type,table meta_data,declared new,,3,criminal-courts-australia
+dwelling_type,table meta_data,declared new,,4,crime-victimisation-australia
+incident_location_subgroup,table meta_data,declared new,,4,recorded-crime-victims
+social_disorder_magnitude,table meta_data,declared new,,4,crime-victimisation-australia
 fdv_identification_basis,table meta_data,declared new,,3,recorded-crime-offenders
-prison_type,table meta_data,declared new,,3,prisoners-australia
+federal_offence_division,table meta_data,declared new,,3,federal-defendants-australia
+recorded_offence_division,table meta_data,declared new,,3,recorded-crime-victims
 defendant_rate_basis,table meta_data,declared new,,2,criminal-courts-australia
+method_of_initiation_group,table meta_data,declared new,,2,criminal-courts-australia
 outcome,table meta_data,avoid,outcome,2,criminal-courts-australia | federal-defendants-australia
 outcome_group,table meta_data,alias,method_of_finalisation_group,2,criminal-courts-australia
+principal_sentence_subgroup,table meta_data,declared new,,2,criminal-courts-australia
+relationship_to_victim_group,table meta_data,declared new,,2,recorded-crime-victims
 sentence_group,table meta_data,alias,principal_sentence_group,2,criminal-courts-australia
 Principal offence,table meta_data,alias,principal_offence,1,criminal-courts-australia
 finalisation_group,table meta_data,alias,method_of_finalisation_group,1,criminal-courts-australia
+initial_plea,table meta_data,declared new,,1,criminal-courts-australia
 method of proceeding,table meta_data,alias,method_of_proceeding,1,recorded-crime-offenders
 offence_division,table meta_data,alias,principal_offence_division,1,federal-defendants-australia
+offence_location_group,table meta_data,declared new,,1,recorded-crime-victims
+offence_location_subgroup,table meta_data,declared new,,1,recorded-crime-victims
 order outcome,table meta_data,not in dictionary,,1,aihw-child-protection-australia
+plea_change_status,table meta_data,declared new,,1,criminal-courts-australia
 reunification status,table meta_data,alias,reunification_status,1,aihw-child-protection-australia
+safety_context,table meta_data,declared new,,1,crime-victimisation-australia
 subcomponent,table meta_data,avoid,component,1,pc-report-on-government-services-justice
 supervision history,table meta_data,alias,supervision_history,1,aihw-youth-justice-australia
+weapon_use_status,table meta_data,declared new,,1,recorded-crime-victims

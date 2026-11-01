@@ -10,7 +10,7 @@ cat("\n== periods without a reference date\n"); print(as.data.frame(g$undated_pe
 cat("\n== derived dimensions (records)\n"); print(as.data.frame(g$derived %>% group_by(dimension) %>% summarise(records = sum(n), publications = n_distinct(publication_id)) %>% arrange(desc(records))), row.names = FALSE)
 
 # before/after examples
-files <- targets::tar_read(recipe_files); sha <- sub("\\.json$", "", basename(files))
+files <- targets::tar_read(recipe_sheets)$recipe_path; sha <- sub("\\.json$", "", basename(files))
 show <- function(pred, label) {
   for (i in seq_along(h)) for (k in seq_along(h[[i]]$tables)) {
     recs_h <- h[[i]]$tables[[k]]$tidy_table_list

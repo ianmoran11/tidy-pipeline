@@ -82,8 +82,8 @@ levels). Do this together with I27 (implicit totals).
 
 ## Medium
 
-### I7. 365 `needs_review` recipes are a validator false alarm
-364 contents and 1 notes sheets (143 of them from the new ABS releases) are flagged because they contain numbers, which are
+### I7. 779 `needs_review` recipes are a validator false alarm
+557 contents and 222 notes sheets (522 of them from the victims publications) are flagged
 table numbers or a concordance. The rule "non-data sheets must have no numeric cells"
 is too strict.
 **Next:** make it a warning for `contents`/`notes`, or allow small integers in a
@@ -110,8 +110,11 @@ cell and can't be told apart.
 failure), and add a `split` or normalisation entry for this sheet's row 38.
 
 ### I10. Dictionary proposals are waiting for review
-`dictionary/proposed.csv`: 33 declared names and 3 unmapped names (`Households`,
-`Supervision periods`, `order outcome`). Likely merges:
+`dictionary/proposed.csv` (regenerated 2026-11-02): 113 proposals, 65 of them from the
+victims publications. Some are variants now covered by aliases. The 34 victims names
+added overnight are marked "for owner review" in `dimensions.csv` (I34). Earlier ones:
+33 declared names and 3 unmapped names (`Households`, `Supervision periods`, `order
+outcome`). Likely merges:
 - `rate_standardisation`, `defendant_rate_basis`, `defendant_rate_type`,
   `offender_rate_basis` (crude vs age-standardised);
 - `weekly_total_cash_earnings_band` and `weekly_cash_earnings_band`;
@@ -209,7 +212,8 @@ large files or use Git LFS, and add a `.gitignore` for `*.sqlite3*`, `~$*`,
 
 ### I17. Stale files
 - `run_recipe.R` (project root): early exploratory code; one part reads a
-  `" copy.json"` recipe.
+  `" copy.json"` recipe. Since 2026-11-01 it no longer runs: it calls the old
+  `one_enhead()` signature.
 - `source-spreadsheets-xlsx/R/`: an empty folder.
 - The Excel lock file, if Excel is no longer open.
 
@@ -293,6 +297,66 @@ Left to review:
 - **ACT location labels:** "ACT in ACT", "ACT in NSW" (572 labels) are kept as published
   (I11).
 
+### I33. Further speed-ups need fewer, larger branches
+After tuning, rebuild times are set by worker time per branch (about 0.5 s with
+loading and saving) and by the whole-table targets that reread every sheet. The largest
+remaining gain would come from **mapping over workbooks instead of sheets**: 763
+branches per stage instead of 5,209. Each stage function would still run per sheet,
+via `lapply` inside the target. Estimated:
+- full rebuild about 10 min;
+- spec edits about 3–4 min;
+- one recipe edit would rerun its workbook (about 7 sheets).
+
+That's a change to `_targets.R` and the per-sheet checks' wiring.
+
+Smaller:
+- the harmonisation report (`harmonisation_gaps`, about 1.5 min on every change) now
+  largely repeats what `sheet_checks` and `integration_gaps` report. Dropping it would
+  lower the floor of every incremental run;
+- assembling per sheet in its own branch would make `assemble()` incremental, at the
+  cost of 5,209 more branches.
+
+### I34. Victims publications: leftovers and overnight judgement calls
+All 3,831 sheets of the two ABS victims publications (39 releases) have recipes and are
+in the integrated dataset: 1,361,638 values (2026-11-02).
+- Every series has a population and a measure, except 9 Recorded Crime – Victims series
+  from sheets without a title.
+- Republished values match the latest release: Crime Victimisation 98.2%; Recorded
+  Crime – Victims 88.8% (96.0% within 5%, median ratio 1.00 in every release, so
+  revisions rather than mislabelling).
+
+Judgement calls made overnight, for the owner to confirm (each is a rule in
+`qa/seeds/seed_victims_specs.R` or a spec entry):
+- **Survey populations.** Victims of personal crimes are persons aged 15 and over (18
+  and over for sexual assault); victims of household crimes are households; "persons"
+  without an age means 15 and over.
+- **The crime from the title** becomes `crime_type` (CV) or `victim_offence` (RCV).
+  Family and domestic violence becomes `scope`.
+- **`estimate_type`.** Agents often put a column heading or the whole title in it.
+  RSE-like labels became "Relative standard error", everything else "Estimate". Most
+  estimates have no `estimate_type` at all, so the same estimate can sit in two series
+  (empty vs "Estimate"), like I27's implicit totals.
+- **Upper-case labels** in victims dimensions were mapped to sentence case. The
+  mapping is global, so labels in other publications merged too; labels that split
+  rules are keyed on were excluded.
+- **Quality flags** (`value_flag`) from asterisks and markers (decision 29).
+- **Dictionary:** 34 names added, marked for owner review; variant names mapped by
+  normalisation.
+
+Left to review:
+- **Crime Victimisation, about 1,350 keys inside single sheets:** two cells with the same
+  labels, e.g. Table 30a B86 vs C86 (2017–18). A heading is missing from the recipe;
+  needs agent reruns of those sheets.
+- **Crime Victimisation RSE tables "b" and "d" (e.g. 6b vs 6d, 2010–11):** they differ
+  only by table letter. Probably RSE of estimates vs RSE of proportions; check the
+  contents sheets, then add `title_flags`.
+- **Recorded Crime – Victims, about 1,350 keys:** mostly tables that differ by a
+  breakdown named only in the title.
+- **Population rows from the tables** ("All persons", "Victims experiencing one or
+  multiple incidents") stay as published: about 1.7% of victims records.
+- **`dictionary/proposed.csv`:** 65 victims proposals, including variants now
+  covered by aliases.
+
 ### I25. Early AIHW recipes have no title, so `identify()` has nothing to read
 110 early AIHW sheets have no `table_title` in their recipe: 76 child protection and
 34 Youth Justice. The pilot agents never recorded the title cell. This causes the AIHW
@@ -309,13 +373,21 @@ real. "Number vs symbol" is mostly harmless (a mean-age row crossing a rate pane
 | Publication | Two different numbers | Number vs symbol |
 |---|---|---|
 | child protection | 2,621 | 3 |
+| Crime Victimisation | 2,246 | 1 |
 | Youth Justice | 1,709 | 75 |
-| Prisoners | 160 | 76 |
-| Courts | 782 | 0 |
-| Recorded Crime | 185 | 7,375 |
-| Federal Defendants | 107 | 1 |
+| Recorded Crime – Victims | 1,356 | 0 |
+| Courts | 799 | 0 |
+| Recorded Crime – Offenders | 455 | 7,375 |
+| Prisoners | 204 | 76 |
+| Federal Defendants | 108 | 0 |
 | RoGS | 13 | 5 |
 | EEH | 0 | 0 |
+
+The victims seed (2026-11-02) merged label spellings in all publications ("SELECTED
+OFFENDERS" vs "Selected offenders"). This raised Recorded Crime – Offenders from 185 to
+455 and Prisoners from 160 to 204. The new keys are the same quantity published in two
+tables with slightly different numbers (22.1 vs 22.2), which previously looked distinct
+only because of the spelling.
 
 AIHW is I25. For the rest, `Rscript orchestrator/qa/integration_conflicts.R
 <publication_id>` shows the tables involved. For example, Courts "Summary
@@ -347,8 +419,8 @@ Each is a JSON entry that's easy to change:
   (`measures/README.md`), not stated anywhere by the ABS.
 
 ### I29. Integrated CSVs are large
-`observations.csv` is 558 MB (2,628,052 rows) and `series.csv` 163 MB (582,585 rows,
-mostly empty columns): 708 MB in total after the new ABS releases.
+`observations.csv` is 847 MB (3,989,690 rows) and `series.csv` 249 MB (721,701 rows ×
+195 columns, mostly empty): 1.1 GB in total after the victims publications.
 **Next:** if size matters, gzip them (readr reads `.csv.gz` directly) or move `series`
 to a long format.
 
@@ -379,4 +451,10 @@ to a long format.
 | R22 | Older releases' untidy labels (`'  SA   '`, `'NSW(a)  '`, `'2018–19(b) '`) | A `clean` section in the normalisation spec (whitespace, trailing footnote markers, leading revision `r`), also applied to the value maps' keys; `normalise()` is 32 lines. Existing data: 48 labels in 2 sheets changed; values untouched |
 | R23 | 2008–09 Courts cubes 2–4 name their court level only in the cube code (4,052 indistinguishable keys) | Cube rules in the measure spec, verified by value matching (99%, 96%, 96%) |
 | R24 | A recipe gave one heading ("Aboriginal and Torres Strait Islander (%)") as both Indigenous status and measure, so the measure split contradicted it and stopped the build | `split` entry for that Indigenous status label. Listed all contradictions first by running `harmonise()` over every branch |
+| R25 | Excel's macro prompt blocked automated conversion (it ignores the automation settings) | Macro workbooks detected first; converted with Excel set to disable macros without notification (`EXCEL_MACROS_DISABLED=1`); Excel's settings recorded and restored |
+| R26 | Old ABS `download_url` links answering "Attachment Not Found" | `get_source_data.R` also tries `source_url`, keeping the first whose bytes match the pin |
+| R27 | High-RSE asterisks added by number formats were dropped from published values (about 10,000 survey estimates presented as reliable) | `published_value()` keeps quoted asterisks; `markers` in the value spec set `value_flag` |
+| R28 | The measure spec's subject pattern was case-insensitive in its table-letter suffix, so "Table 6PERSONS" lost its "P" | `(?-i:[a-z])?` in `subject_pattern`. 16 sheets changed; the Federal Defendants "ummary…" workaround key is no longer needed |
+| R29 | Recorded Crime – Victims values couldn't be told apart (12,230 keys): a "Queeensland" title, "–2007 revised" periods, age basis only in titles, FDV tables | Title rules, `age_basis` flags, FDV as scope: down to 1,356 |
+| R30 | A tool-call timeout killed a background rebuild (process-group kill) | Pitfall in README; long jobs launched detached in their own call |
 | R16 | Found while checking R15: "Total prisoners" mapped to "Prisoners" even in Federal Prisoners tables, and the subject "FEDERAL OFFENCES" mapped to "Federal prisoners and parolees" for tables that are one or the other | "Total prisoners" → "Total" (`replace_labels` gives each table's population); title rules for "offences for federal prisoners/parolees". Prisoners conflicts went from 177 to 144 |

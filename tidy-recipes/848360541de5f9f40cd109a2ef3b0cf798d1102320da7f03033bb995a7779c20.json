@@ -1,0 +1,282 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "848360541de5f9f40cd109a2ef3b0cf798d1102320da7f03033bb995a7779c20",
+  "sheet": "Table 27",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "a980463912acda9ebcbe1ab6c3b7627ad9a29e4c70e2c0923cfa7d8fe73dd93d",
+  "agent_notes": "Published totals and indented parent/subtotal rows are retained alongside their components; categories overlap and must not be summed. Random adjustment can cause discrepancies. Single-year population, offence and period are specified by the table title; rate denominators and jurisdiction caveats remain in notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A75:A92"
+    }
+  ],
+  "tables": [
+    {
+      "name": "relationship_1",
+      "range": "A7:E17",
+      "values_range": "B8:E17",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        },
+        {
+          "name": "sex",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "caption": "Sex and relationship of offender to victim",
+          "direction": "W",
+          "cells": "A8:A17"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_2",
+      "range": "A18:E28",
+      "values_range": "B19:E28",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        },
+        {
+          "name": "sex",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "caption": "Sex and relationship of offender to victim",
+          "direction": "W",
+          "cells": "A19:A28"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_3",
+      "range": "A29:E39",
+      "values_range": "B30:E39",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        },
+        {
+          "name": "sex",
+          "cells": "A29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "caption": "Sex and relationship of offender to victim",
+          "direction": "W",
+          "cells": "A30:A39"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_4",
+      "range": "A41:E51",
+      "values_range": "B42:E51",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B40"
+        },
+        {
+          "name": "sex",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "caption": "Sex and relationship of offender to victim",
+          "direction": "W",
+          "cells": "A42:A51"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_5",
+      "range": "A52:E62",
+      "values_range": "B53:E62",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B40"
+        },
+        {
+          "name": "sex",
+          "cells": "A52"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "caption": "Sex and relationship of offender to victim",
+          "direction": "W",
+          "cells": "A53:A62"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_6",
+      "range": "A63:E73",
+      "values_range": "B64:E73",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B40"
+        },
+        {
+          "name": "sex",
+          "cells": "A63"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "caption": "Sex and relationship of offender to victim",
+          "direction": "W",
+          "cells": "A64:A73"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:28:03Z",
+    "tool_version": "0.2.0",
+    "records": 240,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142704Z-fa6720dbe3f5",
+    "started_at": "2026-11-01T14:27:05Z",
+    "workbook": "fa6720dbe3f5a958b61e9898c26171fa5c1336bbd35c0c784eabda51663d1cfd--4.-Aboriginal-and-Torres-Strait-Islander-victims-of-crime-selected-states-and-territories-Tables-23-to-28-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19781-c24a-746a-8cd3-2ca725f19c2e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8b016a4af6b12f3398d6d58ba9a852b7d0e930ae47374d58035304b8eb318bcc",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `fa6720dbe3f5a958b61e9898c26171fa5c1336bbd35c0c784eabda51663d1cfd--4.-Aboriginal-and-Torres-Strait-Islander-victims-of-crime-selected-states-and-territories-Tables-23-to-28-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2022\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d51e788488c622d7f4ef23d850633a97ee489d2a3a903b5a1753595f1ddf1cfd | missing |\n| \"Table 23\" | ef99af355f2d599412664848561058797d750ca0f05b65f7357f56cfa426fc6c | missing |\n| \"Table 24\" | 425eaeb88f94c7ac551481284788f2d2c882dcc73a33481e9c9f584a30b723a3 | missing |\n| \"Table 25\" | 9ccd41a3210e9be35056360c8db6a4effc6910285242cc03e7b314307b06ebc0 | missing |\n| \"Table 26\" | b40272628821113f9767c4f12a149d4ea9d13eadf97c5a6c01c9f30c19a1c598 | missing |\n| \"Table 27\" | 848360541de5f9f40cd109a2ef3b0cf798d1102320da7f03033bb995a7779c20 | missing |\n| \"Table 28\" | 76e582ab6e86347563d680874121f09d44984e9449d3f4bd3f639ffa079b7d13 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142704Z-fa6720dbe3f5.jsonl"
+  }
+}

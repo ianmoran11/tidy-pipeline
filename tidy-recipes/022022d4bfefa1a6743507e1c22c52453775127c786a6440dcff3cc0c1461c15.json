@@ -1,0 +1,196 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "022022d4bfefa1a6743507e1c22c52453775127c786a6440dcff3cc0c1461c15",
+  "sheet": "Table 21a",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "6936069e71b4dbfae9bccd0914953f07269b8a645948461a08fb1f945a1058f2",
+  "agent_notes": "Australia, 2011-12. Separate tables follow characteristic captions; published labels and totals retained. Non-reporting reasons are nested under incidents not reported to police, but proportions use the overall victim-household base. Property and evidence categories may be multiple response; total is the overall household total, not the sum of the last characteristic. HOUSEHOLDS estimates are thousands; PROPORTIONS are percentages. RSE sheets retain the original measure and separate percentage unit and RSE estimate type.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A11"
+    }
+  ],
+  "tables": [
+    {
+      "name": "police_reporting_status",
+      "range": "A9:C10",
+      "values_range": "B9:C10",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "caption": "Reported most recent incident to police",
+          "direction": "W",
+          "cells": "A9:A10"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "incident_location",
+      "range": "A12:C16",
+      "values_range": "B12:C16",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Location of incident",
+          "direction": "W",
+          "cells": "A12:A16"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A17:C17",
+      "values_range": "B17:C17",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A17:A17"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:55:17Z",
+    "tool_version": "0.2.0",
+    "records": 16,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T125336Z-c635cb89b738",
+    "started_at": "2026-11-01T12:53:41Z",
+    "workbook": "c635cb89b738181f3da5fd6287a903dd01b3432b780181bee785509bf450ae09--45300do004_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1972c-4514-746f-9b7b-36ea96a16ae1",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "975f6e0514a2dee42fd36aeb69ef174310f65320dbda06b46ae32c5a88c54b12",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c635cb89b738181f3da5fd6287a903dd01b3432b780181bee785509bf450ae09--45300do004_201112.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 13 of 13\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6bfd05347a00b7934820872073108187b1298de3aa1cc3d036d7c54ccb80814e | missing |\n| \"Table 19\" | 1ff01e4c0fe00de50e4de19f19805559e4852ea9c4c82ee0b7bc248f1d39c69f | missing |\n| \"Table 19a\" | c194b186a9a76f4fd0c92cffcc6d35196c4c1cb48b7e94bfddd23426fa394973 | missing |\n| \"Table 20\" | 1c3f1782feae20e185ea9e84d3b2a9b34891874acaa97bdc2bbf66c9fd0f70d7 | missing |\n| \"Table 20a\" | 3a016c8b0f87461123b49e42141fc73de73550f7a3e746b283725ba4c8d475dd | missing |\n| \"Table 21\" | 213d9d2ec0d4c58c63df74fad700bd47b97968ce0c4c958b294caee6ca00cc0e | missing |\n| \"Table 21a\" | 022022d4bfefa1a6743507e1c22c52453775127c786a6440dcff3cc0c1461c15 | missing |\n| \"Table 22\" | 35dd9f570ed1fb038f3ee4c95b6e920010394dce182e92678e09372cc8bf02c5 | missing |\n| \"Table 22a\" | a594794d7af042d588e1f63fc119fa24449a7d0a2b5de950880e0ab6e9b78833 | missing |\n| \"Table 23\" | b2ab3debbe58a16fbcd619baefc566ba92acc021ba79a3b57856965c160b4bf9 | missing |\n| \"Table 23a\" | cf039125fa4fedeb59ce8dbced661eb576b106ea2ea775ff4e8ddf66ef1a446d | missing |\n| \"Table 24\" | 73c64a5f66c4b0c9bbba6f2c180963b55a29a05b4f790ae90a106fb03de8aa05 | missing |\n| \"Table 24a\" | 8e0464969871eb02a3b7402e62e3993bb7fe2225c49aa1f03888ed5ed513ad6e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T125336Z-c635cb89b738.jsonl"
+  }
+}

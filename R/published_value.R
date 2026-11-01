@@ -60,7 +60,20 @@ number_text <- function(x) {
   out
 }
 
+# Asterisks that a number format adds as quoted literal text ("*"#,##0.0 shows 7.3 as
+# *7.3: ABS and RoGS mark estimates with a high relative standard error this way), from
+# the format section that applies (positive;negative;zero). NA where there are none.
+format_stars <- function(numfmt, x) {
+  sections <- strsplit(ifelse(is.na(numfmt), "", numfmt), ";", fixed = TRUE)
+  k <- ifelse(is.na(x) | x > 0, 1L, ifelse(x < 0, 2L, 3L))
+  section <- mapply(function(s, i) if (length(s) >= i) s[i] else if (length(s)) s[1] else "", sections, k)
+  literals <- vapply(regmatches(section, gregexpr('"[^"]*"', section)), paste, "", collapse = "")
+  stringr::str_extract(literals, "\\*+")
+}
+
 published_value <- function(x, numfmt) {
   d <- format_decimals(numfmt, x)
-  number_text(ifelse(is.na(d), x, excel_round(x, d)))
+  text <- number_text(ifelse(is.na(d), x, excel_round(x, d)))
+  stars <- format_stars(numfmt, x)
+  ifelse(is.na(stars) | is.na(text), text, paste0(stars, text))
 }

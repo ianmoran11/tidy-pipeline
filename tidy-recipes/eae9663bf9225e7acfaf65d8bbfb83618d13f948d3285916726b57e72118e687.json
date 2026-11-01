@@ -1,0 +1,572 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "eae9663bf9225e7acfaf65d8bbfb83618d13f948d3285916726b57e72118e687",
+  "sheet": "Table 6",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "86c01e71962436cd7a2ad2d9487ab7981734a1cd8631cfa63fb551190dea2331",
+  "agent_notes": "Published totals retained. Relationship parent rows (Intimate Partner, Other family member) and location parent rows (Community, Other) are subtotals over indented components, kept as published. Weapon-used totals are separate from weapon types. Blank unpublished cells excluded; no values imputed. Adapted characteristic-table structure from 2014 template; Persons is the Indigenous-status total. Assault has no Queensland data. Reference year 2015 is given in the table title.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A12,A18,A26,A31,A39,A43,A49,A57,A62"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_9",
+      "range": "A9:M10",
+      "values_range": "B9:D9,H9:M9,B10:D10,H10:M10",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_13",
+      "range": "A13:M16",
+      "values_range": "B13:D13,H13:M13,B14:D14,H14:M14,B15:D15,H15:M15,B16:D16,H16:M16",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A13,A14,A15,A16",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "offender_relationship_19",
+      "range": "A19:M24",
+      "values_range": "B19:D19,H19:M19,B20:D20,H20:M20,B21:D21,H21:M21,B22:D22,H22:M22,B23:D23,H23:M23,B24:D24,H24:M24",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A19,A20,A21,A22,A23,A24",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_27",
+      "range": "A27:M29",
+      "values_range": "B27:D27,H27:M27,B28:D28,H28:M28,B29:D29,H29:M29",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A27,A28,A29",
+          "caption": "Location"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_32",
+      "range": "A32:M32",
+      "values_range": "B32:D32,H32:M32",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A32",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "weapon_type_33",
+      "range": "A33:M34",
+      "values_range": "B33:D33,H33:M33,B34:D34,H34:M34",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_type",
+          "direction": "W",
+          "cells": "A33,A34",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_35",
+      "range": "A35:M35",
+      "values_range": "B35:D35,H35:M35",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A35",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "population_37",
+      "range": "A37:M37",
+      "values_range": "B37:D37,H37:M37",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A37"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "sex_40",
+      "range": "A40:M41",
+      "values_range": "B40:M40,B41:M41",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A40,A41",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_44",
+      "range": "A44:M47",
+      "values_range": "B44:M44,B45:M45,B46:M46,B47:M47",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A44,A45,A46,A47",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "offender_relationship_50",
+      "range": "A50:M55",
+      "values_range": "B50:M50,B51:M51,B52:M52,B53:M53,B54:M54,B55:M55",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A50,A51,A52,A53,A54,A55",
+          "caption": "Relationship of offender to victim"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_58",
+      "range": "A58:M60",
+      "values_range": "B58:M58,B59:M59,B60:M60",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A58,A59,A60",
+          "caption": "Location"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_63",
+      "range": "A63:M63",
+      "values_range": "B63:M63",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A63",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "weapon_type_64",
+      "range": "A64:M65",
+      "values_range": "B64:M64,B65:M65",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_type",
+          "direction": "W",
+          "cells": "A64,A65",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_67",
+      "range": "A67:M67",
+      "values_range": "B67:M67",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A67",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    },
+    {
+      "name": "population_68",
+      "range": "A68:M68",
+      "values_range": "B68:M68",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A68"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:17:03Z",
+    "tool_version": "0.2.0",
+    "records": 420,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T141405Z-a31a22b2415c",
+    "started_at": "2026-11-01T14:14:09Z",
+    "workbook": "a31a22b2415c9e7945b9f62a7af8f8c39e0c98ea944b6a635540c1580b8c53b7--experimental-data-victims-of-family-and-domestic-violence.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19775-ebfd-70cc-abaf-62c9d972f884",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "cec92842baa7c53e85d6edd129df5be648d6462e563c48b66f84777c554666a5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a31a22b2415c9e7945b9f62a7af8f8c39e0c98ea944b6a635540c1580b8c53b7--experimental-data-victims-of-family-and-domestic-violence.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2015\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | ed6631b56d27e4ee98b2539344f9c31d411beeec1f55440dc4bf74a60db15c0e | missing |\n| \"Table 1\" | 4a8582f093884e9dc4a508b5ad9bba13070a9bd3a5cf0b79b24f1d2dfe2ef0cb | missing |\n| \"Table 2\" | eba34b6d4b1abbab7d1a093329f48e122cbbf550f2ac5c1d83ce1694955f41db | missing |\n| \"Table 3\" | 68d7335323c1ee48b73f2229f790fd04c3f4477e055665cc60e70fb5ce3a0269 | missing |\n| \"Table 4\" | 637f9dc4be486ff557c4b51c5c5a0ab9e1b8e128833dec46a06a1a3544fb569e | missing |\n| \"Table 5\" | 2bb73853fc012eb6cdad5c6fba8d6ad9539253a78bb2d50c93ea39d2348a4e64 | missing |\n| \"Table 6\" | eae9663bf9225e7acfaf65d8bbfb83618d13f948d3285916726b57e72118e687 | missing |\n| \"Explanatory Notes\" | 5816549cf00d6a34dfc91cf38097437f8c249f57b794db46afe8de4c16d76284 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T141405Z-a31a22b2415c.jsonl"
+  }
+}

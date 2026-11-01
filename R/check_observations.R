@@ -24,15 +24,16 @@ check_observations <- function(observations, observations_typed) {
   releases_present <- function() sprintf("cell %s %s has no release_id", new$sheet_sha256[is.na(new$release_id)], new$address[is.na(new$release_id)])
   # Exactly one latest value per series and period
   one_latest_per_series_period <- function() {
-    n <- tapply(new$is_latest, key, sum)
-    sprintf("series and period %s has %d latest values", names(n)[n != 1], n[n != 1])
+    latest <- key[new$is_latest]
+    c(sprintf("series and period %s has more than one latest value", unique(latest[duplicated(latest)])),
+      sprintf("series and period %s has no latest value", setdiff(unique(key), latest)))
   }
   # n_releases is the number of distinct releases for its series and period
   release_counts_correct <- function() {
-    d <- dplyr::summarise(dplyr::group_by(new, series_id, period), actual = dplyr::n_distinct(release_id),
-                          claimed = min(n_releases), consistent = dplyr::n_distinct(n_releases) == 1, .groups = "drop")
-    bad <- d$actual != d$claimed | !d$consistent
-    sprintf("%s %s: n_releases %d, actually %d", d$series_id[bad], d$period[bad], d$claimed[bad], d$actual[bad])
+    group <- match(key, unique(key))
+    actual <- tabulate(group[!duplicated(paste(key, new$release_id))], nbins = max(group, 0))[group]
+    bad <- new$n_releases != actual; first <- bad & !duplicated(ifelse(bad, key, NA))
+    sprintf("series and period %s: n_releases %d, actually %d", key[first], new$n_releases[first], actual[first])
   }
   # The latest value is never flagged as revised; earlier values are flagged exactly when
   # they come from another release and their text differs from the latest
@@ -46,6 +47,7 @@ check_observations <- function(observations, observations_typed) {
   # Within one release, a series and period has at most one distinct number (known gaps: ISSUES.md I26)
   values_distinguishable <- function() {
     p <- new[new$value_status == "published", ]
+    k <- paste(p$release_id, p$series_id, p$period); p <- p[k %in% k[duplicated(k)], ]  # only these can differ
     d <- dplyr::filter(dplyr::count(dplyr::distinct(p, release_id, series_id, period, published_text), release_id, series_id, period), n > 1)
     sprintf("%s: series %s, %s has %d different numbers", d$release_id, d$series_id, d$period, d$n)
   }

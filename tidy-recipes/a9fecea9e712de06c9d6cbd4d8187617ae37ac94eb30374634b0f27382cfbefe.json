@@ -1,0 +1,564 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a9fecea9e712de06c9d6cbd4d8187617ae37ac94eb30374634b0f27382cfbefe",
+  "sheet": "Table 38",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "FDV population, offence and geographic/time context are as published in the table title. All totals retained separately. Indented component rows coexist with parent subtotals (offences, relationships, locations and reporting delays); do not sum all rows. Weapon-use totals are distinguished from weapon types. Labels and suppression symbols retained without alteration.",
+  "new_dimensions": [
+    {
+      "name": "age_reference",
+      "description": "Whether the victim's age groups refer to age at report or age at incident.",
+      "example_labels": [
+        "Age at report",
+        "Age at incident"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A11,A17,A25,A30,A37,A41,A47,A55,A60,A66,A77"
+    },
+    {
+      "name": "notes",
+      "cells": "A84,A85,A86,A87,A88,A89,A90,A91,A92,A93,A94,A95,A96,A97,A98,A99,A100,A101,A102"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_8",
+      "range": "A8:E9",
+      "values_range": "B8,C8,D8,E8,B9,C9,D9,E9",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A8,A9",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_12",
+      "range": "A12:E15",
+      "values_range": "B12,C12,D12,E12,B13,C13,D13,E13,B14,C14,D14,E14,B15,C15,D15,E15",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A11"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12,A13,A14,A15",
+          "caption": "Age at report"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "offender_relationship_18",
+      "range": "A18:E23",
+      "values_range": "B18,C18,D18,E18,B19,C19,D19,E19,B20,C20,D20,E20,B21,C21,D21,E21,B22,C22,D22,E22,B23,C23,D23,E23",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A18,A19,A20,A21,A22,A23",
+          "caption": "Relationship of offender to victim(d)"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_26",
+      "range": "A26:E28",
+      "values_range": "B26,C26,D26,E26,B27,C27,D27,E27,B28,C28,D28,E28",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A26,A27,A28",
+          "caption": "Location"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_31",
+      "range": "A31:E31",
+      "values_range": "B31,C31,D31,E31",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A31",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_type_32",
+      "range": "A32:E33",
+      "values_range": "B32,C32,D32,E32,B33,C33,D33,E33",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_type",
+          "direction": "W",
+          "cells": "A32,A33",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_34",
+      "range": "A34:E34",
+      "values_range": "B34,C34,D34,E34",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A34",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "measure_35",
+      "range": "A35:E35",
+      "values_range": "B35,C35,D35,E35",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A35"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "sex_38",
+      "range": "A38:E39",
+      "values_range": "B38,C38,D38,E38,B39,C39,D39,E39",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A38,A39",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_42",
+      "range": "A42:E45",
+      "values_range": "B42,C42,D42,E42,B43,C43,D43,E43,B44,C44,D44,E44,B45,C45,D45,E45",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A42,A43,A44,A45",
+          "caption": "Age at report"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "offender_relationship_48",
+      "range": "A48:E53",
+      "values_range": "B48,C48,D48,E48,B49,C49,D49,E49,B50,C50,D50,E50,B51,C51,D51,E51,B52,C52,D52,E52,B53,C53,D53,E53",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "direction": "W",
+          "cells": "A48,A49,A50,A51,A52,A53",
+          "caption": "Relationship of offender to victim(d)"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "incident_location_56",
+      "range": "A56:E58",
+      "values_range": "B56,C56,D56,E56,B57,C57,D57,E57,B58,C58,D58,E58",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A56,A57,A58",
+          "caption": "Location"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_61",
+      "range": "A61:E61",
+      "values_range": "B61,C61,D61,E61",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A61",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_type_62",
+      "range": "A62:E63",
+      "values_range": "B62,C62,D62,E62,B63,C63,D63,E63",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_type",
+          "direction": "W",
+          "cells": "A62,A63",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "weapon_use_64",
+      "range": "A64:E64",
+      "values_range": "B64,C64,D64,E64",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "weapon_use",
+          "direction": "W",
+          "cells": "A64",
+          "caption": "Use of weapon"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "time_to_report_67",
+      "range": "A67:E75",
+      "values_range": "B67,C67,D67,E67,B68,C68,D68,E68,B69,C69,D69,E69,B70,C70,D70,E70,B71,C71,D71,E71,B72,C72,D72,E72,B73,C73,D73,E73,B74,C74,D74,E74,B75,C75,D75,E75",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "time_to_report",
+          "direction": "W",
+          "cells": "A67,A68,A69,A70,A71,A72,A73,A74,A75",
+          "caption": "Time to report"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "age_group_78",
+      "range": "A78:E81",
+      "values_range": "B78,C78,D78,E78,B79,C79,D79,E79,B80,C80,D80,E80,B81,C81,D81,E81",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        },
+        {
+          "name": "age_reference",
+          "cells": "A77"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A78,A79,A80,A81",
+          "caption": "Age at incident"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    },
+    {
+      "name": "measure_82",
+      "range": "A82:E82",
+      "values_range": "B82,C82,D82,E82",
+      "meta_data": [
+        {
+          "name": "victim_offence",
+          "cells": "B36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A82"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5,C5,D5,E5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T14:25:59Z",
+    "tool_version": "0.2.0",
+    "records": 212,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142316Z-0952932e3858",
+    "started_at": "2026-11-01T14:23:17Z",
+    "workbook": "0952932e3858407655947faca32cc6d6f5aac6cb0c8bda0bee77475e79e2798e--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1977e-455c-7675-b61b-6f55b5f1f017",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "61b7e23ecfc5056562093828c4fa31d0eea477e94e7161415d1ac3aa229a14da",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0952932e3858407655947faca32cc6d6f5aac6cb0c8bda0bee77475e79e2798e--5.-Victims-of-family-and-domestic-violence-related-offences-Tables-29-to-38-.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2020\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 28a2aa25efa102e84c031e1e623ede1abb10f8ddf2cf5acc5694c276e7d9de1e | missing |\n| \"Table 29\" | 1bc213edcefdf1c2d602bb9cbbc4c97ac15ae05fbac2f0d39b31fab10a17f959 | missing |\n| \"Table 30\" | 9120f907ba9f9e4b5089b6e8e751f71f5ab03dfa48f604db369cd27e166fcfdd | missing |\n| \"Table 31\" | 25b438faecd13fad74a53bddaf29f2fa5868298c8661e10f829e0114a44236a5 | missing |\n| \"Table 32\" | a905c9ae9bacddbc3e2c1f4b7c16a9eca774829f15d7e357ac89ab99280e3704 | missing |\n| \"Table 33\" | 1729abb2a5ac5c4b5d1e5f87c5a654da86fa96df973e51916ae0872e019defd2 | missing |\n| \"Table 34\" | 5e6c960101e523713db3533e8e5d5ef2e087944723421041309f17e4924a308a | missing |\n| \"Table 35\" | c40cfaef4b13ea45b139342e5aadd24303052acc48eda0392d533aec780747f5 | missing |\n| \"Table 36\" | 335825021ca66bf3e09a5f65f357a60eb981c570ba42f9013fb93e7c74e1eb53 | missing |\n| \"Table 37\" | 99281799583ad0b0b4fcb6ff64e511b0d8e9eb85ae8618c8b9b667576144256e | missing |\n| \"Table 38\" | a9fecea9e712de06c9d6cbd4d8187617ae37ac94eb30374634b0f27382cfbefe | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142316Z-0952932e3858.jsonl"
+  }
+}

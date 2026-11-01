@@ -1,0 +1,418 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c8fb84eaef9a6ce02caf7539e7acf8c060514e079ee26739dbb9408f6a1dc85d",
+  "sheet": "Table 27",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "92ea8a3463e3952314ef2274c66bf34981e655e044e7e10128d807a1c887de9d",
+  "agent_notes": "Australia and Persons totals retained. Age thresholds overlap; employment and crime experience rows are not additive. Row labels are preserved verbatim and split by age_group, labour_force_status and crime_type; household total uses population. Counts are in thousands.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2,B5"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A38:A45"
+    }
+  ],
+  "tables": [
+    {
+      "name": "males_age_group",
+      "range": "A8:J10",
+      "values_range": "B9:J10",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A9:A10"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "males_labour_force_status",
+      "range": "A11:J12",
+      "values_range": "B11:J12",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A11:A12"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "males_crime_type",
+      "range": "A13:J14",
+      "values_range": "B13:J14",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A13:A14"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "females_age_group",
+      "range": "A15:J17",
+      "values_range": "B16:J17",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A16:A17"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "females_labour_force_status",
+      "range": "A18:J19",
+      "values_range": "B18:J19",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A18:A19"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "females_crime_type",
+      "range": "A20:J21",
+      "values_range": "B20:J21",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A20:A21"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "persons_age_group",
+      "range": "A22:J24",
+      "values_range": "B23:J24",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A23:A24"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "persons_labour_force_status",
+      "range": "A25:J26",
+      "values_range": "B25:J26",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A25:A26"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "persons_crime_type",
+      "range": "A27:J28",
+      "values_range": "B27:J28",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "B22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A27:A28"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "households_population",
+      "range": "A29:J30",
+      "values_range": "B30:J30",
+      "meta_data": [
+        {
+          "name": "table_subtitle",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A30:A30"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "households_crime_type",
+      "range": "A31:J36",
+      "values_range": "B31:J36",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A31:A36"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T13:17:50Z",
+    "tool_version": "0.2.0",
+    "records": 225,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T131624Z-f9f076f95f41",
+    "started_at": "2026-11-01T13:16:26Z",
+    "workbook": "f9f076f95f416f40cc183a7cb5e54f7d383241933bd81e88b2fdc80fccc2b227--populations-tables-27-to-27a-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19741-14de-7546-b868-a68233c23088",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "98b0d0deda34a83c5f50a73d0c6dc82e6b7c05ab3a10731e6336c0d940f08433",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f9f076f95f416f40cc183a7cb5e54f7d383241933bd81e88b2fdc80fccc2b227--populations-tables-27-to-27a-.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 3 of 3\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 617bd2056cf7b913d4f0ca8cee5b67a92deb275117151c6dfdc45288910461ba | missing |\n| \"Table 27\" | c8fb84eaef9a6ce02caf7539e7acf8c060514e079ee26739dbb9408f6a1dc85d | missing |\n| \"Table 27a\" | 9ced3c593de10f90dacaf4746aef6532acadd0907722a75fafc38bcce0d294e6 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T131624Z-f9f076f95f41.jsonl"
+  }
+}

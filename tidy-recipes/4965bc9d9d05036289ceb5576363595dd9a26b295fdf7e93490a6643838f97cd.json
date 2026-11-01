@@ -1,0 +1,102 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4965bc9d9d05036289ceb5576363595dd9a26b295fdf7e93490a6643838f97cd",
+  "sheet": "Contents ",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Contents and links to tables; numbers are table identifiers, not statistical observations.",
+  "agent_notes": "This is a contents sheet, not a statistical table. All six numeric cells B7:B12 are table identifiers 31–36. The numeric-cell check incorrectly flags these; retain contents classification for human review.",
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T14:21:36Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 6 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T142003Z-01edf198f01e",
+    "started_at": "2026-11-01T14:20:06Z",
+    "workbook": "01edf198f01e509041933eea727afd247de91438103bc0cec8d1f8538d2be7da--10.-Victims-of-FDV-related-sexual-assault-additional-data.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1977b-5cef-73fc-9912-4fb8b89f99fc",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "2ea1f0abc6e48fcadeeb497eb0537b687b56042a2ffa98cea9a1ce0bfa5f9069",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `01edf198f01e509041933eea727afd247de91438103bc0cec8d1f8538d2be7da--10.-Victims-of-FDV-related-sexual-assault-additional-data.xlsx`.\n\n- Publication: Recorded Crime — Victims (Australian Bureau of Statistics)\n- Release or year: 2019\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents \" | 4965bc9d9d05036289ceb5576363595dd9a26b295fdf7e93490a6643838f97cd | missing |\n| \"Table 31\" | b7f97542d19725a99e5fddb053ca4fb46c0bda29e405ba55657b6bfdceea5805 | missing |\n| \"Table 32\" | 5c2306fe8fb554bf5b6ccbd2911575d7df828e40f023b601f9ef2c702e067838 | missing |\n| \"Table 33\" | 27c2f7c15e5856aa1565a1fdfa9cf14229edd71c93881130009e4a12a78afce5 | missing |\n| \"Table 34 \" | ff1e62e2b19c1b7cd35c1d2dc75296439ee2967fac140f0c55fbbed4a2cc472d | missing |\n| \"Table 35\" | bebd7eecfe2dad7de4c051c894a8da1e27cb8f000ef8bf66e2ce57dceb82da6f | missing |\n| \"Table 36\" | c2b6405110216a0a3c5be2ec5876a1046bbd91c6bb1594485dbef32bc6eb5b34 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T142003Z-01edf198f01e.jsonl"
+  }
+}

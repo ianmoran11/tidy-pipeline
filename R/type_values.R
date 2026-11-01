@@ -3,19 +3,23 @@
 # legend can differ from its publication's), then its publication, then "default";
 # their spec entry gives the status and, where the symbol means a number (nil or
 # rounded to zero), the value. Empty cells get the blank status. Text that is
-# neither a number nor a known symbol is "unrecognised". See integration/README.md.
+# neither a number nor a known symbol is "unrecognised". A leading quality marker ("*7.3":
+# relative standard error 25-50%; "r10,822": revised) is removed first and recorded in
+# value_flag, from the spec's markers, applied in order (a later marker's flag wins). See integration/README.md.
 type_values <- function(observations, sources, value_spec) {
   spec <- value_spec
   symbols <- purrr::imap_dfr(spec$symbols, function(s, p) tibble::tibble(publication_id = p, text = names(s),
     status = purrr::map_chr(s, "status"), value = purrr::map_dbl(s, ~ as.numeric(.x[["value"]] %||% NA))))
   pub <- sources$publication_id[match(observations$sheet_sha256, sources$sheet_sha256)]
   file <- sources$xlsx_file[match(observations$sheet_sha256, sources$sheet_sha256)]
-  text <- stringr::str_squish(observations$published_text)
+  text <- stringr::str_squish(observations$published_text); flag <- rep(NA_character_, length(text))
+  for (mk in spec$markers) { hit <- grepl(mk[["pattern"]], text, perl = TRUE); flag[hit] <- mk[["flag"]]; text[hit] <- sub(mk[["pattern"]], "", text[hit], perl = TRUE) }
   number <- suppressWarnings(as.numeric(gsub(",", "", text)))
   key <- paste(symbols$publication_id, symbols$text)
   i <- dplyr::coalesce(match(paste(file, text), key), match(paste(pub, text), key), match(paste("default", text), key))
   observations$value <- dplyr::if_else(is.na(number), symbols$value[i], number)
   observations$value_status <- dplyr::case_when(is.na(text) | text == "" ~ spec$blank_status, !is.na(number) ~ spec$number_status,
                                                 !is.na(i) ~ symbols$status[i], TRUE ~ "unrecognised")
+  observations$value_flag <- flag
   observations
 }

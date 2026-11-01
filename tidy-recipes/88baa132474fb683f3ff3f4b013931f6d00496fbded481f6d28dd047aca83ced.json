@@ -1,0 +1,231 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "88baa132474fb683f3ff3f4b013931f6d00496fbded481f6d28dd047aca83ced",
+  "sheet": "Table_7",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Two reference periods retained, with total victim households in a separate block. Blank source value cells omitted (not zero). Count/percent measures span estimate/RSE pairs; estimate_type preserves full published captions. Geography appears only within the table title. Published units retained. Repeat-victimisation rows are partitioned by populated column span to avoid synthesizing blank records.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "repeat_victimisation_m",
+      "range": "A5:M8,A9:A22,B10:M10,B11:M11,B13:M13,B14:M14,B15:M15,B18:M18,B20:M20,B21:M21,B22:M22",
+      "values_range": "B10:M10,B11:M11,B13:M13,B14:M14,B15:M15,B18:M18,B20:M20,B21:M21,B22:M22",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A10:A15,A17:A22"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A9,A16"
+        },
+        {
+          "name": "number_of_incidents",
+          "caption": "Households experiencing one or multiple incidents",
+          "direction": "NNW",
+          "cells": "B6,F6,J6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,D7,F7,H7,J7,L7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8:M8"
+        }
+      ]
+    },
+    {
+      "name": "repeat_victimisation_e",
+      "range": "B17:E17,B19:E19",
+      "values_range": "B17:E17,B19:E19",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A10:A15,A17:A22"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A9,A16"
+        },
+        {
+          "name": "number_of_incidents",
+          "caption": "Households experiencing one or multiple incidents",
+          "direction": "NNW",
+          "cells": "B6,F6,J6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,D7,F7,H7,J7,L7"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8:M8"
+        }
+      ]
+    },
+    {
+      "name": "total_victim_households",
+      "range": "N5:Q22",
+      "values_range": "N10:Q10,N11:Q11,N12:Q12,N13:Q13,N14:Q14,N15:Q15,N17:Q17,N18:Q18,N19:Q19,N20:Q20,N21:Q21,N22:Q22",
+      "meta_data": [
+        {
+          "name": "number_of_incidents",
+          "cells": "N5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "W",
+          "cells": "A10:A15,A17:A22"
+        },
+        {
+          "name": "period",
+          "direction": "WNW",
+          "cells": "A9,A16"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "N6,P6"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "N6:Q6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "N8:Q8"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:36:36Z",
+    "tool_version": "0.2.0",
+    "records": 164,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T123456Z-dbdc47e6bd80",
+    "started_at": "2026-11-01T12:34:58Z",
+    "workbook": "dbdc47e6bd800d9e4766c4b83e868116b89a94094ea249fd79afb80ee1645d8e--45300do013_200910.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1971b-1d82-703b-bef4-2309d1447fe2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6c445c62b6b5013f0928cf0310170b5788d3d0e5b31249d731493aff7cdbeee4",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `dbdc47e6bd800d9e4766c4b83e868116b89a94094ea249fd79afb80ee1645d8e--45300do013_200910.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 1d8a53de6441cb33f16dad466eaa780626b40f9b8b642abcc891d9910972099a | missing |\n| \"Table_1\" | c93b055217f9c0008a9db01f5446ecddf6404a15a5005609ff19664162c13d05 | missing |\n| \"Table_2\" | 7a8b3453b4d1ccc6c5c517e4965007b942a103aec496b6b114a896e1c921f1b7 | missing |\n| \"Table_3\" | 8e8e3a37f4bde18f0ae063b0b1a79874a7c43a2dea36a4cd86c4a09c3421c716 | missing |\n| \"Table_4\" | a4a587494baf18eb33af8ba984bbd0d0d51bf24ccbd0933676c9c8ebd6b4315e | missing |\n| \"Table_5\" | ee66f3e0b3a4952d778a802485ef7051e08031805d9bfc57963537b50777e4cd | missing |\n| \"Table_6\" | 571789b8bf554816ed894c54484c74b0ed498464c25323b7e94049c873589052 | missing |\n| \"Table_7\" | 88baa132474fb683f3ff3f4b013931f6d00496fbded481f6d28dd047aca83ced | missing |\n| \"Table_8\" | e2c8939916630397d02b22a9a2d49dcd9fb53e4e7e8875ef6146da7f7906f584 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T123456Z-dbdc47e6bd80.jsonl"
+  }
+}

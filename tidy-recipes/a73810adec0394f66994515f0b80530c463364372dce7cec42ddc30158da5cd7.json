@@ -1,0 +1,114 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a73810adec0394f66994515f0b80530c463364372dce7cec42ddc30158da5cd7",
+  "sheet": "Labour Force",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Labour Force data-item catalogue: variable definitions, coded response categories and eligible populations, not statistical observations.",
+  "template_from": "85579b43d81ddbce58f46d4ef4f624276e8de12cf5136116a903a11fce386d72",
+  "agent_notes": "Survey data-item documentation, not statistical estimates. Variable definitions, response codes, allowable ranges and eligible populations are retained as notes, producing no observation records.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2,A4"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,C7"
+    },
+    {
+      "name": "notes",
+      "cells": "B8,C8,B9,B10,B11,B13,C13,B14,B15,B16,B18,C18,B19,B20,B21,B22,B24,C24,B25,B26,B27,B28,B30,C30,B31,B32,B34,C34,B35,B36,B37,B38,B39,B40,B41,B42,B43,B44,B45,B46,B48,C48,B49,B50,B51,B52,B53,B54,B55,B56,B57,B58,B59,B60,B61,B62,B63,B64,B65,B66,B67,B68,B69,B70,B71,B72,B73,B74,B75,B76,B77,B78,B79,B80,B81,B82,B83,B84,B85,B86,B87,B88,B89,B90,B91,B92,B93,B94,B95,B96,B97,B98,B99,B100,B101,B102,B103,B104,B105,B106,B107,B108,B109,B110,B111,B112,B113,B114,B115,B116,B117,B118,B119,B120,B121,B122,B123,B124,B125,B126,B127,B128,B129,B130,B131,B132,B133,B134,B135,B136,B137,B138,B140,C140,B141,B142,B143,B144,B145,B146,B147,B149,C149,B150,B151,B152,B153,B154,B155,B156,B158,C158,B159,B160,B161,B162,B164,C164,B165,B166,B167,B168,B169,B170,B171,B172,B173,B174,B175,B176,B178,C178,B179,B180,B181,B182,B183,B184,B185,B186,B187,B188,B189,B190"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T13:04:28Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T130157Z-25f084713cb9",
+    "started_at": "2026-11-01T13:02:04Z",
+    "workbook": "25f084713cb98cdb1cc566031b46db0b1b139cf033772807c1adadebff9ff1a2--data-item-list.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19733-ee2e-7384-956d-95b0e086d354",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ab6208dd91ed2b90c85411f758e6b82cebcc580f50b9eac6222dcf09e084a33f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `25f084713cb98cdb1cc566031b46db0b1b139cf033772807c1adadebff9ff1a2--data-item-list.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2014-15\n- Sheets needing a recipe: 24 of 24\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 780cd09f021d8064a2aec82ed18e643fb0b0687de8413d18a8511a32aee793b0 | missing |\n| \"Demographics\" | cf25bbb03fa933d8e914dad36f36c7df4c70e64a0caaffb48ff51daead424ef8 | missing |\n| \"Geography\" | cf7e49af2ff97487abfa588263df2e0e7ed08721c872094dd65ad380f49d1705 | missing |\n| \"Education\" | def78c93885f55d7f916065de1c03613e9afc8f007c35033997868d5438fd6cc | missing |\n| \"Labour Force\" | a73810adec0394f66994515f0b80530c463364372dce7cec42ddc30158da5cd7 | missing |\n| \"Income\" | 4ed64a3a4a3b281a5ee96d1c1f16a35e80652c75f04f12e438e694e7ce2d0d2c | missing |\n| \"Total Assault\" | 09e3f96543c6cab33e19d097bcd3b24d6040af059a4f073fc9534337edb1eb91 | missing |\n| \"Physical Assault\" | 52954328a5e47965e61fde1a825f557bb6eddc69098f7757b0efb882c30dbe53 | missing |\n| \"Threatened Assault\" | d2332fe89cf6b569b986fd8a8c21ca30d08b4ecf2b8eb4524f52f82af04c8767 | missing |\n| \"Threatened Assault F2F\" | 26fabf952e462a16467ac2a2dfd7e506152ebf71becc1e8481cdab8df1fd56c3 | missing |\n| \"Threatened Assault Non F2F\" | c334f99cbf3191631d31ba00de228ea8dcae08ca0e6b6862d48f0ee304fb4cdd | missing |\n| \"Robbery\" | a0880ed03934ddb479413382edc307a2ac9b8f18fd6df73a96301852541291c9 | missing |\n| \"Sexual Assault\" | 6ebd850e87b5c5513b78505a309b10f87e1710de7addbb91901ab803dbf6ea4b | missing |\n| \"Personal Crime Summary\" | 7c96cdecb2b9b40ca6c3c509674827ea79f6038e8609a855f8c4026cc65423c9 | missing |\n| \"Break-ins\" | a4de5fb2d3cb46935eddbe3d98b28bad29d67cdc90116c1da018e2e2ed1a17ab | missing |\n| \"Attempted Break-ins\" | 66e25f166faa2eb86b6865cf065f046fc93c1c38ce53bd5d98444525aeeff8f0 | missing |\n| \"Motor Vehicle Theft\" | 72fdc11b55d85f9b6e281de3e74a761bce2532f4c4db174c4a2b26efe17baa0e | missing |\n| \"Theft from Motor Vehicle\" | 1e56952547344e113afb1e8a02d9b8be5d14cc0f75ba52420e6c7fb53abebd4c | missing |\n| \"Malicious Property Damage\" | 6bc8414bfaf48df017b5a07a11dd23570d7eb4357ed667420a3e3a9a57d5fe75 | missing |\n| \"Other Theft\" | fcb7ac0d79788ecfc1fcc438e32a4270c8c2287b0a259051607f800ce9df0d30 | missing |\n| \"Household Crime Summary\" | c0c086595f0eb738617077a16220e6fdcce5b0fd745300f7be4fdf97ce41a19b | missing |\n| \"Household Crime Incident Level\" | 4874b8456882f3b09f37891a4b89b5e0d0e45532c2c3da5c74230b37de9e2dd6 | missing |\n| \"Person Crime Incident Level\" | dbb2c9d6dcf8e71f1af7c8507b05a45e1e51c7990d6010c2d5890b41171398ed | missing |\n| \"Explanatory Notes\" | fdef597e487a50b596a3e6cc0a4d9c8fcd61b4095f7499992d4d0b70c3cb6065 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T130157Z-25f084713cb9.jsonl"
+  }
+}

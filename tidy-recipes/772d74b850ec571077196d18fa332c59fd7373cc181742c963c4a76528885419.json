@@ -1,0 +1,469 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "772d74b850ec571077196d18fa332c59fd7373cc181742c963c4a76528885419",
+  "sheet": "Table 25a",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "a3778f83249357d3b8c1aae4c98829f19ae1fe8c90607097e3907aa116fd958d",
+  "agent_notes": "Australia, 2011-12. Published totals retained. RSE sheets give relative standard errors in percent, not estimates. Indented overseas-born and employed breakdowns include their published subtotals.",
+  "new_dimensions": [
+    {
+      "name": "justice_system_institution",
+      "description": "Institution of the justice system to which contact or perceptions relate."
+    },
+    {
+      "name": "justice_contact_status",
+      "description": "Whether the respondent had contact with a justice institution."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A10,A13,A21,A24,A26,A30,A33,A42,A43,A49"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex",
+      "range": "A11:M12",
+      "values_range": "B11:M11,B12:M12",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A11,A12",
+          "caption": "Sex"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "age_group",
+      "range": "A14:M20",
+      "values_range": "B14:M14,B15:M15,B16:M16,B17:M17,B18:M18,B19:M19,B20:M20",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A14,A15,A16,A17,A18,A19,A20",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "marital_status",
+      "range": "A22:M23",
+      "values_range": "B22:M22,B23:M23",
+      "headers": [
+        {
+          "name": "marital_status",
+          "direction": "W",
+          "cells": "A22,A23",
+          "caption": "Marital status"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth",
+      "range": "A25:M29",
+      "values_range": "B25:M25,B27:M27,B28:M28,B29:M29",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A25,A27,A28,A29",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_area",
+      "range": "A31:M32",
+      "values_range": "B31:M31,B32:M32",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A31,A32",
+          "caption": "Area of usual residence"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification",
+      "range": "A34:M41",
+      "values_range": "B34:M34,B35:M35,B36:M36,B37:M37,B38:M38,B39:M39,B40:M40,B41:M41",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A34,A35,A36,A37,A38,A39,A40,A41",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status",
+      "range": "A44:M48",
+      "values_range": "B44:M44,B45:M45,B46:M46,B47:M47,B48:M48",
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A44,A45,A46,A47,A48",
+          "caption": "Labour force status"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile",
+      "range": "A50:M54",
+      "values_range": "B50:M50,B51:M51,B52:M52,B53:M53,B54:M54",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A50,A51,A52,A53,A54",
+          "caption": "Equivalised weekly household income"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A55:M55",
+      "values_range": "B55:M55",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A55"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8"
+        },
+        {
+          "name": "justice_system_institution",
+          "direction": "NNW",
+          "cells": "B6,D6,F6,H6,J6,L6"
+        },
+        {
+          "name": "justice_contact_status",
+          "direction": "N",
+          "cells": "B7:M7"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,H5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A9"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:55:42Z",
+    "tool_version": "0.2.0",
+    "records": 432,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T125427Z-c7906c1af469",
+    "started_at": "2026-11-01T12:54:28Z",
+    "workbook": "c7906c1af469a3127417e4d142e16cf5920dca5c6f781e995e8b8fd23eff0e2c--45300do005_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1972c-f528-700a-b9a8-c2e1f0cfc357",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "c35c0e0dc37f9c88120bb3679b2417067a105069cb32df529f579df1803130c3",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c7906c1af469a3127417e4d142e16cf5920dca5c6f781e995e8b8fd23eff0e2c--45300do005_201112.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | cb67e9ccd046e6f6b9ab1b0bc43e52e3f294b055f458e905b21666095809d5ee | missing |\n| \"Table 25\" | 4d20d9992cbe766db9e2af2a082f9064796598b67b738a553f3e985af7d4d828 | missing |\n| \"Table 25a\" | 772d74b850ec571077196d18fa332c59fd7373cc181742c963c4a76528885419 | missing |\n| \"Table 26\" | 9b72b4d3fcfb6c87070a0078ed76a90eab358d058acb30846e095d5f036c5b63 | missing |\n| \"Table 26a\" | a645a67072cf77e98eab628be002d9aa14ed3f428c97531e9ddc5aa022465b80 | missing |\n| \"Table 27\" | 374535bbac9eaf7bee95f45e22bca76a6f3551166b989d30550b1647f9f98d34 | missing |\n| \"Table 27a\" | 33ab27f1b66cc94f5c1790f5f49b6b2016577620c7f756df89f159b2c9008f98 | missing |\n| \"Table 28\" | 3e6d0ab4548d11c634e08c970dc009517582573e5eb4182fcd60973620a5629e | missing |\n| \"Table 28a\" | 0f95f5aa904283abc98dd9eaf09fa70195868fc55b4f321aff040903b987a5fe | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T125427Z-c7906c1af469.jsonl"
+  }
+}

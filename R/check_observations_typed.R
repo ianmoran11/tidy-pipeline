@@ -10,6 +10,7 @@
 check_observations_typed <- function(observations_typed, observations, value_spec) {
   spec <- value_spec; new <- observations_typed
   text <- stringr::str_squish(new$published_text)
+  for (mk in spec$markers) text <- sub(mk[["pattern"]], "", text, perl = TRUE)  # as type_values() reads it
   symbols <- purrr::map_dfr(spec$symbols, function(s) tibble::tibble(status = purrr::map_chr(s, "status"), value = purrr::map_dbl(s, ~ as.numeric(.x[["value"]] %||% NA))))
   where <- function(bad) { bad <- bad %in% TRUE; sprintf("%s %s: '%s' -> %s (%s)", new$sheet_sha256[bad], new$address[bad], text[bad], new$value[bad], new$value_status[bad]) }
 
@@ -43,9 +44,14 @@ check_observations_typed <- function(observations_typed, observations, value_spe
   }
   # Values are finite numbers or missing
   values_finite <- function() where(!is.na(new$value) & !is.finite(new$value))
+  # Every value flag is one the spec defines, and only numbers carry one
+  flags_allowed <- function() {
+    c(sprintf("value_flag '%s'", setdiff(unique(na.omit(new$value_flag)), vapply(spec$markers, `[[`, "", "flag"))),
+      where(!is.na(new$value_flag) & is.na(new$value)))
+  }
 
   severity <- c(rows_unchanged = "error", statuses_allowed = "error", none_unrecognised = "warning", published_values_parse = "error",
-                blanks_consistent = "error", symbol_values_from_spec = "error", values_finite = "error")
+                blanks_consistent = "error", symbol_values_from_spec = "error", values_finite = "error", flags_allowed = "error")
   results <- purrr::imap_dfr(severity, function(level, test) {
     failures <- tryCatch(get(test, mode = "function")(), error = function(e) sprintf("test could not run: %s", conditionMessage(e)))
     tibble::tibble(target = "observations_typed", sheet_sha256 = NA_character_, test = test, severity = level,

@@ -1,0 +1,138 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "24b4bb6dd706bf43c00ad0b85fefcca0d695a0a4012cba3c2dcffe0db655128f",
+  "sheet": "Table_23",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals and subtotals are retained. Indented categories and their total rows are not additive. Composite RSE headings identify relative standard errors, not estimates. Labels, units and spelling are preserved verbatim; period and crime population may be embedded in the table title. Problems can overlap; Total is retained and is not a sum of individual problems.",
+  "new_dimensions": [
+    {
+      "name": "perceived_neighbourhood_problem",
+      "description": "Perceived problems in the neighbourhood, including no problems and total."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "neighbourhood_problems",
+      "range": "B8:AK22",
+      "values_range": "B8:AK8,B9:AK9,B10:AK10,B11:AK11,B12:AK12,B13:AK13,B14:AK14,B15:AK15,B16:AK16,B17:AK17,B18:AK18,B19:AK19,B20:AK20,B21:AK21,B22:AK22",
+      "headers": [
+        {
+          "name": "perceived_neighbourhood_problem",
+          "direction": "W",
+          "cells": "A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5,AD5,AH5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:AK6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:AK7"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T12:30:48Z",
+    "tool_version": "0.2.0",
+    "records": 540,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T122708Z-260eb9c0522c",
+    "started_at": "2026-11-01T12:27:09Z",
+    "workbook": "260eb9c0522c2047131dd167fb85ba1893db553fd665423fa989e61c95fef1dc--45300do001_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19713-f63b-7779-a697-4b4c012e49f7",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "23adce21eac486a14bde9752e45312ded95765b1a27105d33a1d36f6e89bf129"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "69d947a52a03eb6ec79dea2f02d9dda2f6852a2e103e1b47a63e0ad52efaff81",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `260eb9c0522c2047131dd167fb85ba1893db553fd665423fa989e61c95fef1dc--45300do001_200809.xlsx`.\n\n- Publication: Crime Victimisation, Australia (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 25 of 25\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0ef0d92bef764868325288150e1aecd0df79c2e34d9f51845cdaef2e75e3ca6a | missing |\n| \"Table_1\" | 17fa982b9e3c527c9bb87fb834a62861bc2bcce2ed6bfefc34b974d958eb13b1 | missing |\n| \"Table_2\" | a9a990e55392ed52122b1232c11aee02bef6669d9f11435ddf7bfb1f32baa1b4 | missing |\n| \"Table_3\" | 3895ad9b5216efa9897d75e3fd5d6f51810028b44e8cc829d39c031213400f1c | missing |\n| \"Table_4\" | b9fec648948d65e7f5f126da57a155f3666b7b63755445d6a9d49611e8023b8c | missing |\n| \"Table_5\" | 5c30f91d0ec496f573cfbb72fccc89a503fc90ea2d4b4dee47180328f7d60d8d | missing |\n| \"Table_6\" | 0b698057226a05e6feba5246246dee4ebc565601230bbeade460718ff66a68df | missing |\n| \"Table_7\" | ae9667cf90a05db03e506ba076770de051f881133fef3ab511e2afe645b46889 | missing |\n| \"Table_8\" | 9d8cc42a6108b3668805b516bb164c5b8c040c7dc3793373994a4fe1dd97099d | missing |\n| \"Table_9\" | 66206db570ac496ffd6c295de22b4b7b0bd8aa967be103de4aa3bcde5d530769 | missing |\n| \"Table_10\" | c2450400804f1ee2cb90efd1ed70314b682de90a0b213790ee64957a7dbb2630 | missing |\n| \"Table_11\" | b0154f5f28ca0f3d1b76a6e5e89270987910cb573364254bedbd8566837c84b8 | missing |\n| \"Table_12\" | dace0bf1fefb9935b2e3fcc6bfddfa676ecbe93e702c38849b86585b50f0eab3 | missing |\n| \"Table_13\" | 80c6aebdc3365d8a49ecdefe7985ece6dadfab186942bcffb0d33cc1d2c51dd9 | missing |\n| \"Table_14\" | 935d1035085c797a6a0135d03b27e6fe3a8646f16693236f2dd818cdbe74f67b | missing |\n| \"Table_15\" | 5f0278cd4c59867c8dc905281758d5086dbf071ae2adb251b3b1353d82e6fe58 | missing |\n| \"Table_16\" | b77b92a1909f625deedd2d1b499e4f3d64218555f604dfd0d7593b8fbfd4f0ee | missing |\n| \"Table_17\" | 16758533462028c9aadc22d642de1c3b50421c69fff063d43968cf9bcc106bd8 | missing |\n| \"Table_18\" | 16026b64f2a982d6b3f54d0b374069f8e3ea3e6264948ce90b61d08b1f03fff7 | missing |\n| \"Table_19\" | 3eddf59eed396df5b310add922d91bc771d2eb5932ea8f0aed3969a1038c27f0 | missing |\n| \"Table_20\" | 75db1e6ce1bdc22141fb22a945da8474b42885114e2ef8d17f79c36804c93641 | missing |\n| \"Table_21\" | 048143ec03ac8067cce7e1eaa8d805165b2148dbe0b2f64782885335372763fe | missing |\n| \"Table_22\" | 7ccbd160539aa417f93e4eaf325c2cf7ba9d46fdeb715c02a18041cde0df9511 | missing |\n| \"Table_23\" | 24b4bb6dd706bf43c00ad0b85fefcca0d695a0a4012cba3c2dcffe0db655128f | missing |\n| \"Table_24\" | 01e01101f653926e00d94f72845d9606abd8556bba685ea2efac96cfc744fe45 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T122708Z-260eb9c0522c.jsonl"
+  }
+}

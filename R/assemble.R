@@ -12,13 +12,16 @@ assemble <- function(data_identified, source_metadata_df, integration_spec) {
   parts <- purrr::map(data_identified, function(s) {
     recs <- unlist(purrr::map(s$tables, "tidy_table_list"), recursive = FALSE)
     if (!length(recs)) return(NULL)
-    dims <- purrr::map(recs, function(r) { d <- unlist(r[setdiff(names(r), skip)]); d[order(names(d))] })
-    key <- paste0("publication_id=", s$source$publication_id, "|", vapply(dims, function(d) paste(names(d), d, sep = "=", collapse = "|"), ""))
-    field <- function(f) vapply(recs, function(r) as.character(r[[f]] %||% NA_character_)[1], "")
-    first <- which(!duplicated(key))
+    d <- as.data.frame(data.table::rbindlist(recs, fill = TRUE))  # one row per record, one column per field
+    dims <- sort(setdiff(names(d), skip))
+    # "name=value|..." over the record's own (non-missing) fields, in name order
+    key <- do.call(paste, c(lapply(dims, function(n) ifelse(is.na(d[[n]]), "", paste0(n, "=", d[[n]]))), sep = "\r"))
+    key <- paste0("publication_id=", s$source$publication_id, "|", gsub("\r+", "|", gsub("^\r+|\r+$", "", key)))
+    field <- function(f) as.character(d[[f]] %||% rep(NA_character_, nrow(d)))
+    first <- !duplicated(key)
     list(observations = tibble::tibble(series_key = key, period = field("period"), reference_date = field("reference_date"),
                                        published_text = field(".value"), sheet_sha256 = s$source$sheet_sha256, address = field("address"), derived = field(".derived")),
-         series = data.table::rbindlist(purrr::map(first, ~ as.list(c(series_key = key[.x], publication_id = s$source$publication_id, dims[[.x]]))), fill = TRUE),
+         series = cbind(data.frame(series_key = key[first], publication_id = s$source$publication_id), d[first, dims, drop = FALSE]),
          title = tibble::tibble(sheet_sha256 = s$source$sheet_sha256, subject = s$source$subject %||% NA_character_,
                                 title = paste(unlist(s$sheet_metata[["table_title"]]), collapse = " ")))
   })
