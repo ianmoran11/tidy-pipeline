@@ -68,6 +68,47 @@ tidy-recipes/*.json ─┴─> data              process_recipe()   one branch p
   `tar_read(integration_gaps)` reports values that can't be told apart and series
   without a population or measure.
 
+## Checks
+
+Every data target has one check function (`R/check_<target>.R`) and a `<target>_checks`
+target. Inside each function, every test is its own nested function that returns its
+failures (nothing when it passes). A named `severity` vector lists the tests.
+
+| Severity | Meaning | On failure |
+|---|---|---|
+| `error` | An invariant that must always hold, e.g. a stage changed no values, cells are unique, links resolve, one `is_latest` per series and period | The check target stops, naming the test and the first failures |
+| `warning` | An expectation with known exceptions, e.g. AIHW records without a measure | Reported only |
+
+Each check returns one row per test: `target`, `sheet_sha256`, `test`, `severity`,
+`passed`, `n_failed`, `examples`.
+
+- **Per-sheet targets** (`data` … `data_identified`) are checked branch by branch
+  (`pattern = map(...)`), each against the branch it came from. Agent batches only
+  re-check the sheets they change.
+- **Failed checks don't hold up the build.** Check targets use `error = "continue"`, so
+  `tar_make()` finishes and lists them as errored targets.
+- **`tar_read(check_failures)`** has every failed test, warnings included.
+
+To add a test, add a nested function and a `severity` entry. Remember that
+`paste("x", character(0))` returns `"x "`, so build failure messages with `sprintf()`.
+
+| Target | Check | Tests |
+|---|---|---|
+| `source_metadata_df` | `check_source_metadata()` | 7: columns, unique IDs, IDs match exact sheet names (catches trimming), workbooks exist, sheet positions, publications, archived copies point to active sheets |
+| `data` | `check_data()` | 10: shape, sheet active, matches recipe kind and record count, addresses, unique cells, single-text labels, every record labelled, published text (no `1e+05`), title present |
+| `data_normalised` | `check_data_normalised()` | 7: same shape and cells as `data`, no unmapped names or labels left (catches chains in the spec), single-text labels, snake_case names, footnote markers |
+| `data_harmonised` | `check_data_harmonised()` | 9: same shape and cells, period present, valid ISO dates, dates present, `.derived` consistent, single-text labels, no characteristic/category left, canonical states |
+| `data_identified` | `check_data_identified()` | 7: same shape and cells, existing labels kept, added fields in `.derived`, measure and population present, title subject in the spec |
+| `integrated` | `check_integrated()` | 10: columns, one row per record, unique cells and IDs, well-formed IDs, links resolve, periods and dates, series and sources complete, population and measure present, snake_case columns |
+| `observations_typed` | `check_observations_typed()` | 7: rows unchanged, statuses allowed, none unrecognised, numbers equal their text, blanks consistent, symbol values from the spec, finite values |
+| `observations` | `check_observations()` | 6: rows unchanged, releases present, one latest per series and period, `n_releases` right, revision flags consistent, values distinguishable |
+| `integrated_files` | `check_integrated_files()` | 5: files exist, columns and row counts match, observations round-trip, no `NA` text |
+
+The checks add about 7 minutes of branch time to a full rebuild. `check_observations()`
+takes 28 seconds; the other whole-table checks take seconds.
+
+## Run times
+
 All specs are hand-edited JSON. Editing a spec reruns only the stages after it:
 - the normalisation spec takes about 11 minutes;
 - the measure or integration specs take about 4 minutes.
@@ -177,6 +218,17 @@ How the three ABS batches were picked: `qa/select_batch.R`.
   their downstream branches.
 - **tidyxl omits truly empty cells.** Blank value cells have to be generated from the
   table grid (`R/blank_value_cells.R`), not read.
+- **`paste()` and `paste0()` with a zero-length vector return a string** (`"x "`), not
+  nothing. Use `sprintf()` when building lists of failures.
+- **`!` binds more loosely than `%in%`.** `!(a == b) %in% FALSE` means
+  `!((a == b) %in% FALSE)`.
+- **`normalise()` makes one pass.** A spec entry whose target is itself a key (e.g.
+  "Total prisoners (b)" → "Total prisoners" → …) leaves the middle label behind.
+  `check_data_normalised()` catches this.
+- **A "Total" label in a population column means that table's population.** Normalise
+  it to "Total" and let `identify()`'s `replace_labels` substitute the title's subject.
+  Mapping it to one fixed population is wrong for tables of a sub-population (Federal
+  prisoners).
 
 ## History in one paragraph
 

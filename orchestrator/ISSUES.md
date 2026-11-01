@@ -44,7 +44,8 @@ AIHW/RoGS batches. Alternatively, rerun the agents on those workbooks (move the 
 recipes aside first; the queue skips validated sheets).
 
 ### I4. Nothing in the run loop checks that labels are correct
-The validator checks structure only. Label correctness was checked after each batch
+The validator checks structure only. The pipeline checks (README "Checks") test
+invariants and completeness, not whether a label is the right one for a cell. Label correctness was checked after each batch
 with the scripts in `qa/` against the reference database. Those checks found two real
 errors (I-resolved R4), so they matter.
 **Next:** make the comparison a post-batch step (e.g. a `targets` target or a
@@ -187,7 +188,7 @@ as `qa/compare_accepted.R` does.
 ## Low / housekeeping
 
 ### I16. Git repository contents
-The single commit includes:
+Both commits (`35a2a6b`, `580c4f7`) include:
 - `tidy-data-asset-status.sqlite3` (9.4 GB), its `.gz` (306 MB) and
   `source-spreadsheets-xlsx.zip` (71 MB): `.git` is 726 MB, and hosts such as GitHub
   reject files over 100 MB;
@@ -262,7 +263,7 @@ real. "Number vs symbol" is mostly harmless (a mean-age row crossing a rate pane
 |---|---|---|
 | child protection | 2,621 | 3 |
 | Youth Justice | 1,709 | 75 |
-| Prisoners | 177 | 74 |
+| Prisoners | 144 | 74 |
 | Courts | 87 | 0 |
 | Recorded Crime | 35 | 6,556 |
 | RoGS | 13 | 5 |
@@ -321,3 +322,5 @@ to a long format.
 | R12 | 2009–10 and 2010–11 Criminal Courts cubes name their court level only in the cube code | `title_flags` in the measure spec, mapping checked against the data |
 | R13 | 167,000 values in one release couldn't be told apart (title-only population); 761,000 records had no measure | `identify()`. ABS identity conflicts are down to a few hundred (I26) |
 | R14 | Publisher symbols in 12 spellings | `type_values()` with per-publisher meanings; 0 unrecognised |
+| R15 | Found by the new checks: 13 chains in the normalisation spec (e.g. "Higher(a)" → "Higher" → "Higher Courts") left middle labels on 80 sheets | Chains resolved in the JSON; `check_data_normalised()` catches new ones |
+| R16 | Found while checking R15: "Total prisoners" mapped to "Prisoners" even in Federal Prisoners tables, and the subject "FEDERAL OFFENCES" mapped to "Federal prisoners and parolees" for tables that are one or the other | "Total prisoners" → "Total" (`replace_labels` gives each table's population); title rules for "offences for federal prisoners/parolees". Prisoners conflicts went from 177 to 144 |

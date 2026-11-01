@@ -23,6 +23,7 @@ These are settled. Revisit only if the owner asks.
 | 17 | **Keep every release's value and flag the latest** (`is_latest`), rather than keeping only the latest | `reconcile()` | Revisions stay analysable (`differs_from_latest`) |
 | 18 | Integrated output is **CSV** | `integrated/*.csv` | About 460 MB; gitignored |
 | 19 | **Blank cells become records with a status** (`value_status = "blank"`) | `blank_value_cells()`, `value_spec.json` | Only blanks inside recipe tables can be recovered so far (ISSUES.md I5) |
+| 20 | **One check function per data target**, with each test a separate nested function | `R/check_*.R`, `<target>_checks` targets | Severities (`error` stops the check target, `warning` reports only) chosen by the assistant |
 
 Defaults that were never explicitly decided (candidates to confirm with the owner):
 

@@ -54,6 +54,18 @@
       "set": {
         "sentence_basis": "Expected time to serve"
       }
+    },
+    {
+      "pattern": "offences for federal prisoners",
+      "set": {
+        "population": "Federal prisoners"
+      }
+    },
+    {
+      "pattern": "offences for federal parolees",
+      "set": {
+        "population": "Federal parolees"
+      }
     }
   ],
   "measure_from_unit": {
@@ -526,9 +538,7 @@
         "population": "Persons",
         "measure": "Estimated resident population"
       },
-      "federal offences": {
-        "population": "Federal prisoners and parolees"
-      },
+      "federal offences": {},
       "federal parolees": {
         "population": "Federal parolees"
       },

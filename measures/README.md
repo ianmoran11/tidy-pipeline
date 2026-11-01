@@ -42,12 +42,16 @@ rules plus explicit overrides. These judgements are in it and can be changed her
 
 **`replace_labels`.** Record labels that give way to the subject's value. `population:
 "Total"` in a table's population column means the whole population the title names.
+The normalisation spec maps "Total prisoners" and similar to "Total", so a Federal
+Prisoners table's total becomes "Federal prisoners", not "Prisoners".
 
 **`title_flags`.** Regexes matched against the title and subtitle (joined by " / "). A
 match sets the listed fields. Uses so far:
 - ANZSOC 2023 tables (`offence_classification`);
 - experimental data (`data_status`);
 - aggregate sentence length vs expected time to serve (`sentence_basis`);
+- "selected offences for federal prisoners" vs "for federal parolees" (`population`;
+  the subject, "FEDERAL OFFENCES", doesn't say);
 - court level for the 2009–10 and 2010–11 Criminal Courts cubes, which name their
   court level only through the cube code in the subtitle (`45130DO002` …).
 
