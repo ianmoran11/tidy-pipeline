@@ -160,19 +160,21 @@ Integration stages (2026-11-01):
    - `qa/stage_sheets.R` to list contradictions before the rebuild;
    - a seed script for the publication's spec entries.
 
-## Git
+## Git and GitHub
 
-Four commits by the owner: `35a2a6b`, `580c4f7`, `9b550de` ("tests") and `2694ea5`
-("added full abs release. pre performance improvements"). All include the large and
-stray files listed in ISSUES.md I16. Uncommitted since `2694ea5`:
-- **Performance work:** `_targets.R` (crew, qs, `sheet_checks`, recipe MD5s); `R/`
-  extraction and whole-table stages.
-- **Victims publications:**
-  - `sources/dataset_selection.json` (39 switches);
-  - `source_metadata.csv`, 396 new XLSX and `source-originals/`;
-  - 3,831 recipes and agent batch files;
-  - the specs, `dictionary/dimensions.csv`, `get_source_data.R` (second URL);
-  - `R/published_value.R` (format asterisks), `R/type_values.R` and
-    `R/check_observations_typed.R` (markers);
-  - new QA scripts `qa/stage_sheets.R` and `qa/seeds/seed_victims_specs.R`.
-- **Docs:** `orchestrator/`, `integration/`, `measures/`, `sources/README.md`.
+**Published 2026-11-02:** https://github.com/ianmoran11/tidy-pipeline (public, MIT; data
+CC BY 4.0, see `DATA-LICENSE.md`).
+- Release `v2026-11-02` holds the zipped integrated CSVs (160 MB) and their SHA-256.
+- The published history is the local history with the reference database, its `.gz`,
+  `source-spreadsheets-xlsx.zip`, `_targets/`, `.DS_Store` and the Excel lock file
+  removed from every commit (`git filter-repo`), because GitHub rejects files over
+  100 MB. Its files are identical to the local commits; only the commit IDs differ.
+- The local repository still has those files in its history, so it can't push to GitHub
+  directly. Until it is switched onto the published history, publish new commits like
+  this:
+  1. bare-clone the local repo (`git clone --bare --no-local`);
+  2. run the same `git filter-repo` command (it's deterministic, so earlier commits keep
+     their published IDs);
+  3. push `main` (a fast-forward).
+
+  `../tidy-pipeline-publish.git` is the last filtered copy.

@@ -195,7 +195,7 @@ as `qa/compare_accepted.R` does.
 
 ## Low / housekeeping
 
-### I16. Git repository contents
+### I16. Git repository contents (fixed in the published copy; local history unchanged)
 All commits (`35a2a6b`, `580c4f7`, `9b550de`) include:
 - `tidy-data-asset-status.sqlite3` (9.4 GB), its `.gz` (306 MB) and
   `source-spreadsheets-xlsx.zip` (71 MB): `.git` is 726 MB, and hosts such as GitHub
