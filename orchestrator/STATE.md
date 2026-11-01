@@ -164,7 +164,11 @@ Integration stages (2026-11-01):
 
 **Published 2026-11-02:** https://github.com/ianmoran11/tidy-pipeline (public, MIT; data
 CC BY 4.0, see `DATA-LICENSE.md`).
-- Release `v2026-11-02` holds the zipped integrated CSVs (160 MB) and their SHA-256.
+- Release `v2026-11-02` (marked latest) holds the zipped integrated CSVs (160 MB) and their
+  SHA-256.
+- Release `sources-2026-11-02` (not marked latest, so the README's "latest release" link
+  stays on the dataset) holds the zipped source XLSX: 1,199 workbooks plus 76
+  reference-only copies, `MANIFEST.csv`, `source_metadata.csv`; 146 MB.
 - The published history is the local history with the reference database, its `.gz`,
   `source-spreadsheets-xlsx.zip`, `_targets/`, `.DS_Store` and the Excel lock file
   removed from every commit (`git filter-repo`), because GitHub rejects files over

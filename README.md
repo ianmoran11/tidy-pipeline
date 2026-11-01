@@ -9,7 +9,10 @@ to its source workbook and cell.
 [latest release](https://github.com/ianmoran11/tidy-pipeline/releases/latest). It holds
 3,989,690 values in 721,701 series from 129 releases of 10 publications by the ABS,
 AIHW and Productivity Commission (2001–2025). `integration/README.md` is the data
-dictionary.
+dictionary. The 1,199 source spreadsheets (XLSX, with a manifest of SHA-256 hashes and
+publisher URLs) are in the
+[sources-2026-11-02](https://github.com/ianmoran11/tidy-pipeline/releases/tag/sources-2026-11-02)
+release.
 
 | File | One row per |
 |---|---|
