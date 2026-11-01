@@ -3,6 +3,21 @@
 Facts about the source spreadsheets and the reference database that took effort to
 establish.
 
+## Catalogues and selection (`sources/`)
+
+Since 2026-11-01, admission is by release switches in `sources/dataset_selection.json`.
+Three pinned catalogues list the known sources:
+- the current package;
+- 886 national workbook records;
+- 1,308 state and territory resources.
+
+There are 721 switches across 99 publications; 59 were on at handoff, covering all
+3,256 recipes. `sources/README.md` covers release keys, filters, identities and the
+known AIHW 2024–25 publisher revision. Test downloads of ABS URLs worked, including
+`AUSSTATS/subscriber.nsf/log?openagent&…zip` archives. The two 2010–11 Federal
+Defendants archives each contain a member named `45150do003_201011.xls`; their bytes
+and SHAs differ.
+
 ## Source package (`source-spreadsheets-xlsx/`)
 
 - 621 XLSX workbooks converted from the original package: 311 XLS files converted by
@@ -102,9 +117,23 @@ series start in 2006–07, the others in 2004–05 or 2005–06.
 | Publisher | Not published | Not available | Not applicable | Nil or rounded to zero |
 |---|---|---|---|---|
 | ABS (recent) | `np` | `na` | `..` | `–` (en dash) |
-| ABS (older Prisoners) | `n.p.` | `n.a.`, `n.a` | | `–`, `  –  ` |
+| ABS (older releases, 2001–2009) | `n.p.` | `n.a.`, `n.a` | `. .` | `-` (hyphen), `—` (em dash, older Prisoners), `  –  ` |
 | AIHW | `n.p.`, `n.p` | `n.a.` | `. .` | `—` (em dash), `-` (one cell) |
 | RoGS | `np` | `na` | `..` | `–` |
+
+**Symbol meanings vary by workbook.** Recorded Crime 2019–20 to 2024–25 and two Prisoners
+2025 workbooks define `na` as "not applicable"; most others mean "not available". The
+meaning is read from each workbook's own legend into `value_spec.json` by
+`qa/seeds/seed_value_legends.R` (33 workbooks). Rerun it after preparing new workbooks.
+
+**Older Courts releases put the court level in places other than the title:**
+- in the cube code (2008–09 to 2010–11);
+- in the measure label ("NUMBER IN SUPREME COURT", "PROPORTION IN HIGHER COURTS (%)",
+  2001–04);
+- as combined levels ("Magistrates' & Children's Courts", Federal Defendants).
+
+Older releases also pad labels with spaces and attach footnote markers, which the
+normalisation `clean` rules remove.
 
 **Blank cells.** EEH tables are sparse (occupation × method of setting pay), with
 genuine published blanks: 17,056 of the 23,295 blank-cell records. The database

@@ -1,0 +1,5549 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c6d7a75377e03ab3b7a592a783f7c9ed205b425b15c181736eff63a027cf71fd",
+  "sheet": "Table 71",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "1a28293b99189a6cd1a54153f89e77ee33cd587296c08efbf1730ea77dae373d",
+  "agent_notes": "Published totals and percentage rows retained. Mean and Median are measures, separate from sentence-length or fine bands. Percentage rows keep published (%) labels and omit count units. Structurally blank cells are omitted, not imputed. Reference period and sentencing/court scope are in the title and subtitle. ANZSOC divisions and indented subdivisions are retained together; parent rows are subtotals. Sparse regions are split into populated rectangular runs to prevent enheading from creating null observations.",
+  "new_dimensions": [
+    {
+      "name": "fine_value_band",
+      "description": "Published bands of the monetary fine imposed on a defendant, including Total.",
+      "example_labels": [
+        "Less than $250",
+        "$1,000 & over",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_B_bands_r9_B",
+      "range": "B9:F35",
+      "values_range": "B9:F35",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23,A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_B_bands_percent_r36_B",
+      "range": "B36:F36",
+      "values_range": "B36:F36",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A36"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r9_G",
+      "range": "G9:N10",
+      "values_range": "G9:N10",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A9,A10"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r11_G",
+      "range": "G11:L11",
+      "values_range": "G11:L11",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A11"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r12_G",
+      "range": "G12:N14",
+      "values_range": "G12:N14",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A12,A13,A14"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r15_G",
+      "range": "G15:H15",
+      "values_range": "G15:H15",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A15"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r15_K",
+      "range": "K15:N15",
+      "values_range": "K15:N15",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A15"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r16_G",
+      "range": "G16:N16",
+      "values_range": "G16:N16",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A16"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r17_G",
+      "range": "G17:H17",
+      "values_range": "G17:H17",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A17"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r17_K",
+      "range": "K17:N17",
+      "values_range": "K17:N17",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A17"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r18_G",
+      "range": "G18:N27",
+      "values_range": "G18:N27",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A18,A19,A20,A21,A22,A23,A24,A25,A26,A27"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r28_G",
+      "range": "G28:H28",
+      "values_range": "G28:H28",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A28"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r28_K",
+      "range": "K28:N28",
+      "values_range": "K28:N28",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A28"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r29_G",
+      "range": "G29:N32",
+      "values_range": "G29:N32",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A29,A30,A31,A32"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r33_G",
+      "range": "G33:H33",
+      "values_range": "G33:H33",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A33"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r33_K",
+      "range": "K33:N33",
+      "values_range": "K33:N33",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A33"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_1_G_statistics_r34_G",
+      "range": "G34:N35",
+      "values_range": "G34:N35",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A34,A35"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B8"
+        }
+      ]
+    },
+    {
+      "name": "block_2_B_bands_r38_B",
+      "range": "B38:F51",
+      "values_range": "B38:F51",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A38,A39,A40,A41,A42,A43,A44,A45,A46,A47,A48,A49,A50,A51"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_B_bands_percent_r52_B",
+      "range": "B52:F52",
+      "values_range": "B52:F52",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A52"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r38_G",
+      "range": "G38:H38",
+      "values_range": "G38:H38",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A38"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r38_K",
+      "range": "K38:N38",
+      "values_range": "K38:N38",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A38"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r39_G",
+      "range": "G39:H39",
+      "values_range": "G39:H39",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A39"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r39_K",
+      "range": "K39:L39",
+      "values_range": "K39:L39",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A39"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r40_G",
+      "range": "G40:H40",
+      "values_range": "G40:H40",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A40"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r40_K",
+      "range": "K40:N40",
+      "values_range": "K40:N40",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A40"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r41_G",
+      "range": "G41:H42",
+      "values_range": "G41:H42",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A41,A42"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r41_K",
+      "range": "K41:L42",
+      "values_range": "K41:L42",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A41,A42"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r43_G",
+      "range": "G43:H44",
+      "values_range": "G43:H44",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A43,A44"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r43_K",
+      "range": "K43:N44",
+      "values_range": "K43:N44",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A43,A44"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r45_G",
+      "range": "G45:N45",
+      "values_range": "G45:N45",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A45"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r46_G",
+      "range": "G46:H50",
+      "values_range": "G46:H50",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A46,A47,A48,A49,A50"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r46_K",
+      "range": "K46:N50",
+      "values_range": "K46:N50",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A46,A47,A48,A49,A50"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_2_G_statistics_r51_G",
+      "range": "G51:N51",
+      "values_range": "G51:N51",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A51"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B37"
+        }
+      ]
+    },
+    {
+      "name": "block_3_B_bands_r54_B",
+      "range": "B54:F67",
+      "values_range": "B54:F67",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_B_bands_percent_r68_B",
+      "range": "B68:F68",
+      "values_range": "B68:F68",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A68"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r54_G",
+      "range": "G54:N54",
+      "values_range": "G54:N54",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A54"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r55_G",
+      "range": "G55:H55",
+      "values_range": "G55:H55",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A55"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r55_K",
+      "range": "K55:L55",
+      "values_range": "K55:L55",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A55"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r56_G",
+      "range": "G56:H56",
+      "values_range": "G56:H56",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A56"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r56_K",
+      "range": "K56:N56",
+      "values_range": "K56:N56",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A56"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r57_G",
+      "range": "G57:H58",
+      "values_range": "G57:H58",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A57,A58"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r57_K",
+      "range": "K57:L58",
+      "values_range": "K57:L58",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A57,A58"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r59_G",
+      "range": "G59:H59",
+      "values_range": "G59:H59",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A59"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r59_K",
+      "range": "K59:N59",
+      "values_range": "K59:N59",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A59"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r60_G",
+      "range": "G60:H60",
+      "values_range": "G60:H60",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A60"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r60_K",
+      "range": "K60:L60",
+      "values_range": "K60:L60",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A60"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r61_G",
+      "range": "G61:N61",
+      "values_range": "G61:N61",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A61"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r62_G",
+      "range": "G62:H62",
+      "values_range": "G62:H62",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A62"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r62_K",
+      "range": "K62:N62",
+      "values_range": "K62:N62",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A62"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r63_G",
+      "range": "G63:H63",
+      "values_range": "G63:H63",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A63"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r63_K",
+      "range": "K63:L63",
+      "values_range": "K63:L63",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A63"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r64_G",
+      "range": "G64:H65",
+      "values_range": "G64:H65",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A64,A65"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r64_K",
+      "range": "K64:N65",
+      "values_range": "K64:N65",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A64,A65"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_3_G_statistics_r66_G",
+      "range": "G66:N67",
+      "values_range": "G66:N67",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A66,A67"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B53"
+        }
+      ]
+    },
+    {
+      "name": "block_4_B_bands_r70_B",
+      "range": "B70:F83",
+      "values_range": "B70:F83",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A70,A71,A72,A73,A74,A75,A76,A77,A78,A79,A80,A81,A82,A83"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_B_bands_percent_r84_B",
+      "range": "B84:F84",
+      "values_range": "B84:F84",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A84"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r70_G",
+      "range": "G70:N70",
+      "values_range": "G70:N70",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A70"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r71_G",
+      "range": "G71:L71",
+      "values_range": "G71:L71",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r72_G",
+      "range": "G72:H72",
+      "values_range": "G72:H72",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A72"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r72_K",
+      "range": "K72:N72",
+      "values_range": "K72:N72",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A72"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r73_G",
+      "range": "G73:L73",
+      "values_range": "G73:L73",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A73"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r74_G",
+      "range": "G74:H74",
+      "values_range": "G74:H74",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A74"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r74_K",
+      "range": "K74:L74",
+      "values_range": "K74:L74",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A74"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r75_G",
+      "range": "G75:N75",
+      "values_range": "G75:N75",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A75"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r76_G",
+      "range": "G76:H76",
+      "values_range": "G76:H76",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A76"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r76_K",
+      "range": "K76:L76",
+      "values_range": "K76:L76",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A76"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r77_G",
+      "range": "G77:N77",
+      "values_range": "G77:N77",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A77"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r78_G",
+      "range": "G78:H79",
+      "values_range": "G78:H79",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A78,A79"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r78_K",
+      "range": "K78:L79",
+      "values_range": "K78:L79",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A78,A79"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r80_G",
+      "range": "G80:N80",
+      "values_range": "G80:N80",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A80"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r81_G",
+      "range": "G81:H81",
+      "values_range": "G81:H81",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A81"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r81_K",
+      "range": "K81:N81",
+      "values_range": "K81:N81",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A81"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r82_G",
+      "range": "G82:H82",
+      "values_range": "G82:H82",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A82"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r82_K",
+      "range": "K82:L82",
+      "values_range": "K82:L82",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A82"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_4_G_statistics_r83_G",
+      "range": "G83:N83",
+      "values_range": "G83:N83",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A83"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B69"
+        }
+      ]
+    },
+    {
+      "name": "block_5_B_bands_r86_B",
+      "range": "B86:F99",
+      "values_range": "B86:F99",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A86,A87,A88,A89,A90,A91,A92,A93,A94,A95,A96,A97,A98,A99"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_B_bands_percent_r100_B",
+      "range": "B100:F100",
+      "values_range": "B100:F100",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A100"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r86_G",
+      "range": "G86:H87",
+      "values_range": "G86:H87",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A86,A87"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r86_K",
+      "range": "K86:L87",
+      "values_range": "K86:L87",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A86,A87"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r88_G",
+      "range": "G88:H88",
+      "values_range": "G88:H88",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A88"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r88_K",
+      "range": "K88:N88",
+      "values_range": "K88:N88",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A88"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r89_G",
+      "range": "G89:H90",
+      "values_range": "G89:H90",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A89,A90"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r89_K",
+      "range": "K89:L90",
+      "values_range": "K89:L90",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A89,A90"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r91_G",
+      "range": "G91:H91",
+      "values_range": "G91:H91",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A91"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r91_K",
+      "range": "K91:N91",
+      "values_range": "K91:N91",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A91"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r92_G",
+      "range": "G92:H92",
+      "values_range": "G92:H92",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A92"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r92_K",
+      "range": "K92:L92",
+      "values_range": "K92:L92",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A92"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r93_G",
+      "range": "G93:N93",
+      "values_range": "G93:N93",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A93"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r94_G",
+      "range": "G94:H96",
+      "values_range": "G94:H96",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A94,A95,A96"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r94_K",
+      "range": "K94:L96",
+      "values_range": "K94:L96",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A94,A95,A96"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r97_G",
+      "range": "G97:N97",
+      "values_range": "G97:N97",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A97"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r98_G",
+      "range": "G98:H98",
+      "values_range": "G98:H98",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A98"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r98_K",
+      "range": "K98:L98",
+      "values_range": "K98:L98",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A98"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_5_G_statistics_r99_G",
+      "range": "G99:N99",
+      "values_range": "G99:N99",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A99"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B85"
+        }
+      ]
+    },
+    {
+      "name": "block_6_B_bands_r102_B",
+      "range": "B102:F115",
+      "values_range": "B102:F115",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A102,A103,A104,A105,A106,A107,A108,A109,A110,A111,A112,A113,A114,A115"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_B_bands_percent_r116_B",
+      "range": "B116:F116",
+      "values_range": "B116:F116",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A116"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r102_G",
+      "range": "G102:N102",
+      "values_range": "G102:N102",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A102"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r103_G",
+      "range": "G103:H103",
+      "values_range": "G103:H103",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A103"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r103_K",
+      "range": "K103:L103",
+      "values_range": "K103:L103",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A103"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r104_G",
+      "range": "G104:H104",
+      "values_range": "G104:H104",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A104"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r104_K",
+      "range": "K104:N104",
+      "values_range": "K104:N104",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A104"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r105_G",
+      "range": "G105:H105",
+      "values_range": "G105:H105",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A105"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r105_K",
+      "range": "K105:L105",
+      "values_range": "K105:L105",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A105"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r106_G",
+      "range": "G106:H106",
+      "values_range": "G106:H106",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A106"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r106_K",
+      "range": "K106:N106",
+      "values_range": "K106:N106",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A106"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r107_G",
+      "range": "G107:N107",
+      "values_range": "G107:N107",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A107"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r108_G",
+      "range": "G108:H108",
+      "values_range": "G108:H108",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A108"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r108_K",
+      "range": "K108:N108",
+      "values_range": "K108:N108",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A108"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r109_G",
+      "range": "G109:N109",
+      "values_range": "G109:N109",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A109"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r110_G",
+      "range": "G110:H110",
+      "values_range": "G110:H110",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A110"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r110_K",
+      "range": "K110:L110",
+      "values_range": "K110:L110",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A110"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r111_G",
+      "range": "G111:N111",
+      "values_range": "G111:N111",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A111"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r112_G",
+      "range": "G112:H113",
+      "values_range": "G112:H113",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A112,A113"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r112_K",
+      "range": "K112:N113",
+      "values_range": "K112:N113",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A112,A113"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_6_G_statistics_r114_G",
+      "range": "G114:N115",
+      "values_range": "G114:N115",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A114,A115"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6,I6,J6,K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7,I7,J7,K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B101"
+        }
+      ]
+    },
+    {
+      "name": "block_7_B_bands_r118_B",
+      "range": "B118:F118",
+      "values_range": "B118:F118",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A118"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_B_bands_r119_F",
+      "range": "F119:F119",
+      "values_range": "F119:F119",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A119"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_B_bands_r120_B",
+      "range": "B120:F131",
+      "values_range": "B120:F131",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A120,A121,A122,A123,A124,A125,A126,A127,A128,A129,A130,A131"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_B_bands_percent_r132_B",
+      "range": "B132:F132",
+      "values_range": "B132:F132",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A132"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r118_G",
+      "range": "G118:H119",
+      "values_range": "G118:H119",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A118,A119"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r118_K",
+      "range": "K118:L119",
+      "values_range": "K118:L119",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A118,A119"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r120_G",
+      "range": "G120:H120",
+      "values_range": "G120:H120",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A120"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r120_K",
+      "range": "K120:N120",
+      "values_range": "K120:N120",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A120"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r122_G",
+      "range": "G122:H124",
+      "values_range": "G122:H124",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A122,A123,A124"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r122_K",
+      "range": "K122:L124",
+      "values_range": "K122:L124",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A122,A123,A124"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r125_G",
+      "range": "G125:H125",
+      "values_range": "G125:H125",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A125"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r125_K",
+      "range": "K125:N125",
+      "values_range": "K125:N125",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A125"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r126_G",
+      "range": "G126:H128",
+      "values_range": "G126:H128",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A126,A127,A128"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r126_K",
+      "range": "K126:L128",
+      "values_range": "K126:L128",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A126,A127,A128"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r129_G",
+      "range": "G129:H129",
+      "values_range": "G129:H129",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A129"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r129_K",
+      "range": "K129:N129",
+      "values_range": "K129:N129",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A129"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r130_G",
+      "range": "G130:H130",
+      "values_range": "G130:H130",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A130"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r130_K",
+      "range": "K130:L130",
+      "values_range": "K130:L130",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A130"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r131_G",
+      "range": "G131:H131",
+      "values_range": "G131:H131",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A131"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_7_G_statistics_r131_K",
+      "range": "K131:N131",
+      "values_range": "K131:N131",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A131"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B117"
+        }
+      ]
+    },
+    {
+      "name": "block_8_B_bands_r134_B",
+      "range": "B134:F147",
+      "values_range": "B134:F147",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A134,A135,A136,A137,A138,A139,A140,A141,A142,A143,A144,A145,A146,A147"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_B_bands_percent_r148_B",
+      "range": "B148:F148",
+      "values_range": "B148:F148",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A148"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r134_G",
+      "range": "G134:H134",
+      "values_range": "G134:H134",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A134"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r134_K",
+      "range": "K134:L134",
+      "values_range": "K134:L134",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A134"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r136_G",
+      "range": "G136:H136",
+      "values_range": "G136:H136",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A136"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r136_K",
+      "range": "K136:L136",
+      "values_range": "K136:L136",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A136"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r139_G",
+      "range": "G139:H144",
+      "values_range": "G139:H144",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A139,A140,A141,A142,A143,A144"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r139_K",
+      "range": "K139:L144",
+      "values_range": "K139:L144",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A139,A140,A141,A142,A143,A144"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r145_G",
+      "range": "G145:H145",
+      "values_range": "G145:H145",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A145"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r145_K",
+      "range": "K145:N145",
+      "values_range": "K145:N145",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A145"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r146_G",
+      "range": "G146:H146",
+      "values_range": "G146:H146",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A146"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r146_K",
+      "range": "K146:L146",
+      "values_range": "K146:L146",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A146"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r147_G",
+      "range": "G147:H147",
+      "values_range": "G147:H147",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A147"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_8_G_statistics_r147_K",
+      "range": "K147:N147",
+      "values_range": "K147:N147",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A147"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B133"
+        }
+      ]
+    },
+    {
+      "name": "block_9_B_bands_r150_B",
+      "range": "B150:F163",
+      "values_range": "B150:F163",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A150,A151,A152,A153,A154,A155,A156,A157,A158,A159,A160,A161,A162,A163"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7,C7,D7,E7,F7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_B_bands_percent_r164_B",
+      "range": "B164:F164",
+      "values_range": "B164:F164",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A164"
+        },
+        {
+          "name": "fine_value_band",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r150_G",
+      "range": "G150:H150",
+      "values_range": "G150:H150",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A150"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r150_K",
+      "range": "K150:L150",
+      "values_range": "K150:L150",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A150"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r152_G",
+      "range": "G152:H152",
+      "values_range": "G152:H152",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A152"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r152_K",
+      "range": "K152:L152",
+      "values_range": "K152:L152",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A152"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r155_G",
+      "range": "G155:H155",
+      "values_range": "G155:H155",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A155"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r155_K",
+      "range": "K155:L155",
+      "values_range": "K155:L155",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A155"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r157_G",
+      "range": "G157:H162",
+      "values_range": "G157:H162",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A157,A158,A159,A160,A161,A162"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r157_K",
+      "range": "K157:L162",
+      "values_range": "K157:L162",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A157,A158,A159,A160,A161,A162"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r163_G",
+      "range": "G163:H163",
+      "values_range": "G163:H163",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A163"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G6,H6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "G7,H7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    },
+    {
+      "name": "block_9_G_statistics_r163_K",
+      "range": "K163:N163",
+      "values_range": "K163:N163",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Selected principal proven offence",
+          "direction": "W",
+          "cells": "A163"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "K6,L6,M6,N6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "K7,L7,M7,N7"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B5,I5,K5,M5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "B149"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:52:53Z",
+    "tool_version": "0.2.0",
+    "records": 1502,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044939Z-f1e4331b15eb",
+    "started_at": "2026-11-01T04:49:40Z",
+    "workbook": "f1e4331b15eb0822e6763f6b00a42eb2ae5018bf45ea5fa02a33855499728f68--13.-sentence-length-and-fine-amount-australia-tables-65-to-72-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19571-1e93-74b0-9b1b-597c4ac58417",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "32256b983d9e74f4f0d14913b9c740918c997074c197c7bd54e0f6da05d9c896",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f1e4331b15eb0822e6763f6b00a42eb2ae5018bf45ea5fa02a33855499728f68--13.-sentence-length-and-fine-amount-australia-tables-65-to-72-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6cfb942e4984161bd0fbbe1062ae4e4a657e72b1cf4905ff457727018b0fc8ab | missing |\n| \"Table 65\" | 8c34ec3321f78c10fa609e6e0f9165387c14c229bd0ba79fdd8547b2a419ed27 | missing |\n| \"Table 66\" | 55607bfa473b61784873aecbf158de8386efbdfcf080df438eb7306a4e78f52b | missing |\n| \"Table 67\" | 4ab55d451f8c6de855173ebc30b26d97455b3cd12537be2682deef230a8227f7 | missing |\n| \"Table 68\" | 18126438212403f1a609a892c83dadbae57ce6c41979f6f84f444211d1935812 | missing |\n| \"Table 69\" | f2474e32882ca78ac8381e4bc1f17b58b16b44c8d89e8e3fc464cf72dd150954 | missing |\n| \"Table 70\" | 4740ccdeae7119e96df196cc38a9f399649a8b0536f28f92f879f6985c5491f0 | missing |\n| \"Table 71\" | c6d7a75377e03ab3b7a592a783f7c9ed205b425b15c181736eff63a027cf71fd | missing |\n| \"Table 72\" | c8eb174131cd1adaba1786cca270123010dde53815d3face25ba9b71f7740ce5 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044939Z-f1e4331b15eb.jsonl"
+  }
+}

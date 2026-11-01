@@ -24,6 +24,12 @@ These are settled. Revisit only if the owner asks.
 | 18 | Integrated output is **CSV** | `integrated/*.csv` | About 460 MB; gitignored |
 | 19 | **Blank cells become records with a status** (`value_status = "blank"`) | `blank_value_cells()`, `value_spec.json` | Only blanks inside recipe tables can be recovered so far (ISSUES.md I5) |
 | 20 | **One check function per data target**, with each test a separate nested function | `R/check_*.R`, `<target>_checks` targets | Severities (`error` stops the check target, `warning` reports only) chosen by the assistant |
+| 21 | **Datasets are admitted per release by switches** in `sources/dataset_selection.json` (handoff from `../tidy-pipeline-to-integrate/`). Unlisted means excluded; nothing is chosen by date | `sources/`, `R/select_sheets.R`, `agents/queue.R` | Switches are the owner's; never reset them from recipe availability |
+| 22 | **`source_metadata.csv` is built outside the targets pipeline** (`get_source_data.R`), with minimal code and reliance on specs | `get_source_data.R` | The pinned catalogues are inputs and are never overwritten; `source_metadata.csv` is derived |
+| 23 | **All releases of the four ABS justice publications already in the pipeline are switched on** (Criminal Courts, Prisoners, Recorded Crime – Offenders, Federal Defendants: 31 more releases) | `sources/dataset_selection.json` | 2026-11-01. EEH (ABS, not justice) and new ABS justice publications (Corrective Services, Recorded Crime – Victims, Crime Victimisation) were not included |
+| 24 | Macro workbooks are converted with Excel set to "Disable all macros without notification" (owner sets it, and resets it afterwards) | `get_source_data.R` (`EXCEL_MACROS_DISABLED=1`) | |
+| 25 | New ABS justice releases: pilot 243 sheets, review, then run the rest (1,710) | `agents/batch-abs-new-*.txt` | 2026-11-01 |
+| 26 | **Generic label cleaning in normalisation** (whitespace, trailing footnote markers, leading revision `r`), as a `clean` section of the spec | `R/normalise.R`, `normalisation/normalisation_spec.json` | 2026-11-01 |
 
 Defaults that were never explicitly decided (candidates to confirm with the owner):
 

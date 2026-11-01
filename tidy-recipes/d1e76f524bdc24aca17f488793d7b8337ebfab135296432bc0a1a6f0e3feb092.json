@@ -1,0 +1,254 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d1e76f524bdc24aca17f488793d7b8337ebfab135296432bc0a1a6f0e3feb092",
+  "sheet": "Table 50",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "c5d53d95c86aa6e05d3d5220eef40fd976fd918e1547fd0987b41cbe84498c54",
+  "agent_notes": "Geographic scope is published in A4. Defendants exclude organisations. ANZSOC division rows have no child subdivisions; indented labels are preserved. Total finalised rows 39 and 73 are retained under principal_offence, and should not be added across characteristics. No explicit rate units or footnotes are supplied on this sheet.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A11,A22,A41,A45,A56"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_sex",
+      "range": "A8:I9",
+      "values_range": "B8:I9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "number_age_group",
+      "range": "A12:I20",
+      "values_range": "B12:I20",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A12:A20"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "number_principal_offence",
+      "range": "A23:I39",
+      "values_range": "B23:I39",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A23:A39"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "rate_sex",
+      "range": "A42:I43",
+      "values_range": "B42:I43",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B40"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A42:A43"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "rate_age_group",
+      "range": "A46:I54",
+      "values_range": "B46:I54",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B40"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A46:A54"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "rate_principal_offence",
+      "range": "A57:I73",
+      "values_range": "B57:I73",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B40"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A57:A73"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:44:42Z",
+    "tool_version": "0.2.0",
+    "records": 448,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044335Z-20d7462fe047",
+    "started_at": "2026-11-01T04:43:48Z",
+    "workbook": "20d7462fe047979698183f4ea15adb1e659badb65c31d04761165400ac619877--12.-rate-of-defendants-finalised-australia-tables-48-to-56-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1956b-c233-7733-a71b-8f9f31793ade",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "fbd80468ddff4ea929f738529881ae156f5859861da421b75200c1e049b5ce74",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `20d7462fe047979698183f4ea15adb1e659badb65c31d04761165400ac619877--12.-rate-of-defendants-finalised-australia-tables-48-to-56-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2017-18\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | fc20804fe9b1fadad459bb9836beedc69bc16c5a71124b5c42efdd721725bc87 | missing |\n| \"Table 48\" | 3ccd04505062e05efd511114e01fec2bb0716c55dbed5f497beade7bda2f5de3 | missing |\n| \"Table 49\" | ccd61ffa370b3b0c3d9b6e2ecbd8dda19349976980f302eeb438e389c14cb8f5 | missing |\n| \"Table 50\" | d1e76f524bdc24aca17f488793d7b8337ebfab135296432bc0a1a6f0e3feb092 | missing |\n| \"Table 51\" | 7fede9e00bda8346a5367180b2fbb603b89e2275875596d18874945e053acd78 | missing |\n| \"Table 52\" | af4140c425199140e93be6eb5c1cf03a10e3a263355dff49c231f8dfa17c2152 | missing |\n| \"Table 53\" | b5b20d4139318a951f0f092eb7d9998ddade2ab06c3e8bcddc79819926cc65cc | missing |\n| \"Table 54\" | 65ab70695b80fb515f3d52be0064aca75852d1ad15958aeaaa214ca6e61d3694 | missing |\n| \"Table 55\" | 6bf008abd3e499306a895f3285be6d187b07a200d006a5d7303252a0db83ddd5 | missing |\n| \"Table 56\" | 167bf8b14ecf77ab8e8b73fe423423580be4c598905c0ca74b0a985e42a6f253 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044335Z-20d7462fe047.jsonl"
+  }
+}

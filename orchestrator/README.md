@@ -30,8 +30,12 @@ normalises and harmonises the records.
 ## Pipeline (`_targets.R`)
 
 ```
+sources/dataset_selection.json + sources/catalogues/*.csv (pinned)
+  └─> get_source_data.R (outside targets: download, convert, list sheets) ─> source_metadata.csv
 source_metadata.csv ─┐
-tidy-recipes/*.json ─┴─> data              process_recipe()   one branch per recipe
+dataset_selection ───┴─> selected_sheets   select_sheets()    switched-on releases only (sorted by sheet_sha256)
+tidy-recipes/*.json ─────> recipe_sheets / recipe_files
+                          └─> data              process_recipe()   one branch per admitted recipe
                           └─> data_normalised   normalise()        normalisation/normalisation_spec.json
                                └─> data_harmonised  harmonise()    harmonisation/harmonisation_spec.json
                                     ├─> harmonisation_gaps  harmonisation_report()
@@ -94,7 +98,8 @@ To add a test, add a nested function and a `severity` entry. Remember that
 
 | Target | Check | Tests |
 |---|---|---|
-| `source_metadata_df` | `check_source_metadata()` | 7: columns, unique IDs, IDs match exact sheet names (catches trimming), workbooks exist, sheet positions, publications, archived copies point to active sheets |
+| `source_metadata_df` | `check_source_metadata()` | 8: columns, unique IDs, IDs match exact sheet names (catches trimming), workbooks exist, sheet positions, publications, release keys, archived copies point to active sheets |
+| `selected_sheets` | `check_selected_sheets()` | 8: valid switches (true/false, no duplicates), only switched-on releases, no reference copies, unique and sorted, recipes name the exact sheet; warnings for switched-on releases without prepared sheets, sheets without recipes, recipes left out by the switches |
 | `data` | `check_data()` | 10: shape, sheet active, matches recipe kind and record count, addresses, unique cells, single-text labels, every record labelled, published text (no `1e+05`), title present |
 | `data_normalised` | `check_data_normalised()` | 7: same shape and cells as `data`, no unmapped names or labels left (catches chains in the spec), single-text labels, snake_case names, footnote markers |
 | `data_harmonised` | `check_data_harmonised()` | 9: same shape and cells, period present, valid ISO dates, dates present, `.derived` consistent, single-text labels, no characteristic/category left, canonical states |
@@ -115,11 +120,24 @@ All specs are hand-edited JSON. Editing a spec reruns only the stages after it:
 
 Changing `process_recipe()` or anything it calls (`one_enhead()`,
 `blank_value_cells()`, `published_value()`) rebuilds everything, which takes about
-30 minutes for 3,256 recipes.
+40–45 minutes for 3,256 recipes with the checks.
 
-`source_metadata.csv` is produced by `get_source_data.R` (one row per sheet; see
-`DATA-NOTES.md`). The script builds `source_data_df_04` but does not write the CSV:
-run `source("get_source_data.R"); readr::write_csv(source_data_df_04, "source_metadata.csv")`.
+Rewriting `source_metadata.csv` (`get_source_data.R`) takes about 15 seconds of
+`tar_make()` when no sheet's processing fields change. This was tested by adding columns
+to every row: 8 metadata targets reran, no sheet branches. New or changed sheets add
+their own branches plus about 6 minutes of whole-table stages.
+
+`source_metadata.csv` (one row per sheet) is written **outside** the pipeline by
+`Rscript get_source_data.R`, from the release switches and pinned catalogues in
+`sources/` (see `sources/README.md`). It contains:
+- the current-pipeline catalogue as it is, archived copies included for lineage;
+- one row per sheet of each new workbook prepared for a switched-on release.
+
+Inside the pipeline, `select_sheets()` admits only the active sheets of switched-on
+releases, and only those with recipes are processed. Each `data` branch depends on its
+recipe and on its row of `recipe_sheets`, which keeps only the fields processing reads
+(plus `xlsx_sha256`). Switching a release on or off adds or removes only that release's
+branches.
 
 ## Recipes
 
@@ -211,8 +229,27 @@ How the three ABS batches were picked: `qa/select_batch.R`.
   thing but different series (ISSUES.md I27).
 - **`summarise()` columns mask later arguments too.** `summarise(x = sum(!is.na(x)),
   y = ... x ...)` sees the new `x`.
-- **Rewriting `source_metadata.csv`, even with the same rows reordered, rebuilds
-  everything,** because it's a `format = "file"` target. Expect about 27 minutes.
+- **Per-sheet branches depend on their own inputs only.** `data` maps over
+  `recipe_sheets` rows, which hold only the fields processing reads. Rewriting
+  `source_metadata.csv` (new rows, new columns, new order) reruns the cheap metadata
+  targets, any new or changed sheets, and the whole-table stages. Don't pass the whole
+  metadata table to a mapped target: every branch would then depend on every row.
+- **Excel ignores AppleScript while a dialog is open.** It still answers queries, so
+  this is easy to miss. Act on workbooks by name, never on "active workbook".
+- **Excel's macro prompt can't be suppressed from a script.** Neither `open` nor `open
+  workbook`, nor `automation security` set to force-disable, stops it. Detect macro
+  workbooks first; convert them only with Excel set to disable macros without
+  notification.
+- **Excel can't save to paths longer than 218 characters.** It fails with "Parameter
+  error" and leaves the workbook open.
+- **A failed conversion can leave Excel-wide settings changed** (links prompt, macro
+  security). `get_source_data.R` restores them at the end of the run.
+- **Background jobs: put `nohup` on the whole command.** `nohup A & ` is fine, but in
+  `A | B && nohup C &` the parts before `nohup` die with the shell, and C never starts.
+  This cost one rebuild on 2026-11-01.
+- **A split contradiction stops harmonisation for the whole build.** Before a long
+  rebuild after adding many recipes, run `harmonise()` over all `data_normalised`
+  branches with `tryCatch` to list every contradiction at once.
 - **Sheets without a value change don't rerun downstream.** `targets` compares branch
   outputs, so a `process_recipe()` change that alters only some sheets reruns only
   their downstream branches.

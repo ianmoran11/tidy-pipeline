@@ -1,0 +1,318 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "efbaa04d650ae8101097cc71c2be91807eb9e354dfbf0b0481bd8b99ee5fc061",
+  "sheet": "Table 34",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "15a665a860daa0022047bc82289a79875ba03aeffb0256255babd0131d069527",
+  "agent_notes": "South Australia and court level appear in title. Finalisation parents and guilty subtypes overlap; all totals retained. Sentence groups distinguish custodial and non-custodial totals. Published blanks excluded without imputation.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A17,A30,A40"
+    }
+  ],
+  "tables": [
+    {
+      "name": "finalisation_0",
+      "range": "A8:R16",
+      "values_range": "B8:R8,B9:R9,B10:R10,B11:R11,B12:R12,B13:R13,B14:R14,B15:R15,B16:R16",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A8:A16"
+        }
+      ]
+    },
+    {
+      "name": "custodial_0",
+      "range": "A18:R22",
+      "values_range": "B19:R19,B20:R20,B21:R21,B22:P22,R22",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A19:A22"
+        }
+      ]
+    },
+    {
+      "name": "noncustodial_0",
+      "range": "A23:R27",
+      "values_range": "B24:R24,B25:R25,B26:R26,B27:R27",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A23"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A24:A27"
+        }
+      ]
+    },
+    {
+      "name": "total_0",
+      "range": "A28:R28",
+      "values_range": "B28:R28",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A28:A28"
+        }
+      ]
+    },
+    {
+      "name": "finalisation_23",
+      "range": "A31:R39",
+      "values_range": "B31:R31,B32:R32,B33:R33,B34:E34,G34:R34,B35:E35,G35:R35,B36:E36,G36:R36,B37:R37,B38:R38,B39:R39",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A31:A39"
+        }
+      ]
+    },
+    {
+      "name": "custodial_23",
+      "range": "A41:R45",
+      "values_range": "B42:R42,B43:R43,B44:R44,B45:R45",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B29"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A42:A45"
+        }
+      ]
+    },
+    {
+      "name": "noncustodial_23",
+      "range": "A46:R50",
+      "values_range": "B47:R47,B48:R48,B49:R49,B50:R50",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B29"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A47:A50"
+        }
+      ]
+    },
+    {
+      "name": "total_23",
+      "range": "A51:R51",
+      "values_range": "B51:R51",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:R5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A51:A51"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:49:02Z",
+    "tool_version": "0.2.0",
+    "records": 612,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044746Z-5c0c2b62c602",
+    "started_at": "2026-11-01T04:47:46Z",
+    "workbook": "5c0c2b62c602575c65c814755cf0ef1c09f7c808b4264d308bd4dc67b8525962--7.-defendants-finalised-south-australia-tables-31-to-35-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1956f-61e1-75bf-a7f5-cda43a5a4097",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6c17e86a7796a21bf8333baa4385559ea0a66cb2ed59d14ffe92d1d1a2981628",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5c0c2b62c602575c65c814755cf0ef1c09f7c808b4264d308bd4dc67b8525962--7.-defendants-finalised-south-australia-tables-31-to-35-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 669924f654a06b11b97f7e63abb6a415654954ba311841ea3bc8b622a0118327 | missing |\n| \"Table 31\" | 87ac21cede1bfaae316265bb3fc0e5efab754fe1a1be725227b859c454c7b219 | missing |\n| \"Table 32\" | 2a188360aaa3ea31a46d4cef787a18b9d812b3b6f80dc2ab7c668ea4f6d7999e | missing |\n| \"Table 33\" | 25ea4d5618ad7b653b206c1b925bbcf260dc1d3668de376b516c8c1941806ced | missing |\n| \"Table 34\" | efbaa04d650ae8101097cc71c2be91807eb9e354dfbf0b0481bd8b99ee5fc061 | missing |\n| \"Table 35\" | f0660ff728ac75532870e846d6d210d1590cd455af3199aeff2d5df7e8bda51b | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044746Z-5c0c2b62c602.jsonl"
+  }
+}

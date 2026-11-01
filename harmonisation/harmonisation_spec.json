@@ -22,7 +22,7 @@
     },
     {
       "dimension": "court_level",
-      "pattern": "(?<![A-Za-z])(Higher Courts?|Magistrates'? Courts?|Children's Courts?|All Courts)(?![A-Za-z])",
+      "pattern": "(?<![A-Za-z])(Magistrates'? (?:&|and) Children's Courts|Higher Courts?|Magistrates'? Courts?|Children's Courts?|All Courts)(?![A-Za-z])",
       "values": {
         "higher courts": "Higher Courts",
         "magistrates' courts": "Magistrates' Courts",
@@ -32,7 +32,10 @@
         "magistrates' court": "Magistrates' Courts",
         "magistrates court": "Magistrates' Courts",
         "children's court": "Children's Courts",
-        "all courts": "All Courts"
+        "all courts": "All Courts",
+        "magistrates' & children's courts": "Magistrates' and Children's Courts",
+        "magistrates' and children's courts": "Magistrates' and Children's Courts",
+        "magistrates & children's courts": "Magistrates' and Children's Courts"
       }
     },
     {
@@ -114,6 +117,15 @@
         "indigenous_status": null,
         "_replace": [
           "measure"
+        ]
+      },
+      "Aboriginal and Torres Strait Islander (%)": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
         ]
       }
     },
@@ -540,6 +552,30 @@
       "TOTAL SENTENCED PRISONERS": {
         "population": "Sentenced prisoners",
         "measure": "Number"
+      },
+      "NUMBER IN SUPREME COURT": {
+        "court_level": "Supreme Court",
+        "measure": "Number"
+      },
+      "NUMBER IN INTERMEDIATE COURT": {
+        "court_level": "Intermediate Court",
+        "measure": "Number"
+      },
+      "TOTAL NUMBER IN HIGHER COURTS": {
+        "court_level": "Higher Courts",
+        "measure": "Number"
+      },
+      "PROPORTION IN HIGHER COURTS (%)": {
+        "court_level": "Higher Courts",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Total finalised (excluding transfer to other court levels)": {
+        "scope": "Excluding transfers",
+        "measure": "Number"
       }
     },
     "sentence_length": {
@@ -897,7 +933,44 @@
       "Previous 5 years ( 2012–13 to 2016–17)": "2017-06-30",
       "Previous 5 years (2012–13 to 2016–17)": "2017-06-30",
       "Previous 5 years (2013–14 to 2017–18)": "2018-06-30",
-      "Previous 5 years (2014–15 to 2018–19)": "2019-06-30"
+      "Previous 5 years (2014–15 to 2018–19)": "2019-06-30",
+      "1996–97": "1997-06-30",
+      "1997–98": "1998-06-30",
+      "1998–99": "1999-06-30",
+      "1999–00": "2000-06-30",
+      "2000–01": "2001-06-30",
+      "2001-02": "2002-06-30",
+      "2001–02": "2002-06-30",
+      "2001–02 to 2002–03": "2003-06-30",
+      "2002–03": "2003-06-30",
+      "2002–03 to 2003–04": "2004-06-30",
+      "2003–04": "2004-06-30",
+      "2003–04 to 2004–05": "2005-06-30",
+      "2004–05 to 2005–06": "2006-06-30",
+      "2005-06": "2006-06-30",
+      "2006–07 to 2007–08": "2008-06-30",
+      "2010–11 to 2011–12": "2012-06-30",
+      "30 June 2004": "2004-06-30",
+      "30 JUNE 2004": "2004-06-30",
+      "1996-97": "1997-06-30",
+      "1997-98": "1998-06-30",
+      "1998-99": "1999-06-30",
+      "1999-00": "2000-06-30",
+      "2000-01": "2001-06-30",
+      "2002-03": "2003-06-30",
+      "2003-04": "2004-06-30",
+      "2004-05": "2005-06-30",
+      "2005–06 to 2006–07": "2007-06-30",
+      "2005–06 to 2011–12": "2012-06-30",
+      "2006-07 to 2007-08": "2008-06-30",
+      "2006–07 to 2011–12": "2012-06-30",
+      "2007–08 to 2008–09": "2009-06-30",
+      "30 June 2002": "2002-06-30",
+      "30 JUNE 2002": "2002-06-30",
+      "30 June 2003": "2003-06-30",
+      "30 JUNE 2003": "2003-06-30",
+      "30 June 2005": "2005-06-30",
+      "30 JUNE 2005": "2005-06-30"
     },
     "prisoners-australia": {
       "2011": "2011-06-30",

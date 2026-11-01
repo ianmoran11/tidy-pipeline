@@ -1,0 +1,169 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6dbf9210e38f2602d37c08fe8c27134ba70469d34be65d019391dd92e36a8b90",
+  "sheet": "Table_2",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "760cada5ad343a41fb63d28df67ce7be18b296efb702b7719d3582f35646cd24",
+  "agent_notes": "Counting unit is federal offences, not defendants or principal offences; federal offence groups are distinct from ANZSOC. All published totals and overlapping subtotals retained. Labels, zeros and revision markers retained as published. Reference period 2011–12 appears in publication banner; Table 1 has explicit periods. No imputation of blank cells.",
+  "new_dimensions": [
+    {
+      "name": "federal_offence_group",
+      "description": "Federal offence group of all finalised federal offences, not the defendant's principal offence or ANZSOC classification.",
+      "example_labels": [
+        "Aviation",
+        "Fraud",
+        "Migration",
+        "Total finalised offences"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number",
+      "range": "A9:J34",
+      "values_range": "B9:J34",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "federal_offence_group",
+          "caption": "Federal offence group",
+          "direction": "W",
+          "cells": "A9:A34"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    },
+    {
+      "name": "proportion",
+      "range": "A36:J61",
+      "values_range": "B36:J61",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "federal_offence_group",
+          "caption": "Federal offence group",
+          "direction": "W",
+          "cells": "A36:A61"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B7:J7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:57:51Z",
+    "tool_version": "0.2.0",
+    "records": 468,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045551Z-6708f904083e",
+    "started_at": "2026-11-01T04:55:55Z",
+    "workbook": "6708f904083eb5286cc93e5498df1fcb562ccdb68d7ee71b05bef4114828e75c--4515dc002_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19576-d658-74f0-86cf-b5af4837d372",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "c725291b724bc20bb77a8c2be39b6bda74ad069f82b275da8c3988204e157453",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6708f904083eb5286cc93e5498df1fcb562ccdb68d7ee71b05bef4114828e75c--4515dc002_201112.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d070d126fdc0bd02ead655650b559249bcdf0b674b855bd9c2d98a0e1ba330ed | missing |\n| \"Table_1\" | dc51ab42e60013cdeaa8e3821641938d4c18a3d571d6f048740bb16dc352fb3f | missing |\n| \"Table_2\" | 6dbf9210e38f2602d37c08fe8c27134ba70469d34be65d019391dd92e36a8b90 | missing |\n| \"Table_3\" | 1ca74a32f1ee8cb6310ff94debaad88a9406f3c2e6824114c42a6a8e0040e329 | missing |\n| \"Table_4\" | b80a2a0ed9a275b12227cbdb5853ed335f7442cabb7cbf5e3f79ed1f266ccc83 | missing |\n| \"Table_5\" | 51bd8054f8d015265c37c68b78d7426d69700a1a60fc4554da4d49551005cd54 | missing |\n| \"Table_6\" | fa6410b1cb48a2238ef3e7626616734475bfb6df2b158959fcbb704eded25f5e | missing |\n| \"Table_7\" | 8ba7f3be32d292e215614a86a11738259dc7d6136611053fcc211eaff65012e3 | missing |\n| \"Table_8\" | 5f0b98008505ffcbc25cab8ec6a7f4d3bd3a560b84e9ef889a5a461df769bd0a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045551Z-6708f904083e.jsonl"
+  }
+}

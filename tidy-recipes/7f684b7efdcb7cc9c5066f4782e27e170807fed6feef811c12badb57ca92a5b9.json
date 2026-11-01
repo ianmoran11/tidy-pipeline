@@ -1,0 +1,103 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "7f684b7efdcb7cc9c5066f4782e27e170807fed6feef811c12badb57ca92a5b9",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook contents and links; numbers identify tables, not statistical observations.",
+  "agent_notes": "Contents sheet contains 15 table identifiers B7:B21, not statistical observations. Retain kind contents; numeric-cell check is a false positive requiring reviewer acknowledgement.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T04:57:29Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 15 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045536Z-3199044e7591",
+    "started_at": "2026-11-01T04:55:38Z",
+    "workbook": "3199044e7591422e67a3254aa92b97e18e98c5e25bf4174648082a06726fc335--4515dc001_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19576-92ab-720a-93e0-9dffb472e36d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7b50d392f45dabe5e4ad62fefdf09421afe6391eab931c7feda0856f4bb8564a",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `3199044e7591422e67a3254aa92b97e18e98c5e25bf4174648082a06726fc335--4515dc001_201112.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 16 of 16\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 7f684b7efdcb7cc9c5066f4782e27e170807fed6feef811c12badb57ca92a5b9 | missing |\n| \"Table_1\" | 682cc912310184e8ef75a16008fff4ed22e44b30c315e84a699b80d91227833d | missing |\n| \"Table_2\" | 17925aa62bc70930187adfd43e5ca88fd0abc1ee043c2f5e892127f317ddf666 | missing |\n| \"Table_3\" | 4ff676c0031f6a34b5915bf7f8b314807ea69395129f7953e4362a907f8683e1 | missing |\n| \"Table_4\" | 6d97d7afc4c8d5291a543a8f2e780c6b351e468a12a61ee5dde402d388d00870 | missing |\n| \"Table_5\" | 0cc90d28e133c3dcfe8471752672a19212fc4e5b95e4201e7658afe0f8c7e71a | missing |\n| \"Table_6\" | 8660e1a9f2e5c3a59b329ea6accde282105470966a3ddf470b09ad55fa4d20cd | missing |\n| \"Table_7\" | 9e8990afb6b292f8677f5219e5277bc65c419fbfafb6eb5c6a9987c4a5592ddd | missing |\n| \"Table_8\" | a88dafcc6a076b8685b0dc47e1d5eb212cbbe56496e34c1f6f2c02bd8f7cdc7f | missing |\n| \"Table_9\" | 2ea838d83eb8f427aaa308c8fb2e8ccc7310b426adf89cdb5835fad81e5a13c0 | missing |\n| \"Table_10\" | cfd901a975ed18a40bf521094065cd77aaead3d9bd7aaa39eb0ac44bcd8fc4c6 | missing |\n| \"Table_11\" | 9c3816d32c99c31d0188a19c39b7317bf38a28c1f33d740df0ea88c4faf394f9 | missing |\n| \"Table_12\" | ebca33a7d848ee2d67339657ab1212b816af3e186ee329337edec844e768e76e | missing |\n| \"Table_13\" | 4fd28487bccded58b0863dd85e3b30bbc4679ed64a4bfff05b378223897ba407 | missing |\n| \"Table_14\" | c7322d95105ddbc2b95d4f4d2f5ec005c6b2d5f1ef8a5db427a27854ab1d88c5 | missing |\n| \"Table_15\" | 2cf58e7179c8574d9a70d4ea199a88507ce278d017f6b9f16527340de1b911a0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045536Z-3199044e7591.jsonl"
+  }
+}

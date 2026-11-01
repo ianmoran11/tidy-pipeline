@@ -73,6 +73,28 @@
     "Indigenous status ": "indigenous_status",
     "statistic": "estimate_type"
   },
+  "clean": [
+    {
+      "description": "collapse runs of whitespace, line breaks included",
+      "pattern": "\\s+",
+      "replace": " "
+    },
+    {
+      "description": "trim",
+      "pattern": "^ | $",
+      "replace": ""
+    },
+    {
+      "description": "trailing footnote markers: (a), (b)(c), (12)",
+      "pattern": "(?:\\s*\\((?:[a-z]{1,2}|[0-9]{1,2})\\))+$",
+      "replace": ""
+    },
+    {
+      "description": "a revision marker r before a number: r2010–11",
+      "pattern": "^r(?=[0-9])",
+      "replace": ""
+    }
+  ],
   "values": {
     "principal_offence": {
       "    121 Property damage ": "121 Property damage",

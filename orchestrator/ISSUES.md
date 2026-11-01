@@ -82,15 +82,20 @@ levels). Do this together with I27 (implicit totals).
 
 ## Medium
 
-### I7. 222 `needs_review` recipes are a validator false alarm
-221 contents and 1 notes sheets are flagged because they contain numbers, which are
+### I7. 365 `needs_review` recipes are a validator false alarm
+364 contents and 1 notes sheets (143 of them from the new ABS releases) are flagged because they contain numbers, which are
 table numbers or a concordance. The rule "non-data sheets must have no numeric cells"
 is too strict.
 **Next:** make it a warning for `contents`/`notes`, or allow small integers in a
 contents list. Then re-run `submit_recipe` on those recipes (deterministic, no agent
 cost).
 
-### I8. One genuine review: Criminal Courts 2023–24 cube 10, Table 53
+### I8. Three genuine reviews: isolated numbers outside tables
+Criminal Courts Northern Territory 2013–14 Tables 35 and 36 (new releases) have
+isolated zeros outside the published tables (`B111`; `F16:F17`). The agents kept them
+as annotations. The original case:
+
+Criminal Courts 2023–24 cube 10, Table 53
 Unlabelled numbers below the copyright line (`B66:O67`, `B122:O122`, `B174:O175`)
 repeat Table 52's age statistics. The agent kept them as annotations and asked for
 review.
@@ -188,7 +193,7 @@ as `qa/compare_accepted.R` does.
 ## Low / housekeeping
 
 ### I16. Git repository contents
-Both commits (`35a2a6b`, `580c4f7`) include:
+All commits (`35a2a6b`, `580c4f7`, `9b550de`) include:
 - `tidy-data-asset-status.sqlite3` (9.4 GB), its `.gz` (306 MB) and
   `source-spreadsheets-xlsx.zip` (71 MB): `.git` is 726 MB, and hosts such as GitHub
   reject files over 100 MB;
@@ -229,9 +234,10 @@ The recipes are correct but hard to review.
   built-ins. A custom format with that exact text would be misread.
 
 ### I21. `get_source_data.R` workflow
-It does not write `source_metadata.csv`; the CSV is written by hand from
-`source_data_df_04`. Edits to it were twice lost when the owner's editor saved an
-older copy.
+Resolved 2026-11-01: the script now writes `source_metadata.csv` itself, from
+`sources/`. The old version is `sources/build_current_catalogue.R` (history). The owner
+edits files in an editor that has overwritten agent edits before. Reload
+`get_source_data.R` before saving.
 
 ### I22. No reviewer agent driver
 `agents/prompts/reviewer.md` exists, but nothing runs it.
@@ -245,6 +251,47 @@ allowance is not measured.
 Mitigated downstream by `harmonise()` `from_title`, which covers state, court level,
 period, estimate type and some Indigenous status. Agents still cannot record such
 values themselves.
+
+### I31. New ABS justice releases: done, with leftovers to review
+All 1,953 sheets of the 31 newly admitted releases have recipes: a pilot of 243 and then
+the remaining 1,710, $41 in total (2026-11-01). Results:
+- no error-level check failures; every new series has a population and a measure;
+- 875,857 new values;
+- `qa/review_new_releases.R` compares new values with other releases' values for the
+  same series and period:
+
+  | Publication | Equal | Within 5% |
+  |---|---|---|
+  | Prisoners | 99.8% | |
+  | Recorded Crime | 85.3% | |
+  | Federal Defendants | 82.1% | |
+  | Courts | 67.8% | |
+
+  Courts 2006–07 to 2011–12 agree at 82–96% (95–99% within 5%). Courts 2017–18 to
+  2019–20 agree less (59–71%, 83–90% within 5%). There the labels match and the values
+  are of similar size (ratio median 1.05), so these look like ABS revisions in later
+  releases, mostly the 2020–21 release revising 2019–20. They're not confirmed:
+  check ABS revision notes. `is_latest` takes the later release's value.
+
+The spec work it needed is done: 98 subjects, 5 measure splits (court level inside the
+measure), 37 reference dates, the `-`, `. .` and `—` symbols, legend-based `na`
+meanings, combined court levels, cube codes for 2008–09 (verified, see
+`measures/README.md`), and the "(excluding road traffic offences)" scope.
+
+Left to review:
+- **Courts 2011–12 (about 380 keys):** "Summary outcomes of all defendants" tables give
+  slightly different proportions from "Defendants finalised" tables (28.2 vs 28.1), so
+  "all defendants" may not equal defendants finalised (a judgement in the measure spec,
+  I28).
+- **Courts 2016–17 Table 1 (259 keys):** a publisher typo. Columns D and E are both
+  headed "2011–12"; one should be 2010–11. Like `2022–22`, it needs a cell-level
+  correction mechanism, which doesn't exist yet.
+- **Unrecognised values (93):** revised figures with an `r` prefix (`r10,822`), and `_`.
+  A `prefixes` rule in `value_spec.json` would read the number and flag it as revised.
+- **Undated periods (9):** compound labels like "2006–07 NUMBER (no.)" (need a split),
+  "2008–2009" (calendar or financial?), "2010-11r" (trailing revision marker).
+- **ACT location labels:** "ACT in ACT", "ACT in NSW" (572 labels) are kept as published
+  (I11).
 
 ### I25. Early AIHW recipes have no title, so `identify()` has nothing to read
 110 early AIHW sheets have no `table_title` in their recipe: 76 child protection and
@@ -263,11 +310,12 @@ real. "Number vs symbol" is mostly harmless (a mean-age row crossing a rate pane
 |---|---|---|
 | child protection | 2,621 | 3 |
 | Youth Justice | 1,709 | 75 |
-| Prisoners | 144 | 74 |
-| Courts | 87 | 0 |
-| Recorded Crime | 35 | 6,556 |
+| Prisoners | 160 | 76 |
+| Courts | 782 | 0 |
+| Recorded Crime | 185 | 7,375 |
+| Federal Defendants | 107 | 1 |
 | RoGS | 13 | 5 |
-| Federal Defendants, EEH | 0 | 0 |
+| EEH | 0 | 0 |
 
 AIHW is I25. For the rest, `Rscript orchestrator/qa/integration_conflicts.R
 <publication_id>` shows the tables involved. For example, Courts "Summary
@@ -299,8 +347,8 @@ Each is a JSON entry that's easy to change:
   (`measures/README.md`), not stated anywhere by the ABS.
 
 ### I29. Integrated CSVs are large
-`observations.csv` is 369 MB (1,752,195 rows). `series.csv` is 102 MB, with 382,398
-rows and 114 columns, mostly empty. Both read in R in about 6 seconds.
+`observations.csv` is 558 MB (2,628,052 rows) and `series.csv` 163 MB (582,585 rows,
+mostly empty columns): 708 MB in total after the new ABS releases.
 **Next:** if size matters, gzip them (readr reads `.csv.gz` directly) or move `series`
 to a long format.
 
@@ -323,4 +371,12 @@ to a long format.
 | R13 | 167,000 values in one release couldn't be told apart (title-only population); 761,000 records had no measure | `identify()`. ABS identity conflicts are down to a few hundred (I26) |
 | R14 | Publisher symbols in 12 spellings | `type_values()` with per-publisher meanings; 0 unrecognised |
 | R15 | Found by the new checks: 13 chains in the normalisation spec (e.g. "Higher(a)" → "Higher" → "Higher Courts") left middle labels on 80 sheets | Chains resolved in the JSON; `check_data_normalised()` catches new ones |
+| R17 | Automated XLS/XLSM conversion with Excel: the first test stalled on an Excel dialog. The script also chose "the active workbook" (which could have been the owner's) | Conversion inside Excel's container, acting on its own workbook by name. Works once Excel has no dialog open; tested on 5 XLS files (incl. Excel 95 and ZIP members) with values identical to the originals |
+| R18 | Any change to `source_metadata.csv` that touched every row (e.g. the first prepared national source adds 26 columns) would have rebuilt every sheet's branches | `recipe_sheets` keeps only the fields processing reads (plus `xlsx_sha256`) |
+| R19 | Value symbols assumed one meaning per publication, but Recorded Crime 2019–20 to 2024–25 (and two Prisoners 2025 workbooks) say "na = not applicable" | Workbook-level entries in `value_spec.json` from each workbook's own legend (`qa/seeds/seed_value_legends.R`, 33 workbooks); `type_values()` looks up workbook, then publication, then default |
+| R20 | "Magistrates' & Children's Courts" titles were labelled Children's Courts (one title-rule match) | Combined level as its own alternative in the court-level rule |
+| R21 | `check_data()` counted only non-blank records against validator counts that now include blanks | Accepts either count |
+| R22 | Older releases' untidy labels (`'  SA   '`, `'NSW(a)  '`, `'2018–19(b) '`) | A `clean` section in the normalisation spec (whitespace, trailing footnote markers, leading revision `r`), also applied to the value maps' keys; `normalise()` is 32 lines. Existing data: 48 labels in 2 sheets changed; values untouched |
+| R23 | 2008–09 Courts cubes 2–4 name their court level only in the cube code (4,052 indistinguishable keys) | Cube rules in the measure spec, verified by value matching (99%, 96%, 96%) |
+| R24 | A recipe gave one heading ("Aboriginal and Torres Strait Islander (%)") as both Indigenous status and measure, so the measure split contradicted it and stopped the build | `split` entry for that Indigenous status label. Listed all contradictions first by running `harmonise()` over every branch |
 | R16 | Found while checking R15: "Total prisoners" mapped to "Prisoners" even in Federal Prisoners tables, and the subject "FEDERAL OFFENCES" mapped to "Federal prisoners and parolees" for tables that are one or the other | "Total prisoners" → "Total" (`replace_labels` gives each table's population); title rules for "offences for federal prisoners/parolees". Prisoners conflicts went from 177 to 144 |

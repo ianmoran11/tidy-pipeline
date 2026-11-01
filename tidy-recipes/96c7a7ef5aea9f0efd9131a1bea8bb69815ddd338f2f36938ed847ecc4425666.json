@@ -1,0 +1,368 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "96c7a7ef5aea9f0efd9131a1bea8bb69815ddd338f2f36938ed847ecc4425666",
+  "sheet": "Table 30",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "8c055cd7f7b59b0e225ece69004bc43bf58bc91c81a25dfb888e95c928984d71",
+  "agent_notes": "Published totals and symbols retained; ACT in NSW is a subset of NSW, not additive to Australian totals. Indeterminate is the parent of Life and Other; sparse symbols on the parent row are retained as their own records. Periodic detention and total rows retained. The non-Indigenous sentence block has no printed Persons label; none is invented.",
+  "new_dimensions": [
+    {
+      "name": "sentence_length_group",
+      "description": "Published grouping of sentence lengths or expected time to serve, identifying indeterminate sentences.",
+      "example_labels": [
+        "Indeterminate"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A46:A53"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_7",
+      "range": "A7:N10",
+      "values_range": "D9:N10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9:A10"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A7"
+        }
+      ]
+    },
+    {
+      "name": "sentence_7",
+      "range": "A11:N20",
+      "values_range": "D12:N20",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "B12:B20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A11"
+        }
+      ]
+    },
+    {
+      "name": "parent_7",
+      "range": "B21:N21",
+      "values_range": "K21",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "B21"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A11"
+        }
+      ]
+    },
+    {
+      "name": "indeterminate_7",
+      "range": "C22:N23",
+      "values_range": "D22:N23",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "C22:C23"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A11"
+        },
+        {
+          "name": "sentence_length_group",
+          "cells": "B21"
+        }
+      ]
+    },
+    {
+      "name": "total_7",
+      "range": "A24:N24",
+      "values_range": "D24:N24",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "A24"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A7"
+        },
+        {
+          "name": "sex",
+          "cells": "A11"
+        }
+      ]
+    },
+    {
+      "name": "sex_27",
+      "range": "A27:N30",
+      "values_range": "D29:N30",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A29:A30"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "sentence_27",
+      "range": "B32:N40",
+      "values_range": "D32:N40",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "B32:B40"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "parent_27",
+      "range": "B41:N41",
+      "values_range": "K41",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "B41"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A27"
+        }
+      ]
+    },
+    {
+      "name": "indeterminate_27",
+      "range": "C42:N43",
+      "values_range": "D42:N43",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "C42:C43"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A27"
+        },
+        {
+          "name": "sentence_length_group",
+          "cells": "B41"
+        }
+      ]
+    },
+    {
+      "name": "total_27",
+      "range": "A44:N44",
+      "values_range": "D44:N44",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "direction": "W",
+          "cells": "A44"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D5:N5"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "A27"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:05:07Z",
+    "tool_version": "0.2.0",
+    "records": 310,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T050342Z-b37ed5c7b0b3",
+    "started_at": "2026-11-01T05:03:43Z",
+    "workbook": "b37ed5c7b0b3ac326d27a976a4f0f6495d7142eb2caae655d2f329029d08d8f6--45170-indigenous-and-non-indigenous-prisoners-2005-tables-22-35.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1957d-fb64-7459-b354-b6121631612e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "73eddd923ea303719dbb4eff69f964df06f16180dff8f1261b4e0df6e7a37397",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b37ed5c7b0b3ac326d27a976a4f0f6495d7142eb2caae655d2f329029d08d8f6--45170-indigenous-and-non-indigenous-prisoners-2005-tables-22-35.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2005\n- Sheets needing a recipe: 14 of 14\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 22\" | 663b2b1d5c32990ebdd6dfbb9b85c2fbcc0dd6b700104cc8896c685235c3c6ec | missing |\n| \"Table 23\" | 69024c63328e0e9fed058516596eb6150bc17972dc1524d312349f5e742ca40a | missing |\n| \"Table 24\" | df4e39b9c86578abbbd795437146dd79b4a2f7ec9a2e308c49a83c21b782cca8 | missing |\n| \"Table 25\" | 8029edd7291f610ba5b05d7931c01ca9486cd230ec5ef228c30cdc95ad806bd5 | missing |\n| \"Table 26\" | 3e7c2350757521f59254c7e6fbf3a93b93d6a417d76251dba920fc327ec99024 | missing |\n| \"Table 27\" | 6c685c316a1756a6837436a6b0ab6a794e9c05f4a495b6d67650f3e3e5954507 | missing |\n| \"Table 28\" | 8b5ac1fc7c033d3b01ea434e02d66ec240740e87f0b91e80e55f92674a504e0c | missing |\n| \"Table 29\" | 2d12e4a075ed8a6469b1dc196974d01fe2e1278227b9fee9f13918d61b1dcaa1 | missing |\n| \"Table 30\" | 96c7a7ef5aea9f0efd9131a1bea8bb69815ddd338f2f36938ed847ecc4425666 | missing |\n| \"Table 31\" | d3c44bbd517106e14a5bd88ac399c2e82937d7163446d2c981c3cfd57198bade | missing |\n| \"Table 32\" | 3c1e5a839bce1824ee14b8593a13181284b0c007e07c9df7ed93320a705358a5 | missing |\n| \"Table 33\" | 8bda09027e08d0f59ac1f2e442f1e087d06a4d57d7d4dcd21997d39054490372 | missing |\n| \"Table 34\" | 0637d1aa071e7bf576e4a5d92d0b5be9031fdaa4b939869adab56eec6ab7cf1c | missing |\n| \"Table 35\" | c3f9ad509b26e16a719e639ea9c9df019ee2d5d473be589f9c990f4706adf2ba | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T050342Z-b37ed5c7b0b3.jsonl"
+  }
+}

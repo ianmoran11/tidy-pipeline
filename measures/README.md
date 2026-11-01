@@ -56,7 +56,10 @@ match sets the listed fields. Uses so far:
   court level only through the cube code in the subtitle (`45130DO002` …).
 
   The cube mapping (2 and 6 = Higher, 3 and 7 = Magistrates', 4 and 8 = Children's,
-  5 = all courts) was checked against the data. In 2009–10, cubes 2 + 3 + 4 = cube 5
+  5 = all courts) was checked against the data. 2008–09 cubes 2–4 follow the same
+  mapping: matched against court-labelled series in other releases, their values agree
+  with Higher Courts in 99%, Magistrates' in 96% and Children's in 96% of cases. 2008–09
+  cubes 5–7 name their court level in their titles. In 2009–10, cubes 2 + 3 + 4 = cube 5
   for 707 of 816 cells. Cubes 6–8 of 2009–10 match the 2010–11 cubes that name their
   court level in 94–95% of overlapping cells.
 

@@ -1,0 +1,162 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6ec9b25d37dff9e323c252581da496f0bea9de4eb1fe616b8551569ae65896ee",
+  "sheet": "Table 13",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Totals retained. ACT in NSW is a subset of NSW; ACT components overlap ACT Total. National totals are not additive to state figures. Published symbols and confidentiality-adjusted values preserved. Indeterminate is a parent heading for Life and Other; its only published value is the ACT-in-ACT not-applicable symbol at J17, which is retained. Periodic detention and Total remain sentence_length labels.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "notes",
+      "cells": "A22:A30"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sentence_bands",
+      "range": "A7:M17",
+      "values_range": "C7:M16,J17",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "cells": "A7:A17",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "C5:M5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "indeterminate_types",
+      "range": "B18:M19",
+      "values_range": "C18:M19",
+      "meta_data": [
+        {
+          "name": "notes",
+          "cells": "A17"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sentence_length",
+          "cells": "B18:B19",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "C5:M5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "total",
+      "range": "A20:M20",
+      "values_range": "C20:M20",
+      "headers": [
+        {
+          "name": "sentence_length",
+          "cells": "A20",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "C5:M5",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:04:12Z",
+    "tool_version": "0.2.0",
+    "records": 144,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T050303Z-9d792cc31f73",
+    "started_at": "2026-11-01T05:03:05Z",
+    "workbook": "9d792cc31f73ae0a2ba07ff379cf4ee57caec9ee19190cef659121117e567ef3--45170-sentenced-prisoners-2005-tables-7-16.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1957d-676f-71e3-8ede-37ceb964b8dc",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "2f8973b8e42a3b645f3c3441cd88103ce6f9fa49dc89f87f98eb1faa10dfb3bb",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9d792cc31f73ae0a2ba07ff379cf4ee57caec9ee19190cef659121117e567ef3--45170-sentenced-prisoners-2005-tables-7-16.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2005\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 7\" | 052f2d041afe09af7d63aa282413fc3d2f164effb726835a43061201da1b9fb5 | missing |\n| \"Table 8\" | 1d7b7200d4f808dca14f76b32ccf1c59becfeb60ac89bbf8e6fbcd3a08f9b664 | missing |\n| \"Table 9\" | 1dfac133c8b31b5888d912a9bf2179f8185e2c137ae42e45c1daaaf6f3024e86 | missing |\n| \"Table 10\" | e56804d79b9844fe0d4b3a06646d061984f99e85538b3fbdcacd38b922fca7fa | missing |\n| \"Table 11\" | e82300ba98ce5014bd1e286d617bfd244a2dcdd80118e942ce9fb2981c4954df | missing |\n| \"Table 12\" | 9b1a0dbc01facfe8979d3ff82602cc04435966b1370e306a9ffb63473bdec87f | missing |\n| \"Table 13\" | 6ec9b25d37dff9e323c252581da496f0bea9de4eb1fe616b8551569ae65896ee | missing |\n| \"Table 14\" | 969e0518e4492af328d698611746ef58488876b370ef7714daa59433aebdf86a | missing |\n| \"Table 15\" | 814f282fe4391f7bd10ba51522ef28c7963950fbd9a0580046c5f54411920f45 | missing |\n| \"Table 16\" | 477020740842584a6ce7e27381cfc3ee329c3491c384bfce778df73444c85a90 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T050303Z-9d792cc31f73.jsonl"
+  }
+}

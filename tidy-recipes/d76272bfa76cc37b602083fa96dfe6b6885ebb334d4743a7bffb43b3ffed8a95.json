@@ -1,0 +1,161 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d76272bfa76cc37b602083fa96dfe6b6885ebb334d4743a7bffb43b3ffed8a95",
+  "sheet": "Table 3",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Penalty notices are an indented subset of Non-court action, not an additional disjoint category. Total includes unknown method; all total rows and published np/na values retained. WA excluded as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A17:A24"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number",
+      "range": "A6:H10",
+      "values_range": "B7:H10",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_proceeding",
+          "caption": "Method of proceeding",
+          "direction": "W",
+          "cells": "A7:A10"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    },
+    {
+      "name": "proportion",
+      "range": "A11:H15",
+      "values_range": "B12:H15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B11"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_proceeding",
+          "caption": "Method of proceeding",
+          "direction": "W",
+          "cells": "A12:A15"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T03:30:07Z",
+    "tool_version": "0.2.0",
+    "records": 56,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T032927Z-21469b364524",
+    "started_at": "2026-11-01T03:29:28Z",
+    "workbook": "21469b36452459b5d6fdac2174f2a8ebe27397aa49aec2a2261cf8df9dd49c0d--7.-Offenders-of-COVID-19-related-offences.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19527-af4f-7026-a51f-87a42eab333b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "db73b4fc219a71e459263c1961ee690b4e0a6bd92ec756e9d8ce0e8085090bb5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `21469b36452459b5d6fdac2174f2a8ebe27397aa49aec2a2261cf8df9dd49c0d--7.-Offenders-of-COVID-19-related-offences.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | eb008bd7e0a82f8896d0ebdb9b841a6dbff8f3717be3821a005f8a6be21264a8 | missing |\n| \"Table 1\" | 5b67c0608f4f309d7d7d2fe9dca34b69941302c0c2938430b22679f669b48116 | missing |\n| \"Table 2\" | c1577b1d2fbb517e0933dd452c939d50a71b9b00a89d945a7a869c518fbd1d27 | missing |\n| \"Table 3\" | d76272bfa76cc37b602083fa96dfe6b6885ebb334d4743a7bffb43b3ffed8a95 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T032927Z-21469b364524.jsonl"
+  }
+}

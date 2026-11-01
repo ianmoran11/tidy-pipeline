@@ -38,9 +38,15 @@ period_key <- function(m) {
   coalesce(m$reference_period, m$asset_year, str_extract(m$xlsx_file, "(19|20)[0-9]{2}"))
 }
 
+# Releases switched on in sources/dataset_selection.json; only these are queued
+switched_on <- function() {
+  r <- jsonlite::read_json("sources/dataset_selection.json")$releases
+  tibble(publication_id = rep(names(r), lengths(r)), release_key = unlist(lapply(r, names)), on = unlist(r)) %>% filter(on %in% TRUE)
+}
+
 build <- function() {
   # Reference-only copies (source-spreadsheets-xlsx/reference-only/) get no recipes
-  m <- metadata() %>% filter(reference_only != "TRUE") %>%
+  m <- metadata() %>% filter(reference_only != "TRUE") %>% semi_join(switched_on(), by = c("publication_id", "release_key")) %>%
     mutate(status = recipe_status(sheet_sha256), period = period_key(.))
   queue <- m %>%
     group_by(xlsx_file, publication_id, period) %>%

@@ -1,0 +1,158 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "44c740aa237e3298ee7aba743cf3dfb7c24e7071a361590ed299aea05db3d6e5",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "c01e082f1ee60e44002eddcc86c8ca201df608125b2556143aff651f40a691f1",
+  "agent_notes": "Published age totals retained; do not add totals to constituent rows. Australia and the reference period are preserved as published in table_title. Table_1 has no overall offence total column; Table_2 does.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_7",
+      "range": "A7:P63",
+      "values_range": "B7:P63",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A7:A63",
+          "caption": "Age (years)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:P5"
+        }
+      ]
+    },
+    {
+      "name": "block_65",
+      "range": "A65:P121",
+      "values_range": "B65:P121",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A64"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A65:A121",
+          "caption": "Age (years)"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:P5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:06:01Z",
+    "tool_version": "0.2.0",
+    "records": 1710,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T050513Z-094d740378b4",
+    "started_at": "2026-11-01T05:05:16Z",
+    "workbook": "094d740378b4d0d6f9543bd8d17b820e27ee1ba627fca022188edf64a98dab39--45190do012_200809.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1957f-64ad-76c0-a503-3adc6ec07026",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "d6bb2d267a37e7e9ff304e668f44649073a95b29143860451b0ce4f25a062153",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `094d740378b4d0d6f9543bd8d17b820e27ee1ba627fca022188edf64a98dab39--45190do012_200809.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2008-09\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 5668e9de4b8c72165be02925e501792bd3990c3806b9bb6b1c127e34a53e1d64 | missing |\n| \"Table_1\" | 44c740aa237e3298ee7aba743cf3dfb7c24e7071a361590ed299aea05db3d6e5 | missing |\n| \"Table_2\" | 8c3339983718378788619af666e52a6e502e4e2440d1170cea7453331006dc2f | missing |\n| \"Table_3\" | 079d1ae059e476efd51407ea47a205b9d5981a24db4fda6b7234405090d696eb | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T050513Z-094d740378b4.jsonl"
+  }
+}

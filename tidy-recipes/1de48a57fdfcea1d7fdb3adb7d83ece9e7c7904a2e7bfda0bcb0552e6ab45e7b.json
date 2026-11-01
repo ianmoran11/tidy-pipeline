@@ -1,0 +1,318 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "1de48a57fdfcea1d7fdb3adb7d83ece9e7c7904a2e7bfda0bcb0552e6ab45e7b",
+  "sheet": "Table 32",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "928b7f1e8ef669d50b20effb2b854d4c8acb076c67911351e152b8f23ec9df2d",
+  "agent_notes": "Tasmania is stated in the title; 2013–14 is in the publication banner. All totals and nested subtotals retained and not additive. Blank values omitted, not imputed; published discrepancies preserved. Adjudicated outcomes groups Acquitted and Proven guilty (and Total where published). Custodial/non-custodial totals retain group context. Values_range excludes source blanks, but the runner reconstructs rectangular interiors and may emit null-valued records for holes; reported record counts include these.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A8,A16,A25,A33"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_adjudicated",
+      "range": "A10:H11",
+      "values_range": "B10,C10,D10,F10,G10,H10,B11,C11,D11,E11,F11,G11,H11",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A10:A11",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "number_other_finalisation",
+      "range": "A12:H15",
+      "values_range": "B12,C12,D12,F12,G12,H12,B13,C13,D13,E13,F13,G13,H13,B14,C14,D14,E14,F14,G14,H14,B15,C15,D15,E15,F15,G15,H15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A12:A15",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "number_custodial",
+      "range": "A18:H21",
+      "values_range": "B18,C18,D18,E18,F18,G18,H18,B20,C20,D20,E20,F20,G20,H20,B21,D21,E21,F21,G21,H21",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A17"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A18:A21",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "number_other_sentence",
+      "range": "A22:H23",
+      "values_range": "B22,D22,E22,F22,G22,H22,B23,C23,D23,E23,F23,G23,H23",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A22:A23",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_adjudicated",
+      "range": "A27:H28",
+      "values_range": "B27,C27,D27,F27,G27,H27,B28,C28,D28,E28,F28,G28,H28",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A24"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A27:A28",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_other_finalisation",
+      "range": "A29:H32",
+      "values_range": "B29,C29,D29,F29,G29,H29,B30,C30,D30,E30,F30,G30,H30,B31,C31,D31,E31,F31,G31,H31,B32,C32,D32,E32,F32,G32,H32",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A29:A32",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_custodial",
+      "range": "A35:H38",
+      "values_range": "B35,C35,D35,E35,F35,G35,H35,B37,C37,D37,E37,F37,G37,H37,B38,D38,E38,F38,G38,H38",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A24"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A34"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A35:A38",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_other_sentence",
+      "range": "A39:H40",
+      "values_range": "B39,D39,E39,F39,G39,H39,B40,C40,D40,E40,F40,G40,H40",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A39:A40",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:H6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:41:16Z",
+    "tool_version": "0.2.0",
+    "records": 154,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044010Z-f50ef676cf57",
+    "started_at": "2026-11-01T04:40:11Z",
+    "workbook": "f50ef676cf57bf9264ed9b51587e327b090ca8b988140c06501dff338b42d37c--criminal-courts-tasmania-tables-31-to-34-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19568-6f28-7275-a92a-881fc9eac932",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3d5e2e869277592c76ca6dde586703773711c7a23da1b0e0ee4df328bb2840e1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f50ef676cf57bf9264ed9b51587e327b090ca8b988140c06501dff338b42d37c--criminal-courts-tasmania-tables-31-to-34-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2013-14\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"List of Tables\" | 36fa1e192b3972baba7d3274f3fe2760841ad961ccca6d91e709136e7ce9e25a | missing |\n| \"Table 31\" | 70646abe194d39358c3a8528e767f08049586c3e4c755579b13703ea4d3b3316 | missing |\n| \"Table 32\" | 1de48a57fdfcea1d7fdb3adb7d83ece9e7c7904a2e7bfda0bcb0552e6ab45e7b | missing |\n| \"Table 33\" | e7dc573b0e58d66717c3a72496cfb677a5a6a52c036bf6d396e5e626cfd687df | missing |\n| \"Table 34\" | cc5c3ffaf9cdfbf78f37ac05398d2c0cad2e702f2366282e87b6101657be51ed | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044010Z-f50ef676cf57.jsonl"
+  }
+}

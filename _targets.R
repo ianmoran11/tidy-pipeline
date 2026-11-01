@@ -16,11 +16,28 @@ tar_option_set(packages = c("readr", "dplyr", "tidyverse", "ggplot2", "openxlsx"
 
 list(
   tar_target(source_metadata_file, "source_metadata.csv", format = "file"),
-  tar_target(source_metadata_df, read_csv(source_metadata_file, trim_ws = FALSE)),
+  # source_metadata.csv (one row per sheet) is written outside the pipeline by get_source_data.R
+  tar_target(source_metadata_df, read_csv(source_metadata_file, col_types = cols(.default = "c", reference_only = "l", sheet_index = "i"),
+                                          trim_ws = FALSE, na = c("", "NA"))),
   tar_target(source_metadata_checks, check_source_metadata(source_metadata_df), error = "continue"),
-  tar_files(recipe_files, list.files("./tidy-recipes", pattern = "\\.json$", full.names = T)),
-  tar_target(data, process_recipe(source_metadata_df, recipe_files), pattern = map(recipe_files), iteration = "list"),
-  tar_target(data_checks, check_data(data, source_metadata_df), pattern = map(data), error = "continue"),
+  # Admission: only switched-on releases in sources/dataset_selection.json reach the stages below.
+  # selected_sheets reruns every time (it's fast) so new recipe files are noticed.
+  tar_target(dataset_selection_file, "sources/dataset_selection.json", format = "file"),
+  tar_target(dataset_selection, jsonlite::read_json(dataset_selection_file)),
+  tar_target(selected_sheets, select_sheets(source_metadata_df, dataset_selection), cue = tar_cue(mode = "always")),
+  tar_target(selected_sheets_checks, check_selected_sheets(selected_sheets, dataset_selection, source_metadata_df), error = "continue"),
+  tar_target(selection_coverage, dplyr::summarise(dplyr::group_by(selected_sheets, publication_id, release_key), sheets = dplyr::n(),
+                                                  with_recipe = sum(has_recipe), .groups = "drop")),
+  # Each sheet's branch depends on its row of recipe_sheets, so keep only the fields
+  # process_recipe(), check_data() and assemble() read, plus xlsx_sha256 (the workbook's
+  # bytes). New or changed provenance columns in source_metadata.csv then don't rebuild
+  # every branch: a sheet's branches rerun only when one of these fields or its recipe changes.
+  tar_target(recipe_sheets, dplyr::select(dplyr::filter(selected_sheets, has_recipe), dplyr::all_of(c("sheet_sha256", "recipe_path",
+    "sheets", "xlsx_file", "xlsx_sha256", "reference_only", "active_sheet_sha256", "publication_id", "reference_period",
+    "publication", "publisher", "source_release_id", "asset_year", "release", "release_date")))),
+  tar_files(recipe_files, recipe_sheets$recipe_path),
+  tar_target(data, process_recipe(recipe_sheets, recipe_files), pattern = map(recipe_sheets, recipe_files), iteration = "list"),
+  tar_target(data_checks, check_data(data, recipe_sheets), pattern = map(data, recipe_sheets), error = "continue"),
   tar_target(normalisation_spec_file, "normalisation/normalisation_spec.json", format = "file"),
   tar_target(normalisation_spec, jsonlite::read_json(normalisation_spec_file)),
   tar_target(data_normalised, normalise(data, normalisation_spec), pattern = map(data), iteration = "list"),
@@ -36,7 +53,7 @@ list(
   tar_target(data_identified_checks, check_data_identified(data_identified, data_harmonised, measure_spec), pattern = map(data_identified, data_harmonised), error = "continue"),
   tar_target(integration_spec_file, "integration/integration_spec.json", format = "file"),
   tar_target(integration_spec, jsonlite::read_json(integration_spec_file)),
-  tar_target(integrated, assemble(data_identified, source_metadata_df, integration_spec)),
+  tar_target(integrated, assemble(data_identified, recipe_sheets, integration_spec)),
   tar_target(integrated_checks, check_integrated(integrated, data_identified, integration_spec), error = "continue"),
   tar_target(value_spec_file, "integration/value_spec.json", format = "file"),
   tar_target(value_spec, jsonlite::read_json(value_spec_file)),
@@ -52,6 +69,6 @@ list(
   tar_target(integrated_files_checks, check_integrated_files(integrated_files, observations, integrated), error = "continue"),
   # Every failed test from the checks above, in one table (warnings included; failed
   # "error" tests also stop their own check target)
-  tar_target(check_failures, dplyr::filter(dplyr::bind_rows(source_metadata_checks, data_checks, data_normalised_checks, data_harmonised_checks,
+  tar_target(check_failures, dplyr::filter(dplyr::bind_rows(source_metadata_checks, selected_sheets_checks, data_checks, data_normalised_checks, data_harmonised_checks,
     data_identified_checks, integrated_checks, observations_typed_checks, observations_checks, integrated_files_checks), !passed))
 )

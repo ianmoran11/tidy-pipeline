@@ -1,0 +1,688 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a255504e80071b4e1792713c305d1ccf2d3fff3883eb26b7bd9a5d291dc9a6e4",
+  "sheet": "FDV Table 3",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "4f8c86b45a7e290cbf7293744a99a8d65998a84f19430e62c3fd126dad618d42",
+  "agent_notes": "Experimental FDV data. Jurisdiction and population are stated in the title. Published hierarchical offence, finalisation and sentence parent/subtotal rows and totals are retained; do not sum them with their children. Mean and median ages remain age_group labels; duration statistics retain weeks. Blank source cells excluded. Table 3's Aboriginal and Torres Strait Islander (%) block is a proportion measure.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A8,A12,A25,A36,A40,A48,A52,A65,A76,A80,A88,A92,A103,A114"
+    },
+    {
+      "name": "notes",
+      "cells": "A122"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_9",
+      "range": "A9:M10",
+      "values_range": "B9,C9,D9,E9,F9,G9,J9,K9,L9,M9,B10,C10,D10,E10,F10,G10,J10,K10,L10,M10",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "age_group_13",
+      "range": "A13:M23",
+      "values_range": "B13,C13,D13,E13,F13,G13,J13,K13,L13,M13,B14,C14,D14,E14,F14,G14,J14,K14,L14,M14,B15,C15,D15,E15,F15,G15,J15,K15,L15,M15,B16,C16,D16,E16,F16,G16,J16,K16,L16,M16,B17,C17,D17,E17,F17,G17,J17,K17,L17,M17,B18,C18,D18,E18,F18,G18,J18,K18,L18,M18,B19,C19,D19,E19,F19,G19,J19,K19,L19,M19,B20,C20,D20,E20,F20,G20,J20,K20,L20,M20,B21,C21,D21,E21,F21,G21,J21,K21,L21,M21,B22,C22,D22,E22,F22,G22,J22,K22,L22,M22,B23,C23,D23,E23,F23,G23,J23,K23,L23,M23",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_26",
+      "range": "A26:M33",
+      "values_range": "B26,C26,D26,E26,F26,G26,J26,M26,B27,C27,D27,E27,F27,G27,J27,K27,L27,M27,B28,C28,D28,E28,F28,G28,J28,K28,L28,M28,B29,C29,D29,E29,F29,G29,J29,K29,L29,M29,D30,E30,F30,G30,J30,K30,M30,D31,E31,F31,G31,J31,K31,L31,M31,B32,C32,D32,E32,F32,G32,J32,K32,L32,M32,B33,C33,D33,E33,F33,G33,J33,K33,L33,M33",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A26,A27,A28,A29,A30,A31,A32,A33",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_34",
+      "range": "A34:M34",
+      "values_range": "B34,C34,D34,E34,F34,G34,J34,K34,L34,M34",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A34"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_37",
+      "range": "A37:M38",
+      "values_range": "B37,C37,D37,E37,F37,G37,J37,K37,L37,M37,B38,C38,D38,E38,F38,G38,J38,K38,L38,M38",
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A37,A38",
+          "caption": "Duration"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_41",
+      "range": "A41:M45",
+      "values_range": "B41,C41,D41,E41,F41,G41,J41,K41,L41,M41,B42,C42,D42,E42,F42,G42,J42,K42,L42,M42,B43,C43,D43,E43,F43,G43,J43,K43,L43,M43,B44,C44,D44,E44,F44,G44,J44,K44,L44,M44,B45,C45,D45,E45,F45,G45,J45,K45,L45,M45",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A41,A42,A43,A44,A45",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_46",
+      "range": "A46:M46",
+      "values_range": "B46,C46,D46,E46,F46,G46,J46,K46,L46,M46",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A46"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B7"
+        }
+      ]
+    },
+    {
+      "name": "sex_49",
+      "range": "A49:M50",
+      "values_range": "B49,C49,D49,E49,F49,G49,J49,K49,L49,M49,B50,C50,D50,E50,F50,G50,J50,K50,L50,M50",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A49,A50",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "age_group_53",
+      "range": "A53:M63",
+      "values_range": "B53,C53,D53,E53,F53,G53,J53,K53,L53,M53,B54,C54,D54,E54,F54,G54,J54,K54,L54,M54,B55,C55,D55,E55,F55,G55,J55,K55,L55,M55,B56,C56,D56,E56,F56,G56,J56,K56,L56,M56,B57,C57,D57,E57,F57,G57,J57,K57,L57,M57,B58,C58,D58,E58,F58,G58,J58,K58,L58,M58,B59,C59,D59,E59,F59,G59,J59,K59,L59,M59,B60,C60,D60,E60,F60,G60,J60,K60,L60,M60,B61,C61,D61,E61,F61,G61,J61,K61,L61,M61,B62,C62,D62,E62,F62,G62,J62,K62,L62,M62,B63,C63,D63,E63,F63,G63,J63,K63,L63,M63",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_66",
+      "range": "A66:M73",
+      "values_range": "B66,C66,D66,E66,F66,G66,J66,M66,B67,C67,D67,E67,F67,G67,J67,K67,L67,M67,B68,C68,D68,E68,F68,G68,J68,K68,L68,M68,B69,C69,D69,E69,F69,G69,J69,K69,L69,M69,B70,D70,E70,F70,G70,J70,K70,M70,B71,D71,E71,F71,G71,J71,K71,L71,M71,B72,C72,D72,E72,F72,G72,J72,K72,L72,M72,B73,C73,D73,E73,F73,G73,J73,K73,L73,M73",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A66,A67,A68,A69,A70,A71,A72,A73",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_74",
+      "range": "A74:M74",
+      "values_range": "B74,C74,D74,E74,F74,G74,J74,K74,L74,M74",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A74"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_77",
+      "range": "A77:M78",
+      "values_range": "B77,C77,D77,E77,F77,G77,J77,K77,L77,M77,B78,C78,D78,E78,F78,G78,J78,K78,L78,M78",
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A77,A78",
+          "caption": "Duration"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_81",
+      "range": "A81:M85",
+      "values_range": "B81,C81,D81,E81,F81,G81,J81,K81,L81,M81,B82,C82,D82,E82,F82,G82,J82,K82,L82,M82,B83,C83,D83,E83,F83,G83,J83,K83,L83,M83,B84,C84,D84,E84,F84,G84,J84,K84,L84,M84,B85,C85,D85,E85,F85,G85,J85,K85,L85,M85",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A81,A82,A83,A84,A85",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_86",
+      "range": "A86:M86",
+      "values_range": "B86,C86,D86,E86,F86,G86,J86,K86,L86,M86",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A86"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indigenous_status",
+          "cells": "B47"
+        }
+      ]
+    },
+    {
+      "name": "sex_89",
+      "range": "A89:M90",
+      "values_range": "B89,C89,D89,E89,F89,G89,J89,K89,L89,M89,B90,C90,D90,E90,F90,G90,J90,K90,L90,M90",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A89,A90",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B87"
+        }
+      ]
+    },
+    {
+      "name": "age_group_93",
+      "range": "A93:M101",
+      "values_range": "B93,C93,D93,E93,F93,G93,J93,K93,L93,M93,B94,C94,D94,E94,F94,G94,J94,K94,L94,M94,B95,C95,D95,E95,F95,G95,J95,K95,L95,M95,B96,C96,D96,E96,F96,G96,J96,K96,L96,M96,B97,C97,D97,E97,F97,G97,J97,K97,L97,M97,B98,C98,D98,E98,F98,G98,J98,K98,L98,M98,B99,C99,D99,E99,F99,G99,J99,K99,L99,M99,B100,C100,D100,E100,F100,G100,J100,K100,L100,M100,B101,C101,D101,E101,F101,G101,J101,K101,L101,M101",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A93,A94,A95,A96,A97,A98,A99,A100,A101",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B87"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_104",
+      "range": "A104:M111",
+      "values_range": "B104,C104,D104,E104,F104,G104,J104,M104,B105,C105,D105,E105,F105,G105,J105,K105,L105,M105,B106,C106,D106,E106,F106,G106,J106,K106,L106,M106,B107,C107,D107,E107,F107,G107,J107,K107,L107,M107,D108,E108,F108,G108,J108,K108,M108,D109,E109,F109,G109,J109,K109,L109,M109,B110,C110,D110,E110,F110,G110,J110,K110,L110,M110,B111,C111,D111,E111,F111,G111,J111,K111,L111,M111",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A104,A105,A106,A107,A108,A109,A110,A111",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B87"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_112",
+      "range": "A112:M112",
+      "values_range": "B112,C112,D112,E112,F112,G112,J112,K112,L112,M112",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A112"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B87"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_115",
+      "range": "A115:M119",
+      "values_range": "B115,C115,D115,E115,F115,G115,J115,K115,L115,M115,B116,C116,D116,E116,F116,G116,J116,K116,L116,M116,B117,C117,D117,E117,F117,G117,J117,K117,L117,M117,B118,C118,D118,E118,F118,G118,J118,K118,L118,M118,B119,C119,D119,E119,F119,G119,J119,K119,L119,M119",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A115,A116,A117,A118,A119",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B87"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_120",
+      "range": "A120:M120",
+      "values_range": "B120,C120,D120,E120,F120,G120,J120,K120,L120,M120",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A120"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,E5,H5,K5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B87"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:54:37Z",
+    "tool_version": "0.2.0",
+    "records": 860,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045216Z-c893874edf47",
+    "started_at": "2026-11-01T04:52:17Z",
+    "workbook": "c893874edf47698aa10a1333d8e73009ae12b551c4bfcf29aa14ada8ca4094c3--14.-Family-and-Domestic-Violence-Experimental-data-Tables-1-to-21-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19573-8221-7703-afd9-41c6cbcc8335",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "64a194f63f3cba52d7773dc6b6c8ded99a40a3d2a2434be2036e895f2cc311e6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c893874edf47698aa10a1333d8e73009ae12b551c4bfcf29aa14ada8ca4094c3--14.-Family-and-Domestic-Violence-Experimental-data-Tables-1-to-21-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 22 of 22\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6e992d6c55d8dc87d9a4247986365c05bc3febba521a4bc40df6ce2b0eb5bdca | missing |\n| \"FDV Table 1\" | 1695185780546048b9409bb06cd1815961e0621d7d0779b3f31bf5407ca01520 | missing |\n| \"FDV Table 2\" | 34fa9b2e3a072a43accdeb412f3a0328fd9cbc8cf7ac0d2e978f00598a62c88a | missing |\n| \"FDV Table 3\" | a255504e80071b4e1792713c305d1ccf2d3fff3883eb26b7bd9a5d291dc9a6e4 | missing |\n| \"FDV Table 4\" | 4646a2ee9ecb62f9634328b5208393b62218c43abe6061f194332fd43bb9214d | missing |\n| \"FDV Table 5\" | 81dbe192fb48a721d6a083882b83cc78350c01dd2c3d82482b4af8656f5c6a9f | missing |\n| \"FDV Table 6\" | 354b87cb863ff0771480e13e4d66d4efde56944e90aa5aff676f26c7b304b041 | missing |\n| \"FDV Table 7\" | 0433ae7026f3ac8976f719f0acac394552a991bfd98c861b2422813d89651154 | missing |\n| \"FDV Table 8\" | d9db95e789145a7710c908f7ba849b7ba359e152307959a489b5b883469b8653 | missing |\n| \"FDV Table 9\" | 18243f94c393dd1818d7af74da4f70569aab86260189568de95fb48bbeb0b381 | missing |\n| \"FDV Table 10\" | 4e66bbbc0e4193a780de254053ea8fa6b4c19b04ae469db5c8879f98b5228a1c | missing |\n| \"FDV Table 11\" | 6fe6c09c6c9d11498fa121ca71f9e921dbe4c77664e95841d362d4c81e6f361e | missing |\n| \"FDV Table 12\" | 364ab3149e03f1853544e6247572f790c8f8f0b7db3266fce678c9d88ace3b60 | missing |\n| \"FDV Table 13\" | 97e6bff7c9454cfb221c7ff0b1b8b63dc5fa5a6a3587e5213440abe8a223a7e6 | missing |\n| \"FDV Table 14\" | b67b846e0dbb58474f88871cc2e9be9a007fe746643b713bc6b79071306e5cb9 | missing |\n| \"FDV Table 15\" | fa83b226775efae03b2b31e046f236b01a0073427264135005efe80665d6e7ef | missing |\n| \"FDV Table 16\" | 1ddae45b785877c29f4370f22b858b1661a259abb024bb76963e2fe382e29a50 | missing |\n| \"FDV Table 17\" | f91e6657d8031bfc7b5df8e9b0cd6e6438bd574373ec242841c7788b20e0b2b8 | missing |\n| \"FDV Table 18\" | 280568548ef4c4f2344af65dbe141882af12c73803fcf8b7e208a8cc3356fe12 | missing |\n| \"FDV Table 19\" | b8eb76d01bbb598cfb7c54e4ab180c41fa4d8d214077cae15cbe73dbd6e08aed | missing |\n| \"FDV Table 20\" | 6e250d4319302e5feb49ee7600f8f0f81961c44e6c80e397380e02cf8b703229 | missing |\n| \"FDV Table 21 \" | 4924464bc19b344fd96151a24ace4b01649c19c3881f34f6736c6cbff863445e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045216Z-c893874edf47.jsonl"
+  }
+}

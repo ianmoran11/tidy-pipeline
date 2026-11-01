@@ -1,0 +1,364 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0ac4fdcaf213795b451a2170bfdc91264c996ca082cf2c3c7c94f2867dc40e11",
+  "sheet": "Table 41",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "205a57d62b66976983902f7219ec2be7c75a1c1d5f04f6d63a53d50a2b021d62",
+  "agent_notes": "ACT and court level in title; 2013–14 in banner. All totals retained, not additive. Adjudicated outcomes groups Acquitted and Proven guilty. Custodial and non-custodial sentence totals distinguished by group. Blank sentence cells are omitted, not imputed; custody in the community has no values. Values ranges exclude source blanks; the pipeline may nevertheless emit null-valued records for interior holes in its reconstructed grid.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A8,A16,A29,A37"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_adjudicated",
+      "range": "A10:P11",
+      "values_range": "B10:P10,B11:P11",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A10:A11"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "number_other_finalisation",
+      "range": "A12:P15",
+      "values_range": "B12:P12,B13:P13,B14:P14,B15:P15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A12:A15"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "number_custodial",
+      "range": "A18:P21",
+      "values_range": "B18,D18:N18,P18,B20,D20:N20,P20,B21:P21",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A17"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A18:A21"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "number_non_custodial",
+      "range": "A23:P26",
+      "values_range": "B23,D23:G23,I23:P23,B24:P24,B25,D25:G25,I25:P25,B26:P26",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A23:A26"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "number_sentence_total",
+      "range": "A27:P27",
+      "values_range": "B27:P27",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A27:A27"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_adjudicated",
+      "range": "A31:P32",
+      "values_range": "B31:P31,B32:P32",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A28"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A31:A32"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_other_finalisation",
+      "range": "A33:P36",
+      "values_range": "B33:P33,B34:P34,B35:P35,B36:P36",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A33:A36"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_custodial",
+      "range": "A39:P42",
+      "values_range": "B39,D39:N39,P39,B41,D41:N41,P41,B42:P42",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A28"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A39:A42"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_non_custodial",
+      "range": "A44:P47",
+      "values_range": "B44,D44:G44,I44:P44,B45:P45,B46,D46:G46,I46:P46,B47:P47",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A28"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A44:A47"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    },
+    {
+      "name": "proportion_sentence_total",
+      "range": "A48:P48",
+      "values_range": "B48:P48",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A48:A48"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:P6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:38:34Z",
+    "tool_version": "0.2.0",
+    "records": 420,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T043715Z-202d8e6a3a25",
+    "started_at": "2026-11-01T04:37:26Z",
+    "workbook": "202d8e6a3a25fccb5e293fffda2dcff9e8eb9f9d5fb2913eb7c89e32b1e2d3a1--criminal-courts-australian-capital-territory-tables-39-to-42-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19565-ed78-71df-9bfe-1e2e6b69f611",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "d51b4df60ea999bc67154d95cbc87162076b10fbc9a70438b5cfc24f5cf093f1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `202d8e6a3a25fccb5e293fffda2dcff9e8eb9f9d5fb2913eb7c89e32b1e2d3a1--criminal-courts-australian-capital-territory-tables-39-to-42-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2013-14\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"List of Tables\" | deeb7069bbadc513e2994f79ddb5bf90d656faefed95c834027604832167bbcd | missing |\n| \"Table 39\" | 0ba2c8585ee1cff89464a595ed281854a903bc64245098b91504b024a4663df1 | missing |\n| \"Table 40\" | 928b7f1e8ef669d50b20effb2b854d4c8acb076c67911351e152b8f23ec9df2d | missing |\n| \"Table 41\" | 0ac4fdcaf213795b451a2170bfdc91264c996ca082cf2c3c7c94f2867dc40e11 | missing |\n| \"Table 42\" | 0f0695ee25643548f13517d16789fddf5e86886cbd920d9c2809f61e1b95a4db | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T043715Z-202d8e6a3a25.jsonl"
+  }
+}

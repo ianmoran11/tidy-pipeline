@@ -1,0 +1,553 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "377e2c9b96735fb27b95a9f37b7c531f951bd8fe461de0838781386316ca6137",
+  "sheet": "Table 29",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "4d71fcd624cf4968f10d7bb051ef728680b57da091c8d7b91c81b21444f371fe",
+  "agent_notes": "Published Total rows retained. Court and non-court blocks have no 2018–19 values (L/W blank), so those columns are omitted. Unheaded export block B98:O113 is preserved separately as export_* tables: its 11 count columns match the total-proceedings years 2008–09 to 2018–19 and duplicate those observations, with longer offence labels. Do not aggregate export tables with the main tables. Geography for main tables is in the title.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "B114:B115"
+    }
+  ],
+  "tables": [
+    {
+      "name": "court_action",
+      "range": "A5:W23",
+      "values_range": "B8:K23,M8:V23",
+      "meta_data": [
+        {
+          "name": "method_of_proceeding",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A8:A23"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:W6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,M5"
+        }
+      ]
+    },
+    {
+      "name": "non_court_action",
+      "range": "A24:W40",
+      "values_range": "B25:K40,M25:V40",
+      "meta_data": [
+        {
+          "name": "method_of_proceeding",
+          "cells": "B24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A25:A40"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:W6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,M5"
+        }
+      ]
+    },
+    {
+      "name": "total_proceedings",
+      "range": "A41:W57",
+      "values_range": "B42:W57",
+      "meta_data": [
+        {
+          "name": "method_of_proceeding",
+          "cells": "B41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A42:A57"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:W6"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,M5"
+        }
+      ]
+    },
+    {
+      "name": "export_1",
+      "range": "B98:E113",
+      "values_range": "E98:E113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_2",
+      "range": "F98:F113",
+      "values_range": "F98:F113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "C6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_3",
+      "range": "G98:G113",
+      "values_range": "G98:G113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "D6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_4",
+      "range": "H98:H113",
+      "values_range": "H98:H113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "E6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_5",
+      "range": "I98:I113",
+      "values_range": "I98:I113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "F6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_6",
+      "range": "J98:J113",
+      "values_range": "J98:J113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "G6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_7",
+      "range": "K98:K113",
+      "values_range": "K98:K113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "H6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_8",
+      "range": "L98:L113",
+      "values_range": "L98:L113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "I6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_9",
+      "range": "M98:M113",
+      "values_range": "M98:M113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "J6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_10",
+      "range": "N98:N113",
+      "values_range": "N98:N113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "K6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    },
+    {
+      "name": "export_11",
+      "range": "O98:O113",
+      "values_range": "O98:O113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "L6"
+        },
+        {
+          "name": "measure",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "B98:B113"
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "W",
+          "cells": "C98:C113"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "D98:D113"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:15:41Z",
+    "tool_version": "0.2.0",
+    "records": 1168,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T051239Z-7f6036078c26",
+    "started_at": "2026-11-01T05:12:56Z",
+    "workbook": "7f6036078c26bcb74058fb65641ac47e40909e80a8eb549b98d16cc3cea7a797--5.-police-proceedings-selected-states-and-territories.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19586-6a01-7109-9c96-e508a1d72dff",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8d7470ca8dbb7e4e60edeacaab28db4f52596cb0c72d8c88f5bca09b631369a4",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `7f6036078c26bcb74058fb65641ac47e40909e80a8eb549b98d16cc3cea7a797--5.-police-proceedings-selected-states-and-territories.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | eb9f66cb746ccfe155ec48eebd3ed558fd4dc0e0aa08ef6cc993b009fbc96e8c | missing |\n| \"Table 26\" | 265e463b59d7ffe790f69ef931556f2c5b2b7d7132db3163337ebb91e7ad949f | missing |\n| \"Table 27\" | 85ffcf66ee282ff9706df86493b864e3b8290c8093e977bd2e1dacf28a2be621 | missing |\n| \"Table 28\" | e1dde82663bcbeab091cb460c79351a4a4dcd5c094450e89b2049963403c5bb6 | missing |\n| \"Table 29\" | 377e2c9b96735fb27b95a9f37b7c531f951bd8fe461de0838781386316ca6137 | missing |\n| \"Table 30\" | c411f3da02a4930e831e4bfc1c93f552f19acb566c8b31638005b563f3bdb6f3 | missing |\n| \"Table 31\" | 478b08e5e7b9d1d9eb2155379395e9ccfa069e6e2d6a8f0bb84651279af679f2 | missing |\n| \"Table 32\" | 9414143e3d27879bd037dd1779a5130dcbbf9a0533227678b41651fcb8a5f9db | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T051239Z-7f6036078c26.jsonl"
+  }
+}

@@ -35,11 +35,12 @@ check_data <- function(sheet_result, source_metadata_df) {
     if (kind == "data" && !length(records)) "data recipe gave no records"
     else if (kind != "data" && length(sheet_result$tables)) sprintf("%s recipe gave tables", kind)
   }
-  # Non-blank records match the count the validator recorded when the recipe was submitted
+  # Records match the count the validator recorded when the recipe was submitted. Recipes
+  # validated before blank cells became records counted only non-blank ones
   matches_recipe_count <- function() {
     expected <- recipe[["validation"]][["records"]]
-    found <- sum(!is.na(cells$value))
-    if (!is.null(expected) && !identical(as.integer(expected), found)) sprintf("%d non-blank records; the recipe's validation recorded %d", found, as.integer(expected))
+    found <- c(sum(!is.na(cells$value)), nrow(cells))
+    if (!is.null(expected) && !as.integer(expected) %in% found) sprintf("%d records (%d non-blank); the recipe's validation recorded %d", found[2], found[1], as.integer(expected))
   }
   # Every record has row, col and address, and the address matches row and col
   cells_are_addressed <- function() {

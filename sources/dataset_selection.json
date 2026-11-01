@@ -1,0 +1,960 @@
+{
+  "_schema_version": 2,
+  "_instructions": "Change false to true for each release you want included, then run `Rscript get_source_data.R` (prepares newly selected workbooks and rewrites source_metadata.csv) and `targets::tar_make()`. See sources/README.md.",
+  "_initial_values": "true = existing data recipes, including partial coverage; false = no data recipes.",
+  "_release_keys": "source_release_id without publication_id::. Missing IDs use asset_year, formatted YYYY-YY for fiscal-year.",
+  "_rules": {
+    "unlisted_releases": "exclude",
+    "catalogue_sha256": "require_match",
+    "source_sha256": "require_match"
+  },
+  "_catalogues": {
+    "current_pipeline": {
+      "path": "catalogues/current_pipeline.csv",
+      "sha256": "60e5ea997d0626b5caa5e0d3569cfc14c676e5ae38789f393f8dcaa9da3315a4",
+      "include_rows": {
+        "reference_only": [
+          "FALSE"
+        ]
+      }
+    },
+    "national_additions": {
+      "path": "catalogues/national_additions.csv",
+      "sha256": "1555768bc08342155d3e035dbb66d91a55e7597493d53d5dd7643111701b9e5f"
+    },
+    "state_crime": {
+      "path": "catalogues/state_crime.csv",
+      "sha256": "534143d27597f44accc47b2f6ff9e79a2cd4d24e90dad535586900007a98d4ad",
+      "include_rows": {
+        "verification_status": [
+          "download_verified"
+        ],
+        "resource_role": [
+          "data",
+          "statistical_report"
+        ]
+      }
+    }
+  },
+  "releases": {
+    "act-act-policing-monthly-crime-statistics": {
+      "2026-06": false
+    },
+    "act-act-policing-quarterly-crime-statistics": {
+      "snapshot-2026-11-01": false
+    },
+    "aic-deaths-in-custody-australia": {
+      "2024-25": false
+    },
+    "aic-homicide-australia": {
+      "2024-25": false
+    },
+    "aihw-child-protection-australia": {
+      "2020-21-complete": true,
+      "2021-22-complete": false,
+      "2022-23-complete": false,
+      "2023-24-complete": false,
+      "2024-25-insights-initial": false
+    },
+    "aihw-health-people-australias-prisons": {
+      "2025": false
+    },
+    "aihw-specialist-homelessness-services": {
+      "2024-25": false
+    },
+    "aihw-young-people-returning-youth-justice": {
+      "2023-24": false
+    },
+    "aihw-youth-detention-population-australia": {
+      "2025": false
+    },
+    "aihw-youth-justice-australia": {
+      "2024-25-complete": true
+    },
+    "aihw-youth-justice-child-protection": {
+      "2022-23": false
+    },
+    "average-weekly-earnings-australia": {
+      "2026-05": false
+    },
+    "childhood-abuse": {
+      "2021-22": false
+    },
+    "corrective-services-australia": {
+      "2026-Q2": false
+    },
+    "crime-victimisation-australia": {
+      "2008-09": false,
+      "2009-10": false,
+      "2010-11": false,
+      "2011-12": false,
+      "2012-13": false,
+      "2013-14": false,
+      "2014-15": false,
+      "2015-16": false,
+      "2016-17": false,
+      "2017-18": false,
+      "2018-19": false,
+      "2019-20": false,
+      "2020-21": false,
+      "2021-22": false,
+      "2022-23": false,
+      "2023-24": false,
+      "2024-25": false
+    },
+    "criminal-courts-australia": {
+      "2001-02": true,
+      "2002-03": true,
+      "2003-04": true,
+      "2004-05": true,
+      "2005-06": true,
+      "2006-07": true,
+      "2007-08": true,
+      "2008-09": true,
+      "2009-10": true,
+      "2010-11": true,
+      "2011-12": true,
+      "2012-13": true,
+      "2013-14": true,
+      "2014-15": true,
+      "2015-16": true,
+      "2016-17": true,
+      "2017-18": true,
+      "2018-19": true,
+      "2019-20": true,
+      "2020-21": true,
+      "2021-22": true,
+      "2022-23": true,
+      "2023-24": true,
+      "2024-25": true
+    },
+    "employee-earnings-hours-australia": {
+      "aug-2008": false,
+      "may-2004": false,
+      "may-2006": false,
+      "may-2010": false,
+      "may-2012": false,
+      "may-2014": false,
+      "may-2016": false,
+      "may-2018": false,
+      "may-2021": true,
+      "may-2023": true,
+      "may-2025": true
+    },
+    "federal-defendants-australia": {
+      "2008-09": true,
+      "2009-10": true,
+      "2010-11": true,
+      "2011-12": true,
+      "2012-13": true,
+      "2013-14": true,
+      "2014-15": true,
+      "2015-16": true,
+      "2016-17": true,
+      "2017-18": true,
+      "2018-19": true,
+      "2019-20": true,
+      "2020-21": true,
+      "2021-22": true,
+      "2022-23": true,
+      "2023-24": true,
+      "2024-25": true
+    },
+    "nsw-bocsar-alcohol-related-violence": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-alleged-offender-dataset": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-apprehended-violence-orders": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-court-and-sentencing": {
+      "2025-12": false
+    },
+    "nsw-bocsar-covid": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-crime-statistics-by-lga": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-criminal-offences-data": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-custody": {
+      "2026-06": false
+    },
+    "nsw-bocsar-daily-incident-data": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-domestic-violence": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-driving-offences": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-drug-offences": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-hotspot-maps-data": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-info-file-offence-seriousness-ranking": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-local-area-rankings": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-murder": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-open-datasets": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-police-clear-up-rates": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-re-offending": {
+      "2025": false
+    },
+    "nsw-bocsar-sexual-assault": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-target-10": {
+      "2025-12": false
+    },
+    "nsw-bocsar-target-11": {
+      "2025-12": false
+    },
+    "nsw-bocsar-target-13": {
+      "2025-12": false
+    },
+    "nsw-bocsar-trend-data-files": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-weapons": {
+      "snapshot-2026-11-01": false
+    },
+    "nsw-bocsar-young-people": {
+      "snapshot-2026-11-01": false
+    },
+    "nt-northern-territory-crime-statistics": {
+      "2014-01": false,
+      "2014-02": false,
+      "2014-03": false,
+      "2014-04": false,
+      "2014-05": false,
+      "2014-06": false,
+      "2014-07": false,
+      "2014-08": false,
+      "2014-09": false,
+      "2014-10": false,
+      "2014-11": false,
+      "2014-12": false,
+      "2015-01": false,
+      "2015-02": false,
+      "2015-03": false,
+      "2015-04": false,
+      "2015-05": false,
+      "2015-06": false,
+      "2015-07": false,
+      "2015-08": false,
+      "2015-09": false,
+      "2015-10": false,
+      "2015-11": false,
+      "2015-12": false,
+      "2016-01": false,
+      "2016-02": false,
+      "2016-03": false,
+      "2016-04": false,
+      "2016-05": false,
+      "2016-06": false,
+      "2016-07": false,
+      "2016-08": false,
+      "2016-09": false,
+      "2016-10": false,
+      "2016-11": false,
+      "2016-12": false,
+      "2017-01": false,
+      "2017-02": false,
+      "2017-03": false,
+      "2017-04": false,
+      "2017-05": false,
+      "2017-06": false,
+      "2017-07": false,
+      "2017-08": false,
+      "2017-09": false,
+      "2017-10": false,
+      "2017-11": false,
+      "2017-12": false,
+      "2018-01": false,
+      "2018-02": false,
+      "2018-03": false,
+      "2018-04": false,
+      "2018-05": false,
+      "2018-06": false,
+      "2018-07": false,
+      "2018-08": false,
+      "2018-09": false,
+      "2018-10": false,
+      "2018-11": false,
+      "2018-12": false,
+      "2019-01": false,
+      "2019-02": false,
+      "2019-03": false,
+      "2019-04": false,
+      "2019-05": false,
+      "2019-06": false,
+      "2019-07": false,
+      "2019-08": false,
+      "2019-09": false,
+      "2019-10": false,
+      "2019-11": false,
+      "2019-12": false,
+      "2020-01": false,
+      "2020-02": false,
+      "2020-03": false,
+      "2020-04": false,
+      "2020-05": false,
+      "2020-06": false,
+      "2020-07": false,
+      "2020-08": false,
+      "2020-09": false,
+      "2020-10": false,
+      "2020-11": false,
+      "2020-12": false,
+      "2021-01": false,
+      "2021-02": false,
+      "2021-03": false,
+      "2021-04": false,
+      "2021-05": false,
+      "2021-06": false,
+      "2021-07": false,
+      "2021-08": false,
+      "2021-09": false,
+      "2021-10": false,
+      "2021-11": false,
+      "2021-12": false,
+      "2022-01": false,
+      "2022-02": false,
+      "2022-03": false,
+      "2022-04": false,
+      "2022-05": false,
+      "2022-06": false,
+      "2022-07": false,
+      "2022-08": false,
+      "2022-09": false,
+      "2022-10": false,
+      "2022-11": false,
+      "2022-12": false,
+      "2023-01": false,
+      "2023-02": false,
+      "2023-03": false,
+      "2023-04": false,
+      "2023-05": false,
+      "2023-06": false,
+      "2023-07": false,
+      "2023-08": false,
+      "2023-09": false,
+      "2023-10": false,
+      "2023-11": false,
+      "2023-12": false,
+      "2024-01": false,
+      "2024-02": false,
+      "2024-03": false,
+      "2024-04": false,
+      "2024-05": false,
+      "2024-06": false,
+      "2024-07": false,
+      "2024-08": false,
+      "2024-09": false,
+      "2024-10": false,
+      "2024-11": false,
+      "2024-12": false,
+      "2025-01": false,
+      "2025-02": false,
+      "2025-03": false,
+      "2025-04": false,
+      "2025-05": false,
+      "2025-06": false,
+      "2025-07": false,
+      "2025-08": false,
+      "2025-09": false,
+      "2025-10": false,
+      "2025-11": false,
+      "2025-12": false,
+      "2026-01": false,
+      "2026-02": false,
+      "2026-03": false,
+      "2026-04": false,
+      "2026-05": false,
+      "2026-06": false,
+      "2026-07": false,
+      "2026-08": false
+    },
+    "partner-violence": {
+      "2021-22": false
+    },
+    "pc-report-on-government-services-justice": {
+      "rogs-2020": true,
+      "rogs-2021": false,
+      "rogs-2022": false,
+      "rogs-2023": false,
+      "rogs-2024": false,
+      "rogs-2025": false,
+      "rogs-2026": false
+    },
+    "pc-rogs-child-protection": {
+      "2026": false
+    },
+    "pc-rogs-youth-justice": {
+      "2026": false
+    },
+    "personal-fraud": {
+      "2024-25": false
+    },
+    "personal-safety-australia": {
+      "2021-22": false
+    },
+    "prisoners-australia": {
+      "2001": true,
+      "2002": true,
+      "2003": true,
+      "2004": true,
+      "2005": true,
+      "2006": true,
+      "2007": true,
+      "2008": true,
+      "2009": true,
+      "2010": true,
+      "2011": true,
+      "2012": true,
+      "2013": true,
+      "2014": true,
+      "2015": true,
+      "2016": true,
+      "2017": true,
+      "2018": true,
+      "2019": true,
+      "2020": true,
+      "2021": true,
+      "2022": true,
+      "2023": true,
+      "2024": true,
+      "2025": true
+    },
+    "qld-crime-report-queensland": {
+      "2020-10": false,
+      "2021-22": false,
+      "2022-23": false,
+      "2023-24": false,
+      "2024-25": false
+    },
+    "qld-lga-reported-offences-number": {
+      "2026-09": false
+    },
+    "qld-lga-reported-offences-rates": {
+      "2026-09": false
+    },
+    "qld-lga-reported-victim-and-offender-numbers": {
+      "2026-09": false
+    },
+    "qld-offence-numbers-police-districts-monthly-from-july-2001": {
+      "2026-09": false
+    },
+    "qld-offence-numbers-police-divisions-monthly-from-july-2001": {
+      "2026-09": false
+    },
+    "qld-offence-numbers-police-regions-monthly-from-july-2001": {
+      "2026-09": false
+    },
+    "qld-offence-rates-police-districts-monthly-from-july-2001": {
+      "2026-09": false
+    },
+    "qld-offence-rates-police-divisions-monthly-from-july-2001": {
+      "2026-09": false
+    },
+    "qld-offence-rates-police-regions-monthly-from-july-2001": {
+      "2026-09": false
+    },
+    "qld-offender-numbers-police-districts-from-jan-2001": {
+      "2026-09": false
+    },
+    "qld-offender-numbers-police-region-from-jan-2001": {
+      "2026-09": false
+    },
+    "qld-offender-numbers-qld-monthly-from-jan-2001": {
+      "2026-09": false
+    },
+    "qld-queensland-offence-numbers-monthly-from-july-1997": {
+      "2026-09": false
+    },
+    "qld-queensland-offence-rates-monthly-from-july-1997": {
+      "2026-09": false
+    },
+    "qld-victim-numbers-police-region-monthly-from-jan-2001": {
+      "2001-01": false
+    },
+    "qld-victim-numbers-qld-monthly-from-jan-2001": {
+      "2001-01": false
+    },
+    "recorded-crime-offenders": {
+      "2007-08": true,
+      "2008-09": true,
+      "2009-10": true,
+      "2010-11": true,
+      "2011-12": true,
+      "2012-13": true,
+      "2013-14": true,
+      "2014-15": true,
+      "2015-16": true,
+      "2016-17": true,
+      "2017-18": true,
+      "2018-19": true,
+      "2019-20": true,
+      "2020-21": true,
+      "2021-22": true,
+      "2022-23": true,
+      "2023-24": true,
+      "2024-25": true
+    },
+    "recorded-crime-victims": {
+      "2004": false,
+      "2005": false,
+      "2006": false,
+      "2007": false,
+      "2008": false,
+      "2009": false,
+      "2010": false,
+      "2011": false,
+      "2012": false,
+      "2013": false,
+      "2014": false,
+      "2015": false,
+      "2016": false,
+      "2017": false,
+      "2018": false,
+      "2019": false,
+      "2020": false,
+      "2021": false,
+      "2022": false,
+      "2023": false,
+      "2024": false,
+      "2025": false
+    },
+    "sa-sapol-crime-statistics": {
+      "2010-11": false,
+      "2011-12": false,
+      "2012-13": false,
+      "2013-14": false,
+      "2014-15": false,
+      "2015-16": false,
+      "2016-17": false,
+      "2017-18": false,
+      "2018-19": false,
+      "2019-20": false,
+      "2020-21": false,
+      "2021-22": false,
+      "2022-23": false,
+      "2023-24": false,
+      "2024-25": false,
+      "2025-26": false
+    },
+    "sexual-violence": {
+      "2021-22": false
+    },
+    "stalking": {
+      "2021-22": false
+    },
+    "tas-tasmania-police-corporate-performance-report": {
+      "2014-07": false,
+      "2014-08": false,
+      "2014-09": false,
+      "2014-10": false,
+      "2014-11": false,
+      "2014-12": false,
+      "2015-01": false,
+      "2015-03": false,
+      "2015-04": false,
+      "2015-05": false,
+      "2015-06": false,
+      "2015-07": false,
+      "2015-08": false,
+      "2015-09": false,
+      "2015-10": false,
+      "2015-11": false,
+      "2015-12": false,
+      "2016-01": false,
+      "2016-02": false,
+      "2016-03": false,
+      "2016-04": false,
+      "2016-05": false,
+      "2016-06": false,
+      "2016-07": false,
+      "2016-08": false,
+      "2016-09": false,
+      "2016-10": false,
+      "2016-11": false,
+      "2016-12": false,
+      "2017-01": false,
+      "2017-02": false,
+      "2017-03": false,
+      "2017-04": false,
+      "2017-05": false,
+      "2017-06": false,
+      "2017-07": false,
+      "2017-08": false,
+      "2017-09": false,
+      "2017-10": false,
+      "2017-11": false,
+      "2017-12": false,
+      "2018-01": false,
+      "2018-02": false,
+      "2018-03": false,
+      "2018-04": false,
+      "2018-05": false,
+      "2018-06": false,
+      "2018-07": false,
+      "2018-08": false,
+      "2018-09": false,
+      "2018-10": false,
+      "2018-11": false,
+      "2018-12": false,
+      "2019-01": false,
+      "2019-02": false,
+      "2019-03": false,
+      "2019-04": false,
+      "2019-06": false,
+      "2019-08": false,
+      "2019-10": false,
+      "2020-01": false,
+      "2020-02": false,
+      "2020-03": false,
+      "2020-04": false,
+      "2020-05": false,
+      "2020-06": false,
+      "2020-07": false,
+      "2020-08": false,
+      "2020-09": false,
+      "2020-10": false,
+      "2020-11": false,
+      "2020-12": false,
+      "2021-01": false,
+      "2021-02": false,
+      "2021-03": false,
+      "2021-04": false,
+      "2021-05": false,
+      "2021-06": false,
+      "2021-07": false,
+      "2021-08": false,
+      "2021-09": false,
+      "2021-10": false,
+      "2021-11": false,
+      "2021-12": false,
+      "2022-01": false,
+      "2022-02": false,
+      "2022-03": false,
+      "2022-04": false,
+      "2022-05": false,
+      "2022-06": false,
+      "2022-07": false,
+      "2022-08": false,
+      "2022-09": false,
+      "2022-10": false,
+      "2022-11": false,
+      "2022-12": false,
+      "2022-23": false,
+      "2023-01": false,
+      "2023-02": false,
+      "2023-03": false,
+      "2023-04": false,
+      "2023-05": false,
+      "2023-07": false,
+      "2023-08": false,
+      "2023-09": false,
+      "2023-10": false,
+      "2023-11": false,
+      "2023-12": false,
+      "2024-01": false,
+      "2024-02": false,
+      "2024-03": false,
+      "2024-04": false,
+      "2024-05": false,
+      "2024-06": false,
+      "2024-07": false,
+      "2024-08": false,
+      "2024-09": false,
+      "2024-10": false,
+      "2024-11": false,
+      "2024-12": false,
+      "2025-01": false,
+      "2025-02": false,
+      "2025-03": false,
+      "2025-04": false,
+      "2025-05": false,
+      "2025-06": false,
+      "2025-07": false,
+      "2025-08": false,
+      "2025-09": false,
+      "2025-10": false,
+      "2025-11": false,
+      "2025-12": false,
+      "2026-01": false,
+      "2026-02": false,
+      "2026-03": false,
+      "2026-04": false,
+      "2026-05": false,
+      "2026-06": false,
+      "2026-07": false,
+      "2026-08": false
+    },
+    "tas-tasmania-police-crime-statistics-supplement": {
+      "2012-13": false,
+      "2013-14": false,
+      "2014-15": false,
+      "2015-16": false,
+      "2016-17": false,
+      "2017-18": false,
+      "2018-19": false,
+      "2019-20": false,
+      "2020-21": false,
+      "2021-22": false,
+      "2022-23": false,
+      "2023-24": false,
+      "2024-25": false,
+      "2025-26": false
+    },
+    "vic-crime-statistics-agency-aboriginal-justice-indicators-dashboard": {
+      "2025-06": false,
+      "2025-12": false
+    },
+    "vic-crime-statistics-agency-data-tables-aboriginal-and-torres-strait-islander-victim-data": {
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-aboriginal-and-torres-strait-islander-victim-data-by-lga": {
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-alleged-offender-incidents": {
+      "2020-09": false,
+      "2020-12": false,
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2023-12": false,
+      "2024-06": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-bail-statistics": {
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-copper-and-scrap-metal-theft-by-local-government-area": {
+      "snapshot-2026-11-01": false
+    },
+    "vic-crime-statistics-agency-data-tables-criminal-incidents": {
+      "2020-03": false,
+      "2020-06": false,
+      "2020-09": false,
+      "2020-12": false,
+      "2021-03": false,
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2023-12": false,
+      "2024-06": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-deception-spotlight": {
+      "2015-09": false
+    },
+    "vic-crime-statistics-agency-data-tables-family-incidents": {
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-harm-caused": {
+      "2020-03": false,
+      "2020-06": false,
+      "2020-12": false,
+      "2021-06": false,
+      "2021-12": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2023-12": false,
+      "2024-06": false,
+      "2024-12": false,
+      "2025-06": false,
+      "2025-12": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-indigenous-alleged-offender-incidents": {
+      "2020-06": false,
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2024-06": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-indigenous-family-incidents": {
+      "2021-03": false,
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2024-06": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-indigenous-unique-alleged-offenders": {
+      "2025-06": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-indigenous-unique-victim-reports": {
+      "2025-06": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-motor-vehicle-theft-spotlight": {
+      "2014-12": false
+    },
+    "vic-crime-statistics-agency-data-tables-recorded-offences": {
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2023-12": false,
+      "2024-06": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-residential-burglarly-spotlight": {
+      "snapshot-2026-11-01": false
+    },
+    "vic-crime-statistics-agency-data-tables-supplementary-offence-information": {
+      "snapshot-2026-11-01": false
+    },
+    "vic-crime-statistics-agency-data-tables-unique-alleged-offenders": {
+      "2015-06": false,
+      "2016-06": false,
+      "2017-06": false,
+      "2018-06": false,
+      "2019-06": false,
+      "2020-06": false,
+      "2021-06": false,
+      "2022-06": false,
+      "2023-06": false,
+      "2024-06": false,
+      "2025-06": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-unique-victims": {
+      "2015-06": false,
+      "2016-06": false,
+      "2017-06": false,
+      "2018-06": false,
+      "2019-06": false,
+      "2020-06": false,
+      "2021-06": false,
+      "2022-06": false,
+      "2023-06": false,
+      "2024-06": false,
+      "2025-06": false,
+      "2026-06": false
+    },
+    "vic-crime-statistics-agency-data-tables-victim-reports": {
+      "2021-12": false,
+      "2022-03": false,
+      "2022-06": false,
+      "2022-12": false,
+      "2023-12": false,
+      "2024-06": false,
+      "2024-09": false,
+      "2024-12": false,
+      "2025-03": false,
+      "2025-06": false,
+      "2025-09": false,
+      "2025-12": false,
+      "2026-03": false,
+      "2026-06": false
+    },
+    "wa-wa-police-annual-crime-statistics": {
+      "2010-06": false,
+      "2011-06": false,
+      "2011-12": false,
+      "2012-13": false,
+      "2013-14": false,
+      "2014-15": false,
+      "2015-16": false,
+      "2016-17": false,
+      "2017-18": false,
+      "2018-19": false,
+      "2019-20": false,
+      "2020-21": false,
+      "2021-22": false,
+      "2022-23": false,
+      "2023-24": false,
+      "2024-25": false,
+      "snapshot-2026-11-01": false
+    },
+    "wa-wa-police-crime-time-series": {
+      "snapshot-2026-11-01": false
+    }
+  }
+}

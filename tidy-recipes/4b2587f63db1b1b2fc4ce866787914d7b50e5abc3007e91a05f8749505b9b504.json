@@ -1,0 +1,293 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4b2587f63db1b1b2fc4ce866787914d7b50e5abc3007e91a05f8749505b9b504",
+  "sheet": "A",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Six sex/measure blocks. Combined published block labels (e.g. MALES (NO.)) are preserved verbatim as both sex and measure metadata; these cannot be split by cell references. Total offence rows and total adjudication columns are retained. Offence categories are peers. TOTAL sex blocks are as published and need not equal male plus female counts. Percentage blocks give adjudication shares within each offence and court level, not shares across offences.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "males_number",
+      "range": "A4:H23",
+      "values_range": "B7:H23",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A7:A23"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B4,F4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    },
+    {
+      "name": "males_percent",
+      "range": "A24:H41",
+      "values_range": "B25:H41",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A24"
+        },
+        {
+          "name": "measure",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A25:A41"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B4,F4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    },
+    {
+      "name": "females_number",
+      "range": "A42:H59",
+      "values_range": "B43:H59",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A42"
+        },
+        {
+          "name": "measure",
+          "cells": "A42"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A43:A59"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B4,F4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    },
+    {
+      "name": "females_percent",
+      "range": "A60:H77",
+      "values_range": "B61:H77",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A60"
+        },
+        {
+          "name": "measure",
+          "cells": "A60"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A61:A77"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B4,F4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    },
+    {
+      "name": "total_number",
+      "range": "A78:H95",
+      "values_range": "B79:H95",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A78"
+        },
+        {
+          "name": "measure",
+          "cells": "A78"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A79:A95"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B4,F4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    },
+    {
+      "name": "total_percent",
+      "range": "A96:H113",
+      "values_range": "B97:H113",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A96"
+        },
+        {
+          "name": "measure",
+          "cells": "A96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A97:A113"
+        },
+        {
+          "name": "court_level",
+          "direction": "NNW",
+          "cells": "B4,F4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "N",
+          "cells": "B5:H5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:20:55Z",
+    "tool_version": "0.2.0",
+    "records": 714,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T042028Z-c042c34fdbe9",
+    "started_at": "2026-11-01T04:20:29Z",
+    "workbook": "c042c34fdbe9cd559f88addf3a19a31cc8af49440debadf14785511d73feb6a3--45130_Table11_2005-06.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19556-6559-7147-8dac-be8bc98f7cc9",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "623e4460df936db5bcb0a5cdcef6e20fa7ddb0d24b8d2ab8f40e6457ea0b0fc6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c042c34fdbe9cd559f88addf3a19a31cc8af49440debadf14785511d73feb6a3--45130_Table11_2005-06.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2005-06\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"A\" | 4b2587f63db1b1b2fc4ce866787914d7b50e5abc3007e91a05f8749505b9b504 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T042028Z-c042c34fdbe9.jsonl"
+  }
+}

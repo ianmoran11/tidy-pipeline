@@ -1,0 +1,318 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f82569789bc0a1f22ea554ca9589c6898c8338b0ebaba665f25396f802818368",
+  "sheet": "Table 50",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "755569f7d189d384a44155b94ca437a2e9c690dfbfe4b8db2ecea143605fc9f0",
+  "agent_notes": "Northern Territory; court level is specified in the title or block metadata. Published totals and indented finalisation subtotals are retained and are not additive. Sentence totals retain group metadata. Absent source cells are excluded from values_range and not imputed; the pipeline may still emit null records within header spans.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A18,A31,A42"
+    }
+  ],
+  "tables": [
+    {
+      "name": "finalisation_2019_20_current",
+      "range": "A8:I16",
+      "values_range": "B8:I8,B9:I9,B10:I10,B11:I11,B12:I12,B13:I13,B14:I14,B15:I15,B16:I16",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A8:A16"
+        }
+      ]
+    },
+    {
+      "name": "custodial_2019_20_current",
+      "range": "A19:I23",
+      "values_range": "B20:I20,B21:I21,B22:I22,B23:B23,D23:D23,F23:I23",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A19"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A20:A23"
+        }
+      ]
+    },
+    {
+      "name": "non_custodial_2019_20_current",
+      "range": "A24:I28",
+      "values_range": "B25:I25,B26:I26,B27:I27,B28:I28",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A25:A28"
+        }
+      ]
+    },
+    {
+      "name": "total_guilty_2019_20_current",
+      "range": "A29:I29",
+      "values_range": "B29:I29",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A29:A29"
+        }
+      ]
+    },
+    {
+      "name": "finalisation_2018_19",
+      "range": "A32:I40",
+      "values_range": "B32:I32,B33:I33,B34:I34,B35:I35,B36:I36,B37:I37,B38:I38,B39:I39,B40:I40",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A32:A40"
+        }
+      ]
+    },
+    {
+      "name": "custodial_2018_19",
+      "range": "A43:I47",
+      "values_range": "B44:I44,B45:I45,B46:I46,B47:B47,D47:D47,F47:I47",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B30"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A44:A47"
+        }
+      ]
+    },
+    {
+      "name": "non_custodial_2018_19",
+      "range": "A48:I52",
+      "values_range": "B49:I49,B50:I50,B51:I51,B52:I52",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B30"
+        },
+        {
+          "name": "principal_sentence_group",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A49:A52"
+        }
+      ]
+    },
+    {
+      "name": "total_guilty_2018_19",
+      "range": "A53:I53",
+      "values_range": "B53:I53",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "B30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B5:I5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A53:A53"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T03:30:37Z",
+    "tool_version": "0.2.0",
+    "records": 288,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T032946Z-289cb8238b39",
+    "started_at": "2026-11-01T03:29:47Z",
+    "workbook": "289cb8238b394f520e935fa115b11bfb78bcd3c4e12019aff085a4217c2f3644--10.-Defendants-finalised-Northern-Territory-Tables-46-to-50-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19527-fc1e-744f-b706-5ebf98ed3159",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6fdd888c9b897f1b0b58c42a06d8a2382f697fac841d176f34fc80384fa50630",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `289cb8238b394f520e935fa115b11bfb78bcd3c4e12019aff085a4217c2f3644--10.-Defendants-finalised-Northern-Territory-Tables-46-to-50-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9d55800300ef730f66285d795fc81e57516bc0cbfe85c3fc3f3b151c686ddf06 | missing |\n| \"Table 46\" | b3c49e6c94f2e1d696a084b7e3afc4a54ab4d75db2f04b0d4b555ebe85846c80 | missing |\n| \"Table 47\" | 5f2bce4163f718bdc2fcf9374c870cb4715a56eee16c1049a9ddcdd6faf1a637 | missing |\n| \"Table 48\" | f27413eb8024a2d41ac54507a96a948415ca6e1250d3fe786f4c16f5740fa212 | missing |\n| \"Table 49\" | b0ed631fd6f1e2fc0e0e6d39ec824b1f838c70360b60556a4e96bcb619f22966 | missing |\n| \"Table 50\" | f82569789bc0a1f22ea554ca9589c6898c8338b0ebaba665f25396f802818368 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T032946Z-289cb8238b39.jsonl"
+  }
+}

@@ -1,0 +1,802 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "db47eac02b6910b4973f481f8346fffe7f8ca5b6c2adce27d0f27316e42f9988",
+  "sheet": "FDV Table 2",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "a4aa7f651a391b0bba34b5c892c786a53afc090540433132c63e28b6fdc40a2b",
+  "agent_notes": "Published totals and hierarchical parent/subtotal rows are retained alongside components: do not sum categories. Mean and median ages remain age_group labels; duration statistics retain weeks. Blank source value cells are excluded. Single-state jurisdictions and breach-of-violence-orders population are stated in table titles.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A8,A12,A25,A37,A44,A49,A53,A66,A78,A85,A90,A94,A107,A119,A126,A131,A135,A148,A156,A163"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_9",
+      "range": "A9:AC10",
+      "values_range": "B9,C9,D9,E9,H9,I9,K9,L9,M9,N9,O9,P9,Q9,T9,U9,V9,W9,X9,Y9,AB9,AC9,B10,C10,D10,E10,H10,I10,K10,L10,M10,N10,O10,P10,Q10,T10,U10,V10,W10,X10,Y10,AB10,AC10",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A9,A10",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_13",
+      "range": "A13:AC23",
+      "values_range": "B13,C13,D13,E13,H13,I13,K13,L13,M13,N13,O13,P13,Q13,T13,U13,V13,W13,X13,Y13,Z13,AA13,AB13,AC13,B14,C14,D14,E14,H14,I14,K14,L14,M14,N14,O14,P14,Q14,T14,U14,V14,W14,X14,Y14,Z14,AA14,AB14,AC14,B15,C15,D15,E15,H15,I15,K15,L15,M15,N15,O15,P15,Q15,T15,U15,V15,W15,X15,Y15,Z15,AA15,AB15,AC15,B16,C16,D16,E16,H16,I16,K16,L16,M16,N16,O16,P16,Q16,T16,U16,V16,W16,X16,Y16,Z16,AA16,AB16,AC16,B17,C17,D17,E17,H17,I17,K17,L17,M17,N17,O17,P17,Q17,T17,U17,V17,W17,X17,Y17,Z17,AA17,AB17,AC17,B18,C18,D18,E18,H18,I18,K18,L18,M18,N18,O18,P18,Q18,T18,U18,V18,W18,X18,Y18,Z18,AA18,AB18,AC18,B19,C19,D19,E19,H19,I19,K19,L19,M19,N19,O19,P19,Q19,T19,U19,V19,W19,X19,Y19,Z19,AA19,AB19,AC19,B20,C20,D20,E20,H20,I20,K20,L20,M20,N20,O20,P20,Q20,T20,U20,V20,W20,X20,Y20,Z20,AA20,AB20,AC20,B21,C21,D21,E21,H21,I21,K21,L21,M21,N21,O21,P21,Q21,T21,U21,V21,W21,X21,Y21,Z21,AA21,AB21,AC21,B22,C22,D22,E22,H22,I22,K22,L22,M22,N22,O22,P22,Q22,T22,U22,V22,W22,X22,Y22,Z22,AA22,AB22,AC22,B23,C23,D23,E23,H23,I23,K23,L23,M23,N23,O23,P23,Q23,T23,U23,V23,W23,X23,Y23,Z23,AA23,AB23,AC23",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_26",
+      "range": "A26:AC35",
+      "values_range": "B26,C26,D26,E26,H26,I26,K26,L26,M26,N26,O26,P26,Q26,T26,V26,W26,X26,Y26,Z26,AA26,AB26,AC26,C27,D27,E27,H27,I27,K27,L27,M27,N27,O27,P27,Q27,T27,V27,W27,X27,Y27,Z27,AA27,AB27,AC27,B28,C28,D28,E28,H28,I28,K28,L28,M28,N28,O28,P28,Q28,T28,V28,W28,X28,Y28,AA28,AB28,AC28,B29,C29,D29,E29,H29,I29,K29,L29,M29,N29,O29,P29,Q29,T29,U29,V29,W29,X29,Y29,Z29,AA29,AB29,AC29,B30,C30,D30,E30,H30,I30,K30,L30,M30,N30,O30,P30,Q30,T30,U30,V30,W30,X30,Y30,Z30,AA30,AB30,AC30,B31,C31,D31,E31,H31,I31,K31,L31,M31,O31,P31,Q31,T31,U31,V31,W31,X31,Y31,AB31,AC31,B32,D32,E32,H32,I32,L32,M32,N32,O32,P32,Q32,T32,U32,V32,W32,X32,Y32,Z32,AA32,AB32,AC32,D33,E33,H33,I33,K33,L33,M33,N33,O33,P33,Q33,T33,U33,V33,W33,X33,Y33,Z33,AA33,AB33,AC33,B34,C34,D34,E34,H34,I34,L34,M34,N34,O34,P34,Q34,T34,U34,V34,W34,X34,Y34,AB34,AC34,B35,C35,D35,E35,H35,I35,K35,L35,M35,N35,O35,P35,Q35,T35,U35,V35,W35,X35,Y35,Z35,AA35,AB35,AC35",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A26,A27,A28,A29,A30,A31,A32,A33,A34,A35",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_38",
+      "range": "A38:AC42",
+      "values_range": "B38,C38,D38,E38,H38,I38,K38,L38,M38,N38,O38,P38,Q38,T38,U38,V38,W38,X38,Y38,Z38,AA38,AB38,AC38,B39,C39,D39,E39,H39,I39,K39,L39,M39,O39,P39,Q39,T39,U39,V39,W39,X39,Y39,AB39,AC39,B40,C40,D40,E40,H40,I40,K40,L40,M40,N40,O40,P40,Q40,T40,U40,V40,W40,X40,Y40,Z40,AA40,AB40,AC40,B41,C41,D41,E41,H41,I41,K41,L41,M41,N41,O41,P41,Q41,T41,U41,V41,W41,X41,Y41,AA41,AB41,AC41,B42,C42,D42,E42,H42,I42,K42,L42,M42,N42,O42,P42,Q42,T42,U42,V42,W42,X42,Y42,AA42,AB42,AC42",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A38,A39,A40,A41,A42",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_45",
+      "range": "A45:AC46",
+      "values_range": "B45,C45,D45,E45,H45,I45,K45,L45,M45,N45,O45,P45,Q45,T45,U45,V45,W45,X45,Y45,Z45,AA45,AB45,AC45,B46,C46,D46,E46,H46,I46,K46,L46,M46,N46,O46,P46,Q46,T46,U46,V46,W46,X46,Y46,Z46,AA46,AB46,AC46",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A45,A46",
+          "caption": "Duration"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_47",
+      "range": "A47:AC47",
+      "values_range": "B47,C47,D47,E47,H47,I47,K47,L47,M47,N47,O47,P47,Q47,T47,U47,V47,W47,X47,Y47,Z47,AA47,AB47,AC47",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A47"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "sex_50",
+      "range": "A50:AC51",
+      "values_range": "B50,C50,D50,E50,H50,I50,K50,L50,M50,N50,O50,P50,Q50,T50,U50,V50,W50,X50,Y50,Z50,AA50,AB50,AC50,B51,C51,D51,E51,H51,I51,K51,L51,M51,N51,O51,P51,Q51,T51,U51,V51,W51,X51,Y51,Z51,AA51,AB51,AC51",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A50,A51",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_54",
+      "range": "A54:AC64",
+      "values_range": "B54,C54,D54,E54,I54,K54,L54,M54,N54,O54,P54,Q54,T54,U54,V54,W54,X54,Y54,Z54,AA54,AB54,AC54,B55,C55,D55,E55,H55,I55,K55,L55,M55,N55,O55,P55,Q55,T55,U55,V55,W55,X55,Y55,Z55,AA55,AB55,AC55,B56,C56,D56,E56,H56,I56,K56,L56,M56,N56,O56,P56,Q56,T56,U56,V56,W56,X56,Y56,Z56,AA56,AB56,AC56,B57,C57,D57,E57,H57,I57,K57,L57,M57,N57,O57,P57,Q57,T57,U57,V57,W57,X57,Y57,Z57,AA57,AB57,AC57,B58,C58,D58,E58,H58,I58,K58,L58,M58,N58,O58,P58,Q58,T58,U58,V58,W58,X58,Y58,Z58,AA58,AB58,AC58,B59,C59,D59,E59,H59,I59,K59,L59,M59,N59,O59,P59,Q59,T59,U59,V59,W59,X59,Y59,Z59,AA59,AB59,AC59,B60,C60,D60,E60,H60,I60,K60,L60,M60,N60,O60,P60,Q60,T60,U60,V60,W60,X60,Y60,Z60,AA60,AB60,AC60,B61,C61,D61,E61,H61,I61,K61,L61,M61,N61,O61,P61,Q61,T61,U61,V61,W61,X61,Y61,Z61,AA61,AB61,AC61,B62,C62,D62,E62,H62,I62,K62,L62,M62,N62,O62,P62,Q62,T62,U62,V62,W62,X62,Y62,Z62,AA62,AB62,AC62,B63,C63,D63,E63,H63,I63,K63,L63,M63,N63,O63,P63,Q63,T63,U63,V63,W63,X63,Y63,Z63,AA63,AB63,AC63,B64,C64,D64,E64,H64,I64,K64,L64,M64,N64,O64,P64,Q64,T64,U64,V64,W64,X64,Y64,Z64,AA64,AB64,AC64",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_67",
+      "range": "A67:AC76",
+      "values_range": "B67,C67,D67,E67,H67,I67,K67,L67,M67,N67,O67,P67,Q67,T67,U67,V67,W67,X67,Y67,Z67,AA67,B68,C68,D68,E68,H68,I68,K68,L68,M68,N68,O68,P68,Q68,T68,U68,V68,W68,X68,Y68,Z68,AA68,B69,C69,D69,E69,H69,I69,K69,L69,M69,N69,O69,Q69,T69,U69,V69,W69,X69,Y69,Z69,AA69,B70,C70,D70,E70,H70,I70,K70,L70,M70,N70,O70,P70,Q70,T70,U70,V70,W70,X70,Y70,Z70,AA70,AB70,AC70,B71,C71,D71,E71,H71,I71,K71,L71,M71,N71,O71,P71,Q71,T71,U71,V71,W71,X71,Y71,Z71,AA71,AB71,AC71,B72,C72,D72,E72,H72,I72,K72,L72,M72,N72,O72,P72,Q72,T72,U72,V72,W72,X72,Y72,Z72,AA72,AB72,AC72,B73,C73,E73,H73,I73,L73,M73,N73,O73,P73,Q73,T73,U73,V73,W73,X73,Y73,Z73,AA73,AB73,AC73,B74,C74,E74,H74,I74,K74,M74,N74,O74,P74,Q74,T74,U74,V74,W74,X74,Y74,Z74,AA74,AB74,AC74,B75,C75,D75,E75,H75,I75,L75,M75,N75,O75,P75,Q75,T75,U75,V75,W75,Y75,Z75,AA75,AB75,AC75,B76,C76,D76,E76,H76,I76,K76,L76,M76,N76,O76,P76,Q76,U76,V76,W76,X76,Y76,Z76,AA76,AB76,AC76",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A67,A68,A69,A70,A71,A72,A73,A74,A75,A76",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_79",
+      "range": "A79:AC83",
+      "values_range": "B79,C79,D79,E79,H79,I79,K79,L79,M79,N79,O79,P79,Q79,T79,U79,V79,W79,X79,Y79,Z79,AA79,AB79,AC79,B80,C80,D80,E80,H80,I80,K80,L80,M80,N80,O80,P80,Q80,T80,U80,V80,W80,X80,Y80,Z80,AA80,AB80,AC80,B81,C81,D81,E81,H81,I81,K81,L81,M81,N81,O81,P81,Q81,T81,U81,V81,W81,X81,Y81,Z81,AA81,AB81,AC81,B82,C82,D82,E82,H82,I82,K82,M82,N82,O82,P82,Q82,T82,U82,V82,W82,Y82,Z82,AA82,AB82,AC82,B83,C83,D83,E83,H83,I83,K83,L83,M83,N83,O83,P83,Q83,T83,U83,V83,W83,Y83,Z83,AA83,AB83,AC83",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A79,A80,A81,A82,A83",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_86",
+      "range": "A86:AC87",
+      "values_range": "B86,C86,D86,E86,H86,I86,K86,L86,M86,N86,O86,P86,Q86,T86,U86,V86,W86,X86,Y86,Z86,AA86,AB86,AC86,B87,C87,D87,E87,H87,I87,K87,L87,M87,N87,O87,P87,Q87,T87,U87,V87,W87,X87,Y87,Z87,AA87,AB87,AC87",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A86,A87",
+          "caption": "Duration"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_88",
+      "range": "A88:AC88",
+      "values_range": "B88,C88,D88,E88,H88,I88,K88,L88,M88,N88,O88,P88,Q88,T88,U88,V88,W88,X88,Y88,Z88,AA88,AB88,AC88",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A88"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "sex_91",
+      "range": "A91:AC92",
+      "values_range": "B91,C91,D91,E91,F91,G91,H91,I91,K91,L91,M91,N91,O91,P91,Q91,R91,S91,T91,U91,V91,W91,X91,Y91,Z91,AA91,AB91,AC91,B92,C92,D92,E92,F92,G92,H92,I92,K92,L92,M92,N92,O92,P92,Q92,R92,S92,T92,U92,V92,W92,X92,Y92,Z92,AA92,AB92,AC92",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B89"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A91,A92",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_95",
+      "range": "A95:AC105",
+      "values_range": "B95,C95,D95,E95,F95,G95,H95,I95,K95,L95,M95,N95,O95,P95,Q95,R95,S95,T95,U95,V95,W95,X95,Y95,Z95,AA95,AB95,AC95,B96,C96,D96,E96,F96,G96,H96,I96,K96,L96,M96,N96,O96,P96,Q96,R96,S96,T96,U96,V96,W96,X96,Y96,Z96,AA96,AB96,AC96,B97,C97,D97,E97,F97,G97,H97,I97,K97,L97,M97,N97,O97,P97,Q97,R97,S97,T97,U97,V97,W97,X97,Y97,Z97,AA97,AB97,AC97,B98,C98,D98,E98,F98,G98,H98,I98,K98,L98,M98,N98,O98,P98,Q98,R98,S98,T98,U98,V98,W98,X98,Y98,Z98,AA98,AB98,AC98,B99,C99,D99,E99,F99,G99,H99,I99,K99,L99,M99,N99,O99,P99,Q99,R99,S99,T99,U99,V99,W99,X99,Y99,Z99,AA99,AB99,AC99,B100,C100,D100,E100,F100,G100,H100,I100,K100,L100,M100,N100,O100,P100,Q100,R100,S100,T100,U100,V100,W100,X100,Y100,Z100,AA100,AB100,AC100,B101,C101,D101,E101,F101,G101,H101,I101,K101,L101,M101,N101,O101,P101,Q101,R101,S101,T101,U101,V101,W101,X101,Y101,Z101,AA101,AB101,AC101,B102,C102,D102,E102,F102,G102,H102,I102,K102,L102,M102,N102,O102,P102,Q102,R102,S102,T102,U102,V102,W102,X102,Y102,Z102,AA102,AB102,AC102,B103,C103,D103,E103,F103,G103,H103,I103,K103,L103,M103,N103,O103,P103,Q103,R103,S103,T103,U103,V103,W103,X103,Y103,Z103,AA103,AB103,AC103,B104,C104,D104,E104,F104,G104,H104,I104,K104,L104,M104,N104,O104,P104,Q104,R104,S104,T104,U104,V104,W104,X104,Y104,Z104,AA104,AB104,AC104,B105,C105,D105,E105,F105,G105,H105,I105,K105,L105,M105,N105,O105,P105,Q105,R105,S105,T105,U105,V105,W105,X105,Y105,Z105,AA105,AB105,AC105",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B89"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A95,A96,A97,A98,A99,A100,A101,A102,A103,A104,A105",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_108",
+      "range": "A108:AC117",
+      "values_range": "B108,C108,D108,E108,F108,G108,H108,I108,K108,L108,M108,N108,O108,P108,Q108,R108,S108,T108,U108,V108,W108,X108,Y108,Z108,AA108,AB108,AC108,C109,D109,E109,F109,G109,I109,K109,L109,M109,N109,O109,P109,Q109,R109,S109,T109,U109,V109,W109,X109,Y109,Z109,AA109,AB109,AC109,B110,C110,D110,E110,F110,G110,I110,K110,L110,M110,N110,O110,P110,Q110,R110,S110,T110,U110,V110,W110,X110,Y110,AA110,AB110,AC110,B111,C111,D111,E111,F111,G111,H111,I111,K111,L111,M111,N111,O111,P111,Q111,R111,S111,T111,U111,V111,W111,X111,Y111,Z111,AA111,AB111,AC111,B112,C112,D112,E112,F112,G112,H112,I112,K112,L112,M112,N112,O112,P112,Q112,R112,S112,T112,U112,V112,W112,X112,Y112,Z112,AA112,AB112,AC112,B113,C113,D113,E113,F113,G113,H113,I113,K113,L113,M113,N113,O113,P113,Q113,R113,S113,T113,U113,V113,W113,X113,Y113,Z113,AA113,AB113,AC113,B114,D114,E114,F114,G114,H114,I114,K114,L114,M114,N114,O114,P114,Q114,R114,S114,U114,V114,W114,X114,Y114,Z114,AA114,AB114,AC114,B115,D115,E115,F115,G115,H115,I115,K115,L115,M115,N115,O115,P115,Q115,R115,S115,U115,V115,W115,X115,Y115,Z115,AA115,AB115,AC115,B116,C116,D116,E116,F116,G116,H116,I116,K116,L116,M116,N116,O116,P116,Q116,R116,S116,T116,U116,V116,W116,X116,Y116,Z116,AA116,AB116,AC116,B117,C117,D117,E117,F117,G117,H117,I117,K117,L117,M117,N117,O117,P117,Q117,R117,S117,T117,U117,V117,W117,X117,Y117,Z117,AA117,AB117,AC117",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B89"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A108,A109,A110,A111,A112,A113,A114,A115,A116,A117",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_120",
+      "range": "A120:AC124",
+      "values_range": "B120,C120,D120,E120,F120,G120,H120,I120,K120,L120,M120,N120,O120,P120,Q120,R120,S120,T120,U120,V120,W120,X120,Y120,Z120,AA120,AB120,AC120,B121,C121,D121,E121,F121,G121,H121,I121,K121,L121,M121,N121,O121,P121,Q121,R121,S121,T121,U121,V121,W121,X121,Y121,Z121,AA121,AB121,AC121,B122,C122,D122,E122,F122,G122,H122,I122,K122,L122,M122,N122,O122,P122,Q122,R122,S122,T122,U122,V122,W122,X122,Y122,Z122,AA122,AB122,AC122,B123,C123,D123,E123,F123,G123,H123,I123,K123,L123,M123,N123,O123,P123,Q123,R123,S123,T123,U123,V123,W123,X123,Y123,Z123,AA123,AB123,AC123,B124,C124,D124,E124,F124,G124,H124,I124,K124,L124,M124,N124,O124,P124,Q124,R124,S124,T124,U124,V124,W124,X124,Y124,Z124,AA124,AB124,AC124",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B89"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A120,A121,A122,A123,A124",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_127",
+      "range": "A127:AC128",
+      "values_range": "B127,C127,D127,E127,F127,G127,H127,I127,K127,L127,M127,N127,O127,P127,Q127,R127,S127,T127,U127,V127,W127,X127,Y127,Z127,AA127,AB127,AC127,B128,C128,D128,E128,F128,G128,H128,I128,K128,L128,M128,N128,O128,P128,Q128,R128,S128,T128,U128,V128,W128,X128,Y128,Z128,AA128,AB128,AC128",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B89"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A127,A128",
+          "caption": "Duration"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_129",
+      "range": "A129:AC129",
+      "values_range": "B129,C129,D129,E129,F129,G129,H129,I129,K129,L129,M129,N129,O129,P129,Q129,R129,S129,T129,U129,V129,W129,X129,Y129,Z129,AA129,AB129,AC129",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B89"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A129"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "sex_132",
+      "range": "A132:AC133",
+      "values_range": "B132,C132,D132,E132,F132,G132,H132,I132,K132,L132,M132,N132,O132,P132,Q132,R132,S132,T132,U132,V132,W132,X132,Y132,Z132,AB132,AC132,B133,C133,D133,E133,F133,G133,H133,I133,K133,L133,M133,N133,O133,P133,Q133,S133,T133,U133,V133,W133,X133,Y133,Z133,AB133,AC133",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A132,A133",
+          "caption": "Sex"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_136",
+      "range": "A136:AC146",
+      "values_range": "B136,C136,D136,E136,F136,G136,I136,K136,L136,M136,N136,O136,P136,Q136,S136,T136,U136,V136,W136,X136,Y136,Z136,AA136,AB136,AC136,B137,C137,D137,E137,F137,G137,H137,I137,K137,L137,M137,N137,O137,P137,Q137,S137,T137,U137,V137,W137,X137,Y137,Z137,AA137,AB137,AC137,B138,C138,D138,E138,F138,G138,H138,I138,K138,L138,M138,N138,O138,P138,Q138,S138,T138,U138,V138,W138,X138,Y138,Z138,AA138,AB138,AC138,B139,C139,D139,E139,F139,G139,H139,I139,K139,L139,M139,N139,O139,P139,Q139,S139,T139,U139,V139,W139,X139,Y139,Z139,AA139,AB139,AC139,B140,C140,D140,E140,F140,G140,H140,I140,K140,L140,M140,N140,O140,P140,Q140,S140,T140,U140,V140,W140,X140,Y140,Z140,AA140,AB140,AC140,B141,C141,D141,E141,F141,G141,H141,I141,K141,L141,M141,N141,O141,P141,Q141,S141,T141,U141,V141,W141,X141,Y141,Z141,AA141,AB141,AC141,B142,C142,D142,E142,F142,G142,H142,I142,K142,L142,M142,N142,O142,P142,Q142,S142,T142,U142,V142,W142,X142,Y142,Z142,AA142,AB142,AC142,B143,C143,D143,E143,F143,G143,H143,I143,K143,L143,M143,N143,O143,P143,Q143,S143,T143,U143,V143,W143,X143,Y143,Z143,AA143,AB143,AC143,B144,C144,D144,E144,F144,G144,H144,I144,K144,L144,M144,N144,O144,P144,Q144,S144,T144,U144,V144,W144,X144,Y144,Z144,AA144,AB144,AC144,B145,C145,D145,E145,F145,G145,H145,I145,K145,L145,M145,N145,O145,P145,Q145,S145,T145,U145,V145,W145,X145,Y145,Z145,AA145,AB145,AC145,B146,C146,D146,E146,F146,G146,H146,I146,K146,L146,M146,N146,O146,P146,Q146,S146,T146,U146,V146,W146,X146,Y146,Z146,AA146,AB146,AC146",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A136,A137,A138,A139,A140,A141,A142,A143,A144,A145,A146",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_149",
+      "range": "A149:AC154",
+      "values_range": "B149,C149,D149,E149,F149,G149,H149,I149,K149,L149,M149,N149,O149,P149,Q149,S149,T149,U149,V149,W149,X149,Y149,Z149,AA149,AB149,AC149,B150,C150,D150,E150,F150,G150,H150,I150,K150,L150,M150,N150,O150,P150,Q150,S150,T150,U150,V150,W150,X150,Y150,Z150,AA150,AB150,AC150,B151,C151,D151,E151,F151,G151,H151,I151,K151,L151,M151,N151,O151,P151,Q151,S151,T151,U151,V151,W151,X151,Y151,Z151,AA151,AB151,AC151,B152,C152,E152,F152,G152,H152,I152,K152,M152,N152,O152,P152,Q152,S152,U152,V152,W152,X152,Y152,Z152,AA152,AB152,AC152,B153,C153,D153,E153,F153,G153,H153,I153,K153,L153,M153,N153,O153,P153,Q153,S153,T153,U153,V153,W153,Y153,Z153,AA153,AB153,AC153,B154,C154,D154,E154,F154,G154,H154,I154,K154,L154,M154,N154,O154,P154,Q154,S154,U154,V154,W154,X154,Y154,Z154,AA154,AB154,AC154",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A149,A150,A151,A152,A153,A154",
+          "caption": "Principal FDV offence"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_157",
+      "range": "A157:AC161",
+      "values_range": "B157,C157,D157,E157,F157,G157,H157,I157,K157,L157,M157,N157,O157,P157,Q157,R157,S157,T157,U157,V157,W157,X157,Y157,Z157,AA157,AB157,AC157,B158,C158,D158,E158,F158,G158,H158,I158,K158,L158,M158,O158,P158,Q158,S158,T158,U158,V158,W158,X158,Y158,AA158,AB158,AC158,B159,C159,D159,E159,F159,G159,H159,I159,K159,L159,M159,N159,O159,P159,Q159,S159,T159,U159,V159,W159,X159,Y159,Z159,AA159,AB159,AC159,B160,C160,D160,E160,F160,G160,H160,I160,K160,M160,N160,O160,P160,Q160,S160,T160,U160,V160,W160,Y160,AA160,AB160,AC160,B161,C161,D161,E161,F161,G161,H161,I161,K161,L161,M161,N161,O161,P161,Q161,S161,T161,U161,V161,W161,Y161,AA161,AB161,AC161",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A157,A158,A159,A160,A161",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_164",
+      "range": "A164:AC165",
+      "values_range": "B164,C164,D164,E164,F164,G164,H164,I164,K164,L164,M164,N164,O164,P164,Q164,S164,T164,U164,V164,W164,X164,Y164,Z164,AA164,AB164,AC164,B165,C165,D165,E165,F165,G165,H165,I165,K165,L165,M165,N165,O165,P165,Q165,S165,T165,U165,V165,W165,X165,Y165,Z165,AA165,AB165,AC165",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "case_duration",
+          "direction": "W",
+          "cells": "A164,A165",
+          "caption": "Duration "
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_166",
+      "range": "A166:AC166",
+      "values_range": "B166,C166,D166,E166,F166,G166,H166,I166,K166,L166,M166,N166,O166,P166,Q166,R166,S166,T166,U166,V166,W166,X166,Y166,Z166,AA166,AB166,AC166",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A166"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "B5,F5,J5,N5,R5,V5,Z5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6,C6,D6,E6,F6,G6,H6,I6,J6,K6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,V6,W6,X6,Y6,Z6,AA6,AB6,AC6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:49:16Z",
+    "tool_version": "0.2.0",
+    "records": 2967,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044717Z-2ac9a8490dbf",
+    "started_at": "2026-11-01T04:47:19Z",
+    "workbook": "2ac9a8490dbf24f0e7d80f2504653fcfb4acf3c55e5ad48c76908b7e90ddeb73--14.-family-and-domestic-violence-experimental-data-fdv-tables-1-to-17-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1956e-f758-750e-b954-60d906e9f3f2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "40702b198fd1c87cb8e79e76f973cc5c0c6d271ca2c680ecfb934b523e175335",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2ac9a8490dbf24f0e7d80f2504653fcfb4acf3c55e5ad48c76908b7e90ddeb73--14.-family-and-domestic-violence-experimental-data-fdv-tables-1-to-17-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 18 of 18\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6c48981ed0697dad8a391013b138841e3c05754233fe5221a5dfeb5db03113cc | missing |\n| \"FDV Table 1\" | cfd159cdde9a344028f4288bd6e951dbf74a40a7b29a0fb008667dbcd87db0db | missing |\n| \"FDV Table 2\" | db47eac02b6910b4973f481f8346fffe7f8ca5b6c2adce27d0f27316e42f9988 | missing |\n| \"FDV Table 3\" | 840caedbdca27446ceb566ca0f427cbabab4fb3db4d74af3560558023bb90429 | missing |\n| \"FDV Table 4\" | 5542ee7a65293682a8b2a7b3f40d125503388f15961094695a69f2da4315ab28 | missing |\n| \"FDV Table 5\" | 7cf238e5846ff948f71013a3ae4cabb8aa5561bc586d4a2db3acc30522ed55b5 | missing |\n| \"FDV Table 6\" | c25801945889a9dbf89cc3f133021bf2533db6ce4fdcd19da7fc15c5d99f845d | missing |\n| \"FDV Table 7\" | 969e3cb5ad98e635580b2173851a183606fb414c4c6bde3e4260ca9a95eed7c3 | missing |\n| \"FDV Table 8\" | 0d9eb5d60c012ed69009d229a89d04b859bc9f37ae45d644901a008056ebf2ee | missing |\n| \"FDV Table 9\" | cb00defd8a04d36bcc46680b4104ea555634717133e450864357bf2bfb865884 | missing |\n| \"FDV Table 10\" | 4ed8f82ba8647ecfa1a13a8d907e5d06f036fa1fa75f97ebe8f4be87e20a4c2a | missing |\n| \"FDV Table 11\" | 63182df648854a1913f9ea64669b4d0fb0c5ff38b5c14fbd2deb0d4044a91eee | missing |\n| \"FDV Table 12\" | b234d8bb1b0c2ec43cfeeb42634f137838a78278c7b8e71863c0f22cb43057d3 | missing |\n| \"FDV Table 13\" | 0befdb46816a248b40d2a99fc7119ef08028d1c9a6ed055d38ac2fcf4d3388ab | missing |\n| \"FDV Table 14\" | 58d8b230318037a1ed8f92bc9d4af3ab8b94f3dc766c493251579fb9b8396742 | missing |\n| \"FDV Table 15\" | 688fe1d39aeafcffa8466ddca4b27233eea7d413bcc83195839f99c8796ea09e | missing |\n| \"FDV Table 16\" | ce787cda25f7c759c2068701cb85852bea7f611d4044d0e261534ed5f0227c88 | missing |\n| \"FDV Table 17\" | e3cbbe51d8a439ea870ffddd6dc27607789d75105089ada98262e3a12942ba07 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044717Z-2ac9a8490dbf.jsonl"
+  }
+}

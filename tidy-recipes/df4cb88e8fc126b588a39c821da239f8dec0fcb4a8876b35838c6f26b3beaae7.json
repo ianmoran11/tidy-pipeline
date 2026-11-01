@@ -1,0 +1,168 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "df4cb88e8fc126b588a39c821da239f8dec0fcb4a8876b35838c6f26b3beaae7",
+  "sheet": "Table_3",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "296daf4ece709c908e46b82650466ddc8e1fd5375e44f36cdb0da92b70498981",
+  "agent_notes": "Northern Territory scope and any reference period printed only in the title are preserved in table_title. Published totals are retained and overlap constituent rows. Mean is a statistic on the times_proceeded_against axis, not a count band.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_9",
+      "range": "A9:N21",
+      "values_range": "B9:N21",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A9:A21",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,I5"
+        },
+        {
+          "name": "times_proceeded_against",
+          "direction": "N",
+          "cells": "B6:N6"
+        }
+      ]
+    },
+    {
+      "name": "block_23",
+      "range": "A23:N35",
+      "values_range": "B23:N35",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A23:A35",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,I5"
+        },
+        {
+          "name": "times_proceeded_against",
+          "direction": "N",
+          "cells": "B6:N6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:11:04Z",
+    "tool_version": "0.2.0",
+    "records": 338,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T051007Z-8726e76c64e1",
+    "started_at": "2026-11-01T05:10:08Z",
+    "workbook": "8726e76c64e1c54e35c7c8e7bb160d9f786688b3c63675bfcffa659767785670--45190do009_200910.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19583-d893-767a-95e0-7a70062c1a02",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "d61d30727c92ff90f49b88189f2272f9230e7292af1f0e36b4a1cd6a50ec676b",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8726e76c64e1c54e35c7c8e7bb160d9f786688b3c63675bfcffa659767785670--45190do009_200910.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a890c8388c2c274d8d0f0596f6ef144f608ce455407441a650d8f16b03a9cf95 | missing |\n| \"Table_1\" | 3daa33d8ae886c3ada37c4c4385d744321259d48a4f2e6f3e1f9cb9c9de170bd | missing |\n| \"Table_2\" | 719da033e0bc1a1023763eb1d6a97047a236060b8339b1a89a4828194e5c72c9 | missing |\n| \"Table_3\" | df4cb88e8fc126b588a39c821da239f8dec0fcb4a8876b35838c6f26b3beaae7 | missing |\n| \"Table_4\" | c3031270ddf032c32980c2e8a1df96e5c300a8c5c220203a247523b797d82226 | missing |\n| \"Table_5\" | a6b79b9085f8844bd243d298741c35defcf0a26ce60df1eb39956cf207eea969 | missing |\n| \"Table_6\" | 3af3ff8d555cb09b2606582c09ed47ed40b9bccbd871d471dfa7ddc64a119990 | missing |\n| \"Table_7\" | 314336071cb4a2895f697a5266522fe98451911df255636404eff87037dd3051 | missing |\n| \"Table_8\" | d3a8ce555d0069f12c3f20cb92feb3f39d52af89e77f8c08dbfe95c56cec538e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T051007Z-8726e76c64e1.jsonl"
+  }
+}

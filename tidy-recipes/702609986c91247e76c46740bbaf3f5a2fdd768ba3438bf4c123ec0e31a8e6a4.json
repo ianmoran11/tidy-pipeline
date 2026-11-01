@@ -1,0 +1,3823 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "702609986c91247e76c46740bbaf3f5a2fdd768ba3438bf4c123ec0e31a8e6a4",
+  "sheet": "Table_9",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Adjudicated outcomes group applies only to Acquitted, Proven guilty and their Total; totals and sentence totals overlap components. Duration rows are published mean/median weeks, not counts; comparison_basis distinguishes reported level from percentage change. Historical blanks and undefined percentage changes omitted without imputation. Published discrepancies retained.",
+  "new_dimensions": [
+    {
+      "name": "comparison_basis",
+      "description": "Whether the published summary measure is its reported level (NUMBER) or its percentage change between reference periods.",
+      "example_labels": [
+        "NUMBER",
+        "PERCENTAGE CHANGE (%)"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A10,A14,A21,A24,A42,A49,A53,A60,A63,A81,A88,A92,A99,A102,A120,A127,A131,A138,A141,A159,A166,A170,A177,A180,A198,A205,A209,A216,A219,A237,A244,A248,A255,A258,A276,A283,A287,A294,A297,A315,A322,A326,A333,A336,A354"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_11_11",
+      "range": "A11:G13",
+      "values_range": "B11:G13",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A11:A13",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_16_16",
+      "range": "A16:G18",
+      "values_range": "B16:G18",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A16:A18",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_19_19",
+      "range": "A19:G20",
+      "values_range": "B19:G20",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A19:A20",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_22_22",
+      "range": "A22:G23",
+      "values_range": "D22:G23",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A22:A23",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_25_25",
+      "range": "A25:F25",
+      "values_range": "B25:F25",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A25:A25",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_25_26",
+      "range": "A26:G30",
+      "values_range": "B26:G30",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A26:A30",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_25_31",
+      "range": "A31:F31",
+      "values_range": "B31:F31",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A31:A31",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_25_32",
+      "range": "A32:G40",
+      "values_range": "B32:G40",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A32:A40",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_41_41",
+      "range": "A41:G41",
+      "values_range": "B41:G41",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A41:A41"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_43_43",
+      "range": "A43:G45",
+      "values_range": "B43:G45",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A43:A45",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_46_46",
+      "range": "A46:G47",
+      "values_range": "B46:G47",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A46:A47"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_50_50",
+      "range": "A50:G52",
+      "values_range": "B50:G52",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A50:A52",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_55_55",
+      "range": "A55:G57",
+      "values_range": "B55:G57",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A55:A57",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_58_58",
+      "range": "A58:G59",
+      "values_range": "B58:G59",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A58:A59",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_61_61",
+      "range": "A61:G62",
+      "values_range": "D61:G62",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A61:A62",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_64_64",
+      "range": "A64:F64",
+      "values_range": "B64:F64",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A64:A64",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_64_65",
+      "range": "A65:G68",
+      "values_range": "B65:G68",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A65:A68",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_64_69",
+      "range": "A69:F70",
+      "values_range": "B69:F70",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A69:A70",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_64_71",
+      "range": "A71:G74",
+      "values_range": "B71:G74",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A71:A74",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_64_75",
+      "range": "A75:F75",
+      "values_range": "B75:F75",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A75:A75",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_64_76",
+      "range": "A76:G79",
+      "values_range": "B76:G79",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A76:A79",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_80_80",
+      "range": "A80:G80",
+      "values_range": "B80:G80",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A80:A80"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_82_82",
+      "range": "A82:G84",
+      "values_range": "B82:G84",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A82:A84",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_85_85",
+      "range": "A85:G86",
+      "values_range": "B85:G86",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A48"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A85:A86"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_89_89",
+      "range": "A89:G91",
+      "values_range": "B89:G91",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A89:A91",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_94_94",
+      "range": "A94:G96",
+      "values_range": "B94:G96",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A93"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A94:A96",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_97_97",
+      "range": "A97:G98",
+      "values_range": "B97:G98",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A97:A98",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_100_100",
+      "range": "A100:G101",
+      "values_range": "D100:G101",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A100:A101",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_103_103",
+      "range": "A103:F103",
+      "values_range": "B103:F103",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A103:A103",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_103_104",
+      "range": "A104:G107",
+      "values_range": "B104:G107",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A104:A107",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_103_108",
+      "range": "A108:F109",
+      "values_range": "B108:F109",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A108:A109",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_103_110",
+      "range": "A110:G118",
+      "values_range": "B110:G118",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A110:A118",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_119_119",
+      "range": "A119:G119",
+      "values_range": "B119:G119",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A119:A119"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_121_121",
+      "range": "A121:G123",
+      "values_range": "B121:G123",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A121:A123",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_124_124",
+      "range": "A124:G125",
+      "values_range": "B124:G125",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A124:A125"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_128_128",
+      "range": "A128:G130",
+      "values_range": "B128:G130",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A128:A130",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_133_133",
+      "range": "A133:F133",
+      "values_range": "B133:F133",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A132"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A133:A133",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_133_134",
+      "range": "A134:G135",
+      "values_range": "B134:G135",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A132"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A134:A135",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_136_136",
+      "range": "A136:G137",
+      "values_range": "B136:G137",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A136:A137",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_139_139",
+      "range": "A139:G140",
+      "values_range": "D139:G140",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A139:A140",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_142",
+      "range": "A142:F143",
+      "values_range": "B142:F143",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A142:A143",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_144",
+      "range": "A144:G144",
+      "values_range": "B144:G144",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A144:A144",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_145",
+      "range": "A145:F145",
+      "values_range": "B145:F145",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A145:A145",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_146",
+      "range": "A146:G146",
+      "values_range": "B146:G146",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A146:A146",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_147",
+      "range": "A147:F148",
+      "values_range": "B147:F148",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A147:A148",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_149",
+      "range": "A149:G151",
+      "values_range": "B149:G151",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A149:A151",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_152",
+      "range": "A152:F153",
+      "values_range": "B152:F153",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A152:A153",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_154",
+      "range": "A154:G154",
+      "values_range": "B154:G154",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A154:A154",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_155",
+      "range": "A155:F155",
+      "values_range": "B155:F155",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A155:A155",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_142_156",
+      "range": "A156:G157",
+      "values_range": "B156:G157",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A156:A157",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_158_158",
+      "range": "A158:G158",
+      "values_range": "B158:G158",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A158:A158"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_160_160",
+      "range": "A160:G162",
+      "values_range": "B160:G162",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A160:A162",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_163_163",
+      "range": "A163:G164",
+      "values_range": "B163:G164",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A126"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A163:A164"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_167_167",
+      "range": "A167:G168",
+      "values_range": "B167:G168",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A167:A168",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_167_169",
+      "range": "A169:F169",
+      "values_range": "B169:F169",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A169:A169",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_172_172",
+      "range": "A172:G174",
+      "values_range": "B172:G174",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A171"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A172:A174",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_175_175",
+      "range": "A175:G176",
+      "values_range": "B175:G176",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A175:A176",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_178_178",
+      "range": "A178:G179",
+      "values_range": "D178:G179",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A178:A179",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_181",
+      "range": "A181:F182",
+      "values_range": "B181:F182",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A181:A182",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_183",
+      "range": "A183:G183",
+      "values_range": "B183:G183",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A183:A183",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_184",
+      "range": "A184:F184",
+      "values_range": "B184:F184",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A184:A184",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_185",
+      "range": "A185:G185",
+      "values_range": "B185:G185",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A185:A185",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_186",
+      "range": "A186:F187",
+      "values_range": "B186:F187",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A186:A187",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_188",
+      "range": "A188:G190",
+      "values_range": "B188:G190",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A188:A190",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_191",
+      "range": "A191:F191",
+      "values_range": "B191:F191",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A191:A191",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_192",
+      "range": "A192:G193",
+      "values_range": "B192:G193",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A192:A193",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_194",
+      "range": "A194:F194",
+      "values_range": "B194:F194",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A194:A194",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_181_195",
+      "range": "A195:G196",
+      "values_range": "B195:G196",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A195:A196",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_197_197",
+      "range": "A197:G197",
+      "values_range": "B197:G197",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A197:A197"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_199_199",
+      "range": "A199:G201",
+      "values_range": "B199:G201",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A199:A201",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_202_202",
+      "range": "A202:G203",
+      "values_range": "B202:G203",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A202:A203"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_206_206",
+      "range": "A206:G208",
+      "values_range": "D206:G208",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A206:A208",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_211_211",
+      "range": "A211:G213",
+      "values_range": "D211:G213",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A210"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A211:A213",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_214_214",
+      "range": "A214:G215",
+      "values_range": "D214:G215",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A214:A215",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_217_217",
+      "range": "A217:G218",
+      "values_range": "D217:G218",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A217:A218",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_220",
+      "range": "A220:F221",
+      "values_range": "D220:F221",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A220:A221",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_222",
+      "range": "A222:G222",
+      "values_range": "D222:G222",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A222:A222",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_223",
+      "range": "A223:F226",
+      "values_range": "D223:F226",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A223:A226",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_227",
+      "range": "A227:G229",
+      "values_range": "D227:G229",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A227:A229",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_230",
+      "range": "A230:F231",
+      "values_range": "D230:F231",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A230:A231",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_232",
+      "range": "A232:G232",
+      "values_range": "D232:G232",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A232:A232",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_233",
+      "range": "A233:F233",
+      "values_range": "D233:F233",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A233:A233",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_220_234",
+      "range": "A234:G235",
+      "values_range": "D234:G235",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A234:A235",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_236_236",
+      "range": "A236:G236",
+      "values_range": "D236:G236",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A236:A236"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_238_238",
+      "range": "A238:G240",
+      "values_range": "D238:G240",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A238:A240",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_241_241",
+      "range": "A241:G242",
+      "values_range": "D241:G242",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A204"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A241:A242"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_245_245",
+      "range": "A245:G247",
+      "values_range": "B245:G247",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A245:A247",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_250_250",
+      "range": "A250:G252",
+      "values_range": "B250:G252",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A249"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A250:A252",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_253_253",
+      "range": "A253:G254",
+      "values_range": "B253:G254",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A253:A254",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_256_256",
+      "range": "A256:G257",
+      "values_range": "D256:G257",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A256:A257",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_259",
+      "range": "A259:F259",
+      "values_range": "B259:F259",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A259:A259",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_260",
+      "range": "A260:G263",
+      "values_range": "B260:G263",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A260:A263",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_264",
+      "range": "A264:F265",
+      "values_range": "B264:F265",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A264:A265",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_266",
+      "range": "A266:G268",
+      "values_range": "B266:G268",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A266:A268",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_269",
+      "range": "A269:F269",
+      "values_range": "B269:F269",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A269:A269",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_270",
+      "range": "A270:G271",
+      "values_range": "B270:G271",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A270:A271",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_272",
+      "range": "A272:F272",
+      "values_range": "B272:F272",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A272:A272",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_259_273",
+      "range": "A273:G274",
+      "values_range": "B273:G274",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A273:A274",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_275_275",
+      "range": "A275:G275",
+      "values_range": "B275:G275",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A275:A275"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_277_277",
+      "range": "A277:G279",
+      "values_range": "B277:G279",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A277:A279",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_280_280",
+      "range": "A280:G281",
+      "values_range": "B280:G281",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A243"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A280:A281"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_284_284",
+      "range": "A284:G286",
+      "values_range": "B284:G286",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A284:A286",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_289_289",
+      "range": "A289:G291",
+      "values_range": "B289:G291",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A288"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A289:A291",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_292_292",
+      "range": "A292:G293",
+      "values_range": "B292:G293",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A292:A293",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_295_295",
+      "range": "A295:G296",
+      "values_range": "D295:G296",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A295:A296",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_298",
+      "range": "A298:F298",
+      "values_range": "B298:F298",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A298:A298",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_299",
+      "range": "A299:G300",
+      "values_range": "B299:G300",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A299:A300",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_301",
+      "range": "A301:F301",
+      "values_range": "B301:F301",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A301:A301",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_302",
+      "range": "A302:G302",
+      "values_range": "B302:G302",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A302:A302",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_303",
+      "range": "A303:F303",
+      "values_range": "B303:F303",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A303:A303",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_304",
+      "range": "A304:G304",
+      "values_range": "B304:G304",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A304:A304",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_305",
+      "range": "A305:F305",
+      "values_range": "B305:F305",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A305:A305",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_306",
+      "range": "A306:G307",
+      "values_range": "B306:G307",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A306:A307",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_308",
+      "range": "A308:F308",
+      "values_range": "B308:F308",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A308:A308",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_298_309",
+      "range": "A309:G313",
+      "values_range": "B309:G313",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A309:A313",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_314_314",
+      "range": "A314:G314",
+      "values_range": "B314:G314",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A314:A314"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_316_316",
+      "range": "A316:G318",
+      "values_range": "B316:G318",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A316:A318",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_319_319",
+      "range": "A319:G320",
+      "values_range": "B319:G320",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A319:A320"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "sex_323_323",
+      "range": "A323:G325",
+      "values_range": "D323:G325",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A323:A325",
+          "caption": "Sex"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_328_328",
+      "range": "A328:G330",
+      "values_range": "D328:G330",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A327"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A328:A330",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_331_331",
+      "range": "A331:G332",
+      "values_range": "D331:G332",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A331:A332",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_334_334",
+      "range": "A334:G335",
+      "values_range": "D334:G335",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A334:A335",
+          "caption": "Duration from initation to finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_337_337",
+      "range": "A337:F337",
+      "values_range": "D337:F337",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A337:A337",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_337_338",
+      "range": "A338:G352",
+      "values_range": "D338:G352",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A338:A352",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_353_353",
+      "range": "A353:G353",
+      "values_range": "D353:G353",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A353:A353"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_355_355",
+      "range": "A355:G357",
+      "values_range": "D355:G357",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A355:A357",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    },
+    {
+      "name": "measure_358_358",
+      "range": "A358:G359",
+      "values_range": "D358:G359",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A321"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A358:A359"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:G8"
+        },
+        {
+          "name": "comparison_basis",
+          "direction": "NNW",
+          "cells": "B7,G7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:59:42Z",
+    "tool_version": "0.2.0",
+    "records": 1526,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045748Z-2a0934e6edbb",
+    "started_at": "2026-11-01T04:57:50Z",
+    "workbook": "2a0934e6edbb8aac3f1108bae47a8d98071958236c0c3cae270112baeabc689e--45150do002_201213.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19578-96dc-74e5-85de-9e993036680e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "c6cd4737df956e3b05d95c94f973fc5e5084d3a8a3c73d36cff9c427a76d909f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2a0934e6edbb8aac3f1108bae47a8d98071958236c0c3cae270112baeabc689e--45150do002_201213.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2012-13\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a32210be245885992437663e5e81ac84bc53aece2441d285137c2d5cec90c154 | missing |\n| \"Table_9\" | 702609986c91247e76c46740bbaf3f5a2fdd768ba3438bf4c123ec0e31a8e6a4 | missing |\n| \"Table_10\" | 100b152fdd5b9b93350c9165552e95511bf195e6a5beea482d77bcdd80446235 | missing |\n| \"Table_11\" | 2c797bb0851c0fe84d900fe2bd4bdbd08e8ebf2774c1fc73465c6adb472f8853 | missing |\n| \"Table_12\" | c73b9adc0cf605b6dd12208895b391d7326916604d717b0a83b94d8d34a267a1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045748Z-2a0934e6edbb.jsonl"
+  }
+}

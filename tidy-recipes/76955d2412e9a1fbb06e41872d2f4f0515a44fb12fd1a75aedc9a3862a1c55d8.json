@@ -1,0 +1,92 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "76955d2412e9a1fbb06e41872d2f4f0515a44fb12fd1a75aedc9a3862a1c55d8",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Index of tables and publication information; no statistical data.",
+  "agent_notes": "Contents index only; no data table.",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T04:47:24Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044558Z-ca93dd9aa33a",
+    "started_at": "2026-11-01T04:46:01Z",
+    "workbook": "ca93dd9aa33a3daea01f6f7a4f574d40cbd9ecb21e47928ba5581ffd91e530bb--14.-defendants-of-family-and-domestic-violence-experimental-data-selected-states-and-territories-tables-1-to-10-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1956d-c526-72d2-9604-f141c4e31191",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "12d4e146be2fa7f2c81825548d72e79d6d98f89667244be7fef444f65fa687f2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ca93dd9aa33a3daea01f6f7a4f574d40cbd9ecb21e47928ba5581ffd91e530bb--14.-defendants-of-family-and-domestic-violence-experimental-data-selected-states-and-territories-tables-1-to-10-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2017-18\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 76955d2412e9a1fbb06e41872d2f4f0515a44fb12fd1a75aedc9a3862a1c55d8 | missing |\n| \"FDV Table 1\" | 47c0eeebe6b60dc7ecb06021f731aed997834eabe0e7e9a799191a3933961c48 | missing |\n| \"FDV Table 2\" | a4aa7f651a391b0bba34b5c892c786a53afc090540433132c63e28b6fdc40a2b | missing |\n| \"FDV Table 3\" | 2c82877424bdeb198a8ec953133f88780a91f96f024b8da174b95b401a253866 | missing |\n| \"FDV Table 4\" | b9392a1220763d998cf1295db7eb03de7eb4613dad2da3a1709e04eae053be82 | missing |\n| \"FDV Table 5\" | 8393a399d89751e2295a97b99f175a1e04d0e00ae05f5c5338a5aafa284d91c8 | missing |\n| \"FDV Table 6\" | 6bb57a56f4cf262a39e803af935877cbe3084272e43870f065ace1e24402586e | missing |\n| \"FDV Table 7\" | 5a8b4bfe0efbb313077986360796d5a25766ad1731976c44dc9392035f21d490 | missing |\n| \"FDV Table 8\" | 91421a9bdc4ad89bb9aa29936e96e22ede3c7c842ec4425a6df48b0f2a69db6a | missing |\n| \"FDV Table 9\" | cf6415c303597a98594d8ce3d9cd6bbd6da6f75d0eb3a8ed378c0c24dd1b3130 | missing |\n| \"FDV Table 10\" | 031c71802fbdcb0aee951ad2987b7f74dd1cc1aa4b636497aa627219ab5408bb | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044558Z-ca93dd9aa33a.jsonl"
+  }
+}

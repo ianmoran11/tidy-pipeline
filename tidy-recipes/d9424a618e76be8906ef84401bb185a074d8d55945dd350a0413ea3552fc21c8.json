@@ -1,0 +1,686 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d9424a618e76be8906ef84401bb185a074d8d55945dd350a0413ea3552fc21c8",
+  "sheet": "Table 36",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "1cfc0dad896d94b5cef8cf9a2eea95deb5f9ef7b5fb9aff758bf40b22cf62885",
+  "agent_notes": "Western Australia. Mean and median age (years) and duration (weeks) remain published labels. Adjudicated outcomes include acquitted and proven guilty; overlapping subtotals and all totals retained. Court levels are separate blocks. ANZSOC division 02 includes subdivision 021 Assault; both retained. Total finalised is retained with principal-offence rows. Published blank C164 excluded.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A12,A16,A23,A27,A47,A52,A57,A61,A68,A72,A92,A97,A102,A106,A113,A117,A137,A142,A146,A150,A157,A161,A181"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_6",
+      "range": "A8:J10",
+      "values_range": "B8:J10",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A8:A10"
+        }
+      ]
+    },
+    {
+      "name": "age_group_6",
+      "range": "A13:J14",
+      "values_range": "B13:J14",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A13:A14"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_6",
+      "range": "A17:J21",
+      "values_range": "B17:J21",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A17:A21"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_6",
+      "range": "A24:J25",
+      "values_range": "B24:J25",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "case_duration",
+          "caption": "Duration",
+          "direction": "W",
+          "cells": "A24:A25"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_6",
+      "range": "A28:J45",
+      "values_range": "B28:J45",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A28:A45"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_6",
+      "range": "A48:J50",
+      "values_range": "B48:J50",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A48:A50"
+        }
+      ]
+    },
+    {
+      "name": "sex_51",
+      "range": "A53:J55",
+      "values_range": "B53:J55",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A53:A55"
+        }
+      ]
+    },
+    {
+      "name": "age_group_51",
+      "range": "A58:J59",
+      "values_range": "B58:J59",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A58:A59"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_51",
+      "range": "A62:J66",
+      "values_range": "B62:J66",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A62:A66"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_51",
+      "range": "A69:J70",
+      "values_range": "B69:J70",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "case_duration",
+          "caption": "Duration",
+          "direction": "W",
+          "cells": "A69:A70"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_51",
+      "range": "A73:J90",
+      "values_range": "B73:J90",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A73:A90"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_51",
+      "range": "A93:J95",
+      "values_range": "B93:J95",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A93:A95"
+        }
+      ]
+    },
+    {
+      "name": "sex_96",
+      "range": "A98:J100",
+      "values_range": "B98:J100",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A98:A100"
+        }
+      ]
+    },
+    {
+      "name": "age_group_96",
+      "range": "A103:J104",
+      "values_range": "B103:J104",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A103:A104"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_96",
+      "range": "A107:J111",
+      "values_range": "B107:J111",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A107:A111"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_96",
+      "range": "A114:J115",
+      "values_range": "B114:J115",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "case_duration",
+          "caption": "Duration",
+          "direction": "W",
+          "cells": "A114:A115"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_96",
+      "range": "A118:J135",
+      "values_range": "B118:J135",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A118:A135"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_96",
+      "range": "A138:J140",
+      "values_range": "B138:J140",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A138:A140"
+        }
+      ]
+    },
+    {
+      "name": "sex_141",
+      "range": "A143:J144",
+      "values_range": "B143:J144",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A143:A144"
+        }
+      ]
+    },
+    {
+      "name": "age_group_141",
+      "range": "A147:J148",
+      "values_range": "B147:J148",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A147:A148"
+        }
+      ]
+    },
+    {
+      "name": "method_of_finalisation_141",
+      "range": "A151:J155",
+      "values_range": "B151:J155",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "method_of_finalisation",
+          "caption": "Method of finalisation",
+          "direction": "W",
+          "cells": "A151:A155"
+        }
+      ]
+    },
+    {
+      "name": "case_duration_141",
+      "range": "A158:J159",
+      "values_range": "B158:J159",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "case_duration",
+          "caption": "Duration",
+          "direction": "W",
+          "cells": "A158:A159"
+        }
+      ]
+    },
+    {
+      "name": "principal_offence_141",
+      "range": "A162:J179",
+      "values_range": "B162:J163,B164,D164:J164,B165:J179",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Principal offence",
+          "direction": "W",
+          "cells": "A162:A179"
+        }
+      ]
+    },
+    {
+      "name": "principal_sentence_141",
+      "range": "A182:J184",
+      "values_range": "B182:J184",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B141"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B5:J5"
+        },
+        {
+          "name": "principal_sentence",
+          "caption": "Principal sentence",
+          "direction": "W",
+          "cells": "A182:A184"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:48:54Z",
+    "tool_version": "0.2.0",
+    "records": 1179,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T044724Z-327e3c246a1f",
+    "started_at": "2026-11-01T04:47:27Z",
+    "workbook": "327e3c246a1f34ccca40501a91ce8704a4b008fc91440a87a263771344dc060b--8.-defendants-finalised-western-australia-tables-36-to-40-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1956f-16a4-7029-b960-0a1898866283",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9d1dc11451777e9f43c5354b5e40ebedf43045e1e1f9b2dcbaedc9c5c78043e8",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `327e3c246a1f34ccca40501a91ce8704a4b008fc91440a87a263771344dc060b--8.-defendants-finalised-western-australia-tables-36-to-40-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2018-19\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 22ce734eaa14b04e5d83ea479bcd8e0ac8cee157286dda93b62c4542f3921ae4 | missing |\n| \"Table 36\" | d9424a618e76be8906ef84401bb185a074d8d55945dd350a0413ea3552fc21c8 | missing |\n| \"Table 37\" | c9c948c539af5a326c2e140e10ad97a61af2d87f874c0d2345f5606eb600725e | missing |\n| \"Table 38\" | f2947c4ca69dd07f5b3831445381c67a33fc4f30cd4d4b73091ad78fc8b26986 | missing |\n| \"Table 39\" | d6635dff3b7c5c4c16f7c0244e06ca2d74f2997cd0b728d452f80661d94827f9 | missing |\n| \"Table 40\" | a399dd2ade97fdb2daa4ed3dabbd00c88478941a3a19a2838f88282c10712ef0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T044724Z-327e3c246a1f.jsonl"
+  }
+}

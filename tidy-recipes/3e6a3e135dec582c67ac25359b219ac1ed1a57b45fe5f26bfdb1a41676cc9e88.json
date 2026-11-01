@@ -1,0 +1,272 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "3e6a3e135dec582c67ac25359b219ac1ed1a57b45fe5f26bfdb1a41676cc9e88",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "731fee863684ec5537a1f448066e9a76ec5060f1aaeb4ab6ab870cb81a568974",
+  "agent_notes": "Sentence length describes custody in a correctional institution. All Courts is retained in the title. Each year has offence counts, an all-offence percentage distribution, and separate Mean/Median measures in months. All-offence totals and Total length columns are retained; percentage rows do not inherit the count unit. Published revised-year marker is preserved.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sentence_length_counts_9",
+      "range": "A7:L26",
+      "values_range": "B10:L26",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A10:A26"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B7:L7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8:L8"
+        }
+      ]
+    },
+    {
+      "name": "sentence_length_percentages_9",
+      "range": "A27:L27",
+      "values_range": "B27:L27",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A9"
+        },
+        {
+          "name": "measure",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A27"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B7:L7"
+        }
+      ]
+    },
+    {
+      "name": "sentence_length_summary_9",
+      "range": "M7:N26",
+      "values_range": "M10:N26",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A10:A26"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "M7:N7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "M8:N8"
+        }
+      ]
+    },
+    {
+      "name": "sentence_length_counts_28",
+      "range": "A28:L45",
+      "values_range": "B29:L45",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A29:A45"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B7:L7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B8:L8"
+        }
+      ]
+    },
+    {
+      "name": "sentence_length_percentages_28",
+      "range": "A46:L46",
+      "values_range": "B46:L46",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A28"
+        },
+        {
+          "name": "measure",
+          "cells": "A46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A46"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B7:L7"
+        }
+      ]
+    },
+    {
+      "name": "sentence_length_summary_28",
+      "range": "M29:N45",
+      "values_range": "M29:N45",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A29:A45"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "M7:N7"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "M8:N8"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:36:23Z",
+    "tool_version": "0.2.0",
+    "records": 464,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T043537Z-de50f38b5198",
+    "started_at": "2026-11-01T04:35:43Z",
+    "workbook": "de50f38b5198e4b7e6e3865d3edda94262c660ba41474d6ed7258308beaf92f1--45130do014_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19564-59fd-7590-a048-1d9c4e5a741c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "085413381d6908115ef1abcf5681c3343aa174c4679d328a01da02678d3b703f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `de50f38b5198e4b7e6e3865d3edda94262c660ba41474d6ed7258308beaf92f1--45130do014_201112.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d59e2a4bc94c51bb17f1025c739faa17633a97a416b9675b4e3227f70590ce4c | missing |\n| \"Table_1\" | 3e6a3e135dec582c67ac25359b219ac1ed1a57b45fe5f26bfdb1a41676cc9e88 | missing |\n| \"Table_2\" | bf0951334d3f5bb67542a830668c48c76345e118098ba319edca3111d113b021 | missing |\n| \"Table_3\" | 5c3787f9a6a0941248728d65446d46aa0693a7fb25aabe3b260f899eb02ce011 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T043537Z-de50f38b5198.jsonl"
+  }
+}

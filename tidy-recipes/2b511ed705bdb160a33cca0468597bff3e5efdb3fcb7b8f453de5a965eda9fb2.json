@@ -1,0 +1,103 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "2b511ed705bdb160a33cca0468597bff3e5efdb3fcb7b8f453de5a965eda9fb2",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook table index and links; numbers identify tables, not statistical observations.",
+  "template_from": "fa59d3710d55005671e37f3d186be863e66b7544c441f5555e9aa383a9cd4469",
+  "agent_notes": "Contents only: B7:B14 are table identifiers 65–72, not statistical observations. The numeric-cell check flags these eight navigation numbers; retain kind contents for human review.",
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-01T04:51:54Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 8 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045012Z-06b2756f4198",
+    "started_at": "2026-11-01T04:50:14Z",
+    "workbook": "06b2756f41987c34b5322bb890e2dca6581fa83b8e2b26e8a2e26523af5787e0--13.-Sentence-length-and-fine-amount-Australia-Tables-65-to-72-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19571-a4ec-73fb-a452-81f82d659b98",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "d714e1f1a22f7d9e631fbc0de6797d4a0d7a558dd84c4b37db4bcfc4b66c60a6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `06b2756f41987c34b5322bb890e2dca6581fa83b8e2b26e8a2e26523af5787e0--13.-Sentence-length-and-fine-amount-Australia-Tables-65-to-72-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 2b511ed705bdb160a33cca0468597bff3e5efdb3fcb7b8f453de5a965eda9fb2 | missing |\n| \"Table 65\" | bd81d5fc2796f704ac32ea343636c905ab3c53a94e5c007655d3de1ad202a4de | missing |\n| \"Table 66\" | 5fcf0cd8cc8c1de8acb4914881ed97bce6589457cbddc552aa7686a3162f1c97 | missing |\n| \"Table 67\" | 48b97dc4ece42f1c0fc9152859b9bb3a11169bc29d3b2b88aaa2e132302e1ef0 | missing |\n| \"Table 68\" | 55bc43834552c55ec7a3b52bab85f2d49b727e3adfd5b5bd56f7eb25d15f4c0d | missing |\n| \"Table 69\" | 0d2f3a251bce55e119aa4a0cd7c3849ab4bab344678f65a488c999245ac5282e | missing |\n| \"Table 70\" | ed62cc0757d9267eeb9d78da080cc31b96352b024cc505ebc17cbd56752aa237 | missing |\n| \"Table 71\" | 0a87861afb1062ecc209044d9df02976257e746f4033f10c0ec34e22c8887d6d | missing |\n| \"Table 72\" | ccb05961e162524dfe728aaf7724f63b9efb8733546478c17ddc93d51c08fbf0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045012Z-06b2756f4198.jsonl"
+  }
+}

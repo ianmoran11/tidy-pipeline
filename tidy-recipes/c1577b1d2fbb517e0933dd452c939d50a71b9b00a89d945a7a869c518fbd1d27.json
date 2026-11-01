@@ -1,0 +1,339 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c1577b1d2fbb517e0933dd452c939d50a71b9b00a89d945a7a869c518fbd1d27",
+  "sheet": "Table 2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Overall totals retained separately as population labels, not attributed solely to times proceeded against. Mean/median age and mean times proceeded against use their published measure labels rather than Number. Totals include unknown sex, age and/or times proceeded against; suppression and na preserved.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A7,A11,A22,A33,A37,A45"
+    },
+    {
+      "name": "notes",
+      "cells": "A53:A58"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_number",
+      "range": "A8:I9",
+      "values_range": "B8:I9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A8:A9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "age_number",
+      "range": "A12:I17",
+      "values_range": "B12:I17",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A12:A17"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "age_summary",
+      "range": "A19:I20",
+      "values_range": "B19:I20",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A19:A20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "times_number",
+      "range": "A23:I27",
+      "values_range": "B23:I27",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times_proceeded_against",
+          "caption": "Times proceeded against",
+          "direction": "W",
+          "cells": "A23:A27"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "mean_times",
+      "range": "A29:I29",
+      "values_range": "B29:I29",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A29"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "total_number",
+      "range": "A31:I31",
+      "values_range": "B31:I31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A31:A31"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "sex_proportion",
+      "range": "A34:I35",
+      "values_range": "B34:I35",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B32"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A34:A35"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "age_proportion",
+      "range": "A38:I43",
+      "values_range": "B38:I43",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B32"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age",
+          "direction": "W",
+          "cells": "A38:A43"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "times_proportion",
+      "range": "A46:I50",
+      "values_range": "B46:I50",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B32"
+        }
+      ],
+      "headers": [
+        {
+          "name": "times_proceeded_against",
+          "caption": "Times proceeded against",
+          "direction": "W",
+          "cells": "A46:A50"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    },
+    {
+      "name": "total_proportion",
+      "range": "A51:I51",
+      "values_range": "B51:I51",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B32"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A51:A51"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B5:I5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T03:30:07Z",
+    "tool_version": "0.2.0",
+    "records": 248,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T032927Z-21469b364524",
+    "started_at": "2026-11-01T03:29:28Z",
+    "workbook": "21469b36452459b5d6fdac2174f2a8ebe27397aa49aec2a2261cf8df9dd49c0d--7.-Offenders-of-COVID-19-related-offences.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19527-af4f-7026-a51f-87a42eab333b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "db73b4fc219a71e459263c1961ee690b4e0a6bd92ec756e9d8ce0e8085090bb5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `21469b36452459b5d6fdac2174f2a8ebe27397aa49aec2a2261cf8df9dd49c0d--7.-Offenders-of-COVID-19-related-offences.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | eb008bd7e0a82f8896d0ebdb9b841a6dbff8f3717be3821a005f8a6be21264a8 | missing |\n| \"Table 1\" | 5b67c0608f4f309d7d7d2fe9dca34b69941302c0c2938430b22679f669b48116 | missing |\n| \"Table 2\" | c1577b1d2fbb517e0933dd452c939d50a71b9b00a89d945a7a869c518fbd1d27 | missing |\n| \"Table 3\" | d76272bfa76cc37b602083fa96dfe6b6885ebb334d4743a7bffb43b3ffed8a95 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T032927Z-21469b364524.jsonl"
+  }
+}

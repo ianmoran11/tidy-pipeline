@@ -70,6 +70,7 @@ These read the `targets` store, so run `tar_make()` first.
 | `check_harmonised.R` | Values unchanged, gap counts by publication, derived dimensions, before/after examples, no multi-value fields |
 | `after_scan.R` | Compound labels still left after harmonisation (ISSUES.md I12) |
 | `integration_conflicts.R <publication_id> [n] [numbers\|all]` | Values that still can't be told apart, with the tables involved (ISSUES.md I26) |
+| `review_new_releases.R agents/<batch>.txt …` | For releases the database doesn't cover: check warnings, spec gaps (subjects, symbols, dates, court-level measures), values that can't be told apart, agreement with other releases |
 | `check_integrated.R` | Reads `integrated/*.csv` as an analyst would: links, duplicates, one `is_latest` per series and period, the README example |
 | `blank_cells_vs_reference.R [n]` | Blank-cell records vs the database's blank cells on sampled historical ABS sheets: precision and recall (ISSUES.md I5) |
 | `verify_court_cubes.R` | Evidence for the 2009–10/2010–11 Courts cube → court level mapping in the measure spec |

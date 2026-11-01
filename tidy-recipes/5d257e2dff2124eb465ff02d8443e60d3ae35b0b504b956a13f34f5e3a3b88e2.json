@@ -1,0 +1,520 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5d257e2dff2124eb465ff02d8443e60d3ae35b0b504b956a13f34f5e3a3b88e2",
+  "sheet": "A",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "943d10b03caaea76a49ffdb8a88adb3e69837f7b315e062fbf1bb905aae44383",
+  "agent_notes": "Number and proportion blocks split by sex, finalisation hierarchy and principal sentence. All published indents and totals retained. Proven guilty (rows 15/35) is nested within Adjudicated outcomes (rows 13/33); guilty plea/finding and their Total have this subgroup label. Adjudicated Total includes acquittals and proven guilty; Total outcomes also includes non-adjudicated outcomes. Sentence Total refers to proven guilty outcomes. Sentence percentages use proven guilty outcomes as denominator; earlier percentages use all finalised defendants. Higher Courts and 2005-06 are in sheet titles.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number_sex",
+      "range": "A7:J8",
+      "values_range": "B7:J8",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A7:A8"
+        }
+      ]
+    },
+    {
+      "name": "number_non_adjudicated",
+      "range": "A9:J12",
+      "values_range": "B10:J12",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A10:A12"
+        }
+      ]
+    },
+    {
+      "name": "number_acquitted",
+      "range": "A13:J14",
+      "values_range": "B14:J14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A14:A14"
+        }
+      ]
+    },
+    {
+      "name": "number_proven_guilty",
+      "range": "A15:J18",
+      "values_range": "B16:J18",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A16:A18"
+        }
+      ]
+    },
+    {
+      "name": "number_adjudicated_total",
+      "range": "A19:J19",
+      "values_range": "B19:J19",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A19:A19"
+        }
+      ]
+    },
+    {
+      "name": "number_total_outcomes",
+      "range": "A20:J20",
+      "values_range": "B20:J20",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A20:A20"
+        }
+      ]
+    },
+    {
+      "name": "number_sentence",
+      "range": "A21:J24",
+      "values_range": "B22:J24",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A5"
+        },
+        {
+          "name": "population",
+          "cells": "A6"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A22:A24"
+        }
+      ]
+    },
+    {
+      "name": "proportion_sex",
+      "range": "A27:J28",
+      "values_range": "B27:J28",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A27:A28"
+        }
+      ]
+    },
+    {
+      "name": "proportion_non_adjudicated",
+      "range": "A29:J32",
+      "values_range": "B30:J32",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A29"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A30:A32"
+        }
+      ]
+    },
+    {
+      "name": "proportion_acquitted",
+      "range": "A33:J34",
+      "values_range": "B34:J34",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A34:A34"
+        }
+      ]
+    },
+    {
+      "name": "proportion_proven_guilty",
+      "range": "A35:J38",
+      "values_range": "B36:J38",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A36:A38"
+        }
+      ]
+    },
+    {
+      "name": "proportion_adjudicated_total",
+      "range": "A39:J39",
+      "values_range": "B39:J39",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A39:A39"
+        }
+      ]
+    },
+    {
+      "name": "proportion_total_outcomes",
+      "range": "A40:J40",
+      "values_range": "B40:J40",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A40:A40"
+        }
+      ]
+    },
+    {
+      "name": "proportion_sentence",
+      "range": "A41:J44",
+      "values_range": "B42:J44",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A25"
+        },
+        {
+          "name": "population",
+          "cells": "A26"
+        },
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A42:A44"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T03:33:24Z",
+    "tool_version": "0.2.0",
+    "records": 252,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T033257Z-7aab31e0e269",
+    "started_at": "2026-11-01T03:32:58Z",
+    "workbook": "7aab31e0e269be3e5fc6123851424e1a0a7fb656bbefaf7508f26efc65a8a4ee--45130_Table7_2005-06.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1952a-e315-705f-b1bd-55d3c63691fa",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "770ff46f34bb73c98c0bcc31b27f7ba60f5f3739b5e8a1909e4037c5f3f7aeb2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `7aab31e0e269be3e5fc6123851424e1a0a7fb656bbefaf7508f26efc65a8a4ee--45130_Table7_2005-06.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2005-06\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"A\" | 5d257e2dff2124eb465ff02d8443e60d3ae35b0b504b956a13f34f5e3a3b88e2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T033257Z-7aab31e0e269.jsonl"
+  }
+}

@@ -1,6 +1,6 @@
-# Checks for source_metadata_df (source_metadata.csv): one row per sheet, IDs that
-# match the exact sheet names, workbooks on disk, and archived copies that point at an
-# active sheet. Each test returns its failures (none when it passes). A failed "error"
+# Checks for source_metadata_df (source_metadata.csv, written by get_source_data.R): one
+# row per sheet, IDs that match the exact sheet names, workbooks on disk, a release key
+# on every row, and archived copies that point at an active sheet. Each test returns its failures (none when it passes). A failed "error"
 # test stops the target; "warning" results are only reported. Returns one row per test.
 check_source_metadata <- function(source_metadata_df) {
   m <- source_metadata_df
@@ -8,7 +8,7 @@ check_source_metadata <- function(source_metadata_df) {
   # The columns later stages read are present
   has_required_columns <- function() {
     sprintf("missing column %s", setdiff(c("sheet_sha256", "sheet_key", "sheets", "sheet_index", "xlsx_path", "xlsx_file",
-      "source_sha256", "publication_id", "reference_only", "active_sheet_sha256", "reference_period"), names(m)))
+      "source_sha256", "publication_id", "reference_only", "active_sheet_sha256", "reference_period", "release_key", "catalogue"), names(m)))
   }
   # Sheet IDs are present, 64 hex digits and unique
   sheet_ids_unique <- function() {
@@ -31,8 +31,9 @@ check_source_metadata <- function(source_metadata_df) {
     bad <- is.na(m$sheet_index) | m$sheet_index < 1 | duplicated(paste(m$xlsx_file, m$sheet_index))
     sprintf("%s sheet '%s'", m$xlsx_file[bad], m$sheets[bad])
   }
-  # Every sheet belongs to a publication
+  # Every sheet belongs to a publication and a release (the release key the switches use)
   publications_present <- function() sprintf("no publication_id: %s", unique(m$xlsx_file[is.na(m$publication_id)]))
+  release_keys_present <- function() sprintf("no release_key: %s", unique(m$xlsx_file[is.na(m$release_key)]))
   # Archived copies point at an active sheet; active sheets point nowhere
   references_point_to_active <- function() {
     active <- m$sheet_sha256[!m$reference_only]
@@ -41,7 +42,7 @@ check_source_metadata <- function(source_metadata_df) {
   }
 
   severity <- c(has_required_columns = "error", sheet_ids_unique = "error", sheet_ids_match_names = "error", workbooks_exist = "error",
-                sheet_positions_valid = "error", publications_present = "error", references_point_to_active = "error")
+                sheet_positions_valid = "error", publications_present = "error", release_keys_present = "error", references_point_to_active = "error")
   results <- purrr::imap_dfr(severity, function(level, test) {
     failures <- tryCatch(get(test, mode = "function")(), error = function(e) sprintf("test could not run: %s", conditionMessage(e)))
     tibble::tibble(target = "source_metadata_df", sheet_sha256 = NA_character_, test = test, severity = level,

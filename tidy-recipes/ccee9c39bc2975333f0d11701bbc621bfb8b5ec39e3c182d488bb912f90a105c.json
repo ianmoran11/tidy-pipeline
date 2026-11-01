@@ -1,0 +1,408 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ccee9c39bc2975333f0d11701bbc621bfb8b5ec39e3c182d488bb912f90a105c",
+  "sheet": "Table 41",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "0c62ebccd0375b82949b06cc297f21a108e2b34f18ae9be476a2e4a92f696820",
+  "agent_notes": "All published totals and subtotals retained; do not sum them with their components. Published whitespace, np and dash values are preserved. ACT sentenced prisoners held in NSW prisons are a separate population block. NSW full-time and periodic detention groups are retained separately; published counts differ slightly between the location and security tables.",
+  "new_dimensions": [
+    {
+      "name": "security_classification",
+      "description": "Prisoner security classification: maximum, medium, minimum, unclassified or total."
+    },
+    {
+      "name": "custody_facility_type",
+      "description": "Type of custodial facility: full-time prison or periodic detention centre, including totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A76:A80"
+    }
+  ],
+  "tables": [
+    {
+      "name": "facility_11",
+      "range": "A11:G14",
+      "values_range": "C12:G14",
+      "headers": [
+        {
+          "name": "custody_facility_type",
+          "cells": "B12:B14",
+          "direction": "W"
+        },
+        {
+          "name": "security_classification",
+          "cells": "C6:G6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "sex",
+          "cells": "A11"
+        }
+      ]
+    },
+    {
+      "name": "facility_15",
+      "range": "A15:G18",
+      "values_range": "C16:G18",
+      "headers": [
+        {
+          "name": "custody_facility_type",
+          "cells": "B16:B18",
+          "direction": "W"
+        },
+        {
+          "name": "security_classification",
+          "cells": "C6:G6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        },
+        {
+          "name": "sex",
+          "cells": "A15"
+        }
+      ]
+    },
+    {
+      "name": "sex_18",
+      "range": "A19:G19",
+      "values_range": "C19:G19",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A19:A19"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        },
+        {
+          "name": "custody_facility_type",
+          "direction": "W",
+          "cells": "B19"
+        }
+      ]
+    },
+    {
+      "name": "sex_22",
+      "range": "A23:G25",
+      "values_range": "C23:G25",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A23:A25"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_28",
+      "range": "A29:G31",
+      "values_range": "C29:G31",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A29:A31"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_34",
+      "range": "A35:G37",
+      "values_range": "C35:G37",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A35:A37"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_40",
+      "range": "A41:G43",
+      "values_range": "C41:G43",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A39"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A41:A43"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_46",
+      "range": "A47:G49",
+      "values_range": "C47:G49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A45"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A47:A49"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_52",
+      "range": "A53:G55",
+      "values_range": "C53:G55",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A51"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A53:A55"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_58",
+      "range": "A59:G61",
+      "values_range": "C59:G61",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A57"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A59:A61"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_65",
+      "range": "A66:G68",
+      "values_range": "C66:G68",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A63"
+        },
+        {
+          "name": "population",
+          "cells": "A64"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A66:A68"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    },
+    {
+      "name": "sex_71",
+      "range": "A72:G74",
+      "values_range": "C72:G74",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A70"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A72:A74"
+        },
+        {
+          "name": "security_classification",
+          "direction": "N",
+          "cells": "C6:G6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:03:38Z",
+    "tool_version": "0.2.0",
+    "records": 170,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T050241Z-1bb9f372ea6b",
+    "started_at": "2026-11-01T05:02:45Z",
+    "workbook": "1bb9f372ea6bfce5edded5a1a3bef3bcfb2f2885c7189ff78f1af41b50c5e1ed--45170-prisoners-by-location-2005-tables-40-41-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1957d-170d-7224-8223-f0c1748fba31",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "21db886a3eb51704f1e0b373b147ac943b8f43c9507517953191f42ee24db1a0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1bb9f372ea6bfce5edded5a1a3bef3bcfb2f2885c7189ff78f1af41b50c5e1ed--45170-prisoners-by-location-2005-tables-40-41-.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2005\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 40\" | acc2e34b6921646322b0579a439660f97ffaa97b64f64285b99c86ee2befc9ae | missing |\n| \"Table 41\" | ccee9c39bc2975333f0d11701bbc621bfb8b5ec39e3c182d488bb912f90a105c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T050241Z-1bb9f372ea6b.jsonl"
+  }
+}

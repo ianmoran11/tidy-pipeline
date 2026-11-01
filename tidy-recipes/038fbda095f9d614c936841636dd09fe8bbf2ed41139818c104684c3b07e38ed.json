@@ -1,0 +1,175 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "038fbda095f9d614c936841636dd09fe8bbf2ed41139818c104684c3b07e38ed",
+  "sheet": "Table 28",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "42b741d0bcc654e422bc18a688d3b8882ab063ca01a6fb4b9ec52f4e727b046a",
+  "agent_notes": "Rates per 100,000 adult Indigenous population. Total rows retained. NSW excludes ACT prisoners; ACT includes those held in NSW and ACT.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "notes",
+      "cells": "A60:A62"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_7_age",
+      "range": "A7:J22",
+      "values_range": "B9:J22",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A9:A22",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "sex_24_age",
+      "range": "A24:J39",
+      "values_range": "B26:J39",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A26:A39",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "sex_41_age",
+      "range": "A41:J56",
+      "values_range": "B43:J56",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A43:A56",
+          "direction": "W"
+        },
+        {
+          "name": "state",
+          "cells": "B5:J5",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:01:39Z",
+    "tool_version": "0.2.0",
+    "records": 378,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045947Z-ad83392af1d9",
+    "started_at": "2026-11-01T04:59:49Z",
+    "workbook": "ad83392af1d99a1452cbb57ffa58ee175aee058f6b572c1d27810a1017d04785--45170_indigenous-prisoners_2002_26_38.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1957a-69ea-7553-9f3e-faca1e4487c3",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6db680d9e1f99e43c9a12bbc177c50c2bb51f2c5c559222fbac6871b991e16a5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ad83392af1d99a1452cbb57ffa58ee175aee058f6b572c1d27810a1017d04785--45170_indigenous-prisoners_2002_26_38.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2002\n- Sheets needing a recipe: 13 of 13\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 26\" | 19ff636aa110098a32b2d3e00e56afe44fcafd1c61bb0b72d4b9182993e545a2 | missing |\n| \"Table 27\" | 0565c72904c28b8a15700ac173ba5bbd1bdb0f9a1380268f83e08029aa1992c6 | missing |\n| \"Table 28\" | 038fbda095f9d614c936841636dd09fe8bbf2ed41139818c104684c3b07e38ed | missing |\n| \"Table 29\" | f5dcc02f31944be83b353dd0a3661740ff3463962f653586dcac6612d366d53f | missing |\n| \"Table 30\" | f8f5efd718f8fc45f4f152c74dbebb5687dbc450313d2b6f7f38539803a30c15 | missing |\n| \"Table 31\" | 98a53525e7460b501cd8c23e3b99fa78b8114bd4c8256cef3f80ae458a23c57a | missing |\n| \"Table 32\" | 15f8ecaf56ded41c3657d602b6e8ac13d9d33cb067c75d34ac567454a9907cef | missing |\n| \"Table 33\" | 1ddfb3f14da4ad949d94e1d5090982ac691652d2937d4a59773394e594eccd99 | missing |\n| \"Table 34\" | bef7f72a4897a602446f947d89f7b679ad8df73258922da24bdd017da1bc9b34 | missing |\n| \"Table 35\" | 02191380a52765714e641c5139556e06830dbf96d1885de97ae949b8c0849c09 | missing |\n| \"Table 36\" | 312de9d1dfc2796708caf2a59c061a3572270c4b33f98c7452581039abae80f9 | missing |\n| \"Table 37\" | e38a5221d28fc4143fa9b59d69b99c71deee5aa6f53b4ddc0820f6cd4799a709 | missing |\n| \"Table 38\" | a758e6e074d60f0a91da8fa964adb98e011a81a51c518507f1f76cbf610a3272 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045947Z-ad83392af1d9.jsonl"
+  }
+}

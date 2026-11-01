@@ -1,0 +1,226 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6876224bffea214a8ab04afef6c35756e3c763225f5ad6631edd04b2f25f8728",
+  "sheet": "Table 11",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "bb0059f0eff1b7d3c89fca3cefb59b03225c0bb636d3466849e12c1c66fe7883",
+  "agent_notes": "All court-level totals and Total guilty outcome rows are retained. Mean and median (weeks) remain on the published case_duration axis alongside duration bands and Total.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "court_7",
+      "range": "A7:Q24",
+      "values_range": "B8:Q8,B9:Q9,B10:Q10,B11:Q11,B12:Q12,B13:Q13,B14:Q14,B15:Q15,B16:Q16,B17:Q17,B18:Q18,B19:Q19,B20:Q20,B21:Q21,B22:Q22,B23:Q23,B24:Q24",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A8:A24",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "case_duration",
+          "cells": "B5:Q5",
+          "direction": "N"
+        },
+        {
+          "name": "period",
+          "cells": "B6,J6",
+          "direction": "NNW"
+        }
+      ]
+    },
+    {
+      "name": "court_25",
+      "range": "A25:Q42",
+      "values_range": "B26:Q26,B27:Q27,B28:Q28,B29:Q29,B30:Q30,B31:Q31,B32:Q32,B33:Q33,B34:Q34,B35:Q35,B36:Q36,B37:Q37,B38:Q38,B39:Q39,B40:Q40,B41:Q41,B42:Q42",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B25"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A26:A42",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "case_duration",
+          "cells": "B5:Q5",
+          "direction": "N"
+        },
+        {
+          "name": "period",
+          "cells": "B6,J6",
+          "direction": "NNW"
+        }
+      ]
+    },
+    {
+      "name": "court_43",
+      "range": "A43:Q60",
+      "values_range": "B44:Q44,B45:Q45,B46:Q46,B47:Q47,B48:Q48,B49:Q49,B50:Q50,B51:Q51,B52:Q52,B53:Q53,B54:Q54,B55:Q55,B56:Q56,B57:Q57,B58:Q58,B59:Q59,B60:Q60",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A44:A60",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "case_duration",
+          "cells": "B5:Q5",
+          "direction": "N"
+        },
+        {
+          "name": "period",
+          "cells": "B6,J6",
+          "direction": "NNW"
+        }
+      ]
+    },
+    {
+      "name": "court_61",
+      "range": "A61:Q78",
+      "values_range": "B62:Q62,B63:Q63,B64:Q64,B65:Q65,B66:Q66,B67:Q67,B68:Q68,B69:Q69,B70:Q70,B71:Q71,B72:Q72,B73:Q73,B74:Q74,B75:Q75,B76:Q76,B77:Q77,B78:Q78",
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "B61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A62:A78",
+          "direction": "W",
+          "caption": "Principal offence"
+        },
+        {
+          "name": "case_duration",
+          "cells": "B5:Q5",
+          "direction": "N"
+        },
+        {
+          "name": "period",
+          "cells": "B6,J6",
+          "direction": "NNW"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:54:15Z",
+    "tool_version": "0.2.0",
+    "records": 1088,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045257Z-ee216a2e1139",
+    "started_at": "2026-11-01T04:52:59Z",
+    "workbook": "ee216a2e11392f8568e05a8d94757ec47ac3f4b4c5d1282c36eb7e2bcaede45a--2.-Defendants-with-a-guilty-outcome-Australia-Tables-7-to-11-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19574-27c3-73c0-bf95-ccbd7dd028f5",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "511d0fd4630c4ab32e8bab25747e038f80c98973c2d119113c98ff12fd1c70e1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ee216a2e11392f8568e05a8d94757ec47ac3f4b4c5d1282c36eb7e2bcaede45a--2.-Defendants-with-a-guilty-outcome-Australia-Tables-7-to-11-.xlsx`.\n\n- Publication: Criminal Courts, Australia (Australian Bureau of Statistics)\n- Release or year: 2019-20\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | bfdfb77b02c18859026d3176cc941bbbdffcde9c443df384afe41096040580c8 | missing |\n| \"Table 7\" | 881dcb142fdaaeab9fed3cf53983e45928949cdc4ba1227172b9a085b9787d06 | missing |\n| \"Table 8\" | 279670e0f4f4377453da509cd7a735c00758034585cdadf4c5308629b8b92d2a | missing |\n| \"Table 9\" | 1201b18d68502fae2c0ba84f19a7def210d2bddcfedcd332de4a8f78eb361b3d | missing |\n| \"Table 10\" | 49c63731633f0263648d151c570cec3be9e3c367c0673e21b86da468991af1bb | missing |\n| \"Table 11\" | 6876224bffea214a8ab04afef6c35756e3c763225f5ad6631edd04b2f25f8728 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045257Z-ee216a2e1139.jsonl"
+  }
+}

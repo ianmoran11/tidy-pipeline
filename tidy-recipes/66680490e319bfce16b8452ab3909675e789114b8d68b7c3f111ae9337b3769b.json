@@ -1,0 +1,4417 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "66680490e319bfce16b8452ab3909675e789114b8d68b7c3f111ae9337b3769b",
+  "sheet": "TABLE 19",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "646fc7752da6a53ae1ca7fb3483a530b7ca5eaa5798990e536bc33d831fa0a41",
+  "agent_notes": "State blocks and Total rows retained. Value-free offence divisions are table metadata, with exact published offence labels and indentation retained. Counts by sentence length (including Total) are separate from mean/median months measures. Aggregate sentence. No source values recalculated; apparent source inconsistencies preserved. ACT prisoners held in NSW are described by footnote (e); mean/median exclusions follow footnote (d).",
+  "new_dimensions": [
+    {
+      "name": "most_serious_offence_division",
+      "description": "Division heading grouping the published most serious offences of sentenced prisoners.",
+      "example_labels": [
+        "Homicide",
+        "Illicit drug offences"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "notes",
+      "cells": "A339:A344"
+    }
+  ],
+  "tables": [
+    {
+      "name": "state_1_offence_1_counts",
+      "range": "A7:M9",
+      "values_range": "B8,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,B9,C9,D9,E9,F9,G9,H9,I9,J9,K9,L9,M9",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A8,A9"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_1_statistics",
+      "range": "N8:O8,N9:O9",
+      "values_range": "N8,O8,N9,O9",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A8,A9"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_2_counts",
+      "range": "A10:M12",
+      "values_range": "B11,C11,D11,E11,F11,G11,H11,I11,J11,K11,L11,M11,B12,C12,D12,E12,F12,G12,H12,I12,J12,K12,L12,M12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A11,A12"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_2_statistics",
+      "range": "N11:O11,N12:O12",
+      "values_range": "N11,O11,N12,O12",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A11,A12"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_3_counts",
+      "range": "A13:M15",
+      "values_range": "B14,C14,D14,E14,F14,G14,H14,I14,J14,K14,L14,M14,B15,C15,D15,E15,F15,G15,H15,I15,J15,K15,L15,M15",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A14,A15"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_3_statistics",
+      "range": "N14:O14,N15:O15",
+      "values_range": "N14,O14,N15,O15",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A14,A15"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_4_counts",
+      "range": "A18:M20",
+      "values_range": "B19,C19,D19,E19,F19,G19,H19,I19,J19,K19,L19,M19,B20,C20,D20,E20,F20,G20,H20,I20,J20,K20,L20,M20",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A19,A20"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_4_statistics",
+      "range": "N19:O19,N20:O20",
+      "values_range": "N19,O19,N20,O20",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A19,A20"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_5_counts",
+      "range": "A22:M24",
+      "values_range": "B23,C23,D23,E23,F23,G23,H23,I23,J23,K23,L23,M23,B24,C24,D24,E24,F24,G24,H24,I24,J24,K24,L24,M24",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A23,A24"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_5_statistics",
+      "range": "N23:O23,N24:O24",
+      "values_range": "N23,O23,N24,O24",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A23,A24"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_6_counts",
+      "range": "A26:M29",
+      "values_range": "B27,C27,D27,E27,F27,G27,H27,I27,J27,K27,L27,M27,B28,C28,D28,E28,F28,G28,H28,I28,J28,K28,L28,M28,B29,C29,D29,E29,F29,G29,H29,I29,J29,K29,L29,M29",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A27,A28,A29"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_6_statistics",
+      "range": "N27:O27,N28:O28,N29:O29",
+      "values_range": "N27,O27,N28,O28,N29,O29",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A27,A28,A29"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_7_counts",
+      "range": "A33:M36",
+      "values_range": "B34,C34,D34,E34,F34,G34,H34,I34,J34,K34,L34,M34,B35,C35,D35,E35,F35,G35,H35,I35,J35,K35,L35,M35,B36,C36,D36,E36,F36,G36,H36,I36,J36,K36,L36,M36",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A34,A35,A36"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_7_statistics",
+      "range": "N34:O34,N35:O35,N36:O36",
+      "values_range": "N34,O34,N35,O35,N36,O36",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A33"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A34,A35,A36"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_8_counts",
+      "range": "A37:M39",
+      "values_range": "B38,C38,D38,E38,F38,G38,H38,I38,J38,K38,L38,M38,B39,C39,D39,E39,F39,G39,H39,I39,J39,K39,L39,M39",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A37"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A38,A39"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_8_statistics",
+      "range": "N38:O38,N39:O39",
+      "values_range": "N38,O38,N39,O39",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A37"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A38,A39"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_9_counts",
+      "range": "A16:M17,A21:M21,A25:M25,A30:M32,A40:M41",
+      "values_range": "B16,C16,D16,E16,F16,G16,H16,I16,J16,K16,L16,M16,B17,C17,D17,E17,F17,G17,H17,I17,J17,K17,L17,M17,B21,C21,D21,E21,F21,G21,H21,I21,J21,K21,L21,M21,B25,C25,D25,E25,F25,G25,H25,I25,J25,K25,L25,M25,B30,C30,D30,E30,F30,G30,H30,I30,J30,K30,L30,M30,B31,C31,D31,E31,F31,G31,H31,I31,J31,K31,L31,M31,B32,C32,D32,E32,F32,G32,H32,I32,J32,K32,L32,M32,B40,C40,D40,E40,F40,G40,H40,I40,J40,K40,L40,M40,B41,C41,D41,E41,F41,G41,H41,I41,J41,K41,L41,M41",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A16,A17,A21,A25,A30,A31,A32,A40,A41"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B5:M5"
+        }
+      ]
+    },
+    {
+      "name": "state_1_offence_9_statistics",
+      "range": "N16:O16,N17:O17,N21:O21,N25:O25,N30:O30,N31:O31,N32:O32,N40:O40,N41:O41",
+      "values_range": "N16,O16,N17,O17,N21,O21,N25,O25,N30,O30,N31,O31,N32,O32,N40,O40,N41,O41",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A16,A17,A21,A25,A30,A31,A32,A40,A41"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N5:O5"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_1_counts",
+      "range": "A44:M46",
+      "values_range": "B45,C45,D45,E45,F45,G45,H45,I45,J45,K45,L45,M45,B46,C46,D46,E46,F46,G46,H46,I46,J46,K46,L46,M46",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A45,A46"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_1_statistics",
+      "range": "N45:O45,N46:O46",
+      "values_range": "N45,O45,N46,O46",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A45,A46"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_2_counts",
+      "range": "A47:M49",
+      "values_range": "B48,C48,D48,E48,F48,G48,H48,I48,J48,K48,L48,M48,B49,C49,D49,E49,F49,G49,H49,I49,J49,K49,L49,M49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A47"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A48,A49"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_2_statistics",
+      "range": "N48:O48,N49:O49",
+      "values_range": "N48,O48,N49,O49",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A47"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A48,A49"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_3_counts",
+      "range": "A50:M52",
+      "values_range": "B51,C51,D51,E51,F51,G51,H51,I51,J51,K51,L51,M51,B52,C52,D52,E52,F52,G52,H52,I52,J52,K52,L52,M52",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A50"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A51,A52"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_3_statistics",
+      "range": "N51:O51,N52:O52",
+      "values_range": "N51,O51,N52,O52",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A50"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A51,A52"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_4_counts",
+      "range": "A55:M57",
+      "values_range": "B56,C56,D56,E56,F56,G56,H56,I56,J56,K56,L56,M56,B57,C57,D57,E57,F57,G57,H57,I57,J57,K57,L57,M57",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A55"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A56,A57"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_4_statistics",
+      "range": "N56:O56,N57:O57",
+      "values_range": "N56,O56,N57,O57",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A55"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A56,A57"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_5_counts",
+      "range": "A59:M61",
+      "values_range": "B60,C60,D60,E60,F60,G60,H60,I60,J60,K60,L60,M60,B61,C61,D61,E61,F61,G61,H61,I61,J61,K61,L61,M61",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A60,A61"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_5_statistics",
+      "range": "N60:O60,N61:O61",
+      "values_range": "N60,O60,N61,O61",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A59"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A60,A61"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_6_counts",
+      "range": "A63:M66",
+      "values_range": "B64,C64,D64,E64,F64,G64,H64,I64,J64,K64,L64,M64,B65,C65,D65,E65,F65,G65,H65,I65,J65,K65,L65,M65,B66,C66,D66,E66,F66,G66,H66,I66,J66,K66,L66,M66",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A63"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A64,A65,A66"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_6_statistics",
+      "range": "N64:O64,N65:O65,N66:O66",
+      "values_range": "N64,O64,N65,O65,N66,O66",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A63"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A64,A65,A66"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_7_counts",
+      "range": "A70:M73",
+      "values_range": "B71,C71,D71,E71,F71,G71,H71,I71,J71,K71,L71,M71,B72,C72,D72,E72,F72,G72,H72,I72,J72,K72,L72,M72,B73,C73,D73,E73,F73,G73,H73,I73,J73,K73,L73,M73",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A70"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A71,A72,A73"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_7_statistics",
+      "range": "N71:O71,N72:O72,N73:O73",
+      "values_range": "N71,O71,N72,O72,N73,O73",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A70"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A71,A72,A73"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_8_counts",
+      "range": "A74:M76",
+      "values_range": "B75,C75,D75,E75,F75,G75,H75,I75,J75,K75,L75,M75,B76,C76,D76,E76,F76,G76,H76,I76,J76,K76,L76,M76",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A74"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A75,A76"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_8_statistics",
+      "range": "N75:O75,N76:O76",
+      "values_range": "N75,O75,N76,O76",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A74"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A75,A76"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_9_counts",
+      "range": "A53:M54,A58:M58,A62:M62,A67:M69,A77:M78",
+      "values_range": "B53,C53,D53,E53,F53,G53,H53,I53,J53,K53,L53,M53,B54,C54,D54,E54,F54,G54,H54,I54,J54,K54,L54,M54,B58,C58,D58,E58,F58,G58,H58,I58,J58,K58,L58,M58,B62,C62,D62,E62,F62,G62,H62,I62,J62,K62,L62,M62,B67,C67,D67,E67,F67,G67,H67,I67,J67,K67,L67,M67,B68,C68,D68,E68,F68,G68,H68,I68,J68,K68,L68,M68,B69,C69,D69,E69,F69,G69,H69,I69,J69,K69,L69,M69,B77,C77,D77,E77,F77,G77,H77,I77,J77,K77,L77,M77,B78,C78,D78,E78,F78,G78,H78,I78,J78,K78,L78,M78",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A53,A54,A58,A62,A67,A68,A69,A77,A78"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B42:M42"
+        }
+      ]
+    },
+    {
+      "name": "state_2_offence_9_statistics",
+      "range": "N53:O53,N54:O54,N58:O58,N62:O62,N67:O67,N68:O68,N69:O69,N77:O77,N78:O78",
+      "values_range": "N53,O53,N54,O54,N58,O58,N62,O62,N67,O67,N68,O68,N69,O69,N77,O77,N78,O78",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A43"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A53,A54,A58,A62,A67,A68,A69,A77,A78"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N42:O42"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_1_counts",
+      "range": "A81:M83",
+      "values_range": "B82,C82,D82,E82,F82,G82,H82,I82,J82,K82,L82,M82,B83,C83,D83,E83,F83,G83,H83,I83,J83,K83,L83,M83",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A81"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A82,A83"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_1_statistics",
+      "range": "N82:O82,N83:O83",
+      "values_range": "N82,O82,N83,O83",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A81"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A82,A83"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_2_counts",
+      "range": "A84:M86",
+      "values_range": "B85,C85,D85,E85,F85,G85,H85,I85,J85,K85,L85,M85,B86,C86,D86,E86,F86,G86,H86,I86,J86,K86,L86,M86",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A84"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A85,A86"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_2_statistics",
+      "range": "N85:O85,N86:O86",
+      "values_range": "N85,O85,N86,O86",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A84"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A85,A86"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_3_counts",
+      "range": "A87:M89",
+      "values_range": "B88,C88,D88,E88,F88,G88,H88,I88,J88,K88,L88,M88,B89,C89,D89,E89,F89,G89,H89,I89,J89,K89,L89,M89",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A88,A89"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_3_statistics",
+      "range": "N88:O88,N89:O89",
+      "values_range": "N88,O88,N89,O89",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A88,A89"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_4_counts",
+      "range": "A92:M94",
+      "values_range": "B93,C93,D93,E93,F93,G93,H93,I93,J93,K93,L93,M93,B94,C94,D94,E94,F94,G94,H94,I94,J94,K94,L94,M94",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A92"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A93,A94"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_4_statistics",
+      "range": "N93:O93,N94:O94",
+      "values_range": "N93,O93,N94,O94",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A92"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A93,A94"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_5_counts",
+      "range": "A96:M98",
+      "values_range": "B97,C97,D97,E97,F97,G97,H97,I97,J97,K97,L97,M97,B98,C98,D98,E98,F98,G98,H98,I98,J98,K98,L98,M98",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A97,A98"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_5_statistics",
+      "range": "N97:O97,N98:O98",
+      "values_range": "N97,O97,N98,O98",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A97,A98"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_6_counts",
+      "range": "A100:M103",
+      "values_range": "B101,C101,D101,E101,F101,G101,H101,I101,J101,K101,L101,M101,B102,C102,D102,E102,F102,G102,H102,I102,J102,K102,L102,M102,B103,C103,D103,E103,F103,G103,H103,I103,J103,K103,L103,M103",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A100"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A101,A102,A103"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_6_statistics",
+      "range": "N101:O101,N102:O102,N103:O103",
+      "values_range": "N101,O101,N102,O102,N103,O103",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A100"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A101,A102,A103"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_7_counts",
+      "range": "A107:M110",
+      "values_range": "B108,C108,D108,E108,F108,G108,H108,I108,J108,K108,L108,M108,B109,C109,D109,E109,F109,G109,H109,I109,J109,K109,L109,M109,B110,C110,D110,E110,F110,G110,H110,I110,J110,K110,L110,M110",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A107"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A108,A109,A110"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_7_statistics",
+      "range": "N108:O108,N109:O109,N110:O110",
+      "values_range": "N108,O108,N109,O109,N110,O110",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A107"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A108,A109,A110"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_8_counts",
+      "range": "A111:M113",
+      "values_range": "B112,C112,D112,E112,F112,G112,H112,I112,J112,K112,L112,M112,B113,C113,D113,E113,F113,G113,H113,I113,J113,K113,L113,M113",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A111"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A112,A113"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_8_statistics",
+      "range": "N112:O112,N113:O113",
+      "values_range": "N112,O112,N113,O113",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A111"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A112,A113"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_9_counts",
+      "range": "A90:M91,A95:M95,A99:M99,A104:M106,A114:M115",
+      "values_range": "B90,C90,D90,E90,F90,G90,H90,I90,J90,K90,L90,M90,B91,C91,D91,E91,F91,G91,H91,I91,J91,K91,L91,M91,B95,C95,D95,E95,F95,G95,H95,I95,J95,K95,L95,M95,B99,C99,D99,E99,F99,G99,H99,I99,J99,K99,L99,M99,B104,C104,D104,E104,F104,G104,H104,I104,J104,K104,L104,M104,B105,C105,D105,E105,F105,G105,H105,I105,J105,K105,L105,M105,B106,C106,D106,E106,F106,G106,H106,I106,J106,K106,L106,M106,B114,C114,D114,E114,F114,G114,H114,I114,J114,K114,L114,M114,B115,C115,D115,E115,F115,G115,H115,I115,J115,K115,L115,M115",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A90,A91,A95,A99,A104,A105,A106,A114,A115"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B79:M79"
+        }
+      ]
+    },
+    {
+      "name": "state_3_offence_9_statistics",
+      "range": "N90:O90,N91:O91,N95:O95,N99:O99,N104:O104,N105:O105,N106:O106,N114:O114,N115:O115",
+      "values_range": "N90,O90,N91,O91,N95,O95,N99,O99,N104,O104,N105,O105,N106,O106,N114,O114,N115,O115",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A80"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A90,A91,A95,A99,A104,A105,A106,A114,A115"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N79:O79"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_1_counts",
+      "range": "A118:M120",
+      "values_range": "B119,C119,D119,E119,F119,G119,H119,I119,J119,K119,L119,M119,B120,C120,D120,E120,F120,G120,H120,I120,J120,K120,L120,M120",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A119,A120"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_1_statistics",
+      "range": "N119:O119,N120:O120",
+      "values_range": "N119,O119,N120,O120",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A119,A120"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_2_counts",
+      "range": "A121:M123",
+      "values_range": "B122,C122,D122,E122,F122,G122,H122,I122,J122,K122,L122,M122,B123,C123,D123,E123,F123,G123,H123,I123,J123,K123,L123,M123",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A121"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A122,A123"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_2_statistics",
+      "range": "N122:O122,N123:O123",
+      "values_range": "N122,O122,N123,O123",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A121"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A122,A123"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_3_counts",
+      "range": "A124:M126",
+      "values_range": "B125,C125,D125,E125,F125,G125,H125,I125,J125,K125,L125,M125,B126,C126,D126,E126,F126,G126,H126,I126,J126,K126,L126,M126",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A124"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A125,A126"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_3_statistics",
+      "range": "N125:O125,N126:O126",
+      "values_range": "N125,O125,N126,O126",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A124"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A125,A126"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_4_counts",
+      "range": "A129:M131",
+      "values_range": "B130,C130,D130,E130,F130,G130,H130,I130,J130,K130,L130,M130,B131,C131,D131,E131,F131,G131,H131,I131,J131,K131,L131,M131",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A129"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A130,A131"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_4_statistics",
+      "range": "N130:O130,N131:O131",
+      "values_range": "N130,O130,N131,O131",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A129"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A130,A131"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_5_counts",
+      "range": "A133:M135",
+      "values_range": "B134,C134,D134,E134,F134,G134,H134,I134,J134,K134,L134,M134,B135,C135,D135,E135,F135,G135,H135,I135,J135,K135,L135,M135",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A133"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A134,A135"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_5_statistics",
+      "range": "N134:O134,N135:O135",
+      "values_range": "N134,O134,N135,O135",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A133"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A134,A135"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_6_counts",
+      "range": "A137:M140",
+      "values_range": "B138,C138,D138,E138,F138,G138,H138,I138,J138,K138,L138,M138,B139,C139,D139,E139,F139,G139,H139,I139,J139,K139,L139,M139,B140,C140,D140,E140,F140,G140,H140,I140,J140,K140,L140,M140",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A137"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A138,A139,A140"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_6_statistics",
+      "range": "N138:O138,N139:O139,N140:O140",
+      "values_range": "N138,O138,N139,O139,N140,O140",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A137"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A138,A139,A140"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_7_counts",
+      "range": "A144:M147",
+      "values_range": "B145,C145,D145,E145,F145,G145,H145,I145,J145,K145,L145,M145,B146,C146,D146,E146,F146,G146,H146,I146,J146,K146,L146,M146,B147,C147,D147,E147,F147,G147,H147,I147,J147,K147,L147,M147",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A144"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A145,A146,A147"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_7_statistics",
+      "range": "N145:O145,N146:O146,N147:O147",
+      "values_range": "N145,O145,N146,O146,N147,O147",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A144"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A145,A146,A147"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_8_counts",
+      "range": "A148:M150",
+      "values_range": "B149,C149,D149,E149,F149,G149,H149,I149,J149,K149,L149,M149,B150,C150,D150,E150,F150,G150,H150,I150,J150,K150,L150,M150",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A148"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A149,A150"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_8_statistics",
+      "range": "N149:O149,N150:O150",
+      "values_range": "N149,O149,N150,O150",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A148"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A149,A150"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_9_counts",
+      "range": "A127:M128,A132:M132,A136:M136,A141:M143,A151:M152",
+      "values_range": "B127,C127,D127,E127,F127,G127,H127,I127,J127,K127,L127,M127,B128,C128,D128,E128,F128,G128,H128,I128,J128,K128,L128,M128,B132,C132,D132,E132,F132,G132,H132,I132,J132,K132,L132,M132,B136,C136,D136,E136,F136,G136,H136,I136,J136,K136,L136,M136,B141,C141,D141,E141,F141,G141,H141,I141,J141,K141,L141,M141,B142,C142,D142,E142,F142,G142,H142,I142,J142,K142,L142,M142,B143,C143,D143,E143,F143,G143,H143,I143,J143,K143,L143,M143,B151,C151,D151,E151,F151,G151,H151,I151,J151,K151,L151,M151,B152,C152,D152,E152,F152,G152,H152,I152,J152,K152,L152,M152",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A127,A128,A132,A136,A141,A142,A143,A151,A152"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B116:M116"
+        }
+      ]
+    },
+    {
+      "name": "state_4_offence_9_statistics",
+      "range": "N127:O127,N128:O128,N132:O132,N136:O136,N141:O141,N142:O142,N143:O143,N151:O151,N152:O152",
+      "values_range": "N127,O127,N128,O128,N132,O132,N136,O136,N141,O141,N142,O142,N143,O143,N151,O151,N152,O152",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A117"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A127,A128,A132,A136,A141,A142,A143,A151,A152"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N116:O116"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_1_counts",
+      "range": "A155:M157",
+      "values_range": "B156,C156,D156,E156,F156,G156,H156,I156,J156,K156,L156,M156,B157,C157,D157,E157,F157,G157,H157,I157,J157,K157,L157,M157",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A155"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A156,A157"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_1_statistics",
+      "range": "N156:O156,N157:O157",
+      "values_range": "N156,O156,N157,O157",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A155"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A156,A157"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_2_counts",
+      "range": "A158:M160",
+      "values_range": "B159,C159,D159,E159,F159,G159,H159,I159,J159,K159,L159,M159,B160,C160,D160,E160,F160,G160,H160,I160,J160,K160,L160,M160",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A158"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A159,A160"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_2_statistics",
+      "range": "N159:O159,N160:O160",
+      "values_range": "N159,O159,N160,O160",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A158"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A159,A160"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_3_counts",
+      "range": "A161:M163",
+      "values_range": "B162,C162,D162,E162,F162,G162,H162,I162,J162,K162,L162,M162,B163,C163,D163,E163,F163,G163,H163,I163,J163,K163,L163,M163",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A161"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A162,A163"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_3_statistics",
+      "range": "N162:O162,N163:O163",
+      "values_range": "N162,O162,N163,O163",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A161"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A162,A163"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_4_counts",
+      "range": "A166:M168",
+      "values_range": "B167,C167,D167,E167,F167,G167,H167,I167,J167,K167,L167,M167,B168,C168,D168,E168,F168,G168,H168,I168,J168,K168,L168,M168",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A166"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A167,A168"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_4_statistics",
+      "range": "N167:O167,N168:O168",
+      "values_range": "N167,O167,N168,O168",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A166"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A167,A168"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_5_counts",
+      "range": "A170:M172",
+      "values_range": "B171,C171,D171,E171,F171,G171,H171,I171,J171,K171,L171,M171,B172,C172,D172,E172,F172,G172,H172,I172,J172,K172,L172,M172",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A170"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A171,A172"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_5_statistics",
+      "range": "N171:O171,N172:O172",
+      "values_range": "N171,O171,N172,O172",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A170"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A171,A172"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_6_counts",
+      "range": "A174:M177",
+      "values_range": "B175,C175,D175,E175,F175,G175,H175,I175,J175,K175,L175,M175,B176,C176,D176,E176,F176,G176,H176,I176,J176,K176,L176,M176,B177,C177,D177,E177,F177,G177,H177,I177,J177,K177,L177,M177",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A174"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A175,A176,A177"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_6_statistics",
+      "range": "N175:O175,N176:O176,N177:O177",
+      "values_range": "N175,O175,N176,O176,N177,O177",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A174"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A175,A176,A177"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_7_counts",
+      "range": "A181:M184",
+      "values_range": "B182,C182,D182,E182,F182,G182,H182,I182,J182,K182,L182,M182,B183,C183,D183,E183,F183,G183,H183,I183,J183,K183,L183,M183,B184,C184,D184,E184,F184,G184,H184,I184,J184,K184,L184,M184",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A181"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A182,A183,A184"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_7_statistics",
+      "range": "N182:O182,N183:O183,N184:O184",
+      "values_range": "N182,O182,N183,O183,N184,O184",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A181"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A182,A183,A184"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_8_counts",
+      "range": "A185:M187",
+      "values_range": "B186,C186,D186,E186,F186,G186,H186,I186,J186,K186,L186,M186,B187,C187,D187,E187,F187,G187,H187,I187,J187,K187,L187,M187",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A185"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A186,A187"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_8_statistics",
+      "range": "N186:O186,N187:O187",
+      "values_range": "N186,O186,N187,O187",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A185"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A186,A187"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_9_counts",
+      "range": "A164:M165,A169:M169,A173:M173,A178:M180,A188:M189",
+      "values_range": "B164,C164,D164,E164,F164,G164,H164,I164,J164,K164,L164,M164,B165,C165,D165,E165,F165,G165,H165,I165,J165,K165,L165,M165,B169,C169,D169,E169,F169,G169,H169,I169,J169,K169,L169,M169,B173,C173,D173,E173,F173,G173,H173,I173,J173,K173,L173,M173,B178,C178,D178,E178,F178,G178,H178,I178,J178,K178,L178,M178,B179,C179,D179,E179,F179,G179,H179,I179,J179,K179,L179,M179,B180,C180,D180,E180,F180,G180,H180,I180,J180,K180,L180,M180,B188,C188,D188,E188,F188,G188,H188,I188,J188,K188,L188,M188,B189,C189,D189,E189,F189,G189,H189,I189,J189,K189,L189,M189",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A164,A165,A169,A173,A178,A179,A180,A188,A189"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B153:M153"
+        }
+      ]
+    },
+    {
+      "name": "state_5_offence_9_statistics",
+      "range": "N164:O164,N165:O165,N169:O169,N173:O173,N178:O178,N179:O179,N180:O180,N188:O188,N189:O189",
+      "values_range": "N164,O164,N165,O165,N169,O169,N173,O173,N178,O178,N179,O179,N180,O180,N188,O188,N189,O189",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A154"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A164,A165,A169,A173,A178,A179,A180,A188,A189"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N153:O153"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_1_counts",
+      "range": "A192:M194",
+      "values_range": "B193,C193,D193,E193,F193,G193,H193,I193,J193,K193,L193,M193,B194,C194,D194,E194,F194,G194,H194,I194,J194,K194,L194,M194",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A192"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A193,A194"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_1_statistics",
+      "range": "N193:O193,N194:O194",
+      "values_range": "N193,O193,N194,O194",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A192"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A193,A194"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_2_counts",
+      "range": "A195:M197",
+      "values_range": "B196,C196,D196,E196,F196,G196,H196,I196,J196,K196,L196,M196,B197,C197,D197,E197,F197,G197,H197,I197,J197,K197,L197,M197",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A195"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A196,A197"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_2_statistics",
+      "range": "N196:O196,N197:O197",
+      "values_range": "N196,O196,N197,O197",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A195"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A196,A197"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_3_counts",
+      "range": "A198:M200",
+      "values_range": "B199,C199,D199,E199,F199,G199,H199,I199,J199,K199,L199,M199,B200,C200,D200,E200,F200,G200,H200,I200,J200,K200,L200,M200",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A198"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A199,A200"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_3_statistics",
+      "range": "N199:O199,N200:O200",
+      "values_range": "N199,O199,N200,O200",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A198"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A199,A200"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_4_counts",
+      "range": "A203:M205",
+      "values_range": "B204,C204,D204,E204,F204,G204,H204,I204,J204,K204,L204,M204,B205,C205,D205,E205,F205,G205,H205,I205,J205,K205,L205,M205",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A203"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A204,A205"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_4_statistics",
+      "range": "N204:O204,N205:O205",
+      "values_range": "N204,O204,N205,O205",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A203"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A204,A205"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_5_counts",
+      "range": "A207:M209",
+      "values_range": "B208,C208,D208,E208,F208,G208,H208,I208,J208,K208,L208,M208,B209,C209,D209,E209,F209,G209,H209,I209,J209,K209,L209,M209",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A207"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A208,A209"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_5_statistics",
+      "range": "N208:O208,N209:O209",
+      "values_range": "N208,O208,N209,O209",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A207"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A208,A209"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_6_counts",
+      "range": "A211:M214",
+      "values_range": "B212,C212,D212,E212,F212,G212,H212,I212,J212,K212,L212,M212,B213,C213,D213,E213,F213,G213,H213,I213,J213,K213,L213,M213,B214,C214,D214,E214,F214,G214,H214,I214,J214,K214,L214,M214",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A211"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A212,A213,A214"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_6_statistics",
+      "range": "N212:O212,N213:O213,N214:O214",
+      "values_range": "N212,O212,N213,O213,N214,O214",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A211"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A212,A213,A214"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_7_counts",
+      "range": "A218:M221",
+      "values_range": "B219,C219,D219,E219,F219,G219,H219,I219,J219,K219,L219,M219,B220,C220,D220,E220,F220,G220,H220,I220,J220,K220,L220,M220,B221,C221,D221,E221,F221,G221,H221,I221,J221,K221,L221,M221",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A218"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A219,A220,A221"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_7_statistics",
+      "range": "N219:O219,N220:O220,N221:O221",
+      "values_range": "N219,O219,N220,O220,N221,O221",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A218"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A219,A220,A221"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_8_counts",
+      "range": "A222:M224",
+      "values_range": "B223,C223,D223,E223,F223,G223,H223,I223,J223,K223,L223,M223,B224,C224,D224,E224,F224,G224,H224,I224,J224,K224,L224,M224",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A222"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A223,A224"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_8_statistics",
+      "range": "N223:O223,N224:O224",
+      "values_range": "N223,O223,N224,O224",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A222"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A223,A224"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_9_counts",
+      "range": "A201:M202,A206:M206,A210:M210,A215:M217,A225:M226",
+      "values_range": "B201,C201,D201,E201,F201,G201,H201,I201,J201,K201,L201,M201,B202,C202,D202,E202,F202,G202,H202,I202,J202,K202,L202,M202,B206,C206,D206,E206,F206,G206,H206,I206,J206,K206,L206,M206,B210,C210,D210,E210,F210,G210,H210,I210,J210,K210,L210,M210,B215,C215,D215,E215,F215,G215,H215,I215,J215,K215,L215,M215,B216,C216,D216,E216,F216,G216,H216,I216,J216,K216,L216,M216,B217,C217,D217,E217,F217,G217,H217,I217,J217,K217,L217,M217,B225,C225,D225,E225,F225,G225,H225,I225,J225,K225,L225,M225,B226,C226,D226,E226,F226,G226,H226,I226,J226,K226,L226,M226",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A201,A202,A206,A210,A215,A216,A217,A225,A226"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B190:M190"
+        }
+      ]
+    },
+    {
+      "name": "state_6_offence_9_statistics",
+      "range": "N201:O201,N202:O202,N206:O206,N210:O210,N215:O215,N216:O216,N217:O217,N225:O225,N226:O226",
+      "values_range": "N201,O201,N202,O202,N206,O206,N210,O210,N215,O215,N216,O216,N217,O217,N225,O225,N226,O226",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A191"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A201,A202,A206,A210,A215,A216,A217,A225,A226"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N190:O190"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_1_counts",
+      "range": "A229:M231",
+      "values_range": "B230,C230,D230,E230,F230,G230,H230,I230,J230,K230,L230,M230,B231,C231,D231,E231,F231,G231,H231,I231,J231,K231,L231,M231",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A229"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A230,A231"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_1_statistics",
+      "range": "N230:O230,N231:O231",
+      "values_range": "N230,O230,N231,O231",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A229"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A230,A231"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_2_counts",
+      "range": "A232:M234",
+      "values_range": "B233,C233,D233,E233,F233,G233,H233,I233,J233,K233,L233,M233,B234,C234,D234,E234,F234,G234,H234,I234,J234,K234,L234,M234",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A232"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A233,A234"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_2_statistics",
+      "range": "N233:O233,N234:O234",
+      "values_range": "N233,O233,N234,O234",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A232"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A233,A234"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_3_counts",
+      "range": "A235:M237",
+      "values_range": "B236,C236,D236,E236,F236,G236,H236,I236,J236,K236,L236,M236,B237,C237,D237,E237,F237,G237,H237,I237,J237,K237,L237,M237",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A235"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A236,A237"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_3_statistics",
+      "range": "N236:O236,N237:O237",
+      "values_range": "N236,O236,N237,O237",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A235"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A236,A237"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_4_counts",
+      "range": "A240:M242",
+      "values_range": "B241,C241,D241,E241,F241,G241,H241,I241,J241,K241,L241,M241,B242,C242,D242,E242,F242,G242,H242,I242,J242,K242,L242,M242",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A240"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A241,A242"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_4_statistics",
+      "range": "N241:O241,N242:O242",
+      "values_range": "N241,O241,N242,O242",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A240"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A241,A242"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_5_counts",
+      "range": "A244:M246",
+      "values_range": "B245,C245,D245,E245,F245,G245,H245,I245,J245,K245,L245,M245,B246,C246,D246,E246,F246,G246,H246,I246,J246,K246,L246,M246",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A244"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A245,A246"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_5_statistics",
+      "range": "N245:O245,N246:O246",
+      "values_range": "N245,O245,N246,O246",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A244"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A245,A246"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_6_counts",
+      "range": "A248:M251",
+      "values_range": "B249,C249,D249,E249,F249,G249,H249,I249,J249,K249,L249,M249,B250,C250,D250,E250,F250,G250,H250,I250,J250,K250,L250,M250,B251,C251,D251,E251,F251,G251,H251,I251,J251,K251,L251,M251",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A248"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A249,A250,A251"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_6_statistics",
+      "range": "N249:O249,N250:O250,N251:O251",
+      "values_range": "N249,O249,N250,O250,N251,O251",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A248"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A249,A250,A251"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_7_counts",
+      "range": "A255:M258",
+      "values_range": "B256,C256,D256,E256,F256,G256,H256,I256,J256,K256,L256,M256,B257,C257,D257,E257,F257,G257,H257,I257,J257,K257,L257,M257,B258,C258,D258,E258,F258,G258,H258,I258,J258,K258,L258,M258",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A255"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A256,A257,A258"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_7_statistics",
+      "range": "N256:O256,N257:O257,N258:O258",
+      "values_range": "N256,O256,N257,O257,N258,O258",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A255"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A256,A257,A258"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_8_counts",
+      "range": "A259:M261",
+      "values_range": "B260,C260,D260,E260,F260,G260,H260,I260,J260,K260,L260,M260,B261,C261,D261,E261,F261,G261,H261,I261,J261,K261,L261,M261",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A259"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A260,A261"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_8_statistics",
+      "range": "N260:O260,N261:O261",
+      "values_range": "N260,O260,N261,O261",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A259"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A260,A261"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_9_counts",
+      "range": "A238:M239,A243:M243,A247:M247,A252:M254,A262:M263",
+      "values_range": "B238,C238,D238,E238,F238,G238,H238,I238,J238,K238,L238,M238,B239,C239,D239,E239,F239,G239,H239,I239,J239,K239,L239,M239,B243,C243,D243,E243,F243,G243,H243,I243,J243,K243,L243,M243,B247,C247,D247,E247,F247,G247,H247,I247,J247,K247,L247,M247,B252,C252,D252,E252,F252,G252,H252,I252,J252,K252,L252,M252,B253,C253,D253,E253,F253,G253,H253,I253,J253,K253,L253,M253,B254,C254,D254,E254,F254,G254,H254,I254,J254,K254,L254,M254,B262,C262,D262,E262,F262,G262,H262,I262,J262,K262,L262,M262,B263,C263,D263,E263,F263,G263,H263,I263,J263,K263,L263,M263",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A238,A239,A243,A247,A252,A253,A254,A262,A263"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B227:M227"
+        }
+      ]
+    },
+    {
+      "name": "state_7_offence_9_statistics",
+      "range": "N238:O238,N239:O239,N243:O243,N247:O247,N252:O252,N253:O253,N254:O254,N262:O262,N263:O263",
+      "values_range": "N238,O238,N239,O239,N243,O243,N247,O247,N252,O252,N253,O253,N254,O254,N262,O262,N263,O263",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A228"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A238,A239,A243,A247,A252,A253,A254,A262,A263"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N227:O227"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_1_counts",
+      "range": "A266:M268",
+      "values_range": "B267,C267,D267,E267,F267,G267,H267,I267,J267,K267,L267,M267,B268,C268,D268,E268,F268,G268,H268,I268,J268,K268,L268,M268",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A266"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A267,A268"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_1_statistics",
+      "range": "N267:O267,N268:O268",
+      "values_range": "N267,O267,N268,O268",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A266"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A267,A268"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_2_counts",
+      "range": "A269:M271",
+      "values_range": "B270,C270,D270,E270,F270,G270,H270,I270,J270,K270,L270,M270,B271,C271,D271,E271,F271,G271,H271,I271,J271,K271,L271,M271",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A269"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A270,A271"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_2_statistics",
+      "range": "N270:O270,N271:O271",
+      "values_range": "N270,O270,N271,O271",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A269"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A270,A271"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_3_counts",
+      "range": "A272:M274",
+      "values_range": "B273,C273,D273,E273,F273,G273,H273,I273,J273,K273,L273,M273,B274,C274,D274,E274,F274,G274,H274,I274,J274,K274,L274,M274",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A272"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A273,A274"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_3_statistics",
+      "range": "N273:O273,N274:O274",
+      "values_range": "N273,O273,N274,O274",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A272"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A273,A274"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_4_counts",
+      "range": "A277:M279",
+      "values_range": "B278,C278,D278,E278,F278,G278,H278,I278,J278,K278,L278,M278,B279,C279,D279,E279,F279,G279,H279,I279,J279,K279,L279,M279",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A277"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A278,A279"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_4_statistics",
+      "range": "N278:O278,N279:O279",
+      "values_range": "N278,O278,N279,O279",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A277"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A278,A279"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_5_counts",
+      "range": "A281:M283",
+      "values_range": "B282,C282,D282,E282,F282,G282,H282,I282,J282,K282,L282,M282,B283,C283,D283,E283,F283,G283,H283,I283,J283,K283,L283,M283",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A281"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A282,A283"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_5_statistics",
+      "range": "N282:O282,N283:O283",
+      "values_range": "N282,O282,N283,O283",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A281"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A282,A283"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_6_counts",
+      "range": "A285:M288",
+      "values_range": "B286,C286,D286,E286,F286,G286,H286,I286,J286,K286,L286,M286,B287,C287,D287,E287,F287,G287,H287,I287,J287,K287,L287,M287,B288,C288,D288,E288,F288,G288,H288,I288,J288,K288,L288,M288",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A285"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A286,A287,A288"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_6_statistics",
+      "range": "N286:O286,N287:O287,N288:O288",
+      "values_range": "N286,O286,N287,O287,N288,O288",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A285"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A286,A287,A288"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_7_counts",
+      "range": "A292:M295",
+      "values_range": "B293,C293,D293,E293,F293,G293,H293,I293,J293,K293,L293,M293,B294,C294,D294,E294,F294,G294,H294,I294,J294,K294,L294,M294,B295,C295,D295,E295,F295,G295,H295,I295,J295,K295,L295,M295",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A292"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A293,A294,A295"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_7_statistics",
+      "range": "N293:O293,N294:O294,N295:O295",
+      "values_range": "N293,O293,N294,O294,N295,O295",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A292"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A293,A294,A295"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_8_counts",
+      "range": "A296:M298",
+      "values_range": "B297,C297,D297,E297,F297,G297,H297,I297,J297,K297,L297,M297,B298,C298,D298,E298,F298,G298,H298,I298,J298,K298,L298,M298",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A296"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A297,A298"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_8_statistics",
+      "range": "N297:O297,N298:O298",
+      "values_range": "N297,O297,N298,O298",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A296"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A297,A298"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_9_counts",
+      "range": "A275:M276,A280:M280,A284:M284,A289:M291,A299:M300",
+      "values_range": "B275,C275,D275,E275,F275,G275,H275,I275,J275,K275,L275,M275,B276,C276,D276,E276,F276,G276,H276,I276,J276,K276,L276,M276,B280,C280,D280,E280,F280,G280,H280,I280,J280,K280,L280,M280,B284,C284,D284,E284,F284,G284,H284,I284,J284,K284,L284,M284,B289,C289,D289,E289,F289,G289,H289,I289,J289,K289,L289,M289,B290,C290,D290,E290,F290,G290,H290,I290,J290,K290,L290,M290,B291,C291,D291,E291,F291,G291,H291,I291,J291,K291,L291,M291,B299,C299,D299,E299,F299,G299,H299,I299,J299,K299,L299,M299,B300,C300,D300,E300,F300,G300,H300,I300,J300,K300,L300,M300",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A275,A276,A280,A284,A289,A290,A291,A299,A300"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B264:M264"
+        }
+      ]
+    },
+    {
+      "name": "state_8_offence_9_statistics",
+      "range": "N275:O275,N276:O276,N280:O280,N284:O284,N289:O289,N290:O290,N291:O291,N299:O299,N300:O300",
+      "values_range": "N275,O275,N276,O276,N280,O280,N284,O284,N289,O289,N290,O290,N291,O291,N299,O299,N300,O300",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A265"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A275,A276,A280,A284,A289,A290,A291,A299,A300"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N264:O264"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_1_counts",
+      "range": "A303:M305",
+      "values_range": "B304,C304,D304,E304,F304,G304,H304,I304,J304,K304,L304,M304,B305,C305,D305,E305,F305,G305,H305,I305,J305,K305,L305,M305",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A303"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A304,A305"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_1_statistics",
+      "range": "N304:O304,N305:O305",
+      "values_range": "N304,O304,N305,O305",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A303"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A304,A305"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_2_counts",
+      "range": "A306:M308",
+      "values_range": "B307,C307,D307,E307,F307,G307,H307,I307,J307,K307,L307,M307,B308,C308,D308,E308,F308,G308,H308,I308,J308,K308,L308,M308",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A306"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A307,A308"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_2_statistics",
+      "range": "N307:O307,N308:O308",
+      "values_range": "N307,O307,N308,O308",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A306"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A307,A308"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_3_counts",
+      "range": "A309:M311",
+      "values_range": "B310,C310,D310,E310,F310,G310,H310,I310,J310,K310,L310,M310,B311,C311,D311,E311,F311,G311,H311,I311,J311,K311,L311,M311",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A309"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A310,A311"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_3_statistics",
+      "range": "N310:O310,N311:O311",
+      "values_range": "N310,O310,N311,O311",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A309"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A310,A311"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_4_counts",
+      "range": "A314:M316",
+      "values_range": "B315,C315,D315,E315,F315,G315,H315,I315,J315,K315,L315,M315,B316,C316,D316,E316,F316,G316,H316,I316,J316,K316,L316,M316",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A314"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A315,A316"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_4_statistics",
+      "range": "N315:O315,N316:O316",
+      "values_range": "N315,O315,N316,O316",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A314"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A315,A316"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_5_counts",
+      "range": "A318:M320",
+      "values_range": "B319,C319,D319,E319,F319,G319,H319,I319,J319,K319,L319,M319,B320,C320,D320,E320,F320,G320,H320,I320,J320,K320,L320,M320",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A319,A320"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_5_statistics",
+      "range": "N319:O319,N320:O320",
+      "values_range": "N319,O319,N320,O320",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A318"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A319,A320"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_6_counts",
+      "range": "A322:M325",
+      "values_range": "B323,C323,D323,E323,F323,G323,H323,I323,J323,K323,L323,M323,B324,C324,D324,E324,F324,G324,H324,I324,J324,K324,L324,M324,B325,C325,D325,E325,F325,G325,H325,I325,J325,K325,L325,M325",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A322"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A323,A324,A325"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_6_statistics",
+      "range": "N323:O323,N324:O324,N325:O325",
+      "values_range": "N323,O323,N324,O324,N325,O325",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A322"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A323,A324,A325"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_7_counts",
+      "range": "A329:M332",
+      "values_range": "B330,C330,D330,E330,F330,G330,H330,I330,J330,K330,L330,M330,B331,C331,D331,E331,F331,G331,H331,I331,J331,K331,L331,M331,B332,C332,D332,E332,F332,G332,H332,I332,J332,K332,L332,M332",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A329"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A330,A331,A332"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_7_statistics",
+      "range": "N330:O330,N331:O331,N332:O332",
+      "values_range": "N330,O330,N331,O331,N332,O332",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A329"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A330,A331,A332"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_8_counts",
+      "range": "A333:M335",
+      "values_range": "B334,C334,D334,E334,F334,G334,H334,I334,J334,K334,L334,M334,B335,C335,D335,E335,F335,G335,H335,I335,J335,K335,L335,M335",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A333"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A334,A335"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_8_statistics",
+      "range": "N334:O334,N335:O335",
+      "values_range": "N334,O334,N335,O335",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        },
+        {
+          "name": "most_serious_offence_division",
+          "cells": "A333"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A334,A335"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_9_counts",
+      "range": "A312:M313,A317:M317,A321:M321,A326:M328,A336:M337",
+      "values_range": "B312,C312,D312,E312,F312,G312,H312,I312,J312,K312,L312,M312,B313,C313,D313,E313,F313,G313,H313,I313,J313,K313,L313,M313,B317,C317,D317,E317,F317,G317,H317,I317,J317,K317,L317,M317,B321,C321,D321,E321,F321,G321,H321,I321,J321,K321,L321,M321,B326,C326,D326,E326,F326,G326,H326,I326,J326,K326,L326,M326,B327,C327,D327,E327,F327,G327,H327,I327,J327,K327,L327,M327,B328,C328,D328,E328,F328,G328,H328,I328,J328,K328,L328,M328,B336,C336,D336,E336,F336,G336,H336,I336,J336,K336,L336,M336,B337,C337,D337,E337,F337,G337,H337,I337,J337,K337,L337,M337",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A312,A313,A317,A321,A326,A327,A328,A336,A337"
+        },
+        {
+          "name": "sentence_length",
+          "direction": "N",
+          "cells": "B301:M301"
+        }
+      ]
+    },
+    {
+      "name": "state_9_offence_9_statistics",
+      "range": "N312:O312,N313:O313,N317:O317,N321:O321,N326:O326,N327:O327,N328:O328,N336:O336,N337:O337",
+      "values_range": "N312,O312,N313,O313,N317,O317,N321,O321,N326,O326,N327,O327,N328,O328,N336,O336,N337,O337",
+      "meta_data": [
+        {
+          "name": "state",
+          "cells": "A302"
+        }
+      ],
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "direction": "W",
+          "cells": "A312,A313,A317,A321,A326,A327,A328,A336,A337"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "N301:O301"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:01:51Z",
+    "tool_version": "0.2.0",
+    "records": 3402,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045815Z-ba4d310cd325",
+    "started_at": "2026-11-01T04:58:16Z",
+    "workbook": "ba4d310cd325ac3135b7937c27ee99a70052cf6f455a745c92c287618f561e9f--45170_sentenced-prisoners_2001.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19578-fd32-75d4-9b43-4e6ebd7b6574",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6dee8ef4ddda70b9f8bab2d495531bf5c1a3a79ed7d529107719b408dae819ba",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ba4d310cd325ac3135b7937c27ee99a70052cf6f455a745c92c287618f561e9f--45170_sentenced-prisoners_2001.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2001\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"TABLE 10\" | 387c1c77159f8ee91103c073c0d09a91082253cb195abf6b2dd9a7014d02608f | missing |\n| \"TABLE 11\" | 7235825a2f674fb8e1fe9b8fdb43f7596f5c27d9b8847c8e73a9017584ed1ec2 | missing |\n| \"TABLE 12\" | d41c197237c58df1d3a7c7e5ec44b74ee47ab12c6180a20cad3dd7cf75f212fe | missing |\n| \"TABLE 13\" | aca025766de10e4813026ce4b2aa46dcc324383764039195e398a58c0e21305c | missing |\n| \"TABLE 14\" | d06f8b26ad1cc74547f22c8e88690b7664134e19039c5d1534fc52e3875851f7 | missing |\n| \"TABLE 15\" | b32488cab783f85fba75de79d10c5d4f01fc3ab9fa8bc9b7cb648ef3f4a95c12 | missing |\n| \"TABLE 16\" | 4877327d19e5edff4b3da7ff8ddbad14388057aad8523cf11a0ac08f7a7efa82 | missing |\n| \"TABLE 17\" | 14064fcf023a1232876496845b8f97626503f691176e0194cbe536272de4a2b7 | missing |\n| \"TABLE 18\" | d8574961f1bed7a4ed3653fe79d4025411779ddf0f9afcc4aa413b30b8f01a8e | missing |\n| \"TABLE 19\" | 66680490e319bfce16b8452ab3909675e789114b8d68b7c3f111ae9337b3769b | missing |\n| \"TABLE 20\" | 91f55c538f2aea2ee26edb935f19c43bd071d742abf7c527e80032f7c0153716 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045815Z-ba4d310cd325.jsonl"
+  }
+}

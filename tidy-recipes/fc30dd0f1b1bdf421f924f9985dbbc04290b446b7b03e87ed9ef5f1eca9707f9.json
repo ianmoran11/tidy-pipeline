@@ -1,0 +1,196 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "fc30dd0f1b1bdf421f924f9985dbbc04290b446b7b03e87ed9ef5f1eca9707f9",
+  "sheet": "Table_2",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "4b62b4682269c3322fce00c361520303e836b9ef38741b6b9dbcb7c0bd0fdc3d",
+  "agent_notes": "Published labels and totals retained verbatim; totals are not additive with components. Reference period and scope are preserved in titles and publication banner where not separately printed. Mean and median rows are summary statistics, not counts.",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group_8_B",
+      "range": "A8:G22",
+      "values_range": "B8:G22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A8:A22",
+          "direction": "W",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "period",
+          "cells": "B5,E5",
+          "direction": "NNW"
+        },
+        {
+          "name": "sex",
+          "cells": "B6:G6",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "age_group_24_B",
+      "range": "A24:G36",
+      "values_range": "B24:G36",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A23"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A24:A36",
+          "direction": "W",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "period",
+          "cells": "B5,E5",
+          "direction": "NNW"
+        },
+        {
+          "name": "sex",
+          "cells": "B6:G6",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "age_group_38_B",
+      "range": "A38:G50",
+      "values_range": "B38:G50",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A37"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A38:A50",
+          "direction": "W",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "period",
+          "cells": "B5,E5",
+          "direction": "NNW"
+        },
+        {
+          "name": "sex",
+          "cells": "B6:G6",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T05:12:54Z",
+    "tool_version": "0.2.0",
+    "records": 246,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T050859Z-3075372bbdf5",
+    "started_at": "2026-11-01T05:09:03Z",
+    "workbook": "3075372bbdf5551493eb4114d56ed7d7e2256ece5c6c8ff6a1c4482ad7f7fe05--45190do001_200910.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19582-dcd4-7061-a287-2d5b70058d5d",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "46eda9126707d831fb0c04ef5d942cf72f7413cc5bd92c09365b0ba3945d45bc",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `3075372bbdf5551493eb4114d56ed7d7e2256ece5c6c8ff6a1c4482ad7f7fe05--45190do001_200910.xlsx`.\n\n- Publication: Recorded Crime — Offenders (Australian Bureau of Statistics)\n- Release or year: 2009-10\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | fb087f592c158d67a445017fe099d95611dda6bb77716170c38e919adaf7bdd3 | missing |\n| \"Table_1\" | 05af4f96b1ea3638b1c924a74817a97694d799305bfb91a90b261373b9b9b3db | missing |\n| \"Table_2\" | fc30dd0f1b1bdf421f924f9985dbbc04290b446b7b03e87ed9ef5f1eca9707f9 | missing |\n| \"Table_3\" | 712db2a488f6d51c55ad31206457b4e8e8c95a970b306659c706b46fe6886b70 | missing |\n| \"Table_4\" | b5c908f2b325cb6cbd0b339e88708561afd0d2d45fc392e7529e3e12e3571b4d | missing |\n| \"Table_5\" | d6081b5c9a4ddd1556f0b9cc0a1662c3d9a71033e3f9764288f99504a261c5fa | missing |\n| \"Table_6\" | 93569b767fa9e4212b0ba8933cbc93c9bcb7ca8e108f71fcb003982cee5152f9 | missing |\n| \"Table_7\" | f6157e98a702c729a27fccfb833cbeaecf584984667221562c7f8251de32253b | missing |\n| \"Table_8\" | fc27e9d77cc715bab97e61392bcfff16521b671fd1ce481d5a3f1104afc073bd | missing |\n| \"Table_9\" | 896bd1dc1096de1b97e1739b3d54aba89db9e78e91300d60bb5d7df985a38900 | missing |\n| \"Table_10\" | e649e7804e89b04043ca6506c416e96233f33f39e0a23cc9576f76b897bbcd20 | missing |\n| \"Table_11\" | be8b883d0fc9229212de8b04da6aca6a34301618eed3bdeeddfb669b2be08ff6 | missing |\n| \"Table_12\" | 19de2cf916a91acc816692ff23be2d094e1d3aaba3ccc48faae8f89211c2bd0d | missing |\n| \"Table_13\" | 46da485efde4a54ec20c40b08c63e3a789b40a37cf5b27bf890d6155f7a82c02 | missing |\n| \"Table_14\" | 5185b1a765ce264e42f1e6a0ddd4b4cbeb38ad065827594df62bee504113c69f | missing |\n| \"Table_15\" | e10b83c5c9f7f2e85bb766facb6aed38567d153e2f587f47b0bfbd39babfdc7b | missing |\n| \"Table_16\" | 799a8008ea8c0d83b830591d7e83a724f40962108686e6424119e94e5446e414 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T050859Z-3075372bbdf5.jsonl"
+  }
+}

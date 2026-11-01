@@ -1,0 +1,138 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "494c51d805c2678a737ca9b67ccc10b71ea637d0fcb57b9a6d841fa01fc0ce0c",
+  "sheet": "Table_8",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "6359ed7db0b417f56e7096f8b4532e2af554545439b3917d085c90a36bc7118b",
+  "agent_notes": "Published totals retained and overlap component categories; do not add totals to components. Suppression text remains as values.",
+  "new_dimensions": [
+    {
+      "name": "legal_status",
+      "description": "Prisoner sentenced or unsentenced legal status."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "offence",
+      "range": "A7:J23",
+      "values_range": "B7:J23",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A7:A23",
+          "direction": "W",
+          "caption": "Most serious offence/charge"
+        },
+        {
+          "name": "legal_status",
+          "cells": "B5,E5,H5",
+          "direction": "NNW"
+        },
+        {
+          "name": "sex",
+          "cells": "B6:J6",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T03:35:21Z",
+    "tool_version": "0.2.0",
+    "records": 153,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T033410Z-b688633bcd97",
+    "started_at": "2026-11-01T03:34:12Z",
+    "workbook": "b688633bcd977d23383d216429754e6579eca7e70da0a39a3da02f31985e3b3e--4517do001_2019.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1952c-04b9-70dd-934b-cd4cb59f1b25",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "91b32916418e9de3b92f18c35990136c5c0d03ad9abd9373be5016245255769c",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b688633bcd977d23383d216429754e6579eca7e70da0a39a3da02f31985e3b3e--4517do001_2019.xlsx`.\n\n- Publication: Prisoners in Australia (Australian Bureau of Statistics)\n- Release or year: 2019\n- Sheets needing a recipe: 14 of 14\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | b765e4a4128376a9a5d0980998de729fac4d693333afdb4fdf6310683b17f6d8 | missing |\n| \"Table_1\" | 212c00e8a90e7a0113d82816e305360c9b8f4fa487155d8d6c5a6475eb9b4bae | missing |\n| \"Table_2\" | e83b9af4bf32a8293578cb45e3462a2ad2019c9275209ee05d4339d780c71658 | missing |\n| \"Table_3\" | adae51f9c9d1b01174a3895c2f092aad465dc78ac965dc83d23f628e657f6651 | missing |\n| \"Table_4\" | 294742f521e855e6023d3235468c0d65c5f4f505ae122c1c0a65d9b590097f9f | missing |\n| \"Table_5\" | a9d1b8b3a358c342e2649aac432064ace94b247e2f7c55da280d547ab0ad6132 | missing |\n| \"Table_6\" | a10b4ce6190d5ae29628be36e39ea73591aeeb45e30f5bd1bf5543a84d5614b8 | missing |\n| \"Table_7\" | eb2816806fac31acbf3b1726d323f60c9d4f1bd83720a30105679ac44afde85a | missing |\n| \"Table_8\" | 494c51d805c2678a737ca9b67ccc10b71ea637d0fcb57b9a6d841fa01fc0ce0c | missing |\n| \"Table_9\" | 285bb7a755cb95d99d3f9d79416b68560b7640071c703b058ee202be75bade8a | missing |\n| \"Table_10\" | 6b4e5003ccb47fd405a46a983357aa2b25f021285a492395549fad2849a8a6b1 | missing |\n| \"Table_11\" | 6e397cf130661f6c634e15475eab3066bc486b73ff2546f9de5f909017c6164d | missing |\n| \"Table_12\" | 9b37e2fe852590c25a8204e983abeaea5e2ae43b5208919a8b877dac306350b8 | missing |\n| \"Table_13\" | 4fc0152a156cde26306cc196f385dd64ecb5f1c83fc59dfae89da5710d136962 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T033410Z-b688633bcd97.jsonl"
+  }
+}

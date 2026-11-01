@@ -1,0 +1,257 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "15d7603690a848e7fafe5c8729a54ab07419fa5346bd12bd1af1e0063f3ff63d",
+  "sheet": "Table_1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "2b86b4c6b3504fba0cbdf82f8cf051f3a49a093a3e58ab52cd43bc68544a1f26",
+  "agent_notes": "South Australia throughout. Total rows retained. Adjudicated outcomes groups Acquitted, Proven guilty and their Total; row 21 is the overall finalisation total. Sentence total is Total proven guilty. Offence counts and offences-per-defendant ratio are separate tables. Published discrepancies between totals are not reconciled.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A5"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A9,A14,A22"
+    }
+  ],
+  "tables": [
+    {
+      "name": "defendants_by_sex",
+      "range": "A10:F13",
+      "values_range": "B10:F13",
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A10:A13",
+          "caption": "Defendants finalised"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:F8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,F7"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "adjudicated_outcomes",
+      "range": "A16:F18",
+      "values_range": "B16:F18",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A16:A18",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:F8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,F7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "method_of_finalisation_group",
+          "cells": "A15"
+        }
+      ]
+    },
+    {
+      "name": "other_finalisation_and_total",
+      "range": "A19:F21",
+      "values_range": "B19:F21",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "direction": "W",
+          "cells": "A19:A21",
+          "caption": "Method of finalisation"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:F8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,F7"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "sentence_outcomes",
+      "range": "A23:F25",
+      "values_range": "B23:F25",
+      "headers": [
+        {
+          "name": "principal_sentence",
+          "direction": "W",
+          "cells": "A23:A25",
+          "caption": "Sentence outcomes"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:F8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,F7"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "federal_offences",
+      "range": "A26:F26",
+      "values_range": "B26:F26",
+      "meta_data": [
+        {
+          "name": "table_subtitle",
+          "cells": "A26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:F8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,F7"
+        }
+      ]
+    },
+    {
+      "name": "offences_per_defendant",
+      "range": "A27:F27",
+      "values_range": "B27:F27",
+      "meta_data": [
+        {
+          "name": "table_subtitle",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B8:F8"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B7,F7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-01T04:56:55Z",
+    "tool_version": "0.2.0",
+    "records": 75,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261101T045618Z-8d1f01b18be6",
+    "started_at": "2026-11-01T04:56:19Z",
+    "workbook": "8d1f01b18be690b0a1780aab4bf4e9ae916fc64a5cebc8de65352ccdce5b02f7--4515dc006_201112.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19577-3435-729a-898c-d4d103a75784",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "6db61497ffb48b8072b2381f42e3a328880b1385577d639cdb0c0cf12bb8ff07"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "93740d4769d6f7be8017ea89e3e3501131ef89b9c33bf71732929e1d1009c9e7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8d1f01b18be690b0a1780aab4bf4e9ae916fc64a5cebc8de65352ccdce5b02f7--4515dc006_201112.xlsx`.\n\n- Publication: Federal Defendants, Australia (Australian Bureau of Statistics)\n- Release or year: 2011-12\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 17a3dcde58635915be252454df18d0c12a80e6c65be278f36f2e6350a127229d | missing |\n| \"Table_1\" | 15d7603690a848e7fafe5c8729a54ab07419fa5346bd12bd1af1e0063f3ff63d | missing |\n| \"Table_2\" | 783b950acbd8362e9fb2e1f86a42faf082c838f3f7f5ed5c9968b569b21cb745 | missing |\n| \"Table_3\" | 712d42137a16bb17844a02bd541e53b9dc8556742eef4c47415f5673b5fe39e2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261101T045618Z-8d1f01b18be6.jsonl"
+  }
+}
