@@ -12,7 +12,7 @@ check_data <- function(sheet_result, source_metadata_df) {
   records <- unlist(lapply(sheet_result$tables, `[[`, "tidy_table_list"), recursive = FALSE)
   field <- function(f) vapply(records, function(r) as.character(r[[f]] %||% NA)[1], "")
   cells <- data.frame(row = as.integer(field("row")), col = as.integer(field("col")), address = field("address"), value = field(".value"))
-  labels <- lapply(records, function(r) r[setdiff(names(r), c("row", "col", "address", ".value"))])
+  labels <- lapply(records, function(r) r[not_in(names(r), c("row", "col", "address", ".value"))])
 
   # The output has the parts later stages read
   has_expected_parts <- function() {

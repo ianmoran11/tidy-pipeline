@@ -80,8 +80,12 @@ Derived by `harmonise()` (records, before the integration work): `reference_date
 1,728,664; `period` 638,292; `state` 505,204; `court_level` 105,770; `measure` 57,025;
 `unit` 48,524; `estimate_type` 21,795.
 
-Run times (after the 2026-11-01 performance work; see README "Run times and
-performance"):
+Run times (see README "Run times and performance"):
+- 9,040 sheets (2026-11-02): a code change, or a spec edit that touches every sheet, takes
+  about 23 minutes (35 before that day's changes), or 11 minutes without the checks
+  (`tar_make(names = integrated_files)`).
+
+At 5,209 sheets (2026-11-01):
 - a full `tar_make()` after a change to `process_recipe()` takes about 28 minutes;
 - one recipe edited: about 3 minutes;
 - a measure-spec edit: about 9 minutes;

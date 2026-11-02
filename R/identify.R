@@ -20,8 +20,8 @@ identify <- function(sheet_result, measure_spec) {
   sheet_result$source$subject <- key
   sheet_result$tables <- purrr::map(sheet_result$tables, function(table) {
     table$tidy_table_list <- purrr::map(table$tidy_table_list, function(rec) {
-      for (n in intersect(names(spec$replace_labels), intersect(names(rec), names(found)))) if (rec[[n]] %in% unlist(spec$replace_labels[[n]])) rec[[n]] <- NULL
-      added <- setdiff(names(found), names(rec))
+      for (n in in_both(names(spec$replace_labels), in_both(names(rec), names(found)))) if (rec[[n]] %in% unlist(spec$replace_labels[[n]])) rec[[n]] <- NULL
+      added <- not_in(names(found), names(rec))
       rec[added] <- found[added]
       if (is.null(rec[["measure"]])) {
         rec[["measure"]] <- spec$measure_from_unit[[rec[["unit"]] %||% ""]] %||% spec$default_measure[[pub]]
@@ -31,7 +31,7 @@ identify <- function(sheet_result, measure_spec) {
         rec[["unit"]] <- spec$unit_from_measure[[rec[["measure"]]]]
         added <- c(added, "unit")
       }
-      if (length(added)) rec[[".derived"]] <- paste(c(setdiff(strsplit(rec[[".derived"]] %||% "", ",")[[1]], ""), added), collapse = ",")
+      if (length(added)) rec[[".derived"]] <- paste(c(not_in(strsplit(rec[[".derived"]] %||% "", ",")[[1]], ""), added), collapse = ",")
       rec
     })
     table

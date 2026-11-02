@@ -46,12 +46,12 @@ list(
   tar_target(harmonisation_spec_file, "harmonisation/harmonisation_spec.json", format = "file"),
   tar_target(harmonisation_spec, jsonlite::read_json(harmonisation_spec_file)),
   tar_target(data_harmonised, harmonise(data_normalised, harmonisation_spec), pattern = map(data_normalised), iteration = "list"),
-  tar_target(harmonisation_gaps, harmonisation_report(data_harmonised)),
   tar_target(measure_spec_file, "measures/measure_spec.json", format = "file"),
   tar_target(measure_spec, jsonlite::read_json(measure_spec_file)),
   tar_target(data_identified, identify(data_harmonised, measure_spec), pattern = map(data_harmonised), iteration = "list"),
   # The four per-sheet check functions, run together in one branch per sheet: targets' per-branch
-  # bookkeeping, not the checks themselves, dominated the time of four separate check targets
+  # bookkeeping, not the checks themselves, dominated the time of four separate check targets.
+  # The checks are about half of a rebuild; tar_make(names = integrated_files) skips them
   tar_target(sheet_checks, dplyr::bind_rows(check_data(data, recipe_sheets), check_data_normalised(data_normalised, data, normalisation_spec),
                                             check_data_harmonised(data_harmonised, data_normalised), check_data_identified(data_identified, data_harmonised, measure_spec)),
              pattern = map(data, recipe_sheets, data_normalised, data_harmonised, data_identified), error = "continue"),

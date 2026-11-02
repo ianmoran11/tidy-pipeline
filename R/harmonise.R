@@ -22,7 +22,7 @@ harmonise <- function(sheet_result, harmonisation_spec) {
     found
   }
   unstack <- function(rec) {
-    for (from in intersect(names(spec$unstack), names(rec))) {
+    for (from in in_both(names(spec$unstack), names(rec))) {
       rule <- spec$unstack[[from]]
       to <- rule[["names"]][[rec[[from]]]]
       if (is.null(to) || is.null(rec[[rule[["value_from"]]]])) next
@@ -31,12 +31,12 @@ harmonise <- function(sheet_result, harmonisation_spec) {
     rec
   }
   split_labels <- function(rec) {
-    for (dim in intersect(names(spec$split), names(rec))) {
+    for (dim in in_both(names(spec$split), names(rec))) {
       parts <- if (is.na(rec[[dim]])) NULL else spec$split[[dim]][[rec[[dim]]]]
-      for (to in setdiff(names(parts), c(dim, "_replace", unlist(parts[["_replace"]])))) {
+      for (to in not_in(names(parts), c(dim, "_replace", unlist(parts[["_replace"]])))) {
         if (!is.null(rec[[to]]) && !identical(rec[[to]], parts[[to]])) stop("Splitting ", dim, " '", rec[[dim]], "' at ", src[["sheet_sha256"]], " ", rec[["address"]], " contradicts ", to, " '", rec[[to]], "'")
       }
-      for (to in setdiff(names(parts), "_replace")) rec[[to]] <- parts[[to]]
+      for (to in not_in(names(parts), "_replace")) rec[[to]] <- parts[[to]]
     }
     rec
   }
@@ -46,9 +46,9 @@ harmonise <- function(sheet_result, harmonisation_spec) {
     constants <- from_title(paste(subtitle, collapse = " / "), from_title(paste(c(unlist(meta[["table_title"]]), sheet_title), collapse = " / ")))
     labels <- lapply(meta[setdiff(names(meta), c("table_title", "table_subtitle", "notes", "source"))], paste, collapse = " ")
     table$tidy_table_list <- lapply(table$tidy_table_list, function(rec) {
-      rec <- base <- unstack(c(rec, labels[setdiff(names(labels), names(rec))]))
+      rec <- base <- unstack(c(rec, labels[not_in(names(labels), names(rec))]))
       rec <- split_labels(rec)
-      for (dim in setdiff(names(constants), names(rec))) rec[[dim]] <- constants[[dim]]
+      for (dim in not_in(names(constants), names(rec))) rec[[dim]] <- constants[[dim]]
       if (is.null(rec[["period"]]) && !is.na(src[["reference_period"]] %||% NA)) rec[["period"]] <- spec$fallback_periods[[src[["reference_period"]]]] %||% src[["reference_period"]]
       if (!is.null(rec[["period"]]) && !is.na(rec[["period"]])) rec[["reference_date"]] <- dates[[rec[["period"]]]]
       rec[[".derived"]] <- paste(names(rec)[vapply(names(rec), function(n) !identical(rec[[n]], base[[n]]), TRUE)], collapse = ",")

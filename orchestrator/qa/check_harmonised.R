@@ -4,7 +4,7 @@ fixed <- function(x) unlist(map(x$tables, ~ map(.x$tidy_table_list, ~ unlist(.x[
 same <- sum(map2_lgl(n, h, ~ identical(fixed(.x), fixed(.y))))
 recs <- sum(map_int(h, ~ sum(map_int(.x$tables, ~ length(.x$tidy_table_list)))))
 cat("sheets:", length(h), "| sheets with identical row/col/address/.value:", same, "| records:", recs, "\n\n")
-g <- targets::tar_read(harmonisation_gaps)
+source("R/harmonisation_report.R"); g <- harmonisation_report(h)
 cat("== gaps by publication\n"); print(as.data.frame(g$by_publication), row.names = FALSE)
 cat("\n== periods without a reference date\n"); print(as.data.frame(g$undated_periods), row.names = FALSE)
 cat("\n== derived dimensions (records)\n"); print(as.data.frame(g$derived %>% group_by(dimension) %>% summarise(records = sum(n), publications = n_distinct(publication_id)) %>% arrange(desc(records))), row.names = FALSE)

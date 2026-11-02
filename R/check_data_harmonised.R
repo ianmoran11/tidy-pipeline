@@ -40,13 +40,13 @@ check_data_harmonised <- function(sheet_result, before) {
   # .derived lists only fields the record has
   derived_fields_exist <- function() {
     unlist(lapply(records, function(r) {
-      sprintf("%s: .derived names missing field %s", r[["address"]], setdiff(strsplit(r[[".derived"]] %||% "", ",")[[1]], c("", names(r))))
+      sprintf("%s: .derived names missing field %s", r[["address"]], not_in(strsplit(r[[".derived"]] %||% "", ",")[[1]], c("", names(r))))
     }))
   }
   # Every label is one piece of text, not a list or several values
   labels_are_single_text <- function() {
     unlist(lapply(records, function(r) {
-      l <- r[setdiff(names(r), c("row", "col", "address", ".value"))]
+      l <- r[not_in(names(r), c("row", "col", "address", ".value"))]
       sprintf("%s: %s", r[["address"]], names(l)[!vapply(l, function(v) is.character(v) && length(v) == 1, TRUE)])
     }))
   }

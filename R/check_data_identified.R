@@ -30,7 +30,7 @@ check_data_identified <- function(sheet_result, before, measure_spec) {
     if (length(records) != length(old)) return("record counts differ")
     unlist(lapply(seq_along(records), function(i) {
       a <- records[[i]]; b <- old[[i]]
-      changed <- Filter(function(f) !identical(a[[f]], b[[f]]) && !(b[[f]] %in% unlist(spec$replace_labels[[f]])), setdiff(names(b), ".derived"))
+      changed <- Filter(function(f) !identical(a[[f]], b[[f]]) && !(b[[f]] %in% unlist(spec$replace_labels[[f]])), not_in(names(b), ".derived"))
       sprintf("%s: %s '%s' became '%s'", a[["address"]], changed, vapply(changed, function(f) text(b[[f]]), ""), vapply(changed, function(f) text(a[[f]]), ""))
     }))
   }
@@ -38,7 +38,7 @@ check_data_identified <- function(sheet_result, before, measure_spec) {
   added_fields_derived <- function() {
     if (length(records) != length(old)) return("record counts differ")
     unlist(lapply(seq_along(records), function(i) {
-      missing <- setdiff(setdiff(names(records[[i]]), names(old[[i]])), strsplit(records[[i]][[".derived"]] %||% "", ",")[[1]])
+      missing <- not_in(not_in(names(records[[i]]), names(old[[i]])), strsplit(records[[i]][[".derived"]] %||% "", ",")[[1]])
       sprintf("%s: %s added but not in .derived", records[[i]][["address"]], missing)
     }))
   }

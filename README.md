@@ -184,8 +184,14 @@ Requires R with `targets`, `tarchetypes`, `crew`, `qs2`, `tidyverse`, `tidyxl`,
 `unpivotr`, `cellranger`, `openxlsx`, `jsonlite`, `data.table` and `openssl`.
 
 ```r
-targets::tar_make()   # about 1.5 hours from scratch for 9,040 sheets on 6 workers
+targets::tar_make()                          # everything, with the checks
+targets::tar_make(names = integrated_files)  # just integrated/*.csv, skipping the checks
 ```
+
+After a code change, or a spec edit that touches every sheet, `tar_make()` takes about 23
+minutes for 9,040 sheets on 6 workers, and the CSVs alone about 11. Building from scratch
+also extracts every sheet, which takes about 1.5 hours in all. Skipped checks run at the next
+plain `tar_make()`, so run one before relying on the output.
 
 Adding a release: switch it on in `sources/dataset_selection.json`, then run
 `Rscript get_source_data.R`. That downloads and checks the files; converting XLS needs

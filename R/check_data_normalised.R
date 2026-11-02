@@ -42,7 +42,7 @@ check_data_normalised <- function(sheet_result, before, normalisation_spec) {
   # Every label is one piece of text, not a list or several values
   labels_are_single_text <- function() {
     unlist(lapply(records, function(r) {
-      l <- r[setdiff(names(r), c("row", "col", "address", ".value"))]
+      l <- r[not_in(names(r), c("row", "col", "address", ".value"))]
       sprintf("%s: %s", r[["address"]], names(l)[!vapply(l, function(v) is.character(v) && length(v) == 1, TRUE)])
     }))
   }
@@ -50,7 +50,7 @@ check_data_normalised <- function(sheet_result, before, normalisation_spec) {
   names_are_snake_case <- function() sprintf("field '%s'", setdiff(field_names[!grepl("^[a-z][a-z0-9_]*$", field_names)], ".value"))
   # Labels carry no footnote markers such as "(a)" or "(12)"
   labels_have_no_footnote_markers <- function() {
-    l <- unique(unlist(lapply(records, function(r) unlist(r[setdiff(names(r), c("row", "col", "address", ".value"))]))))
+    l <- unique(unlist(lapply(records, function(r) unlist(r[not_in(names(r), c("row", "col", "address", ".value"))]))))
     sprintf("'%s'", l[grepl("\\((?:[a-z]{1,2}|[0-9]{1,2})\\)\\s*$", l, perl = TRUE)])
   }
 

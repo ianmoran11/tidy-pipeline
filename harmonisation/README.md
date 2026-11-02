@@ -53,6 +53,12 @@ For each record, in order:
 Each record's `.derived` lists the dimensions that steps 3–5 added or changed.
 `row`, `col`, `address` and `.value` never change.
 
-`targets::tar_read(harmonisation_gaps)` reports what is still missing: records without
-`period`, `reference_date` or `measure` by publication, period labels with no date, and
-how many records each derived dimension came from.
+`harmonisation_report()` reports what is still missing: records without `period`,
+`reference_date` or `measure` by publication, period labels with no date, and how many
+records each derived dimension came from. It isn't part of the build, because it rereads
+every sheet and takes about a minute, so run it when you want it:
+
+```r
+targets::tar_load_globals()
+harmonisation_report(tar_read(data_harmonised))
+```

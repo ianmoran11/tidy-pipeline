@@ -38,7 +38,6 @@ tidy-recipes/*.json ─────> recipe_sheets (with recipe_md5)
                           └─> data              process_recipe()   one branch per admitted recipe
                           └─> data_normalised   normalise()        normalisation/normalisation_spec.json
                                └─> data_harmonised  harmonise()    harmonisation/harmonisation_spec.json
-                                    ├─> harmonisation_gaps  harmonisation_report()
                                     └─> data_identified  identify()   measures/measure_spec.json
                                          └─> integrated  assemble()      integration/integration_spec.json
                                               └─> observations_typed  type_values()  integration/value_spec.json
@@ -61,7 +60,8 @@ tidy-recipes/*.json ─────> recipe_sheets (with recipe_md5)
   table labels onto records, unstacks old characteristic/category pairs, splits
   compound labels, takes missing dimensions from the title, falls back to the
   release period, and adds `reference_date`. See `harmonisation/README.md`.
-- **`harmonisation_report()`** lists what is still missing (`tar_read(harmonisation_gaps)`).
+- **`harmonisation_report()`** lists what is still missing. It isn't a target; run it on
+  `tar_read(data_harmonised)` when you want it (`harmonisation/README.md`).
 - **`identify()`** (`R/identify.R`) adds what each record counts (`population`,
   `scope`, `measure`, …) from the title's subject, the subtitle and the unit. See
   `measures/README.md`.
@@ -111,8 +111,10 @@ To add a test, add a nested function and a `severity` entry. Remember that
 | `observations` | `check_observations()` | 6: rows unchanged, releases present, one latest per series and period, `n_releases` right, revision flags consistent, values distinguishable |
 | `integrated_files` | `check_integrated_files()` | 5: files exist, columns and row counts match, observations round-trip, no `NA` text |
 
-The checks add about 7 minutes of branch time to a full rebuild. `check_observations()`
-takes 28 seconds; the other whole-table checks take seconds.
+The checks are about half of a rebuild: 23 minutes with them, 11 without (9,040 sheets,
+2026-11-02). While iterating on specs, `tar_make(names = integrated_files)` builds the
+CSVs without them. A plain `tar_make()` runs whatever checks were skipped.
+`check_observations()` takes about 30 seconds; the other whole-table checks take seconds.
 
 ## Run times and performance
 
@@ -127,12 +129,23 @@ takes 28 seconds; the other whole-table checks take seconds.
 | Measure spec edited | about 15 min | about 9 min |
 | `source_metadata.csv` rewritten, no processing field changed | 15 s | about 15 s |
 
+Measured on 9,040 sheets (2026-11-02), rerunning every sheet from `normalise()` on (a
+code change, or a spec edit that touches every sheet). Both columns are from the same
+store on the same afternoon and gave byte-identical CSVs:
+
+| Command | Before the 2026-11-02 changes | Now |
+|---|---|---|
+| `tar_make()` | 35 min | 23 min |
+| `tar_make(names = integrated_files)` (no checks) | not measured | 11 min |
+
+The machine (MacBook Air M3, 16 GB) was swapping heavily. Earlier that day the old code's
+per-sheet stages took 16 minutes rather than 25, so expect times to vary with memory
+pressure.
+
 What sets the times now:
-- **Full and spec-change rebuilds:** worker time per branch, about 0.5 s including
-  loading inputs and saving results. A measure-spec edit reruns 5,209 identify and
-  5,209 check branches.
-- **Every change:** the whole-table targets `assemble()` and the harmonisation report
-  (about 2.5 min) reread all sheets.
+- **Full and spec-change rebuilds:** worker time per sheet: normalise 0.07 s, harmonise
+  0.09 s, identify 0.05 s, checks 0.34 s. The checks are the largest part.
+- **Every change:** `assemble()` rereads all sheets (about 1.5 min in a build).
 
 Run `targets::tar_prune()` now and then: stale branch records from old runs slow
 `targets` down (it took the store from 816 to 334 MB).
@@ -146,6 +159,12 @@ What was changed:
 - `sheet_checks`;
 - vectorised `assemble()` (112 → 48 s), `reconcile()` (24 → 4 s), integration report
   (45 → 4 s) and observations check (42 → 10 s).
+- 2026-11-02:
+  - `normalise()` cleans each distinct label once per sheet;
+  - the per-record loops use cheap set operations on field names (`R/field_sets.R`);
+  - `assemble()` builds plain lists per sheet and doesn't copy the big tables (about
+    160 → 50 s on its own);
+  - the harmonisation report left the build.
 
 All outputs were checked identical before and after.
 

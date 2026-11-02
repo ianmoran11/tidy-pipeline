@@ -12,6 +12,13 @@ normalise <- function(sheet_result, normalisation_spec) {
   clean <- function(x) { for (rule in normalisation_spec$clean) x <- gsub(rule[["pattern"]], rule[["replace"]], x, perl = TRUE); x }
   value_maps <- lapply(normalisation_spec$values, function(m) { m <- unlist(m); names(m) <- clean(names(m)); m[!duplicated(names(m))] })
   fixed <- c("row", "col", "address", ".value")
+  # Sheets repeat the same labels thousands of times, so clean each one once. An
+  # environment can't hold missing, empty or very long keys
+  cleaned <- new.env(hash = TRUE, parent = emptyenv())
+  clean_label <- function(x) {
+    if (!is.character(x) || length(x) != 1 || is.na(x) || x == "" || nchar(x, "bytes") > 9999) return(clean(x))
+    cleaned[[x]] %||% (cleaned[[x]] <- clean(x))
+  }
 
   # labels: one record, or a table's meta_data_list (a named list of labels)
   normalise_labels <- function(labels) {
@@ -22,8 +29,9 @@ normalise <- function(sheet_result, normalisation_spec) {
     if (anyDuplicated(names(labels))) {
       stop("Renaming gives duplicate dimension names: ", paste(old, collapse = ", "))
     }
-    for (dim in setdiff(names(labels), fixed)) labels[[dim]] <- clean(labels[[dim]])
-    for (dim in intersect(setdiff(names(labels), fixed), names(value_maps))) {
+    dims <- not_in(names(labels), fixed)
+    for (dim in dims) labels[[dim]] <- clean_label(labels[[dim]])
+    for (dim in in_both(dims, names(value_maps))) {
       value <- labels[[dim]]
       mapped <- !is.na(value) & value %in% names(value_maps[[dim]])
       value[mapped] <- value_maps[[dim]][value[mapped]]

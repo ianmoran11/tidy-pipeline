@@ -297,24 +297,31 @@ Left to review:
 - **ACT location labels:** "ACT in ACT", "ACT in NSW" (572 labels) are kept as published
   (I11).
 
-### I33. Further speed-ups need fewer, larger branches
-After tuning, rebuild times are set by worker time per branch (about 0.5 s with
-loading and saving) and by the whole-table targets that reread every sheet. The largest
-remaining gain would come from **mapping over workbooks instead of sheets**: 763
-branches per stage instead of 5,209. Each stage function would still run per sheet,
-via `lapply` inside the target. Estimated:
-- full rebuild about 10 min;
-- spec edits about 3–4 min;
-- one recipe edit would rerun its workbook (about 7 sheets).
+### I33. Further speed-ups
+At 9,040 sheets (2026-11-02), a rebuild that reruns every sheet takes about 23 minutes,
+about 12 of them checks (`tar_make(names = integrated_files)` skips them). The per-sheet
+stages are about three quarters of it, and the checks are the largest of those (0.34 s per
+sheet).
 
-That's a change to `_targets.R` and the per-sheet checks' wiring.
+Tried and not worth it:
+- **Mapping over workbooks instead of sheets** (fewer, larger branches): 5% faster on
+  1,000 sheets, or 16% after the 2026-11-02 code changes. A recipe edit would also rerun
+  its whole workbook. The earlier estimate of a 10-minute full rebuild was too optimistic.
+- the metadata write interval, the store's location, byte-compiling the stage functions,
+  and forking `assemble()`, which ran out of memory.
 
-Smaller:
-- the harmonisation report (`harmonisation_gaps`, about 1.5 min on every change) now
-  largely repeats what `sheet_checks` and `integration_gaps` report. Dropping it would
-  lower the floor of every incremental run;
-- assembling per sheet in its own branch would make `assemble()` incremental, at the
-  cost of 5,209 more branches.
+Not tried:
+- **Rerunning only the sheets a spec edit affects**, by giving each sheet's branch only
+  the spec entries its labels use. A typical label edit touches about 10 sheets (median;
+  90th percentile 88), so most spec edits would take minutes. It needs a slicing step per
+  spec and can leave stale output if that step is wrong. It doesn't help `clean` rules or
+  common labels such as `Number` (6,213 sheets), and still needs an occasional full
+  rebuild.
+- **8 workers instead of 6:** about 10% faster on 1,000 sheets, but it leaves little CPU
+  for anything else and wasn't tested for heat over a full rebuild.
+- **Cheaper checks.**
+- Assembling per sheet in its own branch would make `assemble()` incremental, at the cost
+  of 9,040 more branches.
 
 ### I34. Victims publications: leftovers and overnight judgement calls
 All 3,831 sheets of the two ABS victims publications (39 releases) have recipes and are
@@ -403,8 +410,9 @@ Judgement calls, for the owner to confirm (each is an entry in `consistency_rule
 Left to do:
 - **`order outcome` is still a column** (126 child protection series). The rename moved
   its `split` entries to `order_outcome`, but their inner field keeps the old name. Rename
-  the field in the seed's rename loop; it takes a full rebuild, about 25 min. (The 1 h 47
-  min rebuild on 2026-11-02 was slowed by a leftover staging process, not the pipeline.)
+  the field in the seed's rename loop; it takes a full rebuild, about 23 min (11 without
+  the checks). The 1 h 47 min rebuild on 2026-11-02 was slowed by a leftover staging
+  process, not the pipeline.
 - **25 spelling groups** (1,311 series), which `labels_have_one_spelling` lists. Most are
   upper-case `measure` labels also used in another column (`CRUDE RATE`, `TOTAL`), and
   the Youth Justice labels in `unsafe`, which need titles first (I25).
