@@ -3,9 +3,9 @@
 #   - there is one observation per record of data_identified, and no cell twice;
 #   - IDs are unique and well formed, and every link resolves;
 #   - periods and dates are valid, and series and sources are complete.
-# It also reports series without a population or measure. Each test returns its
-# failures (none when it passes). A failed "error" test stops the target; "warning"
-# results are only reported. Returns one row per test.
+# It also reports series without a population or measure, and labels with more than one
+# spelling. Each test returns its failures (none when it passes). A failed "error" test
+# stops the target; "warning" results are only reported. Returns one row per test.
 check_integrated <- function(integrated, data_identified, integration_spec) {
   obs <- integrated$observations; series <- integrated$series; measures <- integrated$measures; sources <- integrated$sources
 
@@ -62,10 +62,20 @@ check_integrated <- function(integrated, data_identified, integration_spec) {
   }
   # Column names in series are snake_case, as in dictionary/dimensions.csv
   series_columns_snake_case <- function() sprintf("column '%s'", names(series)[!grepl("^[a-z][a-z0-9_]*$", names(series))])
+  # Labels in a column that differ only by case, spacing or punctuation are probably one
+  # label, and split one series in two (known gaps: ISSUES.md I35)
+  labels_have_one_spelling <- function() {
+    fold <- function(x) trimws(gsub("[^a-z0-9%$<>+]+", " ", gsub("&", " and ", tolower(x), fixed = TRUE)))
+    unlist(lapply(setdiff(names(series), c("series_id", "measure_id", "publication_id")), function(col) {
+      l <- unique(series[[col]]); l <- l[!is.na(l)]
+      spellings <- split(l, fold(l)); spellings <- spellings[lengths(spellings) > 1]
+      sprintf("%s: %s", rep(col, length(spellings)), vapply(spellings, paste, "", collapse = " | "))
+    }), use.names = FALSE)
+  }
 
   severity <- c(tables_have_columns = "error", one_row_per_record = "error", cells_unique = "error", ids_unique = "error",
                 ids_well_formed = "error", links_resolve = "error", periods_and_dates_valid = "error", series_and_sources_complete = "error",
-                series_have_population_and_measure = "warning", series_columns_snake_case = "warning")
+                series_have_population_and_measure = "warning", series_columns_snake_case = "warning", labels_have_one_spelling = "warning")
   results <- purrr::imap_dfr(severity, function(level, test) {
     failures <- tryCatch(get(test, mode = "function")(), error = function(e) sprintf("test could not run: %s", conditionMessage(e)))
     tibble::tibble(target = "integrated", sheet_sha256 = NA_character_, test = test, severity = level,

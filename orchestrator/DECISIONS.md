@@ -34,6 +34,7 @@ These are settled. Revisit only if the owner asks.
 | 28 | **All releases of the two ABS victims publications are switched on** (Crime Victimisation, Australia: 17; Recorded Crime – Victims: 22); pilot 239 sheets, then the remaining 3,592 | `sources/dataset_selection.json`, `agents/batch-victims-*.txt` | 2026-11-01/02, run overnight on the owner's instruction |
 | 29 | Survey quality markers are kept: `published_value()` keeps format asterisks, and `value_flag` records `rse_25_to_50`, `rse_over_50`, `revised`, `footnote` | `R/published_value.R`, `R/type_values.R`, `value_spec.json` `markers` | Chosen by the assistant overnight; follows decision 6 (published values) |
 | 30 | 34 dictionary names added for victims dimensions (28 after the pilot, 6 after the full run), each marked "for owner review" | `dictionary/dimensions.csv` | Added so agents in the full run used one name per concept |
+| 31 | **Labels are made consistent by a rerunnable seed**: one spelling per label, units out of labels, `period_type`, denominators named in `measure`, `unit_from_measure`, and `differs_from_latest` comparing numbers and statuses instead of text | `qa/seeds/seed_label_consistency.R`, `consistency_rules.R`, `R/identify.R`, `R/reconcile.R` | 2026-11-02. The owner approved the fixes from the audit; the judgement calls within them are in ISSUES.md I35 |
 
 Defaults that were never explicitly decided (candidates to confirm with the owner):
 

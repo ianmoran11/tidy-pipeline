@@ -56,7 +56,17 @@
     },
     {
       "dimension": "period",
-      "pattern": "(?<![0-9])((?:[0-9]{1,2} )?(?:January|February|March|April|May|June|July|August|September|October|November|December) (?:19|20)[0-9]{2})(?![0-9])"
+      "pattern": "(?<![0-9])((?:[0-9]{1,2} )?(?:January|February|March|April|May|June|July|August|September|October|November|December) (?:19|20)[0-9]{2})(?![0-9])",
+      "replace": [
+        [
+          "(?i)^30 June ([0-9]{4})$",
+          "\\1"
+        ],
+        [
+          "^December ([0-9]{4})$",
+          "Dec \\1"
+        ]
+      ]
     },
     {
       "dimension": "period",
@@ -109,8 +119,8 @@
         "malicious property damage": "Malicious property damage",
         "other theft": "Other theft",
         "total household crime": "Total household crime",
-        "face–to–face threatened assault": "Face–to–face threatened assault",
-        "non–face–to–face threatened assault": "Non–face–to–face threatened assault",
+        "face–to–face threatened assault": "Face-to-face threatened assault",
+        "non–face–to–face threatened assault": "Non face-to-face threatened assault",
         "total physical and/or threatened assault": "Total physical and/or threatened assault",
         "rse of face-to-face threatened assault": "RSE of face-to-face threatened assault",
         "rse of non face-to-face threatened assault": "RSE of non face-to-face threatened assault",
@@ -150,11 +160,11 @@
         "household did not experience selected household crime in the last 12 months": "Household did not experience selected household crime in the last 12 months",
         "experienced selected personal crime in the last 12 months": "Experienced selected personal crime in the last 12 months",
         "did not experience selected personal crime in the last 12 months": "Did not experience selected personal crime in the last 12 months",
-        "non-face-to-face threatened assault": "Non-face-to-face threatened assault",
+        "non-face-to-face threatened assault": "Non face-to-face threatened assault",
         "total physical assault and/or face-to-face threatened assault": "Total physical assault and/or face-to-face threatened assault",
         "experienced face-to-face threatened assault in last 12 months": "Experienced face-to-face threatened assault in last 12 months",
         "rse of total assault": "RSE of total assault",
-        "non-face-to-face": "Non-face-to-face",
+        "non-face-to-face": "Non face-to-face",
         "persons who experienced robbery": "Persons who experienced robbery",
         "persons who experienced sexual assault": "Persons who experienced sexual assault",
         "rse of break–in": "RSE of break–in",
@@ -164,8 +174,8 @@
         "rse of non face-to-face threatened assault.1": "RSE of NON FACE-TO-FACE THREATENED ASSAULT",
         "rse of robbery.1": "RSE of ROBBERY",
         "experienced physical assault": "Experienced physical assault",
-        "physical assault.1": "Physical Assault",
-        "threatened assault.1": "Threatened Assault",
+        "physical assault.1": "Physical assault",
+        "threatened assault.1": "Threatened assault",
         "total persons": "Total persons",
         "all household crime": "All household crime",
         "total households": "Total households",
@@ -176,10 +186,10 @@
         "threatened assault(%)": "Threatened assault(%)",
         "robbery(%)": "Robbery(%)",
         "rse of sexual assault.1": "RSE of SEXUAL ASSAULT",
-        "break–in": "Break–in",
-        "attempted break–in": "Attempted break–in",
+        "break–in": "Break-in",
+        "attempted break–in": "Attempted break-in",
         "threatened assault (face-to-face)": "Threatened assault (face-to-face)",
-        "face to face threatened assault": "Face to face threatened assault",
+        "face to face threatened assault": "Face-to-face threatened assault",
         "rse of theft from motor vehicle": "RSE of theft from motor vehicle",
         "rse of total threatened assault.1": "RSE of TOTAL THREATENED ASSAULT",
         "rse of total physical and/or threatened assault.1": "RSE of TOTAL PHYSICAL AND/OR THREATENED ASSAULT",
@@ -243,6 +253,33 @@
         ]
       },
       "Aboriginal and Torres Strait Islander (%)": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (years)": {
+        "measure": "Mean age",
+        "unit": "years",
+        "indigenous_status": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (years)": {
+        "measure": "Median age",
+        "unit": "years",
+        "indigenous_status": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "ABORIGINAL AND TORRES STRAIT ISLANDER (%)": {
         "indigenous_status": "Aboriginal and Torres Strait Islander",
         "measure": "Proportion",
         "unit": "%",
@@ -401,6 +438,24 @@
           "measure",
           "unit"
         ]
+      },
+      "90th percentile (months)": {
+        "measure": "90th percentile time on remand",
+        "unit": "months",
+        "time_on_remand": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "90th Percentile (months)": {
+        "measure": "90th percentile time on remand",
+        "unit": "months",
+        "time_on_remand": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
       }
     },
     "principal_offence": {
@@ -432,6 +487,159 @@
       "Total females with a guilty outcome": {
         "sex": "Females",
         "principal_offence": "Total"
+      },
+      "Acts intended to cause injury %": {
+        "principal_offence": "Acts intended to cause injury",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Dangerous or negligent acts endangering persons %": {
+        "principal_offence": "Dangerous or negligent acts endangering persons",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Deception & related offences %": {
+        "principal_offence": "Deception and related offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Homicide & related offences %": {
+        "principal_offence": "Homicide and related offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Illicit drug offences %": {
+        "principal_offence": "Illicit drug offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Property damage & environ-mental pollution %": {
+        "principal_offence": "Property damage & environ-mental pollution",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Public order offences %": {
+        "principal_offence": "Public order offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Road traffic & motor vehicle regulatory offences %": {
+        "principal_offence": "Road traffic and motor vehicle regulatory offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Road traffic and motor vehicle regulatory offences %": {
+        "principal_offence": "Road traffic and motor vehicle regulatory offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Robbery, extortion & related offences %": {
+        "principal_offence": "Robbery, extortion and related offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Sexual assault & related offences %": {
+        "principal_offence": "Sexual assault and related offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Theft & related offences %": {
+        "principal_offence": "Theft and related offences",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total females (%)": {
+        "principal_offence": "Total females",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total females (no.)": {
+        "principal_offence": "Total females",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total males (%)": {
+        "principal_offence": "Total males",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total males (no.)": {
+        "principal_offence": "Total males",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Unlawful entry with intent %": {
+        "principal_offence": "Unlawful entry with intent",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
       }
     },
     "age_group": {
@@ -524,6 +732,60 @@
         "_replace": [
           "measure"
         ]
+      },
+      "Mean age (youth)": {
+        "measure": "Mean age",
+        "unit": "years",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median age (youth)": {
+        "measure": "Median age",
+        "unit": "years",
+        "age_group": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Aged 17 years %": {
+        "age_group": "17 years",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Aged 20–24 years %": {
+        "age_group": "20–24 years",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total defendants (%)": {
+        "age_group": "Total defendants",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total defendants (no.)": {
+        "age_group": "Total defendants",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
       }
     },
     "case_duration": {
@@ -562,6 +824,24 @@
           "measure",
           "unit"
         ]
+      },
+      "Mean (weeks).1": {
+        "measure": "Mean duration",
+        "unit": "weeks",
+        "duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (weeks).1": {
+        "measure": "Median duration",
+        "unit": "weeks",
+        "duration": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
       }
     },
     "times_proceeded_against": {
@@ -576,6 +856,60 @@
       "Mean times proceeded against": {
         "measure": "Mean times proceeded against",
         "times_proceeded_against": "Total",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "% 1": {
+        "times_proceeded_against": "1",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "% 2": {
+        "times_proceeded_against": "2",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "% 3": {
+        "times_proceeded_against": "3",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "% 4": {
+        "times_proceeded_against": "4",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "% 5": {
+        "times_proceeded_against": "5",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "% Total": {
+        "times_proceeded_against": "Total",
+        "measure": "Proportion",
+        "unit": "%",
         "_replace": [
           "measure",
           "unit"
@@ -722,35 +1056,37 @@
         "measure": "Number"
       },
       "RSE of Households - counts": {
-        "measure": "Households - counts",
+        "measure": "Number",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of Households - percents": {
-        "measure": "Households - percents",
+        "measure": "Proportion",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of persons": {
-        "measure": "Persons",
+        "measure": "Number",
         "estimate_type": "Relative standard error",
+        "unit": "%",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of percents": {
-        "measure": "Percents",
+        "measure": "Proportion",
         "estimate_type": "Relative standard error",
+        "unit": "%",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of households": {
-        "measure": "Households",
+        "measure": "Number",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -785,7 +1121,7 @@
         ]
       },
       "RSE of percent": {
-        "measure": "Percent",
+        "measure": "Proportion",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -855,14 +1191,14 @@
         ]
       },
       "RSE of proportion (%)": {
-        "measure": "Proportion (%)",
+        "measure": "Proportion",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of Persons": {
-        "measure": "Persons",
+        "measure": "Number",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -904,7 +1240,7 @@
         ]
       },
       "RSE of vicimisation rate": {
-        "measure": "Vicimisation rate",
+        "measure": "Victimisation rate",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -918,7 +1254,7 @@
         ]
       },
       "RSE of Households": {
-        "measure": "Households",
+        "measure": "Number",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -989,6 +1325,174 @@
         "_replace": [
           "estimate_type"
         ]
+      },
+      "Victims": {
+        "victimisation_status": "Victim",
+        "measure": "Number"
+      },
+      "Victim": {
+        "victimisation_status": "Victim",
+        "measure": "Number"
+      },
+      "Non-victims": {
+        "victimisation_status": "Non-victim",
+        "measure": "Number"
+      },
+      "Non-Victims": {
+        "victimisation_status": "Non-victim",
+        "measure": "Number"
+      },
+      "All persons": {
+        "victimisation_status": "Total",
+        "measure": "Number"
+      },
+      "All households": {
+        "victimisation_status": "Total",
+        "measure": "Number"
+      },
+      "Percents": {
+        "measure": "Proportion",
+        "unit": "%"
+      },
+      "'000": {
+        "measure": null,
+        "unit": "'000"
+      },
+      "Estimate ('000)": {
+        "measure": null,
+        "unit": "'000"
+      },
+      "2006–07 NUMBER (no.)": {
+        "measure": null
+      },
+      "2007–08 NUMBER (no.)": {
+        "measure": null
+      },
+      "2006–07 PROPORTION (%)": {
+        "measure": null
+      },
+      "2007–08 PROPORTION (%)": {
+        "measure": null
+      },
+      "90th Percentile (mths)": {
+        "measure": "90th percentile",
+        "unit": "months"
+      },
+      "90th percentile (month)": {
+        "measure": "90th percentile",
+        "unit": "months"
+      },
+      "AVERAGE AGE (years)": {
+        "measure": "Average age",
+        "unit": "years"
+      },
+      "AVERAGE HOURLY TOTAL CASH EARNINGS ($)": {
+        "measure": "Average hourly total cash earnings",
+        "unit": "$"
+      },
+      "AVERAGE WEEKLY TOTAL CASH EARNINGS ($)": {
+        "measure": "Average weekly total cash earnings",
+        "unit": "$"
+      },
+      "AVERAGE WEEKLY TOTAL HOURS PAID FOR (hours)": {
+        "measure": "Average weekly total hours paid for",
+        "unit": "hours"
+      },
+      "All principal offences (%)": {
+        "measure": "All principal offences",
+        "unit": "%"
+      },
+      "All principal proven offences (%)": {
+        "measure": "All principal proven offences",
+        "unit": "%"
+      },
+      "Defendants (no.)": {
+        "measure": "Defendants",
+        "unit": "no."
+      },
+      "FDV defendants finalised (%)": {
+        "measure": "FDV defendants finalised",
+        "unit": "%"
+      },
+      "Mean (months)": {
+        "measure": "Mean",
+        "unit": "months"
+      },
+      "Mean (mths)": {
+        "measure": "Mean",
+        "unit": "months"
+      },
+      "Mean elapsed time (weeks)": {
+        "measure": "Mean elapsed time",
+        "unit": "weeks"
+      },
+      "Mean months": {
+        "measure": "Mean",
+        "unit": "months"
+      },
+      "Mean time on remand (months)": {
+        "measure": "Mean time on remand",
+        "unit": "months"
+      },
+      "Median (months)": {
+        "measure": "Median",
+        "unit": "months"
+      },
+      "Median (mths)": {
+        "measure": "Median",
+        "unit": "months"
+      },
+      "Median Months)": {
+        "measure": "Median",
+        "unit": "months"
+      },
+      "Median elapsed time (weeks)": {
+        "measure": "Median elapsed time",
+        "unit": "weeks"
+      },
+      "Median months": {
+        "measure": "Median",
+        "unit": "months"
+      },
+      "Median time on remand (months)": {
+        "measure": "Median time on remand",
+        "unit": "months"
+      },
+      "NUMBER OF EMPLOYEES ('000)": {
+        "measure": "Number of employees",
+        "unit": "'000"
+      },
+      "OFFENDERS OF FDV AS A PROPORTION OF ALL OFFENDERS (%)": {
+        "measure": "Offenders of FDV as a proportion of all offenders",
+        "unit": "%"
+      },
+      "Offenders of FDV as a proportion of all offenders (%)": {
+        "measure": "Offenders of FDV as a proportion of all offenders",
+        "unit": "%"
+      },
+      "PROPORTION OF FDV OFFENDERS (%)": {
+        "measure": "Proportion of FDV offenders",
+        "unit": "%"
+      },
+      "Proportion of FDV offenders (%)": {
+        "measure": "Proportion of FDV offenders",
+        "unit": "%"
+      },
+      "Time on remand - 90th Percentile (months)": {
+        "measure": "Time on remand - 90th Percentile",
+        "unit": "months"
+      },
+      "Total (%)": {
+        "measure": "Total",
+        "unit": "%"
+      },
+      "WEEKLY TOTAL CASH EARNINGS ($)": {
+        "measure": "Weekly total cash earnings",
+        "unit": "$"
+      },
+      "WEEKLY TOTAL CASH EARNNGS ($)": {
+        "measure": "Weekly total cash earnings",
+        "unit": "$"
       }
     },
     "sentence_length": {
@@ -1153,26 +1657,6 @@
         "period": "2020–21"
       }
     },
-    "duration": {
-      "Mean (weeks)": {
-        "measure": "Mean duration",
-        "unit": "weeks",
-        "duration": "Total",
-        "_replace": [
-          "measure",
-          "unit"
-        ]
-      },
-      "Median (weeks)": {
-        "measure": "Median duration",
-        "unit": "weeks",
-        "duration": "Total",
-        "_replace": [
-          "measure",
-          "unit"
-        ]
-      }
-    },
     "subgroup": {
       "Aboriginal and Torres Strait Islander prisoners": {
         "indigenous_status": "Aboriginal and Torres Strait Islander",
@@ -1188,16 +1672,6 @@
         "_replace": [
           "measure"
         ]
-      }
-    },
-    "order outcome": {
-      "Did not receive a third-party order in 2020–21": {
-        "order outcome": "Did not receive a third-party order",
-        "period": "2020–21"
-      },
-      "Received a third-party order in 2020–21": {
-        "order outcome": "Received a third-party order",
-        "period": "2020–21"
       }
     },
     "section": {
@@ -1309,56 +1783,56 @@
         ]
       },
       "RSE of face–to–face threatened assault": {
-        "crime_type": "Face–to–face threatened assault",
+        "crime_type": "Face-to-face threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of non–face–to–face threatened assault": {
-        "crime_type": "Non–face–to–face threatened assault",
+        "crime_type": "Non face-to-face threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of BREAK-IN": {
-        "crime_type": "BREAK-IN",
+        "crime_type": "Break-in",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of ATTEMPTED BREAK-IN": {
-        "crime_type": "ATTEMPTED BREAK-IN",
+        "crime_type": "Attempted break-in",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of MOTOR VEHICLE THEFT": {
-        "crime_type": "MOTOR VEHICLE THEFT",
+        "crime_type": "Motor vehicle theft",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of THEFT FROM A MOTOR VEHICLE": {
-        "crime_type": "THEFT FROM A MOTOR VEHICLE",
+        "crime_type": "Theft from a motor vehicle",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of MALICIOUS PROPERTY DAMAGE": {
-        "crime_type": "MALICIOUS PROPERTY DAMAGE",
+        "crime_type": "Malicious property damage",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of OTHER THEFT": {
-        "crime_type": "OTHER THEFT",
+        "crime_type": "Other theft",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -1407,7 +1881,7 @@
         ]
       },
       "RSE of non-face-to-face threatened assault": {
-        "crime_type": "Non-face-to-face threatened assault",
+        "crime_type": "Non face-to-face threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -1421,49 +1895,49 @@
         ]
       },
       "RSE of break–in": {
-        "crime_type": "Break–in",
+        "crime_type": "Break-in",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of attempted break–in": {
-        "crime_type": "Attempted break–in",
+        "crime_type": "Attempted break-in",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of PHYSICAL ASSAULT": {
-        "crime_type": "PHYSICAL ASSAULT",
+        "crime_type": "Physical assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of FACE-TO-FACE THREATENED ASSAULT": {
-        "crime_type": "FACE-TO-FACE THREATENED ASSAULT",
+        "crime_type": "Face-to-face threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of NON FACE-TO-FACE THREATENED ASSAULT": {
-        "crime_type": "NON FACE-TO-FACE THREATENED ASSAULT",
+        "crime_type": "Non face-to-face threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of ROBBERY": {
-        "crime_type": "ROBBERY",
+        "crime_type": "Robbery",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of SEXUAL ASSAULT": {
-        "crime_type": "SEXUAL ASSAULT",
+        "crime_type": "Sexual assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -1477,14 +1951,14 @@
         ]
       },
       "RSE of TOTAL THREATENED ASSAULT": {
-        "crime_type": "TOTAL THREATENED ASSAULT",
+        "crime_type": "Total threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
         ]
       },
       "RSE of TOTAL PHYSICAL AND/OR THREATENED ASSAULT": {
-        "crime_type": "TOTAL PHYSICAL AND/OR THREATENED ASSAULT",
+        "crime_type": "Total physical and/or threatened assault",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
@@ -1495,6 +1969,69 @@
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
+        ]
+      },
+      "Attempted break-in(%)": {
+        "crime_type": "Attempted break-in",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Break-in(%)": {
+        "crime_type": "Break-in",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Malicious property damage(%)": {
+        "crime_type": "Malicious property damage",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Motor vehicle theft(%)": {
+        "crime_type": "Motor vehicle theft",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Other theft(%)": {
+        "crime_type": "Other theft",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Physical assault(%)": {
+        "crime_type": "Physical assault",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Robbery(%)": {
+        "crime_type": "Robbery",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Theft from motor vehicle(%)": {
+        "crime_type": "Theft from motor vehicle",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "Threatened assault(%)": {
+        "crime_type": "Threatened assault",
+        "unit": "%",
+        "_replace": [
+          "unit"
         ]
       }
     },
@@ -1614,6 +2151,132 @@
         "_replace": [
           "estimate_type"
         ]
+      },
+      "DEFENDANTS (%)": {
+        "sex": "Defendants",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "DEFENDANTS (NO.)": {
+        "sex": "Defendants",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "DEFENDANTS (no.)": {
+        "sex": "Defendants",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "FEMALES (%)": {
+        "sex": "Females",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "FEMALES (NO.)": {
+        "sex": "Females",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "FEMALES (no.)": {
+        "sex": "Females",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Females %": {
+        "sex": "Females",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "MALES (%)": {
+        "sex": "Males",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "MALES (NO.)": {
+        "sex": "Males",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "MALES (no.)": {
+        "sex": "Males",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Males %": {
+        "sex": "Males",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "TOTAL (%)": {
+        "sex": "Total",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "TOTAL (NO.)": {
+        "sex": "Total",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "TOTAL (no.)": {
+        "sex": "Total",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
       }
     },
     "social_disorder_magnitude": {
@@ -1661,27 +2324,650 @@
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
-        ]
+        ],
+        "period_type": "Pooled 2 years"
       },
       "RSE OF 2019–22": {
         "period": "2019–22",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
-        ]
+        ],
+        "period_type": "Pooled 3 years"
       },
       "RSE OF 2019–21": {
         "period": "2019–21",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
-        ]
+        ],
+        "period_type": "Pooled 2 years"
       },
       "RSE OF 2018–21": {
         "period": "2018–21",
         "estimate_type": "Relative standard error",
         "_replace": [
           "estimate_type"
+        ],
+        "period_type": "Pooled 3 years"
+      },
+      "2006–07 NUMBER (no.)": {
+        "period": "2006–07",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "2007–08 NUMBER (no.)": {
+        "period": "2007–08",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "2006–07 PROPORTION (%)": {
+        "period": "2006–07",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "2007–08 PROPORTION (%)": {
+        "period": "2007–08",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "2001–02 to 2002–03": {
+        "period_type": "Range of 2 years"
+      },
+      "2002–03 to 2003–04": {
+        "period_type": "Range of 2 years"
+      },
+      "2003–04 to 2004–05": {
+        "period_type": "Range of 2 years"
+      },
+      "2004–05 to 2005–06": {
+        "period_type": "Range of 2 years"
+      },
+      "2005–06 to 2006–07": {
+        "period_type": "Range of 2 years"
+      },
+      "2005–06 to 2011–12": {
+        "period_type": "Range of 7 years"
+      },
+      "2006–07 to 2007–08": {
+        "period_type": "Range of 2 years"
+      },
+      "2006–07 to 2011–12": {
+        "period_type": "Range of 6 years"
+      },
+      "2007–08 to 2008–09": {
+        "period_type": "Range of 2 years"
+      },
+      "2008 to 2009": {
+        "period_type": "Range of 2 years"
+      },
+      "2008–09 to 2009–10": {
+        "period_type": "Range of 2 years"
+      },
+      "2008–10": {
+        "period_type": "Pooled 2 years"
+      },
+      "2008–11": {
+        "period_type": "Pooled 3 years"
+      },
+      "2009–10 to 2010–11": {
+        "period_type": "Range of 2 years"
+      },
+      "2009–11": {
+        "period_type": "Pooled 2 years"
+      },
+      "2009–12": {
+        "period_type": "Pooled 3 years"
+      },
+      "2010–11 to 2011–12": {
+        "period_type": "Range of 2 years"
+      },
+      "2010–12": {
+        "period_type": "Pooled 2 years"
+      },
+      "2010–13": {
+        "period_type": "Pooled 3 years"
+      },
+      "2011 to 2012": {
+        "period_type": "Range of 2 years"
+      },
+      "2011–12 to 2012–13": {
+        "period_type": "Range of 2 years"
+      },
+      "2011–13": {
+        "period_type": "Pooled 2 years"
+      },
+      "2011–14": {
+        "period_type": "Pooled 3 years"
+      },
+      "2012 to 2013": {
+        "period_type": "Range of 2 years"
+      },
+      "2012–14": {
+        "period_type": "Pooled 2 years"
+      },
+      "2012–15": {
+        "period_type": "Pooled 3 years"
+      },
+      "2013 to 2014": {
+        "period_type": "Range of 2 years"
+      },
+      "2013–15": {
+        "period_type": "Pooled 2 years"
+      },
+      "2013–16": {
+        "period_type": "Pooled 3 years"
+      },
+      "2014 to 2015": {
+        "period_type": "Range of 2 years"
+      },
+      "2014–15 to 2018–19": {
+        "period_type": "Range of 5 years"
+      },
+      "2014–16": {
+        "period_type": "Pooled 2 years"
+      },
+      "2014–17": {
+        "period_type": "Pooled 3 years"
+      },
+      "2015–17": {
+        "period_type": "Pooled 2 years"
+      },
+      "2015–18": {
+        "period_type": "Pooled 3 years"
+      },
+      "2016–17 to 2020–21": {
+        "period_type": "Range of 5 years"
+      },
+      "2016–18": {
+        "period_type": "Pooled 2 years"
+      },
+      "2016–19": {
+        "period_type": "Pooled 3 years"
+      },
+      "2017–19": {
+        "period_type": "Pooled 2 years"
+      },
+      "2017–20": {
+        "period_type": "Pooled 3 years"
+      },
+      "2018–20": {
+        "period_type": "Pooled 2 years"
+      },
+      "2018–21": {
+        "period_type": "Pooled 3 years"
+      },
+      "2019–21": {
+        "period_type": "Pooled 2 years"
+      },
+      "2019–22": {
+        "period_type": "Pooled 3 years"
+      },
+      "2020–22": {
+        "period_type": "Pooled 2 years"
+      },
+      "2020–23": {
+        "period_type": "Pooled 3 years"
+      },
+      "2021–23": {
+        "period_type": "Pooled 2 years"
+      },
+      "2021–24": {
+        "period_type": "Pooled 3 years"
+      },
+      "2022–24": {
+        "period_type": "Pooled 2 years"
+      },
+      "2022–25": {
+        "period_type": "Pooled 3 years"
+      },
+      "2023–25": {
+        "period_type": "Pooled 2 years"
+      },
+      "Latest 5 years (2017–18 to 2021–22)": {
+        "period_type": "Range of 5 years"
+      },
+      "Latest 5 years (2018–19 to 2022–23)": {
+        "period_type": "Range of 5 years"
+      },
+      "Latest 5 years (2019–20 to 2023–24)": {
+        "period_type": "Range of 5 years"
+      },
+      "Previous 5 years (2012–13 to 2016–17)": {
+        "period_type": "Range of 5 years"
+      },
+      "Previous 5 years (2013–14 to 2017–18)": {
+        "period_type": "Range of 5 years"
+      },
+      "Previous 5 years (2014–15 to 2018–19)": {
+        "period_type": "Range of 5 years"
+      }
+    },
+    "order_outcome": {
+      "Did not receive a third-party order in 2020–21": {
+        "order outcome": "Did not receive a third-party order",
+        "period": "2020–21"
+      },
+      "Received a third-party order in 2020–21": {
+        "order outcome": "Received a third-party order",
+        "period": "2020–21"
+      }
+    },
+    "change_measure": {
+      "% CHANGE (FROM PREVIOUS YEAR)": {
+        "change_measure": "Percentage change from previous year",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      },
+      "% change (from previous year)": {
+        "change_measure": "Percentage change from previous year",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      }
+    },
+    "comparison_basis": {
+      "PERCENTAGE CHANGE (%)": {
+        "comparison_basis": "Percentage change",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      }
+    },
+    "measure_transformation": {
+      "PERCENTAGE CHANGE (%)": {
+        "measure_transformation": "Percentage change",
+        "unit": "%",
+        "_replace": [
+          "unit"
+        ]
+      }
+    },
+    "indicator": {
+      "Ratio - offences per defendant": {
+        "measure": "Offences per defendant",
+        "indicator": null,
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "federal_defendant_summary_item": {
+      "Ratio - offences per defendant": {
+        "measure": "Offences per defendant",
+        "federal_defendant_summary_item": null,
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (years)": {
+        "measure": "Mean age",
+        "unit": "years",
+        "federal_defendant_summary_item": null,
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (years)": {
+        "measure": "Median age",
+        "unit": "years",
+        "federal_defendant_summary_item": null,
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Mean (weeks)": {
+        "measure": "Mean case duration",
+        "unit": "weeks",
+        "federal_defendant_summary_item": null,
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Median (weeks)": {
+        "measure": "Median case duration",
+        "unit": "weeks",
+        "federal_defendant_summary_item": null,
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "method_of_finalisation": {
+      "ACQUITTED (%)": {
+        "method_of_finalisation": "Acquitted",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "ACQUITTED (NO.)": {
+        "method_of_finalisation": "Acquitted",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "ACQUITTED (no.)": {
+        "method_of_finalisation": "Acquitted",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Acquitted %": {
+        "method_of_finalisation": "Acquitted",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "PROVEN GUILTY (%)": {
+        "method_of_finalisation": "Proven guilty",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "PROVEN GUILTY (NO.)": {
+        "method_of_finalisation": "Proven guilty",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "PROVEN GUILTY (no.)": {
+        "method_of_finalisation": "Proven guilty",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "principal_sentence": {
+      "Community supervision/ work orders %": {
+        "principal_sentence": "Community supervision/work orders",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Custody in a correctional institution %": {
+        "principal_sentence": "Custody in a correctional institution",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Custody in the community %": {
+        "principal_sentence": "Custody in the community",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Fully suspended sentence %": {
+        "principal_sentence": "Fully suspended sentence",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Good behaviour bonds %": {
+        "principal_sentence": "Good behaviour bonds",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Monetary orders %": {
+        "principal_sentence": "Monetary orders",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Other %": {
+        "principal_sentence": "Other",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Total %": {
+        "principal_sentence": "Total",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      }
+    },
+    "victim_offence": {
+      "ATTEMPTED MURDER (no.)": {
+        "victim_offence": "Attempted murder",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Attempted murder (%)": {
+        "victim_offence": "Attempted murder",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Attempted murder (no.)": {
+        "victim_offence": "Attempted murder",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "KIDNAPPING/ABDUCTION (no.)": {
+        "victim_offence": "Kidnapping/abduction",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Kidnapping/abduction (%)": {
+        "victim_offence": "Kidnapping/abduction",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Kidnapping/abduction (no.)": {
+        "victim_offence": "Kidnapping/abduction",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "MURDER (no.)": {
+        "victim_offence": "Murder",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Motor vehicle theft (%)": {
+        "victim_offence": "Motor vehicle theft",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Motor vehicle theft (no.)": {
+        "victim_offence": "Motor vehicle theft",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Murder (%)": {
+        "victim_offence": "Murder",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Murder (no.)": {
+        "victim_offence": "Murder",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Other theft (%)": {
+        "victim_offence": "Other theft",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Other theft (no.)": {
+        "victim_offence": "Other theft",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Robbery (%)": {
+        "victim_offence": "Robbery",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Robbery (no.)": {
+        "victim_offence": "Robbery",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Sexual assault (%)": {
+        "victim_offence": "Sexual assault",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Sexual assault (no.)": {
+        "victim_offence": "Sexual assault",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Unlawful entry with intent (%)": {
+        "victim_offence": "Unlawful entry with intent",
+        "measure": "Proportion",
+        "unit": "%",
+        "_replace": [
+          "measure",
+          "unit"
+        ]
+      },
+      "Unlawful entry with intent (no.)": {
+        "victim_offence": "Unlawful entry with intent",
+        "measure": "Number",
+        "unit": "no.",
+        "_replace": [
+          "measure",
+          "unit"
         ]
       }
     }
@@ -1719,7 +3005,16 @@
     "2013-14": "2013–14",
     "2024-25": "2024–25",
     "2020-21": "2020–21",
-    "2011-12": "2011–12"
+    "2011-12": "2011–12",
+    "2001-02": "2001–02",
+    "2002-03": "2002–03",
+    "2003-04": "2003–04",
+    "2004-05": "2004–05",
+    "2005-06": "2005–06",
+    "2006-07": "2006–07",
+    "2007-08": "2007–08",
+    "2008-09": "2008–09",
+    "2019-20": "2019–20"
   },
   "reference_dates": {
     "default": {
@@ -1903,7 +3198,31 @@
       "2014-17": "2017-06-30",
       "2015-18": "2018-06-30",
       "2016-19": "2019-06-30",
-      "2017-20": "2020-06-30"
+      "2017-20": "2020-06-30",
+      "June 1993": "1993-06-30",
+      "June 1994": "1994-06-30",
+      "June 1995": "1995-06-30",
+      "June 1996": "1996-06-30",
+      "June 1997": "1997-06-30",
+      "June 1998": "1998-06-30",
+      "June 1999": "1999-06-30",
+      "June 2000": "2000-06-30",
+      "June 2001": "2001-06-30",
+      "June 2002": "2002-06-30",
+      "June 2003": "2003-06-30",
+      "June 2004": "2004-06-30",
+      "June 2005": "2005-06-30",
+      "June 2006": "2006-06-30",
+      "June 2007": "2007-06-30",
+      "June 2008": "2008-06-30",
+      "June 2009": "2009-06-30",
+      "June 2010": "2010-06-30",
+      "June 2011": "2011-06-30",
+      "June 2012": "2012-06-30",
+      "June 2013": "2013-06-30",
+      "June 2014": "2014-06-30",
+      "June 2015": "2015-06-30",
+      "June 2016": "2016-06-30"
     },
     "prisoners-australia": {
       "2011": "2011-06-30",
@@ -1988,14 +3307,128 @@
     }
   },
   "_victims_seed": {
-    "crime_type": ["RSE of physical assault", "RSE of sexual assault", "RSE or physical assault", "RSE of total threatened assault", "RSE of robbery", "RSE of face-to-face threatened assault", "RSE of non face-to-face threatened assault", "RSE of total physical assault and/or face-to-face threatened assault", "RSE of total physical and/or threatened assault", "RSE of face–to–face threatened assault", "RSE of non–face–to–face threatened assault", "RSE of BREAK-IN", "RSE of ATTEMPTED BREAK-IN", "RSE of MOTOR VEHICLE THEFT", "RSE of THEFT FROM A MOTOR VEHICLE", "RSE of MALICIOUS PROPERTY DAMAGE", "RSE of OTHER THEFT", "RSE of break-in", "RSE of attempted break-in", "RSE of motor vehicle theft", "RSE of theft from a motor vehicle", "RSE of malicious property damage", "RSE of other theft", "RSE of non-face-to-face threatened assault", "RSE of total assault", "RSE of break–in", "RSE of attempted break–in", "RSE of PHYSICAL ASSAULT", "RSE of FACE-TO-FACE THREATENED ASSAULT", "RSE of NON FACE-TO-FACE THREATENED ASSAULT", "RSE of ROBBERY", "RSE of SEXUAL ASSAULT", "RSE of theft from motor vehicle", "RSE of TOTAL THREATENED ASSAULT", "RSE of TOTAL PHYSICAL AND/OR THREATENED ASSAULT", "RSE of threatened assault"],
-    "measure": ["RSE of Households - counts", "RSE of Households - percents", "RSE of persons", "RSE of percents", "RSE of households", "RSE of victims", "RSE of non-victims", "RSE of all persons", "RSE of victimisation rate", "RSE of percent", "RSE of Victims", "RSE of All persons", "RSE of Victimisation rate", "RSE incidents experienced by victims", "RSE incidents reported to police", "RSE proportion of all incidents reported", "RSE of no. of incidents", "RSE of reporting rate", "RSE of estimate (%)", "RSE of proportion (%)", "RSE of Persons", "RSE of Percents", "RSE of total incidents experienced", "RSE of total incidents reported", "RSE of proportion of all incidents reported to police", "RSE of all households", "RSE of vicimisation rate", "RSE of victim", "RSE of Households", "Table 2 VICTIMS, Sex and age group by selected offences", "Table 5d Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Relative standard error of victimisation rate", "Table 6c Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Proportion", "Table 5c Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Victimisation rate", "Table 6a Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Estimate", "Table 5b Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Relative standard error of estimate", "Table 6a Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Estimate", "Table 5a Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Estimate", "Table 6c Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Proportion", "Table 6d Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Relative standard error of proportion", "Table 6b Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Relative standard error of estimate", "Table 6b Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Relative standard error of estimate", "Table 3 VICTIMISATION RATE, Sex and age group by selected offences", "Table 6d Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Relative standard error of proportion"],
-    "crime_scope": ["RSE of personal crime", "RSE of household crime", "RSE of personal crimes", "RSE of household crimes", "RSE of selected personal crime", "RSE of selected household crime"],
-    "population": ["RSE of persons", "RSE of most recent incident", "RSE of households"],
-    "number_of_incidents": ["RSE of 1", "RSE of 2", "RSE of 3 or more", "RSE of total households experiencing a crime", "RSE of total households reporting a crime incident", "RSE of total persons experiencing a crime", "RSE of total persons reporting a crime incident"],
-    "sex": ["RSE of males", "RSE of females", "RSE of persons"],
-    "social_disorder_magnitude": ["RSE of large", "RSE of moderate", "RSE of small", "RSE of total"],
+    "crime_type": [
+      "RSE of physical assault",
+      "RSE of sexual assault",
+      "RSE or physical assault",
+      "RSE of total threatened assault",
+      "RSE of robbery",
+      "RSE of face-to-face threatened assault",
+      "RSE of non face-to-face threatened assault",
+      "RSE of total physical assault and/or face-to-face threatened assault",
+      "RSE of total physical and/or threatened assault",
+      "RSE of face–to–face threatened assault",
+      "RSE of non–face–to–face threatened assault",
+      "RSE of BREAK-IN",
+      "RSE of ATTEMPTED BREAK-IN",
+      "RSE of MOTOR VEHICLE THEFT",
+      "RSE of THEFT FROM A MOTOR VEHICLE",
+      "RSE of MALICIOUS PROPERTY DAMAGE",
+      "RSE of OTHER THEFT",
+      "RSE of break-in",
+      "RSE of attempted break-in",
+      "RSE of motor vehicle theft",
+      "RSE of theft from a motor vehicle",
+      "RSE of malicious property damage",
+      "RSE of other theft",
+      "RSE of non-face-to-face threatened assault",
+      "RSE of total assault",
+      "RSE of break–in",
+      "RSE of attempted break–in",
+      "RSE of PHYSICAL ASSAULT",
+      "RSE of FACE-TO-FACE THREATENED ASSAULT",
+      "RSE of NON FACE-TO-FACE THREATENED ASSAULT",
+      "RSE of ROBBERY",
+      "RSE of SEXUAL ASSAULT",
+      "RSE of theft from motor vehicle",
+      "RSE of TOTAL THREATENED ASSAULT",
+      "RSE of TOTAL PHYSICAL AND/OR THREATENED ASSAULT",
+      "RSE of threatened assault"
+    ],
+    "measure": [
+      "RSE of Households - counts",
+      "RSE of Households - percents",
+      "RSE of persons",
+      "RSE of percents",
+      "RSE of households",
+      "RSE of victims",
+      "RSE of non-victims",
+      "RSE of all persons",
+      "RSE of victimisation rate",
+      "RSE of percent",
+      "RSE of Victims",
+      "RSE of All persons",
+      "RSE of Victimisation rate",
+      "RSE incidents experienced by victims",
+      "RSE incidents reported to police",
+      "RSE proportion of all incidents reported",
+      "RSE of no. of incidents",
+      "RSE of reporting rate",
+      "RSE of estimate (%)",
+      "RSE of proportion (%)",
+      "RSE of Persons",
+      "RSE of Percents",
+      "RSE of total incidents experienced",
+      "RSE of total incidents reported",
+      "RSE of proportion of all incidents reported to police",
+      "RSE of all households",
+      "RSE of vicimisation rate",
+      "RSE of victim",
+      "RSE of Households",
+      "Table 2 VICTIMS, Sex and age group by selected offences",
+      "Table 5d Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Relative standard error of victimisation rate",
+      "Table 6c Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Proportion",
+      "Table 5c Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Victimisation rate",
+      "Table 6a Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Estimate",
+      "Table 5b Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Relative standard error of estimate",
+      "Table 6a Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Estimate",
+      "Table 5a Persons aged 15 years and over, Experience of physical assault and face-to-face threatened assault in the last 12 months, Victimisation, By relationship to all perpetrators, Time series: Estimate",
+      "Table 6c Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Proportion",
+      "Table 6d Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Relative standard error of proportion",
+      "Table 6b Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident, Time series: Relative standard error of estimate",
+      "Table 6b Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Relative standard error of estimate",
+      "Table 3 VICTIMISATION RATE, Sex and age group by selected offences",
+      "Table 6d Persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months, Whether person believed alcohol or any other substance contributed to the most recent incident(a), Time series: Relative standard error of proportion"
+    ],
+    "crime_scope": [
+      "RSE of personal crime",
+      "RSE of household crime",
+      "RSE of personal crimes",
+      "RSE of household crimes",
+      "RSE of selected personal crime",
+      "RSE of selected household crime"
+    ],
+    "population": [
+      "RSE of persons",
+      "RSE of most recent incident",
+      "RSE of households"
+    ],
+    "number_of_incidents": [
+      "RSE of 1",
+      "RSE of 2",
+      "RSE of 3 or more",
+      "RSE of total households experiencing a crime",
+      "RSE of total households reporting a crime incident",
+      "RSE of total persons experiencing a crime",
+      "RSE of total persons reporting a crime incident"
+    ],
+    "sex": [
+      "RSE of males",
+      "RSE of females",
+      "RSE of persons"
+    ],
+    "social_disorder_magnitude": [
+      "RSE of large",
+      "RSE of moderate",
+      "RSE of small",
+      "RSE of total"
+    ],
     "incident_scope": "RSE of most recent incident",
-    "period": ["RSE OF 2020–22", "RSE OF 2019–22", "RSE OF 2019–21", "RSE OF 2018–21"]
+    "period": [
+      "RSE OF 2020–22",
+      "RSE OF 2019–22",
+      "RSE OF 2019–21",
+      "RSE OF 2018–21"
+    ]
   }
 }

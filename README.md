@@ -31,7 +31,7 @@ erDiagram
 
     OBSERVATIONS {
         string series_id FK
-        string period "as published, e.g. 2023–24"
+        string period "one spelling each, e.g. 2023–24"
         date reference_date "end of the period"
         float value "the number, rounded as published"
         string value_status "published, blank, not_published, not_available, ..."
@@ -156,7 +156,7 @@ flowchart TD
 
 Each stage is a short R function driven by a JSON spec. The specs hold the knowledge
 about the sources, so adding a publication mostly means adding spec entries, not code.
-Every data target also has a check function (`R/check_*.R`, 78 tests); failures are
+Every data target also has a check function (`R/check_*.R`, 79 tests); failures are
 collected in the `check_failures` target. Switching a release on or off, or editing one
 recipe, reruns only the affected branches.
 
@@ -168,7 +168,7 @@ _targets.R                       extract -> normalise -> harmonise -> identify -
 normalisation/, harmonisation/,  JSON specs that drive each stage: the code is small, the knowledge is in the specs
 measures/, integration/
 dictionary/dimensions.csv        the dimension names recipes use
-R/check_*.R                      one check function per data target (78 tests)
+R/check_*.R                      one check function per data target (79 tests)
 agents/                          the recipe-writing agent harness (Pi coding agent)
 orchestrator/                    project handover: state, decisions, known issues, data notes, QA scripts
 ```

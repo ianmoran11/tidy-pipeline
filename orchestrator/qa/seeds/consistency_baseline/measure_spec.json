@@ -1,0 +1,1632 @@
+{
+  "description": "Stage 4 (identify): what each record counts. See measures/README.md.",
+  "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+(?-i:[a-z])?\\s*[:.–-]?\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
+  "replace_labels": {
+    "population": [
+      "Total"
+    ]
+  },
+  "title_flags": [
+    {
+      "pattern": "^ANZSOC 2023\\b|Preliminary ANZSOC 2023",
+      "set": {
+        "offence_classification": "ANZSOC 2023 (preliminary)"
+      }
+    },
+    {
+      "pattern": "Experimental data",
+      "set": {
+        "data_status": "Experimental"
+      }
+    },
+    {
+      "pattern": "45130DO00[26]_(200910|201011)",
+      "set": {
+        "court_level": "Higher Courts"
+      }
+    },
+    {
+      "pattern": "45130DO00[37]_(200910|201011)",
+      "set": {
+        "court_level": "Magistrates' Courts"
+      }
+    },
+    {
+      "pattern": "45130DO00[48]_(200910|201011)",
+      "set": {
+        "court_level": "Children's Courts"
+      }
+    },
+    {
+      "pattern": "45130DO005_200910",
+      "set": {
+        "court_level": "All Courts"
+      }
+    },
+    {
+      "pattern": "aggregate sentence length",
+      "set": {
+        "sentence_basis": "Aggregate sentence length"
+      }
+    },
+    {
+      "pattern": "expected time to serve",
+      "set": {
+        "sentence_basis": "Expected time to serve"
+      }
+    },
+    {
+      "pattern": "offences for federal prisoners",
+      "set": {
+        "population": "Federal prisoners"
+      }
+    },
+    {
+      "pattern": "offences for federal parolees",
+      "set": {
+        "population": "Federal parolees"
+      }
+    },
+    {
+      "pattern": "45130DO002_200809",
+      "set": {
+        "court_level": "Higher Courts"
+      }
+    },
+    {
+      "pattern": "45130DO003_200809",
+      "set": {
+        "court_level": "Magistrates' Courts"
+      }
+    },
+    {
+      "pattern": "45130DO004_200809",
+      "set": {
+        "court_level": "Children's Courts"
+      }
+    },
+    {
+      "pattern": "excluding road traffic offences",
+      "set": {
+        "scope": "Excluding road traffic offences"
+      }
+    },
+    {
+      "pattern": "age at incident(?! and report)",
+      "set": {
+        "age_basis": "Age at incident"
+      }
+    },
+    {
+      "pattern": "(?<!incident and )age at report",
+      "set": {
+        "age_basis": "Age at report"
+      }
+    }
+  ],
+  "measure_from_unit": {
+    "no.": "Number",
+    "%": "Proportion",
+    "'000": "Number"
+  },
+  "default_measure": {
+    "criminal-courts-australia": "Number",
+    "federal-defendants-australia": "Number",
+    "prisoners-australia": "Number",
+    "recorded-crime-offenders": "Number",
+    "recorded-crime-victims": "Number"
+  },
+  "subjects": {
+    "aihw-youth-justice-australia": {
+      "population of young people aged 10–17": {
+        "population": "Young people aged 10–17",
+        "measure": "Population"
+      }
+    },
+    "criminal-courts-australia": {
+      "court level and principal offence by principal sentence": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "custodial sentence by all courts": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "All Courts"
+      },
+      "custodial sentence by children's court": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "Children's Courts"
+      },
+      "custodial sentence by higher courts": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "Higher Courts"
+      },
+      "custodial sentence by magistrates' court": {
+        "population": "Defendants sentenced to a custodial order",
+        "court_level": "Magistrates' Courts"
+      },
+      "defendants adjudicated": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants adjudicated - children's courts": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants adjudicated - higher courts": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants adjudicated - magistrates' courts": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants finalised": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised (excluding traffic offences)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding traffic offences"
+      },
+      "defendants finalised (excluding transfers and organisations)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding transfers and organisations"
+      },
+      "defendants finalised (excluding transfers and traffic offences)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding transfers and traffic offences"
+      },
+      "defendants finalised (excluding transfers)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "defendants finalised - children's courts": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised - higher courts": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised - magistrates' courts": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised and with a guilty outcome": {
+        "population": "Defendants finalised"
+      },
+      "defendants given a fine": {
+        "population": "Defendants given a fine"
+      },
+      "defendants given community service orders": {
+        "population": "Defendants sentenced to a community service order"
+      },
+      "defendants given custody in a correctional institution": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants given fines": {
+        "population": "Defendants given a fine"
+      },
+      "defendants proven guilty": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants proven guilty (excluding traffic offences)": {
+        "population": "Defendants with a guilty outcome",
+        "scope": "Excluding traffic offences"
+      },
+      "defendants proven guilty - children's courts": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants proven guilty - higher courts": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants proven guilty - magistrates' courts": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants sentenced to a custodial order": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order - children's courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order – combined all courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order – higher courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custodial order – magistrates' courts": {
+        "population": "Defendants sentenced to a custodial order"
+      },
+      "defendants sentenced to a custody in a correctional institution": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to a fully suspended sentence": {
+        "population": "Defendants sentenced to a fully suspended sentence"
+      },
+      "defendants sentenced to community service / work": {
+        "population": "Defendants sentenced to community service / work"
+      },
+      "defendants sentenced to community service order": {
+        "population": "Defendants sentenced to a community service order"
+      },
+      "defendants sentenced to custody in a correctional institution (excluding traffic offences)": {
+        "population": "Defendants sentenced to custody in a correctional institution",
+        "scope": "Excluding traffic offences"
+      },
+      "defendants sentenced to custody in a correctional institution - all courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution - children's courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution - higher courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution - magistrates' courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – all courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – children's courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – higher courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in a correctional institution – magistrates' courts": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "defendants sentenced to custody in the community": {
+        "population": "Defendants sentenced to custody in the community"
+      },
+      "defendants with a guilty outcome": {
+        "population": "Defendants with a guilty outcome"
+      },
+      "defendants with a guilty outcome (excluding traffic offences)": {
+        "population": "Defendants with a guilty outcome",
+        "scope": "Excluding traffic offences"
+      },
+      "duration from initiation to finalisation": {
+        "population": "Defendants finalised"
+      },
+      "family and domestic violence defendants finalised": {
+        "population": "Family and domestic violence defendants finalised"
+      },
+      "family and domestic violence defendants finalised for a breach of violence order and at least one other fdv offence": {
+        "population": "Family and domestic violence defendants finalised for a breach of violence order and at least one other family and domestic violence offence"
+      },
+      "family and domestic violence defendants proven guilty": {
+        "population": "Family and domestic violence defendants with a guilty outcome"
+      },
+      "family and domestic violence defendants with a guilty outcome": {
+        "population": "Family and domestic violence defendants with a guilty outcome"
+      },
+      "family and domestic violence offences": {
+        "population": "Family and domestic violence offences"
+      },
+      "length of community service order": {
+        "population": "Defendants sentenced to a community service order"
+      },
+      "length of custody": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "length of custody in a correctional institution": {
+        "population": "Defendants sentenced to custody in a correctional institution"
+      },
+      "length of custody in a correctional institution (excluding traffic offences)": {
+        "population": "Defendants sentenced to custody in a correctional institution",
+        "scope": "Excluding traffic offences"
+      },
+      "rate of defendants finalised (excluding transfers and traffic offences)": {
+        "population": "Defendants finalised",
+        "measure": "Rate",
+        "scope": "Excluding transfers and traffic offences"
+      },
+      "summary characteristics of all defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of all defendants - combined all courts": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants (excluding traffic offences)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding traffic offences"
+      },
+      "summary characteristics of defendants - children's courts": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants - higher courts": {
+        "population": "Defendants finalised"
+      },
+      "summary characteristics of defendants - magistrates' courts": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes for all defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants - children's courts": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants - higher courts": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of defendants - magistrates' courts": {
+        "population": "Defendants finalised"
+      },
+      "value of fine": {
+        "population": "Defendants given a fine"
+      },
+      "youth defendants finalised": {
+        "population": "Youth defendants finalised"
+      },
+      "youth defendants finalised (excluding transfers and traffic offences)": {
+        "population": "Youth defendants finalised",
+        "scope": "Excluding transfers and traffic offences"
+      },
+      "youth defendants finalised (excluding transfers)": {
+        "population": "Youth defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "youth defendants with a guilty outcome": {
+        "population": "Youth defendants with a guilty outcome"
+      },
+      "children's courts defendants adjudicated": {
+        "population": "Defendants adjudicated",
+        "court_level": "Children's Courts"
+      },
+      "children's courts defendants proven guilty": {
+        "population": "Defendants with a guilty outcome",
+        "court_level": "Children's Courts"
+      },
+      "children's courts summary characteristics of defendants": {
+        "population": "Defendants finalised",
+        "court_level": "Children's Courts"
+      },
+      "children's courts defendants finalised": {
+        "population": "Defendants finalised",
+        "court_level": "Children's Courts"
+      },
+      "children's courts duration from initiation to finalisation": {
+        "population": "Defendants finalised",
+        "court_level": "Children's Courts"
+      },
+      "adjudicated defendants": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants finalised by adjudication": {
+        "population": "Defendants adjudicated"
+      },
+      "defendants finalised by guilty plea": {
+        "population": "Defendants finalised by guilty plea"
+      },
+      "defendants initiated": {
+        "population": "Defendants initiated"
+      },
+      "states and territories 1996–97 to 2005–06": {
+        "population": "Defendants finalised"
+      },
+      "summary outcomes of all defendants": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised and proven guilty": {
+        "population": "Defendants finalised"
+      },
+      "defendants finalised (excluding organisations)": {
+        "population": "Defendants finalised",
+        "scope": "Excluding organisations"
+      },
+      "summary characteristics of defendants by indigenous status": {
+        "population": "Defendants finalised"
+      },
+      "estimated impact of classification changes": {
+        "population": "Defendants finalised",
+        "scope": "Estimated impact of classification changes"
+      },
+      "higher courts defendants adjudicated": {
+        "population": "Defendants adjudicated",
+        "court_level": "Higher Courts"
+      },
+      "magistrates' courts defendants adjudicated": {
+        "population": "Defendants adjudicated",
+        "court_level": "Magistrates' Courts"
+      },
+      "children's court defendants adjudicated": {
+        "population": "Defendants adjudicated",
+        "court_level": "Children's Courts"
+      },
+      "magistrates' courts defendants adjudicated for road traffic offences": {
+        "population": "Defendants adjudicated",
+        "court_level": "Magistrates' Courts",
+        "scope": "Road traffic offences"
+      },
+      "higher courts defendants proven guilty": {
+        "population": "Defendants with a guilty outcome",
+        "court_level": "Higher Courts"
+      },
+      "magistrates' courts defendants proven guilty": {
+        "population": "Defendants with a guilty outcome",
+        "court_level": "Magistrates' Courts"
+      },
+      "higher courts defendants finalised": {
+        "population": "Defendants finalised",
+        "court_level": "Higher Courts"
+      },
+      "magistrates' courts defendants finalised": {
+        "population": "Defendants finalised",
+        "court_level": "Magistrates' Courts"
+      },
+      "higher courts summary characteristics of defendants": {
+        "population": "Defendants finalised",
+        "court_level": "Higher Courts"
+      },
+      "magistrates' courts summary characteristics of defendants": {
+        "population": "Defendants finalised",
+        "court_level": "Magistrates' Courts"
+      },
+      "combined courts summary characteristics of all defendants": {
+        "population": "Defendants finalised",
+        "court_level": "All Courts"
+      },
+      "higher courts duration from initiation to finalisation": {
+        "population": "Defendants finalised",
+        "court_level": "Higher Courts"
+      },
+      "magistrates' courts duration from initiation to finalisation": {
+        "population": "Defendants finalised",
+        "court_level": "Magistrates' Courts"
+      },
+      "magistrates' courts duration from initation to finalisation": {
+        "population": "Defendants finalised",
+        "court_level": "Magistrates' Courts"
+      },
+      "initiated defendants": {
+        "population": "Defendants initiated"
+      },
+      "length of fully suspended sentence": {
+        "population": "Defendants sentenced to a fully suspended sentence"
+      },
+      "length of fully suspended sentences": {
+        "population": "Defendants sentenced to a fully suspended sentence"
+      },
+      "length of good behaviour bond": {
+        "population": "Defendants sentenced to a good behaviour bond"
+      },
+      "length of probation order": {
+        "population": "Defendants sentenced to a probation order"
+      },
+      "length of probation order and good behaviour bond": {
+        "population": "Defendants sentenced to a probation order or good behaviour bond"
+      },
+      "length of custody in the community": {
+        "population": "Defendants sentenced to custody in the community"
+      },
+      "rate of defendants finalised": {
+        "population": "Defendants finalised",
+        "measure": "Rate"
+      },
+      "rate of defendants finalised (excluding traffic offences)": {
+        "population": "Defendants finalised",
+        "measure": "Rate",
+        "scope": "Excluding traffic offences"
+      }
+    },
+    "employee-earnings-hours-australia": {
+      "all employees": {
+        "population": "All employees"
+      },
+      "all employees excluding owner managers of incorporated enterprises": {
+        "population": "All employees",
+        "scope": "Excluding owner managers of incorporated enterprises"
+      },
+      "full-time non-managerial employees paid at the adult rate": {
+        "population": "Full-time non-managerial employees paid at the adult rate"
+      },
+      "non-managerial employees": {
+        "population": "Non-managerial employees"
+      }
+    },
+    "federal-defendants-australia": {
+      "federal defendants": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised (excluding organisations)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding organisations"
+      },
+      "federal defendants finalised (excluding transfers)": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "federal defendants finalised (excluding transfers) and with a guilty outcome": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "federal defendants finalised and guilty outcome": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised and proven guilty": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised and with a guilty outcome": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants finalised with a guilty outcome": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty (excluding organisations)": {
+        "population": "Federal defendants with a guilty outcome",
+        "scope": "Excluding organisations"
+      },
+      "federal defendants with a guilty outcome": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal offences": {
+        "population": "Federal offences"
+      },
+      "federal defendants – all courts": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants - all courts": {
+        "population": "Federal defendants finalised"
+      },
+      "summary characteristics of all federal defendants": {
+        "population": "Federal defendants finalised"
+      },
+      "ummary characteristics of all federal defendants": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants with guilty outcome": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants finalised (excluding transfers) and guilty outcome": {
+        "population": "Federal defendants finalised",
+        "scope": "Excluding transfers"
+      },
+      "federal offences – all courts": {
+        "population": "Federal offences"
+      },
+      "federal offences - all courts": {
+        "population": "Federal offences"
+      },
+      "federal offences - higher courts": {
+        "population": "Federal offences"
+      },
+      "federal offences - magistrates' & children's courts": {
+        "population": "Federal offences"
+      },
+      "federal offences proven guilty - all courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal offences proven guilty - higher courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal offences proven guilty - magistrates' & children's courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal defendants proven guilty – all courts": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty - all courts": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty – higher courts": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty - higher courts": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty – magistrates' and children's courts": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants proven guilty - magistrates' & children's courts": {
+        "population": "Federal defendants with a guilty outcome"
+      },
+      "federal defendants – higher courts": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants - higher courts": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants – magistrates' and children's courts": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants - magistrates' & children's courts": {
+        "population": "Federal defendants finalised"
+      },
+      "federal defendants all courts": {
+        "population": "Federal defendants finalised"
+      },
+      "federal offences proven guilty – all courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal offences proven guilty – higher courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal offences proven guilty – magistrates' and children's courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal offences proven guilty – magistrates' & children's courts": {
+        "population": "Federal offences with a guilty outcome"
+      },
+      "federal offences – higher courts": {
+        "population": "Federal offences"
+      },
+      "federal offences – magistrates' and children's courts": {
+        "population": "Federal offences"
+      },
+      "federal offences – magistrates' & children's courts": {
+        "population": "Federal offences"
+      },
+      "federal offence sentences – all courts": {
+        "population": "Federal offence sentences"
+      }
+    },
+    "pc-report-on-government-services-justice": {
+      "adults discharged from community corrections orders who returned to corrective services with a new correctional sanction within two years": {
+        "population": "Adults discharged from community corrections orders",
+        "measure": "Proportion returning within two years"
+      },
+      "adults released from prison who returned to prison or to corrective services with a new correctional sanction within two years": {
+        "population": "Adults released from prison",
+        "measure": "Proportion returning within two years"
+      },
+      "assaults in custody": {
+        "population": "Prisoners",
+        "measure": "Assaults in custody"
+      },
+      "community corrections offender population (average daily number)": {
+        "population": "Community corrections offenders",
+        "measure": "Average daily number"
+      },
+      "community corrections offender population (average daily number) and rates per 100 000 relevant adults": {
+        "population": "Community corrections offenders"
+      },
+      "community corrections offender-to-staff ratio": {
+        "population": "Community corrections offenders",
+        "measure": "Offender-to-staff ratio"
+      },
+      "completion of community corrections orders": {
+        "population": "Community corrections orders",
+        "measure": "Proportion completed"
+      },
+      "correctional custodial facilities": {
+        "population": "Correctional custodial facilities"
+      },
+      "deaths from apparent unnatural causes": {
+        "population": "Prisoners",
+        "measure": "Deaths from apparent unnatural causes"
+      },
+      "deaths from apparent unnatural causes by indigenous status": {
+        "population": "Prisoners",
+        "measure": "Deaths from apparent unnatural causes"
+      },
+      "escapes per 100 prisoners": {
+        "population": "Prisoners",
+        "measure": "Escapes per 100 prisoners"
+      },
+      "imprisonment and community corrections population rate per 100 000 adults": {
+        "population": "Prisoners and community corrections offenders"
+      },
+      "number of times offenders proceeded against by police": {
+        "population": "Offenders",
+        "measure": "Number"
+      },
+      "prison design capacity utilisation": {
+        "population": "Prisons",
+        "measure": "Design capacity utilisation"
+      },
+      "prisoner education and training (per cent of eligible prisoners)": {
+        "population": "Eligible prisoners",
+        "measure": "Proportion in education and training",
+        "unit": "%"
+      },
+      "prisoner employment (per cent of eligible prisoners)": {
+        "population": "Eligible prisoners",
+        "measure": "Proportion employed",
+        "unit": "%"
+      },
+      "prisoner employment by indigenous status (per cent of eligible prisoners)": {
+        "population": "Eligible prisoners",
+        "measure": "Proportion employed",
+        "unit": "%"
+      },
+      "prisoner population (average daily number)": {
+        "population": "Prisoners",
+        "measure": "Average daily number"
+      },
+      "prisoner population (average daily number) and rates per 100 000 relevant adults": {
+        "population": "Prisoners"
+      },
+      "real net operating expenditure": {
+        "population": "Corrective services",
+        "measure": "Real net operating expenditure"
+      },
+      "real net operating expenditure per prisoner and per offender per day": {
+        "population": "Prisoners and community corrections offenders",
+        "measure": "Real net operating expenditure per day"
+      },
+      "real recurrent expenditure (less revenue from own sources) on justice services by australian": {
+        "population": "Justice services",
+        "measure": "Real recurrent expenditure"
+      },
+      "real recurrent expenditure (less revenue from own sources) per person on justice services": {
+        "population": "Justice services",
+        "measure": "Real recurrent expenditure per person"
+      },
+      "recurrent expenditure": {
+        "population": "Corrective services",
+        "measure": "Recurrent expenditure"
+      },
+      "recurrent expenditure per prisoner and per offender per day": {
+        "population": "Prisoners and community corrections offenders",
+        "measure": "Recurrent expenditure per day"
+      },
+      "time out-of-cells (average hours per day)": {
+        "population": "Prisoners",
+        "measure": "Time out of cells",
+        "unit": "hours per day"
+      }
+    },
+    "prisoners-australia": {
+      "aboriginal and torres strait islander sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
+      },
+      "age standardised imprisonment rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Age standardised"
+      },
+      "age standardised imprisonment rates": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Age standardised"
+      },
+      "all sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "crude imprisonment rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Crude"
+      },
+      "crude imprisonment rates": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate",
+        "rate_standardisation": "Crude"
+      },
+      "estimated adult resident population": {
+        "population": "Adults",
+        "measure": "Estimated resident population"
+      },
+      "estimated indigenous population": {
+        "population": "Aboriginal and Torres Strait Islander people",
+        "measure": "Estimated resident population"
+      },
+      "estimated resident population": {
+        "population": "Persons",
+        "measure": "Estimated resident population"
+      },
+      "federal offences": {},
+      "federal parolees": {
+        "population": "Federal parolees"
+      },
+      "federal prisoners": {
+        "population": "Federal prisoners"
+      },
+      "federal prisoners and parolees": {
+        "population": "Federal prisoners and parolees"
+      },
+      "imprisonment rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate"
+      },
+      "imprisonment rates": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate"
+      },
+      "indicative impact of classification changes": {
+        "population": "Prisoners",
+        "scope": "Indicative impact of classification changes"
+      },
+      "indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
+      },
+      "mean and median age of periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "mean and median age of prisoners": {
+        "population": "Prisoners"
+      },
+      "mean and median aggregate sentence length of sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "mean and median expected time to serve of sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "non-indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Non-Indigenous"
+      },
+      "non-indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Non-Indigenous"
+      },
+      "number of prisoners": {
+        "population": "Prisoners",
+        "measure": "Number"
+      },
+      "number of sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "measure": "Number"
+      },
+      "number of unsentenced prisoners": {
+        "population": "Unsentenced prisoners",
+        "measure": "Number"
+      },
+      "periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "prisoner characteristics": {
+        "population": "Prisoners"
+      },
+      "prisoners": {
+        "population": "Prisoners"
+      },
+      "prisoners aged 50 years and over": {
+        "population": "Prisoners",
+        "age_group": "50 years and over"
+      },
+      "proportion of prisoners": {
+        "population": "Prisoners",
+        "measure": "Proportion"
+      },
+      "selected prisoner characteristics": {
+        "population": "Prisoners"
+      },
+      "sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "sentencing characteristics": {
+        "population": "Sentenced prisoners"
+      },
+      "table 33 sentenced prisoners": {
+        "population": "Sentenced prisoners"
+      },
+      "table 34 prisoners": {
+        "population": "Prisoners"
+      },
+      "table 36 prisoners": {
+        "population": "Prisoners"
+      },
+      "table 44 periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "time on remand as at 30 june 2006 for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "proportion of unsentenced prisoners": {
+        "population": "Unsentenced prisoners",
+        "measure": "Proportion"
+      },
+      "proportion of federal prisoners": {
+        "population": "Federal prisoners",
+        "measure": "Proportion"
+      },
+      "number of federal prisoners": {
+        "population": "Federal prisoners",
+        "measure": "Number"
+      },
+      "prisoner rate": {
+        "population": "Prisoners",
+        "measure": "Imprisonment rate"
+      },
+      "mean and median age periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "mean and median aggregate sentence of periodic detainees": {
+        "population": "Periodic detainees"
+      },
+      "mean and median time on remand for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "time on remand as at 30 june 2004 for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "proportion of sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "measure": "Proportion"
+      },
+      "number of indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Number"
+      },
+      "number of indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Number"
+      },
+      "proportion of indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Proportion"
+      },
+      "proportion of indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Proportion"
+      },
+      "indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
+      },
+      "mean and median age of indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
+      },
+      "imprisonment rates of indigenous prisoners": {
+        "population": "Prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Imprisonment rate"
+      },
+      "indigenous prisoner rate per 100": {
+        "population": "Prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "measure": "Imprisonment rate"
+      },
+      "mean and median aggregate sentence of sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "sentence_basis": "Aggregate sentence length"
+      },
+      "mean and median aggregate sentence of indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "sentence_basis": "Aggregate sentence length"
+      },
+      "mean and median expected time to serve of indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "sentence_basis": "Expected time to serve"
+      },
+      "mean and median expected sentence of indigenous sentenced prisoners": {
+        "population": "Sentenced prisoners",
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "sentence_basis": "Expected time to serve"
+      },
+      "mean and 90th percentile for time on remand as at 30 june 2002 for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "mean and 90th percentile for time on remand as at 30 june 2003 for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      },
+      "time on remand as at 30 june 2005 for unsentenced prisoners": {
+        "population": "Unsentenced prisoners"
+      }
+    },
+    "recorded-crime-offenders": {
+      "covid-19 related proceedings": {
+        "population": "COVID-19 related proceedings"
+      },
+      "family and domestic violence offender rate": {
+        "population": "Offenders of family and domestic violence",
+        "measure": "Offender rate"
+      },
+      "family and domestic violence related proceedings": {
+        "population": "Family and domestic violence related proceedings"
+      },
+      "family and domestic violence related proceedings by court action": {
+        "population": "Family and domestic violence related proceedings",
+        "scope": "Court actions"
+      },
+      "offender rate": {
+        "population": "Offenders",
+        "measure": "Offender rate"
+      },
+      "offenders": {
+        "population": "Offenders"
+      },
+      "offenders of covid-19 related offences": {
+        "population": "Offenders of COVID-19 related offences"
+      },
+      "offenders of family and domestic violence": {
+        "population": "Offenders of family and domestic violence"
+      },
+      "offenders of fdv related breach of violence and non-violence orders": {
+        "population": "Offenders of family and domestic violence related breach of violence and non-violence orders"
+      },
+      "offenders of fdv-related breach of violence and non-violence orders": {
+        "population": "Offenders of family and domestic violence related breach of violence and non-violence orders"
+      },
+      "police proceedings": {
+        "population": "Police proceedings"
+      },
+      "police proceedings – court actions": {
+        "population": "Police proceedings",
+        "scope": "Court actions"
+      },
+      "proceedings of family and domestic violence": {
+        "population": "Family and domestic violence related proceedings"
+      },
+      "selected offenders": {
+        "population": "Selected offenders"
+      },
+      "youth offender rate": {
+        "population": "Youth offenders",
+        "measure": "Offender rate"
+      },
+      "youth offenders": {
+        "population": "Youth offenders"
+      },
+      "youth offfenders": {
+        "population": "Youth offenders"
+      },
+      "police proceedings – combined selected states and territories": {
+        "population": "Police proceedings"
+      },
+      "table 24 youth offenders": {
+        "population": "Youth offenders"
+      },
+      "table 25 youth offenders": {
+        "population": "Youth offenders"
+      }
+    },
+    "crime-victimisation-australia": {
+      "household experience of break-in in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Break-in"
+      },
+      "persons aged 15 years and over": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons aged 15 years and over who experienced selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons aged 18 years and over": {
+        "population": "Persons aged 18 years and over"
+      },
+      "victims of other theft": {
+        "population": "Households",
+        "crime_type": "Other theft"
+      },
+      "victims of selected personal and household crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "households": {
+        "population": "Households"
+      },
+      "experience of selected household crimes in the last 12 months": {
+        "population": "Households"
+      },
+      "persons aged 15 years and over who experienced face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "experience of selected personal crimes in the last 12 months": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of physical assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault"
+      },
+      "household experience of malicious property damage in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Malicious property damage"
+      },
+      "populations": {
+        "population": "Persons and households",
+        "measure": "Population estimate"
+      },
+      "victims of break-in": {
+        "population": "Households",
+        "crime_type": "Break-in"
+      },
+      "victims of motor vehicle theft": {
+        "population": "Households",
+        "crime_type": "Motor vehicle theft"
+      },
+      "persons and households": {
+        "population": "Persons and households"
+      },
+      "females aged 18 years and over": {
+        "population": "Persons aged 18 years and over",
+        "sex": "Females"
+      },
+      "victims of malicious property damage": {
+        "population": "Households",
+        "crime_type": "Malicious property damage"
+      },
+      "victims of theft from a motor vehicle": {
+        "population": "Households",
+        "crime_type": "Theft from a motor vehicle"
+      },
+      "persons aged 18 years and over who experienced face-to-face threatened assault": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "household experience of theft from a motor vehicle": {
+        "population": "Households",
+        "crime_type": "Theft from a motor vehicle"
+      },
+      "victims of selected household crimes": {
+        "population": "Households"
+      },
+      "persons aged 18 years and over reporting at least one large or moderate social disorder issue": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Reporting at least one large or moderate social disorder issue"
+      },
+      "persons aged 15 years and over who experienced non-face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Non-face-to-face threatened assault"
+      },
+      "persons aged 15 years and over who experienced selected personal crimes in the last 12 months": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of robbery": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "persons aged 15 years and over who experienced physical assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault"
+      },
+      "households which experienced selected household crimes": {
+        "population": "Households"
+      },
+      "household experience of motor vehicle theft in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Motor vehicle theft"
+      },
+      "victims of face-to-face threatened assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "persons aged 15 years and over who experienced robbery in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "household experience of attempted break-in in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Attempted break-in"
+      },
+      "all households": {
+        "population": "Households"
+      },
+      "all persons": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of physical assault aged 18 years and over": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault aged 18 years and over"
+      },
+      "household experience of motor vehicle theft": {
+        "population": "Households",
+        "crime_type": "Motor vehicle theft"
+      },
+      "persons aged 18 years and over who experienced physical assault or face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Physical assault or face-to-face threatened assault"
+      },
+      "all persons and households": {
+        "population": "Persons and households"
+      },
+      "household experience of other theft in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Other theft"
+      },
+      "victims of selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of face-to-face threatened assault aged 18 years and over": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault aged 18 years and over"
+      },
+      "persons aged 18 years and over who experienced physical assault and face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Physical assault and face-to-face threatened assault"
+      },
+      "all persons reporting at least one large or moderate social disorder issue": {
+        "population": "Persons aged 15 years and over",
+        "scope": "Reporting at least one large or moderate social disorder issue"
+      },
+      "persons aged 15 years and over and households": {
+        "population": "Persons aged 15 years and over",
+        "scope": "And households"
+      },
+      "household experience of theft from a motor vehicle in the last 12 months": {
+        "population": "Households",
+        "crime_type": "Theft from a motor vehicle"
+      },
+      "persons aged 15 years and over who experienced non face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Non face-to-face threatened assault"
+      },
+      "victims of attempted break-in": {
+        "population": "Households",
+        "crime_type": "Attempted break-in"
+      },
+      "incidents of selected personal and household crimes": {
+        "population": "Incidents"
+      },
+      "households that experienced selected household crimes in the last 12 months": {
+        "population": "Households"
+      },
+      "household experience of attempted break-in": {
+        "population": "Households",
+        "crime_type": "Attempted break-in"
+      },
+      "experience of sexual assault in the last 12 months by states and territories": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Sexual assault"
+      },
+      "experience of robbery in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "persons aged 18 years and over who experienced physical assault": {
+        "population": "Persons aged 18 years and over",
+        "crime_type": "Physical assault"
+      },
+      "experience of sexual assault and robbery in the last 12 months by states and territories": {
+        "population": "Persons aged 15 years and over"
+      },
+      "experience of selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "household experience of break-in": {
+        "population": "Households",
+        "crime_type": "Break-in"
+      },
+      "household experience of other theft": {
+        "population": "Households",
+        "crime_type": "Other theft"
+      },
+      "experience of selected household crimes": {
+        "population": "Households"
+      },
+      "household experience of malicious property damage": {
+        "population": "Households",
+        "crime_type": "Malicious property damage"
+      },
+      "persons who experienced selected personal crimes": {
+        "population": "Persons aged 15 years and over"
+      },
+      "victims of selected personal and household crime": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons aged 18 years and over who believed alcohol or any other substance contributed to the most recent incident of physical assault or face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Who believed alcohol or any other substance contributed to the most recent incident of physical assault or face-to-face threatened assault"
+      },
+      "victims of non face-to-face threatened assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Non face-to-face threatened assault"
+      },
+      "persons who experienced physical assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Physical assault"
+      },
+      "persons who experienced robbery in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Robbery"
+      },
+      "victims of selected household crime": {
+        "population": "Persons aged 15 years and over"
+      },
+      "persons who experienced face-to-face threatened assault in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assault"
+      },
+      "6. all persons": {
+        "population": "Persons aged 15 years and over"
+      },
+      "all persons aged 18 years and over": {
+        "population": "Persons aged 18 years and over"
+      },
+      "victims of phsyical assault": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Phsyical assault"
+      },
+      "15. all persons": {
+        "population": "Persons aged 15 years and over"
+      },
+      "all persons aged 18 years and over reporting at least one social disorder issue": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Reporting at least one social disorder issue"
+      },
+      "victims of face-to-face threatened assaultincident": {
+        "population": "Persons aged 15 years and over",
+        "crime_type": "Face-to-face threatened assaultincident"
+      },
+      "all persons aged 18 years and over reporting at least one large or moderate social disorder issue": {
+        "population": "Persons aged 18 years and over",
+        "scope": "Reporting at least one large or moderate social disorder issue"
+      }
+    },
+    "recorded-crime-victims": {
+      "victims": {
+        "population": "Victims"
+      },
+      "victims of sexual assault": {
+        "population": "Victims",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of homicide": {
+        "population": "Victims",
+        "victim_offence": "Homicide"
+      },
+      "victims of assault": {
+        "population": "Victims",
+        "victim_offence": "Assault"
+      },
+      "person victims": {
+        "population": "Victims"
+      },
+      "person victimisation rate": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "victims of crime": {
+        "population": "Victims",
+        "victim_offence": "Crime"
+      },
+      "aboriginal and torres strait islander victims of robbery": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "victim_offence": "Robbery"
+      },
+      "victims of assault and sexual assault": {
+        "population": "Victims",
+        "victim_offence": "Assault and sexual assault"
+      },
+      "victimisation rate": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "aboriginal and torres strait islander victims of sexual assault": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of armed robbery": {
+        "population": "Victims",
+        "victim_offence": "Armed robbery"
+      },
+      "victims of family and domestic violence related assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Assault"
+      },
+      "victims of family and domestic violence related offences by sex": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "By sex"
+      },
+      "victims of robbery": {
+        "population": "Victims",
+        "victim_offence": "Robbery"
+      },
+      "proportion (%) victims": {
+        "population": "Victims",
+        "measure": "Proportion",
+        "unit": "%"
+      },
+      "aboriginal and torres strait islander victims of assault": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "victim_offence": "Assault"
+      },
+      "victims of family and domestic violence-related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of kidnapping/abduction": {
+        "population": "Victims",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "victims of family and domestic violence–related kidnapping/abduction": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "victims of unlawful entry with intent - other": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent - Other"
+      },
+      "victims of family and domestic violence–related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of family and domestic violence-related assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Assault"
+      },
+      "aboriginal and torres strait islander victims": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims"
+      },
+      "victims of blackmail/extortion": {
+        "population": "Victims",
+        "victim_offence": "Blackmail/extortion"
+      },
+      "aboriginal and torres strait islander victims of family and domestic violence related offences": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of family and domestic violence-related offences by sex": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "By sex"
+      },
+      "victims of family and domestic violence–related homicide": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide"
+      },
+      "victims of motor vehicle theft": {
+        "population": "Victims",
+        "victim_offence": "Motor vehicle theft"
+      },
+      "victims of family and domestic violence related homicide and related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide and related offences"
+      },
+      "person victimisation rates": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "victims of family and domestic violence-related homicide and related offences": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide and related offences"
+      },
+      "victims of family and domestic violence-related sexual assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of family and domestic violence": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of family and domestic violence related sexual assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Sexual assault"
+      },
+      "victims of family and domestic violence–related offences by sex": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "By sex"
+      },
+      "victims of unarmed robbery": {
+        "population": "Victims",
+        "victim_offence": "Unarmed robbery"
+      },
+      "victims of family and domestic violence-related kidnapping/abduction": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "estimated resident population – 2003–2004": {
+        "population": "Persons",
+        "measure": "Estimated resident population"
+      },
+      "victims of family and domestic violence–related sexual assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Sexual assault"
+      },
+      "number of victims": {
+        "population": "Victims"
+      },
+      "victims of murder": {
+        "population": "Victims",
+        "victim_offence": "Murder"
+      },
+      "victims of attempted murder": {
+        "population": "Victims",
+        "victim_offence": "Attempted murder"
+      },
+      "victims of family and domestic violence–related assault": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Assault"
+      },
+      "relationship of offender to victim": {
+        "population": "Victims"
+      },
+      "victims of family and domestic violence related kidnapping/abduction": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Kidnapping/abduction"
+      },
+      "victims of family and domestic violence-related homicide": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide"
+      },
+      "victims of unlawful entry with intent- other": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent- other"
+      },
+      "victims blackmail/extortion": {
+        "population": "Victims",
+        "victim_offence": "Blackmail/extortion"
+      },
+      "victims of manslaughter": {
+        "population": "Victims",
+        "victim_offence": "Manslaughter"
+      },
+      "indigenous status": {
+        "population": "Victims"
+      },
+      "victims of family and domestic violence related homicide": {
+        "population": "Victims",
+        "scope": "Family and domestic violence-related",
+        "victim_offence": "Homicide"
+      },
+      "victims of unlawful entry with intent involving the taking of property": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent involving the taking of property"
+      },
+      "anzsoc23 table 1 victims": {
+        "offence_classification": "ANZSOC 2023",
+        "population": "Victims"
+      },
+      "proportion of victims": {
+        "population": "Victims",
+        "measure": "Proportion"
+      },
+      "victims of unlawful entry with intent": {
+        "population": "Victims",
+        "victim_offence": "Unlawful entry with intent"
+      },
+      "victimisation rates": {
+        "population": "Victims",
+        "measure": "Victimisation rate"
+      },
+      "victims of driving causing death": {
+        "population": "Victims",
+        "victim_offence": "Driving causing death"
+      },
+      "victims of sexual assault proportions": {
+        "population": "Victims",
+        "victim_offence": "Sexual assault proportions"
+      },
+      "aboriginal and torres strait islander victims of family and domestic violence-related offences": {
+        "indigenous_status": "Aboriginal and Torres Strait Islander",
+        "population": "Victims",
+        "scope": "Family and domestic violence-related"
+      },
+      "victims of homicide and related offences": {
+        "population": "Victims",
+        "victim_offence": "Homicide and related offences"
+      },
+      "motor vehicles on register – 2004": {
+        "population": "Motor vehicles",
+        "measure": "Number on register"
+      },
+      "victims of other theft": {
+        "population": "Victims",
+        "victim_offence": "Other theft"
+      },
+      "estimated resident population – 2004": {
+        "population": "Persons",
+        "measure": "Estimated resident population"
+      }
+    }
+  }
+}

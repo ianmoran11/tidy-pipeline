@@ -3,7 +3,9 @@
 # the most recent release, preferring a number over a symbol within that release.
 # Releases are ordered by the latest reference date in their own data (their
 # release_end; the spec can override it), then by release date.
-# differs_from_latest marks values another release has since revised.
+# differs_from_latest marks values another release has since revised: a different number
+# or, where neither has one, a different status. Text alone ("np" vs "n.p.", a quality
+# asterisk) isn't a revision.
 reconcile <- function(observations, sources, reconcile_spec) {
   spec <- reconcile_spec
   obs <- dplyr::left_join(observations, sources[c("sheet_sha256", "release_id", "release_date")], by = "sheet_sha256")
@@ -15,9 +17,10 @@ reconcile <- function(observations, sources, reconcile_spec) {
   obs <- dplyr::arrange(obs, series_id, period, dplyr::desc(release_end), dplyr::desc(release_date), is.na(value), sheet_sha256, address)
   # vectorised over the sorted rows: each series-and-period group's first row is its latest
   key <- paste(obs$series_id, obs$period); first <- !duplicated(key); group <- cumsum(first); top <- which(first)[group]
-  a <- obs$published_text; b <- a[top]; same_text <- (is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & a == b)
+  same <- function(a, b) (is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & a == b)
+  v <- obs$value; s <- obs$value_status; unchanged <- same(v, v[top]) & (!is.na(v) | same(s, s[top]))
   obs$n_releases <- tabulate(group[!duplicated(paste(key, obs$release_id))], nbins = max(group, 0))[group]
   obs$is_latest <- first
-  obs$differs_from_latest <- obs$release_id != obs$release_id[top] & !same_text
+  obs$differs_from_latest <- obs$release_id != obs$release_id[top] & !unchanged
   dplyr::select(obs, -release_date, -release_end)
 }

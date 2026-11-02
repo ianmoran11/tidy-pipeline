@@ -56,7 +56,14 @@ rules:
 **`replace_labels`.** Record labels that give way to the subject's value. `population:
 "Total"` in a table's population column means the whole population the title names.
 The normalisation spec maps "Total prisoners" and similar to "Total", so a Federal
-Prisoners table's total becomes "Federal prisoners", not "Prisoners".
+Prisoners table's total becomes "Federal prisoners", not "Prisoners". A "Prisoners"
+column heading gives way the same way ("UNSENTENCED PRISONERS, ..."), as do the family
+and domestic violence populations, which subjects turn into `scope`.
+
+`measure: "Proportion"` lets a title flag name a denominator. It applies wherever the
+subject or a flag sets `measure`, so a subject must not set a measure that a labelled
+`Proportion` in its tables should keep. Prisoners subjects no longer set `Number`, which
+`default_measure` gives anyway.
 
 **`title_flags`.** Regexes matched against the title and subtitle (joined by " / "). A
 match sets the listed fields. Uses so far:
@@ -65,6 +72,10 @@ match sets the listed fields. Uses so far:
 - aggregate sentence length vs expected time to serve (`sentence_basis`);
 - "selected offences for federal prisoners" vs "for federal parolees" (`population`;
   the subject, "FEDERAL OFFENCES", doesn't say);
+- what a Recorded Crime – Offenders police proceedings `Proportion` is a share of. It
+  changed twice: of the offence (2008–09 to 2010–11), of all proceedings (the 2010–11
+  combined table and 2011–12), of the method (2012–13 on, plain `Proportion`). The Total
+  rows and columns show which;
 - court level for the 2009–10 and 2010–11 Criminal Courts cubes, which name their
   court level only through the cube code in the subtitle (`45130DO002` …).
 
@@ -81,7 +92,13 @@ match sets the listed fields. Uses so far:
 
 **`default_measure`.** Then the publication's default. It is set only for ABS justice
 publications, whose tables count people unless a label or title says otherwise. AIHW and
-RoGS have no default, so their gaps stay visible in the report.
+RoGS have no default, so their gaps stay visible in the report. A statistic in a
+dimension (`sex: "Females %"`) needs a `split` entry, or it is stamped `Number`.
+
+**`unit_from_measure`.** A record still without `unit` takes one from its measure
+(`Number` → `no.`, `Proportion` → `%`). Measures whose unit differs by publication stay
+out of it: `Victimisation rate` is a percentage in Crime Victimisation and a rate per
+100,000 in Recorded Crime – Victims.
 
 ## Checking
 

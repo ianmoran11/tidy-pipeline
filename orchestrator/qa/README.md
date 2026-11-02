@@ -85,6 +85,7 @@ overwrites those edits.** They are kept to show how each file was derived.
 |---|---|
 | `raw_values.R` → `seed_normalisation_spec.R` | `normalisation/normalisation_spec.json` |
 | `stage_sheets.R` → `seed_victims_specs.R <rows.rds>` | Victims entries in all three specs: sentence case for upper-case labels, RSE spellings, "RSE of X" splits, titles misused as `measure`, title subjects, calendar-year and pooled-year dates. Rerunnable: it replaces its own harmonisation splits (listed under `_victims_seed`) but only adds missing normalisation and subject entries, so start from the pre-seed specs in `seeds/victims_baseline/` to apply rule changes |
+| `seed_label_consistency.R` (rules in `consistency_rules.R`) | One spelling per label, units out of labels, `period_type` and denominators, in all four specs. Unlike the others it starts from `consistency_baseline/`, so it can be rerun after changing a rule; see the README there |
 | `seed_measure_spec.R` | `measures/measure_spec.json`. Later edits made directly in the JSON: cube court levels, rate standardisation, `replace_labels`, `sentence_basis` flags |
 | `seed_harmonisation_spec.R` → `seed_harmonisation_dates.R` | `harmonisation/harmonisation_spec.json` (the second adds `reference_dates`) |
 | `names.R` → `build_dictionary.R` | `dictionary/dimensions.csv` |

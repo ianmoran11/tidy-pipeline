@@ -20,7 +20,7 @@ All files are UTF-8 CSV. Missing values are empty fields.
 | Column | Meaning |
 |---|---|
 | `series_id` | The series the value belongs to (`series.csv`) |
-| `period` | Period as published, e.g. `2023–24`, `May 2023`, `30 June 2014` |
+| `period` | Period, with one spelling for each: `2023–24`, `May 2023`, `2014`, `2019–21`. A plain year is a calendar year in Recorded Crime – Victims, and 30 June in Prisoners and child protection |
 | `reference_date` | ISO date the period ends, e.g. `2024-06-30` |
 | `value` | The number, rounded as published. Symbols that mean nil or rounded to zero are `0`; other symbols and blanks are empty |
 | `value_status` | `published`, `blank` (empty cell in the published table), `not_published`, `not_available`, `not_applicable`, `nil_or_rounded_to_zero` |
@@ -29,7 +29,7 @@ All files are UTF-8 CSV. Missing values are empty fields.
 | `release_id` | The release the value comes from (`sources.csv`) |
 | `n_releases` | How many releases publish this series and period |
 | `is_latest` | `TRUE` for exactly one row per series and period: the most recent release's value |
-| `differs_from_latest` | `TRUE` where a later release published a different value (a revision) |
+| `differs_from_latest` | `TRUE` where a later release published a different number or, where neither has a number, a different status. Spelling (`np` vs `n.p.`) and quality asterisks don't count |
 | `sheet_sha256`, `address` | The source sheet and cell, for tracing any value to the workbook |
 | `derived` | Fields not read from the value's own row and column labels, e.g. `state,period` taken from the title |
 
@@ -45,6 +45,18 @@ A series is everything that identifies a value except its period. Columns:
 
 A dimension a series doesn't have is empty. Dimension names come from
 `dictionary/dimensions.csv`.
+
+`period_type` is set for periods that aren't a single year: `Pooled 2 years` (`2019–21`
+is 2019–20 and 2020–21 together), `Pooled 3 years`, or `Range of N years` (a change or
+total over a window). These are separate series, so one series has one value per
+`reference_date`.
+
+`measure` says what kind of value it is and `unit` its scale, so a count is `Number` with
+`no.` or `'000`, and a percentage is `Proportion` with `%`. In survey RSE tables
+(`estimate_type` = `Relative standard error`) the unit is the RSE's own, so the RSE of a
+count is `Number` with `%`. `Proportion` doesn't say what it is a percentage of, except in
+a few measures that name it (`Proportion of all proceedings`); `orchestrator/ISSUES.md`
+I35 lists what's left.
 
 ### `measures.csv`: the measure catalogue
 

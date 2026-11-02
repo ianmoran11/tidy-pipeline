@@ -4,7 +4,8 @@
 # in the spec to set population, scope and any other fields it names; title_flags
 # match the title and subtitle (e.g. a cube code) to set further fields. Labels in
 # replace_labels (e.g. population "Total") give way to the subject's value. A record
-# still without a measure gets one from its unit or the publication's default.
+# still without a measure gets one from its unit or the publication's default, and a
+# record still without a unit gets one from its measure (unit_from_measure).
 # Existing record fields are never overwritten. See measures/README.md.
 identify <- function(sheet_result, measure_spec) {
   spec <- measure_spec; pub <- sheet_result$source[["publication_id"]]
@@ -25,6 +26,10 @@ identify <- function(sheet_result, measure_spec) {
       if (is.null(rec[["measure"]])) {
         rec[["measure"]] <- spec$measure_from_unit[[rec[["unit"]] %||% ""]] %||% spec$default_measure[[pub]]
         if (!is.null(rec[["measure"]])) added <- c(added, "measure")
+      }
+      if (is.null(rec[["unit"]]) && !is.null(spec$unit_from_measure[[rec[["measure"]] %||% ""]])) {
+        rec[["unit"]] <- spec$unit_from_measure[[rec[["measure"]]]]
+        added <- c(added, "unit")
       }
       if (length(added)) rec[[".derived"]] <- paste(c(setdiff(strsplit(rec[[".derived"]] %||% "", ",")[[1]], ""), added), collapse = ",")
       rec

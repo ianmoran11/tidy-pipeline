@@ -1,4 +1,4 @@
-# State at handover (2026-11-02, after the victims publications)
+# State at handover (2026-11-02, after the label consistency work)
 
 ## Corpus
 
@@ -65,16 +65,16 @@ subscription allowance instead.
 | Target | Value |
 |---|---|
 | `data` | 9,040 sheets (every admitted sheet with a recipe) |
-| `data_normalised`, `data_harmonised`, `data_identified` | same records; every record has `period`; 2,068 lack `reference_date` (older ABS compound or typo labels, ISSUES.md I31/I12) |
+| `data_normalised`, `data_harmonised`, `data_identified` | same records; every record has `period`; 236 lack `reference_date` (the publisher typos `2022–22` and `Dec 208`, ISSUES.md I12) |
 | `integrated/observations.csv` | 3,989,690 rows from 129 releases (2,628,052 before the victims publications); 3,870,414 published numbers; `value_flag`: 8,909 `rse_25_to_50`, 1,223 `rse_over_50`, 108 `footnote`, 60 `revised` |
-| Latest values | 2,325,219 series × period, each with exactly one `is_latest` |
-| `integrated/series.csv` | 721,701 series × 195 columns; every series except AIHW (I1, I25) and 9 Recorded Crime – Victims series has population and measure |
-| `integrated/measures.csv`, `sources.csv` | 1,408 measures; 7,591 sheets with data |
-| Values that can't be told apart (two different numbers) | Crime Victimisation 2,246; Recorded Crime – Victims 1,356; Courts 799; Recorded Crime – Offenders 455; Prisoners 204; Federal Defendants 108; RoGS 13 keys; AIHW about 4,300 (ISSUES.md I26, I34) |
-| Checks | 78 tests; **no `error`-level failures**; 678 warning failures, all known issues (below) |
+| Latest values | 2,259,337 series × period, each with exactly one `is_latest` |
+| `integrated/series.csv` | 661,477 series × 188 columns; every series except AIHW (I1, I25) and 9 Recorded Crime – Victims series has population and measure |
+| `integrated/measures.csv`, `sources.csv` | 1,101 measures; 7,591 sheets with data |
+| Values that can't be told apart (two different numbers) | Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Federal Defendants 108; RoGS 13 keys; AIHW about 4,300 (ISSUES.md I26, I34, I35) |
+| Checks | 79 tests; **no `error`-level failures**; 633 warning failures, all known issues (below) |
 | Admission | 129 of 721 release switches on (`sources/dataset_selection.json`): every release of the four ABS justice and two ABS victims publications, plus the original 59. 9,304 admitted sheets, 9,040 with recipes. Without recipes: Youth Justice 2024–25 (114), EEH May 2021 (92), RoGS 2020 (58) |
 | New sources prepared | 654 workbooks downloaded to `source-originals/`, all SHA-matched; 543 converted from XLS (118 with macros), 111 copied; in `source-spreadsheets-xlsx/` |
-| CSV size | 1.1 GB in total (observations 847 MB, series 249 MB) |
+| CSV size | 1.1 GB in total (observations 865 MB, series 226 MB) |
 
 Derived by `harmonise()` (records, before the integration work): `reference_date`
 1,728,664; `period` 638,292; `state` 505,204; `court_level` 105,770; `measure` 57,025;
@@ -110,11 +110,12 @@ fail on deliberately corrupted data. These warnings remain:
 | `has_title` | 111 sheets | I25 (early AIHW recipes) |
 | `measure_present`, `population_present` | 53 and 98 sheets, about 15,900 and 22,700 records | I1, I25 |
 | `series_have_population_and_measure` | 8,498 series (AIHW, plus 9 Recorded Crime – Victims) | I1, I25 |
-| `values_distinguishable` | 9,511 keys (AIHW 4,330; Crime Victimisation 2,246; Recorded Crime – Victims 1,356; Courts 799; Recorded Crime – Offenders 455; Prisoners 204; Federal Defendants 108; RoGS 13) | I26, I34 |
-| `states_are_canonical` | 392 sheets, 858 labels (mostly ACT prisoner locations) | I11 |
+| `values_distinguishable` | 9,988 keys (AIHW 4,330; Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Federal Defendants 108; RoGS 13) | I26, I34, I35 |
+| `states_are_canonical` | 359 sheets, 767 labels (mostly ACT prisoner locations) | I11 |
 | `no_stacked_characteristics` | 4 sheets | I12 |
-| `reference_dates_present` | 8 sheets (11 period labels) | I12, I31 |
-| `names_are_snake_case`, `series_columns_snake_case` | 7 names | I3, I10 |
+| `reference_dates_present` | 2 sheets (2 period labels) | I12 |
+| `series_columns_snake_case` | 1 name, `order outcome` | I35 |
+| `labels_have_one_spelling` | 25 groups | I35 |
 | `none_unrecognised` | 3 texts (`_`, `jki`, `.`) | I31 |
 | `selected_sheets_have_recipes` | 3 partially covered releases | I31 |
 
@@ -141,6 +142,7 @@ Integration stages (2026-11-01):
 5. Start stage 7, `classify()` (I6, I27)?
 6. Confirm the judgement calls in ISSUES.md I28.
 7. Git clean-up (I16).
+8. Confirm the label consistency judgement calls in ISSUES.md I35.
 
 ## Recommended next steps
 

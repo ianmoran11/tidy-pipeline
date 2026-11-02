@@ -3,10 +3,35 @@
   "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+(?-i:[a-z])?\\s*[:.–-]?\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
   "replace_labels": {
     "population": [
-      "Total"
+      "Total",
+      "Prisoners",
+      "Offenders of family and domestic violence",
+      "Family and domestic violence related proceedings",
+      "Victims of family and domestic violence"
+    ],
+    "measure": [
+      "Proportion"
     ]
   },
   "title_flags": [
+    {
+      "pattern": "method of proceeding.*(?:combined selected.*45190DO003_201011|45190DO002_201112)",
+      "set": {
+        "measure": "Proportion of all proceedings"
+      }
+    },
+    {
+      "pattern": "method of proceeding.*45190DO[0-9]+_(?:200809|200910|201011)",
+      "set": {
+        "measure": "Proportion of proceedings for the offence"
+      }
+    },
+    {
+      "pattern": "Table 1 ALL PERSONS, Victims of physical assault by selected characteristics.New South Wales.*2009.10",
+      "set": {
+        "unit": "'000"
+      }
+    },
     {
       "pattern": "^ANZSOC 2023\\b|Preliminary ANZSOC 2023",
       "set": {
@@ -283,16 +308,19 @@
         "population": "Defendants finalised"
       },
       "family and domestic violence defendants finalised": {
-        "population": "Family and domestic violence defendants finalised"
+        "population": "Defendants finalised",
+        "scope": "Family and domestic violence-related"
       },
       "family and domestic violence defendants finalised for a breach of violence order and at least one other fdv offence": {
         "population": "Family and domestic violence defendants finalised for a breach of violence order and at least one other family and domestic violence offence"
       },
       "family and domestic violence defendants proven guilty": {
-        "population": "Family and domestic violence defendants with a guilty outcome"
+        "population": "Defendants with a guilty outcome",
+        "scope": "Family and domestic violence-related"
       },
       "family and domestic violence defendants with a guilty outcome": {
-        "population": "Family and domestic violence defendants with a guilty outcome"
+        "population": "Defendants with a guilty outcome",
+        "scope": "Family and domestic violence-related"
       },
       "family and domestic violence offences": {
         "population": "Family and domestic violence offences"
@@ -713,8 +741,7 @@
         "population": "Prisoners and community corrections offenders"
       },
       "number of times offenders proceeded against by police": {
-        "population": "Offenders",
-        "measure": "Number"
+        "population": "Offenders"
       },
       "prison design capacity utilisation": {
         "population": "Prisons",
@@ -859,16 +886,13 @@
         "indigenous_status": "Non-Indigenous"
       },
       "number of prisoners": {
-        "population": "Prisoners",
-        "measure": "Number"
+        "population": "Prisoners"
       },
       "number of sentenced prisoners": {
-        "population": "Sentenced prisoners",
-        "measure": "Number"
+        "population": "Sentenced prisoners"
       },
       "number of unsentenced prisoners": {
-        "population": "Unsentenced prisoners",
-        "measure": "Number"
+        "population": "Unsentenced prisoners"
       },
       "periodic detainees": {
         "population": "Periodic detainees"
@@ -923,8 +947,7 @@
         "measure": "Proportion"
       },
       "number of federal prisoners": {
-        "population": "Federal prisoners",
-        "measure": "Number"
+        "population": "Federal prisoners"
       },
       "prisoner rate": {
         "population": "Prisoners",
@@ -948,13 +971,11 @@
       },
       "number of indigenous prisoners": {
         "population": "Prisoners",
-        "indigenous_status": "Aboriginal and Torres Strait Islander",
-        "measure": "Number"
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
       },
       "number of indigenous sentenced prisoners": {
         "population": "Sentenced prisoners",
-        "indigenous_status": "Aboriginal and Torres Strait Islander",
-        "measure": "Number"
+        "indigenous_status": "Aboriginal and Torres Strait Islander"
       },
       "proportion of indigenous prisoners": {
         "population": "Prisoners",
@@ -1018,11 +1039,13 @@
         "population": "COVID-19 related proceedings"
       },
       "family and domestic violence offender rate": {
-        "population": "Offenders of family and domestic violence",
-        "measure": "Offender rate"
+        "population": "Offenders",
+        "measure": "Offender rate",
+        "scope": "Family and domestic violence-related"
       },
       "family and domestic violence related proceedings": {
-        "population": "Family and domestic violence related proceedings"
+        "population": "Police proceedings",
+        "scope": "Family and domestic violence-related"
       },
       "family and domestic violence related proceedings by court action": {
         "population": "Family and domestic violence related proceedings",
@@ -1039,7 +1062,8 @@
         "population": "Offenders of COVID-19 related offences"
       },
       "offenders of family and domestic violence": {
-        "population": "Offenders of family and domestic violence"
+        "population": "Offenders",
+        "scope": "Family and domestic violence-related"
       },
       "offenders of fdv related breach of violence and non-violence orders": {
         "population": "Offenders of family and domestic violence related breach of violence and non-violence orders"
@@ -1055,7 +1079,8 @@
         "scope": "Court actions"
       },
       "proceedings of family and domestic violence": {
-        "population": "Family and domestic violence related proceedings"
+        "population": "Police proceedings",
+        "scope": "Family and domestic violence-related"
       },
       "selected offenders": {
         "population": "Selected offenders"
@@ -1166,7 +1191,7 @@
       },
       "persons aged 15 years and over who experienced non-face-to-face threatened assault in the last 12 months": {
         "population": "Persons aged 15 years and over",
-        "crime_type": "Non-face-to-face threatened assault"
+        "crime_type": "Non face-to-face threatened assault"
       },
       "persons aged 15 years and over who experienced selected personal crimes in the last 12 months": {
         "population": "Persons aged 15 years and over"
@@ -1440,7 +1465,7 @@
       },
       "victims of unlawful entry with intent - other": {
         "population": "Victims",
-        "victim_offence": "Unlawful entry with intent - Other"
+        "victim_offence": "Unlawful entry with intent - other"
       },
       "victims of family and domestic violence–related offences": {
         "population": "Victims",
@@ -1560,7 +1585,7 @@
       },
       "victims of unlawful entry with intent- other": {
         "population": "Victims",
-        "victim_offence": "Unlawful entry with intent- other"
+        "victim_offence": "Unlawful entry with intent - other"
       },
       "victims blackmail/extortion": {
         "population": "Victims",
@@ -1580,7 +1605,7 @@
       },
       "victims of unlawful entry with intent involving the taking of property": {
         "population": "Victims",
-        "victim_offence": "Unlawful entry with intent involving the taking of property"
+        "victim_offence": "Unlawful entry with intent - involving the taking of property"
       },
       "anzsoc23 table 1 victims": {
         "offence_classification": "ANZSOC 2023",
@@ -1604,7 +1629,8 @@
       },
       "victims of sexual assault proportions": {
         "population": "Victims",
-        "victim_offence": "Sexual assault proportions"
+        "victim_offence": "Sexual assault",
+        "measure": "Proportion"
       },
       "aboriginal and torres strait islander victims of family and domestic violence-related offences": {
         "indigenous_status": "Aboriginal and Torres Strait Islander",
@@ -1628,5 +1654,20 @@
         "measure": "Estimated resident population"
       }
     }
+  },
+  "unit_from_measure": {
+    "Number": "no.",
+    "Proportion": "%",
+    "Percentage change": "%",
+    "Mean age": "years",
+    "Median age": "years",
+    "Average weekly total cash earnings": "$",
+    "Average weekly ordinary time cash earnings": "$",
+    "Average hourly total cash earnings": "$",
+    "Average hourly ordinary time cash earnings": "$",
+    "Average weekly total hours paid for": "hours",
+    "Average weekly ordinary time hours paid for": "hours",
+    "Proportion of all proceedings": "%",
+    "Proportion of proceedings for the offence": "%"
   }
 }

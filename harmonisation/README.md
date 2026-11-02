@@ -19,7 +19,10 @@ For each record, in order:
 3. **`split`.** A label that carries several dimensions is replaced by them. Keys are
    the dimension, then the exact label. `null` removes a dimension. Splits may not
    contradict a label already on the record (an error names the sheet and cell),
-   except for dimensions listed in `_replace`.
+   except for dimensions listed in `_replace`. `split.period` also sets `period_type`
+   for pooled and multi-year periods, which share a `reference_date` with single years
+   but are different quantities. Splits run before `from_title`, so a period taken from
+   a title gets no `period_type`.
 
    ```json
    "population": { "Non-Indigenous children": { "indigenous_status": "Non-Indigenous", "population": "Children" } },
@@ -38,7 +41,10 @@ For each record, in order:
    ```
    **`fallback_periods`.** A record still without `period` takes the release's
    reference period from `source_metadata.csv`, mapped through this object
-   (`"2009-10": "2009–10"`, `"2021-05": "May 2021"`).
+   (`"2009-10": "2009–10"`, `"2021-05": "May 2021"`). A period not listed is used as it
+   is, so most periods from titles and this fallback bypass `normalise()`: a new period
+   spelling needs an entry here or a `replace` in its `from_title` rule, not just in the
+   normalisation spec.
 5. **`reference_dates`.** `reference_date` (ISO date) is looked up from `period`, first
    in the publication's own object, then in `default`. Financial years end on 30 June,
    months on their last day, ranges on their last period; plain years are 30 June for

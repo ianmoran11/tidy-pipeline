@@ -36,11 +36,13 @@ check_observations <- function(observations, observations_typed) {
     sprintf("series and period %s: n_releases %d, actually %d", key[first], new$n_releases[first], actual[first])
   }
   # The latest value is never flagged as revised; earlier values are flagged exactly when
-  # they come from another release and their text differs from the latest
+  # they come from another release and their number (or status, where neither has a
+  # number) differs from the latest
   revision_flags_consistent <- function() {
     latest <- new[new$is_latest, ]
     j <- match(key, paste(latest$series_id, latest$period))
-    expected <- new$release_id != latest$release_id[j] & !same(new$published_text, latest$published_text[j])
+    unchanged <- same(new$value, latest$value[j]) & (!is.na(new$value) | same(new$value_status, latest$value_status[j]))
+    expected <- new$release_id != latest$release_id[j] & !unchanged
     bad <- !((new$differs_from_latest == expected) %in% TRUE)
     sprintf("cell %s %s: differs_from_latest is %s", new$sheet_sha256[bad], new$address[bad], new$differs_from_latest[bad])
   }

@@ -1,0 +1,70 @@
+{
+  "description": "Stage 5 (assemble): how per-sheet records become linked tables. See integration/README.md.",
+  "cell_fields": [
+    "row",
+    "col",
+    "address",
+    ".value",
+    ".derived"
+  ],
+  "observation_fields": [
+    "period",
+    "reference_date"
+  ],
+  "measure_fields": [
+    "population",
+    "scope",
+    "measure",
+    "unit",
+    "rate_standardisation",
+    "estimate_type",
+    "data_status",
+    "offence_classification"
+  ],
+  "dimension_order": [
+    "state",
+    "remoteness_area",
+    "socioeconomic_area",
+    "court_level",
+    "sex",
+    "age_group",
+    "indigenous_status",
+    "disability_status",
+    "principal_offence_division",
+    "principal_offence",
+    "most_serious_offence",
+    "method_of_finalisation_group",
+    "method_of_finalisation",
+    "principal_sentence_group",
+    "principal_sentence",
+    "sentence_length",
+    "sentence_basis",
+    "case_duration",
+    "method_of_proceeding",
+    "times_proceeded_against",
+    "child_protection_component",
+    "order_type",
+    "placement_type",
+    "supervision_type",
+    "occupation",
+    "industry",
+    "sector",
+    "employer_size",
+    "method_of_setting_pay",
+    "rate_of_pay",
+    "employee_type",
+    "service",
+    "indicator"
+  ],
+  "source_fields": [
+    "sheet_sha256",
+    "publication_id",
+    "publication",
+    "publisher",
+    "release_id",
+    "release",
+    "release_date",
+    "xlsx_file",
+    "sheet"
+  ]
+}
