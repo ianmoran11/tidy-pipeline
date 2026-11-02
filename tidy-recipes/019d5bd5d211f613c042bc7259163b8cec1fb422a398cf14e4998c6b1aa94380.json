@@ -1,0 +1,165 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "019d5bd5d211f613c042bc7259163b8cec1fb422a398cf14e4998c6b1aa94380",
+  "sheet": "Table S119",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals, subtotals and overlapping age aggregates are retained. Sparse row labels span following rows within the block. Suppression and zero symbols remain values. Unlabelled worksheet calculations and separator marks are annotations, not statistical observations.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A3,B3,A32,B32"
+    },
+    {
+      "name": "source",
+      "cells": "A28,A56"
+    },
+    {
+      "name": "notes",
+      "cells": "A21,A22,A23,A24,A25,A26,A49,A50,A51,A52,A53,A54"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_3_4",
+      "range": "A3:K19",
+      "values_range": "C4:K4,C5:K5,C6:K6,C7:K7,C8:K8,C9:K9,C10:K10,C11:K11,C12:K12,C13:K13,C14:K14,C15:K15,C16:K16,C17:K17,C18:K18,C19:K19",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "WNW",
+          "cells": "A4,A8,A12,A16",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C3,D3,E3,F3,G3,H3,I3,J3,K3"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A1"
+        }
+      ]
+    },
+    {
+      "name": "block_32_33",
+      "range": "A32:K48",
+      "values_range": "C33:K33,C34:K34,C35:K35,C36:K36,C37:K37,C38:K38,C39:K39,C40:K40,C41:K41,C42:K42,C43:K43,C44:K44,C45:K45,C46:K46,C47:K47,C48:K48",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "WNW",
+          "cells": "A33,A37,A41,A45",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "B33,B34,B35,B36,B37,B38,B39,B40,B41,B42,B43,B44,B45,B46,B47,B48",
+          "caption": "Age"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "C32,D32,E32,F32,G32,H32,I32,J32,K32"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A30"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:39:02Z",
+    "tool_version": "0.2.0",
+    "records": 288,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T083343Z-896677a3ecaa",
+    "started_at": "2026-11-02T08:33:48Z",
+    "workbook": "896677a3ecaa2c8dee2e8176a3703e61c5915dfda9a40906a4cc2d174856b50c--aihw-youth-justice-australia-2024-25-detention-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b64-aeb3-76b1-82ec-b52ae201c848",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "413763e3d8c10d513ae6410d4b7f8c99e7572ca8f7d457aff79192501d2c5de3",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `896677a3ecaa2c8dee2e8176a3703e61c5915dfda9a40906a4cc2d174856b50c--aihw-youth-justice-australia-2024-25-detention-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 56 of 56\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 2d3b14b93b46bcd54d009828fd42ef88bebcf45ce786ff2871b3844489b35f8f | missing |\n| \"Notes and Symbols\" | 46511265a2f732f14f2ab1d462f35153d8d4bdb4a383142fe047ab325c9bcdea | missing |\n| \"Table S72\" | 558127d51280eb9e8396d2de03a6d24d6664c263465b16f4c238da33d54ac926 | missing |\n| \"Table S73\" | 49fd4cdf9e3ebad986af5960bb1b99c8c1b2f7db2b2923e4d7215db26be8f9d4 | missing |\n| \"Table S74\" | 34848c19feaa3ae35dbf5d4559293797cbf674034a35c0a967e7fccc4f58abb3 | missing |\n| \"Table S75\" | 2dd491041050db492ed9b5e05d747be1c53d089a05a87991eaade59d337e2cec | missing |\n| \"Table S76\" | 1586d9b740f9ac16065da8593ef4bd4429b3df14d0f978b610f736ea296f8fa1 | missing |\n| \"Table S77\" | e29a1ed722f4d62dd0c3d737f3f2e347700c507d87b4a4641637e62e7760f597 | missing |\n| \"Table S78\" | 6ff46f34b28effdb7c19b533b366269197c488ec84bc109b41969f7004e56c3f | missing |\n| \"Table S79\" | e2951bd60b37f6d98755ad903bed06bf4114e580896527c67230fb232104c1b5 | missing |\n| \"Table S80\" | f2a72cd96e6ebce339bcf7825f1229eff7c65107823a6e0111eca4f9f087b22e | missing |\n| \"Table S81\" | dc21d01bae2124c8bb408a5e18d2e184ba1bf279065e8a90a79ca0b81b402442 | missing |\n| \"Table S82\" | 0a86312c10b8264c3cf74455b5ff0585acbd97536a57e331cf2bb67da122567c | missing |\n| \"Table S83\" | c57b7e854ad0441f3d82bc223328519799e36dac717452e135774b229611c5db | missing |\n| \"Table S84\" | b60adfca66c38ab66726bcdd502bbd16569a8c7018b009434cc77c7cabaa9ad6 | missing |\n| \"Table S85\" | d708b2aa8a53860341aa9ef5bccc3a2f3b5798cb69206333a3fea3922e836430 | missing |\n| \"Table S86\" | 18b15d9ab5a43005ca2af89f2e46f5c5d282bac7c48c9e70e376848246a0084f | missing |\n| \"Table S87\" | 7b15eec40c8adbaad2c81bf832ae68e13025e30ed2e3b37b4180e0ffbd9edcb3 | missing |\n| \"Table S88\" | fe2b3e4cb2f9b284b6ff0d49afb9d8dc6c9e0d94b61314eaf7737e79aeb1f1e8 | missing |\n| \"Table S89\" | c9ab9b163cc2a18a856cdf45a813c0d07bc509ea229fdf3476b2a55f2989b59a | missing |\n| \"Table S90\" | 04d1ec78a671108cd344a687c7bc97334bd723a690da0d8ec5e9bd1dcec574db | missing |\n| \"Table S91\" | 3dc6175aa801fb8fa75ca8af589972fb76be6d2f10dfe7262ba825a56cb54d82 | missing |\n| \"Table S92\" | 5a437ebb11325974b7e069d3e954b83aedc9d4add89c5634c493f3b596e2e489 | missing |\n| \"Table S93\" | 9f933386fac4c15a30a835e9a366cc1b51016b4cb88966a3818afdc3058fc077 | missing |\n| \"Table S94\" | 58707a5e5ad3b5dda5d9ae54a89a65f671a9e67b8c439a252c41acf628dea924 | missing |\n| \"Table S95\" | 7c48920f6594b30c38667fc90499090b8d5750d97716a909644b9c413a7cb8ee | missing |\n| \"Table S96\" | fcc49e01dc58c17744241dee1e1f24e5d8aa4678960a8140f761baf6f1a52570 | missing |\n| \"Table S97\" | 8f87356e25aa9b7ba5c853487d548d39ad23f0ccc667e14b8ee131666d3a3c78 | missing |\n| \"Table S98\" | c52bc72a36959452dca372a617e1312c3c61528ca592e904dc79b8263a5ba95f | missing |\n| \"Table S99\" | 0b922181642e54c5cbb54639b46cac45d687b37eb987f0f49ad1edff3b3aa51f | missing |\n| \"Table S100\" | 474ba25f3c2b4cab17d898f1cfa5ae41c0113f8c3923259b1144b959412e0d31 | missing |\n| \"Table S101\" | f5d42f67b4a2bbbfc01a8008beb463f3e8fb40793c00d37f88cc148e324b34bb | missing |\n| \"Table S102\" | 06a7c54eba426919a440e7ab4445a3e0053f52c9818707c332042cc4c90c8d41 | missing |\n| \"Table S103\" | 44f6ce9fcbd420410f0c2e50e5df65ba2fe1244d15303fbceca0014dfdb14cd8 | missing |\n| \"Table S104\" | 3f8b844a10503221f3e32f36d0ad5aeb33086d58e160c0fb5ec0364874e4e737 | missing |\n| \"Table S105\" | 7af7ee8bb0f4f10c3b48a231111f1ac0687541cfc31bdd4683abb66568cd4d4b | missing |\n| \"Table S106\" | 64187c8cdee030f74933801b3707f004183aa99713cc05b07e16920b699b8cc2 | missing |\n| \"Table S107\" | c235c846d07123c0f44ebe8fe8db743cd2813ac123e90ebc06ae9c8803bac199 | missing |\n| \"Table S108\" | c5bd071ce4477fa7149f01871f27679adfbad20fea7028bc7d4f7f39f3677c40 | missing |\n| \"Table S109\" | fff4cc33b9af118d03c141ee5db2427c9661fb77205a4c7f3c453e036b8e2eec | missing |\n| \"Table S110\" | cec68eb5d6b838332d829e940b989f64553e0bffb599f66ad4b143b44032f329 | missing |\n| \"Table S111\" | e9ad7e90fc2bce1ca51ed57dfa24f6778b9631ae59b5f41ac798afaf3ca51f86 | missing |\n| \"Table S112\" | 17b86349ffa6048f74c07fd883d1cf35b0fb360950acb4a58ecc321015f1778c | missing |\n| \"Table S113\" | a35a76f3356bc4fcb7edf943ef19d95ddc21a46ee03f588861803a862288264d | missing |\n| \"Table S114\" | e497dc951ec448c98edd574f29da98eda7cb76687c04c22b6b7f51620b1b497c | missing |\n| \"Table S115\" | 97f74f777503412a343e0c440eab999f063e6c828ddb0dc5d1d504277eaa8097 | missing |\n| \"Table S116\" | 0bdb40bc56181c7e8c4bcf0b86db97dcd84738277216cbf2a0f2c6911eee38b0 | missing |\n| \"Table S117\" | 58f09f304edb57c530a5daaad13b1bf4f5931644daae04ed38ea0615818355ad | missing |\n| \"Table S118\" | 3d0dbfd1de7504489df33c6ca41c04f0f801d75a242fa4fdee64e2292c587511 | missing |\n| \"Table S119\" | 019d5bd5d211f613c042bc7259163b8cec1fb422a398cf14e4998c6b1aa94380 | missing |\n| \"Table S120\" | dd3af6e28c3588252474d685508846d1a4e90447cf44e1f1762a933b7faaf2ca | missing |\n| \"Table S121\" | 0535634b62f1e8fbf596a7c6f8c24d13c35eae1405586de1efbfa39e3a3cf41b | missing |\n| \"Table S122\" | f2fbed84d7b8946226d51f7455154b66cb49cd267e9c29e86900f133369af40d | missing |\n| \"Table S123\" | 7957695cbe0557ecaa7c33fe6cfa772decfaa6608032787232f949029c308c4c | missing |\n| \"Table S124\" | 21ea5ddbb7c6dde5ac7abef0ba738ff1b287ff996d2c0abb64f404332a32987c | missing |\n| \"Table S125\" | 4a4a585086a0d9bcadc6e47640ea7a914480ddb91f85eed9d055a7969870783e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T083343Z-896677a3ecaa.jsonl"
+  }
+}

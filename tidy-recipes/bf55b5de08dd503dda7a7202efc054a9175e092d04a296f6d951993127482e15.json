@@ -4,15 +4,12 @@
   "sheet": "Table S146",
   "kind": "data",
   "status": "validated",
-  "agent_notes": "Published year 'Dec 208' at A22 and stray 'Fi' at A2 are preserved verbatim. Persons and Total rows/columns are aggregates. ACT/NT age eligibility changes and estimation caveats are retained in notes.",
+  "agent_notes": "Published period label A22 is 'Dec 208' (apparent typo), retained verbatim. Stray 'Fi' in A2 preserved as annotations. Persons and Indigenous-status Total rows retained; notes describe jurisdictional age-scope changes and estimation discrepancies.",
+  "new_dimensions": [],
   "meta_data": [
     {
       "name": "table_title",
       "cells": "A1"
-    },
-    {
-      "name": "source_fragment",
-      "cells": "A2"
     },
     {
       "name": "stub_heading",
@@ -25,6 +22,10 @@
     {
       "name": "source",
       "cells": "A93"
+    },
+    {
+      "name": "annotations",
+      "cells": "A2"
     }
   ],
   "tables": [
@@ -34,19 +35,22 @@
       "values_range": "D4:M84",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "WNW",
-          "cells": "A4,A13,A22,A31,A40,A49,A58,A67,A76"
+          "cells": "A4,A13,A22,A31,A40,A49,A58,A67,A76",
+          "caption": "Year"
         },
         {
-          "name": "Sex",
+          "name": "sex",
           "direction": "WNW",
-          "cells": "B4,B7,B10,B13,B16,B19,B22,B25,B28,B31,B34,B37,B40,B43,B46,B49,B52,B55,B58,B61,B64,B67,B70,B73,B76,B79,B82"
+          "cells": "B4,B7,B10,B13,B16,B19,B22,B25,B28,B31,B34,B37,B40,B43,B46,B49,B52,B55,B58,B61,B64,B67,B70,B73,B76,B79,B82",
+          "caption": "Sex"
         },
         {
-          "name": "Indigenous status",
+          "name": "indigenous_status",
           "direction": "W",
-          "cells": "C4:C84"
+          "cells": "C4:C84",
+          "caption": "Indigenous status"
         },
         {
           "name": "state",
@@ -57,15 +61,15 @@
     }
   ],
   "validation": {
-    "checked_at": "2026-10-31T06:33:10Z",
+    "checked_at": "2026-11-02T08:35:06Z",
     "tool_version": "0.2.0",
     "records": 810,
     "failures": []
   },
   "generation": {
     "method": "agent",
-    "run_id": "20261031T063116Z-80b2c299c011",
-    "started_at": "2026-10-31T06:31:16Z",
+    "run_id": "20261102T083317Z-80b2c299c011",
+    "started_at": "2026-11-02T08:33:22Z",
     "workbook": "80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482--aihw-youth-justice-australia-2024-25-population-source.xlsx",
     "agent": {
       "harness": "pi",
@@ -73,7 +77,9 @@
       "provider": "openai-codex",
       "model": "gpt-6.1-sol",
       "thinking_level": "medium",
-      "session_id": "01a190a7-c637-76a7-8f73-617c17b2946e",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b64-461d-71ce-b417-5fa86549bcb0",
       "tools": [
         "read",
         "write",
@@ -114,23 +120,24 @@
       "name": "tidy-recipe-authoring",
       "path": "agents/skills/tidy-recipe-authoring",
       "files": {
-        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
-        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
-        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
-        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
-        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
       }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
     },
     "prompt": {
       "template": "agents/prompts/worker.md",
-      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
-      "sha256": "1f1547922cf1d5036c556d777effadcd006aa02157991fdac6afdf4d87e81a76",
-      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482--aihw-youth-justice-australia-2024-25-population-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a5d4e3008b974cc0e79a32f2c0e511efd29ae84caebc00a561a66820a719d56b | missing |\n| \"Notes and Symbols\" | 78d784211916843abcfdb908249862facaef7fc8440ee23c2479d27e9285f85c | missing |\n| \"Table S142\" | 7cb0c4aa62cbc2a4ea4955fe6a22a5a5ffc7f69d2ccf5b68f62b51850c6d5599 | missing |\n| \"Table S143\" | 01dda72e4721a3ef3f3361fc4f26b69d4a62cf36b07612c0d1b22ce6e848e509 | missing |\n| \"Table S144\" | ebce48f1a21e86ebeb9acedd88f08284432719a96e51404183154f57680bdcbb | missing |\n| \"Table S145\" | 05fb76483c98867caa4f15a2853e9e6283ac20e3349542b5231a08aeb6741ab7 | missing |\n| \"Table S146\" | bf55b5de08dd503dda7a7202efc054a9175e092d04a296f6d951993127482e15 | missing |\n| \"Table S147\" | a4b6c7846de3566b64e52f88c1ca0978f6bae26bc32c30297e5dc033ba25e574 | missing |\n| \"Table S148\" | 01ba149a701b7d9114fce52d2a0364a5148d1eecf56fbf53a9be7e5c2718f643 | missing |\n| \"Table S149\" | 3c5ec158517a19e65dce040c3d5b3ca18b819f52e2eb20d142e6d4e8669de231 | missing |\n| \"Table S150\" | 9401e5143744b8039c5ef69456e5f10fa7f5c5da88f047464eb0d71a4f8a2ab3 | missing |\n| \"Table S151\" | 72fbe4992bc4d4c7db1781e7a46f0a2107a0d1448690da3678419f5353b9339f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "60f73768b45949016d8840f84cdfb9587efc7003add66475b83b0e1feb71c083",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482--aihw-youth-justice-australia-2024-25-population-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 10 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table S142\" | 7cb0c4aa62cbc2a4ea4955fe6a22a5a5ffc7f69d2ccf5b68f62b51850c6d5599 | missing |\n| \"Table S143\" | 01dda72e4721a3ef3f3361fc4f26b69d4a62cf36b07612c0d1b22ce6e848e509 | missing |\n| \"Table S144\" | ebce48f1a21e86ebeb9acedd88f08284432719a96e51404183154f57680bdcbb | missing |\n| \"Table S145\" | 05fb76483c98867caa4f15a2853e9e6283ac20e3349542b5231a08aeb6741ab7 | missing |\n| \"Table S146\" | bf55b5de08dd503dda7a7202efc054a9175e092d04a296f6d951993127482e15 | missing |\n| \"Table S147\" | a4b6c7846de3566b64e52f88c1ca0978f6bae26bc32c30297e5dc033ba25e574 | missing |\n| \"Table S148\" | 01ba149a701b7d9114fce52d2a0364a5148d1eecf56fbf53a9be7e5c2718f643 | missing |\n| \"Table S149\" | 3c5ec158517a19e65dce040c3d5b3ca18b819f52e2eb20d142e6d4e8669de231 | missing |\n| \"Table S150\" | 9401e5143744b8039c5ef69456e5f10fa7f5c5da88f047464eb0d71a4f8a2ab3 | missing |\n| \"Table S151\" | 72fbe4992bc4d4c7db1781e7a46f0a2107a0d1448690da3678419f5353b9339f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
     },
-    "log": "agents/logs/80b2c299c011c28ef4ba7804064948632624017e0455f8f7a8eb5d34c17e6482.jsonl",
-    "backfilled": {
-      "at": "2026-10-31T06:58:48Z",
-      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
-    }
+    "log": "agents/logs/20261102T083317Z-80b2c299c011.jsonl"
   }
 }

@@ -1,0 +1,650 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6d727809f1062893a99cf49a9fff8a266e732217cf1c2d37db7f54833d80cea6",
+  "sheet": "Table 7A.6",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published court hierarchy and all subtotal/total rows retained; court_scope distinguishes subdivisions where a court heading spans child categories. Symbols and footnote markers retained.",
+  "new_dimensions": [
+    {
+      "name": "appeal_status",
+      "description": "Appeal, non-appeal or all matters in the court."
+    },
+    {
+      "name": "court_scope",
+      "description": "Published subdivision of a court level, including children's courts and totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "notes",
+      "cells": "C129,A131,C131,A132,C132,A133,C133,C134,A135,C135,C136,A137,C137"
+    },
+    {
+      "name": "source",
+      "cells": "A139,E139"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A6:V12",
+      "values_range": "M6:V6,M7:V7,M8:V8,M9:V9,M10:V10,M11:V11,M12:V12",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D6,D7,D8,D9,D10,D11,D12"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L6,L7,L8,L9,L10,L11,L12"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A14:V20",
+      "values_range": "M14:V14,M15:V15,M16:V16,M17:V17,M18:V18,M19:V19,M20:V20",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D14,D15,D16,D17,D18,D19,D20"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L14,L15,L16,L17,L18,L19,L20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "A22:V28",
+      "values_range": "M22:V22,M23:V23,M24:V24,M25:V25,M26:V26,M27:V27,M28:V28",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D22,D23,D24,D25,D26,D27,D28"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L22,L23,L24,L25,L26,L27,L28"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_4",
+      "range": "A31:V37",
+      "values_range": "M31:V31,M32:V32,M33:V33,M34:V34,M35:V35,M36:V36,M37:V37",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B29"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C30"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D31,D32,D33,D34,D35,D36,D37"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L31,L32,L33,L34,L35,L36,L37"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_5",
+      "range": "A39:V45",
+      "values_range": "M39:V39,M40:V40,M41:V41,M42:V42,M43:V43,M44:V44,M45:V45",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B29"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D39,D40,D41,D42,D43,D44,D45"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L39,L40,L41,L42,L43,L44,L45"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_6",
+      "range": "A47:V53",
+      "values_range": "M47:V47,M48:V48,M49:V49,M50:V50,M51:V51,M52:V52,M53:V53",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B29"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D47,D48,D49,D50,D51,D52,D53"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L47,L48,L49,L50,L51,L52,L53"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_7",
+      "range": "A56:V62",
+      "values_range": "M56:V56,M57:V57,M58:V58,M59:V59,M60:V60,M61:V61,M62:V62",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B54"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C55"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D56,D57,D58,D59,D60,D61,D62"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L56,L57,L58,L59,L60,L61,L62"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_8",
+      "range": "A64:V70",
+      "values_range": "M64:V64,M65:V65,M66:V66,M67:V67,M68:V68,M69:V69,M70:V70",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B54"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C63"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D64,D65,D66,D67,D68,D69,D70"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L64,L65,L66,L67,L68,L69,L70"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_9",
+      "range": "A72:V78",
+      "values_range": "M72:V72,M73:V73,M74:V74,M75:V75,M76:V76,M77:V77,M78:V78",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B54"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C71"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D72,D73,D74,D75,D76,D77,D78"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L72,L73,L74,L75,L76,L77,L78"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_10",
+      "range": "A80:V86",
+      "values_range": "M80:V80,M81:V81,M82:V82,M83:V83,M84:V84,M85:V85,M86:V86",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B79"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D80,D81,D82,D83,D84,D85,D86"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L80,L81,L82,L83,L84,L85,L86"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_11",
+      "range": "A89:V95",
+      "values_range": "M89:V89,M90:V90,M91:V91,M92:V92,M93:V93,M94:V94,M95:V95",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B87"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C88"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D89,D90,D91,D92,D93,D94,D95"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L89,L90,L91,L92,L93,L94,L95"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_12",
+      "range": "A97:V103",
+      "values_range": "M97:V97,M98:V98,M99:V99,M100:V100,M101:V101,M102:V102,M103:V103",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B87"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D97,D98,D99,D100,D101,D102,D103"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L97,L98,L99,L100,L101,L102,L103"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_13",
+      "range": "A105:V111",
+      "values_range": "M105:V105,M106:V106,M107:V107,M108:V108,M109:V109,M110:V110,M111:V111",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B87"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C104"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D105,D106,D107,D108,D109,D110,D111"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L105,L106,L107,L108,L109,L110,L111"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_14",
+      "range": "A113:V119",
+      "values_range": "M113:V113,M114:V114,M115:V115,M116:V116,M117:V117,M118:V118,M119:V119",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B112"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D113,D114,D115,D116,D117,D118,D119"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L113,L114,L115,L116,L117,L118,L119"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    },
+    {
+      "name": "block_15",
+      "range": "A121:V127",
+      "values_range": "M121:V121,M122:V122,M123:V123,M124:V124,M125:V125,M126:V126,M127:V127",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B120"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D121,D122,D123,D124,D125,D126,D127"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L121,L122,L123,L124,L125,L126,L127"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:V2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:40:53Z",
+    "tool_version": "0.2.0",
+    "records": 1050,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T083621Z-bf81e67ee9ba",
+    "started_at": "2026-11-02T08:36:24Z",
+    "workbook": "bf81e67ee9ba647e862c8da5bd841732f722112f3c71f67ef881371b3dbb3c3a--report-on-government-services-justice-2020-courts-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b67-0dbc-74c3-89e4-1bebf38c89b4",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "828a686de43a620504ad5a8e1755706d3732d6f10dd34d3ce97974ad20d76169",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `bf81e67ee9ba647e862c8da5bd841732f722112f3c71f67ef881371b3dbb3c3a--report-on-government-services-justice-2020-courts-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2020 — Justice\n- Sheets needing a recipe: 36 of 36\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d7b7e0074d1d5ee0d621d2d2b7216e6fd17940f251364ad04d0ab3dee4c4a1b9 | missing |\n| \"Table 7A.1\" | fc08994bcf5619731a4dfa8336b4d1402401b3c88ebbc4329b7ef5f90c448dfa | missing |\n| \"Table 7A.2\" | aea09ba868c9e5e9cfcb9fea4f3d0a166fe2208d26d08ddbdf0d6eac63ee5333 | missing |\n| \"Table 7A.3\" | f49448c9c63861baa07ff156c90c57c1c81de844ac0e696731ad03f1ad0f0356 | missing |\n| \"Table 7A.4\" | 86aba0915cdf2fa1f8c9e896495a7526f6ce0b9f33cd696b7680358594e0b289 | missing |\n| \"Table 7A.5\" | d7bbe22c3414b39adf295dfab9e49493119333abb9266b6f0bc0dc112575e585 | missing |\n| \"Table 7A.6\" | 6d727809f1062893a99cf49a9fff8a266e732217cf1c2d37db7f54833d80cea6 | missing |\n| \"Table 7A.7\" | b88f6eb7aeaf39ff5854d11c0d0ce203b770bdbad4d3cad49d34b1ebae4e3176 | missing |\n| \"Table 7A.8\" | 78db2fbf44edc676b8a939c21aeafdb8c6d9e75622ccbfe7ff02493bc564fcf8 | missing |\n| \"Table 7A.9\" | cb6071b582fa7283b156ee8831a1cd917198603d47335825adec826454693c94 | missing |\n| \"Table 7A.10\" | 04339d6be3bf81ff32d558ea6fd9f49284e9b6f759acff876fd3c9cfb532aa47 | missing |\n| \"Table 7A.11\" | 67b54862a21a2175ba3ae9b5090a063a610843a04440ee72548e67ab03cc050e | missing |\n| \"Table 7A.12\" | 04d9443520c7aeb24491ff17536548703b08ee97922a48fc547cd80de2756834 | missing |\n| \"Table 7A.13\" | c860c021d1e496755e34a516f3906566917457afea0ef687277f55d97648ca90 | missing |\n| \"Table 7A.14\" | daf64a62965097415e75d647afdc3bc5b1f3af6c0dc6072832a6b0fab2409e50 | missing |\n| \"Table 7A.15\" | 40fcfb2cd97dfddeae5ee0c86efadc5f52b4b12ea09d849b6f070b1e524c173e | missing |\n| \"Table 7A.16\" | b38e44ec7c73c2dc3e5ad804fad95597e0202263306ec05718dbcfabb1ac2357 | missing |\n| \"Table 7A.17\" | 45be8a96a379a1fdcc217e5c449270c2e6bd0914984eefa4932d7d737ecbe081 | missing |\n| \"Table 7A.18\" | 8489b7131e24da85feac6e5a281f2ba5f69f89428d3ad13d10cd228bab018ab1 | missing |\n| \"Table 7A.19\" | 4a5e7626a0327288d78a8552e0992482cd6ab35964e6f9485326eb56c0585beb | missing |\n| \"Table 7A.20\" | 34651c805bed335ff03b4c4b805404608584c4ab3edec0a525839c2f31c77b0c | missing |\n| \"Table 7A.21\" | 76c9788aa52062e41a9149e9e5be1acf10b6df198aa563cb404c18e5f091c237 | missing |\n| \"Table 7A.22\" | 120782ff3374acef103597dc548f3c793106f29f1d0d6d6709b61f02a54ab98e | missing |\n| \"Table 7A.23\" | 9db42260c8fbe4684325a4b78b4fcdd8bcf0ff1de4c44472d1ed604ca9f99e37 | missing |\n| \"Table 7A.24\" | 02a1a786dc9138db6290ea1377c52e2ebce1dd6c13c1959650d7a61fd346136a | missing |\n| \"Table 7A.25\" | a0d97a12f270e044d724ab812e2480f01f339c04077358c9ccbea40666d97610 | missing |\n| \"Table 7A.26\" | a75fe04acf3d74a19667463999a9bee87872fe0beb62e7f1c829a6a7e9aa904a | missing |\n| \"Table 7A.27\" | 32d2bc7c44c1537cc4d1a80c9e4e3a01bb354300e63b4b90e1042d6e4e161ead | missing |\n| \"Table 7A.28\" | a3bf777ea8de6c84bb0d50589ca09c5f25b947790c5eaddfe8db5c0e0bab15ef | missing |\n| \"Table 7A.29\" | 639d26e9d3ebb5733485508adb772d8c361ccf326db53d05783a03b1e8443ab8 | missing |\n| \"Table 7A.30\" | 123e12db47a067a436b2b646b0168e7c72d1ac1c7a367f5531b956fd37427fb7 | missing |\n| \"Table 7A.31\" | f1b8fd620989953afb63dc34dbaac345375fe54380c1a8cc2e6ccd147ebae7a2 | missing |\n| \"Table 7A.32\" | a747139d428315d3a2357ea8e8a40ecc6a0392372df2e96077c7e886cbcec405 | missing |\n| \"Table 7A.33\" | bcc70dddedea5dbba74ba553653fada82a732d73419d2d07e01a8ddd0f98c865 | missing |\n| \"Table 7A.34\" | 3b998c240660d52089905e9ec10b78fcdbf2bfb4c07279a24ac87cfff8f6e0c8 | missing |\n| \"Table 7A.35\" | 7c3e546601b9d8c6f70d4eb7d8acbed7df73117db43f75764e74034fc54f5d37 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T083621Z-bf81e67ee9ba.jsonl"
+  }
+}

@@ -4,37 +4,43 @@
   "sheet": "Table S16",
   "kind": "data",
   "status": "validated",
-  "agent_notes": "Published totals and subtotals are retained as observations, not additive categories. Sparse row groups apply downward; age aggregates overlap individual ages. Symbols remain unchanged. Stray unlabelled worksheet cells outside statistical blocks are retained as sheet metadata, not observations.",
+  "agent_notes": "Published totals and subtotals are retained, including overlapping age aggregates. Sparse outer row headings span following rows. Titles distinguish average-day, annual and rate panels. Unlabelled worksheet remnants outside the statistical blocks are retained as annotations, not observations.",
   "meta_data": [
     {
-      "name": "stub_heading_1",
+      "name": "stub_heading",
       "cells": "A3,B3"
     },
     {
-      "name": "notes_and_worksheet_annotations",
-      "cells": "A20,A22"
+      "name": "source",
+      "cells": "A22"
+    },
+    {
+      "name": "notes",
+      "cells": "A20"
     }
   ],
   "tables": [
     {
-      "name": "block_1",
-      "range": "A3:K18",
-      "values_range": "C4,D4,E4,F4,G4,H4,I4,J4,K4,C5,D5,E5,F5,G5,H5,I5,J5,K5,C6,D6,E6,F6,G6,H6,I6,J6,K6,C7,D7,E7,F7,G7,H7,I7,J7,K7,C8,D8,E8,F8,G8,H8,I8,J8,K8,C9,D9,E9,F9,G9,H9,I9,J9,K9,C10,D10,E10,F10,G10,H10,I10,J10,K10,C11,D11,E11,F11,G11,H11,I11,J11,K11,C12,D12,E12,F12,G12,H12,I12,J12,K12,C13,D13,E13,F13,G13,H13,I13,J13,K13,C14,D14,E14,F14,G14,H14,I14,J14,K14,C15,D15,E15,F15,G15,H15,I15,J15,K15,C16,D16,E16,F16,G16,H16,I16,J16,K16,C17,D17,E17,F17,G17,H17,I17,J17,K17,C18,D18,E18,F18,G18,H18,I18,J18,K18",
+      "name": "panel_1",
+      "range": "A4:K18",
+      "values_range": "C4:K4,C5:K5,C6:K6,C7:K7,C8:K8,C9:K9,C10:K10,C11:K11,C12:K12,C13:K13,C14:K14,C15:K15,C16:K16,C17:K17,C18:K18",
       "headers": [
-        {
-          "name": "Year",
-          "direction": "WNW",
-          "cells": "A4,A7,A10,A13,A16"
-        },
-        {
-          "name": "Supervision",
-          "direction": "W",
-          "cells": "B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18"
-        },
         {
           "name": "state",
           "direction": "N",
           "cells": "C3,D3,E3,F3,G3,H3,I3,J3,K3"
+        },
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "WNW",
+          "cells": "A4,A7,A10,A13,A16"
+        },
+        {
+          "name": "supervision_history",
+          "caption": "Supervision",
+          "direction": "W",
+          "cells": "B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18"
         }
       ],
       "meta_data": [
@@ -46,15 +52,15 @@
     }
   ],
   "validation": {
-    "checked_at": "2026-10-31T06:37:02Z",
+    "checked_at": "2026-11-02T08:36:31Z",
     "tool_version": "0.2.0",
     "records": 135,
     "failures": []
   },
   "generation": {
     "method": "agent",
-    "run_id": "20261031T063336Z-6e2f6f31a9a2",
-    "started_at": "2026-10-31T06:33:36Z",
+    "run_id": "20261102T083157Z-6e2f6f31a9a2",
+    "started_at": "2026-11-02T08:32:06Z",
     "workbook": "6e2f6f31a9a2c4861a3523bb6b2bdbcb1035f77514dec8e781a1d562f6c14563--aihw-youth-justice-australia-2024-25-supervision-source.xlsx",
     "agent": {
       "harness": "pi",
@@ -62,7 +68,9 @@
       "provider": "openai-codex",
       "model": "gpt-6.1-sol",
       "thinking_level": "medium",
-      "session_id": "01a190a9-e66c-71fc-b574-6a4f5a880285",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b63-1f59-73a0-bf5e-1ca58ebbf7e4",
       "tools": [
         "read",
         "write",
@@ -103,23 +111,24 @@
       "name": "tidy-recipe-authoring",
       "path": "agents/skills/tidy-recipe-authoring",
       "files": {
-        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
-        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
-        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
-        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
-        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
       }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
     },
     "prompt": {
       "template": "agents/prompts/worker.md",
-      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
-      "sha256": "d4e205c34f47e4a9552e7944c0e4dc8e4b4a08d0be59c78e60fe16c87b902be1",
-      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6e2f6f31a9a2c4861a3523bb6b2bdbcb1035f77514dec8e781a1d562f6c14563--aihw-youth-justice-australia-2024-25-supervision-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 35 of 35\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d9135191aac8f2d35d0e123fc81373d5fc7e0478f6e87f312263d7e00a3700ab | missing |\n| \"Notes and symbols\" | 0aecc02fe7fe4885a6bbefbf751624f5f0314b1fa4fc86f62a0a18e4784f8076 | missing |\n| \"Table S1\" | 7216312bb9b9028dd2b9f42ef45d1047a255bc2a15e3a4f06210710d88718b31 | missing |\n| \"Table S2\" | 91c4868943b6a0e227f9fbf8f6a2ad6e0187b70f50182f784384169d7970373f | missing |\n| \"Table S3\" | eacbac54616e9146f3553a8fff87dceb2ca15a7f9f1a06c1826952d3989c88cb | missing |\n| \"Table S4\" | fc41cf419e689c26b72bc13156d0653c701530387079604535aadd35b8eaea46 | missing |\n| \"Table S5\" | 195400413cbd1059803d5879a662b8b1b096fd34f675a468832cb9f28f8ef7d4 | missing |\n| \"Table S6\" | db57ba336bb600c7d2301f4f5825dc13896c2a07a6c44e2d79176a0f4002d765 | missing |\n| \"Table S7\" | 3ec4bde9de360e8dc4146ecb88565d55fd8faf2930f464c1f31965bb53314810 | missing |\n| \"Table S8\" | 250d170892a02fa8478b8dfb99aeab0913bc4dfb500c1a136568c9424490ca66 | missing |\n| \"Table S9\" | e80c311460138006d269383c85a53788c535d5d22f8ff5008543b2759764b0fe | missing |\n| \"Table S10\" | 9a44667d4e9f8cdf63c7af6cbe5ce7cf85d413cc16970c733ee44011f9805e53 | missing |\n| \"Table S11\" | 10fd824e0ffa07dd2839caf9e47223fafd528777f6070d164ea38b6d1be7c603 | missing |\n| \"Table S12\" | 68e22f3424d89cba2de022a88862673a81073904dac6188d9e98b333b2d1a537 | missing |\n| \"Table S13\" | ffafe30cba3dfe0f74581f9ef8528f2941082afa994983e491a9df628dd7495f | missing |\n| \"Table S14\" | a3b498a9add8609309bbbf87a2297bef734d3e80de8cd8c6820aafe31e41c6df | missing |\n| \"Table S15\" | 392a2e77b9148e74ff530c857bdcfbabbfd7cae49ccca28e525ee71fbb73b289 | missing |\n| \"Table S16\" | edd699877800f17a2433c509621570e495c9da62976c953734138d989dcacfa4 | missing |\n| \"Table S17\" | a4b44047a79ed44000149856e76d6b4b7afbc40f1a2b9b68fa8c89c45acb47b4 | missing |\n| \"Table S18\" | 2785d281cee47097e2b38b63d820b64745646426e4e8d2295d421136bba48c1a | missing |\n| \"Table S19\" | b46a543ff7c8368171fde799ce7b32bddff16ca4ed36c34087086dceea31ff91 | missing |\n| \"Table S20\" | ab5a723fea758ad9e49c58a205ee4ae56e0d779feb31ba8c26e9d7e7b59cdac1 | missing |\n| \"Table S21\" | e2d88baaf8c55162c8246d0e78d69ce85482786adfe087c466350fa1e3ea01b5 | missing |\n| \"Table S22\" | 5db689fae6762b5de7410e82525316a81ca5ef224a59c1bd9fa39a95f5ad45e1 | missing |\n| \"Table S23\" | d649814ca65c3bc5dcf251b57791f58ab72e1432e1263d244cc2dcf315a3fd2d | missing |\n| \"Table S24\" | 0ff6e74360b6dfb40e4ededb5a47c388326794457c460f5137a466436055db5a | missing |\n| \"Table S25\" | 22458586a4f61631fba286328051c3f5e5c7bc1b530c53931a6f88a5e170e42e | missing |\n| \"Table S26\" | 3c67412b547dec76d38227e3a2b7fbffd132846090996918394f1cebc49f7699 | missing |\n| \"Table S27\" | dad5d0fa18d8385fd1524a29d6a055031d537b978a5adf1ff08feee8e9d8fb14 | missing |\n| \"Table S28\" | d611fcc8fca2f709060631feb49457b40cbd42ba7ee7e9959984af13d585466f | missing |\n| \"Table S29\" | b388f83e159a6293b39f43f3abaa0e37ac4272bbea4732ad4d9a066875d70199 | missing |\n| \"Table S30\" | a34420f4ac0b9e72a20522fd72115227a7107ddbd28af734535e1b2674132d40 | missing |\n| \"Table S31\" | e84c9c321357219163c73bc482bade0da159eb0c4c6fb29ef51123eb16757645 | missing |\n| \"Table S32\" | f9ecea3b638556828f7ca2c9e494355b7f211081fce6e05e9d34b5251018de4f | missing |\n| \"Table S33\" | a70a89933ec6471341029158b1a6da12314b5b98f50e20d8c896313b4a034bdf | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b5baa0c6b7e0d7a7b48192cca92bbe9b47d4a62be81f57f350275f880b7cda02",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6e2f6f31a9a2c4861a3523bb6b2bdbcb1035f77514dec8e781a1d562f6c14563--aihw-youth-justice-australia-2024-25-supervision-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 33 of 35\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table S1\" | 7216312bb9b9028dd2b9f42ef45d1047a255bc2a15e3a4f06210710d88718b31 | missing |\n| \"Table S2\" | 91c4868943b6a0e227f9fbf8f6a2ad6e0187b70f50182f784384169d7970373f | missing |\n| \"Table S3\" | eacbac54616e9146f3553a8fff87dceb2ca15a7f9f1a06c1826952d3989c88cb | missing |\n| \"Table S4\" | fc41cf419e689c26b72bc13156d0653c701530387079604535aadd35b8eaea46 | missing |\n| \"Table S5\" | 195400413cbd1059803d5879a662b8b1b096fd34f675a468832cb9f28f8ef7d4 | missing |\n| \"Table S6\" | db57ba336bb600c7d2301f4f5825dc13896c2a07a6c44e2d79176a0f4002d765 | missing |\n| \"Table S7\" | 3ec4bde9de360e8dc4146ecb88565d55fd8faf2930f464c1f31965bb53314810 | missing |\n| \"Table S8\" | 250d170892a02fa8478b8dfb99aeab0913bc4dfb500c1a136568c9424490ca66 | missing |\n| \"Table S9\" | e80c311460138006d269383c85a53788c535d5d22f8ff5008543b2759764b0fe | missing |\n| \"Table S10\" | 9a44667d4e9f8cdf63c7af6cbe5ce7cf85d413cc16970c733ee44011f9805e53 | missing |\n| \"Table S11\" | 10fd824e0ffa07dd2839caf9e47223fafd528777f6070d164ea38b6d1be7c603 | missing |\n| \"Table S12\" | 68e22f3424d89cba2de022a88862673a81073904dac6188d9e98b333b2d1a537 | missing |\n| \"Table S13\" | ffafe30cba3dfe0f74581f9ef8528f2941082afa994983e491a9df628dd7495f | missing |\n| \"Table S14\" | a3b498a9add8609309bbbf87a2297bef734d3e80de8cd8c6820aafe31e41c6df | missing |\n| \"Table S15\" | 392a2e77b9148e74ff530c857bdcfbabbfd7cae49ccca28e525ee71fbb73b289 | missing |\n| \"Table S16\" | edd699877800f17a2433c509621570e495c9da62976c953734138d989dcacfa4 | missing |\n| \"Table S17\" | a4b44047a79ed44000149856e76d6b4b7afbc40f1a2b9b68fa8c89c45acb47b4 | missing |\n| \"Table S18\" | 2785d281cee47097e2b38b63d820b64745646426e4e8d2295d421136bba48c1a | missing |\n| \"Table S19\" | b46a543ff7c8368171fde799ce7b32bddff16ca4ed36c34087086dceea31ff91 | missing |\n| \"Table S20\" | ab5a723fea758ad9e49c58a205ee4ae56e0d779feb31ba8c26e9d7e7b59cdac1 | missing |\n| \"Table S21\" | e2d88baaf8c55162c8246d0e78d69ce85482786adfe087c466350fa1e3ea01b5 | missing |\n| \"Table S22\" | 5db689fae6762b5de7410e82525316a81ca5ef224a59c1bd9fa39a95f5ad45e1 | missing |\n| \"Table S23\" | d649814ca65c3bc5dcf251b57791f58ab72e1432e1263d244cc2dcf315a3fd2d | missing |\n| \"Table S24\" | 0ff6e74360b6dfb40e4ededb5a47c388326794457c460f5137a466436055db5a | missing |\n| \"Table S25\" | 22458586a4f61631fba286328051c3f5e5c7bc1b530c53931a6f88a5e170e42e | missing |\n| \"Table S26\" | 3c67412b547dec76d38227e3a2b7fbffd132846090996918394f1cebc49f7699 | missing |\n| \"Table S27\" | dad5d0fa18d8385fd1524a29d6a055031d537b978a5adf1ff08feee8e9d8fb14 | missing |\n| \"Table S28\" | d611fcc8fca2f709060631feb49457b40cbd42ba7ee7e9959984af13d585466f | missing |\n| \"Table S29\" | b388f83e159a6293b39f43f3abaa0e37ac4272bbea4732ad4d9a066875d70199 | missing |\n| \"Table S30\" | a34420f4ac0b9e72a20522fd72115227a7107ddbd28af734535e1b2674132d40 | missing |\n| \"Table S31\" | e84c9c321357219163c73bc482bade0da159eb0c4c6fb29ef51123eb16757645 | missing |\n| \"Table S32\" | f9ecea3b638556828f7ca2c9e494355b7f211081fce6e05e9d34b5251018de4f | missing |\n| \"Table S33\" | a70a89933ec6471341029158b1a6da12314b5b98f50e20d8c896313b4a034bdf | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
     },
-    "log": "agents/logs/6e2f6f31a9a2c4861a3523bb6b2bdbcb1035f77514dec8e781a1d562f6c14563.jsonl",
-    "backfilled": {
-      "at": "2026-10-31T06:58:48Z",
-      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
-    }
+    "log": "agents/logs/20261102T083157Z-6e2f6f31a9a2.jsonl"
   }
 }

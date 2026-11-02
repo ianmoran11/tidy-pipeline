@@ -1,0 +1,3903 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "9680cb1f7a46b39a7948fdba1a29acc272847f7aba9bf55156c06b7bf8cca4c3",
+  "sheet": "Table 6A.4",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "c8d8ddffc4faa121bfa4c671b6f544accdd554f4b05fa63fee981b926b39ef57",
+  "agent_notes": "Published outline hierarchy and all totals/subtotals retained. Block dimensions distinguish parent headings; row labels, footnote markers and missing-value/quality symbols remain as published. Paired survey confidence intervals are separate tables labelled by the published confidence-interval note; unreported interval cells are not fabricated.",
+  "new_dimensions": [
+    {
+      "name": "survey_response",
+      "description": "Published response category in the police satisfaction, safety, integrity and road-safety surveys."
+    },
+    {
+      "name": "time_of_day",
+      "description": "Daytime or nighttime context of the perceived-safety question."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C332,C334,C335,A337,C337,A338,C338,A339,C339,A340,C340,A341,C341,A342,C342,A343,C343"
+    },
+    {
+      "name": "source",
+      "cells": "A345,E345"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_estimate",
+      "range": "D6,D7,D8,D9,L6,L7,L8,L9,M6,O6,Q6,S6,U6,W6,Y6,AA6,AC6,M7,O7,Q7,S7,U7,W7,Y7,AA7,AC7,M8,O8,Q8,S8,U8,W8,Y8,AA8,AC8,M9,O9,Q9,S9,U9,W9,Y9,AA9,AC9",
+      "values_range": "M6,O6,Q6,S6,U6,W6,Y6,AA6,AC6,M7,O7,Q7,S7,U7,W7,Y7,AA7,AC7,M8,O8,Q8,S8,U8,W8,Y8,AA8,AC8,M9,O9,Q9,S9,U9,W9,Y9,AA9,AC9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B4"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D6,D7,D8,D9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L7,L8,L9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_2_interval",
+      "range": "D6,D7,D8,L6,L7,L8,N6,P6,R6,T6,V6,X6,Z6,AB6,AD6,N7,P7,R7,T7,V7,X7,Z7,AB7,AD7,N8,P8,R8,T8,V8,X8,Z8,AB8,AD8",
+      "values_range": "N6,P6,R6,T6,V6,X6,Z6,AB6,AD6,N7,P7,R7,T7,V7,X7,Z7,AB7,AD7,N8,P8,R8,T8,V8,X8,Z8,AB8,AD8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B4"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D6,D7,D8"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L7,L8"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_3_estimate",
+      "range": "D10,D11,L10,L11,M10,O10,Q10,S10,U10,W10,Y10,AA10,AC10,M11,O11,Q11,S11,U11,W11,Y11,AA11,AC11",
+      "values_range": "M10,O10,Q10,S10,U10,W10,Y10,AA10,AC10,M11,O11,Q11,S11,U11,W11,Y11,AA11,AC11",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B4"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D10,D11"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L10,L11"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_4_estimate",
+      "range": "D14,D15,D16,D17,L14,L15,L16,L17,M14,O14,Q14,S14,U14,W14,Y14,AA14,AC14,M15,O15,Q15,S15,U15,W15,Y15,AA15,AC15,M16,O16,Q16,S16,U16,W16,Y16,AA16,AC16,M17,O17,Q17,S17,U17,W17,Y17,AA17,AC17",
+      "values_range": "M14,O14,Q14,S14,U14,W14,Y14,AA14,AC14,M15,O15,Q15,S15,U15,W15,Y15,AA15,AC15,M16,O16,Q16,S16,U16,W16,Y16,AA16,AC16,M17,O17,Q17,S17,U17,W17,Y17,AA17,AC17",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B12"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D14,D15,D16,D17"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L14,L15,L16,L17"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_5_interval",
+      "range": "D14,D15,D16,L14,L15,L16,N14,P14,R14,T14,V14,X14,Z14,AB14,AD14,N15,P15,R15,T15,V15,X15,Z15,AB15,AD15,N16,P16,R16,T16,V16,X16,Z16,AB16,AD16",
+      "values_range": "N14,P14,R14,T14,V14,X14,Z14,AB14,AD14,N15,P15,R15,T15,V15,X15,Z15,AB15,AD15,N16,P16,R16,T16,V16,X16,Z16,AB16,AD16",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B12"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C13"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D14,D15,D16"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L14,L15,L16"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_6_estimate",
+      "range": "D18,D19,L18,L19,M18,O18,Q18,S18,U18,W18,Y18,AA18,AC18,M19,O19,Q19,S19,U19,W19,Y19,AA19,AC19",
+      "values_range": "M18,O18,Q18,S18,U18,W18,Y18,AA18,AC18,M19,O19,Q19,S19,U19,W19,Y19,AA19,AC19",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B12"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D18,D19"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L18,L19"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_7_estimate",
+      "range": "D21,D22,D23,D24,L21,L22,L23,L24,M21,O21,Q21,S21,U21,W21,Y21,AA21,AC21,M22,O22,Q22,S22,U22,W22,Y22,AA22,AC22,M23,O23,Q23,S23,U23,W23,Y23,AA23,AC23,M24,O24,Q24,S24,U24,W24,Y24,AA24,AC24",
+      "values_range": "M21,O21,Q21,S21,U21,W21,Y21,AA21,AC21,M22,O22,Q22,S22,U22,W22,Y22,AA22,AC22,M23,O23,Q23,S23,U23,W23,Y23,AA23,AC23,M24,O24,Q24,S24,U24,W24,Y24,AA24,AC24",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B12"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C20"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D21,D22,D23,D24"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L21,L22,L23,L24"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_8_interval",
+      "range": "D21,D22,D23,L21,L22,L23,N21,P21,R21,T21,V21,X21,Z21,AB21,AD21,N22,P22,R22,T22,V22,X22,Z22,AB22,AD22,N23,P23,R23,T23,V23,X23,Z23,AB23,AD23",
+      "values_range": "N21,P21,R21,T21,V21,X21,Z21,AB21,AD21,N22,P22,R22,T22,V22,X22,Z22,AB22,AD22,N23,P23,R23,T23,V23,X23,Z23,AB23,AD23",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B12"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C20"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D21,D22,D23"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L21,L22,L23"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_9_estimate",
+      "range": "D25,D26,L25,L26,M25,O25,Q25,S25,U25,W25,Y25,AA25,AC25,M26,O26,Q26,S26,U26,W26,Y26,AA26,AC26",
+      "values_range": "M25,O25,Q25,S25,U25,W25,Y25,AA25,AC25,M26,O26,Q26,S26,U26,W26,Y26,AA26,AC26",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B12"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C20"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D25,D26"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L25,L26"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_10_estimate",
+      "range": "D29,D30,D31,D32,D33,L29,L30,L31,L32,L33,M29,O29,Q29,S29,U29,W29,Y29,AA29,AC29,M30,O30,Q30,S30,U30,W30,Y30,AA30,AC30,M31,O31,Q31,S31,U31,W31,Y31,AA31,AC31,M32,O32,Q32,S32,U32,W32,Y32,AA32,AC32,M33,O33,Q33,S33,U33,W33,Y33,AA33,AC33",
+      "values_range": "M29,O29,Q29,S29,U29,W29,Y29,AA29,AC29,M30,O30,Q30,S30,U30,W30,Y30,AA30,AC30,M31,O31,Q31,S31,U31,W31,Y31,AA31,AC31,M32,O32,Q32,S32,U32,W32,Y32,AA32,AC32,M33,O33,Q33,S33,U33,W33,Y33,AA33,AC33",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B27"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D29,D30,D31,D32,D33"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L29,L30,L31,L32,L33"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_11_interval",
+      "range": "D29,D30,D31,L29,L30,L31,N29,P29,R29,T29,V29,X29,Z29,AB29,AD29,N30,P30,R30,T30,V30,X30,Z30,AB30,AD30,N31,P31,R31,T31,V31,X31,Z31,AB31,AD31",
+      "values_range": "N29,P29,R29,T29,V29,X29,Z29,AB29,AD29,N30,P30,R30,T30,V30,X30,Z30,AB30,AD30,N31,P31,R31,T31,V31,X31,Z31,AB31,AD31",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B27"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C28"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D29,D30,D31"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L29,L30,L31"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_12_estimate",
+      "range": "D34,D35,L34,L35,M34,O34,Q34,S34,U34,W34,Y34,AA34,AC34,M35,O35,Q35,S35,U35,W35,Y35,AA35,AC35",
+      "values_range": "M34,O34,Q34,S34,U34,W34,Y34,AA34,AC34,M35,O35,Q35,S35,U35,W35,Y35,AA35,AC35",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B27"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D34,D35"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L34,L35"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_13_estimate",
+      "range": "D37,D38,D39,D40,D41,L37,L38,L39,L40,L41,M37,O37,Q37,S37,U37,W37,Y37,AA37,AC37,M38,O38,Q38,S38,U38,W38,Y38,AA38,AC38,M39,O39,Q39,S39,U39,W39,Y39,AA39,AC39,M40,O40,Q40,S40,U40,W40,Y40,AA40,AC40,M41,O41,Q41,S41,U41,W41,Y41,AA41,AC41",
+      "values_range": "M37,O37,Q37,S37,U37,W37,Y37,AA37,AC37,M38,O38,Q38,S38,U38,W38,Y38,AA38,AC38,M39,O39,Q39,S39,U39,W39,Y39,AA39,AC39,M40,O40,Q40,S40,U40,W40,Y40,AA40,AC40,M41,O41,Q41,S41,U41,W41,Y41,AA41,AC41",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B27"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D37,D38,D39,D40,D41"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L37,L38,L39,L40,L41"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_14_interval",
+      "range": "D37,D38,D39,L37,L38,L39,N37,P37,R37,T37,V37,X37,Z37,AB37,AD37,N38,P38,R38,T38,V38,X38,Z38,AB38,AD38,N39,P39,R39,T39,V39,X39,Z39,AB39,AD39",
+      "values_range": "N37,P37,R37,T37,V37,X37,Z37,AB37,AD37,N38,P38,R38,T38,V38,X38,Z38,AB38,AD38,N39,P39,R39,T39,V39,X39,Z39,AB39,AD39",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B27"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C36"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D37,D38,D39"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L37,L38,L39"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_15_estimate",
+      "range": "D42,D43,L42,L43,M42,O42,Q42,S42,U42,W42,Y42,AA42,AC42,M43,O43,Q43,S43,U43,W43,Y43,AA43,AC43",
+      "values_range": "M42,O42,Q42,S42,U42,W42,Y42,AA42,AC42,M43,O43,Q43,S43,U43,W43,Y43,AA43,AC43",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B27"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D42,D43"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L42,L43"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_16_estimate",
+      "range": "D47,D48,D49,D50,L47,L48,L49,L50,M47,O47,Q47,S47,U47,W47,Y47,AA47,AC47,M48,O48,Q48,S48,U48,W48,Y48,AA48,AC48,M49,O49,Q49,S49,U49,W49,Y49,AA49,AC49,M50,O50,Q50,S50,U50,W50,Y50,AA50,AC50",
+      "values_range": "M47,O47,Q47,S47,U47,W47,Y47,AA47,AC47,M48,O48,Q48,S48,U48,W48,Y48,AA48,AC48,M49,O49,Q49,S49,U49,W49,Y49,AA49,AC49,M50,O50,Q50,S50,U50,W50,Y50,AA50,AC50",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B45"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D47,D48,D49,D50"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L47,L48,L49,L50"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_17_interval",
+      "range": "D47,D48,D49,L47,L48,L49,N47,P47,R47,T47,V47,X47,Z47,AB47,AD47,N48,P48,R48,T48,V48,X48,Z48,AB48,AD48,N49,P49,R49,T49,V49,X49,Z49,AB49,AD49",
+      "values_range": "N47,P47,R47,T47,V47,X47,Z47,AB47,AD47,N48,P48,R48,T48,V48,X48,Z48,AB48,AD48,N49,P49,R49,T49,V49,X49,Z49,AB49,AD49",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B45"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C46"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D47,D48,D49"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L47,L48,L49"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_18_estimate",
+      "range": "D51,D52,L51,L52,M51,O51,Q51,S51,U51,W51,Y51,AA51,AC51,M52,O52,Q52,S52,U52,W52,Y52,AA52,AC52",
+      "values_range": "M51,O51,Q51,S51,U51,W51,Y51,AA51,AC51,M52,O52,Q52,S52,U52,W52,Y52,AA52,AC52",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B45"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D51,D52"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L51,L52"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_19_estimate",
+      "range": "D55,D56,D57,D58,L55,L56,L57,L58,M55,O55,Q55,S55,U55,W55,Y55,AA55,AC55,M56,O56,Q56,S56,U56,W56,Y56,AA56,AC56,M57,O57,Q57,S57,U57,W57,Y57,AA57,AC57,M58,O58,Q58,S58,U58,W58,Y58,AA58,AC58",
+      "values_range": "M55,O55,Q55,S55,U55,W55,Y55,AA55,AC55,M56,O56,Q56,S56,U56,W56,Y56,AA56,AC56,M57,O57,Q57,S57,U57,W57,Y57,AA57,AC57,M58,O58,Q58,S58,U58,W58,Y58,AA58,AC58",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B53"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D55,D56,D57,D58"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L55,L56,L57,L58"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_20_interval",
+      "range": "D55,D56,D57,L55,L56,L57,N55,P55,R55,T55,V55,X55,Z55,AB55,AD55,N56,P56,R56,T56,V56,X56,Z56,AB56,AD56,N57,P57,R57,T57,V57,X57,Z57,AB57,AD57",
+      "values_range": "N55,P55,R55,T55,V55,X55,Z55,AB55,AD55,N56,P56,R56,T56,V56,X56,Z56,AB56,AD56,N57,P57,R57,T57,V57,X57,Z57,AB57,AD57",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B53"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C54"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D55,D56,D57"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L55,L56,L57"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_21_estimate",
+      "range": "D59,D60,L59,L60,M59,O59,Q59,S59,U59,W59,Y59,AA59,AC59,M60,O60,Q60,S60,U60,W60,Y60,AA60,AC60",
+      "values_range": "M59,O59,Q59,S59,U59,W59,Y59,AA59,AC59,M60,O60,Q60,S60,U60,W60,Y60,AA60,AC60",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B53"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C54"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D59,D60"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L59,L60"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_22_estimate",
+      "range": "D62,D63,D64,D65,L62,L63,L64,L65,M62,O62,Q62,S62,U62,W62,Y62,AA62,AC62,M63,O63,Q63,S63,U63,W63,Y63,AA63,AC63,M64,O64,Q64,S64,U64,W64,Y64,AA64,AC64,M65,O65,Q65,S65,U65,W65,Y65,AA65,AC65",
+      "values_range": "M62,O62,Q62,S62,U62,W62,Y62,AA62,AC62,M63,O63,Q63,S63,U63,W63,Y63,AA63,AC63,M64,O64,Q64,S64,U64,W64,Y64,AA64,AC64,M65,O65,Q65,S65,U65,W65,Y65,AA65,AC65",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B53"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D62,D63,D64,D65"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L62,L63,L64,L65"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_23_interval",
+      "range": "D62,D63,D64,L62,L63,L64,N62,P62,R62,T62,V62,X62,Z62,AB62,AD62,N63,P63,R63,T63,V63,X63,Z63,AB63,AD63,N64,P64,R64,T64,V64,X64,Z64,AB64,AD64",
+      "values_range": "N62,P62,R62,T62,V62,X62,Z62,AB62,AD62,N63,P63,R63,T63,V63,X63,Z63,AB63,AD63,N64,P64,R64,T64,V64,X64,Z64,AB64,AD64",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B53"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C61"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D62,D63,D64"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L62,L63,L64"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_24_estimate",
+      "range": "D66,D67,L66,L67,M66,O66,Q66,S66,U66,W66,Y66,AA66,AC66,M67,O67,Q67,S67,U67,W67,Y67,AA67,AC67",
+      "values_range": "M66,O66,Q66,S66,U66,W66,Y66,AA66,AC66,M67,O67,Q67,S67,U67,W67,Y67,AA67,AC67",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B53"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C61"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D66,D67"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L66,L67"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_25_estimate",
+      "range": "D70,D71,D72,D73,D74,L70,L71,L72,L73,L74,M70,O70,Q70,S70,U70,W70,Y70,AA70,AC70,M71,O71,Q71,S71,U71,W71,Y71,AA71,AC71,M72,O72,Q72,S72,U72,W72,Y72,AA72,AC72,M73,O73,Q73,S73,U73,W73,Y73,AA73,AC73,M74,O74,Q74,S74,U74,W74,Y74,AA74,AC74",
+      "values_range": "M70,O70,Q70,S70,U70,W70,Y70,AA70,AC70,M71,O71,Q71,S71,U71,W71,Y71,AA71,AC71,M72,O72,Q72,S72,U72,W72,Y72,AA72,AC72,M73,O73,Q73,S73,U73,W73,Y73,AA73,AC73,M74,O74,Q74,S74,U74,W74,Y74,AA74,AC74",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B68"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C69"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D70,D71,D72,D73,D74"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L70,L71,L72,L73,L74"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_26_interval",
+      "range": "D70,D71,D72,L70,L71,L72,N70,P70,R70,T70,V70,X70,Z70,AB70,AD70,N71,P71,R71,T71,V71,X71,Z71,AB71,AD71,N72,P72,R72,T72,V72,X72,Z72,AB72,AD72",
+      "values_range": "N70,P70,R70,T70,V70,X70,Z70,AB70,AD70,N71,P71,R71,T71,V71,X71,Z71,AB71,AD71,N72,P72,R72,T72,V72,X72,Z72,AB72,AD72",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B68"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C69"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D70,D71,D72"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L70,L71,L72"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_27_estimate",
+      "range": "D75,D76,L75,L76,M75,O75,Q75,S75,U75,W75,Y75,AA75,AC75,M76,O76,Q76,S76,U76,W76,Y76,AA76,AC76",
+      "values_range": "M75,O75,Q75,S75,U75,W75,Y75,AA75,AC75,M76,O76,Q76,S76,U76,W76,Y76,AA76,AC76",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B68"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C69"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D75,D76"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L75,L76"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_28_estimate",
+      "range": "D78,D79,D80,D81,D82,L78,L79,L80,L81,L82,M78,O78,Q78,S78,U78,W78,Y78,AA78,AC78,M79,O79,Q79,S79,U79,W79,Y79,AA79,AC79,M80,O80,Q80,S80,U80,W80,Y80,AA80,AC80,M81,O81,Q81,S81,U81,W81,Y81,AA81,AC81,M82,O82,Q82,S82,U82,W82,Y82,AA82,AC82",
+      "values_range": "M78,O78,Q78,S78,U78,W78,Y78,AA78,AC78,M79,O79,Q79,S79,U79,W79,Y79,AA79,AC79,M80,O80,Q80,S80,U80,W80,Y80,AA80,AC80,M81,O81,Q81,S81,U81,W81,Y81,AA81,AC81,M82,O82,Q82,S82,U82,W82,Y82,AA82,AC82",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B68"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C77"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D78,D79,D80,D81,D82"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L78,L79,L80,L81,L82"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_29_interval",
+      "range": "D78,D79,D80,L78,L79,L80,N78,P78,R78,T78,V78,X78,Z78,AB78,AD78,N79,P79,R79,T79,V79,X79,Z79,AB79,AD79,N80,P80,R80,T80,V80,X80,Z80,AB80,AD80",
+      "values_range": "N78,P78,R78,T78,V78,X78,Z78,AB78,AD78,N79,P79,R79,T79,V79,X79,Z79,AB79,AD79,N80,P80,R80,T80,V80,X80,Z80,AB80,AD80",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B68"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C77"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D78,D79,D80"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L78,L79,L80"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_30_estimate",
+      "range": "D83,D84,L83,L84,M83,O83,Q83,S83,U83,W83,Y83,AA83,AC83,M84,O84,Q84,S84,U84,W84,Y84,AA84,AC84",
+      "values_range": "M83,O83,Q83,S83,U83,W83,Y83,AA83,AC83,M84,O84,Q84,S84,U84,W84,Y84,AA84,AC84",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A44"
+        },
+        {
+          "name": "indicator",
+          "cells": "B68"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C77"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D83,D84"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L83,L84"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_31_estimate",
+      "range": "D88,D89,D90,D91,L88,L89,L90,L91,M88,O88,Q88,S88,U88,W88,Y88,AA88,AC88,M89,O89,Q89,S89,U89,W89,Y89,AA89,AC89,M90,O90,Q90,S90,U90,W90,Y90,AA90,AC90,M91,O91,Q91,S91,U91,W91,Y91,AA91,AC91",
+      "values_range": "M88,O88,Q88,S88,U88,W88,Y88,AA88,AC88,M89,O89,Q89,S89,U89,W89,Y89,AA89,AC89,M90,O90,Q90,S90,U90,W90,Y90,AA90,AC90,M91,O91,Q91,S91,U91,W91,Y91,AA91,AC91",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B86"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D88,D89,D90,D91"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L88,L89,L90,L91"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_32_interval",
+      "range": "D88,D89,D90,L88,L89,L90,N88,P88,R88,T88,V88,X88,Z88,AB88,AD88,N89,P89,R89,T89,V89,X89,Z89,AB89,AD89,N90,P90,R90,T90,V90,X90,Z90,AB90,AD90",
+      "values_range": "N88,P88,R88,T88,V88,X88,Z88,AB88,AD88,N89,P89,R89,T89,V89,X89,Z89,AB89,AD89,N90,P90,R90,T90,V90,X90,Z90,AB90,AD90",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B86"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C87"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D88,D89,D90"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L88,L89,L90"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_33_estimate",
+      "range": "D92,D93,L92,L93,M92,O92,Q92,S92,U92,W92,Y92,AA92,AC92,M93,O93,Q93,S93,U93,W93,Y93,AA93,AC93",
+      "values_range": "M92,O92,Q92,S92,U92,W92,Y92,AA92,AC92,M93,O93,Q93,S93,U93,W93,Y93,AA93,AC93",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B86"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C87"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D92,D93"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L92,L93"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_34_estimate",
+      "range": "D96,D97,D98,D99,L96,L97,L98,L99,M96,O96,Q96,S96,U96,W96,Y96,AA96,AC96,M97,O97,Q97,S97,U97,W97,Y97,AA97,AC97,M98,O98,Q98,S98,U98,W98,Y98,AA98,AC98,M99,O99,Q99,S99,U99,W99,Y99,AA99,AC99",
+      "values_range": "M96,O96,Q96,S96,U96,W96,Y96,AA96,AC96,M97,O97,Q97,S97,U97,W97,Y97,AA97,AC97,M98,O98,Q98,S98,U98,W98,Y98,AA98,AC98,M99,O99,Q99,S99,U99,W99,Y99,AA99,AC99",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B94"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C95"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D96,D97,D98,D99"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L96,L97,L98,L99"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_35_interval",
+      "range": "D96,D97,D98,L96,L97,L98,N96,P96,R96,T96,V96,X96,Z96,AB96,AD96,N97,P97,R97,T97,V97,X97,Z97,AB97,AD97,N98,P98,R98,T98,V98,X98,Z98,AB98,AD98",
+      "values_range": "N96,P96,R96,T96,V96,X96,Z96,AB96,AD96,N97,P97,R97,T97,V97,X97,Z97,AB97,AD97,N98,P98,R98,T98,V98,X98,Z98,AB98,AD98",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B94"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C95"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D96,D97,D98"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L96,L97,L98"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_36_estimate",
+      "range": "D100,D101,L100,L101,M100,O100,Q100,S100,U100,W100,Y100,AA100,AC100,M101,O101,Q101,S101,U101,W101,Y101,AA101,AC101",
+      "values_range": "M100,O100,Q100,S100,U100,W100,Y100,AA100,AC100,M101,O101,Q101,S101,U101,W101,Y101,AA101,AC101",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B94"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C95"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D100,D101"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L100,L101"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_37_estimate",
+      "range": "D103,D104,D105,D106,L103,L104,L105,L106,M103,O103,Q103,S103,U103,W103,Y103,AA103,AC103,M104,O104,Q104,S104,U104,W104,Y104,AA104,AC104,M105,O105,Q105,S105,U105,W105,Y105,AA105,AC105,M106,O106,Q106,S106,U106,W106,Y106,AA106,AC106",
+      "values_range": "M103,O103,Q103,S103,U103,W103,Y103,AA103,AC103,M104,O104,Q104,S104,U104,W104,Y104,AA104,AC104,M105,O105,Q105,S105,U105,W105,Y105,AA105,AC105,M106,O106,Q106,S106,U106,W106,Y106,AA106,AC106",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B94"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D103,D104,D105,D106"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L103,L104,L105,L106"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_38_interval",
+      "range": "D103,D104,D105,L103,L104,L105,N103,P103,R103,T103,V103,X103,Z103,AB103,AD103,N104,P104,R104,T104,V104,X104,Z104,AB104,AD104,N105,P105,R105,T105,V105,X105,Z105,AB105,AD105",
+      "values_range": "N103,P103,R103,T103,V103,X103,Z103,AB103,AD103,N104,P104,R104,T104,V104,X104,Z104,AB104,AD104,N105,P105,R105,T105,V105,X105,Z105,AB105,AD105",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B94"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C102"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D103,D104,D105"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L103,L104,L105"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_39_estimate",
+      "range": "D107,D108,L107,L108,M107,O107,Q107,S107,U107,W107,Y107,AA107,AC107,M108,O108,Q108,S108,U108,W108,Y108,AA108,AC108",
+      "values_range": "M107,O107,Q107,S107,U107,W107,Y107,AA107,AC107,M108,O108,Q108,S108,U108,W108,Y108,AA108,AC108",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B94"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C102"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D107,D108"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L107,L108"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_40_estimate",
+      "range": "D111,D112,D113,D114,D115,L111,L112,L113,L114,L115,M111,O111,Q111,S111,U111,W111,Y111,AA111,AC111,M112,O112,Q112,S112,U112,W112,Y112,AA112,AC112,M113,O113,Q113,S113,U113,W113,Y113,AA113,AC113,M114,O114,Q114,S114,U114,W114,Y114,AA114,AC114,M115,O115,Q115,S115,U115,W115,Y115,AA115,AC115",
+      "values_range": "M111,O111,Q111,S111,U111,W111,Y111,AA111,AC111,M112,O112,Q112,S112,U112,W112,Y112,AA112,AC112,M113,O113,Q113,S113,U113,W113,Y113,AA113,AC113,M114,O114,Q114,S114,U114,W114,Y114,AA114,AC114,M115,O115,Q115,S115,U115,W115,Y115,AA115,AC115",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B109"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C110"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D111,D112,D113,D114,D115"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L111,L112,L113,L114,L115"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_41_interval",
+      "range": "D111,D112,D113,L111,L112,L113,N111,P111,R111,T111,V111,X111,Z111,AB111,AD111,N112,P112,R112,T112,V112,X112,Z112,AB112,AD112,N113,P113,R113,T113,V113,X113,Z113,AB113,AD113",
+      "values_range": "N111,P111,R111,T111,V111,X111,Z111,AB111,AD111,N112,P112,R112,T112,V112,X112,Z112,AB112,AD112,N113,P113,R113,T113,V113,X113,Z113,AB113,AD113",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B109"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C110"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D111,D112,D113"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L111,L112,L113"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_42_estimate",
+      "range": "D116,D117,L116,L117,M116,O116,Q116,S116,U116,W116,Y116,AA116,AC116,M117,O117,Q117,S117,U117,W117,Y117,AA117,AC117",
+      "values_range": "M116,O116,Q116,S116,U116,W116,Y116,AA116,AC116,M117,O117,Q117,S117,U117,W117,Y117,AA117,AC117",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B109"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C110"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D116,D117"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L116,L117"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_43_estimate",
+      "range": "D119,D120,D121,D122,D123,L119,L120,L121,L122,L123,M119,O119,Q119,S119,U119,W119,Y119,AA119,AC119,M120,O120,Q120,S120,U120,W120,Y120,AA120,AC120,M121,O121,Q121,S121,U121,W121,Y121,AA121,AC121,M122,O122,Q122,S122,U122,W122,Y122,AA122,AC122,M123,O123,Q123,S123,U123,W123,Y123,AA123,AC123",
+      "values_range": "M119,O119,Q119,S119,U119,W119,Y119,AA119,AC119,M120,O120,Q120,S120,U120,W120,Y120,AA120,AC120,M121,O121,Q121,S121,U121,W121,Y121,AA121,AC121,M122,O122,Q122,S122,U122,W122,Y122,AA122,AC122,M123,O123,Q123,S123,U123,W123,Y123,AA123,AC123",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B109"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D119,D120,D121,D122,D123"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L119,L120,L121,L122,L123"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_44_interval",
+      "range": "D119,D120,D121,L119,L120,L121,N119,P119,R119,T119,V119,X119,Z119,AB119,AD119,N120,P120,R120,T120,V120,X120,Z120,AB120,AD120,N121,P121,R121,T121,V121,X121,Z121,AB121,AD121",
+      "values_range": "N119,P119,R119,T119,V119,X119,Z119,AB119,AD119,N120,P120,R120,T120,V120,X120,Z120,AB120,AD120,N121,P121,R121,T121,V121,X121,Z121,AB121,AD121",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B109"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C118"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D119,D120,D121"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L119,L120,L121"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_45_estimate",
+      "range": "D124,D125,L124,L125,M124,O124,Q124,S124,U124,W124,Y124,AA124,AC124,M125,O125,Q125,S125,U125,W125,Y125,AA125,AC125",
+      "values_range": "M124,O124,Q124,S124,U124,W124,Y124,AA124,AC124,M125,O125,Q125,S125,U125,W125,Y125,AA125,AC125",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A85"
+        },
+        {
+          "name": "indicator",
+          "cells": "B109"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D124,D125"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L124,L125"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_46_estimate",
+      "range": "D129,D130,D131,D132,L129,L130,L131,L132,M129,O129,Q129,S129,U129,W129,Y129,AA129,AC129,M130,O130,Q130,S130,U130,W130,Y130,AA130,AC130,M131,O131,Q131,S131,U131,W131,Y131,AA131,AC131,M132,O132,Q132,S132,U132,W132,Y132,AA132,AC132",
+      "values_range": "M129,O129,Q129,S129,U129,W129,Y129,AA129,AC129,M130,O130,Q130,S130,U130,W130,Y130,AA130,AC130,M131,O131,Q131,S131,U131,W131,Y131,AA131,AC131,M132,O132,Q132,S132,U132,W132,Y132,AA132,AC132",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B127"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C128"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D129,D130,D131,D132"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L129,L130,L131,L132"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_47_interval",
+      "range": "D129,D130,D131,L129,L130,L131,N129,P129,R129,T129,V129,X129,Z129,AB129,AD129,N130,P130,R130,T130,V130,X130,Z130,AB130,AD130,N131,P131,R131,T131,V131,X131,Z131,AB131,AD131",
+      "values_range": "N129,P129,R129,T129,V129,X129,Z129,AB129,AD129,N130,P130,R130,T130,V130,X130,Z130,AB130,AD130,N131,P131,R131,T131,V131,X131,Z131,AB131,AD131",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B127"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C128"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D129,D130,D131"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L129,L130,L131"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_48_estimate",
+      "range": "D133,D134,L133,L134,M133,O133,Q133,S133,U133,W133,Y133,AA133,AC133,M134,O134,Q134,S134,U134,W134,Y134,AA134,AC134",
+      "values_range": "M133,O133,Q133,S133,U133,W133,Y133,AA133,AC133,M134,O134,Q134,S134,U134,W134,Y134,AA134,AC134",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B127"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C128"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D133,D134"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L133,L134"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_49_estimate",
+      "range": "D137,D138,D139,D140,L137,L138,L139,L140,M137,O137,Q137,S137,U137,W137,Y137,AA137,AC137,M138,O138,Q138,S138,U138,W138,Y138,AA138,AC138,M139,O139,Q139,S139,U139,W139,Y139,AA139,AC139,M140,O140,Q140,S140,U140,W140,Y140,AA140,AC140",
+      "values_range": "M137,O137,Q137,S137,U137,W137,Y137,AA137,AC137,M138,O138,Q138,S138,U138,W138,Y138,AA138,AC138,M139,O139,Q139,S139,U139,W139,Y139,AA139,AC139,M140,O140,Q140,S140,U140,W140,Y140,AA140,AC140",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B135"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C136"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D137,D138,D139,D140"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L137,L138,L139,L140"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_50_interval",
+      "range": "D137,D138,D139,L137,L138,L139,N137,P137,R137,T137,V137,X137,Z137,AB137,AD137,N138,P138,R138,T138,V138,X138,Z138,AB138,AD138,N139,P139,R139,T139,V139,X139,Z139,AB139,AD139",
+      "values_range": "N137,P137,R137,T137,V137,X137,Z137,AB137,AD137,N138,P138,R138,T138,V138,X138,Z138,AB138,AD138,N139,P139,R139,T139,V139,X139,Z139,AB139,AD139",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B135"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C136"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D137,D138,D139"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L137,L138,L139"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_51_estimate",
+      "range": "D141,D142,L141,L142,M141,O141,Q141,S141,U141,W141,Y141,AA141,AC141,M142,O142,Q142,S142,U142,W142,Y142,AA142,AC142",
+      "values_range": "M141,O141,Q141,S141,U141,W141,Y141,AA141,AC141,M142,O142,Q142,S142,U142,W142,Y142,AA142,AC142",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B135"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C136"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D141,D142"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L141,L142"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_52_estimate",
+      "range": "D144,D145,D146,D147,L144,L145,L146,L147,M144,O144,Q144,S144,U144,W144,Y144,AA144,AC144,M145,O145,Q145,S145,U145,W145,Y145,AA145,AC145,M146,O146,Q146,S146,U146,W146,Y146,AA146,AC146,M147,O147,Q147,S147,U147,W147,Y147,AA147,AC147",
+      "values_range": "M144,O144,Q144,S144,U144,W144,Y144,AA144,AC144,M145,O145,Q145,S145,U145,W145,Y145,AA145,AC145,M146,O146,Q146,S146,U146,W146,Y146,AA146,AC146,M147,O147,Q147,S147,U147,W147,Y147,AA147,AC147",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B135"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C143"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D144,D145,D146,D147"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L144,L145,L146,L147"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_53_interval",
+      "range": "D144,D145,D146,L144,L145,L146,N144,P144,R144,T144,V144,X144,Z144,AB144,AD144,N145,P145,R145,T145,V145,X145,Z145,AB145,AD145,N146,P146,R146,T146,V146,X146,Z146,AB146,AD146",
+      "values_range": "N144,P144,R144,T144,V144,X144,Z144,AB144,AD144,N145,P145,R145,T145,V145,X145,Z145,AB145,AD145,N146,P146,R146,T146,V146,X146,Z146,AB146,AD146",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B135"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C143"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D144,D145,D146"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L144,L145,L146"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_54_estimate",
+      "range": "D148,D149,L148,L149,M148,O148,Q148,S148,U148,W148,Y148,AA148,AC148,M149,O149,Q149,S149,U149,W149,Y149,AA149,AC149",
+      "values_range": "M148,O148,Q148,S148,U148,W148,Y148,AA148,AC148,M149,O149,Q149,S149,U149,W149,Y149,AA149,AC149",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B135"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C143"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D148,D149"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L148,L149"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_55_estimate",
+      "range": "D152,D153,D154,D155,D156,L152,L153,L154,L155,L156,M152,O152,Q152,S152,U152,W152,Y152,AA152,AC152,M153,O153,Q153,S153,U153,W153,Y153,AA153,AC153,M154,O154,Q154,S154,U154,W154,Y154,AA154,AC154,M155,O155,Q155,S155,U155,W155,Y155,AA155,AC155,M156,O156,Q156,S156,U156,W156,Y156,AA156,AC156",
+      "values_range": "M152,O152,Q152,S152,U152,W152,Y152,AA152,AC152,M153,O153,Q153,S153,U153,W153,Y153,AA153,AC153,M154,O154,Q154,S154,U154,W154,Y154,AA154,AC154,M155,O155,Q155,S155,U155,W155,Y155,AA155,AC155,M156,O156,Q156,S156,U156,W156,Y156,AA156,AC156",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B150"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C151"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D152,D153,D154,D155,D156"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L152,L153,L154,L155,L156"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_56_interval",
+      "range": "D152,D153,D154,L152,L153,L154,N152,P152,R152,T152,V152,X152,Z152,AB152,AD152,N153,P153,R153,T153,V153,X153,Z153,AB153,AD153,N154,P154,R154,T154,V154,X154,Z154,AB154,AD154",
+      "values_range": "N152,P152,R152,T152,V152,X152,Z152,AB152,AD152,N153,P153,R153,T153,V153,X153,Z153,AB153,AD153,N154,P154,R154,T154,V154,X154,Z154,AB154,AD154",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B150"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C151"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D152,D153,D154"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L152,L153,L154"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_57_estimate",
+      "range": "D157,D158,L157,L158,M157,O157,Q157,S157,U157,W157,Y157,AA157,AC157,M158,O158,Q158,S158,U158,W158,Y158,AA158,AC158",
+      "values_range": "M157,O157,Q157,S157,U157,W157,Y157,AA157,AC157,M158,O158,Q158,S158,U158,W158,Y158,AA158,AC158",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B150"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C151"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D157,D158"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L157,L158"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_58_estimate",
+      "range": "D160,D161,D162,D163,D164,L160,L161,L162,L163,L164,M160,O160,Q160,S160,U160,W160,Y160,AA160,AC160,M161,O161,Q161,S161,U161,W161,Y161,AA161,AC161,M162,O162,Q162,S162,U162,W162,Y162,AA162,AC162,M163,O163,Q163,S163,U163,W163,Y163,AA163,AC163,M164,O164,Q164,S164,U164,W164,Y164,AA164,AC164",
+      "values_range": "M160,O160,Q160,S160,U160,W160,Y160,AA160,AC160,M161,O161,Q161,S161,U161,W161,Y161,AA161,AC161,M162,O162,Q162,S162,U162,W162,Y162,AA162,AC162,M163,O163,Q163,S163,U163,W163,Y163,AA163,AC163,M164,O164,Q164,S164,U164,W164,Y164,AA164,AC164",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B150"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C159"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D160,D161,D162,D163,D164"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L160,L161,L162,L163,L164"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_59_interval",
+      "range": "D160,D161,D162,L160,L161,L162,N160,P160,R160,T160,V160,X160,Z160,AB160,AD160,N161,P161,R161,T161,V161,X161,Z161,AB161,AD161,N162,P162,R162,T162,V162,X162,Z162,AB162,AD162",
+      "values_range": "N160,P160,R160,T160,V160,X160,Z160,AB160,AD160,N161,P161,R161,T161,V161,X161,Z161,AB161,AD161,N162,P162,R162,T162,V162,X162,Z162,AB162,AD162",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B150"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C159"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C341"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D160,D161,D162"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L160,L161,L162"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_60_estimate",
+      "range": "D165,D166,L165,L166,M165,O165,Q165,S165,U165,W165,Y165,AA165,AC165,M166,O166,Q166,S166,U166,W166,Y166,AA166,AC166",
+      "values_range": "M165,O165,Q165,S165,U165,W165,Y165,AA165,AC165,M166,O166,Q166,S166,U166,W166,Y166,AA166,AC166",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A126"
+        },
+        {
+          "name": "indicator",
+          "cells": "B150"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C159"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D165,D166"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L165,L166"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_61_estimate",
+      "range": "D170,D171,D172,D173,L170,L171,L172,L173,M170,O170,Q170,S170,U170,W170,Y170,AA170,AC170,M171,O171,Q171,S171,U171,W171,Y171,AA171,AC171,M172,O172,Q172,S172,U172,W172,Y172,AA172,AC172,M173,O173,Q173,S173,U173,W173,Y173,AA173,AC173",
+      "values_range": "M170,O170,Q170,S170,U170,W170,Y170,AA170,AC170,M171,O171,Q171,S171,U171,W171,Y171,AA171,AC171,M172,O172,Q172,S172,U172,W172,Y172,AA172,AC172,M173,O173,Q173,S173,U173,W173,Y173,AA173,AC173",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B168"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C169"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D170,D171,D172,D173"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L170,L171,L172,L173"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_62_estimate",
+      "range": "D174,D175,L174,L175,M174,O174,Q174,S174,U174,W174,Y174,AA174,AC174,M175,O175,Q175,S175,U175,W175,Y175,AA175,AC175",
+      "values_range": "M174,O174,Q174,S174,U174,W174,Y174,AA174,AC174,M175,O175,Q175,S175,U175,W175,Y175,AA175,AC175",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B168"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C169"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D174,D175"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L174,L175"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_63_estimate",
+      "range": "D178,D179,D180,D181,L178,L179,L180,L181,M178,O178,Q178,S178,U178,W178,Y178,AA178,AC178,M179,O179,Q179,S179,U179,W179,Y179,AA179,AC179,M180,O180,Q180,S180,U180,W180,Y180,AA180,AC180,M181,O181,Q181,S181,U181,W181,Y181,AA181,AC181",
+      "values_range": "M178,O178,Q178,S178,U178,W178,Y178,AA178,AC178,M179,O179,Q179,S179,U179,W179,Y179,AA179,AC179,M180,O180,Q180,S180,U180,W180,Y180,AA180,AC180,M181,O181,Q181,S181,U181,W181,Y181,AA181,AC181",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B176"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C177"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D178,D179,D180,D181"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L178,L179,L180,L181"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_64_estimate",
+      "range": "D182,D183,L182,L183,M182,O182,Q182,S182,U182,W182,Y182,AA182,AC182,M183,O183,Q183,S183,U183,W183,Y183,AA183,AC183",
+      "values_range": "M182,O182,Q182,S182,U182,W182,Y182,AA182,AC182,M183,O183,Q183,S183,U183,W183,Y183,AA183,AC183",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B176"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C177"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D182,D183"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L182,L183"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_65_estimate",
+      "range": "D185,D186,D187,D188,L185,L186,L187,L188,M185,O185,Q185,S185,U185,W185,Y185,AA185,AC185,M186,O186,Q186,S186,U186,W186,Y186,AA186,AC186,M187,O187,Q187,S187,U187,W187,Y187,AA187,AC187,M188,O188,Q188,S188,U188,W188,Y188,AA188,AC188",
+      "values_range": "M185,O185,Q185,S185,U185,W185,Y185,AA185,AC185,M186,O186,Q186,S186,U186,W186,Y186,AA186,AC186,M187,O187,Q187,S187,U187,W187,Y187,AA187,AC187,M188,O188,Q188,S188,U188,W188,Y188,AA188,AC188",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B176"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C184"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D185,D186,D187,D188"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L185,L186,L187,L188"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_66_estimate",
+      "range": "D189,D190,L189,L190,M189,O189,Q189,S189,U189,W189,Y189,AA189,AC189,M190,O190,Q190,S190,U190,W190,Y190,AA190,AC190",
+      "values_range": "M189,O189,Q189,S189,U189,W189,Y189,AA189,AC189,M190,O190,Q190,S190,U190,W190,Y190,AA190,AC190",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B176"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C184"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D189,D190"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L189,L190"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_67_estimate",
+      "range": "D193,D194,D195,D196,D197,L193,L194,L195,L196,L197,M193,O193,Q193,S193,U193,W193,Y193,AA193,AC193,M194,O194,Q194,S194,U194,W194,Y194,AA194,AC194,M195,O195,Q195,S195,U195,W195,Y195,AA195,AC195,M196,O196,Q196,S196,U196,W196,Y196,AA196,AC196,M197,O197,Q197,S197,U197,W197,Y197,AA197,AC197",
+      "values_range": "M193,O193,Q193,S193,U193,W193,Y193,AA193,AC193,M194,O194,Q194,S194,U194,W194,Y194,AA194,AC194,M195,O195,Q195,S195,U195,W195,Y195,AA195,AC195,M196,O196,Q196,S196,U196,W196,Y196,AA196,AC196,M197,O197,Q197,S197,U197,W197,Y197,AA197,AC197",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B191"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C192"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D193,D194,D195,D196,D197"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L193,L194,L195,L196,L197"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_68_estimate",
+      "range": "D198,D199,L198,L199,M198,O198,Q198,S198,U198,W198,Y198,AA198,AC198,M199,O199,Q199,S199,U199,W199,Y199,AA199,AC199",
+      "values_range": "M198,O198,Q198,S198,U198,W198,Y198,AA198,AC198,M199,O199,Q199,S199,U199,W199,Y199,AA199,AC199",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B191"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C192"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D198,D199"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L198,L199"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_69_estimate",
+      "range": "D201,D202,D203,D204,D205,L201,L202,L203,L204,L205,M201,O201,Q201,S201,U201,W201,Y201,AA201,AC201,M202,O202,Q202,S202,U202,W202,Y202,AA202,AC202,M203,O203,Q203,S203,U203,W203,Y203,AA203,AC203,M204,O204,Q204,S204,U204,W204,Y204,AA204,AC204,M205,O205,Q205,S205,U205,W205,Y205,AA205,AC205",
+      "values_range": "M201,O201,Q201,S201,U201,W201,Y201,AA201,AC201,M202,O202,Q202,S202,U202,W202,Y202,AA202,AC202,M203,O203,Q203,S203,U203,W203,Y203,AA203,AC203,M204,O204,Q204,S204,U204,W204,Y204,AA204,AC204,M205,O205,Q205,S205,U205,W205,Y205,AA205,AC205",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B191"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C200"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D201,D202,D203,D204,D205"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L201,L202,L203,L204,L205"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_70_estimate",
+      "range": "D206,D207,L206,L207,M206,O206,Q206,S206,U206,W206,Y206,AA206,AC206,M207,O207,Q207,S207,U207,W207,Y207,AA207,AC207",
+      "values_range": "M206,O206,Q206,S206,U206,W206,Y206,AA206,AC206,M207,O207,Q207,S207,U207,W207,Y207,AA207,AC207",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A167"
+        },
+        {
+          "name": "indicator",
+          "cells": "B191"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C200"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D206,D207"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L206,L207"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_71_estimate",
+      "range": "D211,D212,D213,D214,L211,L212,L213,L214,M211,O211,Q211,S211,U211,W211,Y211,AA211,AC211,M212,O212,Q212,S212,U212,W212,Y212,AA212,AC212,M213,O213,Q213,S213,U213,W213,Y213,AA213,AC213,M214,O214,Q214,S214,U214,W214,Y214,AA214,AC214",
+      "values_range": "M211,O211,Q211,S211,U211,W211,Y211,AA211,AC211,M212,O212,Q212,S212,U212,W212,Y212,AA212,AC212,M213,O213,Q213,S213,U213,W213,Y213,AA213,AC213,M214,O214,Q214,S214,U214,W214,Y214,AA214,AC214",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B209"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C210"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D211,D212,D213,D214"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L211,L212,L213,L214"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_72_estimate",
+      "range": "D215,D216,L215,L216,M215,O215,Q215,S215,U215,W215,Y215,AA215,AC215,M216,O216,Q216,S216,U216,W216,Y216,AA216,AC216",
+      "values_range": "M215,O215,Q215,S215,U215,W215,Y215,AA215,AC215,M216,O216,Q216,S216,U216,W216,Y216,AA216,AC216",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B209"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C210"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D215,D216"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L215,L216"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_73_estimate",
+      "range": "D219,D220,D221,D222,L219,L220,L221,L222,M219,O219,Q219,S219,U219,W219,Y219,AA219,AC219,M220,O220,Q220,S220,U220,W220,Y220,AA220,AC220,M221,O221,Q221,S221,U221,W221,Y221,AA221,AC221,M222,O222,Q222,S222,U222,W222,Y222,AA222,AC222",
+      "values_range": "M219,O219,Q219,S219,U219,W219,Y219,AA219,AC219,M220,O220,Q220,S220,U220,W220,Y220,AA220,AC220,M221,O221,Q221,S221,U221,W221,Y221,AA221,AC221,M222,O222,Q222,S222,U222,W222,Y222,AA222,AC222",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B217"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C218"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D219,D220,D221,D222"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L219,L220,L221,L222"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_74_estimate",
+      "range": "D223,D224,L223,L224,M223,O223,Q223,S223,U223,W223,Y223,AA223,AC223,M224,O224,Q224,S224,U224,W224,Y224,AA224,AC224",
+      "values_range": "M223,O223,Q223,S223,U223,W223,Y223,AA223,AC223,M224,O224,Q224,S224,U224,W224,Y224,AA224,AC224",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B217"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C218"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D223,D224"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L223,L224"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_75_estimate",
+      "range": "D226,D227,D228,D229,L226,L227,L228,L229,M226,O226,Q226,S226,U226,W226,Y226,AA226,AC226,M227,O227,Q227,S227,U227,W227,Y227,AA227,AC227,M228,O228,Q228,S228,U228,W228,Y228,AA228,AC228,M229,O229,Q229,S229,U229,W229,Y229,AA229,AC229",
+      "values_range": "M226,O226,Q226,S226,U226,W226,Y226,AA226,AC226,M227,O227,Q227,S227,U227,W227,Y227,AA227,AC227,M228,O228,Q228,S228,U228,W228,Y228,AA228,AC228,M229,O229,Q229,S229,U229,W229,Y229,AA229,AC229",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B217"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C225"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D226,D227,D228,D229"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L226,L227,L228,L229"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_76_estimate",
+      "range": "D230,D231,L230,L231,M230,O230,Q230,S230,U230,W230,Y230,AA230,AC230,M231,O231,Q231,S231,U231,W231,Y231,AA231,AC231",
+      "values_range": "M230,O230,Q230,S230,U230,W230,Y230,AA230,AC230,M231,O231,Q231,S231,U231,W231,Y231,AA231,AC231",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B217"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C225"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D230,D231"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L230,L231"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_77_estimate",
+      "range": "D234,D235,D236,D237,D238,L234,L235,L236,L237,L238,M234,O234,Q234,S234,U234,W234,Y234,AA234,AC234,M235,O235,Q235,S235,U235,W235,Y235,AA235,AC235,M236,O236,Q236,S236,U236,W236,Y236,AA236,AC236,M237,O237,Q237,S237,U237,W237,Y237,AA237,AC237,M238,O238,Q238,S238,U238,W238,Y238,AA238,AC238",
+      "values_range": "M234,O234,Q234,S234,U234,W234,Y234,AA234,AC234,M235,O235,Q235,S235,U235,W235,Y235,AA235,AC235,M236,O236,Q236,S236,U236,W236,Y236,AA236,AC236,M237,O237,Q237,S237,U237,W237,Y237,AA237,AC237,M238,O238,Q238,S238,U238,W238,Y238,AA238,AC238",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B232"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C233"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D234,D235,D236,D237,D238"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L234,L235,L236,L237,L238"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_78_estimate",
+      "range": "D239,D240,L239,L240,M239,O239,Q239,S239,U239,W239,Y239,AA239,AC239,M240,O240,Q240,S240,U240,W240,Y240,AA240,AC240",
+      "values_range": "M239,O239,Q239,S239,U239,W239,Y239,AA239,AC239,M240,O240,Q240,S240,U240,W240,Y240,AA240,AC240",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B232"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C233"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D239,D240"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L239,L240"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_79_estimate",
+      "range": "D242,D243,D244,D245,D246,L242,L243,L244,L245,L246,M242,O242,Q242,S242,U242,W242,Y242,AA242,AC242,M243,O243,Q243,S243,U243,W243,Y243,AA243,AC243,M244,O244,Q244,S244,U244,W244,Y244,AA244,AC244,M245,O245,Q245,S245,U245,W245,Y245,AA245,AC245,M246,O246,Q246,S246,U246,W246,Y246,AA246,AC246",
+      "values_range": "M242,O242,Q242,S242,U242,W242,Y242,AA242,AC242,M243,O243,Q243,S243,U243,W243,Y243,AA243,AC243,M244,O244,Q244,S244,U244,W244,Y244,AA244,AC244,M245,O245,Q245,S245,U245,W245,Y245,AA245,AC245,M246,O246,Q246,S246,U246,W246,Y246,AA246,AC246",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B232"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C241"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D242,D243,D244,D245,D246"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L242,L243,L244,L245,L246"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_80_estimate",
+      "range": "D247,D248,L247,L248,M247,O247,Q247,S247,U247,W247,Y247,AA247,AC247,M248,O248,Q248,S248,U248,W248,Y248,AA248,AC248",
+      "values_range": "M247,O247,Q247,S247,U247,W247,Y247,AA247,AC247,M248,O248,Q248,S248,U248,W248,Y248,AA248,AC248",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A208"
+        },
+        {
+          "name": "indicator",
+          "cells": "B232"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C241"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D247,D248"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L247,L248"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_81_estimate",
+      "range": "D252,D253,D254,D255,L252,L253,L254,L255,M252,O252,Q252,S252,U252,W252,Y252,AA252,AC252,M253,O253,Q253,S253,U253,W253,Y253,AA253,AC253,M254,O254,Q254,S254,U254,W254,Y254,AA254,AC254,M255,O255,Q255,S255,U255,W255,Y255,AA255,AC255",
+      "values_range": "M252,O252,Q252,S252,U252,W252,Y252,AA252,AC252,M253,O253,Q253,S253,U253,W253,Y253,AA253,AC253,M254,O254,Q254,S254,U254,W254,Y254,AA254,AC254,M255,O255,Q255,S255,U255,W255,Y255,AA255,AC255",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B250"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C251"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D252,D253,D254,D255"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L252,L253,L254,L255"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_82_estimate",
+      "range": "D256,D257,L256,L257,M256,O256,Q256,S256,U256,W256,Y256,AA256,AC256,M257,O257,Q257,S257,U257,W257,Y257,AA257,AC257",
+      "values_range": "M256,O256,Q256,S256,U256,W256,Y256,AA256,AC256,M257,O257,Q257,S257,U257,W257,Y257,AA257,AC257",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B250"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C251"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D256,D257"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L256,L257"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_83_estimate",
+      "range": "D260,D261,D262,D263,L260,L261,L262,L263,M260,O260,Q260,S260,U260,W260,Y260,AA260,AC260,M261,O261,Q261,S261,U261,W261,Y261,AA261,AC261,M262,O262,Q262,S262,U262,W262,Y262,AA262,AC262,M263,O263,Q263,S263,U263,W263,Y263,AA263,AC263",
+      "values_range": "M260,O260,Q260,S260,U260,W260,Y260,AA260,AC260,M261,O261,Q261,S261,U261,W261,Y261,AA261,AC261,M262,O262,Q262,S262,U262,W262,Y262,AA262,AC262,M263,O263,Q263,S263,U263,W263,Y263,AA263,AC263",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B258"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C259"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D260,D261,D262,D263"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L260,L261,L262,L263"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_84_estimate",
+      "range": "D264,D265,L264,L265,M264,O264,Q264,S264,U264,W264,Y264,AA264,AC264,M265,O265,Q265,S265,U265,W265,Y265,AA265,AC265",
+      "values_range": "M264,O264,Q264,S264,U264,W264,Y264,AA264,AC264,M265,O265,Q265,S265,U265,W265,Y265,AA265,AC265",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B258"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C259"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D264,D265"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L264,L265"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_85_estimate",
+      "range": "D267,D268,D269,D270,L267,L268,L269,L270,M267,O267,Q267,S267,U267,W267,Y267,AA267,AC267,M268,O268,Q268,S268,U268,W268,Y268,AA268,AC268,M269,O269,Q269,S269,U269,W269,Y269,AA269,AC269,M270,O270,Q270,S270,U270,W270,Y270,AA270,AC270",
+      "values_range": "M267,O267,Q267,S267,U267,W267,Y267,AA267,AC267,M268,O268,Q268,S268,U268,W268,Y268,AA268,AC268,M269,O269,Q269,S269,U269,W269,Y269,AA269,AC269,M270,O270,Q270,S270,U270,W270,Y270,AA270,AC270",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B258"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C266"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D267,D268,D269,D270"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L267,L268,L269,L270"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_86_estimate",
+      "range": "D271,D272,L271,L272,M271,O271,Q271,S271,U271,W271,Y271,AA271,AC271,M272,O272,Q272,S272,U272,W272,Y272,AA272,AC272",
+      "values_range": "M271,O271,Q271,S271,U271,W271,Y271,AA271,AC271,M272,O272,Q272,S272,U272,W272,Y272,AA272,AC272",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B258"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C266"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D271,D272"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L271,L272"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_87_estimate",
+      "range": "D275,D276,D277,D278,D279,L275,L276,L277,L278,L279,M275,O275,Q275,S275,U275,W275,Y275,AA275,AC275,M276,O276,Q276,S276,U276,W276,Y276,AA276,AC276,M277,O277,Q277,S277,U277,W277,Y277,AA277,AC277,M278,O278,Q278,S278,U278,W278,Y278,AA278,AC278,M279,O279,Q279,S279,U279,W279,Y279,AA279,AC279",
+      "values_range": "M275,O275,Q275,S275,U275,W275,Y275,AA275,AC275,M276,O276,Q276,S276,U276,W276,Y276,AA276,AC276,M277,O277,Q277,S277,U277,W277,Y277,AA277,AC277,M278,O278,Q278,S278,U278,W278,Y278,AA278,AC278,M279,O279,Q279,S279,U279,W279,Y279,AA279,AC279",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B273"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C274"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D275,D276,D277,D278,D279"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L275,L276,L277,L278,L279"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_88_estimate",
+      "range": "D280,D281,L280,L281,M280,O280,Q280,S280,U280,W280,Y280,AA280,AC280,M281,O281,Q281,S281,U281,W281,Y281,AA281,AC281",
+      "values_range": "M280,O280,Q280,S280,U280,W280,Y280,AA280,AC280,M281,O281,Q281,S281,U281,W281,Y281,AA281,AC281",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B273"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C274"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D280,D281"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L280,L281"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_89_estimate",
+      "range": "D283,D284,D285,D286,D287,L283,L284,L285,L286,L287,M283,O283,Q283,S283,U283,W283,Y283,AA283,AC283,M284,O284,Q284,S284,U284,W284,Y284,AA284,AC284,M285,O285,Q285,S285,U285,W285,Y285,AA285,AC285,M286,O286,Q286,S286,U286,W286,Y286,AA286,AC286,M287,O287,Q287,S287,U287,W287,Y287,AA287,AC287",
+      "values_range": "M283,O283,Q283,S283,U283,W283,Y283,AA283,AC283,M284,O284,Q284,S284,U284,W284,Y284,AA284,AC284,M285,O285,Q285,S285,U285,W285,Y285,AA285,AC285,M286,O286,Q286,S286,U286,W286,Y286,AA286,AC286,M287,O287,Q287,S287,U287,W287,Y287,AA287,AC287",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B273"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D283,D284,D285,D286,D287"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L283,L284,L285,L286,L287"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_90_estimate",
+      "range": "D288,D289,L288,L289,M288,O288,Q288,S288,U288,W288,Y288,AA288,AC288,M289,O289,Q289,S289,U289,W289,Y289,AA289,AC289",
+      "values_range": "M288,O288,Q288,S288,U288,W288,Y288,AA288,AC288,M289,O289,Q289,S289,U289,W289,Y289,AA289,AC289",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A249"
+        },
+        {
+          "name": "indicator",
+          "cells": "B273"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C282"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D288,D289"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L288,L289"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_91_estimate",
+      "range": "D293,D294,D295,D296,L293,L294,L295,L296,M293,O293,Q293,S293,U293,W293,Y293,AA293,AC293,M294,O294,Q294,S294,U294,W294,Y294,AA294,AC294,M295,O295,Q295,S295,U295,W295,Y295,AA295,AC295,M296,O296,Q296,S296,U296,W296,Y296,AA296,AC296",
+      "values_range": "M293,O293,Q293,S293,U293,W293,Y293,AA293,AC293,M294,O294,Q294,S294,U294,W294,Y294,AA294,AC294,M295,O295,Q295,S295,U295,W295,Y295,AA295,AC295,M296,O296,Q296,S296,U296,W296,Y296,AA296,AC296",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B291"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C292"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D293,D294,D295,D296"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L293,L294,L295,L296"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_92_estimate",
+      "range": "D297,D298,L297,L298,M297,O297,Q297,S297,U297,W297,Y297,AA297,AC297,M298,O298,Q298,S298,U298,W298,Y298,AA298,AC298",
+      "values_range": "M297,O297,Q297,S297,U297,W297,Y297,AA297,AC297,M298,O298,Q298,S298,U298,W298,Y298,AA298,AC298",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B291"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C292"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D297,D298"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L297,L298"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_93_estimate",
+      "range": "D301,D302,D303,D304,L301,L302,L303,L304,M301,O301,Q301,S301,U301,W301,Y301,AA301,AC301,M302,O302,Q302,S302,U302,W302,Y302,AA302,AC302,M303,O303,Q303,S303,U303,W303,Y303,AA303,AC303,M304,O304,Q304,S304,U304,W304,Y304,AA304,AC304",
+      "values_range": "M301,O301,Q301,S301,U301,W301,Y301,AA301,AC301,M302,O302,Q302,S302,U302,W302,Y302,AA302,AC302,M303,O303,Q303,S303,U303,W303,Y303,AA303,AC303,M304,O304,Q304,S304,U304,W304,Y304,AA304,AC304",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B299"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C300"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D301,D302,D303,D304"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L301,L302,L303,L304"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_94_estimate",
+      "range": "D305,D306,L305,L306,M305,O305,Q305,S305,U305,W305,Y305,AA305,AC305,M306,O306,Q306,S306,U306,W306,Y306,AA306,AC306",
+      "values_range": "M305,O305,Q305,S305,U305,W305,Y305,AA305,AC305,M306,O306,Q306,S306,U306,W306,Y306,AA306,AC306",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B299"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C300"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D305,D306"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L305,L306"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_95_estimate",
+      "range": "D308,D309,D310,D311,L308,L309,L310,L311,M308,O308,Q308,S308,U308,W308,Y308,AA308,AC308,M309,O309,Q309,S309,U309,W309,Y309,AA309,AC309,M310,O310,Q310,S310,U310,W310,Y310,AA310,AC310,M311,O311,Q311,S311,U311,W311,Y311,AA311,AC311",
+      "values_range": "M308,O308,Q308,S308,U308,W308,Y308,AA308,AC308,M309,O309,Q309,S309,U309,W309,Y309,AA309,AC309,M310,O310,Q310,S310,U310,W310,Y310,AA310,AC310,M311,O311,Q311,S311,U311,W311,Y311,AA311,AC311",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B299"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C307"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D308,D309,D310,D311"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L308,L309,L310,L311"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_96_estimate",
+      "range": "D312,D313,L312,L313,M312,O312,Q312,S312,U312,W312,Y312,AA312,AC312,M313,O313,Q313,S313,U313,W313,Y313,AA313,AC313",
+      "values_range": "M312,O312,Q312,S312,U312,W312,Y312,AA312,AC312,M313,O313,Q313,S313,U313,W313,Y313,AA313,AC313",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B299"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C307"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D312,D313"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L312,L313"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_97_estimate",
+      "range": "D316,D317,D318,D319,D320,L316,L317,L318,L319,L320,M316,O316,Q316,S316,U316,W316,Y316,AA316,AC316,M317,O317,Q317,S317,U317,W317,Y317,AA317,AC317,M318,O318,Q318,S318,U318,W318,Y318,AA318,AC318,M319,O319,Q319,S319,U319,W319,Y319,AA319,AC319,M320,O320,Q320,S320,U320,W320,Y320,AA320,AC320",
+      "values_range": "M316,O316,Q316,S316,U316,W316,Y316,AA316,AC316,M317,O317,Q317,S317,U317,W317,Y317,AA317,AC317,M318,O318,Q318,S318,U318,W318,Y318,AA318,AC318,M319,O319,Q319,S319,U319,W319,Y319,AA319,AC319,M320,O320,Q320,S320,U320,W320,Y320,AA320,AC320",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B314"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C315"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D316,D317,D318,D319,D320"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L316,L317,L318,L319,L320"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_98_estimate",
+      "range": "D321,D322,L321,L322,M321,O321,Q321,S321,U321,W321,Y321,AA321,AC321,M322,O322,Q322,S322,U322,W322,Y322,AA322,AC322",
+      "values_range": "M321,O321,Q321,S321,U321,W321,Y321,AA321,AC321,M322,O322,Q322,S322,U322,W322,Y322,AA322,AC322",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B314"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C315"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D321,D322"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L321,L322"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_99_estimate",
+      "range": "D324,D325,D326,D327,D328,L324,L325,L326,L327,L328,M324,O324,Q324,S324,U324,W324,Y324,AA324,AC324,M325,O325,Q325,S325,U325,W325,Y325,AA325,AC325,M326,O326,Q326,S326,U326,W326,Y326,AA326,AC326,M327,O327,Q327,S327,U327,W327,Y327,AA327,AC327,M328,O328,Q328,S328,U328,W328,Y328,AA328,AC328",
+      "values_range": "M324,O324,Q324,S324,U324,W324,Y324,AA324,AC324,M325,O325,Q325,S325,U325,W325,Y325,AA325,AC325,M326,O326,Q326,S326,U326,W326,Y326,AA326,AC326,M327,O327,Q327,S327,U327,W327,Y327,AA327,AC327,M328,O328,Q328,S328,U328,W328,Y328,AA328,AC328",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B314"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C323"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D324,D325,D326,D327,D328"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L324,L325,L326,L327,L328"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_100_estimate",
+      "range": "D329,D330,L329,L330,M329,O329,Q329,S329,U329,W329,Y329,AA329,AC329,M330,O330,Q330,S330,U330,W330,Y330,AA330,AC330",
+      "values_range": "M329,O329,Q329,S329,U329,W329,Y329,AA329,AC329,M330,O330,Q330,S330,U330,W330,Y330,AA330,AC330",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A290"
+        },
+        {
+          "name": "indicator",
+          "cells": "B314"
+        },
+        {
+          "name": "time_of_day",
+          "cells": "C323"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D329,D330"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L329,L330"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:49:53Z",
+    "tool_version": "0.2.0",
+    "records": 2844,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T084119Z-d02cc377803f",
+    "started_at": "2026-11-02T08:41:24Z",
+    "workbook": "d02cc377803fc80da7dc959567bbdaeeef3411d087ef98c546dc811ba3a4726e--report-on-government-services-justice-2021-police-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b6b-a1a4-7780-b2b2-6884ceba69f1",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9218de1512963c6a2b87bd2bdc70c23627c81d41906474cb4730ada072eaa06e",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d02cc377803fc80da7dc959567bbdaeeef3411d087ef98c546dc811ba3a4726e--report-on-government-services-justice-2021-police-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2021 — Justice\n- Sheets needing a recipe: 22 of 22\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | de46788e90753e496d2d9d1abaa9c5a2eaff7d46e515ce87788308f2fcd366f2 | missing |\n| \"Table 6A.1\" | 6355086ea905259d0ae48fd013ae9625dadef0c91129deb0128ff7d8c4fb55e9 | missing |\n| \"Table 6A.2\" | e40e1a72cdde7b1498873ab365f3238c09c4aa446778094e85d77c76f0bd6939 | missing |\n| \"Table 6A.3\" | 64f83c4dde29b9996219f282ccb5a62d29827b1365b5a0b4f6d574edc94db185 | missing |\n| \"Table 6A.4\" | 9680cb1f7a46b39a7948fdba1a29acc272847f7aba9bf55156c06b7bf8cca4c3 | missing |\n| \"Table 6A.5\" | 1d6033c60284c48c502cadf00b59bb8f08734cce1ae91a5027176a36fce09d9f | missing |\n| \"Table 6A.6\" | 5569639c00b750374b60736819b8dbbd4622f9badf19ad1097027ffaeec5bfb5 | missing |\n| \"Table 6A.7\" | 0a6264817e5e0ec6c7f54892f18f420e12746f09fe18bf44b5be15dfd1c70a67 | missing |\n| \"Table 6A.8\" | e6d5d0a5815a656de4ea2e026329add1e119db354cb85cb5efba2388e5e91700 | missing |\n| \"Table 6A.9\" | fae7181c208e3e458832261a772239537a734acd3f17f2793b17f9d36dead25e | missing |\n| \"Table 6A.10\" | 2aa8806f48fd006af0a461b5378ce715d7aaef6662daed590572a69549ae812a | missing |\n| \"Table 6A.11\" | d86253f3f92198dda3e8e492bdfad3919b5e7d8d8543d0e893eb0bf912f4df71 | missing |\n| \"Table 6A.12\" | 8a5d22522e8c0b56e6273f4acc2a59cd03acd7531a980a0963932b7cd76453c7 | missing |\n| \"Table 6A.13\" | b9e71764bc7e91cccd897efef9c6cf6a904c5299ad2c69f00759d27546df64a1 | missing |\n| \"Table 6A.14\" | c183c6cc7123d0ed45515848908657796da43bf89ed91a15dfa68e7dd3dd6071 | missing |\n| \"Table 6A.15\" | 4cb9aae7020f5c9b1859152a954d660597e4fc1af44beae1d49d1d2f19710c2b | missing |\n| \"Table 6A.16\" | de6b0271a00f03f277f6f73898a30c81618f5d1756f69f3ccc1376c466872b65 | missing |\n| \"Table 6A.17\" | 8fe87f7c58c4d40130a2d494010e1af1e513a04511b9c62a21769868d439b5ab | missing |\n| \"Table 6A.18\" | dc58bd5f1adf106900737ddf9bb6db6cbd459c909980795d0d249d12c523209f | missing |\n| \"Table 6A.19\" | 8c1f9b63a6f8659497310d7e9db28c73e7e61ffe4356644bfa29c987f55913e9 | missing |\n| \"Table 6A.20\" | 5e6de9145b3523fba9bec6f2e2327b3925fd9b0f29284e0ed002729b105a42e0 | missing |\n| \"Table 6A.21\" | 657efa5081adb145980b0b1d5111ac77455a4536c4cc033b09c68e84d10639e9 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T084119Z-d02cc377803f.jsonl"
+  }
+}

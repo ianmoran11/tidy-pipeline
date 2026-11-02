@@ -1,0 +1,212 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a25bbafd6466ae31bb3edd754e2355807aee686179316a204e51ca682ef10be9",
+  "sheet": "Table 6A.15",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published outline hierarchy retained through block dimensions; totals and subtotals included. Survey confidence intervals are separate from estimates; missing-value symbols and quality markers are retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C17,C18,A20,C20,A21,C21,A22,C22,A23,C23,A24,C24,A25,C25"
+    },
+    {
+      "name": "source",
+      "cells": "A27,E27"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_estimate",
+      "range": "C5,C6,C7,L5,L6,L7,M5,N5,O5,P5,Q5,R5,S5,T5,M6,N6,O6,P6,Q6,R6,S6,T6,M7,N7,O7,P7,Q7,R7,S7,T7",
+      "values_range": "M5,N5,O5,P5,Q5,R5,S5,T5,M6,N6,O6,P6,Q6,R6,S6,T6,M7,N7,O7,P7,Q7,R7,S7,T7",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "victim_offence",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "C5,C6,C7"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L5,L6,L7"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2"
+        }
+      ]
+    },
+    {
+      "name": "block_2_estimate",
+      "range": "C9,C10,C11,L9,L10,L11,M9,N9,O9,P9,Q9,R9,S9,T9,M10,N10,O10,P10,Q10,R10,S10,T10,M11,N11,O11,P11,Q11,R11,S11,T11",
+      "values_range": "M9,N9,O9,P9,Q9,R9,S9,T9,M10,N10,O10,P10,Q10,R10,S10,T10,M11,N11,O11,P11,Q11,R11,S11,T11",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "victim_offence",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "C9,C10,C11"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L9,L10,L11"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2"
+        }
+      ]
+    },
+    {
+      "name": "block_3_estimate",
+      "range": "C13,C14,C15,L13,L14,L15,M13,N13,O13,P13,Q13,R13,S13,T13,M14,N14,O14,P14,Q14,R14,S14,T14,M15,N15,O15,P15,Q15,R15,S15,T15",
+      "values_range": "M13,N13,O13,P13,Q13,R13,S13,T13,M14,N14,O14,P14,Q14,R14,S14,T14,M15,N15,O15,P15,Q15,R15,S15,T15",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "victim_offence",
+          "cells": "B12"
+        }
+      ],
+      "headers": [
+        {
+          "name": "police_investigation_outcome",
+          "direction": "W",
+          "cells": "C13,C14,C15"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L13,L14,L15"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:41:34Z",
+    "tool_version": "0.2.0",
+    "records": 72,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T083618Z-2d4cb90d1775",
+    "started_at": "2026-11-02T08:36:22Z",
+    "workbook": "2d4cb90d17759afd7cdc99f422fade3db3913ac4c5db78e6b68270ebe137a26c--report-on-government-services-justice-2020-police-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b67-0730-7201-8c74-600b6de8d55a",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "0ddf29b3f511dd5be662b072c2ece85ff946309c13c2526e9b5e2d6890c20928",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2d4cb90d17759afd7cdc99f422fade3db3913ac4c5db78e6b68270ebe137a26c--report-on-government-services-justice-2020-police-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2020 — Justice\n- Sheets needing a recipe: 22 of 22\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 953865c8534f56bcc00d755ed1678e1437f692745a3d866797b078a9dc6895a8 | missing |\n| \"Table 6A.1\" | 0f185cad59b993d8bf1766f87588f5c1ba96fb445c1d58c1e5f4cad33bf4e4d3 | missing |\n| \"Table 6A.2\" | c96217e910944e7532560efe31ed0de17131ed394c3375efb98ae3f908afd0c2 | missing |\n| \"Table 6A.3\" | 6e0cfab25df57a2443e769fca2848500cb3b8966ff773aa1f79aca975149cd80 | missing |\n| \"Table 6A.4\" | c8d8ddffc4faa121bfa4c671b6f544accdd554f4b05fa63fee981b926b39ef57 | missing |\n| \"Table 6A.5\" | 5028b1c6f930d248ffc22cd480fd24710d0ad59e4af5505173a36dd258627c1c | missing |\n| \"Table 6A.6\" | 53f9dd4fe29c6e3bb709977e2ca02081d5e6af220d87c468581dbd1e4febfd85 | missing |\n| \"Table 6A.7\" | 0a6982fe2a1000129e92303315d83ce5e04f84a4c52aec3fa3c13ecd7fafbcd7 | missing |\n| \"Table 6A.8\" | 4d4e43f690d16a879bed557f4b209e3f0209a2939c4567171a18149d35a09a8b | missing |\n| \"Table 6A.9\" | 583ff4f8b046c84732e305b2736877722d1647768e977033db7279a447aca9a3 | missing |\n| \"Table 6A.10\" | 9d265214a2b843f9edd7ca76a9f73b060b1809a3c5a3260c092e5c7b8c234839 | missing |\n| \"Table 6A.11\" | 4324f20f84c447f7fbc6b6fc74ac1c2e28d4a484ab193609e63efd001407c343 | missing |\n| \"Table 6A.12\" | 072a549865684f28460f2f34a024c86a0f69f2741969176a0a01c271764d41a5 | missing |\n| \"Table 6A.13\" | d8ca44516a0ee44e8c3ee308d610ab523bae3f114b2e045051ecab4614149737 | missing |\n| \"Table 6A.14\" | 8ba8fb5c2df57fbe3e3f3b3c2b0bf8476c779871f8d4f14b94a79e5815f35602 | missing |\n| \"Table 6A.15\" | a25bbafd6466ae31bb3edd754e2355807aee686179316a204e51ca682ef10be9 | missing |\n| \"Table 6A.16\" | 0a7576d0a1ac8d7aab9355a4358df1715d08e4cc7df970928e7181e5438d1708 | missing |\n| \"Table 6A.17\" | f576a52ab64bef4bf703f4c3be231554b564684a75f91f7a6357cd166eeb655a | missing |\n| \"Table 6A.18\" | 82267e8b4f6afa9f7b19f7d04bdee556ac4ed89ea4b797eca4668f192d6f7f65 | missing |\n| \"Table 6A.19\" | fee2f3273692737c70e5937b2cb4328ceb39c38b708b0c6f15785499c102471e | missing |\n| \"Table 6A.20\" | 920d56be09b44178caa9ce6a7ab9d5502effeb64b4f5e51aff8b438697349c11 | missing |\n| \"Table 6A.21\" | 18bf411376e9a317ce36759afc4359b31cf431bd19f1b889e1d1631494f8cd80 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T083618Z-2d4cb90d1775.jsonl"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0e23027580e0ba791861a2f146a9dfebd6fed98df6e9b4717e90421bd3f08d5f",
+  "sheet": "Table S56",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals and overlapping age aggregates retained. Sparse row labels span subsequent rows. Unlabelled worksheet calculations and separator marks are retained as annotations, not statistical observations. Total-under-supervision rows include people excluded from the remoteness categories, as explained in source notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A3,B3,A37,B37"
+    },
+    {
+      "name": "source",
+      "cells": "A33,A64"
+    },
+    {
+      "name": "notes",
+      "cells": "A25,A26,A27,A28,A29,A30,A31,A59,A60,A61,A62"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_3",
+      "range": "A3:F24",
+      "values_range": "C4:F4,C5:F5,C6:F6,C7:F7,C8:F8,C9:F9,C10:F10,C11:F11,C12:F12,C13:F13,C14:F14,C15:F15,C16:F16,C17:F17,C18:F18,C19:F19,C20:F20,C21:F21,C22:F22,C23:F23,C24:F24",
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "WNW",
+          "cells": "A4,A9,A14,A19"
+        },
+        {
+          "name": "remoteness_area",
+          "caption": "Remoteness area",
+          "direction": "W",
+          "cells": "B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "C3,D3,E3,F3"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A1"
+        }
+      ]
+    },
+    {
+      "name": "block_37",
+      "range": "A37:F58",
+      "values_range": "C38:F38,C39:F39,C40:F40,C41:F41,C42:F42,C43:F43,C44:F44,C45:F45,C46:F46,C47:F47,C48:F48,C49:F49,C50:F50,C51:F51,C52:F52,C53:F53,C54:F54,C55:F55,C56:F56,C57:F57,C58:F58",
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "WNW",
+          "cells": "A38,A43,A48,A53"
+        },
+        {
+          "name": "remoteness_area",
+          "caption": "Remoteness area",
+          "direction": "W",
+          "cells": "B38,B39,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B56,B57,B58"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "C37,D37,E37,F37"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A35"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:36:07Z",
+    "tool_version": "0.2.0",
+    "records": 168,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T083149Z-565a9fe79400",
+    "started_at": "2026-11-02T08:31:53Z",
+    "workbook": "565a9fe79400f6f5eb349b7de1c7af9a0ed6750b0a14fe8039f8e4074d0b4328--aihw-youth-justice-australia-2024-25-community-supervision-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b62-ea69-7750-8701-94e3fee94231",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "cb84a45cb4e92b8a3d67c2ba246cae5aba36ccf91241714ec11e68d736209cbc",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `565a9fe79400f6f5eb349b7de1c7af9a0ed6750b0a14fe8039f8e4074d0b4328--aihw-youth-justice-australia-2024-25-community-supervision-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 40 of 40\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6e2e35582e4376b9130bc5550a749d96264aa7160607378fc597446d5bf048ad | missing |\n| \"Notes and symbols\" | fa8398dce46801de331306a32062e9dbd67419a78b62c6c3cc79d551db9cb418 | missing |\n| \"Table S34\" | 5ff8bf939fe9ab60c461cc51586bf001d747d4974f823afc7ee2036083a2961b | missing |\n| \"Table S35\" | c3b546d24414b278071b52d4a6c08516b5f56fff9ae00494a2679375ca1119e2 | missing |\n| \"Table S36\" | 5ff8e67e75f0f53f98369d74e4d605b682940cdfb58bf75232b64312b0193d90 | missing |\n| \"Table S37\" | a36173ba5eb84a5af8e335d30b5dba107ee01ea7f52113347fdb1ebf59880ce1 | missing |\n| \"Table S38\" | a69c89d3ee746760db1eeacb7c697c7193423290669aef66ac67851daffb4882 | missing |\n| \"Table S39\" | 08ef83a90ca43d1e18af46d17de6fbd04dfffc609d351d35e12c67cc0231666f | missing |\n| \"Table S40\" | 16b3127746f33c627fbce56d474dd0f6aa6093e6adc1115817374392383514d1 | missing |\n| \"Table S41\" | 3e036b0697728e15518f892bcb22bd1355ef1c0a40c97cfc6e6d0bcb8ef3a1e0 | missing |\n| \"Table S42\" | ea458c2e5f0acf6633c154c3beae02f2c9ef79cb4f5cb873f2ab6d302e32f7bc | missing |\n| \"Table S43\" | f374fe8f215d3e73e70067f1832aa323ab421b5423a5e8595d56b836181342ee | missing |\n| \"Table S44\" | 5414a5805f3fe8274215f4ae7d440d3f5deaaae45e48c2d19eb67faf640ecea1 | missing |\n| \"Table S45\" | 2016102a5a4d883988044779bfcc09a6953e042d9be11d50893210fc4ba80a52 | missing |\n| \"Table S46\" | ac0c9f15c1f5bc97b958a427813eb55eb8a4302f0f1aa0a83ad61e730935f52d | missing |\n| \"Table S47\" | c3e96cc885cb12825fcfeea2a209f8719fa72eb43496abfc45d5140778c30140 | missing |\n| \"Table S48\" | c303f039a0f9c42d0f7b4049c9f45d3d2259bafed289369de033c226feb32829 | missing |\n| \"Table S49\" | f4821b9a912f6765afde8fa13cddd99bd5727262f03f9d635058913e6561c824 | missing |\n| \"Table S50\" | 58099c1db6144ac3216402069904a0e8c470a1dd2f1445c697bd6ca965c4e67f | missing |\n| \"Table S51\" | f8b05b180b9773e925cb4086d51f9ef91b7806cd73a9ded854dafe2933e82fcf | missing |\n| \"Table S52\" | 3cfe85b8a73d7fa3106c853a18774c9fed6971a1c2b531a23897f0d9f1dd48f4 | missing |\n| \"Table S53\" | a0e500fe59a3dd467e80e0177470a97db6d604c9daf2d43b4077bc966a32e888 | missing |\n| \"Table S54\" | b02bc583652a50fdc489e06bf08fa9075cdf0d2fef7da9a3f1c961bd516be1dc | missing |\n| \"Table S55\" | 2f5eeea6dcc6a032e0f0e912946e1a9f8844713c213989e3279b86d9d36886aa | missing |\n| \"Table S56\" | 0e23027580e0ba791861a2f146a9dfebd6fed98df6e9b4717e90421bd3f08d5f | missing |\n| \"Table S57\" | 463865c3b750b3cdb493b3f1ca56a96bad9a57a6d00bbf089b76121b898f3ed0 | missing |\n| \"Table S58\" | 79d15aba4dec01545848e4653fdd03617d87762fc824ee115fadd3cc62b3fc18 | missing |\n| \"Table S59\" | 5961ef81539a53b35bc580b96f5a531e4764a38aaddb48ea6274fd6e5e4dc3a7 | missing |\n| \"Table S60\" | 2df489e9682087c127eaa3a2fdaa6797310fa5d516ba9e587f2f16d779e5cccb | missing |\n| \"Table S61\" | b66d9147fd8da994e563dd06e85ae3ff498aa9a4cbbccc8b3e8614ffe7a91f05 | missing |\n| \"Table S62\" | ecd8705fb1fb2c427e01964400557c4dd8dce0af6e87ca75cec1207d620cf118 | missing |\n| \"Table S63\" | f548918d580d00b91daf36a72c671ebc2016d0c6ea5b7e8f8d65a84d33cab210 | missing |\n| \"Table S64\" | fe4f02b0f24b9b6f250d23691dcbb3aab8ea9230ca5ad63c297243ca69c13766 | missing |\n| \"Table S65\" | 05e3628ac0c49d4881c0a676c507bb5026b4504a1c260baa574e29cb62c46a83 | missing |\n| \"Table S66\" | ce00cd63907f88c4960b9a310e14aebd919b7ea3fd6c11e904e55f73460c2df0 | missing |\n| \"Table S67\" | 5013429dd1f69a7bce79b9e04cb5fae1043d66207500ee89d3cd6244ebd7b27b | missing |\n| \"Table S68\" | 72831b0e4167174239847de8cee0937ee858f80b26394a71169a2cfdcf299d99 | missing |\n| \"Table S69\" | de58338cae30d02320c1b6a5f86dc0c5984ae7dc8b21522ce47d9ee27902839c | missing |\n| \"Table S70\" | 643883e818afc887e9d06124d31a8f0b27e9eb02c59b93d2ca09dacbd3bfa4db | missing |\n| \"Table S71\" | b38494a8c6dc294cc8bbc2d10edb1c1ea472571afabbdb825423e069b16d0243 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T083149Z-565a9fe79400.jsonl"
+  }
+}

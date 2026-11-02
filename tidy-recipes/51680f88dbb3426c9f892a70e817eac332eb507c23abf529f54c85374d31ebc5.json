@@ -1,0 +1,160 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "51680f88dbb3426c9f892a70e817eac332eb507c23abf529f54c85374d31ebc5",
+  "sheet": "Table S9.5",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "b9faf1d2ebed9790cd40c1433a9fede374494a6c632d1dcaa5b0f265cf01f01c",
+  "agent_notes": "All published Total rows and columns are retained; totals include unstated categories and may exceed the sum of displayed subcategories. Labels and numerical precision are preserved as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "B2,A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A16"
+    },
+    {
+      "name": "source",
+      "cells": "A17"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number",
+      "range": "A4:D9",
+      "values_range": "B5:D9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "abuse_type",
+          "caption": "Abuse type",
+          "direction": "W",
+          "cells": "A5:A9"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "N",
+          "cells": "B3:D3"
+        }
+      ]
+    },
+    {
+      "name": "per_cent",
+      "range": "A10:D15",
+      "values_range": "B11:D15",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "abuse_type",
+          "caption": "Abuse type",
+          "direction": "W",
+          "cells": "A11:A15"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "N",
+          "cells": "B3:D3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:30:34Z",
+    "tool_version": "0.2.0",
+    "records": 30,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T082914Z-d37da60976d3",
+    "started_at": "2026-11-02T08:29:18Z",
+    "workbook": "d37da60976d3e694fd8988183980e928102fc9d73cc5f99005b23f2e79179b3c--aihw-child-protection-australia-2023-24-safety-in-care-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b60-8ed6-72ae-9559-1e4594159045",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1ca1157faacf999e5ba322932ec13fd9e79a6f5d87f4b5663e47312ed293062b",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d37da60976d3e694fd8988183980e928102fc9d73cc5f99005b23f2e79179b3c--aihw-child-protection-australia-2023-24-safety-in-care-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2023–24 complete release\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 7288f01cfb4bdc94720ed72453bd6b2fd18f45f2e0942f4f7b7f41c8ec541db9 | missing |\n| \"Table S9.1\" | 00e1d00c53670290a1abaf4942ae108fa89dc9eee9bf2da9c1cf265c81413c45 | missing |\n| \"Table S9.2\" | 742154e454ac2bc39317a4e8ff466b873b4fbaa04ef61064ce70bcb7a431d1b2 | missing |\n| \"Table S9.3\" | 9c1d08da984adf0156e559546c8492566ea303a7936adfb86bd6d37abd11acec | missing |\n| \"Table S9.4\" | 161d98f60b8b5b9eec959066f3ac6370dcdaa27ea48ccd685f7ad6cb34750238 | missing |\n| \"Table S9.5\" | 51680f88dbb3426c9f892a70e817eac332eb507c23abf529f54c85374d31ebc5 | missing |\n| \"Table S9.6\" | abd61b7e7cbd1881cd1364d09f9b04d2dedbc9a25271231b566bf19113a36203 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T082914Z-d37da60976d3.jsonl"
+  }
+}

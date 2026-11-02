@@ -1,0 +1,172 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "47adc31dc121c2522278f17fc9f455e725658c183ad6c2f4c6aa519d0f8a1da6",
+  "sheet": "Table 6A.22",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "82267e8b4f6afa9f7b19f7d04bdee556ac4ed89ea4b797eca4668f192d6f7f65",
+  "agent_notes": "All published totals and subtotals retained. Outline parents are table metadata. Survey sample-size and index rows are measures, not response categories. Unlabelled confidence-interval columns are separate tables identified by the explanatory 95 per cent confidence-interval note; absent interval cells are excluded. Published footnote markers and suppression symbols remain unchanged.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "A18,C18"
+    },
+    {
+      "name": "source",
+      "cells": "A20,E20"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "B4,L4,M4,N4,O4,P4,Q4,R4,S4,T4,U4,B5,L5,M5,N5,O5,P5,Q5,R5,S5,T5,U5,B6,L6,M6,N6,O6,P6,Q6,R6,S6,T6,U6,B7,L7,M7,N7,O7,P7,Q7,R7,S7,T7,U7,B8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,B9,L9,M9,N9,O9,P9,Q9,R9,S9,T9,U9",
+      "values_range": "M4,N4,O4,P4,Q4,R4,S4,T4,U4,M5,N5,O5,P5,Q5,R5,S5,T5,U5,M6,N6,O6,P6,Q6,R6,S6,T6,U6,M7,N7,O7,P7,Q7,R7,S7,T7,U7,M8,N8,O8,P8,Q8,R8,S8,T8,U8,M9,N9,O9,P9,Q9,R9,S9,T9,U9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "B4,B5,B6,B7,B8,B9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L4,L5,L6,L7,L8,L9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "B11,L11,M11,N11,O11,P11,Q11,R11,S11,T11,U11,B12,L12,M12,N12,O12,P12,Q12,R12,S12,T12,U12,B13,L13,M13,N13,O13,P13,Q13,R13,S13,T13,U13,B14,L14,M14,N14,O14,P14,Q14,R14,S14,T14,U14,B15,L15,M15,N15,O15,P15,Q15,R15,S15,T15,U15,B16,L16,M16,N16,O16,P16,Q16,R16,S16,T16,U16",
+      "values_range": "M11,N11,O11,P11,Q11,R11,S11,T11,U11,M12,N12,O12,P12,Q12,R12,S12,T12,U12,M13,N13,O13,P13,Q13,R13,S13,T13,U13,M14,N14,O14,P14,Q14,R14,S14,T14,U14,M15,N15,O15,P15,Q15,R15,S15,T15,U15,M16,N16,O16,P16,Q16,R16,S16,T16,U16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A10"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "B11,B12,B13,B14,B15,B16"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L11,L12,L13,L14,L15,L16"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:50:57Z",
+    "tool_version": "0.2.0",
+    "records": 108,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T084441Z-5f7127efb2d0",
+    "started_at": "2026-11-02T08:44:42Z",
+    "workbook": "5f7127efb2d0fffe6a17a03b0ece68590a472cc41e5da63edb20f81c2d94045f--report-on-government-services-justice-2023-police-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b6e-a7dd-7159-bacb-e11b19b74295",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7ee05b155de3d99f6d4f874548254ec502c682cd88d897ae74823afd6835ea0c",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5f7127efb2d0fffe6a17a03b0ece68590a472cc41e5da63edb20f81c2d94045f--report-on-government-services-justice-2023-police-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2023 — Justice\n- Sheets needing a recipe: 23 of 23\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 6A.1\" | 84b67141cbccb6845575792b69141a67f51909f49f3401274cb8c4a97827fb97 | missing |\n| \"Table 6A.2\" | c705904f5fb16e437fbc879f411d7ac2348f070546ffd32e5dccf03841d46031 | missing |\n| \"Table 6A.3\" | 5e989c1e39cf85f6aa211cc83fa153256fde1c17e237f7f97b28e8608a2e637b | missing |\n| \"Table 6A.4\" | 61ed86e7a428cc8ca48cd95560515fd935589d840ecae3e81b39fbbc288d5807 | missing |\n| \"Table 6A.5\" | e7670126b3ed4b1398766b32c6019b8355ce7576f99f479b39ef1a368bb5e80d | missing |\n| \"Table 6A.6\" | 8f3e479bbee1a8fbeeecb7fc9be3ba09039e6c81dc30535c7dfffa10bca6e4f5 | missing |\n| \"Table 6A.7\" | d106fe76ac4a5f3f126fa4dc37367b9979017e5982abbe2cdc799006ccb0f205 | missing |\n| \"Table 6A.8\" | ec0f0bc74d50aef577257b532885e0be492edf826dd6bc48f3d11eed6754fc04 | missing |\n| \"Table 6A.9\" | 5da96d130dd0dca47c07e846e66276aead75e73cb5af306b53ef06705d8ee1a8 | missing |\n| \"Table 6A.10\" | aac9460a43cd3c7b45f5f6a95e3731b43aa0a3b55a4adf1587ac106e06e594d9 | missing |\n| \"Table 6A.11\" | 21f224c769672a6b73d4087e1f7830f8bcb67e22ec64f71ae75a9fb64baa169c | missing |\n| \"Table 6A.12\" | a4bd6898ef5c8908547cf6a0ddf4ca5d630523f9d8d8445b18d37a6b2be2793d | missing |\n| \"Table 6A.13\" | 38023e5b46d46c1fcd332a9724453e0dbbbaf654175925ab971aa0e85b241dd5 | missing |\n| \"Table 6A.14\" | 5f68ed2667f8979afc9505518ae1227ba06e1193ccf9c094981614cae5cff8f3 | missing |\n| \"Table 6A.15\" | 34f4882e95de13362db8872965db97298f6c99b0cdc18503524094b89ec16d73 | missing |\n| \"Table 6A.16\" | da0d433ab4e926235d3de8f7dbdf4d14b15b1c0c726687f6082ca0f9e76061de | missing |\n| \"Table 6A.17\" | 0ec49cc78e90db24f9db4613a571d16b112d3a098204a4e995bb287495be0289 | missing |\n| \"Table 6A.18\" | 728d3f1678fa714996dc497f1d2e3daf5b9f0eea60e3ce6e814823c9a84fa11d | missing |\n| \"Table 6A.19\" | 48ed9944ac2c2ad9f77f86e04786110e2561fb394b8e844e617b5f0297689925 | missing |\n| \"Table 6A.20\" | 7172430cfacf8546eb7fb1792f3c4e5347f10247e852477cb8e07dc40b58f214 | missing |\n| \"Table 6A.21\" | f39ca8eca49ab0cef440a1891939489bcca48d070888f393455e395f7e3fe44b | missing |\n| \"Table 6A.22\" | 47adc31dc121c2522278f17fc9f455e725658c183ad6c2f4c6aa519d0f8a1da6 | missing |\n| \"Contents\" | 5bb179296dfe085383a9c7215da85fbb00f4de4e9f6c8f3d2b267c07dcddb504 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T084441Z-5f7127efb2d0.jsonl"
+  }
+}

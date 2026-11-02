@@ -1,0 +1,170 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0ce707f717912d1120e861d1282f99efa3cc1df136d9e4fe8b44840e8d477617",
+  "sheet": "Table CA.1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "c919b24505512a7afaa3af9370b9123073567ef5528861b8e3d3cf8e8ff1e3a1",
+  "agent_notes": "Total Justice sector rows are published totals; percentage rows show service shares, distinguished by unit. Growth rates are a separate measure.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "notes",
+      "cells": "C15,A17:A22,C17:C22"
+    },
+    {
+      "name": "source",
+      "cells": "A24,E24"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L3,S3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "expenditure",
+      "range": "A4:Q13",
+      "values_range": "M4:Q13",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "L2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "service",
+          "direction": "W",
+          "cells": "A4:A13"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L4:L13"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "M3:Q3"
+        }
+      ]
+    },
+    {
+      "name": "growth",
+      "range": "S4:T8",
+      "values_range": "T4:T8",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "S2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "service",
+          "direction": "W",
+          "cells": "A4:A8"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "S4:S8"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "T3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:43:10Z",
+    "tool_version": "0.2.0",
+    "records": 55,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T084129Z-47edcac6941d",
+    "started_at": "2026-11-02T08:41:36Z",
+    "workbook": "47edcac6941de270196dfd3475f6ed3878f4a7bece3c8000d6c04289fdb6415c--report-on-government-services-justice-2022-sector-overview-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b6b-d1b7-7760-8f8a-2d1c5ed317be",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "dcf34ff2325c65cafc5d9b5c6befe74450750d2aa1c7585d97b5bbfd71f631ba",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `47edcac6941de270196dfd3475f6ed3878f4a7bece3c8000d6c04289fdb6415c--report-on-government-services-justice-2022-sector-overview-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2022 — Justice\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | b6498c93165fdbb17de3b8f8065233406eacc34cf17e96b8cb8544e34c715fb6 | missing |\n| \"Table CA.1\" | 0ce707f717912d1120e861d1282f99efa3cc1df136d9e4fe8b44840e8d477617 | missing |\n| \"Table CA.2\" | 30df7fab5736ceb36fee243653f71f6e86ae9a12a68d317074b868106b0dfd19 | missing |\n| \"Table CA.3\" | 4e4bb760dd2b43a8e969248914b36b587c634f8656050ccf622826bfb7e326d8 | missing |\n| \"Table CA.4\" | f243bd9dccc35bc5f657efcb2a0db9a2f134538af393ecd806adc6398fd6aa93 | missing |\n| \"Table CA.5\" | 6bd712c1592728ab9ea02e779d50655a8d7f4abb60963fe75e7508dfbd590b4b | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T084129Z-47edcac6941d.jsonl"
+  }
+}

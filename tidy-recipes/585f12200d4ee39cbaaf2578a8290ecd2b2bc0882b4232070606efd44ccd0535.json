@@ -1,0 +1,177 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "585f12200d4ee39cbaaf2578a8290ecd2b2bc0882b4232070606efd44ccd0535",
+  "sheet": "Table 8A.10",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals and component rows are retained; totals are not additive to their components. Separate blocks preserve the row outline and characteristic sections.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C13,C14,A16,C16,A17,C17,A18,C18,A19,C19,A20,C20"
+    },
+    {
+      "name": "source",
+      "cells": "A22,E22"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_5",
+      "range": "C5:U7",
+      "values_range": "M5:U7",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L5:L7"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "C5:C7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        }
+      ]
+    },
+    {
+      "name": "block_9",
+      "range": "C9:U11",
+      "values_range": "M9:U11",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L9:L11"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "C9:C11"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B8"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:42:38Z",
+    "tool_version": "0.2.0",
+    "records": 54,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T083759Z-4a800bf22e8c",
+    "started_at": "2026-11-02T08:38:01Z",
+    "workbook": "4a800bf22e8c9f0ca4d679ab14ae01384c225d146c132352c0fbd42a04a79cdf--report-on-government-services-justice-2021-corrective-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b68-8855-728f-9865-8d2776837984",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4fee525e4c58ca715ae1b2c6752d04d6566448557cdb6d3822c8c6b3299efb3f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4a800bf22e8c9f0ca4d679ab14ae01384c225d146c132352c0fbd42a04a79cdf--report-on-government-services-justice-2021-corrective-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2021 — Justice\n- Sheets needing a recipe: 23 of 23\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 149a5484406d44d38ea2869d8dedea9fff4c6d7ffcef6fec8a8347cb21a95049 | missing |\n| \"Table 8A.1\" | fa7b0dff23de5c220c080446cba4e435f3a0f73918a796dd6781c6d31c0fa4ca | missing |\n| \"Table 8A.2\" | ce23791e54e6091f5594ad3f014d04c092f72ffcfacc89defcedb8936885c8c5 | missing |\n| \"Table 8A.3\" | 75188e694dbb01f7793730ffd736e9ced716ff8fdc8bbb02bcb403849b311730 | missing |\n| \"Table 8A.4\" | 32ddada3b9b9898f5cae111b6d22fd7d75f507dbfda6525f7c6d35caa2ce390e | missing |\n| \"Table 8A.5\" | 06828403e42ca02746063d3bb3f265bd5cfc11b14b275c03654fb162985d0031 | missing |\n| \"Table 8A.6\" | 847161a6320b6d75d6c303967a941b665ff734136a23bab94b445f0c096a3961 | missing |\n| \"Table 8A.7\" | 07fa617d5281d6937a81127c496185f4198cb179f15dccf4aead2bd9df491228 | missing |\n| \"Table 8A.8\" | 1ef7000fd8cd046df6559b0492484009cda7761ed2210516892996521fd9a648 | missing |\n| \"Table 8A.9\" | 9dbdacb65e2501acbd552537c5d3d238f2005fcb960b17cae8d7a2000cb305aa | missing |\n| \"Table 8A.10\" | 585f12200d4ee39cbaaf2578a8290ecd2b2bc0882b4232070606efd44ccd0535 | missing |\n| \"Table 8A.11\" | 3d01a5d4d0a30ddb5a9bfc40edb6d24f76ba7d5010421e9f647a8dc61331ae60 | missing |\n| \"Table 8A.12\" | 203f49ba6b9837ffb4d76c4d0cb77c4183b748947fd2a6dbb6c759cc6664ceae | missing |\n| \"Table 8A.13\" | 602f00ec4e78a72b3289796272254a22fc5f0b6de6010745faf8022546b7e174 | missing |\n| \"Table 8A.14\" | fea4c4fb3759a4d63e25f870948cf3f09c99cc6de1efa0a7156c5b0a80cddf08 | missing |\n| \"Table 8A.15\" | a96c875754eba02c2c9294e9b2a0eb7c8f98a9c218b11004c6742c957ab23a7b | missing |\n| \"Table 8A.16\" | 28d6181b157c16570fa3f4da61461b9d8df9dcf456d16a9694566a60ed63146e | missing |\n| \"Table 8A.17\" | 03a09e192e0bcf8513b10401ac85608863099f478adee6f45475dbfb8b3db4cd | missing |\n| \"Table 8A.18\" | ef6b20a7736e7ed67c2dee3491766f12e05dee12c8f0c8c2809012a919a375c0 | missing |\n| \"Table 8A.19\" | d0845c932fad1f5242686f8990be3601083e807d374ae5bcdadb00f86af52b4b | missing |\n| \"Table 8A.20\" | 5535e58dedfcd4b32841de70825684b6658b88befbe22326610e7f46dd2b4919 | missing |\n| \"Table 8A.21\" | c4099bb9c181e38525e80cfe4cdde6b8b5bd99e317ea6d0e757891c7c69e6f81 | missing |\n| \"Table 8A.22\" | 74df018cbf312bf51d52bdd13f58a869dc6e34a0c9d306de369bdc5c6b9991ac | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T083759Z-4a800bf22e8c.jsonl"
+  }
+}

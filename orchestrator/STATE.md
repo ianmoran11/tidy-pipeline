@@ -1,4 +1,4 @@
-# State at handover (2026-11-02, after the label consistency work)
+# State at handover (2026-11-02, after adding AIHW and RoGS and removing EEH)
 
 ## Corpus
 
@@ -7,41 +7,44 @@
 | Workbooks in `source-spreadsheets-xlsx/` (active) | 1,199 (545 from the original package, 654 prepared from the national catalogue) |
 | Archived reference-only copies (`reference-only/`) | 76 (608 sheets) |
 | Sheets in `source_metadata.csv` | 10,902 |
-| Active sheets | 10,294, of which 9,304 are in switched-on releases |
+| Active sheets | 10,294, of which 9,965 are in switched-on releases |
 
 ## Recipes
 
-9,040 recipes: 7,591 data, 970 contents, 479 notes:
-- 3,256 for the original package's active sheets;
+10,202 recipe files: 9,965 for the switched-on releases (8,485 data, 987 contents, 493
+notes), plus 237 for Employee Earnings and Hours, which is switched off (DECISIONS.md
+32):
+- 3,256 for the original package's active sheets, less the 146 early AIHW and RoGS
+  recipes rewritten on 2026-11-02;
 - 1,953 for the new ABS justice releases (2026-11-01);
-- 3,831 for the two ABS victims publications (2026-11-01/02).
+- 3,831 for the two ABS victims publications (2026-11-01/02);
+- 1,324 for AIHW Child protection, AIHW Youth Justice and RoGS Justice (2026-11-02:
+  1,162 new sheets plus the 146 rewritten and 16 pilot sheets redone).
 
 | Status | Count | Note |
 |---|---|---|
-| validated | 8,258 | |
-| needs_review | 782 | 557 contents and 222 notes are the validator's false alarm on numbers in non-data sheets (ISSUES.md I7); 3 data have isolated numbers outside their tables (I8) |
+| validated | 9,416 | |
+| needs_review | 786 | Mostly the validator's false alarm on numbers in contents and notes sheets (ISSUES.md I7); 3 data have isolated numbers outside their tables (I8) |
 
-Admitted sheets (switched-on releases) by publication:
+Admitted sheets (switched-on releases) by publication, all with recipes:
 
-| Publication | Admitted sheets | Recipes | Left |
-|---|---|---|---|
-| crime-victimisation-australia | 2,501 | 2,501 |   0 |
-| criminal-courts-australia | 2,101 | 2,101 |   0 |
-| recorded-crime-victims | 1,330 | 1,330 |   0 |
-| prisoners-australia | 1,257 | 1,257 |   0 |
-| recorded-crime-offenders | 1,058 | 1,058 |   0 |
-| federal-defendants-australia |   402 |   402 |   0 |
-| employee-earnings-hours-australia |   329 |   237 |  92 |
-| aihw-youth-justice-australia |   161 |    47 | 114 |
-| pc-report-on-government-services-justice |    86 |    28 |  58 |
-| aihw-child-protection-australia |    79 |    79 |   0 |
-| **Total** | **9,304** | **9,040** | **264** |
+| Publication | Admitted sheets |
+|---|---|
+| crime-victimisation-australia | 2,501 |
+| criminal-courts-australia | 2,101 |
+| recorded-crime-victims | 1,330 |
+| prisoners-australia | 1,257 |
+| recorded-crime-offenders | 1,058 |
+| pc-report-on-government-services-justice | 636 |
+| aihw-child-protection-australia | 519 |
+| federal-defendants-australia | 402 |
+| aihw-youth-justice-australia | 161 |
+| **Total** | **9,965** |
 
-`agents/queue.csv` (switched-on releases only): 1,159 workbooks, 1,143 done, 264 sheets left (Youth Justice 2024–25, EEH May 2021, RoGS 2020).
+`agents/queue.csv` (switched-on releases only): 1,154 workbooks, all done.
 
-208 recipes come from the pilot and tests (2026-10-31) and predate the dimension
-dictionary; 181 of them fail today's validator, on naming only (ISSUES.md I3). The
-rest were written after it.
+The 38 remaining pre-dictionary recipes (EEH and ABS pilot sheets) fail today's
+validator on naming only; `normalise()` maps their names (ISSUES.md I3).
 
 ## Agent runs
 
@@ -55,7 +58,9 @@ rest were written after it.
 | New ABS justice releases, the rest | `agents/batch-abs-new-rest.txt` | 1,710 | 48 min | $35.05 |
 | Victims publications, pilot | `agents/batch-victims-pilot.txt` | 239 | 10 min | $4.15 |
 | Victims publications, the rest | `agents/batch-victims-rest.txt` | 3,592 | 2 h 11 min | $61.28 |
-| **All runs** | `agents/runs.csv` | | | **$173.84** (1,146 runs) |
+| AIHW and RoGS, pilot | `agents/batch-aihw-rogs-pilot.txt` | 101 | about 15 min | $1.21 |
+| AIHW and RoGS, the rest | `agents/batch-aihw-rogs-rest.txt` | 1,223 | about 1 h | $15.15 |
+| **All runs** | `agents/runs.csv` | | | **$190.20** (1,198 runs) |
 
 Costs are Pi's estimates at API prices; on the owner's ChatGPT plan they draw on
 subscription allowance instead.
@@ -64,17 +69,17 @@ subscription allowance instead.
 
 | Target | Value |
 |---|---|
-| `data` | 9,040 sheets (every admitted sheet with a recipe) |
-| `data_normalised`, `data_harmonised`, `data_identified` | same records; every record has `period`; 236 lack `reference_date` (the publisher typos `2022–22` and `Dec 208`, ISSUES.md I12) |
-| `integrated/observations.csv` | 3,989,690 rows from 129 releases (2,628,052 before the victims publications); 3,870,414 published numbers; `value_flag`: 8,909 `rse_25_to_50`, 1,223 `rse_over_50`, 108 `footnote`, 60 `revised` |
-| Latest values | 2,259,337 series × period, each with exactly one `is_latest` |
-| `integrated/series.csv` | 661,477 series × 188 columns; every series except AIHW (I1, I25) and 9 Recorded Crime – Victims series has population and measure |
-| `integrated/measures.csv`, `sources.csv` | 1,101 measures; 7,591 sheets with data |
-| Values that can't be told apart (two different numbers) | Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Federal Defendants 108; RoGS 13 keys; AIHW about 4,300 (ISSUES.md I26, I34, I35) |
-| Checks | 79 tests; **no `error`-level failures**; 633 warning failures, all known issues (below) |
-| Admission | 129 of 721 release switches on (`sources/dataset_selection.json`): every release of the four ABS justice and two ABS victims publications, plus the original 59. 9,304 admitted sheets, 9,040 with recipes. Without recipes: Youth Justice 2024–25 (114), EEH May 2021 (92), RoGS 2020 (58) |
+| `data` | 9,965 sheets (every admitted sheet with a recipe) |
+| `data_normalised`, `data_harmonised`, `data_identified` | same records; every record has `period`; 548 lack `reference_date` (the publisher typos `2022–22` and `Dec 208`, and Youth Justice months without a year; ISSUES.md I12, I36) |
+| `integrated/observations.csv` | 4,649,536 rows from 136 releases of 9 publications (3,989,690 before AIHW and RoGS were added and EEH removed); 4,394,724 published numbers; `value_flag`: 11,283 `rse_25_to_50`, 1,953 `rse_over_50`, 108 `footnote`, 60 `revised` |
+| Latest values | 2,536,617 series × period, each with exactly one `is_latest` |
+| `integrated/series.csv` | 705,949 series × 228 columns; every series has a population except 9 Recorded Crime – Victims series; 403 child protection series have no measure (I36) |
+| `integrated/measures.csv`, `sources.csv` | 1,559 measures; 8,485 sheets with data |
+| Values that can't be told apart (two different numbers) | Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Youth Justice 129; Federal Defendants 108; child protection 71; RoGS 0 keys (ISSUES.md I26, I34, I35, I36) |
+| Checks | 79 tests; **no `error`-level failures**; 859 warning failures, all known issues (below) |
+| Admission | 136 of 721 release switches on (`sources/dataset_selection.json`): every release of the four ABS justice and two ABS victims publications, AIHW Child protection 2020–21 to 2024–25, AIHW Youth Justice 2024–25 and RoGS Justice 2020–2026. EEH is off (DECISIONS.md 32). 9,965 admitted sheets, all with recipes |
 | New sources prepared | 654 workbooks downloaded to `source-originals/`, all SHA-matched; 543 converted from XLS (118 with macros), 111 copied; in `source-spreadsheets-xlsx/` |
-| CSV size | 1.1 GB in total (observations 865 MB, series 226 MB) |
+| CSV size | 1.3 GB in total (observations 1,014 MB, series 270 MB) |
 
 Derived by `harmonise()` (records, before the integration work): `reference_date`
 1,728,664; `period` 638,292; `state` 505,204; `court_level` 105,770; `measure` 57,025;
@@ -111,17 +116,17 @@ fail on deliberately corrupted data. These warnings remain:
 
 | Warning | Where | Issue |
 |---|---|---|
-| `has_title` | 111 sheets | I25 (early AIHW recipes) |
-| `measure_present`, `population_present` | 53 and 98 sheets, about 15,900 and 22,700 records | I1, I25 |
-| `series_have_population_and_measure` | 8,498 series (AIHW, plus 9 Recorded Crime – Victims) | I1, I25 |
-| `values_distinguishable` | 9,988 keys (AIHW 4,330; Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Federal Defendants 108; RoGS 13) | I26, I34, I35 |
-| `states_are_canonical` | 359 sheets, 767 labels (mostly ACT prisoner locations) | I11 |
+| `has_title` | 1 sheet (Recorded Crime – Victims) | I34 |
+| `measure_present`, `population_present` | 12 and 1 sheets (child protection; Recorded Crime – Victims) | I34, I36 |
+| `series_have_population_and_measure` | 403 child protection series without a measure, 9 Recorded Crime – Victims without a population | I34, I36 |
+| `values_distinguishable` | 5,845 keys with two different numbers (Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Youth Justice 129; Federal Defendants 108; child protection 71) | I26, I34, I35, I36 |
+| `states_are_canonical` | 831 sheets: ACT prisoner locations (Prisoners), and "Total" and "Aust cts" in AIHW and RoGS | I11, I36 |
 | `no_stacked_characteristics` | 4 sheets | I12 |
-| `reference_dates_present` | 2 sheets (2 period labels) | I12 |
+| `reference_dates_present` | 4 sheets: the typos `2022–22` and `Dec 208`, and Youth Justice months without a year | I12, I36 |
 | `series_columns_snake_case` | 1 name, `order outcome` | I35 |
 | `labels_have_one_spelling` | 25 groups | I35 |
-| `none_unrecognised` | 3 texts (`_`, `jki`, `.`) | I31 |
-| `selected_sheets_have_recipes` | 3 partially covered releases | I31 |
+| `none_unrecognised` | 5 texts (`_`, `jki`, `.`, and child protection `<0.1`, `>99.9`) | I31, I36 |
+| `recipes_outside_selection` | the 237 EEH recipes, now switched off | DECISIONS.md 32 |
 
 Integration stages (2026-11-01):
 - `qa/check_integrated.R`: every series, sheet and measure ID resolves, no duplicate
@@ -141,8 +146,8 @@ Integration stages (2026-11-01):
    `dictionary/dimensions.csv`, and `dictionary/proposed.csv` (I10).
 3. Confirm the overnight judgement calls in ISSUES.md I34: survey estimates without an
    `estimate_type`, CV population rules, value flags.
-4. Rerun the agents on the 181 early recipes? About $4; it fixes I3 and I25 (AIHW
-   titles).
+4. **Review the 59 AIHW and RoGS dictionary names** marked "for owner review", and
+   confirm the judgement calls in ISSUES.md I36.
 5. Start stage 7, `classify()` (I6, I27)?
 6. Confirm the judgement calls in ISSUES.md I28.
 7. Git clean-up (I16).
@@ -151,8 +156,8 @@ Integration stages (2026-11-01):
 ## Recommended next steps
 
 1. **Owner review of the overnight victims choices** (Waiting on the owner 1–3).
-2. **Fix the early recipes (I3, I25), if the owner agrees.** Then add AIHW subjects to
-   `measures/measure_spec.json`, rebuild, and check `integration_gaps`.
+2. **AIHW and RoGS leftovers (I36):** the remaining gaps, and the label consistency seed
+   applied to their labels.
 3. **`classify()` (stage 7).** Add `is_total` and parents, and fill implicit totals (I27,
    including estimates without an `estimate_type`).
 4. **Clear the remaining identity conflicts (I26, I34)** with

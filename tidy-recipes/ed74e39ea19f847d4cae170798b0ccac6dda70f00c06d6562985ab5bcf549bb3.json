@@ -1,0 +1,129 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ed74e39ea19f847d4cae170798b0ccac6dda70f00c06d6562985ab5bcf549bb3",
+  "sheet": "Table 10.16",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published total rows and columns retained; suppression and not-applicable symbols are values. Footnotes and definitions retained in sheet notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A14"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A5:R13",
+      "values_range": "B5:F5,H5:L5,N5:R5,B6:F6,H6:L6,N6:R6,B7:F7,H7:L7,N7:R7,B8:F8,H8:L8,N8:R8,B9:F9,H9:L9,N9:R9,B10:F10,H10:L10,N10:R10,B11:F11,H11:L11,N11:R11,B12:F12,H12:L12,N12:R12,B13:F13,H13:L13,N13:R13",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A5:A13",
+          "caption": "State or Territory"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B4,C4,D4,E4,F4,H4,I4,J4,K4,L4,N4,O4,P4,Q4,R4"
+        },
+        {
+          "name": "order_type",
+          "direction": "NNW",
+          "cells": "B3,H3,N3"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:25:01Z",
+    "tool_version": "0.2.0",
+    "records": 135,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T081556Z-c629cf73c995",
+    "started_at": "2026-11-02T08:15:58Z",
+    "workbook": "c629cf73c99512d521175b2d63527cf23bef79cbcb23db7103c6c997d63a74eb--aihw-child-protection-australia-2021-22-first-nations-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b54-5806-7349-abf6-9d5e3f1aa0d7",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "f14acc7b4db022fd4b2bb6f01baa4128ebfc07dba6446943228d5007bca5613f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c629cf73c99512d521175b2d63527cf23bef79cbcb23db7103c6c997d63a74eb--aihw-child-protection-australia-2021-22-first-nations-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2021–22 complete release\n- Sheets needing a recipe: 22 of 22\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | fed38fe95efb61fe5f8232013341ca2126ca911a3a4f8e0bc2f3db8aa2968534 | missing |\n| \"Notes\" | bd268de42598ea639ef459f0c8dfe8377ef04c0e235f32252f17de25f0d91654 | missing |\n| \"Table 10.1\" | 0c1539484b1d0f05b6497d19e5dee8352d9900c3222e49f9f9bbea928c43ff7f | missing |\n| \"Table 10.2\" | 9c0252f5718fcc8e37870c76b7faaa0abd060e217bced1e13002f007a5658028 | missing |\n| \"Table 10.3\" | 20370dc9b75af85d8097ba53a4e135f7463b1e18beacb1329b7f1dd33fd9b4e2 | missing |\n| \"Table 10.4\" | 30efd6067c45055101188a616e9298a7f14945f52e05a1b8ae003b46ffd776d1 | missing |\n| \"Table 10.5\" | 4e30e03b8375a14d06d51cd31f43a0bceb220a7f83a03d3095c69531f360bf3c | missing |\n| \"Table 10.6\" | 2da09c7d34a09d436fad1970541694f5d529798fc0cdca589fc8d018a4c2011b | missing |\n| \"Table 10.7\" | 864b8a774ec6ebb6b83bc91d6cb8e626ffc0520c3f7568e0f906517de6e25f6b | missing |\n| \"Table 10.8\" | a31b9e6eb80f900dde717c240f04835f202536e751ace292fede5c77dfc01517 | missing |\n| \"Table 10.9\" | 381a341c966140253eb799d8c2835325a415e4aaf552c5a5434832fa77fa6acb | missing |\n| \"Table 10.10\" | f4827300d55dc1a309c6121457e87b961eac9470bed8557eaead688bf638c4d9 | missing |\n| \"Table 10.11\" | 136ead1a4ad49cd70c2af66dd54f54aee7eb726a3db70a656f43f5774d150c8c | missing |\n| \"Table 10.12\" | c7c7cc20c7727bd7aadbb2c28ba3b462a148e781cf4d0007f13d1c3b3ed76814 | missing |\n| \"Table 10.13\" | 757b9a3da6695777a69871d4e505c48d4d8d597f2a56f08d15b6c93f77d4346e | missing |\n| \"Table 10.14\" | b5b8fba4fe26e799bb624652b23f540573171e74cf6e3f7faca2a8726b8a0479 | missing |\n| \"Table 10.15\" | 59ff0c14e7a76a5355019db7987919ee3625f0db267b3f9c02bc9550a2acd1e6 | missing |\n| \"Table 10.16\" | ed74e39ea19f847d4cae170798b0ccac6dda70f00c06d6562985ab5bcf549bb3 | missing |\n| \"Table 10.17\" | 258c5169dbae74097ede7b93dba881d1c90f1b089537d68528c4b1ee389c4a54 | missing |\n| \"Table 10.18\" | 4e96fc0720190e4cdef5755f96d69686c505cc2b78c9dd66710dc4ddd52ad327 | missing |\n| \"Table 10.19\" | 41c143ff438cf7c43025930d7886e09986ed406f1cb4bc9a89c55445b1494c61 | missing |\n| \"Table 10.20\" | d0e5273892e34c476126a3ed90036ebe92fd7bbec6fdfa2d7abeab0921b7c9ae | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T081556Z-c629cf73c995.jsonl"
+  }
+}

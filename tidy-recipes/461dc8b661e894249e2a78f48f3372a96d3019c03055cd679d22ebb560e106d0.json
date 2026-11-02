@@ -1,0 +1,2507 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "461dc8b661e894249e2a78f48f3372a96d3019c03055cd679d22ebb560e106d0",
+  "sheet": "Table 7A.23",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "3e1f9b851b4cd553c84a3e8a2247afd8e795c15af34fb3f296a2d71e9af60cdf",
+  "agent_notes": "Published court hierarchy, subtotals and totals retained. Court scope distinguishes subdivisions; combined court/appeal labels remain exactly as published. Text suppression and applicability symbols retained.",
+  "new_dimensions": [
+    {
+      "name": "appeal_status",
+      "description": "Appeal or non-appeal jurisdiction of a court."
+    },
+    {
+      "name": "court_scope",
+      "description": "Published subdivision or matter scope of a court, including children's courts, family law matters, and totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "notes",
+      "cells": "C626,C628,C629,A631,C631"
+    },
+    {
+      "name": "source",
+      "cells": "A633,E633"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A7:U15",
+      "values_range": "M7,N7,O7,P7,Q7,R7,S7,T7,U7,M8,N8,O8,P8,Q8,R8,S8,T8,U8,M9,N9,O9,P9,Q9,R9,S9,T9,U9,M10,N10,O10,P10,Q10,R10,S10,T10,U10,M11,N11,O11,P11,Q11,R11,S11,T11,U11,M12,N12,O12,P12,Q12,R12,S12,T12,U12,M13,N13,O13,P13,Q13,R13,S13,T13,U13,M14,N14,O14,P14,Q14,R14,S14,T14,U14,M15,N15,O15,P15,Q15,R15,S15,T15,U15",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C5"
+        },
+        {
+          "name": "measure",
+          "cells": "D6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F7,F8,F9,F10,F11,F12,F13,F14,F15"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L7,L8,L9,L10,L11,L12,L13,L14,L15"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A17:U25",
+      "values_range": "M17,N17,O17,P17,Q17,R17,S17,T17,U17,M18,N18,O18,P18,Q18,R18,S18,T18,U18,M19,N19,O19,P19,Q19,R19,S19,T19,U19,M20,N20,O20,P20,Q20,R20,S20,T20,U20,M21,N21,O21,P21,Q21,R21,S21,T21,U21,M22,N22,O22,P22,Q22,R22,S22,T22,U22,M23,N23,O23,P23,Q23,R23,S23,T23,U23,M24,N24,O24,P24,Q24,R24,S24,T24,U24,M25,N25,O25,P25,Q25,R25,S25,T25,U25",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C5"
+        },
+        {
+          "name": "measure",
+          "cells": "D16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F17,F18,F19,F20,F21,F22,F23,F24,F25"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L17,L18,L19,L20,L21,L22,L23,L24,L25"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "A27:U35",
+      "values_range": "M27,N27,O27,P27,Q27,R27,S27,T27,U27,M28,N28,O28,P28,Q28,R28,S28,T28,U28,M29,N29,O29,P29,Q29,R29,S29,T29,U29,M30,N30,O30,P30,Q30,R30,S30,T30,U30,M31,N31,O31,P31,Q31,R31,S31,T31,U31,M32,N32,O32,P32,Q32,R32,S32,T32,U32,M33,N33,O33,P33,Q33,R33,S33,T33,U33,M34,N34,O34,P34,Q34,R34,S34,T34,U34,M35,N35,O35,P35,Q35,R35,S35,T35,U35",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C5"
+        },
+        {
+          "name": "measure",
+          "cells": "D26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F27,F28,F29,F30,F31,F32,F33,F34,F35"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L27,L28,L29,L30,L31,L32,L33,L34,L35"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_4",
+      "range": "A37:U45",
+      "values_range": "M37,N37,O37,P37,Q37,R37,S37,T37,U37,M38,N38,O38,P38,Q38,R38,S38,T38,U38,M39,N39,O39,P39,Q39,R39,S39,T39,U39,M40,N40,O40,P40,Q40,R40,S40,T40,U40,M41,N41,O41,P41,Q41,R41,S41,T41,U41,M42,N42,O42,P42,Q42,R42,S42,T42,U42,M43,N43,O43,P43,Q43,R43,S43,T43,U43,M44,N44,O44,P44,Q44,R44,S44,T44,U44,M45,N45,O45,P45,Q45,R45,S45,T45,U45",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C5"
+        },
+        {
+          "name": "measure",
+          "cells": "D36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F37,F38,F39,F40,F41,F42,F43,F44,F45"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L37,L38,L39,L40,L41,L42,L43,L44,L45"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_5",
+      "range": "A48:U56",
+      "values_range": "M48,N48,O48,P48,Q48,R48,S48,T48,U48,M49,N49,O49,P49,Q49,R49,S49,T49,U49,M50,N50,O50,P50,Q50,R50,S50,T50,U50,M51,N51,O51,P51,Q51,R51,S51,T51,U51,M52,N52,O52,P52,Q52,R52,S52,T52,U52,M53,N53,O53,P53,Q53,R53,S53,T53,U53,M54,N54,O54,P54,Q54,R54,S54,T54,U54,M55,N55,O55,P55,Q55,R55,S55,T55,U55,M56,N56,O56,P56,Q56,R56,S56,T56,U56",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C46"
+        },
+        {
+          "name": "measure",
+          "cells": "D47"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F48,F49,F50,F51,F52,F53,F54,F55,F56"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L48,L49,L50,L51,L52,L53,L54,L55,L56"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_6",
+      "range": "A58:U66",
+      "values_range": "M58,N58,O58,P58,Q58,R58,S58,T58,U58,M59,N59,O59,P59,Q59,R59,S59,T59,U59,M60,N60,O60,P60,Q60,R60,S60,T60,U60,M61,N61,O61,P61,Q61,R61,S61,T61,U61,M62,N62,O62,P62,Q62,R62,S62,T62,U62,M63,N63,O63,P63,Q63,R63,S63,T63,U63,M64,N64,O64,P64,Q64,R64,S64,T64,U64,M65,N65,O65,P65,Q65,R65,S65,T65,U65,M66,N66,O66,P66,Q66,R66,S66,T66,U66",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C46"
+        },
+        {
+          "name": "measure",
+          "cells": "D57"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F58,F59,F60,F61,F62,F63,F64,F65,F66"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L58,L59,L60,L61,L62,L63,L64,L65,L66"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_7",
+      "range": "A68:U76",
+      "values_range": "M68,N68,O68,P68,Q68,R68,S68,T68,U68,M69,N69,O69,P69,Q69,R69,S69,T69,U69,M70,N70,O70,P70,Q70,R70,S70,T70,U70,M71,N71,O71,P71,Q71,R71,S71,T71,U71,M72,N72,O72,P72,Q72,R72,S72,T72,U72,M73,N73,O73,P73,Q73,R73,S73,T73,U73,M74,N74,O74,P74,Q74,R74,S74,T74,U74,M75,N75,O75,P75,Q75,R75,S75,T75,U75,M76,N76,O76,P76,Q76,R76,S76,T76,U76",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C46"
+        },
+        {
+          "name": "measure",
+          "cells": "D67"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F68,F69,F70,F71,F72,F73,F74,F75,F76"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L68,L69,L70,L71,L72,L73,L74,L75,L76"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_8",
+      "range": "A78:U86",
+      "values_range": "M78,N78,O78,P78,Q78,R78,S78,T78,U78,M79,N79,O79,P79,Q79,R79,S79,T79,U79,M80,N80,O80,P80,Q80,R80,S80,T80,U80,M81,N81,O81,P81,Q81,R81,S81,T81,U81,M82,N82,O82,P82,Q82,R82,S82,T82,U82,M83,N83,O83,P83,Q83,R83,S83,T83,U83,M84,N84,O84,P84,Q84,R84,S84,T84,U84,M85,N85,O85,P85,Q85,R85,S85,T85,U85,M86,N86,O86,P86,Q86,R86,S86,T86,U86",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C46"
+        },
+        {
+          "name": "measure",
+          "cells": "D77"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F78,F79,F80,F81,F82,F83,F84,F85,F86"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L78,L79,L80,L81,L82,L83,L84,L85,L86"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_9",
+      "range": "A89:U97",
+      "values_range": "M89,N89,O89,P89,Q89,R89,S89,T89,U89,M90,N90,O90,P90,Q90,R90,S90,T90,U90,M91,N91,O91,P91,Q91,R91,S91,T91,U91,M92,N92,O92,P92,Q92,R92,S92,T92,U92,M93,N93,O93,P93,Q93,R93,S93,T93,U93,M94,N94,O94,P94,Q94,R94,S94,T94,U94,M95,N95,O95,P95,Q95,R95,S95,T95,U95,M96,N96,O96,P96,Q96,R96,S96,T96,U96,M97,N97,O97,P97,Q97,R97,S97,T97,U97",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C87"
+        },
+        {
+          "name": "measure",
+          "cells": "D88"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F89,F90,F91,F92,F93,F94,F95,F96,F97"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L89,L90,L91,L92,L93,L94,L95,L96,L97"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_10",
+      "range": "A99:U107",
+      "values_range": "M99,N99,O99,P99,Q99,R99,S99,T99,U99,M100,N100,O100,P100,Q100,R100,S100,T100,U100,M101,N101,O101,P101,Q101,R101,S101,T101,U101,M102,N102,O102,P102,Q102,R102,S102,T102,U102,M103,N103,O103,P103,Q103,R103,S103,T103,U103,M104,N104,O104,P104,Q104,R104,S104,T104,U104,M105,N105,O105,P105,Q105,R105,S105,T105,U105,M106,N106,O106,P106,Q106,R106,S106,T106,U106,M107,N107,O107,P107,Q107,R107,S107,T107,U107",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C87"
+        },
+        {
+          "name": "measure",
+          "cells": "D98"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F99,F100,F101,F102,F103,F104,F105,F106,F107"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L99,L100,L101,L102,L103,L104,L105,L106,L107"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_11",
+      "range": "A109:U117",
+      "values_range": "M109,N109,O109,P109,Q109,R109,S109,T109,U109,M110,N110,O110,P110,Q110,R110,S110,T110,U110,M111,N111,O111,P111,Q111,R111,S111,T111,U111,M112,N112,O112,P112,Q112,R112,S112,T112,U112,M113,N113,O113,P113,Q113,R113,S113,T113,U113,M114,N114,O114,P114,Q114,R114,S114,T114,U114,M115,N115,O115,P115,Q115,R115,S115,T115,U115,M116,N116,O116,P116,Q116,R116,S116,T116,U116,M117,N117,O117,P117,Q117,R117,S117,T117,U117",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C87"
+        },
+        {
+          "name": "measure",
+          "cells": "D108"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F109,F110,F111,F112,F113,F114,F115,F116,F117"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L109,L110,L111,L112,L113,L114,L115,L116,L117"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_12",
+      "range": "A119:U127",
+      "values_range": "M119,N119,O119,P119,Q119,R119,S119,T119,U119,M120,N120,O120,P120,Q120,R120,S120,T120,U120,M121,N121,O121,P121,Q121,R121,S121,T121,U121,M122,N122,O122,P122,Q122,R122,S122,T122,U122,M123,N123,O123,P123,Q123,R123,S123,T123,U123,M124,N124,O124,P124,Q124,R124,S124,T124,U124,M125,N125,O125,P125,Q125,R125,S125,T125,U125,M126,N126,O126,P126,Q126,R126,S126,T126,U126,M127,N127,O127,P127,Q127,R127,S127,T127,U127",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B4"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C87"
+        },
+        {
+          "name": "measure",
+          "cells": "D118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F119,F120,F121,F122,F123,F124,F125,F126,F127"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L119,L120,L121,L122,L123,L124,L125,L126,L127"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_13",
+      "range": "A131:U139",
+      "values_range": "M131,N131,O131,P131,Q131,R131,S131,T131,U131,M132,N132,O132,P132,Q132,R132,S132,T132,U132,M133,N133,O133,P133,Q133,R133,S133,T133,U133,M134,N134,O134,P134,Q134,R134,S134,T134,U134,M135,N135,O135,P135,Q135,R135,S135,T135,U135,M136,N136,O136,P136,Q136,R136,S136,T136,U136,M137,N137,O137,P137,Q137,R137,S137,T137,U137,M138,N138,O138,P138,Q138,R138,S138,T138,U138,M139,N139,O139,P139,Q139,R139,S139,T139,U139",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C129"
+        },
+        {
+          "name": "measure",
+          "cells": "D130"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F131,F132,F133,F134,F135,F136,F137,F138,F139"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L131,L132,L133,L134,L135,L136,L137,L138,L139"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_14",
+      "range": "A141:U149",
+      "values_range": "M141,N141,O141,P141,Q141,R141,S141,T141,U141,M142,N142,O142,P142,Q142,R142,S142,T142,U142,M143,N143,O143,P143,Q143,R143,S143,T143,U143,M144,N144,O144,P144,Q144,R144,S144,T144,U144,M145,N145,O145,P145,Q145,R145,S145,T145,U145,M146,N146,O146,P146,Q146,R146,S146,T146,U146,M147,N147,O147,P147,Q147,R147,S147,T147,U147,M148,N148,O148,P148,Q148,R148,S148,T148,U148,M149,N149,O149,P149,Q149,R149,S149,T149,U149",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C129"
+        },
+        {
+          "name": "measure",
+          "cells": "D140"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F141,F142,F143,F144,F145,F146,F147,F148,F149"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L141,L142,L143,L144,L145,L146,L147,L148,L149"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_15",
+      "range": "A151:U159",
+      "values_range": "M151,N151,O151,P151,Q151,R151,S151,T151,U151,M152,N152,O152,P152,Q152,R152,S152,T152,U152,M153,N153,O153,P153,Q153,R153,S153,T153,U153,M154,N154,O154,P154,Q154,R154,S154,T154,U154,M155,N155,O155,P155,Q155,R155,S155,T155,U155,M156,N156,O156,P156,Q156,R156,S156,T156,U156,M157,N157,O157,P157,Q157,R157,S157,T157,U157,M158,N158,O158,P158,Q158,R158,S158,T158,U158,M159,N159,O159,P159,Q159,R159,S159,T159,U159",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C129"
+        },
+        {
+          "name": "measure",
+          "cells": "D150"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F151,F152,F153,F154,F155,F156,F157,F158,F159"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L151,L152,L153,L154,L155,L156,L157,L158,L159"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_16",
+      "range": "A161:U169",
+      "values_range": "M161,N161,O161,P161,Q161,R161,S161,T161,U161,M162,N162,O162,P162,Q162,R162,S162,T162,U162,M163,N163,O163,P163,Q163,R163,S163,T163,U163,M164,N164,O164,P164,Q164,R164,S164,T164,U164,M165,N165,O165,P165,Q165,R165,S165,T165,U165,M166,N166,O166,P166,Q166,R166,S166,T166,U166,M167,N167,O167,P167,Q167,R167,S167,T167,U167,M168,N168,O168,P168,Q168,R168,S168,T168,U168,M169,N169,O169,P169,Q169,R169,S169,T169,U169",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C129"
+        },
+        {
+          "name": "measure",
+          "cells": "D160"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F161,F162,F163,F164,F165,F166,F167,F168,F169"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L161,L162,L163,L164,L165,L166,L167,L168,L169"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_17",
+      "range": "A172:U180",
+      "values_range": "M172,N172,O172,P172,Q172,R172,S172,T172,U172,M173,N173,O173,P173,Q173,R173,S173,T173,U173,M174,N174,O174,P174,Q174,R174,S174,T174,U174,M175,N175,O175,P175,Q175,R175,S175,T175,U175,M176,N176,O176,P176,Q176,R176,S176,T176,U176,M177,N177,O177,P177,Q177,R177,S177,T177,U177,M178,N178,O178,P178,Q178,R178,S178,T178,U178,M179,N179,O179,P179,Q179,R179,S179,T179,U179,M180,N180,O180,P180,Q180,R180,S180,T180,U180",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C170"
+        },
+        {
+          "name": "measure",
+          "cells": "D171"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F172,F173,F174,F175,F176,F177,F178,F179,F180"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L172,L173,L174,L175,L176,L177,L178,L179,L180"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_18",
+      "range": "A182:U190",
+      "values_range": "M182,N182,O182,P182,Q182,R182,S182,T182,U182,M183,N183,O183,P183,Q183,R183,S183,T183,U183,M184,N184,O184,P184,Q184,R184,S184,T184,U184,M185,N185,O185,P185,Q185,R185,S185,T185,U185,M186,N186,O186,P186,Q186,R186,S186,T186,U186,M187,N187,O187,P187,Q187,R187,S187,T187,U187,M188,N188,O188,P188,Q188,R188,S188,T188,U188,M189,N189,O189,P189,Q189,R189,S189,T189,U189,M190,N190,O190,P190,Q190,R190,S190,T190,U190",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C170"
+        },
+        {
+          "name": "measure",
+          "cells": "D181"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F182,F183,F184,F185,F186,F187,F188,F189,F190"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L182,L183,L184,L185,L186,L187,L188,L189,L190"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_19",
+      "range": "A192:U200",
+      "values_range": "M192,N192,O192,P192,Q192,R192,S192,T192,U192,M193,N193,O193,P193,Q193,R193,S193,T193,U193,M194,N194,O194,P194,Q194,R194,S194,T194,U194,M195,N195,O195,P195,Q195,R195,S195,T195,U195,M196,N196,O196,P196,Q196,R196,S196,T196,U196,M197,N197,O197,P197,Q197,R197,S197,T197,U197,M198,N198,O198,P198,Q198,R198,S198,T198,U198,M199,N199,O199,P199,Q199,R199,S199,T199,U199,M200,N200,O200,P200,Q200,R200,S200,T200,U200",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C170"
+        },
+        {
+          "name": "measure",
+          "cells": "D191"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F192,F193,F194,F195,F196,F197,F198,F199,F200"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L192,L193,L194,L195,L196,L197,L198,L199,L200"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_20",
+      "range": "A202:U210",
+      "values_range": "M202,N202,O202,P202,Q202,R202,S202,T202,U202,M203,N203,O203,P203,Q203,R203,S203,T203,U203,M204,N204,O204,P204,Q204,R204,S204,T204,U204,M205,N205,O205,P205,Q205,R205,S205,T205,U205,M206,N206,O206,P206,Q206,R206,S206,T206,U206,M207,N207,O207,P207,Q207,R207,S207,T207,U207,M208,N208,O208,P208,Q208,R208,S208,T208,U208,M209,N209,O209,P209,Q209,R209,S209,T209,U209,M210,N210,O210,P210,Q210,R210,S210,T210,U210",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C170"
+        },
+        {
+          "name": "measure",
+          "cells": "D201"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F202,F203,F204,F205,F206,F207,F208,F209,F210"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L202,L203,L204,L205,L206,L207,L208,L209,L210"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_21",
+      "range": "A213:U221",
+      "values_range": "M213,N213,O213,P213,Q213,R213,S213,T213,U213,M214,N214,O214,P214,Q214,R214,S214,T214,U214,M215,N215,O215,P215,Q215,R215,S215,T215,U215,M216,N216,O216,P216,Q216,R216,S216,T216,U216,M217,N217,O217,P217,Q217,R217,S217,T217,U217,M218,N218,O218,P218,Q218,R218,S218,T218,U218,M219,N219,O219,P219,Q219,R219,S219,T219,U219,M220,N220,O220,P220,Q220,R220,S220,T220,U220,M221,N221,O221,P221,Q221,R221,S221,T221,U221",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C211"
+        },
+        {
+          "name": "measure",
+          "cells": "D212"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F213,F214,F215,F216,F217,F218,F219,F220,F221"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L213,L214,L215,L216,L217,L218,L219,L220,L221"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_22",
+      "range": "A223:U231",
+      "values_range": "M223,N223,O223,P223,Q223,R223,S223,T223,U223,M224,N224,O224,P224,Q224,R224,S224,T224,U224,M225,N225,O225,P225,Q225,R225,S225,T225,U225,M226,N226,O226,P226,Q226,R226,S226,T226,U226,M227,N227,O227,P227,Q227,R227,S227,T227,U227,M228,N228,O228,P228,Q228,R228,S228,T228,U228,M229,N229,O229,P229,Q229,R229,S229,T229,U229,M230,N230,O230,P230,Q230,R230,S230,T230,U230,M231,N231,O231,P231,Q231,R231,S231,T231,U231",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C211"
+        },
+        {
+          "name": "measure",
+          "cells": "D222"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F223,F224,F225,F226,F227,F228,F229,F230,F231"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L223,L224,L225,L226,L227,L228,L229,L230,L231"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_23",
+      "range": "A233:U241",
+      "values_range": "M233,N233,O233,P233,Q233,R233,S233,T233,U233,M234,N234,O234,P234,Q234,R234,S234,T234,U234,M235,N235,O235,P235,Q235,R235,S235,T235,U235,M236,N236,O236,P236,Q236,R236,S236,T236,U236,M237,N237,O237,P237,Q237,R237,S237,T237,U237,M238,N238,O238,P238,Q238,R238,S238,T238,U238,M239,N239,O239,P239,Q239,R239,S239,T239,U239,M240,N240,O240,P240,Q240,R240,S240,T240,U240,M241,N241,O241,P241,Q241,R241,S241,T241,U241",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C211"
+        },
+        {
+          "name": "measure",
+          "cells": "D232"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F233,F234,F235,F236,F237,F238,F239,F240,F241"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L233,L234,L235,L236,L237,L238,L239,L240,L241"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_24",
+      "range": "A243:U251",
+      "values_range": "M243,N243,O243,P243,Q243,R243,S243,T243,U243,M244,N244,O244,P244,Q244,R244,S244,T244,U244,M245,N245,O245,P245,Q245,R245,S245,T245,U245,M246,N246,O246,P246,Q246,R246,S246,T246,U246,M247,N247,O247,P247,Q247,R247,S247,T247,U247,M248,N248,O248,P248,Q248,R248,S248,T248,U248,M249,N249,O249,P249,Q249,R249,S249,T249,U249,M250,N250,O250,P250,Q250,R250,S250,T250,U250,M251,N251,O251,P251,Q251,R251,S251,T251,U251",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B128"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C211"
+        },
+        {
+          "name": "measure",
+          "cells": "D242"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F243,F244,F245,F246,F247,F248,F249,F250,F251"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L243,L244,L245,L246,L247,L248,L249,L250,L251"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_25",
+      "range": "A254:U262",
+      "values_range": "M254,N254,O254,P254,Q254,R254,S254,T254,U254,M255,N255,O255,P255,Q255,R255,S255,T255,U255,M256,N256,O256,P256,Q256,R256,S256,T256,U256,M257,N257,O257,P257,Q257,R257,S257,T257,U257,M258,N258,O258,P258,Q258,R258,S258,T258,U258,M259,N259,O259,P259,Q259,R259,S259,T259,U259,M260,N260,O260,P260,Q260,R260,S260,T260,U260,M261,N261,O261,P261,Q261,R261,S261,T261,U261,M262,N262,O262,P262,Q262,R262,S262,T262,U262",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B252"
+        },
+        {
+          "name": "measure",
+          "cells": "C253"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F254,F255,F256,F257,F258,F259,F260,F261,F262"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L254,L255,L256,L257,L258,L259,L260,L261,L262"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_26",
+      "range": "A264:U272",
+      "values_range": "M264,N264,O264,P264,Q264,R264,S264,T264,U264,M265,N265,O265,P265,Q265,R265,S265,T265,U265,M266,N266,O266,P266,Q266,R266,S266,T266,U266,M267,N267,O267,P267,Q267,R267,S267,T267,U267,M268,N268,O268,P268,Q268,R268,S268,T268,U268,M269,N269,O269,P269,Q269,R269,S269,T269,U269,M270,N270,O270,P270,Q270,R270,S270,T270,U270,M271,N271,O271,P271,Q271,R271,S271,T271,U271,M272,N272,O272,P272,Q272,R272,S272,T272,U272",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B252"
+        },
+        {
+          "name": "measure",
+          "cells": "C263"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F264,F265,F266,F267,F268,F269,F270,F271,F272"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L264,L265,L266,L267,L268,L269,L270,L271,L272"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_27",
+      "range": "A274:U282",
+      "values_range": "M274,N274,O274,P274,Q274,R274,S274,T274,U274,M275,N275,O275,P275,Q275,R275,S275,T275,U275,M276,N276,O276,P276,Q276,R276,S276,T276,U276,M277,N277,O277,P277,Q277,R277,S277,T277,U277,M278,N278,O278,P278,Q278,R278,S278,T278,U278,M279,N279,O279,P279,Q279,R279,S279,T279,U279,M280,N280,O280,P280,Q280,R280,S280,T280,U280,M281,N281,O281,P281,Q281,R281,S281,T281,U281,M282,N282,O282,P282,Q282,R282,S282,T282,U282",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B252"
+        },
+        {
+          "name": "measure",
+          "cells": "C273"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F274,F275,F276,F277,F278,F279,F280,F281,F282"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L274,L275,L276,L277,L278,L279,L280,L281,L282"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_28",
+      "range": "A284:U292",
+      "values_range": "M284,N284,O284,P284,Q284,R284,S284,T284,U284,M285,N285,O285,P285,Q285,R285,S285,T285,U285,M286,N286,O286,P286,Q286,R286,S286,T286,U286,M287,N287,O287,P287,Q287,R287,S287,T287,U287,M288,N288,O288,P288,Q288,R288,S288,T288,U288,M289,N289,O289,P289,Q289,R289,S289,T289,U289,M290,N290,O290,P290,Q290,R290,S290,T290,U290,M291,N291,O291,P291,Q291,R291,S291,T291,U291,M292,N292,O292,P292,Q292,R292,S292,T292,U292",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B252"
+        },
+        {
+          "name": "measure",
+          "cells": "C283"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F284,F285,F286,F287,F288,F289,F290,F291,F292"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L284,L285,L286,L287,L288,L289,L290,L291,L292"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_29",
+      "range": "A295:U303",
+      "values_range": "M295,N295,O295,P295,Q295,R295,S295,T295,U295,M296,N296,O296,P296,Q296,R296,S296,T296,U296,M297,N297,O297,P297,Q297,R297,S297,T297,U297,M298,N298,O298,P298,Q298,R298,S298,T298,U298,M299,N299,O299,P299,Q299,R299,S299,T299,U299,M300,N300,O300,P300,Q300,R300,S300,T300,U300,M301,N301,O301,P301,Q301,R301,S301,T301,U301,M302,N302,O302,P302,Q302,R302,S302,T302,U302,M303,N303,O303,P303,Q303,R303,S303,T303,U303",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B293"
+        },
+        {
+          "name": "measure",
+          "cells": "C294"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F295,F296,F297,F298,F299,F300,F301,F302,F303"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L295,L296,L297,L298,L299,L300,L301,L302,L303"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_30",
+      "range": "A305:U313",
+      "values_range": "M305,N305,O305,P305,Q305,R305,S305,T305,U305,M306,N306,O306,P306,Q306,R306,S306,T306,U306,M307,N307,O307,P307,Q307,R307,S307,T307,U307,M308,N308,O308,P308,Q308,R308,S308,T308,U308,M309,N309,O309,P309,Q309,R309,S309,T309,U309,M310,N310,O310,P310,Q310,R310,S310,T310,U310,M311,N311,O311,P311,Q311,R311,S311,T311,U311,M312,N312,O312,P312,Q312,R312,S312,T312,U312,M313,N313,O313,P313,Q313,R313,S313,T313,U313",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B293"
+        },
+        {
+          "name": "measure",
+          "cells": "C304"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F305,F306,F307,F308,F309,F310,F311,F312,F313"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L305,L306,L307,L308,L309,L310,L311,L312,L313"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_31",
+      "range": "A315:U323",
+      "values_range": "M315,N315,O315,P315,Q315,R315,S315,T315,U315,M316,N316,O316,P316,Q316,R316,S316,T316,U316,M317,N317,O317,P317,Q317,R317,S317,T317,U317,M318,N318,O318,P318,Q318,R318,S318,T318,U318,M319,N319,O319,P319,Q319,R319,S319,T319,U319,M320,N320,O320,P320,Q320,R320,S320,T320,U320,M321,N321,O321,P321,Q321,R321,S321,T321,U321,M322,N322,O322,P322,Q322,R322,S322,T322,U322,M323,N323,O323,P323,Q323,R323,S323,T323,U323",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B293"
+        },
+        {
+          "name": "measure",
+          "cells": "C314"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F315,F316,F317,F318,F319,F320,F321,F322,F323"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L315,L316,L317,L318,L319,L320,L321,L322,L323"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_32",
+      "range": "A325:U333",
+      "values_range": "M325,N325,O325,P325,Q325,R325,S325,T325,U325,M326,N326,O326,P326,Q326,R326,S326,T326,U326,M327,N327,O327,P327,Q327,R327,S327,T327,U327,M328,N328,O328,P328,Q328,R328,S328,T328,U328,M329,N329,O329,P329,Q329,R329,S329,T329,U329,M330,N330,O330,P330,Q330,R330,S330,T330,U330,M331,N331,O331,P331,Q331,R331,S331,T331,U331,M332,N332,O332,P332,Q332,R332,S332,T332,U332,M333,N333,O333,P333,Q333,R333,S333,T333,U333",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B293"
+        },
+        {
+          "name": "measure",
+          "cells": "C324"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F325,F326,F327,F328,F329,F330,F331,F332,F333"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L325,L326,L327,L328,L329,L330,L331,L332,L333"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_33",
+      "range": "A337:U345",
+      "values_range": "M337,N337,O337,P337,Q337,R337,S337,T337,U337,M338,N338,O338,P338,Q338,R338,S338,T338,U338,M339,N339,O339,P339,Q339,R339,S339,T339,U339,M340,N340,O340,P340,Q340,R340,S340,T340,U340,M341,N341,O341,P341,Q341,R341,S341,T341,U341,M342,N342,O342,P342,Q342,R342,S342,T342,U342,M343,N343,O343,P343,Q343,R343,S343,T343,U343,M344,N344,O344,P344,Q344,R344,S344,T344,U344,M345,N345,O345,P345,Q345,R345,S345,T345,U345",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C335"
+        },
+        {
+          "name": "measure",
+          "cells": "D336"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F337,F338,F339,F340,F341,F342,F343,F344,F345"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L337,L338,L339,L340,L341,L342,L343,L344,L345"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_34",
+      "range": "A347:U355",
+      "values_range": "M347,N347,O347,P347,Q347,R347,S347,T347,U347,M348,N348,O348,P348,Q348,R348,S348,T348,U348,M349,N349,O349,P349,Q349,R349,S349,T349,U349,M350,N350,O350,P350,Q350,R350,S350,T350,U350,M351,N351,O351,P351,Q351,R351,S351,T351,U351,M352,N352,O352,P352,Q352,R352,S352,T352,U352,M353,N353,O353,P353,Q353,R353,S353,T353,U353,M354,N354,O354,P354,Q354,R354,S354,T354,U354,M355,N355,O355,P355,Q355,R355,S355,T355,U355",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C335"
+        },
+        {
+          "name": "measure",
+          "cells": "D346"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F347,F348,F349,F350,F351,F352,F353,F354,F355"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L347,L348,L349,L350,L351,L352,L353,L354,L355"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_35",
+      "range": "A357:U365",
+      "values_range": "M357,N357,O357,P357,Q357,R357,S357,T357,U357,M358,N358,O358,P358,Q358,R358,S358,T358,U358,M359,N359,O359,P359,Q359,R359,S359,T359,U359,M360,N360,O360,P360,Q360,R360,S360,T360,U360,M361,N361,O361,P361,Q361,R361,S361,T361,U361,M362,N362,O362,P362,Q362,R362,S362,T362,U362,M363,N363,O363,P363,Q363,R363,S363,T363,U363,M364,N364,O364,P364,Q364,R364,S364,T364,U364,M365,N365,O365,P365,Q365,R365,S365,T365,U365",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C335"
+        },
+        {
+          "name": "measure",
+          "cells": "D356"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F357,F358,F359,F360,F361,F362,F363,F364,F365"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L357,L358,L359,L360,L361,L362,L363,L364,L365"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_36",
+      "range": "A367:U375",
+      "values_range": "M367,N367,O367,P367,Q367,R367,S367,T367,U367,M368,N368,O368,P368,Q368,R368,S368,T368,U368,M369,N369,O369,P369,Q369,R369,S369,T369,U369,M370,N370,O370,P370,Q370,R370,S370,T370,U370,M371,N371,O371,P371,Q371,R371,S371,T371,U371,M372,N372,O372,P372,Q372,R372,S372,T372,U372,M373,N373,O373,P373,Q373,R373,S373,T373,U373,M374,N374,O374,P374,Q374,R374,S374,T374,U374,M375,N375,O375,P375,Q375,R375,S375,T375,U375",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C335"
+        },
+        {
+          "name": "measure",
+          "cells": "D366"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F367,F368,F369,F370,F371,F372,F373,F374,F375"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L367,L368,L369,L370,L371,L372,L373,L374,L375"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_37",
+      "range": "A378:U386",
+      "values_range": "M378,N378,O378,P378,Q378,R378,S378,T378,U378,M379,N379,O379,P379,Q379,R379,S379,T379,U379,M380,N380,O380,P380,Q380,R380,S380,T380,U380,M381,N381,O381,P381,Q381,R381,S381,T381,U381,M382,N382,O382,P382,Q382,R382,S382,T382,U382,M383,N383,O383,P383,Q383,R383,S383,T383,U383,M384,N384,O384,P384,Q384,R384,S384,T384,U384,M385,N385,O385,P385,Q385,R385,S385,T385,U385,M386,N386,O386,P386,Q386,R386,S386,T386,U386",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C376"
+        },
+        {
+          "name": "measure",
+          "cells": "D377"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F378,F379,F380,F381,F382,F383,F384,F385,F386"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L378,L379,L380,L381,L382,L383,L384,L385,L386"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_38",
+      "range": "A388:U396",
+      "values_range": "M388,N388,O388,P388,Q388,R388,S388,T388,U388,M389,N389,O389,P389,Q389,R389,S389,T389,U389,M390,N390,O390,P390,Q390,R390,S390,T390,U390,M391,N391,O391,P391,Q391,R391,S391,T391,U391,M392,N392,O392,P392,Q392,R392,S392,T392,U392,M393,N393,O393,P393,Q393,R393,S393,T393,U393,M394,N394,O394,P394,Q394,R394,S394,T394,U394,M395,N395,O395,P395,Q395,R395,S395,T395,U395,M396,N396,O396,P396,Q396,R396,S396,T396,U396",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C376"
+        },
+        {
+          "name": "measure",
+          "cells": "D387"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F388,F389,F390,F391,F392,F393,F394,F395,F396"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L388,L389,L390,L391,L392,L393,L394,L395,L396"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_39",
+      "range": "A398:U406",
+      "values_range": "M398,N398,O398,P398,Q398,R398,S398,T398,U398,M399,N399,O399,P399,Q399,R399,S399,T399,U399,M400,N400,O400,P400,Q400,R400,S400,T400,U400,M401,N401,O401,P401,Q401,R401,S401,T401,U401,M402,N402,O402,P402,Q402,R402,S402,T402,U402,M403,N403,O403,P403,Q403,R403,S403,T403,U403,M404,N404,O404,P404,Q404,R404,S404,T404,U404,M405,N405,O405,P405,Q405,R405,S405,T405,U405,M406,N406,O406,P406,Q406,R406,S406,T406,U406",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C376"
+        },
+        {
+          "name": "measure",
+          "cells": "D397"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F398,F399,F400,F401,F402,F403,F404,F405,F406"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L398,L399,L400,L401,L402,L403,L404,L405,L406"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_40",
+      "range": "A408:U416",
+      "values_range": "M408,N408,O408,P408,Q408,R408,S408,T408,U408,M409,N409,O409,P409,Q409,R409,S409,T409,U409,M410,N410,O410,P410,Q410,R410,S410,T410,U410,M411,N411,O411,P411,Q411,R411,S411,T411,U411,M412,N412,O412,P412,Q412,R412,S412,T412,U412,M413,N413,O413,P413,Q413,R413,S413,T413,U413,M414,N414,O414,P414,Q414,R414,S414,T414,U414,M415,N415,O415,P415,Q415,R415,S415,T415,U415,M416,N416,O416,P416,Q416,R416,S416,T416,U416",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C376"
+        },
+        {
+          "name": "measure",
+          "cells": "D407"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F408,F409,F410,F411,F412,F413,F414,F415,F416"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L408,L409,L410,L411,L412,L413,L414,L415,L416"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_41",
+      "range": "A419:U427",
+      "values_range": "M419,N419,O419,P419,Q419,R419,S419,T419,U419,M420,N420,O420,P420,Q420,R420,S420,T420,U420,M421,N421,O421,P421,Q421,R421,S421,T421,U421,M422,N422,O422,P422,Q422,R422,S422,T422,U422,M423,N423,O423,P423,Q423,R423,S423,T423,U423,M424,N424,O424,P424,Q424,R424,S424,T424,U424,M425,N425,O425,P425,Q425,R425,S425,T425,U425,M426,N426,O426,P426,Q426,R426,S426,T426,U426,M427,N427,O427,P427,Q427,R427,S427,T427,U427",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C417"
+        },
+        {
+          "name": "measure",
+          "cells": "D418"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F419,F420,F421,F422,F423,F424,F425,F426,F427"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L419,L420,L421,L422,L423,L424,L425,L426,L427"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_42",
+      "range": "A429:U437",
+      "values_range": "M429,N429,O429,P429,Q429,R429,S429,T429,U429,M430,N430,O430,P430,Q430,R430,S430,T430,U430,M431,N431,O431,P431,Q431,R431,S431,T431,U431,M432,N432,O432,P432,Q432,R432,S432,T432,U432,M433,N433,O433,P433,Q433,R433,S433,T433,U433,M434,N434,O434,P434,Q434,R434,S434,T434,U434,M435,N435,O435,P435,Q435,R435,S435,T435,U435,M436,N436,O436,P436,Q436,R436,S436,T436,U436,M437,N437,O437,P437,Q437,R437,S437,T437,U437",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C417"
+        },
+        {
+          "name": "measure",
+          "cells": "D428"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F429,F430,F431,F432,F433,F434,F435,F436,F437"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L429,L430,L431,L432,L433,L434,L435,L436,L437"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_43",
+      "range": "A439:U447",
+      "values_range": "M439,N439,O439,P439,Q439,R439,S439,T439,U439,M440,N440,O440,P440,Q440,R440,S440,T440,U440,M441,N441,O441,P441,Q441,R441,S441,T441,U441,M442,N442,O442,P442,Q442,R442,S442,T442,U442,M443,N443,O443,P443,Q443,R443,S443,T443,U443,M444,N444,O444,P444,Q444,R444,S444,T444,U444,M445,N445,O445,P445,Q445,R445,S445,T445,U445,M446,N446,O446,P446,Q446,R446,S446,T446,U446,M447,N447,O447,P447,Q447,R447,S447,T447,U447",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C417"
+        },
+        {
+          "name": "measure",
+          "cells": "D438"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F439,F440,F441,F442,F443,F444,F445,F446,F447"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L439,L440,L441,L442,L443,L444,L445,L446,L447"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_44",
+      "range": "A449:U457",
+      "values_range": "M449,N449,O449,P449,Q449,R449,S449,T449,U449,M450,N450,O450,P450,Q450,R450,S450,T450,U450,M451,N451,O451,P451,Q451,R451,S451,T451,U451,M452,N452,O452,P452,Q452,R452,S452,T452,U452,M453,N453,O453,P453,Q453,R453,S453,T453,U453,M454,N454,O454,P454,Q454,R454,S454,T454,U454,M455,N455,O455,P455,Q455,R455,S455,T455,U455,M456,N456,O456,P456,Q456,R456,S456,T456,U456,M457,N457,O457,P457,Q457,R457,S457,T457,U457",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B334"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "C417"
+        },
+        {
+          "name": "measure",
+          "cells": "D448"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F449,F450,F451,F452,F453,F454,F455,F456,F457"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L449,L450,L451,L452,L453,L454,L455,L456,L457"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_45",
+      "range": "A462:U470",
+      "values_range": "M462,N462,O462,P462,Q462,R462,S462,T462,U462,M463,N463,O463,P463,Q463,R463,S463,T463,U463,M464,N464,O464,P464,Q464,R464,S464,T464,U464,M465,N465,O465,P465,Q465,R465,S465,T465,U465,M466,N466,O466,P466,Q466,R466,S466,T466,U466,M467,N467,O467,P467,Q467,R467,S467,T467,U467,M468,N468,O468,P468,Q468,R468,S468,T468,U468,M469,N469,O469,P469,Q469,R469,S469,T469,U469,M470,N470,O470,P470,Q470,R470,S470,T470,U470",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D460"
+        },
+        {
+          "name": "measure",
+          "cells": "E461"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F462,F463,F464,F465,F466,F467,F468,F469,F470"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L462,L463,L464,L465,L466,L467,L468,L469,L470"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_46",
+      "range": "A472:U480",
+      "values_range": "M472,N472,O472,P472,Q472,R472,S472,T472,U472,M473,N473,O473,P473,Q473,R473,S473,T473,U473,M474,N474,O474,P474,Q474,R474,S474,T474,U474,M475,N475,O475,P475,Q475,R475,S475,T475,U475,M476,N476,O476,P476,Q476,R476,S476,T476,U476,M477,N477,O477,P477,Q477,R477,S477,T477,U477,M478,N478,O478,P478,Q478,R478,S478,T478,U478,M479,N479,O479,P479,Q479,R479,S479,T479,U479,M480,N480,O480,P480,Q480,R480,S480,T480,U480",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D460"
+        },
+        {
+          "name": "measure",
+          "cells": "E471"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F472,F473,F474,F475,F476,F477,F478,F479,F480"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L472,L473,L474,L475,L476,L477,L478,L479,L480"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_47",
+      "range": "A482:U490",
+      "values_range": "M482,N482,O482,P482,Q482,R482,S482,T482,U482,M483,N483,O483,P483,Q483,R483,S483,T483,U483,M484,N484,O484,P484,Q484,R484,S484,T484,U484,M485,N485,O485,P485,Q485,R485,S485,T485,U485,M486,N486,O486,P486,Q486,R486,S486,T486,U486,M487,N487,O487,P487,Q487,R487,S487,T487,U487,M488,N488,O488,P488,Q488,R488,S488,T488,U488,M489,N489,O489,P489,Q489,R489,S489,T489,U489,M490,N490,O490,P490,Q490,R490,S490,T490,U490",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D460"
+        },
+        {
+          "name": "measure",
+          "cells": "E481"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F482,F483,F484,F485,F486,F487,F488,F489,F490"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L482,L483,L484,L485,L486,L487,L488,L489,L490"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_48",
+      "range": "A492:U500",
+      "values_range": "M492,N492,O492,P492,Q492,R492,S492,T492,U492,M493,N493,O493,P493,Q493,R493,S493,T493,U493,M494,N494,O494,P494,Q494,R494,S494,T494,U494,M495,N495,O495,P495,Q495,R495,S495,T495,U495,M496,N496,O496,P496,Q496,R496,S496,T496,U496,M497,N497,O497,P497,Q497,R497,S497,T497,U497,M498,N498,O498,P498,Q498,R498,S498,T498,U498,M499,N499,O499,P499,Q499,R499,S499,T499,U499,M500,N500,O500,P500,Q500,R500,S500,T500,U500",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D460"
+        },
+        {
+          "name": "measure",
+          "cells": "E491"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F492,F493,F494,F495,F496,F497,F498,F499,F500"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L492,L493,L494,L495,L496,L497,L498,L499,L500"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_49",
+      "range": "A503:U511",
+      "values_range": "M503,N503,O503,P503,Q503,R503,S503,T503,U503,M504,N504,O504,P504,Q504,R504,S504,T504,U504,M505,N505,O505,P505,Q505,R505,S505,T505,U505,M506,N506,O506,P506,Q506,R506,S506,T506,U506,M507,N507,O507,P507,Q507,R507,S507,T507,U507,M508,N508,O508,P508,Q508,R508,S508,T508,U508,M509,N509,O509,P509,Q509,R509,S509,T509,U509,M510,N510,O510,P510,Q510,R510,S510,T510,U510,M511,N511,O511,P511,Q511,R511,S511,T511,U511",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D501"
+        },
+        {
+          "name": "measure",
+          "cells": "E502"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F503,F504,F505,F506,F507,F508,F509,F510,F511"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L503,L504,L505,L506,L507,L508,L509,L510,L511"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_50",
+      "range": "A513:U521",
+      "values_range": "M513,N513,O513,P513,Q513,R513,S513,T513,U513,M514,N514,O514,P514,Q514,R514,S514,T514,U514,M515,N515,O515,P515,Q515,R515,S515,T515,U515,M516,N516,O516,P516,Q516,R516,S516,T516,U516,M517,N517,O517,P517,Q517,R517,S517,T517,U517,M518,N518,O518,P518,Q518,R518,S518,T518,U518,M519,N519,O519,P519,Q519,R519,S519,T519,U519,M520,N520,O520,P520,Q520,R520,S520,T520,U520,M521,N521,O521,P521,Q521,R521,S521,T521,U521",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D501"
+        },
+        {
+          "name": "measure",
+          "cells": "E512"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F513,F514,F515,F516,F517,F518,F519,F520,F521"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L513,L514,L515,L516,L517,L518,L519,L520,L521"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_51",
+      "range": "A523:U531",
+      "values_range": "M523,N523,O523,P523,Q523,R523,S523,T523,U523,M524,N524,O524,P524,Q524,R524,S524,T524,U524,M525,N525,O525,P525,Q525,R525,S525,T525,U525,M526,N526,O526,P526,Q526,R526,S526,T526,U526,M527,N527,O527,P527,Q527,R527,S527,T527,U527,M528,N528,O528,P528,Q528,R528,S528,T528,U528,M529,N529,O529,P529,Q529,R529,S529,T529,U529,M530,N530,O530,P530,Q530,R530,S530,T530,U530,M531,N531,O531,P531,Q531,R531,S531,T531,U531",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D501"
+        },
+        {
+          "name": "measure",
+          "cells": "E522"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F523,F524,F525,F526,F527,F528,F529,F530,F531"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L523,L524,L525,L526,L527,L528,L529,L530,L531"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_52",
+      "range": "A533:U541",
+      "values_range": "M533,N533,O533,P533,Q533,R533,S533,T533,U533,M534,N534,O534,P534,Q534,R534,S534,T534,U534,M535,N535,O535,P535,Q535,R535,S535,T535,U535,M536,N536,O536,P536,Q536,R536,S536,T536,U536,M537,N537,O537,P537,Q537,R537,S537,T537,U537,M538,N538,O538,P538,Q538,R538,S538,T538,U538,M539,N539,O539,P539,Q539,R539,S539,T539,U539,M540,N540,O540,P540,Q540,R540,S540,T540,U540,M541,N541,O541,P541,Q541,R541,S541,T541,U541",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B458"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C459"
+        },
+        {
+          "name": "appeal_status",
+          "cells": "D501"
+        },
+        {
+          "name": "measure",
+          "cells": "E532"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F533,F534,F535,F536,F537,F538,F539,F540,F541"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L533,L534,L535,L536,L537,L538,L539,L540,L541"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_53",
+      "range": "A545:U553",
+      "values_range": "M545,N545,O545,P545,Q545,R545,S545,T545,U545,M546,N546,O546,P546,Q546,R546,S546,T546,U546,M547,N547,O547,P547,Q547,R547,S547,T547,U547,M548,N548,O548,P548,Q548,R548,S548,T548,U548,M549,N549,O549,P549,Q549,R549,S549,T549,U549,M550,N550,O550,P550,Q550,R550,S550,T550,U550,M551,N551,O551,P551,Q551,R551,S551,T551,U551,M552,N552,O552,P552,Q552,R552,S552,T552,U552,M553,N553,O553,P553,Q553,R553,S553,T553,U553",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B542"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C543"
+        },
+        {
+          "name": "measure",
+          "cells": "D544"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F545,F546,F547,F548,F549,F550,F551,F552,F553"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L545,L546,L547,L548,L549,L550,L551,L552,L553"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_54",
+      "range": "A555:U563",
+      "values_range": "M555,N555,O555,P555,Q555,R555,S555,T555,U555,M556,N556,O556,P556,Q556,R556,S556,T556,U556,M557,N557,O557,P557,Q557,R557,S557,T557,U557,M558,N558,O558,P558,Q558,R558,S558,T558,U558,M559,N559,O559,P559,Q559,R559,S559,T559,U559,M560,N560,O560,P560,Q560,R560,S560,T560,U560,M561,N561,O561,P561,Q561,R561,S561,T561,U561,M562,N562,O562,P562,Q562,R562,S562,T562,U562,M563,N563,O563,P563,Q563,R563,S563,T563,U563",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B542"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C543"
+        },
+        {
+          "name": "measure",
+          "cells": "D554"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F555,F556,F557,F558,F559,F560,F561,F562,F563"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L555,L556,L557,L558,L559,L560,L561,L562,L563"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_55",
+      "range": "A565:U573",
+      "values_range": "M565,N565,O565,P565,Q565,R565,S565,T565,U565,M566,N566,O566,P566,Q566,R566,S566,T566,U566,M567,N567,O567,P567,Q567,R567,S567,T567,U567,M568,N568,O568,P568,Q568,R568,S568,T568,U568,M569,N569,O569,P569,Q569,R569,S569,T569,U569,M570,N570,O570,P570,Q570,R570,S570,T570,U570,M571,N571,O571,P571,Q571,R571,S571,T571,U571,M572,N572,O572,P572,Q572,R572,S572,T572,U572,M573,N573,O573,P573,Q573,R573,S573,T573,U573",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B542"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C543"
+        },
+        {
+          "name": "measure",
+          "cells": "D564"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F565,F566,F567,F568,F569,F570,F571,F572,F573"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L565,L566,L567,L568,L569,L570,L571,L572,L573"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_56",
+      "range": "A575:U583",
+      "values_range": "M575,N575,O575,P575,Q575,R575,S575,T575,U575,M576,N576,O576,P576,Q576,R576,S576,T576,U576,M577,N577,O577,P577,Q577,R577,S577,T577,U577,M578,N578,O578,P578,Q578,R578,S578,T578,U578,M579,N579,O579,P579,Q579,R579,S579,T579,U579,M580,N580,O580,P580,Q580,R580,S580,T580,U580,M581,N581,O581,P581,Q581,R581,S581,T581,U581,M582,N582,O582,P582,Q582,R582,S582,T582,U582,M583,N583,O583,P583,Q583,R583,S583,T583,U583",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B542"
+        },
+        {
+          "name": "court_scope",
+          "cells": "C543"
+        },
+        {
+          "name": "measure",
+          "cells": "D574"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F575,F576,F577,F578,F579,F580,F581,F582,F583"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L575,L576,L577,L578,L579,L580,L581,L582,L583"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_57",
+      "range": "A586:U594",
+      "values_range": "M586,N586,O586,P586,Q586,R586,S586,T586,U586,M587,N587,O587,P587,Q587,R587,S587,T587,U587,M588,N588,O588,P588,Q588,R588,S588,T588,U588,M589,N589,O589,P589,Q589,R589,S589,T589,U589,M590,N590,O590,P590,Q590,R590,S590,T590,U590,M591,N591,O591,P591,Q591,R591,S591,T591,U591,M592,N592,O592,P592,Q592,R592,S592,T592,U592,M593,N593,O593,P593,Q593,R593,S593,T593,U593,M594,N594,O594,P594,Q594,R594,S594,T594,U594",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B584"
+        },
+        {
+          "name": "measure",
+          "cells": "C585"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F586,F587,F588,F589,F590,F591,F592,F593,F594"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L586,L587,L588,L589,L590,L591,L592,L593,L594"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_58",
+      "range": "A596:U604",
+      "values_range": "M596,N596,O596,P596,Q596,R596,S596,T596,U596,M597,N597,O597,P597,Q597,R597,S597,T597,U597,M598,N598,O598,P598,Q598,R598,S598,T598,U598,M599,N599,O599,P599,Q599,R599,S599,T599,U599,M600,N600,O600,P600,Q600,R600,S600,T600,U600,M601,N601,O601,P601,Q601,R601,S601,T601,U601,M602,N602,O602,P602,Q602,R602,S602,T602,U602,M603,N603,O603,P603,Q603,R603,S603,T603,U603,M604,N604,O604,P604,Q604,R604,S604,T604,U604",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B584"
+        },
+        {
+          "name": "measure",
+          "cells": "C595"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F596,F597,F598,F599,F600,F601,F602,F603,F604"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L596,L597,L598,L599,L600,L601,L602,L603,L604"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_59",
+      "range": "A606:U614",
+      "values_range": "M606,N606,O606,P606,Q606,R606,S606,T606,U606,M607,N607,O607,P607,Q607,R607,S607,T607,U607,M608,N608,O608,P608,Q608,R608,S608,T608,U608,M609,N609,O609,P609,Q609,R609,S609,T609,U609,M610,N610,O610,P610,Q610,R610,S610,T610,U610,M611,N611,O611,P611,Q611,R611,S611,T611,U611,M612,N612,O612,P612,Q612,R612,S612,T612,U612,M613,N613,O613,P613,Q613,R613,S613,T613,U613,M614,N614,O614,P614,Q614,R614,S614,T614,U614",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B584"
+        },
+        {
+          "name": "measure",
+          "cells": "C605"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F606,F607,F608,F609,F610,F611,F612,F613,F614"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L606,L607,L608,L609,L610,L611,L612,L613,L614"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    },
+    {
+      "name": "block_60",
+      "range": "A616:U624",
+      "values_range": "M616,N616,O616,P616,Q616,R616,S616,T616,U616,M617,N617,O617,P617,Q617,R617,S617,T617,U617,M618,N618,O618,P618,Q618,R618,S618,T618,U618,M619,N619,O619,P619,Q619,R619,S619,T619,U619,M620,N620,O620,P620,Q620,R620,S620,T620,U620,M621,N621,O621,P621,Q621,R621,S621,T621,U621,M622,N622,O622,P622,Q622,R622,S622,T622,U622,M623,N623,O623,P623,Q623,R623,S623,T623,U623,M624,N624,O624,P624,Q624,R624,S624,T624,U624",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "court_level",
+          "cells": "B584"
+        },
+        {
+          "name": "measure",
+          "cells": "C615"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "F616,F617,F618,F619,F620,F621,F622,F623,F624"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L616,L617,L618,L619,L620,L621,L622,L623,L624"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,N2,O2,P2,Q2,R2,S2,T2,U2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T09:04:47Z",
+    "tool_version": "0.2.0",
+    "records": 4860,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085358Z-24210c61ed51",
+    "started_at": "2026-11-02T08:54:00Z",
+    "workbook": "24210c61ed51fd59216bb74aef07a4018444ab6113b6bb8c17b6ace84021dc61--report-on-government-services-justice-2025-courts-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b77-2c57-701b-b2fe-6d57f90bcd1f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1c8142d8f225048e86735910d36b4a59f71143a6736f1a6c7c299ae56215b87f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `24210c61ed51fd59216bb74aef07a4018444ab6113b6bb8c17b6ace84021dc61--report-on-government-services-justice-2025-courts-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2025 — Justice\n- Sheets needing a recipe: 38 of 38\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 43ea1359f0b60334692eae676d97c13f6804668748600f02569f17e9b9f5856f | missing |\n| \"Table 7A.1\" | c69a11b124922b3bf29387617d5cf62e623b12b67a874cf3878c7a2e15923f9c | missing |\n| \"Table 7A.2\" | dcdaab3ecbb3dde219ea73f1f3cf715c5033bb3d469e8eec7468cf5b6b54c408 | missing |\n| \"Table 7A.3\" | d77f217f83ddb0b56ede56daece5328579c1b373b8f09b619a5e54ea562d5ada | missing |\n| \"Table 7A.4\" | 7162d174cb1406f6dae4ad3552a5b27cd86ae577d056f515b6cde458436c1320 | missing |\n| \"Table 7A.5\" | 0568aefbf04f540c1f2976273984f9acc073453e523daa28bf32359c761616c3 | missing |\n| \"Table 7A.6\" | 9f3e2f59df3fde08dd4d9719971218c64d98035ab34cd84ff9896e1193923724 | missing |\n| \"Table 7A.7\" | 991d977963ae1972ee0255ccabd16c282bb32028200a7086d41da835f385fff1 | missing |\n| \"Table 7A.8\" | c0989f9ca1dc52290a5a182257ba775068f3d0084205774f8dc3f7937e66a966 | missing |\n| \"Table 7A.9\" | ba51e77a5ee88938138160ad57f3d699cdeb7a3ac13afd4153e949bcadfb83c6 | missing |\n| \"Table 7A.10\" | f4bcabe2de18065a8ba8d75fb535afbacf8a62ee9437dbd08c58328111fa5d11 | missing |\n| \"Table 7A.11\" | 85a0370e04f90754cf045fed7aa7d7e47b17158fdfd633dc1319c2642f4476a8 | missing |\n| \"Table 7A.12\" | bdba30c3b5448ef09ebca7b729cb5abd799d9734f8c9b153762a13ed6b79e46f | missing |\n| \"Table 7A.13\" | 0adb546fd395d0d7e8bba85a43e96ece9f4bc3b161ee610f6f2205720f650c50 | missing |\n| \"Table 7A.14\" | e917ccdc69df804e7a2254f14616550dd1c463235c112cd34d5bf1742ed12cc6 | missing |\n| \"Table 7A.15\" | 485029307a2e1a540428ea25b3cff4c12ceb553aeb49f388075c81db45b92b5c | missing |\n| \"Table 7A.16\" | b075b366365b2fd8ccd8d49f373672bfa746db3527485b88c550c1b0d2277125 | missing |\n| \"Table 7A.17\" | 837920af9110b4c3543d3cbf99ed28617e43ed0942ca5201cf33b70499eaa265 | missing |\n| \"Table 7A.18\" | b2d8bc67c9aa8a7e65a48f7c049d5fa7e02ea50a66752e1d73fff7c344028935 | missing |\n| \"Table 7A.19\" | 69b3eca8c4c795d6c799f1383dbce3d29a8be8d9692fe495b10d2781272b6673 | missing |\n| \"Table 7A.20\" | 25fd32ac24b0e55d520d99c0f2d9855ce2c8567219369d91b569dc96e0b9c69a | missing |\n| \"Table 7A.21\" | 4c9ee15f7212959a6a3a545e321857e81f6280f824c235dde8eadd4451d041df | missing |\n| \"Table 7A.22\" | c4c02bc89dc4766850a779c343ddabcfc959652e378510e0cacac221022ffe2c | missing |\n| \"Table 7A.23\" | 461dc8b661e894249e2a78f48f3372a96d3019c03055cd679d22ebb560e106d0 | missing |\n| \"Table 7A.24\" | 9ca088711958d064dd55e398dd3b1332f523463e03cb14da4d2ba6a04c31fdc3 | missing |\n| \"Table 7A.25\" | b3c1ac5f459f36dfee7be56d410b6998a3093f132836db0bf90580ebcbaf0e49 | missing |\n| \"Table 7A.26\" | d3e1a4ba659aabf612e530f729aa5f08493f975bac2bf7f72173efa699423e96 | missing |\n| \"Table 7A.27\" | dadb8da67e299ef6def58a71ec7b43e68bacf685c25eb795e1c3db7445ff94f0 | missing |\n| \"Table 7A.28\" | 4f618d9e0760973404f9a2cfb8b5ab51ec1536b79906b7cd418735c452c1c9d1 | missing |\n| \"Table 7A.29\" | 78b079bf194460798aaf53a294335f4bdb1266f131d659db10e7a7b023855131 | missing |\n| \"Table 7A.30\" | 86821c11d90fa96c371cca5a449415d773de77bee36b877f2db5f59e4a1695f9 | missing |\n| \"Table 7A.31\" | 50db1527dda1a69ca16674dac3ccdf8b50f73a74615f71def931ec8d8edb60ed | missing |\n| \"Table 7A.32\" | 8efb5aa34511fbb059419e7913a9eba37bfa745d91b4f858a318636e20c752e5 | missing |\n| \"Table 7A.33\" | 4a202984859363c98faa409e54ba3691c2a56001806867aa13b1bac29e6174ce | missing |\n| \"Table 7A.34\" | e378fbb038b15283d09da93be5f70632772e1ed56941bdbc5c22f7afdc6c85e4 | missing |\n| \"Table 7A.35\" | bcce9114ecf66906359dd78616b04629cefd19dffec4e89e86d62ac0232a986f | missing |\n| \"Table 7A.36\" | d5955d50c722de08d067ec6adacb1bb82c7f066102464bf7ea7177e2c6b20199 | missing |\n| \"Table 7A.37\" | 844e3f75d74756a69fa268015de4fc498bedda1fa2e08c69fa8ba03fa52d3e3b | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085358Z-24210c61ed51.jsonl"
+  }
+}

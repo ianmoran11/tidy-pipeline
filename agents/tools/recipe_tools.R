@@ -578,6 +578,22 @@ run_checks <- function(path, meta) {
     )
   })
 
+  # Value cells whose labels (record labels plus table meta_data that reaches the records,
+  # including a table's own title) are all the same can't be told apart later
+  not_labels <- c("table_subtitle", "notes", "source", "annotations", "stub_heading", "errata", "sheet_description")
+  labelled <- bind_rows(map(result$tables, function(res) {
+    meta <- res$meta_data_list[!names(res$meta_data_list) %in% not_labels]
+    table_key <- paste(names(meta), map_chr(meta, ~ paste(.x, collapse = " ")), sep = "=", collapse = "|")
+    map_dfr(res$tidy_table_list, function(rec) {
+      l <- rec[!names(rec) %in% c("row", "col", "address", ".value")]; l <- l[order(names(l))]
+      tibble(key = paste(table_key, paste(names(l), map_chr(l, ~ paste(.x, collapse = " ")), sep = "=", collapse = "|"), sep = "||"),
+             value = as.character(rec[[".value"]] %||% NA), address = rec[["address"]])
+    })
+  }))
+  clashes <- labelled %>% filter(!is.na(value)) %>% group_by(key) %>% filter(n_distinct(value) > 1) %>% summarise(cells = str_flatten(first_n(address, 3), ", "), .groups = "drop")
+  if (nrow(clashes)) failures <- c(failures, paste0(nrow(clashes), " groups of value cells have the same labels but different values, e.g. ", clashes$cells[1],
+                                                    ". Add the label that tells them apart (references/layouts.md, \"Cells that differ only by position\")"))
+
   table_areas <- unique(unlist(map(spec$tables, ~ expand_excel_range(.x$range))))
   numeric_outside <- setdiff(numeric_cells, table_areas)
   if (length(numeric_outside)) failures <- c(failures, paste0(length(numeric_outside), " numeric cells are outside every table range, e.g. ", str_flatten(first_n(numeric_outside, 8), ", ")))

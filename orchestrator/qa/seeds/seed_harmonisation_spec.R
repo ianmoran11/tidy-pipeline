@@ -1,7 +1,7 @@
 # One-off: write the first version of harmonisation/harmonisation_spec.json.
 # Edit the JSON directly afterwards.
 suppressMessages({library(dplyr); library(purrr); library(stringr)})
-source("R/harmonise.R")
+source("R/field_sets.R"); source("R/harmonise.R")
 d <- targets::tar_read(data_normalised)
 ATSI <- "Aboriginal and Torres Strait Islander"
 cap1 <- function(s) paste0(toupper(substring(s, 1, 1)), substring(s, 2))

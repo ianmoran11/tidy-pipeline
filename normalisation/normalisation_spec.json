@@ -116,7 +116,19 @@
     "Relationship": "carer_relationship",
     "Supervision": "supervision_history",
     "Supervision periods": "supervision_periods",
-    "Summary characteristics": "federal_defendant_summary_item"
+    "Summary characteristics": "federal_defendant_summary_item",
+    "rate_basis": "rate_standardisation",
+    "rate_adjustment": "rate_standardisation",
+    "custody_type": "prison_security",
+    "prison_facility_type": "custodial_facility_type",
+    "assault_type": "assault_severity",
+    "police_staff_deployment": "police_staff_function",
+    "property_entry_type": "unlawful_entry_type",
+    "language_requested": "interpreter_language",
+    "language_group": "interpreter_language_group",
+    "education_program": "education_type",
+    "expenditure_item": "expenditure_type",
+    "detention_legal_status": "legal_status"
   },
   "clean": [
     {
@@ -125,7 +137,7 @@
     },
     {
       "description": "collapse runs of whitespace, line breaks included",
-      "pattern": "\\s+",
+      "pattern": "[\\s\\x{00A0}]+",
       "replace": " "
     },
     {
@@ -153,6 +165,10 @@
     },
     {
       "pattern": "^'(?=[A-Za-z])",
+      "replace": ""
+    },
+    {
+      "pattern": "(?:\\s*\\(\\s*[a-z]{1,2}(?:\\s*,\\s*[a-z]{1,2})+\\s*\\)|\\s*\\(\\s*(?:[a-z]{1,2}|[0-9]{1,2})\\s*\\)\\s*,)+\\s*$",
       "replace": ""
     }
   ],
@@ -1337,7 +1353,13 @@
       "ACT TOTAL": "ACT total",
       "AUSTRALIAN CAPITAL TERRITORY TOTAL": "ACT total",
       "AUSTRALIAN CAPITAL TERRITORY (Total)": "ACT total",
-      "AUSTRALIAN CAPITAL TERRITORY (TOTAL)": "ACT total"
+      "AUSTRALIAN CAPITAL TERRITORY (TOTAL)": "ACT total",
+      "VIC": "Vic.",
+      "Tas€": "Tas.",
+      "WA)b)": "WA",
+      "Tas(g)(h)(I)": "Tas.",
+      "ACT(C)": "ACT",
+      "Totals": "Total"
     },
     "method_of_finalisation": {
       "    Agreement of wrongdoing(e)": "Agreement of wrongdoing",
@@ -2317,7 +2339,8 @@
       "RATIO OF ABORIGINAL AND TORRES STRAIT ISLANDER TO NON-INDIGENOUS": "Ratio of Aboriginal and Torres Strait Islander to non-indigenous",
       "RATIO OF INDIGENOUS TO NON-INDIGENOUS": "Ratio of indigenous to non-indigenous",
       "RATIO OF INDIGENOUS TO NON-INDIGENOUS AGE STANDARDISED RATES": "Ratio of indigenous to non-indigenous age standardised rates",
-      "REMANDEES": "Remandees"
+      "REMANDEES": "Remandees",
+      "Percentage": "Proportion"
     },
     "period": {
       " 2011 to 2012": "2011 to 2012",
@@ -2531,7 +2554,24 @@
       "30 June 2024": "2024",
       "30 June 2025": "2025",
       "December 2024": "Dec 2024",
-      "Previous 5 years ( 2012–13 to 2016–17)": "Previous 5 years (2012–13 to 2016–17)"
+      "Previous 5 years ( 2012–13 to 2016–17)": "Previous 5 years (2012–13 to 2016–17)",
+      "2025-06-30": "2025",
+      "2024-06-30": "2024",
+      "2023-06-30": "2023",
+      "2022-06-30": "2022",
+      "2021-06-30": "2021",
+      "2018-19 to 2020-21": "2018–19 to 2020–21",
+      "2009-10 to 2011-12": "2009–10 to 2011–12",
+      "2007-08": "2007–08",
+      "2016-17 to 2020-21": "2016–17 to 2020–21",
+      "2018-19 to 2022-23": "2018–19 to 2022–23",
+      "2012-13 to 2014-15": "2012–13 to 2014–15",
+      "2011-12 to 2013-14": "2011–12 to 2013–14",
+      "2015-16 to 2019-20": "2015–16 to 2019–20",
+      "2017-18 to 2021-22": "2017–18 to 2021–22",
+      "2020-21 to 2024-25": "2020–21 to 2024–25",
+      "2010-11 to 2012-13": "2010–11 to 2012–13",
+      "2019-20 to 2023-24": "2019–20 to 2023–24"
     },
     "age_group": {
       "    18–29 years": "18–29 years",
@@ -3811,7 +3851,10 @@
       "Table 8a VICTIMS OF SELECTED PERSONAL CRIMES, Number of incidents, Time series: Relative standard error": "Relative standard error",
       "Table 28b Experience of sexual assault in the last 12 months by states and territories, Time series: Three-year pooled data(a) relative standard error of estimate": "Relative standard error",
       "Table 20a PERSONS AGED 18 YEARS AND OVER, Whether experienced sexual assault in the last 12 months, by selected socio-demographic characteristics: Relative standard error": "Relative standard error",
-      "Table 29d Experience of sexual assault in the last 12 months by states and territories, Time series: Three-year pooled data(a) relative standard error of victimisation rate": "Relative standard error"
+      "Table 29d Experience of sexual assault in the last 12 months by states and territories, Time series: Three-year pooled data(a) relative standard error of victimisation rate": "Relative standard error",
+      "The 95 per cent confidence interval (a reliability estimate) associated with each estimate is reported (for example, 80.0 per cent ± 2.7 per cent). Refer to the Statistical context (section 2) for more information on confidence intervals and on the interpretation of these results.": "95% confidence interval",
+      "The 95% confidence interval (a reliability estimate) associated with each estimate is reported (for example, 80.0% ± 2.7 percentage points). Refer to the Statistical context (section 2) for more information on confidence intervals.": "95% confidence interval",
+      "The 95 per cent confidence interval (a reliability estimate) associated with each estimate is reported (for example, 80.0 per cent ± 2.7 percentage points). Refer to the Statistical context (section 2) for more information on confidence intervals.": "95% confidence interval"
     },
     "unit": {
       "(no.)": "no.",

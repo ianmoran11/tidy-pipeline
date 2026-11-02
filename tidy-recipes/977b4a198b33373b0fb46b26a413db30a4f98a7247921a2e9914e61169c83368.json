@@ -1,0 +1,159 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "977b4a198b33373b0fb46b26a413db30a4f98a7247921a2e9914e61169c83368",
+  "sheet": "Table 11.6",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "0fea815005935f72c1b172a8ba9d104cf00d98c4d7818a200974ba7455434238",
+  "agent_notes": "Published totals are retained and overlap their components; do not sum totals with components. Labels, footnote markers and suppression/not-applicable symbols are preserved. See sheet notes for counting rules, jurisdiction exclusions, revisions and comparability caveats.",
+  "new_dimensions": [
+    {
+      "name": "return_to_care_status",
+      "description": "Whether a child returned to out-of-home care within 12 months of a permanency exit."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A12"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number",
+      "range": "A5:G7",
+      "values_range": "B5:G7",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "return_to_care_status",
+          "caption": "Return to care status",
+          "direction": "W",
+          "cells": "A5:A7"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "per_cent",
+      "range": "A9:G11",
+      "values_range": "B9:G11",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "return_to_care_status",
+          "caption": "Return to care status",
+          "direction": "W",
+          "cells": "A9:A11"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:27:07Z",
+    "tool_version": "0.2.0",
+    "records": 36,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T082448Z-1be49be7af18",
+    "started_at": "2026-11-02T08:24:49Z",
+    "workbook": "1be49be7af185a75bf48eb616828ec23f2b24eb375e4dc19e4db859388b4479f--aihw-child-protection-australia-2023-24-popf-pathways-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b5c-73e2-710e-9cc2-9455b3c055d7",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "152c4dc12f85ce553e92401b88690d0789d103447030ef09aeddd9f2037c85cd",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1be49be7af185a75bf48eb616828ec23f2b24eb375e4dc19e4db859388b4479f--aihw-child-protection-australia-2023-24-popf-pathways-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2023–24 complete release\n- Sheets needing a recipe: 16 of 16\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 45458288e45a053136ddc61b9e38a91ed6866c70d9f76323f50ae41c1d74428e | missing |\n| \"Notes\" | 90dc1a25f3fb4d415f779bf7ba34e1741350e15c84bd7082684d7472d64d8d97 | missing |\n| \"Table 11.1\" | 81e10a56944c08d6e2883ca03a7d80970f501da5a5dca0762838b8bc1f084531 | missing |\n| \"Table 11.2\" | 64adc3bf2564d7a7d554da45571575576194df643786bc93e4b3bba73de79242 | missing |\n| \"Table 11.3\" | 02e428aa38e96a6907195d1c1e8fae966528373343273e89b51a65861c3f3b08 | missing |\n| \"Table 11.4\" | bc8da0d17b5d6199fe4575c8c5a8596fdc1494100a7c5675e85be7a0fc0f5b1b | missing |\n| \"Table 11.5\" | d68fcaed87c6b03ea2336c42691a373fc1e2744fa402aba18a6deecb0a399194 | missing |\n| \"Table 11.6\" | 977b4a198b33373b0fb46b26a413db30a4f98a7247921a2e9914e61169c83368 | missing |\n| \"Table 11.7\" | 49f2f87bd719fb30c77dbfaa30d417b830a5c25c78dc132a0ba056792a1efe8c | missing |\n| \"Table 11.8\" | 37b3fb30cc8e2463a0b6cbcec6dabbc6e8f70f940e11b62db7bc0a2e5e03db26 | missing |\n| \"Table 11.9\" | 498be0db41d04887235bc0fd5e56261c385abd45ff48f166bfefc30c5db8253f | missing |\n| \"Table 11.10\" | e04ea241bc6b2bbb5a530130e000c61f8bc31c4cecb289d80db2f413ab9c149c | missing |\n| \"Table 11.11\" | bb6b7c91c25257060b82b00f53777ee1d321fe7ce363f1b481b806d01eca51b7 | missing |\n| \"Table 11.12\" | 69f9f5f7ff2a02c47cd5167a27fd29e9960929430f45e5cc2fa0674e16bc3f66 | missing |\n| \"Table 11.13\" | 6816a3410bab470e003e373624e313cb0215d3ae1d04ba5dc743fe2ed09fb25e | missing |\n| \"Table 11.14\" | fa61e43f2bf5e3cc085ab82bbed6f268c53c326249881e06e8815bb0f1fa7416 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T082448Z-1be49be7af18.jsonl"
+  }
+}

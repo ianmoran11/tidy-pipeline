@@ -1,0 +1,951 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ef75ab6bdde054d3a120bcc62b8246dc79b8190f89dd3f7555e08c7fd2b9b0d5",
+  "sheet": "Table 8A.1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "2af7a4506ca9066139e143427a295a84fdb55146171907ce35113f386f40a242",
+  "agent_notes": "The expenditure outline is repeated for 2023-24, 2022-23 and 2021-22. Capital costs contain user cost of capital (Land and Other assets), debt servicing and depreciation; total capital costs and total expenditure are retained as published subtotals. Net operating expenditure is split by prison security, with a total. Other operating expenditure is a separate excluded-cost block. Totals and components must not be added together.",
+  "new_dimensions": [
+    {
+      "name": "expenditure_type",
+      "description": "Type of operating expenditure, revenue or capital cost."
+    },
+    {
+      "name": "capital_cost_type",
+      "description": "Capital cost component within expenditure."
+    },
+    {
+      "name": "asset_type",
+      "description": "Type of asset to which capital costs relate."
+    },
+    {
+      "name": "prison_security",
+      "description": "Security or custody classification of the prison, including totals."
+    },
+    {
+      "name": "operating_expenditure_type",
+      "description": "Type of other operating expenditure: transport and escort services, health expenditure or payroll tax."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C86,A88,C88,A89,C89,A90,C90,C91,A92,C92,A93,C93,C94,A95,C95,A96,C96,A97,C97,A98,C98"
+    },
+    {
+      "name": "source",
+      "cells": "A100,E100"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_6",
+      "range": "D6:U7",
+      "values_range": "M6:U7",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L6:L7"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D6:D7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C5"
+        }
+      ]
+    },
+    {
+      "name": "block_9",
+      "range": "E9:U11",
+      "values_range": "M9:U11",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L9:L11"
+        },
+        {
+          "name": "prison_security",
+          "direction": "W",
+          "cells": "E9:E11"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C5"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D8"
+        }
+      ]
+    },
+    {
+      "name": "block_14",
+      "range": "F14:U15",
+      "values_range": "M14:U15",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L14:L15"
+        },
+        {
+          "name": "asset_type",
+          "direction": "W",
+          "cells": "F14:F15"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C5"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D12"
+        },
+        {
+          "name": "capital_cost_type",
+          "cells": "E13"
+        }
+      ]
+    },
+    {
+      "name": "block_16",
+      "range": "E16:U18",
+      "values_range": "M16:U18",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L16:L18"
+        },
+        {
+          "name": "capital_cost_type",
+          "direction": "W",
+          "cells": "E16:E18"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C5"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D12"
+        }
+      ]
+    },
+    {
+      "name": "block_19",
+      "range": "D19:U19",
+      "values_range": "M19:U19",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L19:L19"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D19:D19"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C5"
+        }
+      ]
+    },
+    {
+      "name": "block_21",
+      "range": "E21:U23",
+      "values_range": "M21:U23",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L21:L23"
+        },
+        {
+          "name": "operating_expenditure_type",
+          "direction": "W",
+          "cells": "E21:E23"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C5"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D20"
+        }
+      ]
+    },
+    {
+      "name": "block_25",
+      "range": "D25:U30",
+      "values_range": "M25:U30",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L25:L30"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D25:D30"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "service",
+          "cells": "C24"
+        }
+      ]
+    },
+    {
+      "name": "block_6_previous",
+      "range": "D33:U34",
+      "values_range": "M33:U34",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L33:L34"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D33:D34"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C32"
+        }
+      ]
+    },
+    {
+      "name": "block_9_previous",
+      "range": "E36:U38",
+      "values_range": "M36:U38",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L36:L38"
+        },
+        {
+          "name": "prison_security",
+          "direction": "W",
+          "cells": "E36:E38"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C32"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D35"
+        }
+      ]
+    },
+    {
+      "name": "block_14_previous",
+      "range": "F41:U42",
+      "values_range": "M41:U42",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L41:L42"
+        },
+        {
+          "name": "asset_type",
+          "direction": "W",
+          "cells": "F41:F42"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C32"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D39"
+        },
+        {
+          "name": "capital_cost_type",
+          "cells": "E40"
+        }
+      ]
+    },
+    {
+      "name": "block_16_previous",
+      "range": "E43:U45",
+      "values_range": "M43:U45",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L43:L45"
+        },
+        {
+          "name": "capital_cost_type",
+          "direction": "W",
+          "cells": "E43:E45"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C32"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D39"
+        }
+      ]
+    },
+    {
+      "name": "block_19_previous",
+      "range": "D46:U46",
+      "values_range": "M46:U46",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L46:L46"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D46:D46"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C32"
+        }
+      ]
+    },
+    {
+      "name": "block_21_previous",
+      "range": "E48:U50",
+      "values_range": "M48:U50",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L48:L50"
+        },
+        {
+          "name": "operating_expenditure_type",
+          "direction": "W",
+          "cells": "E48:E50"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C32"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D47"
+        }
+      ]
+    },
+    {
+      "name": "block_25_previous",
+      "range": "D52:U57",
+      "values_range": "M52:U57",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L52:L57"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D52:D57"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B31"
+        },
+        {
+          "name": "service",
+          "cells": "C51"
+        }
+      ]
+    },
+    {
+      "name": "block_6_extra",
+      "range": "D60:U61",
+      "values_range": "M60:U61",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L60:L61"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D60:D61"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C59"
+        }
+      ]
+    },
+    {
+      "name": "block_9_extra",
+      "range": "E63:U65",
+      "values_range": "M63:U65",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L63:L65"
+        },
+        {
+          "name": "prison_security",
+          "direction": "W",
+          "cells": "E63:E65"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C59"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D62"
+        }
+      ]
+    },
+    {
+      "name": "block_14_extra",
+      "range": "F68:U69",
+      "values_range": "M68:U69",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L68:L69"
+        },
+        {
+          "name": "asset_type",
+          "direction": "W",
+          "cells": "F68:F69"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C59"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D66"
+        },
+        {
+          "name": "capital_cost_type",
+          "cells": "E67"
+        }
+      ]
+    },
+    {
+      "name": "block_16_extra",
+      "range": "E70:U72",
+      "values_range": "M70:U72",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L70:L72"
+        },
+        {
+          "name": "capital_cost_type",
+          "direction": "W",
+          "cells": "E70:E72"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C59"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D66"
+        }
+      ]
+    },
+    {
+      "name": "block_19_extra",
+      "range": "D73:U73",
+      "values_range": "M73:U73",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L73:L73"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D73:D73"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C59"
+        }
+      ]
+    },
+    {
+      "name": "block_21_extra",
+      "range": "E75:U77",
+      "values_range": "M75:U77",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L75:L77"
+        },
+        {
+          "name": "operating_expenditure_type",
+          "direction": "W",
+          "cells": "E75:E77"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C59"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D74"
+        }
+      ]
+    },
+    {
+      "name": "block_25_extra",
+      "range": "D79:U84",
+      "values_range": "M79:U84",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L79:L84"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D79:D84"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B58"
+        },
+        {
+          "name": "service",
+          "cells": "C78"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:59:47Z",
+    "tool_version": "0.2.0",
+    "records": 540,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085659Z-63106a632f70",
+    "started_at": "2026-11-02T08:57:00Z",
+    "workbook": "63106a632f70599a4e24e19de9be87cd7f5201d6ecf209b4a3d1978e4399c501--report-on-government-services-justice-2025-corrective-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b79-eb6e-71bc-9f58-b4b2fbe4b1bd",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "af707c938cc14f38ef245de66c0c98444ddafea49108950dcdd8733028d90884",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `63106a632f70599a4e24e19de9be87cd7f5201d6ecf209b4a3d1978e4399c501--report-on-government-services-justice-2025-corrective-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2025 — Justice\n- Sheets needing a recipe: 23 of 23\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e52ee4c175c069942acad333fb39ebf961979f77ca3e63dc6234f203bac6d3c9 | missing |\n| \"Table 8A.1\" | ef75ab6bdde054d3a120bcc62b8246dc79b8190f89dd3f7555e08c7fd2b9b0d5 | missing |\n| \"Table 8A.2\" | 90b244666a425d29f2268ddb97e87029bb877a310aeccf1322907312d94f9dee | missing |\n| \"Table 8A.3\" | 86411e641d18b0e0bf6b05d0d5f49f63b897bef500d75cee4f2a1727a937b64f | missing |\n| \"Table 8A.4\" | 4a1c0a548ce39e1dbc665f751fed8c0d76819ea47860dbb3eb27eb76b2fd1271 | missing |\n| \"Table 8A.5\" | 181e01a63a149154609f62aec43c39f37a41f8859e6a9e8c5401461564dd560f | missing |\n| \"Table 8A.6\" | fd0a3d358fd92b5c07f2ed427a3463d458252da29480928140412ce34df97236 | missing |\n| \"Table 8A.7\" | 25f952b8fb4a0a66d26ad115791c1fefd67d2bd38063dc2cabe02b251312d84e | missing |\n| \"Table 8A.8\" | 4efc2c5e8af23aa62e1bd22c267bce48a789409d48513ef8409dbcee9d6ff90b | missing |\n| \"Table 8A.9\" | 90e18c7314a5c7d0645ab3285728ef8fa3e2baf7d02af915a509b5c1e6ba6104 | missing |\n| \"Table 8A.10\" | bf97a6303bae8dde1c7d5e2e5e298b9a417421bfdd23716007429dc93dd4436d | missing |\n| \"Table 8A.11\" | fb9a53264b9a7b3b05006ed1914c72153f4243269dac193b0135790946e7e060 | missing |\n| \"Table 8A.12\" | 0ecdd5c96e94fbe7c024a5de8407b9524c192582e33e0c2031d8b7fb0cb49c22 | missing |\n| \"Table 8A.13\" | 94702c473bca1e2a22c7c575edf033f300a87ab364b8080a8de5cb7393ccf620 | missing |\n| \"Table 8A.14\" | 697a4de14ee25b0d934a2cc427409b4bf3193238477e3daf4f36feebb327de72 | missing |\n| \"Table 8A.15\" | d96222e3f87407bd3651e9993609dc408378a4ccaf54d5cb12f2a73a8e918104 | missing |\n| \"Table 8A.16\" | 660b8fdaff4b8ef96b37561f144ed3479de11c5fd5d72b60b6b166bd784ac478 | missing |\n| \"Table 8A.17\" | ae2f9b6600d564a5201b7f42330b95badca56b35699abfd59f96f88dca422df2 | missing |\n| \"Table 8A.18\" | 488ed0ae13ecf16d33094066452dd888361b6a7d410a101ae002de28b854874f | missing |\n| \"Table 8A.19\" | 19364412159838261dc98718eb6aedf4eb875ddb3f65f5cede75f892fc2ed10c | missing |\n| \"Table 8A.20\" | b1638b10f6aa1b592136ddb450934c9929cc27bc61d74d161e3e5cadd19dcc0a | missing |\n| \"Table 8A.21\" | 0c22e33e435bb9a0286c3a7715011879d1104b02a8abe818d43788e883923732 | missing |\n| \"Table 8A.22\" | 310da41e2151ce37d9074f3e9232f33fade6da6b9a906e69f91047d30183c398 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085659Z-63106a632f70.jsonl"
+  }
+}

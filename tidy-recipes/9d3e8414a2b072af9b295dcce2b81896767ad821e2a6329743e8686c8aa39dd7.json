@@ -4,27 +4,38 @@
   "sheet": "T5",
   "kind": "data",
   "status": "validated",
-  "agent_notes": "Published totals and subtotals are retained, including hierarchical order/placement categories. Labels and suppression symbols are unchanged. Separate blocks preserve published measures and population/component headings; sparse year and age labels propagate downward.",
+  "template_from": "340155d42b78059191fb97a00fd7d8968d46b9ad5d7de4e4c6ece13560679c46",
+  "agent_notes": "Published totals and subtotals are retained alongside their constituent categories and are not additive. Labels, indentation, footnote markers and text-valued suppression symbols remain as published.",
+  "new_dimensions": [],
   "meta_data": [
     {
-      "name": "stub_heading",
-      "cells": "A2"
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "source",
+      "cells": "A66"
     },
     {
       "name": "notes",
-      "cells": "A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66"
+      "cells": "A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A2"
     }
   ],
   "tables": [
     {
       "name": "block_1",
       "range": "A5:J9",
-      "values_range": "B5:J5,B6:J6,B7:J7,B8:J8,B9:J9",
+      "values_range": "B5,C5,D5,E5,F5,G5,H5,I5,J5,B6,C6,D6,E6,F6,G6,H6,I6,J6,B7,C7,D7,E7,F7,G7,H7,I7,J7,B8,C8,D8,E8,F8,G8,H8,I8,J8,B9,C9,D9,E9,F9,G9,H9,I9,J9",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A5,A6,A7,A8,A9"
+          "cells": "A5,A6,A7,A8,A9",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -34,15 +45,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B3"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B4"
         }
       ]
@@ -50,12 +57,13 @@
     {
       "name": "block_2",
       "range": "A11:J15",
-      "values_range": "B11:J11,B12:J12,B13:J13,B14:J14,B15:J15",
+      "values_range": "B11,C11,D11,E11,F11,G11,H11,I11,J11,B12,C12,D12,E12,F12,G12,H12,I12,J12,B13,C13,D13,E13,F13,G13,H13,I13,J13,B14,C14,D14,E14,F14,G14,H14,I14,J14,B15,C15,D15,E15,F15,G15,H15,I15,J15",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A11,A12,A13,A14,A15"
+          "cells": "A11,A12,A13,A14,A15",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -65,15 +73,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B3"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B10"
         }
       ]
@@ -81,12 +85,13 @@
     {
       "name": "block_3",
       "range": "A17:J21",
-      "values_range": "B17:J17,B18:J18,B19:J19,B20:J20,B21:J21",
+      "values_range": "B17,C17,D17,E17,F17,G17,H17,I17,J17,B18,C18,D18,E18,F18,G18,H18,I18,J18,B19,C19,D19,E19,F19,G19,H19,I19,J19,B20,C20,D20,E20,F20,G20,H20,I20,J20,B21,C21,D21,E21,F21,G21,H21,I21,J21",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A17,A18,A19,A20,A21"
+          "cells": "A17,A18,A19,A20,A21",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -96,15 +101,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B3"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B16"
         }
       ]
@@ -112,12 +113,13 @@
     {
       "name": "block_4",
       "range": "A23:J27",
-      "values_range": "B23:J23,B24:J24,B25:J25,B26:J26,B27:J27",
+      "values_range": "B23,C23,D23,E23,F23,G23,H23,I23,J23,B24,C24,D24,E24,F24,G24,H24,I24,J24,B25,C25,D25,E25,F25,G25,H25,I25,J25,B26,C26,D26,E26,F26,G26,H26,I26,J26,B27,C27,D27,E27,F27,G27,H27,I27,J27",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A23,A24,A25,A26,A27"
+          "cells": "A23,A24,A25,A26,A27",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -127,15 +129,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B3"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B22"
         }
       ]
@@ -143,12 +141,13 @@
     {
       "name": "block_5",
       "range": "A30:J34",
-      "values_range": "B30:J30,B31:J31,B32:J32,B33:J33,B34:J34",
+      "values_range": "B30,C30,D30,E30,F30,G30,H30,I30,J30,B31,C31,D31,E31,F31,G31,H31,I31,J31,B32,C32,D32,E32,F32,G32,H32,I32,J32,B33,C33,D33,E33,F33,G33,H33,I33,J33,B34,C34,D34,E34,F34,G34,H34,I34,J34",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A30,A31,A32,A33,A34"
+          "cells": "A30,A31,A32,A33,A34",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -158,15 +157,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B28"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B29"
         }
       ]
@@ -174,12 +169,13 @@
     {
       "name": "block_6",
       "range": "A36:J40",
-      "values_range": "B36:J36,B37:J37,B38:J38,B39:J39,B40:J40",
+      "values_range": "B36,C36,D36,E36,F36,G36,H36,I36,J36,B37,C37,D37,E37,F37,G37,H37,I37,J37,B38,C38,D38,E38,F38,G38,H38,I38,J38,B39,C39,D39,E39,F39,G39,H39,I39,J39,B40,C40,D40,E40,F40,G40,H40,I40,J40",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A36,A37,A38,A39,A40"
+          "cells": "A36,A37,A38,A39,A40",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -189,15 +185,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B28"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B35"
         }
       ]
@@ -205,12 +197,13 @@
     {
       "name": "block_7",
       "range": "A42:J46",
-      "values_range": "B42:J42,B43:J43,B44:J44,B45:J45,B46:J46",
+      "values_range": "B42,C42,D42,E42,F42,G42,H42,I42,J42,B43,C43,D43,E43,F43,G43,H43,I43,J43,B44,C44,D44,E44,F44,G44,H44,I44,J44,B45,C45,D45,E45,F45,G45,H45,I45,J45,B46,C46,D46,E46,F46,G46,H46,I46,J46",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A42,A43,A44,A45,A46"
+          "cells": "A42,A43,A44,A45,A46",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -220,15 +213,11 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B28"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B41"
         }
       ]
@@ -236,12 +225,13 @@
     {
       "name": "block_8",
       "range": "A48:J52",
-      "values_range": "B48:J48,B49:J49,B50:J50,B51:J51,B52:J52",
+      "values_range": "B48,C48,D48,E48,F48,G48,H48,I48,J48,B49,C49,D49,E49,F49,G49,H49,I49,J49,B50,C50,D50,E50,F50,G50,H50,I50,J50,B51,C51,D51,E51,F51,G51,H51,I51,J51,B52,C52,D52,E52,F52,G52,H52,I52,J52",
       "headers": [
         {
-          "name": "Year",
+          "name": "period",
           "direction": "W",
-          "cells": "A48,A49,A50,A51,A52"
+          "cells": "A48,A49,A50,A51,A52",
+          "caption": "Year"
         },
         {
           "name": "state",
@@ -251,30 +241,26 @@
       ],
       "meta_data": [
         {
-          "name": "table_title",
-          "cells": "A1"
-        },
-        {
           "name": "measure",
           "cells": "B28"
         },
         {
-          "name": "population",
+          "name": "child_protection_component",
           "cells": "B47"
         }
       ]
     }
   ],
   "validation": {
-    "checked_at": "2026-10-31T06:38:05Z",
+    "checked_at": "2026-11-02T08:37:30Z",
     "tool_version": "0.2.0",
     "records": 360,
     "failures": []
   },
   "generation": {
     "method": "agent",
-    "run_id": "20261031T063116Z-aad6eeadb3b4",
-    "started_at": "2026-10-31T06:31:16Z",
+    "run_id": "20261102T081556Z-aad6eeadb3b4",
+    "started_at": "2026-11-02T08:15:58Z",
     "workbook": "aad6eeadb3b4cb9a3e0131fe6866f54c686d37399f49f769ddabc8f52a085f14--aihw-child-protection-australia-2020-21-main-source.xlsx",
     "agent": {
       "harness": "pi",
@@ -282,7 +268,9 @@
       "provider": "openai-codex",
       "model": "gpt-6.1-sol",
       "thinking_level": "medium",
-      "session_id": "01a190a7-c65f-76de-a486-9d40eefa8321",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b54-57c2-71ea-a938-8bb79401438e",
       "tools": [
         "read",
         "write",
@@ -323,23 +311,24 @@
       "name": "tidy-recipe-authoring",
       "path": "agents/skills/tidy-recipe-authoring",
       "files": {
-        "examples/table-34-time-series-blocks.json": "b548ff0d060c72f959186c8dc9f424376691828f555ef21ac3e73b0fc82dd942",
-        "examples/table-38-sex-blocks-with-spacers.json": "722a3c8ed8333be205c238a53407ba1c6a789d3e5d3f70a9945f6135142f2776",
-        "references/layouts.md": "96a60392b68402865f45bf15f2087ab732ae9cfecd9b299e539bc4b3620eb1ce",
-        "references/recipe-format.md": "168cdb28e87e8f8486921c5a95193e7640d2bed6cae2ae9085bae3fd9e93e67f",
-        "SKILL.md": "7f09f4ffa5628fe3236d1935cf94677567bb3b9a040c2aa96ce35a832b39d080"
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
       }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
     },
     "prompt": {
       "template": "agents/prompts/worker.md",
-      "template_sha256": "79c921e02c35ec30a6bff5f2e7c22ab59148e7d5e30a6ad3b0164595bbfbeccf",
-      "sha256": "f2193709d25fca4022a610c806c058cbbe0a6fbbb79e54c2b5c2175a696ed008",
-      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `aad6eeadb3b4cb9a3e0131fe6866f54c686d37399f49f769ddabc8f52a085f14--aihw-child-protection-australia-2020-21-main-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2020–21 complete release\n- Sheets needing a recipe: 79 of 79\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9f8eebe523f5765d0ffc74e9fddb760ca28ea85eee15cc2e532beaba2ffbba31 | missing |\n| \"Indigenous Content\" | fc1531e292d65b9bfb02bb7e753d8af599b2e3f7b06a6201a41bbc26941064c5 | missing |\n| \"Notes and symbols\" | 0558e7e55e6d8d0d42c35796bea14f44398f0393b2f7d1f8e630402fb4d15c9b | missing |\n| \"Table 2.2\" | 101fea5348b4969ca0db61812fd236420d67707afc1c2b12e0fe969080c5d37a | missing |\n| \"Table 2.3\" | d8f6d101658b2a67331ac6191deedfefe642dbab66667f1cb3e1466cadccf76a | missing |\n| \"Table 3.2\" | a0731168d11f61e41edfa631b15b2f0f66c3e2411d2c486103b568829a16c1f6 | missing |\n| \"Table 3.3\" | 938fba34d90eaa3fd0515daa46bcdcaded86609caffa059ea0842e192e223158 | missing |\n| \"Table 4.2\" | e05e2df4ff5c87e8e201344715bc5a4a257e5c17f468a74ff6a604950b4bbc4d | missing |\n| \"Table 4.3\" | 251715bfe73cc44e8bbcf033cda2eb91a0425febb4d0774eb6d31afe4dc3474c | missing |\n| \"Table 5.1\" | 0fbf96d3a44ecb69f917ba079162404923bf50720fce3be1fe5c8afd37595651 | missing |\n| \"Table 7.2\" | 601e3a37ec940705454171ee88ef537b5650af15e3e56db96ab1c863df37e1c7 | missing |\n| \"Table 8.1\" | 0ae401a9cebafc68ffccb3d67ae6f58c842d518aff3acaaf5845f3ca11bd8b0c | missing |\n| \"Table A1\" | bec23980f25caa6d7834999cbe0165cdbda5097c54effce3e4c4b8aebe5ccd29 | missing |\n| \"Table S2.1\" | d8f49d18bca2bbcd0f66c30eb0338feb923bae2f6a5f9092bd9ff04c02f56df0 | missing |\n| \"Table S2.2\" | 5de46de0905479b9c09b91dfcfad38254d1e5b10de9581c2d9db0c84b686e94b | missing |\n| \"Table S2.3\" | cfbc5c71e7fd3b83efaa3084db45e43b12e38a76f99bdda7895143e0b2393ac4 | missing |\n| \"Table S3.1\" | 77593f400d195622d2d09c031262c7cf4723e76085697ae8089b27332572ba9c | missing |\n| \"Table S3.2\" | 1b4d3c4867311e114b095a5aa35d47cf6c15e6c1536b7e03fdca7feadcdb4bb0 | missing |\n| \"Table S3.3\" | 1618eadc03c7d88c8b035624a8f53b809bc8efd6e26f22793a2573c0da261810 | missing |\n| \"Table S3.4\" | bd29fd54222157657018e60f94f4e3ee100ff262cc555207a934c8946288f150 | missing |\n| \"Table S3.5\" | 6f11260e9261be627f4abe377b288234313624e64f64eaf801cd0f148dc91d63 | missing |\n| \"Table S3.6\" | 24d0a47231355ea2eb87eb45674c68ab7535d5ed78a8049418d7cbab0f542b58 | missing |\n| \"Table S3.7\" | 40335ca6c65d5ecdc66f4c6a041431f6feecaac025bf76341d469f3de7173093 | missing |\n| \"Table S3.8\" | ee37d40559f371f54767a8d8807912149518ee25c9f3789b864d09959f83705b | missing |\n| \"Table S3.9\" | 7072ba9b260e4085a476fb689dfbf8f7ab73f3824416d65fa363e59106f0b98b | missing |\n| \"Table S3.10\" | 0bd2e97f172ee53a57e480c9804bc2230de1bbbf5505f6e80dc7032ff2a71b6f | missing |\n| \"Table S3.11\" | dadb52fb91407e7f25c00d525115afff8a80946e96d31f2de64112b031dbfbee | missing |\n| \"Table S3.12\" | 4d5599abcd82b87aeb3fdafaa68453b787c2c1fe37e6aa353e310f0db3c0782c | missing |\n| \"Table S3.13\" | acba67406e34caac6d3eca3e4f963dc8f9d06a4d2e5454010d72ad47b86d1a45 | missing |\n| \"Table S3.14\" | b8cb18c2eda49b682f1e946840e6cbbcd1ee79893271fc8872830614a91f4e60 | missing |\n| \"Table S4.1\" | 3127ebde1f61c1fcbee26d0fe0e4c7a1deee5afb69e2b49e54fd5b7932f364ce | missing |\n| \"Table S4.2\" | a3aa8569fb2c17b8d2e22350a59f7951987dea0d9d7d41e4258a880a8a3ea071 | missing |\n| \"Table S4.3\" | 90b9a1d554156287e7bb31e1303ea106c4541a03643bfc12b34fac0b81e2b839 | missing |\n| \"Table S4.4\" | c6aa100112e310fb595e4c084566347a4a5e050dfd06e4abd08e19f3520db527 | missing |\n| \"Table S4.5\" | 819bea627cfd1a7c9bf08ce91b0105f8b974568e2c94c7036db76add796278f3 | missing |\n| \"Table S4.6\" | c5af805605d65de5a5607687f1e53694f523d442188930ad785d96dbb3dcf949 | missing |\n| \"Table S4.7\" | b462a66421014e4412181607dab027af76df9389235643919d7be2f258cdadd3 | missing |\n| \"Table S4.8\" | ea49e2e19009b539360e0f8aa91088fd7e8b07ab262e39e00e10e5954246418d | missing |\n| \"Table S4.9\" | cdbf2370e2465bb3c62a42cf5f36ece8278788019e4d744c3ca88cdb77329f59 | missing |\n| \"Table S4.10\" | 74e46f9bbb284e4bde61667a14afba71866de061ebfb9add49b4e560536d23d0 | missing |\n| \"Table S4.11\" | dade8af1a225abc5bac254e5a52033943ea7d268e1f95d04f9fca40ac44407ef | missing |\n| \"Table S4.12\" | 3715d19cf3a75df9336ef8105088243f63eacd9fd1dc32b136b533c8c1be1347 | missing |\n| \"Table S5.1\" | 5e8e0fa83771d120b8dd712e930f516c952bd1d9b55e29eccddab06b45144001 | missing |\n| \"Table S5.2\" | 9649e3f867b0e97a38d5ca0893d9d125dd2fa74a60c673c4901d280a0f58a358 | missing |\n| \"Table S5.3\" | f339c1c2fa8272eae8af235af90bcf621a7e764fd254fa8106eaec9325f87ee1 | missing |\n| \"Table S5.4\" | f283a16eb80c425183c8bb9cf1530b8f773b3c0a763802b7482be513a7f9a060 | missing |\n| \"Table S5.5\" | fda1fece935361bb0929f542733dd4346f70e352cbb871c5421134eb41a44144 | missing |\n| \"Table S5.6\" | 976167d105d4f9be934c5e7ae27be5003d48f6fc393328f45ab5e30cd38ee940 | missing |\n| \"Table S5.7\" | e8cb5297e5a07627f9333260d51d4e17297bf0693d2a5e5874b18ff39afcce62 | missing |\n| \"Table S5.8\" | 961f2b0813a40260ad4870b4fc7bd8e1ec6f43b274f3ea9bbf6e9228b64dde2f | missing |\n| \"Table S5.9\" | 67040c03fd3494974aa582f7df0fe72f881c1df51e74cf000b09543634ba08a7 | missing |\n| \"Table S5.10\" | 06ee34beaeab56385e2a011cdca6015628bc95cfbe90d1d486fd2582777b2300 | missing |\n| \"Table S5.11\" | b93c88e728a40fe9a993e9529188c7343333c204e85e21a24ae13e6ee81ffa15 | missing |\n| \"Table S5.12\" | ab6995834393c884c5dde462607fae6f2558e8da3a5e2775cd90786e108af286 | missing |\n| \"Table S5.13\" | 31b1fc76df93c8a57f8f5e0d9a509fc35b648ea5f853e4b1ecc546e8e484c2ba | missing |\n| \"Table S5.14\" | ae8a44dc365e5aad40481ffdc8bac6fd8681a8c902eb257a7c5e9ba50a605a8a | missing |\n| \"Table S5.15\" | 93d0f8df696a4c516f3c1dffc8d254d3c6f3ca3a38d7f4a2240a6423f2a74d89 | missing |\n| \"Table S5.16\" | 00c896a10e17fa61f82f79bffff2591e22c494a68cdc9ca6725fd96be62be157 | missing |\n| \"Table S5.17\" | 9f5e7b0e6ba20a9a1d7dd92687646e2e6587b51f19370808d5f0abd36e80a655 | missing |\n| \"Table S5.18\" | 3519182056b7eacd114df7323fc1f1eac32b36a28bde12fcb48e0927a37a41ac | missing |\n| \"Table S5.19\" | ad4fc64769a494b23f1ab21b685782eba66f228f0411a38666b6a404dd3a854d | missing |\n| \"Table S5.20\" | 91296c5a41113dba554cc030f05f258f7f5289e6badad1ac543e5e69aa044e54 | missing |\n| \"Table S6.1\" | 5a5447f2c00f9768b294e3b95a6600f8e903a7239df1d762660d20da8db7a57d | missing |\n| \"Table S6.2\" | a5ddb6c662f14d844066f06bc0208d36cd4c12040b8a90bc816cc121fc9133ec | missing |\n| \"Table S6.3\" | 07b71408267a264eab6a604e97fb2e7dfb0875c3b28a7c4bbb9fe9c5c7962f1e | missing |\n| \"Table S7.1\" | a96f99ed57d1b205eed8e0d3f543e86b6e2e9e04a68cd3a07751de9fc43aa857 | missing |\n| \"Table S7.2\" | 347b1b75e27fe89d18c961776fb7d6515331c089183ef925fc200d500313a5fe | missing |\n| \"Table S7.3\" | 506a37013566bf4cc2e2d4c0489287c51bb8a79d6138af52cd6c14fc6a090d02 | missing |\n| \"Table S8.1\" | 16c668706d6a27c83f2f0cf1482d5b29883424b30e9deda18deb149091b4840a | missing |\n| \"T1\" | 07e4b5efcecca97cffbc2183a0878456429f577e237c3ce17c1cacfe09d5c5e1 | missing |\n| \"T2\" | 5808949b62d18dc66a8f6e27d68bb9d1f09ecb5347b379237f59bc77714b7db8 | missing |\n| \"T3\" | 097f66a738b5eaa06f7b2945c7ac8ea13b36df0a634229dd1df44d87a3fb8186 | missing |\n| \"T4\" | d1852c08ed6300c8d0f9718e4db3292d76d51721a0346ee77a1adf416b3ff7f3 | missing |\n| \"T5\" | 9d3e8414a2b072af9b295dcce2b81896767ad821e2a6329743e8686c8aa39dd7 | missing |\n| \"P1\" | 2f2ad19194e31a6623f34dd5b2b82889872a8014ad52ef35bd5a0701e54d9a8f | missing |\n| \"P2\" | 8563f48eb063a18d488c0770ffe818c1501058fc485c61dad0b1a260177194f8 | missing |\n| \"P3\" | f2696e1d3dd951645b845193518e3ddc2b2a68625ce41e0f3cdeabb1bb0b9833 | missing |\n| \"P4\" | b82c7fae162a8fcf0cb7fa7b7132437fad5ea1b0cc1f1fb77f1809c6d8c72038 | missing |\n| \"P5\" | 3fe58e3f43049d1d91e81d9ce067f48c41b2e3acf3377dd7dfe09dedb98ba13d | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`. "
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e3f1ed55cce82bf71f9d7d1642805246c79dd1018443420bdc85a6a55d82c8fe",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `aad6eeadb3b4cb9a3e0131fe6866f54c686d37399f49f769ddabc8f52a085f14--aihw-child-protection-australia-2020-21-main-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2020–21 complete release\n- Sheets needing a recipe: 77 of 79\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Notes and symbols\" | 0558e7e55e6d8d0d42c35796bea14f44398f0393b2f7d1f8e630402fb4d15c9b | missing |\n| \"Table 2.2\" | 101fea5348b4969ca0db61812fd236420d67707afc1c2b12e0fe969080c5d37a | missing |\n| \"Table 2.3\" | d8f6d101658b2a67331ac6191deedfefe642dbab66667f1cb3e1466cadccf76a | missing |\n| \"Table 3.2\" | a0731168d11f61e41edfa631b15b2f0f66c3e2411d2c486103b568829a16c1f6 | missing |\n| \"Table 3.3\" | 938fba34d90eaa3fd0515daa46bcdcaded86609caffa059ea0842e192e223158 | missing |\n| \"Table 4.2\" | e05e2df4ff5c87e8e201344715bc5a4a257e5c17f468a74ff6a604950b4bbc4d | missing |\n| \"Table 4.3\" | 251715bfe73cc44e8bbcf033cda2eb91a0425febb4d0774eb6d31afe4dc3474c | missing |\n| \"Table 5.1\" | 0fbf96d3a44ecb69f917ba079162404923bf50720fce3be1fe5c8afd37595651 | missing |\n| \"Table 7.2\" | 601e3a37ec940705454171ee88ef537b5650af15e3e56db96ab1c863df37e1c7 | missing |\n| \"Table 8.1\" | 0ae401a9cebafc68ffccb3d67ae6f58c842d518aff3acaaf5845f3ca11bd8b0c | missing |\n| \"Table A1\" | bec23980f25caa6d7834999cbe0165cdbda5097c54effce3e4c4b8aebe5ccd29 | missing |\n| \"Table S2.1\" | d8f49d18bca2bbcd0f66c30eb0338feb923bae2f6a5f9092bd9ff04c02f56df0 | missing |\n| \"Table S2.2\" | 5de46de0905479b9c09b91dfcfad38254d1e5b10de9581c2d9db0c84b686e94b | missing |\n| \"Table S2.3\" | cfbc5c71e7fd3b83efaa3084db45e43b12e38a76f99bdda7895143e0b2393ac4 | missing |\n| \"Table S3.1\" | 77593f400d195622d2d09c031262c7cf4723e76085697ae8089b27332572ba9c | missing |\n| \"Table S3.2\" | 1b4d3c4867311e114b095a5aa35d47cf6c15e6c1536b7e03fdca7feadcdb4bb0 | missing |\n| \"Table S3.3\" | 1618eadc03c7d88c8b035624a8f53b809bc8efd6e26f22793a2573c0da261810 | missing |\n| \"Table S3.4\" | bd29fd54222157657018e60f94f4e3ee100ff262cc555207a934c8946288f150 | missing |\n| \"Table S3.5\" | 6f11260e9261be627f4abe377b288234313624e64f64eaf801cd0f148dc91d63 | missing |\n| \"Table S3.6\" | 24d0a47231355ea2eb87eb45674c68ab7535d5ed78a8049418d7cbab0f542b58 | missing |\n| \"Table S3.7\" | 40335ca6c65d5ecdc66f4c6a041431f6feecaac025bf76341d469f3de7173093 | missing |\n| \"Table S3.8\" | ee37d40559f371f54767a8d8807912149518ee25c9f3789b864d09959f83705b | missing |\n| \"Table S3.9\" | 7072ba9b260e4085a476fb689dfbf8f7ab73f3824416d65fa363e59106f0b98b | missing |\n| \"Table S3.10\" | 0bd2e97f172ee53a57e480c9804bc2230de1bbbf5505f6e80dc7032ff2a71b6f | missing |\n| \"Table S3.11\" | dadb52fb91407e7f25c00d525115afff8a80946e96d31f2de64112b031dbfbee | missing |\n| \"Table S3.12\" | 4d5599abcd82b87aeb3fdafaa68453b787c2c1fe37e6aa353e310f0db3c0782c | missing |\n| \"Table S3.13\" | acba67406e34caac6d3eca3e4f963dc8f9d06a4d2e5454010d72ad47b86d1a45 | missing |\n| \"Table S3.14\" | b8cb18c2eda49b682f1e946840e6cbbcd1ee79893271fc8872830614a91f4e60 | missing |\n| \"Table S4.1\" | 3127ebde1f61c1fcbee26d0fe0e4c7a1deee5afb69e2b49e54fd5b7932f364ce | missing |\n| \"Table S4.2\" | a3aa8569fb2c17b8d2e22350a59f7951987dea0d9d7d41e4258a880a8a3ea071 | missing |\n| \"Table S4.3\" | 90b9a1d554156287e7bb31e1303ea106c4541a03643bfc12b34fac0b81e2b839 | missing |\n| \"Table S4.4\" | c6aa100112e310fb595e4c084566347a4a5e050dfd06e4abd08e19f3520db527 | missing |\n| \"Table S4.5\" | 819bea627cfd1a7c9bf08ce91b0105f8b974568e2c94c7036db76add796278f3 | missing |\n| \"Table S4.6\" | c5af805605d65de5a5607687f1e53694f523d442188930ad785d96dbb3dcf949 | missing |\n| \"Table S4.7\" | b462a66421014e4412181607dab027af76df9389235643919d7be2f258cdadd3 | missing |\n| \"Table S4.8\" | ea49e2e19009b539360e0f8aa91088fd7e8b07ab262e39e00e10e5954246418d | missing |\n| \"Table S4.9\" | cdbf2370e2465bb3c62a42cf5f36ece8278788019e4d744c3ca88cdb77329f59 | missing |\n| \"Table S4.10\" | 74e46f9bbb284e4bde61667a14afba71866de061ebfb9add49b4e560536d23d0 | missing |\n| \"Table S4.11\" | dade8af1a225abc5bac254e5a52033943ea7d268e1f95d04f9fca40ac44407ef | missing |\n| \"Table S4.12\" | 3715d19cf3a75df9336ef8105088243f63eacd9fd1dc32b136b533c8c1be1347 | missing |\n| \"Table S5.1\" | 5e8e0fa83771d120b8dd712e930f516c952bd1d9b55e29eccddab06b45144001 | missing |\n| \"Table S5.2\" | 9649e3f867b0e97a38d5ca0893d9d125dd2fa74a60c673c4901d280a0f58a358 | missing |\n| \"Table S5.3\" | f339c1c2fa8272eae8af235af90bcf621a7e764fd254fa8106eaec9325f87ee1 | missing |\n| \"Table S5.4\" | f283a16eb80c425183c8bb9cf1530b8f773b3c0a763802b7482be513a7f9a060 | missing |\n| \"Table S5.5\" | fda1fece935361bb0929f542733dd4346f70e352cbb871c5421134eb41a44144 | missing |\n| \"Table S5.6\" | 976167d105d4f9be934c5e7ae27be5003d48f6fc393328f45ab5e30cd38ee940 | missing |\n| \"Table S5.7\" | e8cb5297e5a07627f9333260d51d4e17297bf0693d2a5e5874b18ff39afcce62 | missing |\n| \"Table S5.8\" | 961f2b0813a40260ad4870b4fc7bd8e1ec6f43b274f3ea9bbf6e9228b64dde2f | missing |\n| \"Table S5.9\" | 67040c03fd3494974aa582f7df0fe72f881c1df51e74cf000b09543634ba08a7 | missing |\n| \"Table S5.10\" | 06ee34beaeab56385e2a011cdca6015628bc95cfbe90d1d486fd2582777b2300 | missing |\n| \"Table S5.11\" | b93c88e728a40fe9a993e9529188c7343333c204e85e21a24ae13e6ee81ffa15 | missing |\n| \"Table S5.12\" | ab6995834393c884c5dde462607fae6f2558e8da3a5e2775cd90786e108af286 | missing |\n| \"Table S5.13\" | 31b1fc76df93c8a57f8f5e0d9a509fc35b648ea5f853e4b1ecc546e8e484c2ba | missing |\n| \"Table S5.14\" | ae8a44dc365e5aad40481ffdc8bac6fd8681a8c902eb257a7c5e9ba50a605a8a | missing |\n| \"Table S5.15\" | 93d0f8df696a4c516f3c1dffc8d254d3c6f3ca3a38d7f4a2240a6423f2a74d89 | missing |\n| \"Table S5.16\" | 00c896a10e17fa61f82f79bffff2591e22c494a68cdc9ca6725fd96be62be157 | missing |\n| \"Table S5.17\" | 9f5e7b0e6ba20a9a1d7dd92687646e2e6587b51f19370808d5f0abd36e80a655 | missing |\n| \"Table S5.18\" | 3519182056b7eacd114df7323fc1f1eac32b36a28bde12fcb48e0927a37a41ac | missing |\n| \"Table S5.19\" | ad4fc64769a494b23f1ab21b685782eba66f228f0411a38666b6a404dd3a854d | missing |\n| \"Table S5.20\" | 91296c5a41113dba554cc030f05f258f7f5289e6badad1ac543e5e69aa044e54 | missing |\n| \"Table S6.1\" | 5a5447f2c00f9768b294e3b95a6600f8e903a7239df1d762660d20da8db7a57d | missing |\n| \"Table S6.2\" | a5ddb6c662f14d844066f06bc0208d36cd4c12040b8a90bc816cc121fc9133ec | missing |\n| \"Table S6.3\" | 07b71408267a264eab6a604e97fb2e7dfb0875c3b28a7c4bbb9fe9c5c7962f1e | missing |\n| \"Table S7.1\" | a96f99ed57d1b205eed8e0d3f543e86b6e2e9e04a68cd3a07751de9fc43aa857 | missing |\n| \"Table S7.2\" | 347b1b75e27fe89d18c961776fb7d6515331c089183ef925fc200d500313a5fe | missing |\n| \"Table S7.3\" | 506a37013566bf4cc2e2d4c0489287c51bb8a79d6138af52cd6c14fc6a090d02 | missing |\n| \"Table S8.1\" | 16c668706d6a27c83f2f0cf1482d5b29883424b30e9deda18deb149091b4840a | missing |\n| \"T1\" | 07e4b5efcecca97cffbc2183a0878456429f577e237c3ce17c1cacfe09d5c5e1 | missing |\n| \"T2\" | 5808949b62d18dc66a8f6e27d68bb9d1f09ecb5347b379237f59bc77714b7db8 | missing |\n| \"T3\" | 097f66a738b5eaa06f7b2945c7ac8ea13b36df0a634229dd1df44d87a3fb8186 | missing |\n| \"T4\" | d1852c08ed6300c8d0f9718e4db3292d76d51721a0346ee77a1adf416b3ff7f3 | missing |\n| \"T5\" | 9d3e8414a2b072af9b295dcce2b81896767ad821e2a6329743e8686c8aa39dd7 | missing |\n| \"P1\" | 2f2ad19194e31a6623f34dd5b2b82889872a8014ad52ef35bd5a0701e54d9a8f | missing |\n| \"P2\" | 8563f48eb063a18d488c0770ffe818c1501058fc485c61dad0b1a260177194f8 | missing |\n| \"P3\" | f2696e1d3dd951645b845193518e3ddc2b2a68625ce41e0f3cdeabb1bb0b9833 | missing |\n| \"P4\" | b82c7fae162a8fcf0cb7fa7b7132437fad5ea1b0cc1f1fb77f1809c6d8c72038 | missing |\n| \"P5\" | 3fe58e3f43049d1d91e81d9ce067f48c41b2e3acf3377dd7dfe09dedb98ba13d | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
     },
-    "log": "agents/logs/aad6eeadb3b4cb9a3e0131fe6866f54c686d37399f49f769ddabc8f52a085f14.jsonl",
-    "backfilled": {
-      "at": "2026-10-31T06:58:48Z",
-      "note": "Recorded after the run from its log. pi_version (checked with pi --version before the run) and pi_args (agents/run_one.sh) were not logged; all other fields come from the log. Skill hashes are of the text the agent read, or of the file version at the time."
-    }
+    "log": "agents/logs/20261102T081556Z-aad6eeadb3b4.jsonl"
   }
 }

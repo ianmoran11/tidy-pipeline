@@ -1,0 +1,146 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "09f456787a9dfbd4c08830448c294e5cfae5240630c72e18dd9f6bdd2adc3d20",
+  "sheet": "Table CA.2",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "30df7fab5736ceb36fee243653f71f6e86ae9a12a68d317074b868106b0dfd19",
+  "agent_notes": "Total Justice sector rows are totals; dollar per-person expenditure and percentage shares retained and distinguished by unit.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "notes",
+      "cells": "A16:A20,C16:C20"
+    },
+    {
+      "name": "source",
+      "cells": "A22,E22"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "expenditure_per_person",
+      "range": "B4:U14",
+      "values_range": "M5:U14",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "service",
+          "direction": "W",
+          "cells": "C5:C14"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L5:L14"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:51:17Z",
+    "tool_version": "0.2.0",
+    "records": 90,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085002Z-595f622765cc",
+    "started_at": "2026-11-02T08:50:03Z",
+    "workbook": "595f622765cc0592cff3febd71e0869613ca125bbe52e85262da6adfa3f97220--report-on-government-services-justice-2024-sector-overview-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b73-8e16-7569-8a1f-40c4cda3b819",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b2a8e7747f33e13f534cc7e30ac9e13c4ef3cb80367c1005fec81dc07bb3cca7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `595f622765cc0592cff3febd71e0869613ca125bbe52e85262da6adfa3f97220--report-on-government-services-justice-2024-sector-overview-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2024 — Justice\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9e26948b29f7c4f5c8ff379c1223d83ed70ace2f31e8a176f42f2a8dd2720517 | missing |\n| \"Table CA.1\" | 92eb8b4416be1140fd4ca176847ef2804110ca8bc72a2ad45230ea2d2db25418 | missing |\n| \"Table CA.2\" | 09f456787a9dfbd4c08830448c294e5cfae5240630c72e18dd9f6bdd2adc3d20 | missing |\n| \"Table CA.3\" | ac7830af3c0d4e09505820742960b00fa4c9fd2a2839e928d26cd2e3611d4de0 | missing |\n| \"Table CA.4\" | f492101d7d3d4ebb9bd4976cd26785a66d0a2387774959e7fb4e177837fccf1c | missing |\n| \"Table CA.5\" | 8cdce7ebe41f8a6e410ebf98d5eac1b8d72bce9fd468b5994a6c51421624e02f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085002Z-595f622765cc.jsonl"
+  }
+}

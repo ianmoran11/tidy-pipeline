@@ -1,6 +1,6 @@
 {
   "description": "Stage 4 (identify): what each record counts. See measures/README.md.",
-  "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+(?-i:[a-z])?\\s*[:.–-]?\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
+  "subject_pattern": "^(?:FDV\\s+|ANZSOC 2023\\s+)?(?:Table\\s*[A-Z]{0,3}\\s*[0-9]+(?:\\.[0-9]+)*(?-i:[a-z])?\\s*[:.–-]?\\s*|(?-i:[A-Z]){1,2}[0-9]+(?:\\.[0-9]+)*(?-i:[a-z])?:\\s*)?(?:Experimental data(?:\\s*\\([a-z0-9]{1,2}\\))?\\s*[–-]\\s*)?([^,]+)",
   "replace_labels": {
     "population": [
       "Total",
@@ -127,25 +127,566 @@
       "set": {
         "age_basis": "Age at report"
       }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*\\(rate\\)(\\s*\\([a-z]\\))*\\s*(/|$)",
+      "set": {
+        "measure": "Rate",
+        "unit": "per 10,000"
+      }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*\\(days\\)(\\s*\\([a-z]\\))*\\s*(/|$)",
+      "set": {
+        "unit": "days"
+      }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*: (Number of receptions|Receptions)\\.?\\s*(/|$)",
+      "set": {
+        "measure": "Number of receptions"
+      }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*: (Number of releases|Releases)\\.?\\s*(/|$)",
+      "set": {
+        "measure": "Number of releases"
+      }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*: Number of young people during the year\\.?\\s*(/|$)",
+      "set": {
+        "measure": "Number of young people"
+      }
+    },
+    {
+      "pattern": "^Table P[0-9]+: Population of children.*31 December",
+      "set": {
+        "scope": "At 31 December"
+      }
+    },
+    {
+      "pattern": "^(Table )?[A-Z]{0,2}[0-9]+(\\.[0-9]+)*[a-z]?:.*\\(number\\)(\\s*\\([a-z]\\))*\\s*(/|$)",
+      "set": {
+        "measure": "Number"
+      }
+    },
+    {
+      "pattern": "^(Table )?[A-Z]{0,2}[0-9]+(\\.[0-9]+)*[a-z]?:.*\\(per cent\\)(\\s*\\([a-z]\\))*\\s*(/|$)",
+      "set": {
+        "measure": "Proportion",
+        "unit": "%"
+      }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*by .*age at first supervision",
+      "set": {
+        "age_basis": "Age at first supervision"
+      }
+    },
+    {
+      "pattern": "^Table S[0-9]+[a-z]?:.*by .*age at first detention",
+      "set": {
+        "age_basis": "Age at first detention"
+      }
     }
   ],
   "measure_from_unit": {
     "no.": "Number",
     "%": "Proportion",
-    "'000": "Number"
+    "'000": "Number",
+    "rate": "Rate",
+    "Index": "Index"
   },
   "default_measure": {
     "criminal-courts-australia": "Number",
     "federal-defendants-australia": "Number",
     "prisoners-australia": "Number",
     "recorded-crime-offenders": "Number",
-    "recorded-crime-victims": "Number"
+    "recorded-crime-victims": "Number",
+    "aihw-youth-justice-australia": "Number"
   },
   "subjects": {
     "aihw-youth-justice-australia": {
       "population of young people aged 10–17": {
         "population": "Young people aged 10–17",
         "measure": "Population"
+      },
+      "young people under supervision on an average day by age": {
+        "population": "Young people under supervision on an average day"
+      },
+      "young people under community-based supervision on an average day by age": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people in detention on an average day by age": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people aged 10–17 under supervision on an average day by indigenous status and age": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by indigenous status and age": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 in detention on an average day by indigenous status and age": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people under community–based supervision on an average day by age": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people aged 12–17 under supervision on an average day by indigenous status and age": {
+        "population": "Young people aged 12–17 under supervision on an average day"
+      },
+      "young people aged 12–17 under community-based supervision on an average day by indigenous status and age": {
+        "population": "Young people aged 12–17 under community-based supervision on an average day"
+      },
+      "young people aged 12–17 in detention on an average day by indigenous status and age": {
+        "population": "Young people aged 12–17 in detention on an average day"
+      },
+      "young people under community-based supervision on an average day": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people under community-based supervision during the year by age": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people under community–based supervision on an average day by sex and indigenous status": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people under community–based supervision during the year by sex and indigenous status": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by sex and indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by sex and indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community–based supervision on an average day by sex and indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community–based supervision during the year by sex and indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community–based supervision by age on an average day by age": {
+        "population": "Young people aged 10–17 under community-based supervision"
+      },
+      "young people aged 10–17 under community–based supervision during the year by age": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people under community-based supervision on an average day by indigenous status and age": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people under community-based supervision during the year by indigenous status and age": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by sex and age": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by sex and age": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by age and sex": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by age and sex": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people under community-based supervision on an average day by indigenous status": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people under community-based supervision during the year by indigenous status": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community–based supervision on an average day by indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community–based supervision during the year by indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by sex": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by sex": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people under community-based supervision on an average day by sex": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people under community-based supervision during the year by sex": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people under community-based supervision during the year by first supervision": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people under community-based supervision during the year by first supervision and indigenous status": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people under community-based supervision during the year by indigenous status and age at first supervision": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by remoteness of usual residence": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by remoteness of usual residence": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by socioeconomic position of usual residence": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by socioeconomic position of usual residence": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "community-based supervised orders": {
+        "population": "Community-based supervised orders"
+      },
+      "young people who completed a period of community-based supervision during the year by number of periods completed and indigenous status": {
+        "population": "Young people who completed a period of community-based supervision during the year"
+      },
+      "number and median length of completed periods of community-based supervision by indigenous status": {
+        "population": "Number and median length of completed periods of community-based supervision"
+      },
+      "average length of time young people spent under community-based supervision during the year": {
+        "population": "Young people under community-based supervision during the year",
+        "measure": "Average length of time"
+      },
+      "young people under community-based supervision on an average day by legal status and indigenous status": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "young people under community-based supervision during the year by legal status and indigenous status": {
+        "population": "Young people under community-based supervision during the year"
+      },
+      "young people aged 10–17 under community-based supervision on an average day by legal status and indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision on an average day"
+      },
+      "young people aged 10–17 under community-based supervision during the year by legal status and indigenous status": {
+        "population": "Young people aged 10–17 under community-based supervision during the year"
+      },
+      "young people under community-based supervision on an average day by indigenous status and legal status": {
+        "population": "Young people under community-based supervision on an average day"
+      },
+      "successfully completed supervised or conditional bail and other unsentenced community-based supervised orders by length of order": {
+        "population": "Successfully completed supervised or conditional bail and other unsentenced community-based supervised orders"
+      },
+      "successfully completed probation and similar community-based supervised orders by length of order": {
+        "population": "Successfully completed probation and similar community-based supervised orders"
+      },
+      "breached probation and similar community-based supervised orders by time to breach": {
+        "population": "Breached probation and similar community-based supervised orders"
+      },
+      "successfully completed suspended detention community-based orders by length of order": {
+        "population": "Successfully completed suspended detention community-based orders"
+      },
+      "young people under supervision during the year by age": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people under supervision on an average day by sex and indigenous status": {
+        "population": "Young people under supervision on an average day"
+      },
+      "young people under supervision during the year by sex and indigenous status": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by sex and indigenous status": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by sex and indigenous status": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people under supervision during the year": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by age": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by age": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people under supervision on an average day by indigenous status and age": {
+        "population": "Young people under supervision on an average day"
+      },
+      "young people under supervision during the year by indigenous status and age": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by sex and age": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by sex and age": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by age and sex": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by age and sex": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by indigenous status": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by indigenous status": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people under supervision on an average day by indigenous status": {
+        "population": "Young people under supervision on an average day"
+      },
+      "young people under supervision during the year by indigenous status": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by sex": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by sex": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people under supervision on an average day by sex": {
+        "population": "Young people under supervision on an average day"
+      },
+      "young people under supervision during the year by sex": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people under supervision during the year by first supervision": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people under supervision during the year by first supervision and indigenous status": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people under supervision during the year by indigenous status and age at first supervision": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people under supervision during the year by age at first supervision and type of first supervision": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by remoteness of usual residence": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by remoteness of usual residence": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "young people aged 10–17 under supervision on an average day by socioeconomic position of usual residence": {
+        "population": "Young people aged 10–17 under supervision on an average day"
+      },
+      "young people aged 10–17 under supervision during the year by socioeconomic position of usual residence": {
+        "population": "Young people aged 10–17 under supervision during the year"
+      },
+      "orders by order type": {
+        "population": "Orders"
+      },
+      "young people by indigenous status and number of community-based supervised orders": {
+        "population": "Young people with community-based supervised orders"
+      },
+      "young people by indigenous status and number of detention orders": {
+        "population": "Young people with detention orders"
+      },
+      "young people by indigenous status and number of supervised orders": {
+        "population": "Young people with supervised orders"
+      },
+      "completed supervision periods": {
+        "population": "Completed supervision periods"
+      },
+      "young people who completed a period of supervision during the year by number of periods completed and indigenous status": {
+        "population": "Young people who completed a period of supervision during the year"
+      },
+      "number and median length of completed periods of supervision by indigenous status": {
+        "population": "Number and median length of completed periods of supervision"
+      },
+      "average length of time spent under supervision during the year by indigenous status and sex": {
+        "population": "Young people under supervision during the year",
+        "measure": "Average length of time"
+      },
+      "young people by number of completed supervision periods": {
+        "population": "Young people under supervision"
+      },
+      "orders ended by duration and indigenous status": {
+        "population": "Orders ended"
+      },
+      "young people under supervision during the year by supervision history": {
+        "population": "Young people under supervision during the year"
+      },
+      "young people in detention during the year by age": {
+        "population": "Young people in detention during the year"
+      },
+      "young people in detention on an average day by sex and indigenous status": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in detention during the year by sex and indigenous status": {
+        "population": "Young people in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by sex and indigenous status": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by sex and indigenous status": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people aged 10–17 in detention by age on an average day by age": {
+        "population": "Young people aged 10–17 in detention"
+      },
+      "young people aged 10–17 in detention during the year by age": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people in detention on an average day by indigenous status and age": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in detention during the year by indigenous status and age": {
+        "population": "Young people in detention during the year"
+      },
+      "young people aged 10–17 in detention on an on an average day by sex and age": {
+        "population": "Young people aged 10–17 in detention on an on an average day"
+      },
+      "young people aged 10–17 in detention during the year by sex and age": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by age and sex": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by age and sex": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by indigenous status": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by indigenous status": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people in detention on an average day by indigenous status": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in detention during the year by indigenous status": {
+        "population": "Young people in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by sex": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by sex": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people in detention on an average day by sex": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in detention during the year by sex": {
+        "population": "Young people in detention during the year"
+      },
+      "young people in detention on an average day": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in detention during the year by first supervision": {
+        "population": "Young people in detention during the year"
+      },
+      "young people in detention during the year by first supervision and indigenous status": {
+        "population": "Young people in detention during the year"
+      },
+      "young people in detention during the year by indigenous status and age at first supervision": {
+        "population": "Young people in detention during the year"
+      },
+      "young people in detention during the year by indigenous status and age at first detention": {
+        "population": "Young people in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by remoteness of usual residence": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by remoteness of usual residence": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by socioeconomic position of usual residence": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by socioeconomic position of usual residence": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people who completed a period of detention during the year by number of periods completed and indigenous status": {
+        "population": "Young people who completed a period of detention during the year"
+      },
+      "number and median length of completed periods of detention by indigenous status": {
+        "population": "Number and median length of completed periods of detention"
+      },
+      "average length of time young people spent in detention during the year by indigenous status and sex": {
+        "population": "Young people in detention during the year",
+        "measure": "Average length of time"
+      },
+      "receptions by legal status": {
+        "population": "Receptions"
+      },
+      "releases by legal status": {
+        "population": "Releases"
+      },
+      "young people received into detention during the year": {
+        "population": "Young people received into detention during the year"
+      },
+      "young people released from detention during the year": {
+        "population": "Young people released from detention during the year"
+      },
+      "receptions and releases by sex and month": {
+        "population": "Receptions and releases"
+      },
+      "young people in detention on an average day by legal status and indigenous status": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in detention during the year by legal status and indigenous status": {
+        "population": "Young people in detention during the year"
+      },
+      "young people aged 10–17 in detention on an average day by legal status and indigenous status": {
+        "population": "Young people aged 10–17 in detention on an average day"
+      },
+      "young people aged 10–17 in detention during the year by legal status and indigenous status": {
+        "population": "Young people aged 10–17 in detention during the year"
+      },
+      "young people in detention on an average day by legal status and month": {
+        "population": "Young people in detention on an average day"
+      },
+      "young people in unsentenced detention on an average day by age and indigenous status": {
+        "population": "Young people in unsentenced detention on an average day"
+      },
+      "young people in unsentenced detention during the year by age and indigenous status": {
+        "population": "Young people in unsentenced detention during the year"
+      },
+      "young people in unsentenced detention on an average day": {
+        "population": "Young people in unsentenced detention on an average day"
+      },
+      "young people in unsentenced detention during the year": {
+        "population": "Young people in unsentenced detention during the year"
+      },
+      "young people who completed a period of unsentenced detention during the year by number of periods completed and indigenous status": {
+        "population": "Young people who completed a period of unsentenced detention during the year"
+      },
+      "number and median length of completed periods of unsentenced detention by indigenous status": {
+        "population": "Number and median length of completed periods of unsentenced detention"
+      },
+      "average length of time young people spent in unsentenced detention during the year by indigenous status": {
+        "population": "Young people in unsentenced detention during the year",
+        "measure": "Average length of time"
+      },
+      "periods of remand by end reason and indigenous status": {
+        "population": "Periods of remand"
+      },
+      "young people in sentenced detention on an average day by age and indigenous status": {
+        "population": "Young people in sentenced detention on an average day"
+      },
+      "young people in sentenced detention during the year by age and indigenous status": {
+        "population": "Young people in sentenced detention during the year"
+      },
+      "young people in sentenced detention on an average day": {
+        "population": "Young people in sentenced detention on an average day"
+      },
+      "young people in sentenced detention during the year": {
+        "population": "Young people in sentenced detention during the year"
+      },
+      "young people who completed a period of sentenced detention during the year": {
+        "population": "Young people who completed a period of sentenced detention during the year"
+      },
+      "number and median length of completed periods of sentenced detention by indigenous status": {
+        "population": "Number and median length of completed periods of sentenced detention"
+      },
+      "periods of sentenced detention by end reason and indigenous status": {
+        "population": "Periods of sentenced detention"
+      },
+      "average length of time spent in sentenced detention during the year by indigenous status": {
+        "population": "Young people in sentenced detention during the year",
+        "measure": "Average length of time"
+      },
+      "young people in sentenced detention by previous supervised sentence and indigenous status": {
+        "population": "Young people in sentenced detention"
       }
     },
     "criminal-courts-australia": {
@@ -797,6 +1338,257 @@
         "population": "Prisoners",
         "measure": "Time out of cells",
         "unit": "hours per day"
+      },
+      "backlog indicator": {
+        "population": "Pending court cases",
+        "measure": "Backlog indicator"
+      },
+      "on-time case processing indicator": {
+        "population": "Finalised court cases",
+        "measure": "On-time case processing indicator"
+      },
+      "lodgments": {
+        "population": "Court lodgments"
+      },
+      "finalisations": {
+        "population": "Court finalisations"
+      },
+      "criminal lodgments and finalisations": {
+        "population": "Criminal court cases"
+      },
+      "clearance indicator – finalisations/lodgments": {
+        "population": "Court cases",
+        "measure": "Clearance indicator"
+      },
+      "clearance indicator - finalisations/lodgments": {
+        "population": "Court cases",
+        "measure": "Clearance indicator"
+      },
+      "clearance indicator – all matters": {
+        "population": "Court cases",
+        "measure": "Clearance indicator",
+        "scope": "All matters"
+      },
+      "clearance indicator - all matters": {
+        "population": "Court cases",
+        "measure": "Clearance indicator",
+        "scope": "All matters"
+      },
+      "attendance indicator (average number of attendances per finalisation)": {
+        "population": "Court finalisations",
+        "measure": "Average attendances per finalisation"
+      },
+      "judicial officers (fte and number per 100 000 people)": {
+        "population": "Judicial officers"
+      },
+      "judicial officers (fte and number per 100": {
+        "population": "Judicial officers"
+      },
+      "judicial officers per 1000 finalisations": {
+        "population": "Judicial officers",
+        "measure": "Judicial officers per 1,000 finalisations"
+      },
+      "judicial officers per 1": {
+        "population": "Judicial officers",
+        "measure": "Judicial officers per 1,000 finalisations"
+      },
+      "full-time equivalent (fte) staff per 1": {
+        "population": "Court staff",
+        "measure": "FTE staff per 1,000 finalisations"
+      },
+      "full time equivalent (fte) staff per 1000 finalisations": {
+        "population": "Court staff",
+        "measure": "FTE staff per 1,000 finalisations"
+      },
+      "real net recurrent expenditure per finalisation": {
+        "population": "Courts",
+        "measure": "Real net recurrent expenditure per finalisation"
+      },
+      "real recurrent expenditure": {
+        "population": "Courts",
+        "measure": "Real recurrent expenditure"
+      },
+      "real net recurrent expenditure": {
+        "population": "Courts",
+        "measure": "Real net recurrent expenditure"
+      },
+      "real recurrent expenditure per finalisation: civil": {
+        "population": "Civil courts",
+        "measure": "Real recurrent expenditure per finalisation"
+      },
+      "real recurrent expenditure per finalisation: criminal": {
+        "population": "Criminal courts",
+        "measure": "Real recurrent expenditure per finalisation"
+      },
+      "real income (excluding fines)": {
+        "population": "Courts",
+        "measure": "Real income (excluding fines)"
+      },
+      "real average civil court fees paid per lodgment": {
+        "population": "Civil courts",
+        "measure": "Real average court fees paid per lodgment"
+      },
+      "court fee relief (waivers and reductions)": {
+        "population": "Civil courts",
+        "measure": "Court fee relief"
+      },
+      "cost recovery – civil court fees collected as a proportion of civil expenditure excluding payroll tax": {
+        "population": "Civil courts",
+        "measure": "Cost recovery"
+      },
+      "cost recovery - civil court fees collected as a proportion of civil expenditure excluding payroll tax": {
+        "population": "Civil courts",
+        "measure": "Cost recovery"
+      },
+      "proportion of total payable civil court fees that were waived or reduced": {
+        "population": "Civil courts",
+        "measure": "Proportion of payable fees waived or reduced"
+      },
+      "proportion of total payable civil court fees which were waived or reduced": {
+        "population": "Civil courts",
+        "measure": "Proportion of payable fees waived or reduced"
+      },
+      "case study data - booking requests for interpreters in the courtroom (criminal): by language requested": {
+        "population": "Interpreter booking requests",
+        "scope": "Criminal courts"
+      },
+      "case study data – booking requests for interpreters in the courtroom (criminal): by language requested": {
+        "population": "Interpreter booking requests",
+        "scope": "Criminal courts"
+      },
+      "finalised civil cases in the magistrates' court involving a finalised application for a domestic or family violence related protection order": {
+        "population": "Finalised civil cases with a family violence protection order application",
+        "scope": "Magistrates' courts"
+      },
+      "complaints": {
+        "population": "Complaints about courts"
+      },
+      "magistrates' court decisions resulting in a guilty outcome for defendants": {
+        "population": "Defendants with a guilty outcome",
+        "scope": "Magistrates' courts"
+      },
+      "magistrates court adjudicated defendants who submitted a guilty plea or were found guilty": {
+        "population": "Adjudicated defendants with a guilty plea or found guilty",
+        "scope": "Magistrates' courts"
+      },
+      "perceptions of safety": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Perceptions of safety"
+      },
+      "perceptions of safety (before 2023-24)": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Perceptions of safety",
+        "scope": "Survey before 2023–24"
+      },
+      "police integrity": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Opinions on police integrity"
+      },
+      "police integrity (before 2023-24)": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Opinions on police integrity",
+        "scope": "Survey before 2023–24"
+      },
+      "satisfaction with services provided by the police": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Satisfaction with police services"
+      },
+      "satisfaction with services provided by the police (before 2023-24)": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Satisfaction with police services",
+        "scope": "Survey before 2023–24"
+      },
+      "road safety": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Road safety behaviour"
+      },
+      "road safety (before 2023-24)": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Road safety behaviour",
+        "scope": "Survey before 2023–24"
+      },
+      "perceptions of crime problems": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Perceptions of crime problems"
+      },
+      "perceptions of crime problems (before 2023-24)": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Perceptions of crime problems",
+        "scope": "Survey before 2023–24"
+      },
+      "feelings of safety": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Feelings of safety"
+      },
+      "feelings of safety in the last 12 months": {
+        "population": "Persons aged 15 years and over",
+        "measure": "Feelings of safety in the last 12 months"
+      },
+      "outcome of investigation at 30 days": {
+        "population": "Victims"
+      },
+      "estimated victims of selected property crimes": {
+        "population": "Victims of selected property crimes"
+      },
+      "estimated victims of selected personal crimes": {
+        "population": "Victims of selected personal crimes"
+      },
+      "reporting rates": {
+        "population": "Victims of selected personal crimes",
+        "measure": "Reporting rate"
+      },
+      "victims of recorded crime": {
+        "population": "Victims"
+      },
+      "recorded victims of sexual assault": {
+        "population": "Victims of sexual assault"
+      },
+      "recorded victims of family and domestic violence related offences": {
+        "population": "Victims of family and domestic violence related offences"
+      },
+      "police staffing": {
+        "population": "Police staff"
+      },
+      "police services expenditure": {
+        "population": "Police services",
+        "measure": "Expenditure"
+      },
+      "deaths in police custody": {
+        "population": "Deaths in police custody"
+      },
+      "youth diversions as a proportion of offenders": {
+        "population": "Young offenders",
+        "measure": "Youth diversions as a proportion of offenders"
+      },
+      "trends in complaints": {
+        "population": "Complaints about police"
+      },
+      "road deaths": {
+        "population": "Road deaths"
+      },
+      "traffic accident hospitalisations": {
+        "population": "Traffic accident hospitalisations"
+      },
+      "community corrections offender population (average daily number) and rates per 100": {
+        "population": "Community corrections offenders"
+      },
+      "prisoner population (average daily number) and rates per 100": {
+        "population": "Prisoners"
+      },
+      "imprisonment and community corrections population rate per 100": {
+        "population": "Prisoners and community corrections offenders"
+      },
+      "escapes": {
+        "population": "Prisoners",
+        "measure": "Escapes"
+      },
+      "prison capacity utilisation": {
+        "population": "Prisons",
+        "measure": "Capacity utilisation"
+      },
+      "community work (per cent of imposed hours unpaid community work acquitted)": {
+        "population": "Community work orders",
+        "measure": "Proportion of imposed hours acquitted"
       }
     },
     "prisoners-australia": {
@@ -1653,6 +2445,386 @@
         "population": "Persons",
         "measure": "Estimated resident population"
       }
+    },
+    "aihw-child-protection-australia": {
+      "children aged 0–16 subject to a substantiation in the reporting period": {
+        "population": "Children aged 0–16 subject to a substantiation in the reporting period"
+      },
+      "children aged 0–17 in out-of-home care": {
+        "population": "Children aged 0–17 in out-of-home care"
+      },
+      "children aged 0–16 who exited out-of-home care to a permanency outcome in the reporting period": {
+        "population": "Children aged 0–16 who exited out-of-home care to a permanency outcome in the reporting period"
+      },
+      "children aged 0–16 who exited out-of-home care to a third-party parental responsibility order in the reporting period": {
+        "population": "Children aged 0–16 who exited out-of-home care to a third-party parental responsibility order in the reporting period"
+      },
+      "children aged 0–16 who exited out-of-home care to adoption in the reporting period": {
+        "population": "Children aged 0–16 who exited out-of-home care to adoption in the reporting period"
+      },
+      "children aged 2–17 in out-of-home care for 2 or more years": {
+        "population": "Children aged 2–17 in out-of-home care for 2 or more years"
+      },
+      "children aged 0–17 in out-of-home care who received a finalised care and protection order in the reporting period": {
+        "population": "Children aged 0–17 in out-of-home care who received a finalised care and protection order in the reporting period"
+      },
+      "children aged 0–17 in out-of-home care who received a permanency outcome or long-term guardianship order in the reporting period": {
+        "population": "Children aged 0–17 in out-of-home care who received a permanency outcome or long-term guardianship order in the reporting period"
+      },
+      "children receiving child protection services": {
+        "population": "Children receiving child protection services"
+      },
+      "children who were the subject of a finalised investigation only": {
+        "population": "Children who were the subject of a finalised investigation only"
+      },
+      "co-occurrence of substantiated types of abuse and neglect": {
+        "population": "Co-occurrence of substantiated types of abuse and neglect"
+      },
+      "children who were the subjects of substantiations of notifications": {
+        "population": "Children who were the subjects of substantiations of notifications"
+      },
+      "children admitted to": {
+        "population": "Children admitted to"
+      },
+      "children on care and protection orders": {
+        "population": "Children on care and protection orders"
+      },
+      "children in out-of-home care": {
+        "population": "Children in out-of-home care"
+      },
+      "households commencing and exiting care": {
+        "population": "Households commencing and exiting care"
+      },
+      "children commencing intensive family support services": {
+        "population": "Children commencing intensive family support services"
+      },
+      "children in the child protection system": {
+        "population": "Children in the child protection system"
+      },
+      "new and repeat clients receiving child protection services": {
+        "population": "New and repeat clients receiving child protection services"
+      },
+      "notifications": {
+        "population": "Notifications"
+      },
+      "investigations": {
+        "population": "Investigations"
+      },
+      "children who were the subjects of investigations": {
+        "population": "Children who were the subjects of investigations"
+      },
+      "number of substantiations per child": {
+        "population": "Substantiations per child"
+      },
+      "children who were the subjects of substantiations of notifications received during 2021–22": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2021–22"
+      },
+      "notifications received during the relevant year": {
+        "population": "Notifications received during the relevant year"
+      },
+      "substantiations of notifications received during the relevant year": {
+        "population": "Substantiations of notifications received during the relevant year"
+      },
+      "children who were the subjects of substantiations": {
+        "population": "Children who were the subjects of substantiations"
+      },
+      "care and protection orders issued": {
+        "population": "Care and protection orders issued"
+      },
+      "children who were subjects of substantiations in 2020-21 and subsequently placed on care and protection orders within 12 months": {
+        "population": "Children who were subjects of substantiations in 2020-21 and subsequently placed on care and protection orders within 12 months"
+      },
+      "children admitted to care and protection orders": {
+        "population": "Children admitted to care and protection orders"
+      },
+      "children discharged from care and protection orders by indigenous status": {
+        "population": "Children discharged from care and protection orders"
+      },
+      "trends in children admitted to care and protection orders": {
+        "population": "Trends in children admitted to care and protection orders"
+      },
+      "trends in children discharged from care and protection orders": {
+        "population": "Trends in children discharged from care and protection orders"
+      },
+      "children admitted to out-of-home care": {
+        "population": "Children admitted to out-of-home care"
+      },
+      "children discharged from out-of-home care": {
+        "population": "Children discharged from out-of-home care"
+      },
+      "children in relative/kinship placements": {
+        "population": "Children in relative/kinship placements"
+      },
+      "aboriginal and torres strait islander children in out-of-home care": {
+        "population": "Aboriginal and Torres Strait Islander children in out-of-home care"
+      },
+      "children in long-term out-of-home care": {
+        "population": "Children in long-term out-of-home care"
+      },
+      "unique carer households with a placement": {
+        "population": "Unique carer households with a placement"
+      },
+      "foster carer households with a placement": {
+        "population": "Foster carer households with a placement"
+      },
+      "relative/kinship carer households with a placement": {
+        "population": "Relative/kinship carer households with a placement"
+      },
+      "national child protection trend data": {
+        "population": "Children in the child protection system"
+      },
+      "children in out-of-home care or on third-party parental responsibility orders": {
+        "population": "Children in out-of-home care or on third-party parental responsibility orders"
+      },
+      "indigenous children in the child protection system": {
+        "population": "Indigenous children in the child protection system"
+      },
+      "non-indigenous children in the child protection system": {
+        "population": "Non-Indigenous children in the child protection system"
+      },
+      "population of children aged 0–17": {
+        "population": "Children aged 0–17",
+        "measure": "Population"
+      },
+      "population of children aged 2–17": {
+        "population": "Children aged 2–17",
+        "measure": "Population"
+      },
+      "children aged 0–17 who were discharged from out-of-home care (excluding children who aged-out) in the reporting period": {
+        "population": "Children aged 0–17 who were discharged from out-of-home care (excluding children who aged-out) in the reporting period"
+      },
+      "children and young people aged 0–17 exiting out-of-home care": {
+        "population": "Children and young people aged 0–17 exiting out-of-home care"
+      },
+      "children and young people in out-of-home care who were the subject of a child protection substantiation and the person believed responsible was living in the household providing out-of-home care": {
+        "population": "Children and young people in out-of-home care who were the subject of a child protection substantiation and the person believed responsible was living in the household providing out-of-home care"
+      },
+      "children and young people in out-of-home care at 30 june": {
+        "population": "Children and young people in out-of-home care at 30 june"
+      },
+      "indigenous children and young people aged 0–17 in out-of-home care at 30 june placed with relatives or kin or other indigenous caregivers": {
+        "population": "Indigenous children and young people aged 0–17 in out-of-home care at 30 june placed with relatives or kin or other Indigenous caregivers"
+      },
+      "children and young people aged 0–17 who have a current documented and approved case plan at 30 june": {
+        "population": "Children and young people aged 0–17 who have a current documented and approved case plan at 30 june"
+      },
+      "children and young people aged 0–17 in out-of-home care at 30 june who were placed with relatives or kin": {
+        "population": "Children and young people aged 0–17 in out-of-home care at 30 june who were placed with relatives or kin"
+      },
+      "indigenous children and young people aged 0–17 in care with a current documented and approved cultural support plan at 30 june": {
+        "population": "Indigenous children and young people aged 0–17 in care with a current documented and approved cultural support plan at 30 june"
+      },
+      "number of foster carer households with a placement at 30 june": {
+        "population": "Foster carer households with a placement at 30 june"
+      },
+      "number of foster carer households with a placement during the year": {
+        "population": "Foster carer households with a placement during the year"
+      },
+      "number of foster carers households commencing": {
+        "population": "Foster carers households commencing"
+      },
+      "young people aged 15 and over who have a current documented and approved leaving care plan at 30 june": {
+        "population": "Young people aged 15 and over who have a current documented and approved leaving care plan at 30 june"
+      },
+      "children who were the subjects of substantiations of notifications received during 2023–24 by primary type of abuse or neglect": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2023–24"
+      },
+      "children who were the subjects of substantiations of notifications received during 2023–24": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2023–24"
+      },
+      "children who were the subject of a substantiation of a notification received during 2023–24": {
+        "population": "Children who were the subject of a substantiation of a notification received during 2023–24"
+      },
+      "children who were subjects of substantiations in 2022–23 and subsequently placed on care and protection orders within 12 months": {
+        "population": "Children who were subjects of substantiations in 2022–23 and subsequently placed on care and protection orders within 12 months"
+      },
+      "children on care and protection orders by age group": {
+        "population": "Children on care and protection orders"
+      },
+      "unique carer households with a placement at 30 june 2024": {
+        "population": "Unique carer households with a placement at 30 june 2024"
+      },
+      "foster carer households with a placement at 30 june 2024": {
+        "population": "Foster carer households with a placement at 30 june 2024"
+      },
+      "relative/kinship carer households with a placement at 30 june 2024": {
+        "population": "Relative/kinship carer households with a placement at 30 june 2024"
+      },
+      "aboriginal and torres strait islander children in the child protection system": {
+        "population": "Aboriginal and Torres Strait Islander children in the child protection system"
+      },
+      "aboriginal and torres strait islander children and young people aged 0–17 in out-of-home care at 30 june placed with relatives or kin or other indigenous caregivers": {
+        "population": "Aboriginal and Torres Strait Islander children and young people aged 0–17 in out-of-home care at 30 june placed with relatives or kin or other Indigenous caregivers"
+      },
+      "children who were the subjects of substantiations of notifications received during 2022–23 by primary type of abuse or neglect": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2022–23"
+      },
+      "children who were the subjects of substantiations of notifications received during 2022–23": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2022–23"
+      },
+      "children who were the subject of a substantiation of a notification received during 2022–23": {
+        "population": "Children who were the subject of a substantiation of a notification received during 2022–23"
+      },
+      "children who were subjects of substantiations in 2021-22 and subsequently placed on care and protection orders within 12 months": {
+        "population": "Children who were subjects of substantiations in 2021-22 and subsequently placed on care and protection orders within 12 months"
+      },
+      "unique carer households with a placement at 30 june 2023": {
+        "population": "Unique carer households with a placement at 30 june 2023"
+      },
+      "foster carer households with a placement at 30 june 2023": {
+        "population": "Foster carer households with a placement at 30 june 2023"
+      },
+      "relative/kinship carer households with a placement at 30 june 2023": {
+        "population": "Relative/kinship carer households with a placement at 30 june 2023"
+      },
+      "number of notifications with an assessment decision date in the reporting period": {
+        "population": "Notifications with an assessment decision date in the reporting period"
+      },
+      "children aged 0–17 with a notification in the reporting period and an accompanying substantiation": {
+        "population": "Children aged 0–17 with a notification in the reporting period and an accompanying substantiation"
+      },
+      "aboriginal and torres strait islander children aged 0–17 on third-party parental responsibility orders": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 on third-party parental responsibility orders"
+      },
+      "aboriginal and torres strait islander children aged 0–17 in out-of-home care": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 in out-of-home care"
+      },
+      "aboriginal and torres strait islander children aged 0–17 in out-of-home care who are required to have a cultural support plan": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 in out-of-home care who are required to have a cultural support plan"
+      },
+      "aboriginal and torres strait islander children aged 0–17 admitted to out-of-home care": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 admitted to out-of-home care"
+      },
+      "aboriginal and torres strait islander children aged 0–17 in out-of-home care placed with relative or kin": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 in out-of-home care placed with relative or kin"
+      },
+      "children aged 0–17 in out-of-home care that have at least one known sibling aged 0–17 in out-of-home care": {
+        "population": "Children aged 0–17 in out-of-home care that have at least one known sibling aged 0–17 in out-of-home care"
+      },
+      "aboriginal and torres strait islander children aged 0–17 with more than one placement in an episode of out-of-home care in the reporting period": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 with more than one placement in an episode of out-of-home care in the reporting period"
+      },
+      "aboriginal and torres strait islander children aged 0–16 who were reconnected to aboriginal and torres strait islander relatives or kin through a placement change and remained in out-of-home care for at least 12 months": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–16 who were reconnected to Aboriginal and Torres Strait Islander relatives or kin through a placement change and remained in out-of-home care for at least 12 months"
+      },
+      "aboriginal and torres strait islander children aged 0–16 admitted to out-of-home care": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–16 admitted to out-of-home care"
+      },
+      "children aged 0–17 who were discharged from out-of-home care in the reporting period": {
+        "population": "Children aged 0–17 who were discharged from out-of-home care in the reporting period"
+      },
+      "children aged 0–17 in out-of-home care by whether they were reunified in the reporting period": {
+        "population": "Children aged 0–17 in out-of-home care"
+      },
+      "children aged 0–17 in out-of-home care by long-term guardianship or custody order/other order": {
+        "population": "Children aged 0–17 in out-of-home care"
+      },
+      "children aged 0–17 in out-of-home care who were reunified in the reporting period": {
+        "population": "Children aged 0–17 in out-of-home care who were reunified in the reporting period"
+      },
+      "children aged 0–16 who exited out-of-home care to reunification in the reporting period": {
+        "population": "Children aged 0–16 who exited out-of-home care to reunification in the reporting period"
+      },
+      "children aged 0–16 who exited out-of-home care to reunification in the reporting period and who did not return to out-of-home care within 12 months": {
+        "population": "Children aged 0–16 who exited out-of-home care to reunification in the reporting period and who did not return to out-of-home care within 12 months"
+      },
+      "children who were the subjects of substantiations of notifications received during 2020–21 by primary type of abuse or neglect": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2020–21"
+      },
+      "children who were the subjects of substantiations of notifications received during 2020–21": {
+        "population": "Children who were the subjects of substantiations of notifications received during 2020–21"
+      },
+      "number of children who were the subject of substantiations": {
+        "population": "Children who were the subject of substantiations"
+      },
+      "children who were the subject of substantiations": {
+        "population": "Children who were the subject of substantiations"
+      },
+      "children who were the subject of a substantiation of a notification received during 2020–21": {
+        "population": "Children who were the subject of a substantiation of a notification received during 2020–21"
+      },
+      "children substantiated in 2019–20 and subsequently placed on care and protection orders within 12 months": {
+        "population": "Children substantiated in 2019–20 and subsequently placed on care and protection orders within 12 months"
+      },
+      "children in relative/kinship placements at 30 june 2021": {
+        "population": "Children in relative/kinship placements at 30 june 2021"
+      },
+      "children in out-of-home care in 2020–21": {
+        "population": "Children in out-of-home care in 2020–21"
+      },
+      "children in out-of-home care in 2020–21 by indigenous status": {
+        "population": "Children in out-of-home care in 2020–21"
+      },
+      "time from admission to out-of-home care to achieving a permanency outcome in 2020–21": {
+        "population": "Time from admission to out-of-home care to achieving a permanency outcome in 2020–21"
+      },
+      "unique carer households with a placement at 30 june 2021": {
+        "population": "Unique carer households with a placement at 30 june 2021"
+      },
+      "foster carer households with a placement at 30 june 2021": {
+        "population": "Foster carer households with a placement at 30 june 2021"
+      },
+      "relative/kinship carer households with a placement at 30 june 2021": {
+        "population": "Relative/kinship carer households with a placement at 30 june 2021"
+      },
+      "children aged 0–17 with a notification and a substantiation in the reporting period": {
+        "population": "Children aged 0–17 with a notification and a substantiation in the reporting period"
+      },
+      "aboriginal and torres strait islander children aged 0–17 in out-of-home care placed with relatives or kin": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 in out-of-home care placed with relatives or kin"
+      },
+      "children aged 0–17 who exited out-of-home care to reunification in the reporting period": {
+        "population": "Children aged 0–17 who exited out-of-home care to reunification in the reporting period"
+      },
+      "children who were the subject of a notification": {
+        "population": "Children who were the subject of a notification"
+      },
+      "children who were the subject of 1 or more notifications": {
+        "population": "Children who were the subject of 1 or more notifications"
+      },
+      "children who were the subject of investigations and finalised investigations": {
+        "population": "Children who were the subject of investigations and finalised investigations"
+      },
+      "children admitted to and discharged from care and protection orders": {
+        "population": "Children admitted to and discharged from care and protection orders"
+      },
+      "children discharged from care and protection orders": {
+        "population": "Children discharged from care and protection orders"
+      },
+      "children who were subjects of substantiations in 2023–24 and subsequently placed on care and protection orders within 12 months": {
+        "population": "Children who were subjects of substantiations in 2023–24 and subsequently placed on care and protection orders within 12 months"
+      },
+      "number of out-of-home care placements by state or territory": {
+        "population": "Out-of-home care placements"
+      },
+      "children admitted to and discharged from out-of-home care": {
+        "population": "Children admitted to and discharged from out-of-home care"
+      },
+      "carer households with a placement": {
+        "population": "Carer households with a placement"
+      },
+      "number of intensive family support services": {
+        "population": "Intensive family support services"
+      },
+      "children commencing intensive family support services by living situation at commencement": {
+        "population": "Children commencing intensive family support services"
+      },
+      "all children in the child protection system": {
+        "population": "Children in the child protection system"
+      },
+      "notifications and substantiations of notifications received during the year": {
+        "population": "Notifications and substantiations of notifications received during the year"
+      },
+      "population of children aged 2-17": {
+        "population": "Children aged 2-17",
+        "measure": "Population"
+      },
+      "children who were the subject of a substantiation of abuse in care": {
+        "population": "Children who were the subject of a substantiation of abuse in care"
+      },
+      "aboriginal and torres strait islander children aged 0–17 on third-party parental resposibility orders": {
+        "population": "Aboriginal and Torres Strait Islander children aged 0–17 on third-party parental resposibility orders"
+      }
     }
   },
   "unit_from_measure": {
@@ -1668,6 +2840,9 @@
     "Average weekly total hours paid for": "hours",
     "Average weekly ordinary time hours paid for": "hours",
     "Proportion of all proceedings": "%",
-    "Proportion of proceedings for the offence": "%"
+    "Proportion of proceedings for the offence": "%",
+    "Number per 1,000": "per 1,000",
+    "Rate per 1,000 children": "per 1,000",
+    "Population": "no."
   }
 }

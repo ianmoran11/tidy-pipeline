@@ -1,0 +1,142 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "1ab2e14dd47a3f28370edf2b900cf2ff92fdefb6761ead21b6cad3319e73b047",
+  "sheet": "Indicator 10.1",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "52534d772b75f1d2745b2d88b8e77a93cf30e8a6b5b448d00f9fe8c609ce0ebd",
+  "new_dimensions": [
+    {
+      "name": "care_plan_status",
+      "description": "Whether children have a current documented and approved plan, versus the total required to have a plan (case, cultural support or leaving care plan as specified by the table title).",
+      "example_labels": [
+        "Have a current plan",
+        "Total required to have a plan"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A3:B3"
+    },
+    {
+      "name": "notes",
+      "cells": "A6:A8"
+    },
+    {
+      "name": "source",
+      "cells": "A9"
+    }
+  ],
+  "tables": [
+    {
+      "name": "cultural_support_plan",
+      "range": "A4:D5",
+      "values_range": "C4:D5",
+      "headers": [
+        {
+          "name": "care_plan_status",
+          "direction": "W",
+          "cells": "B4:B5",
+          "caption": "Cultural support plan"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C3:D3"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:29:01Z",
+    "tool_version": "0.2.0",
+    "records": 4,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T082719Z-5620befeef8d",
+    "started_at": "2026-11-02T08:27:20Z",
+    "workbook": "5620befeef8ddca4fb259fe918f34cc7fae65b023fdfe11c5387e09cea96d9f6--aihw-child-protection-australia-2023-24-noohcs-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b5e-c1ab-75b4-8e3d-96227fd6ba11",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "fae2e5bdef0de59498aa9020d3138afd3c59b0eb540c1077bc6e6c55e68d4026",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5620befeef8ddca4fb259fe918f34cc7fae65b023fdfe11c5387e09cea96d9f6--aihw-child-protection-australia-2023-24-noohcs-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2023–24 complete release\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 95facb08c2775419e86bab55ab9499031a3968c2517d84b3dd2b611148bff768 | missing |\n| \"Indicator 1.1 \" | ec61698b537c3968fb8ba5a0f1d4849e625853dab44d8275a7f606281bd1b93e | missing |\n| \"Indicator 1.2\" | 8dcb2bd362c314bea0cd2d67cb61a84083fece83246c25127912d552b83891a9 | missing |\n| \"Indicator 1.4\" | 5416613d68e4c6bb0a25da176b91d96e6ab5cc7921d457124c1728b802bc6fef | missing |\n| \"Indicator 3.1\" | 0077ce405cdec8fd676dc99e8d3c3a5bd9a34faf6e4b6174701c4b8cb1681e59 | missing |\n| \"Indicator 4.1\" | a55b0073984fc5dcec048d86ede39154eceb934b2744a838a51725e60eee15aa | missing |\n| \"Indicator 9.1\" | ec65bc9708d35673795ab76fe8f64713b64732194c6b7a340ccccd34d1fd3276 | missing |\n| \"Indicator 10.1\" | 1ab2e14dd47a3f28370edf2b900cf2ff92fdefb6761ead21b6cad3319e73b047 | missing |\n| \"Indicator 12.1a\" | a046f0cd45f6e77a0b7a5948c58b2610f9a541acef34692ddb32120e557a6478 | missing |\n| \"Indicator 12.1b\" | 5120e5657586b8443441ebc2ce60ac3db180c84e4ddacbb972eea2d9852aa526 | missing |\n| \"Indicator 12.2\" | dcab9fd323c3489d8109d8707f15df28a26563fee70a14d343ca561745b22667 | missing |\n| \"Indicator 13.1\" | c13d81c9164cdfc2d461ebad05d01a116968ff9b61cbb7cf4db697478f55e79f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T082719Z-5620befeef8d.jsonl"
+  }
+}

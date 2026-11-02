@@ -1,0 +1,174 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "47a6e535a46d1f42ec3c59aa3f9dfc23d3dc3b5cbe2a07e7d23959472ba39da3",
+  "sheet": "Table S3.9",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals, subtotals, and suppression symbols retained; labels are unchanged.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "source",
+      "cells": "A18"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "J3,A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A14,A15,A16,A17"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A5:E13",
+      "values_range": "B5:E13",
+      "headers": [
+        {
+          "name": "state",
+          "caption": "State/territory",
+          "direction": "W",
+          "cells": "A5:A13"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "B4:E4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B3"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "G5:I13",
+      "values_range": "G5:I13",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A5:A13"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "N",
+          "cells": "G4:I4"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "G3"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "J5:J13",
+      "values_range": "J5:J13",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A5:A13"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "J4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:41:38Z",
+    "tool_version": "0.2.0",
+    "records": 72,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T081556Z-088ea4394b46",
+    "started_at": "2026-11-02T08:15:58Z",
+    "workbook": "088ea4394b46d5293b90064355526038e93c8f97243dc50be61363bcb45b28b3--aihw-child-protection-australia-2021-22-main-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b54-57f1-75b6-b950-de137a6fd681",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "55b749a2bf596e4bcf11e9ffa3be30c2cfee32b7a3887380ab80339156ad21db",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `088ea4394b46d5293b90064355526038e93c8f97243dc50be61363bcb45b28b3--aihw-child-protection-australia-2021-22-main-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2021–22 complete release\n- Sheets needing a recipe: 76 of 76\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6c6b6adde4bdf4bfa5737128d281346bd39883f40b70ebf654f51cf3a83c9019 | missing |\n| \"Indigenous Content\" | 56b2303d914ed2cf8dd52b30ce092af836aed3c5033a41eae783cc1ae121df74 | missing |\n| \"Notes and symbols\" | b48600666bdbf72567129f3034bc02ce69deec24aed3b0bee1610edbe05a9c47 | missing |\n| \"Table 2.2\" | 40ac6f53573e20bb1415404a17d3f6281781c24fce6ffa397ef8d018aba5e3f4 | missing |\n| \"Table 2.3\" | 26bc92a4dde5e9678a6dc29089cb906b2bc043f296d95d01e87807d53028ba28 | missing |\n| \"Table 3.2\" | bfb61a4a357e867e6d0cfbeb5e2faf683f31592827e60e36ed2ae3885fcfeeb0 | missing |\n| \"Table 3.3\" | 8c4c6926ede9bcf6549112f24b21615bc8bee16c385f9ce101e60d336e6a6e8f | missing |\n| \"Table 4.2\" | c9f5ebed4c8f045173d52ce0b9362957d2fc68187481dde967df5b1aa5c3e109 | missing |\n| \"Table 4.3\" | 65753648fcceab090dfbd74c87400a0cc66c6b5cb905f2dfd5bb3a1af94ecca7 | missing |\n| \"Table 5.1\" | 0cbb4b3ad8e2d4a3d14885d3a0b1f645f0cc17d024e2e8f8232c31ddd4b8f341 | missing |\n| \"Table 7.2\" | 03a3d6b481843c153983a09418bfb14b8e52c9705686c9be64bd8d8b5ad3604e | missing |\n| \"Table 8.1\" | ab1a145363edf5798902bd9fdc7849f2a49254eb4172ab14687b5b5371429d96 | missing |\n| \"Table A1\" | f03afe7de1dcc75b9739d9cd6ecd89975777977bd42d9a65f72e62009aceced6 | missing |\n| \"Table S2.1\" | dbeb16a37db9f6993d34d3d151014ff4cf1d480791f64280ddcaef33846ae68e | missing |\n| \"Table S2.2\" | 8319fc888d254ced459e2cb7066336ad73c8f4e8cfb89b2f13981dd955569bb7 | missing |\n| \"Table S2.3\" | 89173a719e4d5b9ca5d42b48784af1084619e0d8534e4b249958d2ead1efec07 | missing |\n| \"Table S3.1\" | 46a4b4d12dbd865d1d7b49a69e6f4c1bbbf58a7b7106697bcb4b8eb1d898e32d | missing |\n| \"Table S3.2\" | 480a30026632dd58cc478d58b8a4134aabd73f5b8a37854a47552d924ba20e94 | missing |\n| \"Table S3.3\" | c809c22bbfad07c1aff3df0629f1223b994bc1e12d5652c9e2087e1a81c66286 | missing |\n| \"Table S3.4\" | bedd5e936dbb5a5f40bfc3253f8f06bf2c33d71360c0275b0130523cdbdcd5d5 | missing |\n| \"Table S3.5\" | fe1a3691f8efcdec05ee867d6b1b7dbb02b81ac9d1c11437bb8632030f6d1a97 | missing |\n| \"Table S3.6\" | 36907fc798629a555fc0a2bed2b40bf26db74bb50546f25d6349b301ec5e7fe4 | missing |\n| \"Table S3.7\" | ab6f0e24d73c8451e0130b7333c4b65507eb8e677214d95667782028ba81656a | missing |\n| \"Table S3.8\" | 1ea1c5e7d0ef08c866479065b66ec72d522114fab4a4ceb109ecde78053dcb13 | missing |\n| \"Table S3.9\" | 47a6e535a46d1f42ec3c59aa3f9dfc23d3dc3b5cbe2a07e7d23959472ba39da3 | missing |\n| \"Table S3.10\" | c60f2cadba637ec91973a51fee13e4677d223fbe9eead2e6e61bbe12da9066e0 | missing |\n| \"Table S3.11\" | 076be2b3d56c1838c6a0fa4f45b2f1e8fa0b66d29390b91cedf3e9e21c7cdce2 | missing |\n| \"Table S3.12\" | fd92804b1588a07df6305a76b2393455987aff210aed5c90f4c803889214d853 | missing |\n| \"Table S3.13\" | a7334af20c9c4169b27f0765ed343b7a7ca766c4b7e65f80cdd03632fb7fb6cd | missing |\n| \"Table S3.14\" | 1d30fcaa9c30df83b99c70472500d6bdc115618b73e556177bed31b2c8b40b10 | missing |\n| \"Table S4.1\" | fa57ae60a782d47c34b0c5a00c9fd13a5a2f2f9d6b2f84217ccbe33f044e2241 | missing |\n| \"Table S4.2\" | 4b15056f6a8a2bbce34a758e0b637e0afb1c1c0b64b57cb3ba797db8d26bde42 | missing |\n| \"Table S4.3\" | 1af39adc14af219acbe2c6dd381548bbe0173974888cf2d6ef1798516db18c17 | missing |\n| \"Table S4.4\" | 370ea3543e1ab18b7d56c035f970e2ca63d4178f3616b5e9051b35faa8cc3c01 | missing |\n| \"Table S4.5\" | 64d3e06f39a35ae790f08ccbfcbb574cb11d00fba921cec927e75b48209080fa | missing |\n| \"Table S4.6\" | 46d8e3ff73570526aeceae9ce862ee21d5161477a881936a130bf024a362680c | missing |\n| \"Table S4.7\" | 6f15990ddaa8fc0cd3c033f56d5acfa97fc3768de0e2b53347dabde1aa450f02 | missing |\n| \"Table S4.8\" | 3ffb8803c60fb5d99bc32ff12f0ba9f6d0aa1474e4f8c9b570dfaf6ae3e284b0 | missing |\n| \"Table S4.9\" | fe48c1ce2c43d964682f44a30edd4f3f65be4128eb253a4a3fe4281dc24afcb1 | missing |\n| \"Table S4.10\" | 11bb110ba95817bf5210a7778fe81d5e96bacd046227bf51c9c187935a6c2309 | missing |\n| \"Table S4.11\" | 9f25b8ebb66539537eb4516a3c79e7c3d7df301b7c6948ee3c61d40b2b093c5a | missing |\n| \"Table S4.12\" | cf1fbefcccbf1d33f769ae8b91d1b048ad211b330ed811ce66387f7f12968e13 | missing |\n| \"Table S5.1\" | bbd361b332902b5ed9b8a56e931d549bd2c95011ff88df09736607d11a0d7548 | missing |\n| \"Table S5.2\" | fdc08239e1bc0bbb539a6d3699022f7620f8e2f99b4a5238d614380836b07f4d | missing |\n| \"Table S5.3\" | 0546370fe3e044af292a79cc21dde5b492ad17b6b3f62416efb86b9cb0e8010d | missing |\n| \"Table S5.4\" | 7580e3a74177add9709118b936321a2039c96052c585c910690caaef49af608c | missing |\n| \"Table S5.5\" | 3a9d38bfd06a9494ff64108c5318b8912c34c4e3be90450f52b28138b765d47d | missing |\n| \"Table S5.6\" | dd0c6af888d6b1a0eaafbb60688b4be099cf5b8fba3f88bd7f6a97d2cb14ff27 | missing |\n| \"Table S5.7\" | e16928034b8f2ee1217cc368a33665e5e2df8af425ac3c5925dcd912b4418e76 | missing |\n| \"Table S5.8\" | cc2bcd880e65bc6a95b2e22d78d4a3cadcceef022dfa31582dd426fe83e6f7f2 | missing |\n| \"Table S5.9\" | eb6fc51a432fbb5bbaec77c94b85138a4fa3c11d4191c4705342ca5ae55a6945 | missing |\n| \"Table S5.10\" | 724dbb9faf488d95723dc735f80ff697283a69c7230b6c42ca25d2080e7a98d4 | missing |\n| \"Table S5.11\" | 5ddd044d6fb1131933705ad0521444870c11ee7c33bb6b18360273c939674511 | missing |\n| \"Table S5.12\" | d5930033024025ea97dfc1f45efd28bf71c5ae4fa45e203d22e5b19e833c9457 | missing |\n| \"Table S5.13\" | a2ce043eef670144ae0243f7ba1f855e3b76f49a9cedd068eb02a7dc189b042e | missing |\n| \"Table S5.14\" | 1992b4df226a61cfbdec6259c1d5d5caa7b935c71697b29c977c6fe9de125c6e | missing |\n| \"Table S5.15\" | 61076637eb8e7a614c5c629214aee983b99d98bc9dad212c5ace5bef100d6374 | missing |\n| \"Table S5.16\" | 035981ff61ce66026599c31252ec4da3f844d0eac813dc53175fa268cfb1db6f | missing |\n| \"Table S5.17\" | 0430da83649effb6a2181e92a5d2bc8bf44f04ad56affb1bf20a99feff261c0f | missing |\n| \"Table S5.18\" | ca1e64cae422f80a66076e9ad56c81e45c2c09c9d33adc57fe16602446f95bb0 | missing |\n| \"Table S5.19\" | 5466d0c65c31dcd2cafc98b5f8d097f5a5a1384e4e037d8abf2b24d5cdf84e46 | missing |\n| \"Table S5.20\" | 3077039ba1d1915ff01ceaaa4ede2d8a18681e56b31a8b3052628eafda0c12f5 | missing |\n| \"Table S7.1\" | f5518cca941128b535097369cb850fb9c654c567323a0a346a62e668451fcfab | missing |\n| \"Table S7.2\" | 742927ddfd86c19c708f760b45ca92bfcd3d0c6363452eb033423040ec287e13 | missing |\n| \"Table S7.3\" | 16857eb8fec00852cc59cda1b0c704eea7d8aacd5f9257ff57252c9666e6b13d | missing |\n| \"Table S8.1\" | 6e075b77c8143f9af4debd64da6febb4bf6c53fc57117b721af0888828a4aaf7 | missing |\n| \"T1\" | 42b34f66fdfda715bb472e29f5d058c4909433f9958de921e32d1c8840606d44 | missing |\n| \"T2\" | 0a71606f38436c67b5fa60fa075fba111c944d9d607c17b21c7bfc0d706e71dc | missing |\n| \"T3\" | c0cf1fad731b3eb0f5cd10cef4a8c1cb61c0777054716483b31fde5fd542ad4e | missing |\n| \"T4\" | cfd03bc05be620abf9951572607f2097bb96207443f8c3529ac0f1e51387494c | missing |\n| \"T5\" | 4951dfe3661ea014183e02cedc82204feb62611b0ee16cf3371891cf9215fc86 | missing |\n| \"P1\" | 77cd1e614f8e3170ba4e46e5785b3f61230cfa678c020620c98da0a6012eec35 | missing |\n| \"P2\" | 90fbcdb4fade85cbfbf82852baa63202a95d14e28fb18e45a564665ecfbe4892 | missing |\n| \"P3\" | 66fc9745b243a63d4690ad3ec78dc5cf4fce677c10386b445698049f83bfb961 | missing |\n| \"P4\" | 514fc536db00a5768213f7b078b358a5bbe01c56cae9c03066d558139ad51ead | missing |\n| \"P5\" | f67e673a1461a58ff7106ecdafac54d646012eefc82aa976aaad187d196c0066 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T081556Z-088ea4394b46.jsonl"
+  }
+}

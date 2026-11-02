@@ -1,0 +1,1246 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "66edb8dbd1a50baf56bdb4b0dd39852b5906b06d4c403c2789e2974cbfd7592e",
+  "sheet": "Table 6A.25",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published row-outline parents are retained as dimensions; all totals and subtotals are included. Survey sample-size and index rows are measures, not response categories. Unlabelled confidence-interval columns are separate tables identified by the 95% confidence-interval note. Absent interval cells are excluded; suppression and quality markers remain unchanged.",
+  "new_dimensions": [
+    {
+      "name": "safety_activity_status",
+      "description": "Whether the person undertook the activity after dark, or did not undertake it."
+    },
+    {
+      "name": "survey_response",
+      "description": "Published response category in police satisfaction, safety, integrity and road-safety surveys."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L3"
+    },
+    {
+      "name": "notes",
+      "cells": "C22,C24,C25,A27,C27,A28,C28"
+    },
+    {
+      "name": "source",
+      "cells": "A30,E30"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_estimate_female",
+      "range": "C6,C9,L6,L9,M6,O6,Q6,S6,U6,W6,Y6,AA6,AC6,M9,O9,Q9,S9,U9,W9,Y9,AA9,AC9",
+      "values_range": "M6,O6,Q6,S6,U6,W6,Y6,AA6,AC6,M9,O9,Q9,S9,U9,W9,Y9,AA9,AC9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C6,C9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_2_estimate_male",
+      "range": "C6,C9,L6,L9,AF6,AF9",
+      "values_range": "AF6,AF9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C6,C9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_3_interval_female",
+      "range": "C6,C9,L6,L9,N6,P6,R6,T6,V6,X6,Z6,AB6,AD6,N9,P9,R9,T9,V9,X9,Z9,AB9,AD9",
+      "values_range": "N6,P6,R6,T6,V6,X6,Z6,AB6,AD6,N9,P9,R9,T9,V9,X9,Z9,AB9,AD9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C6,C9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L9"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_4_interval_male",
+      "range": "C6,C9,L6,L9,AG6,AG9",
+      "values_range": "AG6,AG9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C6,C9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L9"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_5_estimate_female",
+      "range": "D7,D8,L7,L8,M7,O7,Q7,S7,U7,W7,Y7,AA7,AC7,M8,O8,Q8,S8,U8,W8,Y8,AA8,AC8",
+      "values_range": "M7,O7,Q7,S7,U7,W7,Y7,AA7,AC7,M8,O8,Q8,S8,U8,W8,Y8,AA8,AC8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C6"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D7,D8"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L7,L8"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_6_estimate_male",
+      "range": "D7,D8,L7,L8,AF7,AF8",
+      "values_range": "AF7,AF8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C6"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D7,D8"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L7,L8"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_7_interval_female",
+      "range": "D7,D8,L7,L8,N7,P7,R7,T7,V7,X7,Z7,AB7,AD7,N8,P8,R8,T8,V8,X8,Z8,AB8,AD8",
+      "values_range": "N7,P7,R7,T7,V7,X7,Z7,AB7,AD7,N8,P8,R8,T8,V8,X8,Z8,AB8,AD8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C6"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D7,D8"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L7,L8"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_8_interval_male",
+      "range": "D7,D8,L7,L8,AG7,AG8",
+      "values_range": "AG7,AG8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B5"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C6"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D7,D8"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L7,L8"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_9_estimate_female",
+      "range": "C11,C14,L11,L14,M11,O11,Q11,S11,U11,W11,Y11,AA11,AC11,M14,O14,Q14,S14,U14,W14,Y14,AA14,AC14",
+      "values_range": "M11,O11,Q11,S11,U11,W11,Y11,AA11,AC11,M14,O14,Q14,S14,U14,W14,Y14,AA14,AC14",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C11,C14"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L11,L14"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_10_estimate_male",
+      "range": "C11,C14,L11,L14,AF11,AF14",
+      "values_range": "AF11,AF14",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C11,C14"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L11,L14"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_11_interval_female",
+      "range": "C11,C14,L11,L14,N11,P11,R11,T11,V11,X11,Z11,AB11,AD11,N14,P14,R14,T14,V14,X14,Z14,AB14,AD14",
+      "values_range": "N11,P11,R11,T11,V11,X11,Z11,AB11,AD11,N14,P14,R14,T14,V14,X14,Z14,AB14,AD14",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C11,C14"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L11,L14"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_12_interval_male",
+      "range": "C11,C14,L11,L14,AG11,AG14",
+      "values_range": "AG11,AG14",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C11,C14"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L11,L14"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_13_estimate_female",
+      "range": "D12,D13,L12,L13,M12,O12,Q12,S12,U12,W12,Y12,AA12,AC12,M13,O13,Q13,S13,U13,W13,Y13,AA13,AC13",
+      "values_range": "M12,O12,Q12,S12,U12,W12,Y12,AA12,AC12,M13,O13,Q13,S13,U13,W13,Y13,AA13,AC13",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C11"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D12,D13"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L12,L13"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_14_estimate_male",
+      "range": "D12,D13,L12,L13,AF12,AF13",
+      "values_range": "AF12,AF13",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C11"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D12,D13"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L12,L13"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_15_interval_female",
+      "range": "D12,D13,L12,L13,N12,P12,R12,T12,V12,X12,Z12,AB12,AD12,N13,P13,R13,T13,V13,X13,Z13,AB13,AD13",
+      "values_range": "N12,P12,R12,T12,V12,X12,Z12,AB12,AD12,N13,P13,R13,T13,V13,X13,Z13,AB13,AD13",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C11"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D12,D13"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L12,L13"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_16_interval_male",
+      "range": "D12,D13,L12,L13,AG12,AG13",
+      "values_range": "AG12,AG13",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B10"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C11"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D12,D13"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L12,L13"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_17_estimate_female",
+      "range": "C16,C19,L16,L19,M16,O16,Q16,S16,U16,W16,Y16,AA16,AC16,M19,O19,Q19,S19,U19,W19,Y19,AA19,AC19",
+      "values_range": "M16,O16,Q16,S16,U16,W16,Y16,AA16,AC16,M19,O19,Q19,S19,U19,W19,Y19,AA19,AC19",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C16,C19"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L16,L19"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_18_estimate_male",
+      "range": "C16,C19,L16,L19,AF16,AF19",
+      "values_range": "AF16,AF19",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C16,C19"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L16,L19"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_19_interval_female",
+      "range": "C16,C19,L16,L19,N16,P16,R16,T16,V16,X16,Z16,AB16,AD16,N19,P19,R19,T19,V19,X19,Z19,AB19,AD19",
+      "values_range": "N16,P16,R16,T16,V16,X16,Z16,AB16,AD16,N19,P19,R19,T19,V19,X19,Z19,AB19,AD19",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C16,C19"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L16,L19"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_20_interval_male",
+      "range": "C16,C19,L16,L19,AG16,AG19",
+      "values_range": "AG16,AG19",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "safety_activity_status",
+          "direction": "W",
+          "cells": "C16,C19"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L16,L19"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_21_estimate_female",
+      "range": "D17,D18,L17,L18,M17,O17,Q17,S17,U17,W17,Y17,AA17,AC17,M18,O18,Q18,S18,U18,W18,Y18,AA18,AC18",
+      "values_range": "M17,O17,Q17,S17,U17,W17,Y17,AA17,AC17,M18,O18,Q18,S18,U18,W18,Y18,AA18,AC18",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C16"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D17,D18"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L17,L18"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_22_estimate_male",
+      "range": "D17,D18,L17,L18,AF17,AF18",
+      "values_range": "AF17,AF18",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C16"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D17,D18"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L17,L18"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_23_interval_female",
+      "range": "D17,D18,L17,L18,N17,P17,R17,T17,V17,X17,Z17,AB17,AD17,N18,P18,R18,T18,V18,X18,Z18,AB18,AD18",
+      "values_range": "N17,P17,R17,T17,V17,X17,Z17,AB17,AD17,N18,P18,R18,T18,V18,X18,Z18,AB18,AD18",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C16"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D17,D18"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L17,L18"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_24_interval_male",
+      "range": "D17,D18,L17,L18,AG17,AG18",
+      "values_range": "AG17,AG18",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "indicator",
+          "cells": "B15"
+        },
+        {
+          "name": "safety_activity_status",
+          "cells": "C16"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D17,D18"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L17,L18"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_25_estimate_female",
+      "range": "B20,L20,M20,O20,Q20,S20,U20,W20,Y20,AA20,AC20",
+      "values_range": "M20,O20,Q20,S20,U20,W20,Y20,AA20,AC20",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B20"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_26_estimate_male",
+      "range": "B20,L20,AF20",
+      "values_range": "AF20",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B20"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_27_interval_female",
+      "range": "B20,L20,N20,P20,R20,T20,V20,X20,Z20,AB20,AD20",
+      "values_range": "N20,P20,R20,T20,V20,X20,Z20,AB20,AD20",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "sex",
+          "cells": "M2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B20"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L20"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    },
+    {
+      "name": "block_28_interval_male",
+      "range": "B20,L20,AG20",
+      "values_range": "AG20",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "sex",
+          "cells": "AF2"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B20"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L20"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M3,O3,Q3,S3,U3,W3,Y3,AA3,AC3,AF3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T09:02:20Z",
+    "tool_version": "0.2.0",
+    "records": 260,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085431Z-40a1f297048c",
+    "started_at": "2026-11-02T08:54:42Z",
+    "workbook": "40a1f297048ca1fb9b62c821fcbff7628fb63baa4403030bb517eec1615618fb--report-on-government-services-justice-2025-police-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b77-d0b3-700b-a4aa-f40d623122fc",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7123b70ab6f542dd45be2c48d79b6b7fddcf61826c7f360ab280f4b93be98253",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `40a1f297048ca1fb9b62c821fcbff7628fb63baa4403030bb517eec1615618fb--report-on-government-services-justice-2025-police-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2025 — Justice\n- Sheets needing a recipe: 30 of 30\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 125ea64699cb6db0f19bdba458883eefd02e941b6a3a0afe590e0fb461761316 | missing |\n| \"Table 6A.1\" | cda9b63a01b1b207a6eda9d47f03d5792e6fe1be7d5224de9d6af99a6977d0ef | missing |\n| \"Table 6A.2\" | 58ddffb2fb53b6ba339e82518cce3f802dc60803ca54e82e488d0e478c0a23e2 | missing |\n| \"Table 6A.3\" | f72d885db68ea0f7bf9cb31189ccb68337627dcb3be15295d94a0f78e58c1090 | missing |\n| \"Table 6A.4\" | 64b91cb24e2227bf1f182f5708195d046fe1d2d8c8502a2a63c265bbbf1b79f8 | missing |\n| \"Table 6A.5\" | 7f3f0de92eb63a13c928656fd4cc9ce06b3d45e48b431f32396973bd5dc74b11 | missing |\n| \"Table 6A.6\" | 27772cdf4eb6a1f4c7cde0619abb66b8d4a0bbbd0f148bf85cdc5b403f6ea548 | missing |\n| \"Table 6A.7\" | 3b432333589977dce6dd5920fbe2040a31647242b3cd9fbe887fc3d1fbd8bb59 | missing |\n| \"Table 6A.8\" | c8169a1201e51d48871dff7250c2f9d74f5758e9758154a02c1dbd636de6ae3d | missing |\n| \"Table 6A.9\" | 607fc401a4b47e5bad4d3a4d21ae410dffdccdfec91e20cbf2b320b529550e17 | missing |\n| \"Table 6A.10\" | f2fa6b3525774b2726d668cef1fefc180a6fec4ee9d6457cdc6a6cab52822215 | missing |\n| \"Table 6A.11\" | 613b1635f83779d162fa24a3218e8ec201b0e79b4ca9ab7949bf786e7bae3a72 | missing |\n| \"Table 6A.12\" | 5ec089d722bb0e27de708c6950d23a2b57623a35cbbe6d62f78977cf4eec0cc3 | missing |\n| \"Table 6A.13\" | 98c3c6f80cf2612434d41c1648e72f3d68c14074d6297bb54328ddea7c196a9b | missing |\n| \"Table 6A.14\" | ef1d97e31e02f3c957cb47a5b77f8bba10bc32459fd39df704f6033b9218c53c | missing |\n| \"Table 6A.15\" | 46f4de164f0cf7d5d2e5ad512c3879497048d10c9653295bfeb7add72114558b | missing |\n| \"Table 6A.16\" | f84c164384ae15fbddd206c9240503dbb21e1d59464d2eed6bcc44bdf2746c81 | missing |\n| \"Table 6A.17\" | 7d7bc75f1b6a26997820f5475cacb2627de4aee11dd7b7301eff8405eca44efd | missing |\n| \"Table 6A.18\" | 77981a283fe9d3e22084278fd1967c6b893e5a1295f08c537c7c77bd4b44ebf3 | missing |\n| \"Table 6A.19\" | c708648bbc3e9dd09653e0feb6af45a93eec61a618b21f2d6882f7a463aa8e3e | missing |\n| \"Table 6A.20\" | 4e88a65a7c3367351b74b24c95788f8962ee1c81d16412b6240f3742047265c1 | missing |\n| \"Table 6A.21\" | 9d028302d43ea906e1e50d684d33abde5cf6e419221c37f5c1b4089825c0ef4a | missing |\n| \"Table 6A.22\" | f4dc234090f9062975739d894db425c7c3da41bfee3c971a2b6449d64698deff | missing |\n| \"Table 6A.23\" | 1242adea79a312c0cf60fa0109e2b9338859d6160d40ae4563e049f8646512fc | missing |\n| \"Table 6A.24\" | ab786aec6342d43bb3a730d2a943caedef248ab90c208e3a75f1f69d222e2736 | missing |\n| \"Table 6A.25\" | 66edb8dbd1a50baf56bdb4b0dd39852b5906b06d4c403c2789e2974cbfd7592e | missing |\n| \"Table 6A.26\" | d61ef729df32a7ae9ae09a4b7744f0a1e06f2a8fd9cf7355ba36b2505104e30c | missing |\n| \"Table 6A.27\" | 18071fa5b098169007ddbb3f91e4141a406f7fe9031aa826e21436127ab3bf64 | missing |\n| \"Table 6A.28\" | 655b040f7dc074b6d61a6d6b870a6c3c089a23e0a4f6c5d70911ed4054258be0 | missing |\n| \"Table 6A.29\" | 121845112fcfa8c5274b7a4c085960028572dd2f97551cbf7f3bef4580e8bfc0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085431Z-40a1f297048c.jsonl"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "fa2b2ace8dd593175052e6831476b3e2247d10d2600df664648f8c246484a92c",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Index of justice sector data tables and explanatory information; no statistical data table.",
+  "template_from": "9e26948b29f7c4f5c8ff379c1223d83ed70ace2f31e8a176f42f2a8dd2720517",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-02T08:58:01Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085704Z-d496243268fe",
+    "started_at": "2026-11-02T08:57:06Z",
+    "workbook": "d496243268fe7423e01d6dee6e9aaacccfb95ac4d87393e33abc644ef9599b4b--report-on-government-services-justice-2025-sector-overview-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b7a-0129-7230-b28d-8b2b8a09e860",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3ecc8a80f75fa0782b23af8d5d66faedfbd38f9d62bbd08b0ba0dd71180873f5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d496243268fe7423e01d6dee6e9aaacccfb95ac4d87393e33abc644ef9599b4b--report-on-government-services-justice-2025-sector-overview-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2025 — Justice\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | fa2b2ace8dd593175052e6831476b3e2247d10d2600df664648f8c246484a92c | missing |\n| \"Table CA.1\" | 46845fe0984aee2cb37b521a06632e02bb023ac143d9816badbbce117ddcd770 | missing |\n| \"Table CA.2\" | 0059a72150c40ddf2ffa7ca5649450e75b223cd24a76270ef7a8b971b932bfb0 | missing |\n| \"Table CA.3\" | 5e5f3d25d9010be53d502e85f0f2667c38cb43d2eb983dbbc6c2594eb0b82464 | missing |\n| \"Table CA.4\" | 2f2e4255ffb4c8cacd25e83568a8cd8594b87652e74d4d2193edd26b07978c50 | missing |\n| \"Table CA.5\" | d3186ab502ce6534e420dcc79813b9dc44fbfa7c6dc7cb84069ba5f8831a3874 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085704Z-d496243268fe.jsonl"
+  }
+}

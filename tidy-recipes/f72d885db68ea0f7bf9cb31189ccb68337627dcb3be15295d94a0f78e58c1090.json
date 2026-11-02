@@ -1,0 +1,464 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f72d885db68ea0f7bf9cb31189ccb68337627dcb3be15295d94a0f78e58c1090",
+  "sheet": "Table 6A.3",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "f19b06b8b4b0089306637b022fe8047a1e0d1f23bce7414286da6e678118a9d5",
+  "agent_notes": "Published row-outline parents are retained as dimensions; all totals and subtotals are included. Survey sample-size and index rows are measures, not response categories. Unlabelled confidence-interval columns are separate tables identified by the 95% confidence-interval note. Absent interval cells are excluded; suppression and quality markers remain unchanged.",
+  "new_dimensions": [
+    {
+      "name": "survey_response",
+      "description": "Published response category in police satisfaction, safety, integrity and road-safety surveys."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C27,C29,C30,A32,C32,A33,C33,A34,C34,A35,C35,A36,C36,A37,C37,A38,C38"
+    },
+    {
+      "name": "source",
+      "cells": "A40,E40"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1_estimate",
+      "range": "D6,D7,D8,D9,L6,L7,L8,L9,M6,O6,Q6,S6,U6,W6,Y6,AA6,AC6,M7,O7,Q7,S7,U7,W7,Y7,AA7,AC7,M8,O8,Q8,S8,U8,W8,Y8,AA8,AC8,M9,O9,Q9,S9,U9,W9,Y9,AA9,AC9",
+      "values_range": "M6,O6,Q6,S6,U6,W6,Y6,AA6,AC6,M7,O7,Q7,S7,U7,W7,Y7,AA7,AC7,M8,O8,Q8,S8,U8,W8,Y8,AA8,AC8,M9,O9,Q9,S9,U9,W9,Y9,AA9,AC9",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D6,D7,D8,D9"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L7,L8,L9"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_2_interval",
+      "range": "D6,D7,D8,L6,L7,L8,N6,P6,R6,T6,V6,X6,Z6,AB6,N7,P7,R7,T7,V7,X7,Z7,AB7,R8,V8,X8,Z8,AB8",
+      "values_range": "N6,P6,R6,T6,V6,X6,Z6,AB6,N7,P7,R7,T7,V7,X7,Z7,AB7,R8,V8,X8,Z8,AB8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D6,D7,D8"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L6,L7,L8"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_3_estimate",
+      "range": "D10,D11,L10,L11,M10,O10,Q10,S10,U10,W10,Y10,AA10,AC10,M11,O11,Q11,S11,U11,W11,Y11,AA11,AC11",
+      "values_range": "M10,O10,Q10,S10,U10,W10,Y10,AA10,AC10,M11,O11,Q11,S11,U11,W11,Y11,AA11,AC11",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D10,D11"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L10,L11"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_4_estimate",
+      "range": "D13,D14,D15,D16,L13,L14,L15,L16,M13,O13,Q13,S13,U13,W13,Y13,AA13,AC13,M14,O14,Q14,S14,U14,W14,Y14,AA14,AC14,M15,O15,Q15,S15,U15,W15,Y15,AA15,AC15,M16,O16,Q16,S16,U16,W16,Y16,AA16,AC16",
+      "values_range": "M13,O13,Q13,S13,U13,W13,Y13,AA13,AC13,M14,O14,Q14,S14,U14,W14,Y14,AA14,AC14,M15,O15,Q15,S15,U15,W15,Y15,AA15,AC15,M16,O16,Q16,S16,U16,W16,Y16,AA16,AC16",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C12"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D13,D14,D15,D16"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L13,L14,L15,L16"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_5_interval",
+      "range": "D13,D14,D15,L13,L14,L15,N13,P13,R13,T13,V13,X13,Z13,AB13,N14,P14,R14,T14,V14,X14,Z14,AB14,AB15",
+      "values_range": "N13,P13,R13,T13,V13,X13,Z13,AB13,N14,P14,R14,T14,V14,X14,Z14,AB14,AB15",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C12"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D13,D14,D15"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L13,L14,L15"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_6_estimate",
+      "range": "D17,D18,L17,L18,M17,O17,Q17,S17,U17,W17,Y17,AA17,AC17,M18,O18,Q18,S18,U18,W18,Y18,AA18,AC18",
+      "values_range": "M17,O17,Q17,S17,U17,W17,Y17,AA17,AC17,M18,O18,Q18,S18,U18,W18,Y18,AA18,AC18",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C12"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D17,D18"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L17,L18"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_7_estimate",
+      "range": "D20,D21,D22,D23,L20,L21,L22,L23,M20,O20,Q20,S20,U20,W20,Y20,AA20,AC20,M21,O21,Q21,S21,U21,W21,Y21,AA21,AC21,M22,O22,Q22,S22,U22,W22,Y22,AA22,AC22,M23,O23,Q23,S23,U23,W23,Y23,AA23,AC23",
+      "values_range": "M20,O20,Q20,S20,U20,W20,Y20,AA20,AC20,M21,O21,Q21,S21,U21,W21,Y21,AA21,AC21,M22,O22,Q22,S22,U22,W22,Y22,AA22,AC22,M23,O23,Q23,S23,U23,W23,Y23,AA23,AC23",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C19"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D20,D21,D22,D23"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L20,L21,L22,L23"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_8_interval",
+      "range": "D20,D21,D22,L20,L21,L22,N20,P20,R20,T20,V20,X20,Z20,AB20,N21,P21,R21,T21,V21,X21,Z21,AB21,N22,R22,T22,X22,Z22,AB22",
+      "values_range": "N20,P20,R20,T20,V20,X20,Z20,AB20,N21,P21,R21,T21,V21,X21,Z21,AB21,N22,R22,T22,X22,Z22,AB22",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C19"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "C35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "survey_response",
+          "direction": "W",
+          "cells": "D20,D21,D22"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L20,L21,L22"
+        },
+        {
+          "name": "state",
+          "direction": "NNW",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    },
+    {
+      "name": "block_9_estimate",
+      "range": "D24,D25,L24,L25,M24,O24,Q24,S24,U24,W24,Y24,AA24,AC24,M25,O25,Q25,S25,U25,W25,Y25,AA25,AC25",
+      "values_range": "M24,O24,Q24,S24,U24,W24,Y24,AA24,AC24,M25,O25,Q25,S25,U25,W25,Y25,AA25,AC25",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A3"
+        },
+        {
+          "name": "population",
+          "cells": "B4"
+        },
+        {
+          "name": "indicator",
+          "cells": "C19"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "D24,D25"
+        },
+        {
+          "name": "unit",
+          "caption": "Unit",
+          "direction": "W",
+          "cells": "L24,L25"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2,O2,Q2,S2,U2,W2,Y2,AA2,AC2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T09:01:48Z",
+    "tool_version": "0.2.0",
+    "records": 234,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085431Z-40a1f297048c",
+    "started_at": "2026-11-02T08:54:42Z",
+    "workbook": "40a1f297048ca1fb9b62c821fcbff7628fb63baa4403030bb517eec1615618fb--report-on-government-services-justice-2025-police-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b77-d0b3-700b-a4aa-f40d623122fc",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7123b70ab6f542dd45be2c48d79b6b7fddcf61826c7f360ab280f4b93be98253",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `40a1f297048ca1fb9b62c821fcbff7628fb63baa4403030bb517eec1615618fb--report-on-government-services-justice-2025-police-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2025 — Justice\n- Sheets needing a recipe: 30 of 30\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 125ea64699cb6db0f19bdba458883eefd02e941b6a3a0afe590e0fb461761316 | missing |\n| \"Table 6A.1\" | cda9b63a01b1b207a6eda9d47f03d5792e6fe1be7d5224de9d6af99a6977d0ef | missing |\n| \"Table 6A.2\" | 58ddffb2fb53b6ba339e82518cce3f802dc60803ca54e82e488d0e478c0a23e2 | missing |\n| \"Table 6A.3\" | f72d885db68ea0f7bf9cb31189ccb68337627dcb3be15295d94a0f78e58c1090 | missing |\n| \"Table 6A.4\" | 64b91cb24e2227bf1f182f5708195d046fe1d2d8c8502a2a63c265bbbf1b79f8 | missing |\n| \"Table 6A.5\" | 7f3f0de92eb63a13c928656fd4cc9ce06b3d45e48b431f32396973bd5dc74b11 | missing |\n| \"Table 6A.6\" | 27772cdf4eb6a1f4c7cde0619abb66b8d4a0bbbd0f148bf85cdc5b403f6ea548 | missing |\n| \"Table 6A.7\" | 3b432333589977dce6dd5920fbe2040a31647242b3cd9fbe887fc3d1fbd8bb59 | missing |\n| \"Table 6A.8\" | c8169a1201e51d48871dff7250c2f9d74f5758e9758154a02c1dbd636de6ae3d | missing |\n| \"Table 6A.9\" | 607fc401a4b47e5bad4d3a4d21ae410dffdccdfec91e20cbf2b320b529550e17 | missing |\n| \"Table 6A.10\" | f2fa6b3525774b2726d668cef1fefc180a6fec4ee9d6457cdc6a6cab52822215 | missing |\n| \"Table 6A.11\" | 613b1635f83779d162fa24a3218e8ec201b0e79b4ca9ab7949bf786e7bae3a72 | missing |\n| \"Table 6A.12\" | 5ec089d722bb0e27de708c6950d23a2b57623a35cbbe6d62f78977cf4eec0cc3 | missing |\n| \"Table 6A.13\" | 98c3c6f80cf2612434d41c1648e72f3d68c14074d6297bb54328ddea7c196a9b | missing |\n| \"Table 6A.14\" | ef1d97e31e02f3c957cb47a5b77f8bba10bc32459fd39df704f6033b9218c53c | missing |\n| \"Table 6A.15\" | 46f4de164f0cf7d5d2e5ad512c3879497048d10c9653295bfeb7add72114558b | missing |\n| \"Table 6A.16\" | f84c164384ae15fbddd206c9240503dbb21e1d59464d2eed6bcc44bdf2746c81 | missing |\n| \"Table 6A.17\" | 7d7bc75f1b6a26997820f5475cacb2627de4aee11dd7b7301eff8405eca44efd | missing |\n| \"Table 6A.18\" | 77981a283fe9d3e22084278fd1967c6b893e5a1295f08c537c7c77bd4b44ebf3 | missing |\n| \"Table 6A.19\" | c708648bbc3e9dd09653e0feb6af45a93eec61a618b21f2d6882f7a463aa8e3e | missing |\n| \"Table 6A.20\" | 4e88a65a7c3367351b74b24c95788f8962ee1c81d16412b6240f3742047265c1 | missing |\n| \"Table 6A.21\" | 9d028302d43ea906e1e50d684d33abde5cf6e419221c37f5c1b4089825c0ef4a | missing |\n| \"Table 6A.22\" | f4dc234090f9062975739d894db425c7c3da41bfee3c971a2b6449d64698deff | missing |\n| \"Table 6A.23\" | 1242adea79a312c0cf60fa0109e2b9338859d6160d40ae4563e049f8646512fc | missing |\n| \"Table 6A.24\" | ab786aec6342d43bb3a730d2a943caedef248ab90c208e3a75f1f69d222e2736 | missing |\n| \"Table 6A.25\" | 66edb8dbd1a50baf56bdb4b0dd39852b5906b06d4c403c2789e2974cbfd7592e | missing |\n| \"Table 6A.26\" | d61ef729df32a7ae9ae09a4b7744f0a1e06f2a8fd9cf7355ba36b2505104e30c | missing |\n| \"Table 6A.27\" | 18071fa5b098169007ddbb3f91e4141a406f7fe9031aa826e21436127ab3bf64 | missing |\n| \"Table 6A.28\" | 655b040f7dc074b6d61a6d6b870a6c3c089a23e0a4f6c5d70911ed4054258be0 | missing |\n| \"Table 6A.29\" | 121845112fcfa8c5274b7a4c085960028572dd2f97551cbf7f3bef4580e8bfc0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085431Z-40a1f297048c.jsonl"
+  }
+}

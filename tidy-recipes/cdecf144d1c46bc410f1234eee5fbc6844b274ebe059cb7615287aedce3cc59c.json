@@ -1,0 +1,154 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "cdecf144d1c46bc410f1234eee5fbc6844b274ebe059cb7615287aedce3cc59c",
+  "sheet": "Table 2.4",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retained every subtotal and total, including Total children in finalised investigations, Total Investigations finalised, All children and national Total. These overlap with component rows and must not be summed together. investigation_scope preserves the Category distinction; note 4 limits Finalised investigation outcome to children whose only contact was an investigation. Queensland n.a. values retained. Reference period 2024–25 is published in the title. A2 and A3 are navigation links.",
+  "new_dimensions": [
+    {
+      "name": "investigation_scope",
+      "description": "Investigation reporting population: investigations outcome versus finalised investigation outcome. The latter excludes children receiving other child protection services, as explained in note 4.",
+      "example_labels": [
+        "Investigations Outcome",
+        "Finalised investigation outcome"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5:D5"
+    },
+    {
+      "name": "notes",
+      "cells": "A96:A105"
+    },
+    {
+      "name": "source",
+      "cells": "A106"
+    }
+  ],
+  "tables": [
+    {
+      "name": "investigation_outcomes",
+      "range": "A6:M95",
+      "values_range": "E6:M95",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous status",
+          "direction": "W",
+          "cells": "A6:A95"
+        },
+        {
+          "name": "investigation_scope",
+          "caption": "Category",
+          "direction": "W",
+          "cells": "B6:B95"
+        },
+        {
+          "name": "investigation_outcome",
+          "caption": "Sub Category",
+          "direction": "W",
+          "cells": "C6:C95"
+        },
+        {
+          "name": "measure",
+          "caption": "Data type",
+          "direction": "W",
+          "cells": "D6:D95"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "E5:M5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:31:45Z",
+    "tool_version": "0.2.0",
+    "records": 810,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T083040Z-cf7d96171624",
+    "started_at": "2026-11-02T08:30:41Z",
+    "workbook": "cf7d96171624d6ceaae82b67ecd6f25ff9d08e8bd7acaf0b177fd85077905598--aihw-child-protection-australia-2024-25-insights-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b61-d3f7-7080-a865-f19d6ad63915",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a7ae38391a2d924d988f8b8c87a40cd9c33f9c9446ebb79740d7d9a621941ded",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cf7d96171624d6ceaae82b67ecd6f25ff9d08e8bd7acaf0b177fd85077905598--aihw-child-protection-australia-2024-25-insights-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 Insights (initial release)\n- Sheets needing a recipe: 1 of 41\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table 2.4\" | cdecf144d1c46bc410f1234eee5fbc6844b274ebe059cb7615287aedce3cc59c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T083040Z-cf7d96171624.jsonl"
+  }
+}

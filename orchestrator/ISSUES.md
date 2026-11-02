@@ -5,43 +5,22 @@ step. Numbers are as of 2026-11-01, except I26 and I35 (2026-11-02).
 
 ## High
 
-### I1. AIHW series have no population or measure (ABS and RoGS are complete)
-`identify()` (2026-11-01) gives every ABS and RoGS series a `population` and a
-`measure`. AIHW is the exception:
-- child protection: 4,541 of 8,588 series have no population, 914 no measure;
-- Youth Justice: 3,660 of 4,330 have no population, 3,516 no measure.
+### I1. AIHW series without population or measure: resolved 2026-11-02
+The rewritten AIHW recipes record their titles (I25), and `seed_aihw_rogs_specs.R` gives
+every AIHW and RoGS title subject a population. Every group 1 record now has a
+population. What's left is in I36.
 
-The cause is I25: their early recipes have no title.
-**Next:** fix I25, then add AIHW subjects to `measures/measure_spec.json`.
+### I2. Active sheets without a recipe: resolved 2026-11-02
+Recipes now cover every sheet of the switched-on releases, including AIHW Child
+protection 2021–22 to 2024–25 and RoGS Justice 2021–2026, which were switched on for
+this (DECISIONS.md 33). The 92 EEH May 2021 sheets were not done: EEH is out of the
+pipeline (DECISIONS.md 32).
 
-### I2. 1,254 active sheets have no recipe
-AIHW child protection 440, RoGS 608, AIHW Youth Justice 114, EEH 92 (deferred by the
-owner). Their publications have only pilot-era recipes as templates, which use old
-names (I3). RoGS has deep row outlines that map poorly onto single dimensions (see
-`agents/skills/.../references/naming.md`, "Report on Government Services outlines").
-**Next:** run a small pilot per publication, review it against the database
-(`qa/`), and update `layouts.md` before a full batch.
-
-### I3. 181 early recipes fail the current validator (naming only)
-The 208 recipes outside the three ABS batches (pilot and tests, 2026-10-31) were
-written before `dictionary/dimensions.csv` existed. Checked 2026-11-01: 181 fail
-`validate_recipe` today, every error about names, none structural. They include 74 of
-79 child protection recipes, 43 of 47 Youth Justice and 26 of 28 RoGS. These are the
-templates agents will find for the remaining 1,254 sheets (I2).
-
-The problems:
-- publisher wording as names (`Year`, `Principal offence`, `Age group (years)`),
-  handled by `normalise()`;
-- names to avoid (`category`, `characteristic`, `section`, `group`, `offence`), partly
-  handled by `harmonise()` unstacking;
-- numbered or wrong sheet meta names (`stub_heading_1` …, `table_identifier`,
-  `notes_and_worksheet_annotations`).
-
-Their `validated` status comes from an older, weaker validator.
-**Next:** migrate mechanically (rename to dictionary names using the validator's
-own suggestions, then `submit_recipe` again; no agent cost). Do this before the
-AIHW/RoGS batches. Alternatively, rerun the agents on those workbooks (move the old
-recipes aside first; the queue skips validated sheets).
+### I3. Early recipes that fail the current validator: mostly resolved 2026-11-02
+143 of the 181 early recipes that failed `validate_recipe` on naming were AIHW and RoGS.
+They were moved aside and rewritten by the agents, with the rest of those publications
+(DECISIONS.md 33). The other 38 (EEH, now switched off, and ABS pilot sheets) are
+unchanged; their names are mapped by `normalise()`.
 
 ### I4. Nothing in the run loop checks that labels are correct
 The validator checks structure only. The pipeline checks (README "Checks") test
@@ -429,13 +408,10 @@ Left to do:
 - **Total labels** still vary by table (`Defendants`, `All persons`, `Total finalised`).
   That's `classify()` (I6, I27).
 
-### I25. Early AIHW recipes have no title, so `identify()` has nothing to read
-110 early AIHW sheets have no `table_title` in their recipe: 76 child protection and
-34 Youth Justice. The pilot agents never recorded the title cell. This causes the AIHW
-gaps in I1 and the AIHW identity conflicts in I26. Renaming fields can't fix it.
-**Next:** rerun the agents on the early recipes that fail today's validator (I3). That's
-181 sheets, about $4 at API prices. Move the old recipes aside first; the queue skips
-validated sheets. This fixes I3 and I25 together.
+### I25. Early AIHW recipes without a title: resolved 2026-11-02
+The early AIHW recipes were rewritten (I3). Youth Justice sheets that stack several
+titled tables ("Table S126a", "S126b") record a title per table, and `identify()` reads
+each table's title when the sheet has none.
 
 ### I26. Some values still can't be told apart
 `tar_read(integration_gaps)$identity_conflicts` counts keys with the same series, period
@@ -444,16 +420,18 @@ real. "Number vs symbol" is mostly harmless (a mean-age row crossing a rate pane
 
 | Publication | Two different numbers | Number vs symbol |
 |---|---|---|
-| child protection | 2,621 | 3 |
 | Crime Victimisation | 2,246 | 1 |
-| Youth Justice | 1,709 | 93 |
 | Recorded Crime – Victims | 1,397 | 0 |
 | Courts | 1,008 | 0 |
 | Recorded Crime – Offenders | 571 | 7,375 |
 | Prisoners | 315 | 76 |
+| Youth Justice | 129 | 75 |
 | Federal Defendants | 108 | 0 |
-| RoGS | 13 | 5 |
-| EEH | 0 | 0 |
+| child protection | 71 | 254 |
+| RoGS | 0 | 0 |
+
+AIHW and RoGS figures are after their recipes were rewritten on 2026-11-02 (I36); before,
+child protection had 2,621, Youth Justice 1,709 and RoGS 13.
 
 The label consistency work (I35) added 452 keys.
 
@@ -463,7 +441,7 @@ OFFENDERS" vs "Selected offenders"). This raised Recorded Crime – Offenders fr
 tables with slightly different numbers (22.1 vs 22.2), which previously looked distinct
 only because of the spelling.
 
-AIHW is I25. For the rest, `Rscript orchestrator/qa/integration_conflicts.R
+AIHW and RoGS are in I36. For the rest, `Rscript orchestrator/qa/integration_conflicts.R
 <publication_id>` shows the tables involved. For example, Courts "Summary
 characteristics of defendants" vs "of all defendants" in the same cube.
 `reconcile()` still flags exactly one value as latest, preferring numbers over symbols.
@@ -497,6 +475,61 @@ Each is a JSON entry that's easy to change:
 195 columns, mostly empty): 1.1 GB in total after the victims publications.
 **Next:** if size matters, gzip them (readr reads `.csv.gz` directly) or move `series`
 to a long format.
+
+### I36. AIHW and RoGS ("group 1"): judgement calls and leftovers
+Added 2026-11-02 (DECISIONS.md 33):
+- AIHW Child protection 2020–21 to 2024–25: 228,007 values;
+- AIHW Youth Justice 2024–25: 60,193 values;
+- RoGS Justice 2020–2026: 537,398 values.
+
+Every record has a population, and every RoGS record a measure, unit and reference date.
+Publications outside group 1 are unchanged, value for value.
+
+Judgement calls, each a rule in `qa/seeds/seed_aihw_rogs_specs.R`, for the owner to
+confirm:
+- **AIHW populations** are the title's subject up to "by …". Qualifiers stay, so "on an
+  average day" and "during the year" are different populations.
+- **RoGS populations and measures** are hand-written per indicator. Survey indicators
+  count persons aged 15 and over. "(before 2023-24)" survey tables get scope "Survey
+  before 2023–24", because the question changed.
+- **Plain years:** RoGS plain years are calendar years (31 December), from the police
+  tables sourced from ABS Recorded Crime – Victims. Child protection plain years stay
+  30 June. Its "as at 31 December" population tables get scope "At 31 December", but
+  their `reference_date` is still 30 June of that year.
+- **Youth Justice rates** are per 10,000 young people (from the table notes). Untitled
+  Youth Justice measures default to Number.
+- **Merged names:** where two agents named one concept differently, one name was kept
+  (e.g. `custody_type` → `prison_security`, `rate_basis` → `rate_standardisation`). The
+  59 new dictionary names are marked for owner review.
+- **State labels:** "Total" stays (68 earlier series use it too). RoGS "Aust cts"
+  (Australian, i.e. federal, courts) stays.
+
+Leftovers:
+- **Values that can't be told apart** (`integration_conflicts.R`): 71 child protection and
+  129 Youth Justice keys with two different numbers, mainly:
+  - child protection P1 vs P2: identical titles, ABS population from different
+    sources;
+  - Youth Justice S147a vs S147b: the second adjusts for the changed minimum age of
+    criminal responsibility, which only a footnote says;
+  - about 70 child protection keys where two tables' totals disagree (T2.2 vs Table 2.5,
+    Table 4.3 vs 4.4).
+- **Gaps:**
+  - about 1,100 child protection records have no measure;
+  - about 2,000 child protection and 1,300 Youth Justice records have no unit (measures
+    such as "Number of children");
+  - Youth Justice months without a year (312 records) and the "Dec 208" typo (90)
+    have no `reference_date`.
+- **Unrecognised values:** `<0.1` and `>99.9` (6 child protection values).
+- **Combined dimensions** could be split in harmonisation:
+  `reunification_status_age_group`, `order_type_reunification_status`,
+  `care_arrangement_and_indigenous_status`.
+- **Long RoGS measure labels** ("Proportion of recorded victims of sexual assault, by
+  age at incident"). The label consistency seed (I35) predates group 1 and hasn't been
+  applied to its labels.
+
+`run_recipe` now fails when two value cells have the same labels but different values
+(`layouts.md`, "Cells that differ only by position"). In the pilot it caught RoGS
+confidence-interval columns and an AIHW "Category" column put in `table_subtitle`.
 
 ## Resolved (for reference; do not redo)
 

@@ -1,0 +1,579 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d7d239d5fb1da09a9307a74d8d108817d4a773a2c2ebbfb0a05a685749c26ebd",
+  "sheet": "Table 7A.31",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "f1b8fd620989953afb63dc34dbaac345375fe54380c1a8cc2e6ccd147ebae7a2",
+  "agent_notes": "Court hierarchies and all published subtotals/totals retained. Composite court/appeal labels are preserved verbatim in court_level. Repeated duration measures distinguish counts and percentages through unit. Symbols and footnote markers retained.",
+  "new_dimensions": [
+    {
+      "name": "payroll_tax_basis",
+      "description": "Whether court expenditure includes or excludes payroll tax."
+    },
+    {
+      "name": "court_scope",
+      "description": "Published subdivision of a court level, including children's courts and totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C129,C131,C132,A134,C134,A135,C135,A136,C136,C137"
+    },
+    {
+      "name": "source",
+      "cells": "A139,E139"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A6:U14",
+      "values_range": "M6:U6,M7:U7,M8:U8,M9:U9,M10:U10,M11:U11,M12:U12,M13:U13,M14:U14",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B4"
+        },
+        {
+          "name": "court_level",
+          "cells": "C5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E6,E7,E8,E9,E10,E11,E12,E13,E14"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L6,L7,L8,L9,L10,L11,L12,L13,L14"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A16:U24",
+      "values_range": "M16:U16,M17:U17,M18:U18,M19:U19,M20:U20,M21:U21,M22:U22,M23:U23,M24:U24",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B4"
+        },
+        {
+          "name": "court_level",
+          "cells": "C15"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E16,E17,E18,E19,E20,E21,E22,E23,E24"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L16,L17,L18,L19,L20,L21,L22,L23,L24"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "A27:U35",
+      "values_range": "M27:U27,M28:U28,M29:U29,M30:U30,M31:U31,M32:U32,M33:U33,M34:U34,M35:U35",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B4"
+        },
+        {
+          "name": "court_level",
+          "cells": "C25"
+        },
+        {
+          "name": "court_scope",
+          "cells": "D26"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E27,E28,E29,E30,E31,E32,E33,E34,E35"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L27,L28,L29,L30,L31,L32,L33,L34,L35"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_4",
+      "range": "A37:U45",
+      "values_range": "M37:U37,M38:U38,M39:U39,M40:U40,M41:U41,M42:U42,M43:U43,M44:U44,M45:U45",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B4"
+        },
+        {
+          "name": "court_level",
+          "cells": "C25"
+        },
+        {
+          "name": "court_scope",
+          "cells": "D36"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E37,E38,E39,E40,E41,E42,E43,E44,E45"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L37,L38,L39,L40,L41,L42,L43,L44,L45"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_5",
+      "range": "A47:U55",
+      "values_range": "M47:U47,M48:U48,M49:U49,M50:U50,M51:U51,M52:U52,M53:U53,M54:U54,M55:U55",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B4"
+        },
+        {
+          "name": "court_level",
+          "cells": "C25"
+        },
+        {
+          "name": "court_scope",
+          "cells": "D46"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E47,E48,E49,E50,E51,E52,E53,E54,E55"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L47,L48,L49,L50,L51,L52,L53,L54,L55"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_6",
+      "range": "A57:U65",
+      "values_range": "M57:U57,M58:U58,M59:U59,M60:U60,M61:U61,M62:U62,M63:U63,M64:U64,M65:U65",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B4"
+        },
+        {
+          "name": "court_level",
+          "cells": "C56"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E57,E58,E59,E60,E61,E62,E63,E64,E65"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L57,L58,L59,L60,L61,L62,L63,L64,L65"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_7",
+      "range": "A68:U76",
+      "values_range": "M68:U68,M69:U69,M70:U70,M71:U71,M72:U72,M73:U73,M74:U74,M75:U75,M76:U76",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B66"
+        },
+        {
+          "name": "court_level",
+          "cells": "C67"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E68,E69,E70,E71,E72,E73,E74,E75,E76"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L68,L69,L70,L71,L72,L73,L74,L75,L76"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_8",
+      "range": "A78:U86",
+      "values_range": "M78:U78,M79:U79,M80:U80,M81:U81,M82:U82,M83:U83,M84:U84,M85:U85,M86:U86",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B66"
+        },
+        {
+          "name": "court_level",
+          "cells": "C77"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E78,E79,E80,E81,E82,E83,E84,E85,E86"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L78,L79,L80,L81,L82,L83,L84,L85,L86"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_9",
+      "range": "A89:U97",
+      "values_range": "M89:U89,M90:U90,M91:U91,M92:U92,M93:U93,M94:U94,M95:U95,M96:U96,M97:U97",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B66"
+        },
+        {
+          "name": "court_level",
+          "cells": "C87"
+        },
+        {
+          "name": "court_scope",
+          "cells": "D88"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E89,E90,E91,E92,E93,E94,E95,E96,E97"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L89,L90,L91,L92,L93,L94,L95,L96,L97"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_10",
+      "range": "A99:U107",
+      "values_range": "M99:U99,M100:U100,M101:U101,M102:U102,M103:U103,M104:U104,M105:U105,M106:U106,M107:U107",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B66"
+        },
+        {
+          "name": "court_level",
+          "cells": "C87"
+        },
+        {
+          "name": "court_scope",
+          "cells": "D98"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E99,E100,E101,E102,E103,E104,E105,E106,E107"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L99,L100,L101,L102,L103,L104,L105,L106,L107"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_11",
+      "range": "A109:U117",
+      "values_range": "M109:U109,M110:U110,M111:U111,M112:U112,M113:U113,M114:U114,M115:U115,M116:U116,M117:U117",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B66"
+        },
+        {
+          "name": "court_level",
+          "cells": "C87"
+        },
+        {
+          "name": "court_scope",
+          "cells": "D108"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E109,E110,E111,E112,E113,E114,E115,E116,E117"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L109,L110,L111,L112,L113,L114,L115,L116,L117"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "block_12",
+      "range": "A119:U127",
+      "values_range": "M119:U119,M120:U120,M121:U121,M122:U122,M123:U123,M124:U124,M125:U125,M126:U126,M127:U127",
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "payroll_tax_basis",
+          "cells": "B66"
+        },
+        {
+          "name": "court_level",
+          "cells": "C118"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "E119,E120,E121,E122,E123,E124,E125,E126,E127"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L119,L120,L121,L122,L123,L124,L125,L126,L127"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:56:43Z",
+    "tool_version": "0.2.0",
+    "records": 972,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T084248Z-910807a30e74",
+    "started_at": "2026-11-02T08:42:49Z",
+    "workbook": "910807a30e744344acc1d3def2f23e883014b57dd56bf86f5e0f34f1fe92e62e--report-on-government-services-justice-2022-courts-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b6c-ebfb-7454-91b1-15001c4b2012",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5c7ba946b9ecbdbb1c11246b0f23d0efce297058a351401390168c77ed8db04c",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `910807a30e744344acc1d3def2f23e883014b57dd56bf86f5e0f34f1fe92e62e--report-on-government-services-justice-2022-courts-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2022 — Justice\n- Sheets needing a recipe: 37 of 37\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 486b09be313bda8a7dccc0d2fe223d654a333d9b8164c04ee1a07547e84c6a30 | missing |\n| \"Table 7A.1\" | 10a857dda2e5c46e602b9a1dc5ef2667b3f50de6cd08a1f25d9b90eabacd1766 | missing |\n| \"Table 7A.2\" | 3859e8f203d62cc95b7b2490173c7a3a1b4e0bd0e6cb0c124252310dbf87d975 | missing |\n| \"Table 7A.3\" | 35233b7b06c3e5fdd1d7a94acd821e543d7d62cf38041aee6df3e98d0949cbf4 | missing |\n| \"Table 7A.4\" | 7ae0cb646d4a633f57441218d54bdc122d0ca8652fa9801bb7bf395f5fe594d2 | missing |\n| \"Table 7A.5\" | 79e472cfca8a442e03673360bd717be003d9d2fbd8a26481b0f107c1a887c382 | missing |\n| \"Table 7A.6\" | e129f494a046efa26b74799c6ea3dc77bf21ff2e7d142cd9e27c7dec2479e5be | missing |\n| \"Table 7A.7\" | 63f824de3f6fc2c513e4755aedd8cce6bc98c0adb8ce2e253f7dd737ab04fc62 | missing |\n| \"Table 7A.8\" | 9690c51146ddb7900f0b436ba5b25dffe424352bd650a2284644aae33928d35f | missing |\n| \"Table 7A.9\" | 4b1c1fdf51523846da572622b17e7bf832d9f35baf293b4bf7e20d5db8467e11 | missing |\n| \"Table 7A.10\" | 250718d309fd5c5ba12cb3537b6445df4b13616bf5e217ab95cbe1a648d939f2 | missing |\n| \"Table 7A.11\" | be36333aee7a4668f0c76e1d3cef8cb997c909561f9eb6ad729e895824ae11ca | missing |\n| \"Table 7A.12\" | cd21de130dffc47dc2ca4f223f5ed9a65cbab5b8bed3212255f1b6da9a15b6da | missing |\n| \"Table 7A.13\" | 74f2e330d2e19aea46bb9ca12e0fdc653dc151e10c69eb3b263ba4afa0e4099b | missing |\n| \"Table 7A.14\" | 5f3a019b30fc5a5cad226a4ed89e170e65f4df91b701a1f92c1650a7f7833e2d | missing |\n| \"Table 7A.15\" | 704c87dcb21387b6904734902b6820f8ad463f8819ca8e9f2b1bc73da3bf134e | missing |\n| \"Table 7A.16\" | 57f6a19db9ed7d6de5b8085ed69c221001b284ffed7585657e5eb9e0fc9e49ff | missing |\n| \"Table 7A.17\" | b7ce26532882f400437a9f675a1d97de80f2379e0330427cbdb26f35644f36b8 | missing |\n| \"Table 7A.18\" | 227613a1beae29c18708d02722ffc19411c6a663109203b967b08212ff3e0891 | missing |\n| \"Table 7A.19\" | 07b888b746848de6aa6712c265da83bfc1e21a0921d7dae4c2757c3e6c9e7159 | missing |\n| \"Table 7A.20\" | 116d744e133cae58b2cee7a8b0d85f0c34ad12d9f60878391bde438689c82d8d | missing |\n| \"Table 7A.21\" | db29626facd06a17f8a0c412c22c6b12f8c6c5c28a8d2d45ba8862e862bb9e25 | missing |\n| \"Table 7A.22\" | 1f574351a941dc8814beca824b84cffb80fc418c9fb4878759df2578f51d0963 | missing |\n| \"Table 7A.23\" | f881b6e5aedfdde4843424f922d98c6661aa9effe260cd4dcd1a6d510bfe149d | missing |\n| \"Table 7A.24\" | 2ddb19c9eeb01ec5562d54598e4b26f9932b9e4f84c153210319ced0501cf531 | missing |\n| \"Table 7A.25\" | 5b9ceadeb1a4f0f685b07c8e43a71f93835846017ae82f123242019fcf44f1db | missing |\n| \"Table 7A.26\" | 105b464d0a097a6d45da14d52be93e72df76c662343d176763bffcb0e48e4212 | missing |\n| \"Table 7A.27\" | b01b5537286e7ee0e768e1c8952126a25cf616bc9f8dea2f27085d1d80b06185 | missing |\n| \"Table 7A.28\" | a29992e15a3d46d1f75c06a035dc482bdf8c95274a564329aab3d30688b5c10f | missing |\n| \"Table 7A.29\" | 28d75b0651683835d1c47f641fcf9121b7a2cf7927cbc91570981c9b6eb5c1fa | missing |\n| \"Table 7A.30\" | ac7fc113f07f3eb4fa20194cb75624d1200d391d6759df19108696fc84b7aa9d | missing |\n| \"Table 7A.31\" | d7d239d5fb1da09a9307a74d8d108817d4a773a2c2ebbfb0a05a685749c26ebd | missing |\n| \"Table 7A.32\" | 763c4c77f191c5c99478e0dde69d8270f87c458b5ab296f389be6e65bff68cc0 | missing |\n| \"Table 7A.33\" | aabbd339b3c14f0d05e6e8b1d2779f37c104b851ab971d306935d14fe39241f9 | missing |\n| \"Table 7A.34\" | 7a809bff0c162b26428e8c3fd414ed334648e2e9bc101fbfe9fb364673e6aec3 | missing |\n| \"Table 7A.35\" | eda9d4dd6ac2f71e4d3f50ce47c6613989e63ac8cfc32c91e24c5fcfc8433e09 | missing |\n| \"Table 7A.36\" | ca29963d9911c32d9560f2e96869b89ca2bbba2d55d01dcea56e3f78b0572232 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T084248Z-910807a30e74.jsonl"
+  }
+}

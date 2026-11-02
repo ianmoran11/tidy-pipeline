@@ -1,0 +1,128 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f1e65cd2da223f52963e70399e9e8ecbfa9c02d2a7d526729d5327f6a895c68e",
+  "sheet": "Table S9.2",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "7eaa05fa7355576c704a47b3bb38025af811c7c05687d777e2d2d1b7d658770d",
+  "agent_notes": "All published total rows and columns retained; totals may include unstated categories, as documented in sheet notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A2"
+    },
+    {
+      "name": "notes",
+      "cells": "A8"
+    },
+    {
+      "name": "source",
+      "cells": "A9"
+    }
+  ],
+  "tables": [
+    {
+      "name": "children",
+      "range": "A2:C7",
+      "values_range": "B3:C7",
+      "headers": [
+        {
+          "name": "abuse_type",
+          "caption": "Abuse type",
+          "direction": "W",
+          "cells": "A3:A7"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B2:C2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:24:35Z",
+    "tool_version": "0.2.0",
+    "records": 10,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T082243Z-e64e82240629",
+    "started_at": "2026-11-02T08:23:08Z",
+    "workbook": "e64e82240629a2dc073b3385bd20012d4dddf55f27f99ff2a0d2879a6dff0451--aihw-child-protection-australia-2022-23-safety-in-care-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b5a-e9ce-7244-a340-ffb9b1083a6b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "d62f5dad78d7a7442bdad16d5e5f2a8be13d82cb131e0c1df9effe4b25a6b927",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e64e82240629a2dc073b3385bd20012d4dddf55f27f99ff2a0d2879a6dff0451--aihw-child-protection-australia-2022-23-safety-in-care-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2022–23 complete release\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 3741dba1095bddc6e35b875132c15c4fd8e66919f0ff921ed2358ee7f11404a4 | missing |\n| \"Table S9.1\" | 6688aa4a44dd85111ca94fcdfd14c8f95d9b07aa63423c7570c39a7813631589 | missing |\n| \"Table S9.2\" | f1e65cd2da223f52963e70399e9e8ecbfa9c02d2a7d526729d5327f6a895c68e | missing |\n| \"Table S9.3\" | 3558d7038aa063046e5b58c967989249cc64a054f96d27a83d817b31af5e316d | missing |\n| \"Table S9.4\" | 4b3014f39d59d83fc9dbef697c7509bff361669db530188a6cba8fa553251056 | missing |\n| \"Table S9.5\" | b9faf1d2ebed9790cd40c1433a9fede374494a6c632d1dcaa5b0f265cf01f01c | missing |\n| \"Table S9.6\" | ac4d28fdf5d1aa6b355663b85f65cad25d7841f9e6a5634fdcff8dc8908f20c0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T082243Z-e64e82240629.jsonl"
+  }
+}

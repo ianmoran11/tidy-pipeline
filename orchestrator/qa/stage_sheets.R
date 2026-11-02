@@ -10,7 +10,7 @@
 suppressMessages({library(dplyr); library(purrr); library(stringr); library(tidyr); library(rlang); library(unpivotr)})
 args <- commandArgs(TRUE); pubs <- args[1]; out <- args[2]; cores <- as.integer(args[3] %||% 3)
 for (f in c("R/published_value.R", "R/expand_excel_range.R", "R/one_enhead.R", "R/blank_value_cells.R", "R/process_recipe.R",
-            "R/normalise.R", "R/harmonise.R", "R/identify.R", "R/select_sheets.R")) source(f)
+            "R/field_sets.R", "R/normalise.R", "R/harmonise.R", "R/identify.R", "R/select_sheets.R")) source(f)
 m <- readr::read_csv("source_metadata.csv", col_types = readr::cols(.default = "c", reference_only = "l", sheet_index = "i"), na = c("", "NA"), trim_ws = FALSE, show_col_types = FALSE)
 ns <- jsonlite::read_json("normalisation/normalisation_spec.json"); hs <- jsonlite::read_json("harmonisation/harmonisation_spec.json"); ms <- jsonlite::read_json("measures/measure_spec.json")
 s <- select_sheets(m, jsonlite::read_json("sources/dataset_selection.json")) %>% filter(has_recipe, str_detect(publication_id, pubs))

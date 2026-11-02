@@ -67,3 +67,46 @@ Example layout (Table 37 style): a section caption row (`Sex`, `Age`,
 - If a second measure block follows (a new caption in column B such as
   `Offenders of FDV as a proportion of all offenders (%)`), start new tables
   for it and put that caption in their `meta_data` as `measure`.
+
+## Cells that differ only by position
+
+`run_recipe` fails when two value cells have exactly the same labels but different
+values: the pipeline could not tell them apart. Every value needs a label, from a
+header or a table `meta_data` item, that says what it is. A table's `name` is not a
+label. `table_subtitle`, `notes`, `source`, `annotations` and `stub_heading` are not
+labels either. The patterns below are the usual causes.
+
+## Several titled tables on one sheet
+
+AIHW sheets often stack tables `S126a`, `S126b`, `S126c`, each with its own title row
+(`Young people under supervision…`, `…under community-based supervision…`, `…in
+detention…`). Make one table per titled block and put its title cell in that table's
+`meta_data` as `table_title`. Leave the sheet-level `table_title` out. The pipeline
+then reads each table's title, which is what tells the blocks apart.
+
+## Long-format AIHW tables with a Category column
+
+Some AIHW tables are long, with columns such as `Indigenous status`, `Category`, `Sub
+Category`, `Data type`, then one column per state:
+- every one of these columns is a header (direction `W`), named for its concept;
+- `Category` is a dimension even when it is constant over a block (e.g.
+  `Investigations outcome` vs `Finalised investigation outcome`). Name it for what it
+  distinguishes, from the dictionary or as a declared new dimension;
+- `Data type` (`Number`, `Per cent`, `Number per 1,000`) is `measure`.
+
+Never use `table_subtitle` for a label that varies within the sheet.
+
+## Estimates with confidence intervals (RoGS surveys)
+
+Report on Government Services survey tables (police satisfaction, perceptions of
+safety) pair each state's estimate with an unlabelled column holding its 95%
+confidence interval (`±` percentage points). The notes explain it, e.g. `C182`: `The
+95% confidence interval (a reliability estimate) associated with each estimate is
+reported…`. Do this:
+- one table for the estimate columns and one for the interval columns, sharing the row
+  headers;
+- in each interval table, add `meta_data` `estimate_type` whose cell is that note (one
+  cell; it can stay in the sheet `notes` too). Leave the estimate tables without
+  `estimate_type`.
+
+Asterisks on values (`*2.9`) are RSE quality markers. Keep them in the value.

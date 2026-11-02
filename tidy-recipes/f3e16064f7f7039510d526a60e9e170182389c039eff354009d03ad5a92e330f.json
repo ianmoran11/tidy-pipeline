@@ -1,0 +1,92 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f3e16064f7f7039510d526a60e9e170182389c039eff354009d03ad5a92e330f",
+  "sheet": "Notes and Symbols",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Abbreviations, symbols, explanatory notes and references; no statistical table.",
+  "template_from": "0aecc02fe7fe4885a6bbefbf751624f5f0314b1fa4fc86f62a0a18e4784f8076",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-02T07:55:13Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T075237Z-40020ad2ee59",
+    "started_at": "2026-11-02T07:52:38Z",
+    "workbook": "40020ad2ee5994908d0daa24d6bd305071c8dc82af0313c3992dade152a04484--aihw-youth-justice-australia-2024-25-state-territory-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b3e-fc10-73f3-bff8-1afb3f32b992",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "db4914ca1887664a8d8f7a8d3caf5d99e72fe6239bdd0266fad18eabbee5b3d5",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `40020ad2ee5994908d0daa24d6bd305071c8dc82af0313c3992dade152a04484--aihw-youth-justice-australia-2024-25-state-territory-source.xlsx`.\n\n- Publication: Youth justice in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2024–25 complete release (corrected 26 August 2026)\n- Sheets needing a recipe: 18 of 18\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | b186d732fd3442d3bc20426aeb9bb28eb8fe92ede6e1fed1ba1aefe49ae9d0b1 | missing |\n| \"Notes and Symbols\" | f3e16064f7f7039510d526a60e9e170182389c039eff354009d03ad5a92e330f | missing |\n| \"Table S126\" | e8f58c4fb981d73a5b6f29d87c44ee650072e96acca8e4f8f5a9377328f1f740 | missing |\n| \"Table S127\" | a68fe4e3df248ff8e4ac10c6a07753d1039f56e5f48eb32133f48f2d37aba96d | missing |\n| \"Table S128\" | b908fc07825b63e47044ced931f3a5fcbc1d93807a95b0b55f9d274522a69154 | missing |\n| \"Table S129\" | 6fe72ffd23604115b16ffbaa77c493b0f9fcde67c14ecce7fa7bd562fdc7f930 | missing |\n| \"Table S130\" | 2252d8c26756d03f8d6792509aab7b7bef418f8178007ac8b40a2605513b83a8 | missing |\n| \"Table S131\" | 7010551fc63fb73f02772ed07d3823e1273c1fcbc40ed8203214f9c0a8bc4df1 | missing |\n| \"Table S132\" | 6a1dc6b2f8c9a2cc888fd18da30d131d3f388a8464a85953688b0486f90187c5 | missing |\n| \"Table S133\" | 9dc98e81345d4cf8d3738e09bc6b2c743db2b0744a657ec9a803f1fc8ef3dfdc | missing |\n| \"Table S134\" | 87dc857c4fee9298a6cda19843d7db4b2cf1e3ac612a3e7c3552770d5528dd6d | missing |\n| \"Table S135\" | 9287d99966c001cf4473e3c446f1ad45968dfe94aabb55dc6ff4cd8e92323a52 | missing |\n| \"Table S136\" | 69827976ff482a5d11d9d3b27f1fa4e9cad779f6e78a8d541110f4d9e74df9c2 | missing |\n| \"Table S137\" | 2dbfd99588a73fac4e9a86924788b23ba8a8d125e922f8dd357ec720c02b4577 | missing |\n| \"Table S138\" | b7d26a8822407c84e1f6c2d32856b0eda8d2a08ef4bebfd7206364e913524995 | missing |\n| \"Table S139\" | 3a57665d1f51790b91e2dc24903480d535fa3101916a9d24923495fe0fe59dd3 | missing |\n| \"Table S140\" | 79776ed4c70d8427cab3d38dd3aa5039481faee4ea302a80090adfbcde967214 | missing |\n| \"Table S141\" | 350575e3b5114674e11e6bf3f26c6782653da7737e270d3a4b63787514f03288 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T075237Z-40020ad2ee59.jsonl"
+  }
+}

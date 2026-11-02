@@ -35,6 +35,8 @@ These are settled. Revisit only if the owner asks.
 | 29 | Survey quality markers are kept: `published_value()` keeps format asterisks, and `value_flag` records `rse_25_to_50`, `rse_over_50`, `revised`, `footnote` | `R/published_value.R`, `R/type_values.R`, `value_spec.json` `markers` | Chosen by the assistant overnight; follows decision 6 (published values) |
 | 30 | 34 dictionary names added for victims dimensions (28 after the pilot, 6 after the full run), each marked "for owner review" | `dictionary/dimensions.csv` | Added so agents in the full run used one name per concept |
 | 31 | **Labels are made consistent by a rerunnable seed**: one spelling per label, units out of labels, `period_type`, denominators named in `measure`, `unit_from_measure`, and `differs_from_latest` comparing numbers and statuses instead of text | `qa/seeds/seed_label_consistency.R`, `consistency_rules.R`, `R/identify.R`, `R/reconcile.R` | 2026-11-02. The owner approved the fixes from the audit; the judgement calls within them are in ISSUES.md I35 |
+| 32 | **Employee Earnings and Hours is out of the pipeline**: its three switched-on releases are switched off. Its 237 recipes and spec entries stay, so it can be switched back on | `sources/dataset_selection.json` | 2026-11-02, owner's request. `selected_sheets_checks` warns about the recipes left out |
+| 33 | **AIHW Child protection 2021–22 to 2024–25 and RoGS Justice 2021–2026 are switched on**, and recipes were written for every sheet of these and the AIHW Youth Justice and RoGS 2020 releases already on (pilot of 4 workbooks, then 48). The 146 early recipes of these publications that failed the validator were rewritten. Spec entries come from `qa/seeds/seed_aihw_rogs_specs.R`; its judgement calls are in ISSUES.md I36 | `sources/dataset_selection.json`, `agents/batch-aihw-rogs-*.txt` | 2026-11-02, owner's request ("group 1"). 59 dictionary names added, each marked for owner review |
 
 Defaults that were never explicitly decided (candidates to confirm with the owner):
 
@@ -51,6 +53,4 @@ Defaults that were never explicitly decided (candidates to confirm with the owne
 
 Proposed by the assistant and waiting for the owner's answer (2026-11-01):
 
-- Rerun the agents on the 181 early recipes that fail today's validator. That's about
-  $4 at API prices, and it fixes the missing AIHW titles and old names (I3, I25).
 - Start stage 7, `classify()`: totals, codes and hierarchy (I6, I27).

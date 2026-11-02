@@ -48,7 +48,8 @@ For each record, in order:
 5. **`reference_dates`.** `reference_date` (ISO date) is looked up from `period`, first
    in the publication's own object, then in `default`. Financial years end on 30 June,
    months on their last day, ranges on their last period; plain years are 30 June for
-   Prisoners and child protection. Periods not listed get no `reference_date`.
+   Prisoners and child protection, and calendar years (31 December) in RoGS. Periods not
+   listed get no `reference_date`.
 
 Each record's `.derived` lists the dimensions that steps 3–5 added or changed.
 `row`, `col`, `address` and `.value` never change.

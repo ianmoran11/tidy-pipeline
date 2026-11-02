@@ -120,7 +120,8 @@ specific) marker's flag wins.
 Many ABS and RoGS workbooks add the asterisks through the number format
 (`"*"#,##0.0`), not the cell text. `published_value()` keeps them, as Excel displays
 them, so they reach `markers`. Survey estimates and their RSEs are separate series:
-`estimate_type` is `Relative standard error` for the RSE, and empty or `Estimate` for
+`estimate_type` is `Relative standard error` for the RSE, `95% confidence interval` for
+the ± interval RoGS publishes beside its survey estimates, and empty or `Estimate` for
 the estimate.
 - ABS: `np` not published, `na` not available, `..` not applicable, `–` nil or
   rounded to zero.

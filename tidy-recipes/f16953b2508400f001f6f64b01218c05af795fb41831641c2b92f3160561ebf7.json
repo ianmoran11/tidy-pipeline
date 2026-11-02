@@ -1,0 +1,255 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f16953b2508400f001f6f64b01218c05af795fb41831641c2b92f3160561ebf7",
+  "sheet": "Table 7A.36",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Australian Indigenous languages is a parent heading for Pitjantjatjara and Other Indigenous languages. Total retained; attendance percentages kept separate from booking counts. Symbols and footnotes preserved.",
+  "new_dimensions": [
+    {
+      "name": "interpreter_language",
+      "description": "Language requested for an interpreter in a criminal court matter.",
+      "example_labels": [
+        "Pitjantjatjara",
+        "Arabic",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L3,V3,B5,C6"
+    },
+    {
+      "name": "notes",
+      "cells": "C50,A52,C52,A53,C53,A54,C54,A55,C55"
+    },
+    {
+      "name": "source",
+      "cells": "A57,E57"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A7:T8",
+      "values_range": "M7:T8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "measure",
+          "cells": "L2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "interpreter_language",
+          "caption": "Language requested",
+          "direction": "W",
+          "cells": "D7:D8"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L7:L8"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3:T3"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A9:T48",
+      "values_range": "M9:T48",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "measure",
+          "cells": "L2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "interpreter_language",
+          "caption": "Language requested",
+          "direction": "W",
+          "cells": "C9:C48"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L9:L48"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M3:T3"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "V7:AD8",
+      "values_range": "W7:AD8",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "measure",
+          "cells": "V2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "interpreter_language",
+          "caption": "Language requested",
+          "direction": "W",
+          "cells": "D7:D8"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "V7:V8"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "W3:AD3"
+        }
+      ]
+    },
+    {
+      "name": "block_4",
+      "range": "V9:AD48",
+      "values_range": "W9:AD48",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A4"
+        },
+        {
+          "name": "measure",
+          "cells": "V2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "interpreter_language",
+          "caption": "Language requested",
+          "direction": "W",
+          "cells": "C9:C48"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "V9:V48"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "W3:AD3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:56:52Z",
+    "tool_version": "0.2.0",
+    "records": 672,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T084804Z-d456ee9894ee",
+    "started_at": "2026-11-02T08:48:09Z",
+    "workbook": "d456ee9894ee798f86edc0e90815eb9a578f41bb9270313bf2addf6df3ab0097--report-on-government-services-justice-2023-courts-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b71-d07b-76d9-ac86-46134f614c38",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "4eca412de38a2e3a8e812e12368f21d01deae74723fcfe89bd4cae60dc51210f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d456ee9894ee798f86edc0e90815eb9a578f41bb9270313bf2addf6df3ab0097--report-on-government-services-justice-2023-courts-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2023 — Justice\n- Sheets needing a recipe: 37 of 37\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 38111724ee8a3963010fdf2e375e553b52b147821cf54161546733383dc2c7ab | missing |\n| \"Table 7A.1\" | 298db806702772c40026748ac2d217458d26a2e4127b62ffea0af60da8096aa9 | missing |\n| \"Table 7A.2\" | 2bb7e1017b3c56f4cc6dda3b6f7a0d60060f9b93d206c07c8ff5b6e6726eeae1 | missing |\n| \"Table 7A.3\" | 6987c6a75c25d3e4847951ce07a683012a59786c26a4b3ac3e00a09ae551a673 | missing |\n| \"Table 7A.4\" | 467c47b727780fd265411191907cfdf36c05468a7ba9750dfd08527a5adcf0cf | missing |\n| \"Table 7A.5\" | 5ec667ac05dd38c45921beaa311be2326d35c6c62ff97fd32e32b14f550abb90 | missing |\n| \"Table 7A.6\" | f3c4361f1665da74a8033679c0d2926905bec672e110dee46d3d930cb3ff0912 | missing |\n| \"Table 7A.7\" | a094cdaa1fc06b02abc643ef75e5b161e9ff175c83444dea48c9035ad1873e8a | missing |\n| \"Table 7A.8\" | 9c8ea92f2fed9a29ced5ec9eada9eb04af8bf9f920fa9f02e367b93dd75aa8b1 | missing |\n| \"Table 7A.9\" | 08fcacef4986dcfa11b722774340b5520653b79951b4777914871023bff1feb5 | missing |\n| \"Table 7A.10\" | cca48c620d60a4e597c55106f0c60926b625d2b339fceb16dc0b2f32f0387d6c | missing |\n| \"Table 7A.11\" | 13cbb81ca882d6a4a127cef8f1875a9f844c72130e82850473082f9b833c9a79 | missing |\n| \"Table 7A.12\" | 3e332eae3698f8a6a21475c9d63c830d0cfbfa6d1f5539e35eec594c3e24ff68 | missing |\n| \"Table 7A.13\" | 54135a75d40054d246b3aae3fc2d87a925684a7ca0da86463c3f568eaf120ce4 | missing |\n| \"Table 7A.14\" | 677981b08fcaec769891152b43ee4f6b7c3c05b9a3c7fce5f2aa1790f389fbf8 | missing |\n| \"Table 7A.15\" | 701e64069c98c4d3b466e4f947eae92f8519eebdbecb87089bf503fdedc26468 | missing |\n| \"Table 7A.16\" | 5a32ef923c4c8fb1f1d14ce889592c69e541355a93024bf52691777ccab4ce31 | missing |\n| \"Table 7A.17\" | 3352edb6cf77392d3ce0de5cdf075b2161100a6e9b6958752eaf5e8d8fe92d65 | missing |\n| \"Table 7A.18\" | 7bb3c9650e01b2fb4a0e150e9d54306ddb194aaa707c746132becedfd295449c | missing |\n| \"Table 7A.19\" | 7189b64791e224a3cfedfd5db924770678c14d14135a724ec8af9c98d005a755 | missing |\n| \"Table 7A.20\" | c6c239970e05973d83abe85ba8654e0818da0e9cd6bc36ad676a9523ae9cf719 | missing |\n| \"Table 7A.21\" | ebb0fea4cd59d83271af7e02d165a6ccd2e65bd1878683470a9b63e8133d503d | missing |\n| \"Table 7A.22\" | 76e009655f4bfe95762ae8432f4b44dfe323a5ca1d54aa62809a333ce2fb8bfa | missing |\n| \"Table 7A.23\" | a6497309ac32c395c4bebc3b3557912c69c8176b867f1dd528e6f16f8e0e8e97 | missing |\n| \"Table 7A.24\" | 44069baa931f850ea0e97b7423819efe4f5a4a10e89e8033dcdeb05d39ce2419 | missing |\n| \"Table 7A.25\" | 933afb83d84edb291568ca0669308cdbcb3ba01ba61172541611abf2d5e203ee | missing |\n| \"Table 7A.26\" | 8e6a49a3e2d8d087b24bf77054dc886a116435448eefd3a6806cbfdac2e12316 | missing |\n| \"Table 7A.27\" | a0b82190ebfac868eb9d8f366e6c44e05ebcba5b60229918f9906e4b5bcb1b5f | missing |\n| \"Table 7A.28\" | 43a7f0652a8d9b0be7ed0a16a2671d4d07b00548ef32c8e8760c629b548a3356 | missing |\n| \"Table 7A.29\" | d496aa27ca1b2bbb7b1efc6f31e1eb52fb50275140eda37155564c1c643b200f | missing |\n| \"Table 7A.30\" | 1c8dc2da767c3f2f05dc82137122a2d2afa79ffd4ad10fb86e2549252c98be4b | missing |\n| \"Table 7A.31\" | 6c05a87b3a667ecaf2b63b5004fd3db0a11219062ce48a1914ad6e73a51ab0e3 | missing |\n| \"Table 7A.32\" | a78eefcf15909ce6dc65087c2b9ce1933cdd0753b3d1f5dc365fd962aa3e07d5 | missing |\n| \"Table 7A.33\" | d9dcf73d1a9fce1dbe757303b8308a43d780bc8be478d06c676588fedd0f50a1 | missing |\n| \"Table 7A.34\" | 0bb1d552ae4de6a5590bb1e54c8f3d223cc24936c4bf2330a5ed6f3b7fa8ad80 | missing |\n| \"Table 7A.35\" | 93eecfa25424f8ec0894ecb702d24b92732b03555dc9e1cf31225cccf2657e22 | missing |\n| \"Table 7A.36\" | f16953b2508400f001f6f64b01218c05af795fb41831641c2b92f3160561ebf7 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T084804Z-d456ee9894ee.jsonl"
+  }
+}

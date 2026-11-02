@@ -1,0 +1,587 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "19364412159838261dc98718eb6aedf4eb875ddb3f65f5cede75f892fc2ed10c",
+  "sheet": "Table 8A.19",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "424969bdb525a1b12457b68a691f123f9ed3bf6139dbb549e19f9c68f8d24982",
+  "agent_notes": "The expenditure outline repeats for Three years. Within capital costs, User cost of capital is a subtotal of Land and Other assets; these published rows share the same outline column and are retained together in capital_cost_type. Total capital costs, total net operating expenditure and combined totals are retained, not additive to their components. The net operating expenditure block includes open, secure and total rows.",
+  "new_dimensions": [
+    {
+      "name": "expenditure_type",
+      "description": "Type of operating expenditure, revenue or capital cost."
+    },
+    {
+      "name": "capital_cost_type",
+      "description": "Capital cost component within expenditure."
+    },
+    {
+      "name": "expenditure_denominator",
+      "description": "Whether expenditure is per prisoner or per offender."
+    },
+    {
+      "name": "prison_security",
+      "description": "Security or custody classification of the prison, including totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    },
+    {
+      "name": "notes",
+      "cells": "C59,C61,C62,A64,C64,A65,C65,A66,C66"
+    },
+    {
+      "name": "source",
+      "cells": "A68,E68"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_7",
+      "range": "E7:U9",
+      "values_range": "M7:U9",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L7:L9"
+        },
+        {
+          "name": "prison_security",
+          "direction": "W",
+          "cells": "E7:E9"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C5"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D6"
+        }
+      ]
+    },
+    {
+      "name": "block_11",
+      "range": "E11:U16",
+      "values_range": "M11:U16",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L11:L16"
+        },
+        {
+          "name": "capital_cost_type",
+          "direction": "W",
+          "cells": "E11:E16"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C5"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D10"
+        }
+      ]
+    },
+    {
+      "name": "block_17",
+      "range": "D17:U17",
+      "values_range": "M17:U17",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L17:L17"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D17:D17"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C5"
+        }
+      ]
+    },
+    {
+      "name": "block_19",
+      "range": "D19:U21",
+      "values_range": "M19:U21",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L19:L21"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D19:D21"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B4"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C18"
+        }
+      ]
+    },
+    {
+      "name": "block_7_previous",
+      "range": "E25:U27",
+      "values_range": "M25:U27",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L25:L27"
+        },
+        {
+          "name": "prison_security",
+          "direction": "W",
+          "cells": "E25:E27"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B22"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C23"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D24"
+        }
+      ]
+    },
+    {
+      "name": "block_11_previous",
+      "range": "E29:U34",
+      "values_range": "M29:U34",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L29:L34"
+        },
+        {
+          "name": "capital_cost_type",
+          "direction": "W",
+          "cells": "E29:E34"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B22"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C23"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D28"
+        }
+      ]
+    },
+    {
+      "name": "block_17_previous",
+      "range": "D35:U35",
+      "values_range": "M35:U35",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L35:L35"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D35:D35"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B22"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C23"
+        }
+      ]
+    },
+    {
+      "name": "block_19_previous",
+      "range": "D37:U39",
+      "values_range": "M37:U39",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L37:L39"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D37:D39"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B22"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C36"
+        }
+      ]
+    },
+    {
+      "name": "block_7_extra",
+      "range": "E43:U45",
+      "values_range": "M43:U45",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L43:L45"
+        },
+        {
+          "name": "prison_security",
+          "direction": "W",
+          "cells": "E43:E45"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B40"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C41"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D42"
+        }
+      ]
+    },
+    {
+      "name": "block_11_extra",
+      "range": "E47:U52",
+      "values_range": "M47:U52",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L47:L52"
+        },
+        {
+          "name": "capital_cost_type",
+          "direction": "W",
+          "cells": "E47:E52"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B40"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C41"
+        },
+        {
+          "name": "expenditure_type",
+          "cells": "D46"
+        }
+      ]
+    },
+    {
+      "name": "block_17_extra",
+      "range": "D53:U53",
+      "values_range": "M53:U53",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L53:L53"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D53:D53"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B40"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C41"
+        }
+      ]
+    },
+    {
+      "name": "block_19_extra",
+      "range": "D55:U57",
+      "values_range": "M55:U57",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L55:L57"
+        },
+        {
+          "name": "expenditure_type",
+          "direction": "W",
+          "cells": "D55:D57"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "indicator",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "B40"
+        },
+        {
+          "name": "expenditure_denominator",
+          "cells": "C54"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:59:57Z",
+    "tool_version": "0.2.0",
+    "records": 351,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T085659Z-63106a632f70",
+    "started_at": "2026-11-02T08:57:00Z",
+    "workbook": "63106a632f70599a4e24e19de9be87cd7f5201d6ecf209b4a3d1978e4399c501--report-on-government-services-justice-2025-corrective-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b79-eb6e-71bc-9f58-b4b2fbe4b1bd",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "af707c938cc14f38ef245de66c0c98444ddafea49108950dcdd8733028d90884",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `63106a632f70599a4e24e19de9be87cd7f5201d6ecf209b4a3d1978e4399c501--report-on-government-services-justice-2025-corrective-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2025 — Justice\n- Sheets needing a recipe: 23 of 23\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e52ee4c175c069942acad333fb39ebf961979f77ca3e63dc6234f203bac6d3c9 | missing |\n| \"Table 8A.1\" | ef75ab6bdde054d3a120bcc62b8246dc79b8190f89dd3f7555e08c7fd2b9b0d5 | missing |\n| \"Table 8A.2\" | 90b244666a425d29f2268ddb97e87029bb877a310aeccf1322907312d94f9dee | missing |\n| \"Table 8A.3\" | 86411e641d18b0e0bf6b05d0d5f49f63b897bef500d75cee4f2a1727a937b64f | missing |\n| \"Table 8A.4\" | 4a1c0a548ce39e1dbc665f751fed8c0d76819ea47860dbb3eb27eb76b2fd1271 | missing |\n| \"Table 8A.5\" | 181e01a63a149154609f62aec43c39f37a41f8859e6a9e8c5401461564dd560f | missing |\n| \"Table 8A.6\" | fd0a3d358fd92b5c07f2ed427a3463d458252da29480928140412ce34df97236 | missing |\n| \"Table 8A.7\" | 25f952b8fb4a0a66d26ad115791c1fefd67d2bd38063dc2cabe02b251312d84e | missing |\n| \"Table 8A.8\" | 4efc2c5e8af23aa62e1bd22c267bce48a789409d48513ef8409dbcee9d6ff90b | missing |\n| \"Table 8A.9\" | 90e18c7314a5c7d0645ab3285728ef8fa3e2baf7d02af915a509b5c1e6ba6104 | missing |\n| \"Table 8A.10\" | bf97a6303bae8dde1c7d5e2e5e298b9a417421bfdd23716007429dc93dd4436d | missing |\n| \"Table 8A.11\" | fb9a53264b9a7b3b05006ed1914c72153f4243269dac193b0135790946e7e060 | missing |\n| \"Table 8A.12\" | 0ecdd5c96e94fbe7c024a5de8407b9524c192582e33e0c2031d8b7fb0cb49c22 | missing |\n| \"Table 8A.13\" | 94702c473bca1e2a22c7c575edf033f300a87ab364b8080a8de5cb7393ccf620 | missing |\n| \"Table 8A.14\" | 697a4de14ee25b0d934a2cc427409b4bf3193238477e3daf4f36feebb327de72 | missing |\n| \"Table 8A.15\" | d96222e3f87407bd3651e9993609dc408378a4ccaf54d5cb12f2a73a8e918104 | missing |\n| \"Table 8A.16\" | 660b8fdaff4b8ef96b37561f144ed3479de11c5fd5d72b60b6b166bd784ac478 | missing |\n| \"Table 8A.17\" | ae2f9b6600d564a5201b7f42330b95badca56b35699abfd59f96f88dca422df2 | missing |\n| \"Table 8A.18\" | 488ed0ae13ecf16d33094066452dd888361b6a7d410a101ae002de28b854874f | missing |\n| \"Table 8A.19\" | 19364412159838261dc98718eb6aedf4eb875ddb3f65f5cede75f892fc2ed10c | missing |\n| \"Table 8A.20\" | b1638b10f6aa1b592136ddb450934c9929cc27bc61d74d161e3e5cadd19dcc0a | missing |\n| \"Table 8A.21\" | 0c22e33e435bb9a0286c3a7715011879d1104b02a8abe818d43788e883923732 | missing |\n| \"Table 8A.22\" | 310da41e2151ce37d9074f3e9232f33fade6da6b9a906e69f91047d30183c398 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T085659Z-63106a632f70.jsonl"
+  }
+}

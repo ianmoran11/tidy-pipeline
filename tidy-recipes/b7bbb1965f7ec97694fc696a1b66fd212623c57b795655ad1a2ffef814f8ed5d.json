@@ -1,0 +1,191 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b7bbb1965f7ec97694fc696a1b66fd212623c57b795655ad1a2ffef814f8ed5d",
+  "sheet": "Indicator 1.1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Rows '1 or 2' are combined subtotals; 'All exits'/'All placements', 'All children' and 'All periods' are totals and are retained. All children includes unknown Indigenous status; categories overlap.",
+  "new_dimensions": [
+    {
+      "name": "number_of_placements",
+      "description": "Number of different out-of-home care placements, including combined bands and all-placement or all-exit totals.",
+      "example_labels": [
+        "1",
+        "2",
+        "1 or 2",
+        "All exits",
+        "All placements"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4:C4,D3,K3"
+    },
+    {
+      "name": "notes",
+      "cells": "A18:A28"
+    },
+    {
+      "name": "source",
+      "cells": "A29"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number",
+      "range": "A6:I17",
+      "values_range": "D6:I17",
+      "headers": [
+        {
+          "name": "number_of_placements",
+          "direction": "W",
+          "cells": "C6:C17",
+          "caption": "Number of placements"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "WNW",
+          "cells": "B6,B10,B14",
+          "caption": "Indigenous status "
+        },
+        {
+          "name": "time_in_care",
+          "direction": "N",
+          "cells": "D4:I4",
+          "caption": "Time in care"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "D5"
+        }
+      ]
+    },
+    {
+      "name": "percent",
+      "range": "K6:P17",
+      "values_range": "K6:P17",
+      "headers": [
+        {
+          "name": "number_of_placements",
+          "direction": "W",
+          "cells": "C6:C17",
+          "caption": "Number of placements"
+        },
+        {
+          "name": "indigenous_status",
+          "direction": "WNW",
+          "cells": "B6,B10,B14",
+          "caption": "Indigenous status "
+        },
+        {
+          "name": "time_in_care",
+          "direction": "N",
+          "cells": "K4:P4",
+          "caption": "Time in care"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A6"
+        },
+        {
+          "name": "measure",
+          "cells": "K5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T07:55:25Z",
+    "tool_version": "0.2.0",
+    "records": 144,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T075237Z-235d0b3ce492",
+    "started_at": "2026-11-02T07:52:38Z",
+    "workbook": "235d0b3ce492bbac3ec0ffcf5d5e91fe9b3eeb9dbe43ab5d1e99db32273ceb24--aihw-child-protection-australia-2021-22-noohcs-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b3e-fc11-71d7-bd13-d8df6eeea395",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "b103f6ec8d8315577b6f1f1888198b33822b4132be0afa85ab257e3d04c906c9",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "85080cbb6c4f0693bfe107607e1bd9b31360ae403ab45c8e6109c738ace863db",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `235d0b3ce492bbac3ec0ffcf5d5e91fe9b3eeb9dbe43ab5d1e99db32273ceb24--aihw-child-protection-australia-2021-22-noohcs-source.xlsx`.\n\n- Publication: Child protection Australia (Australian Institute of Health and Welfare)\n- Release or year: 2021–22 complete release\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f4a4b2d909f544319bc6a97a49d925a47ce12c7ff64dcb51100d5ef5b9d0aa71 | missing |\n| \"Indicator 1.1\" | b7bbb1965f7ec97694fc696a1b66fd212623c57b795655ad1a2ffef814f8ed5d | missing |\n| \"Indicator 1.2\" | 9a45cc6cca1da62eb9e6bbfd38c7f8524d34ed301ec8a117834eadd3e92162fe | missing |\n| \"Indicator 1.4\" | b92ec293187ec2ae39439ee24ceb2e835cc67958c277b9303da9d706b6384b6e | missing |\n| \"Indicator 3.1\" | e4a72cd050d52987912503b985983f0c231d8556120c79338375f21e4de98a56 | missing |\n| \"Indicator 4.1\" | 9d565d9ee9dd715d8c574a6a05999934aa9f7967f4b636d569279ccf48da8d42 | missing |\n| \"Indicator 9.1\" | b06212aaa4cb2f6f09a019bcc5c59dc7fada649e9b707b9ba912659ba4e4ab7a | missing |\n| \"Indicator 10.1\" | af249914ca21015865d470a858536dbdb0129a5733b0db299050614d1ace2dbc | missing |\n| \"Indicator 12.1a\" | 58122c11436faec64e2c2e6f86efa20cc869436f199311b79166ca0679631ee9 | missing |\n| \"Indicator 12.1b\" | bddd8505307b1a644110ffa8451a2d0ab6a0a8c7ba69da4bb5cee098704f1eee | missing |\n| \"Indicator 12.2\" | 22ede5555f76f8b0aa627982a9ddd1af5e2d4b9b155b7296a0bb4ed9d6a67acc | missing |\n| \"Indicator 13.1\" | 17ea54a0a246b01649f79019094270f5c59b534fb137f86a86d49f82f724c9b0 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T075237Z-235d0b3ce492.jsonl"
+  }
+}

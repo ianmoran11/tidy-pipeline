@@ -63,8 +63,12 @@ check_data <- function(sheet_result, source_metadata_df) {
     bad <- !is.na(cells$value) & (cells$value == "" | grepl("^-?[0-9.]+e[+-]?[0-9]+$", cells$value))
     sprintf("%s = '%s'", cells$address[bad], cells$value[bad])
   }
-  # Sheets with records have a title, which identify() and harmonise() read
-  has_title <- function() if (length(records) && !length(unlist(sheet_result$sheet_metata[["table_title"]]))) "no table_title"
+  # Sheets with records have a title, which identify() and harmonise() read: the sheet's,
+  # or one for each of its tables
+  has_title <- function() {
+    titled <- vapply(sheet_result$tables, function(t) length(unlist(t$meta_data_list[["table_title"]])) > 0, TRUE)
+    if (length(records) && !length(unlist(sheet_result$sheet_metata[["table_title"]])) && !all(titled)) "no table_title"
+  }
 
   severity <- c(has_expected_parts = "error", sheet_is_active = "error", matches_recipe_kind = "error", matches_recipe_count = "warning",
                 cells_are_addressed = "error", cells_are_unique = "error", labels_are_single_text = "error",

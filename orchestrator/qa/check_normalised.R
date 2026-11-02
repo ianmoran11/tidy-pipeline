@@ -1,5 +1,5 @@
 suppressMessages({library(dplyr); library(purrr)})
-source("R/normalise.R")
+source("R/field_sets.R"); source("R/normalise.R")
 # 1. hand-made example
 spec <- list(dimension_names = list(Year = "period", "State/territory" = "state"),
              values = list(state = list("NSW(a)" = "NSW", "New South Wales" = "NSW"), period = list("2019-20" = "2019–20")))

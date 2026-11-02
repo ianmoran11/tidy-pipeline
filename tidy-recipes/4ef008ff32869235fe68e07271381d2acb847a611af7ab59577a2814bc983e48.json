@@ -1,0 +1,188 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4ef008ff32869235fe68e07271381d2acb847a611af7ab59577a2814bc983e48",
+  "sheet": "Table CA.4",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "f243bd9dccc35bc5f657efcb2a0db9a2f134538af393ecd806adc6398fd6aa93",
+  "agent_notes": "Indigenous-status headings span their following year rows. All people rows are published totals, including unknown Indigenous status where noted. Two distinct return indicators retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "K1"
+    },
+    {
+      "name": "notes",
+      "cells": "A37:A41,C37:C41"
+    },
+    {
+      "name": "source",
+      "cells": "A43,E43"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "L2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "return_1",
+      "range": "B4:U19",
+      "values_range": "M6:U7,M9:U10,M12:U19",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "WNW",
+          "cells": "C5,C8,C11"
+        },
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D6:D7,D9:D10,D12:D19"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L6:L7,L9:L10,L12:L19"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    },
+    {
+      "name": "return_2",
+      "range": "B20:U35",
+      "values_range": "M22:U23,M25:U26,M28:U35",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A3"
+        },
+        {
+          "name": "indicator",
+          "cells": "B20"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "WNW",
+          "cells": "C21,C24,C27"
+        },
+        {
+          "name": "period",
+          "direction": "W",
+          "cells": "D22:D23,D25:D26,D28:D35"
+        },
+        {
+          "name": "unit",
+          "direction": "W",
+          "cells": "L22:L23,L25:L26,L28:L35"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "M2:U2"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-02T08:46:17Z",
+    "tool_version": "0.2.0",
+    "records": 216,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261102T084525Z-ad7fa86ae1de",
+    "started_at": "2026-11-02T08:45:26Z",
+    "workbook": "ad7fa86ae1de436749833715421685a1a60790115d678e2d69e410d62b2422df--report-on-government-services-justice-2023-sector-overview-source.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a19b6f-5286-72e3-a5c8-dcc02c15ed2c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "0e08fa65c5664a8277d8a0094e13247568a699626ba31d32226c889e16c2bc7a"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "47541fdba28c6fb4ba0357fd05f16dd031ffe0a9560905b5f2e342401e4075ba",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ad7fa86ae1de436749833715421685a1a60790115d678e2d69e410d62b2422df--report-on-government-services-justice-2023-sector-overview-source.xlsx`.\n\n- Publication: Report on Government Services — Justice (Productivity Commission)\n- Release or year: Report on Government Services 2023 — Justice\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | d25301291c5acf8c53a0e56a35ddb38fbd1926b8c5f03e112d393bb72a297013 | missing |\n| \"Table CA.1\" | 8c13f8b93f0358638cccf4fb50d3299c99c2f2285d5e9cbfab1203f69bf501de | missing |\n| \"Table CA.2\" | 4be15b84f571ab8fa303cbeee1223d2a19cbd24cafa0eccb4055e231e82aae4a | missing |\n| \"Table CA.3\" | 4a5762ccb7ed9ef5fd944639b8a45aacfa0e861fe5516fa97d48225d43118cc0 | missing |\n| \"Table CA.4\" | 4ef008ff32869235fe68e07271381d2acb847a611af7ab59577a2814bc983e48 | missing |\n| \"Table CA.5\" | 032fa5bd16d7adee6a76ad94ee3fb50b97ab89bb72a6eef742a69aa72e462243 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261102T084525Z-ad7fa86ae1de.jsonl"
+  }
+}
