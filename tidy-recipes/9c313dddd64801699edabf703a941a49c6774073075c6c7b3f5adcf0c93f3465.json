@@ -1,0 +1,94 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "9c313dddd64801699edabf703a941a49c6774073075c6c7b3f5adcf0c93f3465",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook table index and contact information; no statistical data table.",
+  "agent_notes": "Numeric cells B7:B12 are table identifiers (1.1, 1.2, 2.1, 2.2, 3.1, 3.2), not observations. Correctly classified as contents; numeric-cell guard falsely flags the index.",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T08:14:25Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 6 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T081250Z-6863e85a181c",
+    "started_at": "2026-11-03T08:12:51Z",
+    "workbook": "6863e85a181c768eedf23f7fb9105181b732053b583354799517d60608c20cb1--Stalking-prevalence-and-socio-demographic-characteristics-Tables-1-to-3-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a077-db05-7794-98f8-53f20c2b3c61",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "deadf85bb7e90cf39d68d41981b5b7ced94698d36f710410d1f1fb5eaa5bdf7f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6863e85a181c768eedf23f7fb9105181b732053b583354799517d60608c20cb1--Stalking-prevalence-and-socio-demographic-characteristics-Tables-1-to-3-.xlsx`.\n\n- Publication: Stalking (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 9c313dddd64801699edabf703a941a49c6774073075c6c7b3f5adcf0c93f3465 | missing |\n| \"Table 1.1\" | 848ceed9893dee8c32a1e349dce7e1f462ed7e66016d2c6120d0e90cd638e128 | missing |\n| \"Table 1.2\" | 9d22aa270dc247b8e854ef7e4c8b382d915c10315279cb57c295ceac870d5ff0 | missing |\n| \"Table 2.1\" | fca55336e03b0cbf86f78d9e598f7b3642050c0fde2b835cdf30020ec5e6b6d8 | missing |\n| \"Table 2.2\" | fe5a93a925f6c085376e8253b0907c9d2f4709959eb36aa78c59cba8bbd0dc17 | missing |\n| \"Table 3.1\" | cbd8fe0ac686cde9f8ea589db327cc5e381e27b40562a6f42c70d5aceb04c955 | missing |\n| \"Table 3.2\" | 22b74f34537216389f0a4fe60270e0b89eafcea6a63593401076046a00e21f28 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T081250Z-6863e85a181c.jsonl"
+  }
+}

@@ -531,6 +531,82 @@ Leftovers:
 (`layouts.md`, "Cells that differ only by position"). In the pilot it caught RoGS
 confidence-interval columns and an AIHW "Category" column put in `table_subtitle`.
 
+### I37. National justice publications ("group 2"): judgement calls and leftovers
+Added 2026-11-03 (DECISIONS.md 34, 35): 13 publications, one release each, 710 sheets,
+159,721 values. RoGS child protection 40,816; prison health 25,099; youth detention
+27,072; RoGS youth justice 21,387; Corrective Services 15,813; youth justice and child
+protection 6,686; the five Personal Safety releases 17,055; Personal Fraud 4,036; young
+people returning 1,757.
+
+Every record has a population, measure and reference date. 443 prison health series
+(medians, ranges, standard deviations, means) have no unit. Publications outside group 2
+are unchanged, value for value.
+
+Judgement calls, each a rule in `qa/seeds/seed_national_specs.R`, for the owner to
+confirm:
+- **Plain years:**
+  - Corrective Services plain years are calendar years (31 December). ABS's methodology
+    says annual figures average the months, and the 2025 annual figure sits beside
+    quarters up to June 2026.
+  - Its age-standardised cube (workbook 3) is "as of 30 June". It gets scope "At 30 June",
+    but its `reference_date` is still 31 December, because dates are looked up from
+    the period label alone.
+  - Personal Safety survey years (1996, 2005, 2012, 2016) and RoGS youth justice
+    populations ("31 December") are calendar years.
+  - RoGS child protection years are 30 June ("at 30 June"). Its 31 December populations
+    get scope "At 31 December" but a 30 June date, as in I36.
+  - Prison health "2025" is 30 June, following AIHW child protection. The collection
+    period wasn't checked.
+- **Quarters and months:** "June quarter 2026" and "April 2026", with `period_type`
+  `Quarter` or `Month`. Corrective Services puts them under year headings, which
+  `combine` joins.
+- **Surveys:** the population is the title's first clause and `scope` its second
+  ("Experiences of violence by a male perpetrator since the age of 15"). RSE rows get
+  `estimate_type` "Relative standard error", measure `Number` (the RSE of a count) or
+  `Proportion`, and unit `%`.
+- **Personal Fraud:** "Experienced card fraud …" columns are counts, "Victimisation
+  rate" the proportion, and "Total persons" measure `Population`.
+- **Youth justice and child protection:** a cohort column ("Detention only", "Supervision
+  with child protection") is everyone under that order in 2022–23, split by a new
+  dimension `child_protection_interaction`. "(% of those with …)" tables get measures
+  such as "Proportion of those with 1 or more substantiated notification".
+- **Youth detention:** a "First Nations" or "Non-Indigenous" title prefix sets
+  `indigenous_status`. "On an average night" tables are `Average nightly number`.
+- **Corrective Services:** "(Average daily number)" and "(Number on first day of month)"
+  block headings give the measure. Table 3's headings repeat Table 2's "(Average daily
+  number)", though its values are imprisonment rates, so its title's measure wins.
+- **Merged names:** where two agents named one concept differently, one name was kept
+  (e.g. `emergency_fund_capacity` → `emergency_funds_capacity`; RoGS
+  `population_reference_date` → `scope`). The 260 new dictionary names are marked for
+  owner review. Most are single-topic survey and prison health characteristics.
+- **State labels:** prison health "All" is "Australia" (only there; Youth Justice "All" is
+  unchanged). Youth detention "Aust excl NT" and "Aust incl NT", and RoGS "Aus Gov",
+  stay.
+
+Leftovers:
+- **AIC Homicide in Australia and Deaths in custody (2024–25) are switched off.** R's
+  `download.file()` fails on aic.gov.au, while curl gets exactly the pinned bytes. Trying a
+  browser user agent was refused as bot-check circumvention. `get_source_data.R` reuses
+  any file in `source-originals/` named `<source_sha256>--<file name>` whose bytes match
+  its pin, so placing the six files there and switching the release on admits them.
+- **Values that can't be told apart:** 127 keys.
+  - Partner violence (108): a publisher error. Sheet "Table 21.2" carries Table 20.2's
+    title, so the two sheets' RSEs look the same.
+  - Personal Fraud Table 9b (11): both RSE columns are labelled only "%" (RSE of the
+    count, then of the proportion). The recipe is `needs_review`.
+  - Sexual violence (4) and stalking (4): row labels repeated in different blocks of one
+    sheet.
+- **Gaps:**
+  - 443 prison health series have no unit;
+  - 70 prison health "Range" values ("19–57") are text, so `type_values()` reports them
+    as unrecognised.
+- **Spelling variants** between group 2 and earlier publications ("Non–Indigenous" vs
+  "Non-Indigenous", "Major Cities" vs "Major cities"): `labels_have_one_spelling` now
+  reports 90 groups (25 before). Within group 2, case, dash and spacing variants were
+  made one.
+- **Width:** `series.csv` has 487 columns (497 MB), because the surveys and prison health
+  add 259 single-topic dimensions.
+
 ## Resolved (for reference; do not redo)
 
 | | Problem | Fix |

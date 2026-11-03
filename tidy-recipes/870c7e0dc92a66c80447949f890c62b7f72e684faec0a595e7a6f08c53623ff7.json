@@ -1,0 +1,152 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "870c7e0dc92a66c80447949f890c62b7f72e684faec0a595e7a6f08c53623ff7",
+  "sheet": "Table 8b",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals and subtotals retained. Indented rows remain within their conceptual dimension; parent rows with values are overlapping aggregates, not additive categories. RSE sheets use their published title as estimate_type. Labels and quality markers preserved.",
+  "new_dimensions": [
+    {
+      "name": "scam_type",
+      "description": "Type of scam experienced, including totals across scam types."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8"
+    },
+    {
+      "name": "notes",
+      "cells": "A17:A23"
+    }
+  ],
+  "tables": [
+    {
+      "name": "scam_type_9",
+      "range": "A9:K16",
+      "values_range": "B9:K16",
+      "headers": [
+        {
+          "name": "scam_type",
+          "direction": "W",
+          "cells": "A9:A16",
+          "caption": "Selected scams(c)"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B5,G5"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:K6"
+        },
+        {
+          "name": "unit",
+          "direction": "N",
+          "cells": "B7:K7"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "A3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T07:51:28Z",
+    "tool_version": "0.2.0",
+    "records": 80,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T074639Z-4bbd351ec9df",
+    "started_at": "2026-11-03T07:46:40Z",
+    "workbook": "4bbd351ec9df5b413ac955c9cbb315ce01a0e5f05a362f30a68f7d263df7237c--Personal-Fraud-Tables-1a-to-13b-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a05f-e271-7768-939a-21d756a7b832",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ec8c7d60973b892c70e30ce0e6acd1b2c6209358604fb7119a84475ebb07176d",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4bbd351ec9df5b413ac955c9cbb315ce01a0e5f05a362f30a68f7d263df7237c--Personal-Fraud-Tables-1a-to-13b-.xlsx`.\n\n- Publication: Personal Fraud (Australian Bureau of Statistics)\n- Release or year: 2024-25\n- Sheets needing a recipe: 27 of 27\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c758fdee15ea9189d9e4c8a2bb9b8f48ffac81ea194aa3f4d874ba8afefdb69c | missing |\n| \"Table 1a\" | deb98ac8d2b22cb97c9ec5d155377afcee02e0650770135f0f261110ab115e8b | missing |\n| \"Table 1b\" | b573c07b87e6b1fa73f5943c3e3f5f1194d6feb1a18e5714ea754c07013dfb0d | missing |\n| \"Table 2a\" | cf56cbc7b11e65ac889a085386e274847a32512cd0a5271cd26f5dcef6888dc9 | missing |\n| \"Table 2b\" | fb1271d4dbcc067d20f163e27b58cdb8102f1ef2ace1590ff4eef121b81e440a | missing |\n| \"Table 3a\" | 7246637e608fffcfd0374c6fd1c1cae0668edeb7de58778b1e8ba3726f384c2b | missing |\n| \"Table 3b\" | 46bc473a2157841670557dc95ad637a9993dae2ad2d1d76a0b064435522307e8 | missing |\n| \"Table 4a\" | ffaaca14dabb99bd7becc08581e8627eb1f087f5bf69563bb29d81c4bdee06fe | missing |\n| \"Table 4b\" | a0d1de485d2b3d3d00dda2edd0de2a68ed685865ffa953216b590366f79fdf7e | missing |\n| \"Table 5a\" | 1fd74a5ec37c7af8c57c2fcc2590b3ecab9eb551301aba0b3e958bb38fbe2239 | missing |\n| \"Table 5b\" | 0ea63855b8c0e726f22136d3a0ce9e0d57da313407b1ae42f2a30e182cad3be1 | missing |\n| \"Table 6a\" | ce5fe2373ba603b09818f7586e5a9dc8a0e88075514f0e831e15983ea656ad19 | missing |\n| \"Table 6b\" | 874842d406e2386c474833ee8e8edbfb93cb32737a6da88621fccfb913437e16 | missing |\n| \"Table 7a\" | 7496d37a79ce8c9d0cd12cb8a5b80e4927c319ac458f02fa8b1e4984964d43d8 | missing |\n| \"Table 7b\" | 574477dfabf469b95126bec2b6ca04d241da93e5e65c08d788f93379b5882069 | missing |\n| \"Table 8a\" | 8b84fcd6c3ca77c906898eaaddbc451349c5727127ed2e781758df874cac334c | missing |\n| \"Table 8b\" | 870c7e0dc92a66c80447949f890c62b7f72e684faec0a595e7a6f08c53623ff7 | missing |\n| \"Table 9a\" | 36abbfceaebbeb1b48f25a566c8c4a335bcc06ad958c4b71e24e981d0035f86d | missing |\n| \"Table 9b\" | 07566e74f50135517a464e24c037691ac62c331c7b8aea177e60eb3b321ffe0d | missing |\n| \"Table 10a\" | f60341c67f79da15f95d54d545e0c12dfc9297c4f8556bb5d71d0cbb1a7e3cb4 | missing |\n| \"Table 10b\" | 213226a8061fe7d632db3874a1b92dab455bbdfb875ab108710979993633d328 | missing |\n| \"Table 11a\" | c55aaa96227480f2966af5c52101e09a1ea4c3b4f6385f8e34aae0c291c7ce4e | missing |\n| \"Table 11b\" | 91c551e138925f8acb35f582a81c1ab49b6e58b89ba1612f243fa435cbca8a51 | missing |\n| \"Table 12a\" | acbd7fe6d793002accde1c147e079dd8cdeb418ed6b1ee583ff2bba6d9382b95 | missing |\n| \"Table 12b\" | 53710102405e896ba04845058ef17ee396a7dc7289092d3f0dabbaab5016f398 | missing |\n| \"Table 13a\" | 56c14ad407406c60f03450de69e235a34728abfe564207ddb02da5f19def2898 | missing |\n| \"Table 13b\" | 10a4376059b0bb39cb046a7fd47ca88c3067d38ca11bb2e40bd935bea4f362d7 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T074639Z-4bbd351ec9df.jsonl"
+  }
+}

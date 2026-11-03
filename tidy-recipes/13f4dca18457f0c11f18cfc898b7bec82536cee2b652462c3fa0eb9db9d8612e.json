@@ -1,0 +1,123 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "13f4dca18457f0c11f18cfc898b7bec82536cee2b652462c3fa0eb9db9d8612e",
+  "sheet": "Table S173",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "6f4068712b4a75fe743af56e4896057c915283981c135805a31444a61055877c",
+  "agent_notes": "Jurisdiction totals retained. Columns are published age statistics/count measures; age ranges and unavailable symbols remain text.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A14:A18"
+    },
+    {
+      "name": "source",
+      "cells": "A19"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_statistics",
+      "range": "A3:F12",
+      "values_range": "B4:F12",
+      "headers": [
+        {
+          "name": "state",
+          "direction": "W",
+          "cells": "A4:A12"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B3:F3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:03:36Z",
+    "tool_version": "0.2.0",
+    "records": 45,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T075914Z-9db744894cf7",
+    "started_at": "2026-11-03T07:59:15Z",
+    "workbook": "9db744894cf73080fe352c1f3ecadbcb83f1293b7a05c7564466a2e5fdc22918--aihw-phe-367_demographics-data-tables_jurisdictional.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06b-6c27-7425-a9a8-f9934b7fc568",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "fe947e1461b2fd6f1a2adb79c98855443fcad7a101a2fc2703f7c15bc5a47f64",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9db744894cf73080fe352c1f3ecadbcb83f1293b7a05c7564466a2e5fdc22918--aihw-phe-367_demographics-data-tables_jurisdictional.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 47b0059439a8c2276d0c679bb721267e9d972c489767c5bfe86c368ccb21af57 | missing |\n| \"Notes & symbols\" | ae295e90490f7240ca237806d75efd486fa9b8df5a5a1719b73610379f45ca0e | missing |\n| \"Table S170\" | 4a2f4de9fc85c9bdd439cedbad3f75f2d447f8114a3676696317591e838ca4c5 | missing |\n| \"Table S171\" | 017ece4797afef13609330ed6992aa8522bc5112c2bdeb6f612b0d7ce8e1cd89 | missing |\n| \"Table S172\" | 122eb2a490bb6396b7eabb61ca6057075c7cd4c8d377df7792549d926c14222b | missing |\n| \"Table S173\" | 13f4dca18457f0c11f18cfc898b7bec82536cee2b652462c3fa0eb9db9d8612e | missing |\n| \"Table S174\" | e95fa2014dff704e536b2e8fc6389009cd0cc9f204374c014e0a1e9954f81312 | missing |\n| \"Table S175\" | acd36ad3ed4953817f6a93e41034f45e00816fbfe4e4a2fae6019dc4b874a5b2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T075914Z-9db744894cf7.jsonl"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "37cb864cc39415e6b0b3b84d85832fd2682b46e76908585394de1cba0bc0d36d",
+  "sheet": "Table A1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published total and subtotal rows retained, including All young people. Group labels span subsequent rows until the next group. Suppression symbols retained verbatim. Table titles distinguish counts, percentages, rates and denominator populations; overall-supervision denominator totals use population rather than a protection, abuse or order type.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A3,B3,A26,B26"
+    },
+    {
+      "name": "notes",
+      "cells": "A17,A18,A19,A20,A40,A41,A42"
+    },
+    {
+      "name": "source",
+      "cells": "A22,A44"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A3:L15",
+      "values_range": "C4:L4,C5:L5,C6:L6,C7:L7,C8:L8,C9:L9,C10:L10,C11:L11,C12:L12,C13:L13,C14:L14,C15:L15",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A4,A8,A12",
+          "direction": "WNW",
+          "caption": "Sex"
+        },
+        {
+          "name": "indigenous_status",
+          "cells": "B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15",
+          "direction": "W",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "period",
+          "cells": "C3,D3,E3,F3,G3,H3,I3,J3,K3,L3",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A26:L38",
+      "values_range": "C27:L27,C28:L28,C29:L29,C30:L30,C31:L31,C32:L32,C33:L33,C34:L34,C35:L35,C36:L36,C37:L37,C38:L38",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A24"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A27,A31,A35",
+          "direction": "WNW",
+          "caption": "Sex"
+        },
+        {
+          "name": "indigenous_status",
+          "cells": "B27,B28,B29,B30,B31,B32,B33,B34,B35,B36,B37,B38",
+          "direction": "W",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "period",
+          "cells": "C26,D26,E26,F26,G26,H26,I26,J26,K26,L26",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T07:52:04Z",
+    "tool_version": "0.2.0",
+    "records": 240,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T074639Z-d3bbeabf4ff8",
+    "started_at": "2026-11-03T07:46:40Z",
+    "workbook": "d3bbeabf4ff8f1392c49532c67c25a9f09b42e89110b7e1a805574ff560a3094--aihw-csi-30-young-people-under-youth-justice-supervision-and-their-interaction-with-the-child-protection-system-2022-23.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a05f-e27c-7419-8b95-cd8991f36f39",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "817497bc8266df22e41a3b5c28f7fe6a99f51e68a95df3c8b0345bdefd87c499",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d3bbeabf4ff8f1392c49532c67c25a9f09b42e89110b7e1a805574ff560a3094--aihw-csi-30-young-people-under-youth-justice-supervision-and-their-interaction-with-the-child-protection-system-2022-23.xlsx`.\n\n- Publication: Young people under youth justice supervision and their interaction with the child protection system (Australian Institute of Health and Welfare)\n- Release or year: 2022-23\n- Sheets needing a recipe: 22 of 22\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 76a8d7e6e3bc7cab58463ed445ec3fca03dbe00492768a697f3a9024a7f712bc | missing |\n| \"Notes and Symbols\" | 7476b63f4b2677198d50469236cc4a97a378c17aa84a798059f281ed879983ab | missing |\n| \"Table S1\" | a44196e444659407754a78b2895d30e361588ca0f75d261d5247edb7b7a35f66 | missing |\n| \"Table S2\" | 9c5e8644892a50c999f9b1411b8ac90b1e577a9a7748091551e69ad68bcdf346 | missing |\n| \"Table S3\" | 7ee320d43a3b08ffe27d70e360ba2826c1612dae6191dc6db1356b9b5bcb6b24 | missing |\n| \"Table S4\" | 45bdbec9d93327aeecb188ee4f6dedf095aeaa35a6f498fbc71cea8d23c749fc | missing |\n| \"Table S5\" | f1f5154c1c7b1666498d4ea7a8fd998efecbae867bd373bf7a9b66debc312b71 | missing |\n| \"Table S6\" | d64cd09c0933a1d1a788c4154a3a3a52ab329d4078ca81706c9e5be69c646654 | missing |\n| \"Table S7\" | 873105bb72f1308bca4d812e27059c3cc349d6dc4f08e181da1bee2195863681 | missing |\n| \"Table S8\" | e8fb0642fa5457103604553d172874f84af13164b78a8aa164f1465cf7831f63 | missing |\n| \"Table S9\" | 6a85f467e6ee320d49377340b223f9f3264acc330fcf17be5eb45fec227815f8 | missing |\n| \"Table S10\" | 85638dc2441eefee491fcea799d9f2adafd2d6086a7c30e3688f8c1edfcde17f | missing |\n| \"Table S11\" | 68aa26be5a3e66c2cf61ad69beae782c357b2c8241e17b770b8fd1380ca25f11 | missing |\n| \"Table S12\" | 397cddb2b5a0bd8ce3347adfaeb31e1652b966b98586b464e64398cd5020213f | missing |\n| \"Table S13\" | c32dfd7950be5f172ae84c47628d3483585f871bb8fd17330ce544a1a48d8c69 | missing |\n| \"Table S14\" | fc91fefac0e2c66f59286f25954f4e3a80a67d90291a39e4aa51e6f8e4619f80 | missing |\n| \"Table S15\" | 76545b3e3fdb00a8b105bbfc3eeadb08f00787c1479d9963b256b5f4cee13d22 | missing |\n| \"Table S16\" | d7e4e7b2357485326055446e01007a1c9587d36c9282c01f0ad94e51b794780a | missing |\n| \"Table S17\" | 822590be0de265035712f3a60511a79ff860174a3a1e434055c5a164f5ff5bf9 | missing |\n| \"Table S18\" | 9c3779eac01ec3c152edbe91bb373ede4391dc830b6c242ee10420d194ef2e53 | missing |\n| \"Table S19\" | 9ec4855475b18c3a8abca7a1f198c9cfcc618d222afecb02e5cb949263233d35 | missing |\n| \"Table A1\" | 37cb864cc39415e6b0b3b84d85832fd2682b46e76908585394de1cba0bc0d36d | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T074639Z-d3bbeabf4ff8.jsonl"
+  }
+}

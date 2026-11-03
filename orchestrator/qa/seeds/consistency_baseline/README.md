@@ -8,7 +8,7 @@ specs produce, as `dim`, `label` and the number of series using it.
 changing `consistency_rules.R` gives the same specs from the same rules. It overwrites
 the live specs. Hand edits made to the live specs since then must be repeated here
 first, or they are lost. The AIHW and RoGS entries are not here: rerun
-`seed_aihw_rogs_specs.R` afterwards to add them back.
+`seed_aihw_rogs_specs.R`, then `seed_national_specs.R`, afterwards to add them back.
 
 After a rerun, stage every sheet to check for contradictions (a `split` that contradicts
 a label stops the build) and for values that have become indistinguishable, before

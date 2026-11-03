@@ -1,0 +1,218 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "218ad64f3104be3ee29503711d4f54abd2780c2bbc2184e496d051ddf3d2d4a8",
+  "sheet": "Table 6.1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Each published topic is a separate block. Indented rows are nested categories; parent rows with values are retained subtotals, not additive independent categories. All total rows are retained as population-labelled tables under their published topic. Mean and median (months) remain published relationship-length labels. Multiple-response rows need not sum to totals. RSE columns retain their compound published measure labels. Symbols including np, na and — remain values.",
+  "new_dimensions": [
+    {
+      "name": "violence_during_pregnancy",
+      "description": "Whether partner violence occurred during pregnancy and whether it first occurred then."
+    },
+    {
+      "name": "partner_violence_topic",
+      "description": "Published question or topic defining a block of partner violence statistics."
+    },
+    {
+      "name": "child_witness_to_partner_violence",
+      "description": "Whether children saw or heard partner violence."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A19:A24"
+    }
+  ],
+  "tables": [
+    {
+      "name": "violence_during_pregnancy_6",
+      "range": "A7:C9",
+      "values_range": "B7:C9",
+      "meta_data": [
+        {
+          "name": "partner_violence_topic",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "violence_during_pregnancy",
+          "caption": "Whether violence by partner occurred during pregnancy",
+          "direction": "W",
+          "cells": "A7:A9"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "violence_during_pregnancy_6_total",
+      "range": "A11:C11",
+      "values_range": "B11:C11",
+      "meta_data": [
+        {
+          "name": "partner_violence_topic",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "caption": "Whether violence by partner occurred during pregnancy",
+          "direction": "W",
+          "cells": "A11"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "child_witness_to_partner_violence_13",
+      "range": "A14:C15",
+      "values_range": "B14:C15",
+      "meta_data": [
+        {
+          "name": "partner_violence_topic",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "child_witness_to_partner_violence",
+          "caption": "Whether violence by partner ever seen or heard by children",
+          "direction": "W",
+          "cells": "A14:A15"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "child_witness_to_partner_violence_13_total",
+      "range": "A17:C17",
+      "values_range": "B17:C17",
+      "meta_data": [
+        {
+          "name": "partner_violence_topic",
+          "cells": "A13"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "caption": "Whether violence by partner ever seen or heard by children",
+          "direction": "W",
+          "cells": "A17"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:12:11Z",
+    "tool_version": "0.2.0",
+    "records": 14,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080939Z-d9815cab076a",
+    "started_at": "2026-11-03T08:09:40Z",
+    "workbook": "d9815cab076a1c17c7eba831795245ad97dd7992769c65f3fa3f6432bc4c1d7a--Women-s-experiences-of-partner-violence-Tables-5-to-19-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-f1ba-77ac-8840-eb73ab25df1b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "eb7e34f003fe2b89ff3ffec803ee8aaf14f8bf51cf60ece93a82ed170c61c2a7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d9815cab076a1c17c7eba831795245ad97dd7992769c65f3fa3f6432bc4c1d7a--Women-s-experiences-of-partner-violence-Tables-5-to-19-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 31 of 31\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 7de53315f2299c8e254df577d223e3b633d86a36c1b0681f3d7843e75e1442b1 | missing |\n| \"Table 5.1\" | db2b1159bf224ed33132c9d80aefb1391a9a11fb8584e6f53339f88e576b4abf | missing |\n| \"Table 5.2\" | 0258a35d1a512dcd412c0e6f5dab897e78c92b2490b1f1e1ee1f1eedae3812ab | missing |\n| \"Table 6.1\" | 218ad64f3104be3ee29503711d4f54abd2780c2bbc2184e496d051ddf3d2d4a8 | missing |\n| \"Table 6.2\" | b30d718c787bf980401ff8ecf9ba4e12ed3698f746b3b930b3d29225b4c3585c | missing |\n| \"Table 7.1\" | 58f3cfb526a252bc19714a382782757de74f51c088870adcbaa2d545cb1aef1d | missing |\n| \"Table 7.2\" | a8e5ddd7bb031d8af74377dd061821ac40d937a079c5211a600a87c3287f07f1 | missing |\n| \"Table 8.1\" | 3bb028644a21c976cc6fffbd964707cf3905c9889e8f954ecd68bd0a700e5e0e | missing |\n| \"Table 8.2\" | d5ace4677f281591a1cdd279e8194f1c5a18c62e1f0d30a3dce637a50d0fb298 | missing |\n| \"Table 9.1\" | 3d260ae75ef89bf2aa655db078259785bc30097b9041c0a5a6aa7a37b3f25cf8 | missing |\n| \"Table 9.2\" | 0a34ed09c4d24a7e14ba2c465f25386252046a53a43eaa1d64dc7372f98f4d9b | missing |\n| \"Table 10.1\" | b5d8ce57c1c8aa0e745b402ac725db51482f786954b5b2a9e6415c900b813b9c | missing |\n| \"Table 10.2\" | c2b60eed24066c9337a4cc5b11838546e2a594d1727233631402bed6b5b5940f | missing |\n| \"Table 11.1\" | 564cb2c69a66bbf875b298c8021d040c72c64551592824f98e248a0dd18492ea | missing |\n| \"Table 11.2\" | a8b17e7ee8bf117a8d2ec7ad05df36ee6096db28b78c48e7e4179c1df7646185 | missing |\n| \"Table 12.1\" | 1a275497eb2bab58276213ecb40d41f0920e9f0d07ec0ce48447f960f1f15939 | missing |\n| \"Table 12.2\" | 475682c156f6dfc77c5ab2f49c8e108cc54ae40aff66426d27f3b52c620d2a70 | missing |\n| \"Table 13.1\" | b44cac231660b608b9b27fe014b02bc8d828908d6362124d4d1ceb17efdd762b | missing |\n| \"Table 13.2\" | 82d0204ce37cea266419c90ab4304d25d549de8115bd29e9e36d8fbcaee4af88 | missing |\n| \"Table 14.1\" | 5df98eca8d312d23f68142721a34785a2c3d074119ce855fd81508dab5f01b44 | missing |\n| \"Table 14.2\" | 6605f28441eaa3b869072abe52045f58fea998c72e8c671a096b9c33b9ecbc49 | missing |\n| \"Table 15.1\" | e5884da84aace7fedd89fa10f58150a24105bd46f6399fbd166ec67c986d3649 | missing |\n| \"Table 15.2\" | 4f5ecd5338518d8fee86df28f579e7514b4d1211c5e6a058cf275be667f332c9 | missing |\n| \"Table 16.1\" | 70ce2fd4c5de3937b510bf0a44aa0cbf8d7c9f57799e0c57216e385cb3cb3368 | missing |\n| \"Table 16.2\" | 846b710b29ce87a459284a04d737846e1aa96f2afe2dfd3e9f9d3637922a26ac | missing |\n| \"Table 17.1\" | f9e2a0d75db73668e69d262c020965d5430fe231d3f9afc5c3b23ade258958c0 | missing |\n| \"Table 17.2\" | 329f4f9f60209b59479a3c6b702c417a84f0bb50ea824df8813db2fb45f9f6ad | missing |\n| \"Table 18.1\" | 365a4af20df253ab7f00a5673fa1f1576df5dfbd7edff6a0ffadeb6d7661acff | missing |\n| \"Table 18.2\" | 0060737d4e207482ef287d319734c8ca36a7c66cf1a881b6b408ef1074f894d8 | missing |\n| \"Table 19.1\" | cbef6fa096d7527ee416025b20e099afabb3a21dc71f744c8f12877f3dabeb67 | missing |\n| \"Table 19.2\" | 73f30aaac8aa22712b6cfccbbf88702e7728d976be9c76b00e2db6e0b72a2063 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080939Z-d9815cab076a.jsonl"
+  }
+}

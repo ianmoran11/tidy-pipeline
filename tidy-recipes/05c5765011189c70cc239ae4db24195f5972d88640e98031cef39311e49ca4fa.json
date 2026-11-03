@@ -1,0 +1,181 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "05c5765011189c70cc239ae4db24195f5972d88640e98031cef39311e49ca4fa",
+  "sheet": "Table S42",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Three published blocks retained, including Total (which may include unknown status/sex). Age, population and detention scope are specified in the table title. All suppression and unavailable-value symbols preserved; rates are per 10,000 relevant population where indicated. See published notes for age-law changes and data-quality caveats.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A3,B3"
+    },
+    {
+      "name": "notes",
+      "cells": "A55,A56,A57,A58,A59,A60,A61"
+    },
+    {
+      "name": "source",
+      "cells": "A63"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A4:M20",
+      "values_range": "D4:M20",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Quarter",
+          "direction": "W",
+          "cells": "B4:B20"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D3:M3"
+        }
+      ]
+    },
+    {
+      "name": "block_2",
+      "range": "A21:M37",
+      "values_range": "D21:M37",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A21"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Quarter",
+          "direction": "W",
+          "cells": "B21:B37"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D3:M3"
+        }
+      ]
+    },
+    {
+      "name": "block_3",
+      "range": "A38:M54",
+      "values_range": "D38:M54",
+      "meta_data": [
+        {
+          "name": "sex",
+          "cells": "A38"
+        }
+      ],
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Quarter",
+          "direction": "W",
+          "cells": "B38:B54"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "D3:M3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:08:05Z",
+    "tool_version": "0.2.0",
+    "records": 510,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080456Z-c80fb03d1ad4",
+    "started_at": "2026-11-03T08:04:59Z",
+    "workbook": "c80fb03d1ad426e57a29e2e4ad23461393568b231e68602bbe5df1680f141114--aihw-juv_147_supplementary-tables-youth-detention-population-in-australia-2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a070-a945-7093-b645-644809e49049",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9700e018531d859f08a5a6c4dbb5622547cd17257b9c5706c7b883d5c4abfece",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c80fb03d1ad426e57a29e2e4ad23461393568b231e68602bbe5df1680f141114--aihw-juv_147_supplementary-tables-youth-detention-population-in-australia-2025.xlsx`.\n\n- Publication: Youth detention population in Australia (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 57 of 57\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 829cd0fb19a77a47d4b6d74f137bfd12ddf264dd40c4592c8cd2a1f1e0e591e1 | missing |\n| \"Notes and symbols\" | dacdd6e322cc5f5864f01516f77207fb2ce76d0858f2fe97c3946f90022e304e | missing |\n| \"Table S1\" | fec9110ae524a3a8dcb7fbe2b3dd6deef2ed222b91a2690b7f4fcc255065e224 | missing |\n| \"Table S2\" | a8e01f8dd38939fd10c8b2754d35599cd6108c9c9c33abf613f4effa24e75ee6 | missing |\n| \"Table S3\" | a6297a4a7f7174af896e833d6309549a82f1b70e118584c4ad6d6558c27a7a2f | missing |\n| \"Table S4\" | 888ec3ab80e840e22c870bb711b23c87b11ddc31c25ddd8660f48a4102549a5e | missing |\n| \"Table S5\" | d0e008c3c8af2d95301c80adb3e4a4bd0b66fad0d207ac708609acbd4fb84875 | missing |\n| \"Table S6\" | e59d8e4f66c81cd7483fcfb2090314f9a245b028966b849bdf5110c505c39ea9 | missing |\n| \"Table S7\" | b48deaa11c6cf0983e680e76ee428061456446b2fc3b204c99dfe7c40e9a18e9 | missing |\n| \"Table S8\" | 0c142b96cc48b9977f27c25b46152a70aa8142b25e003013cd3faee5438b515d | missing |\n| \"Table S9\" | eee54c6c79f170aeaf924fa8e66b84430c5fd4378d17f4a2dd8444fc4bcffae1 | missing |\n| \"Table S10\" | 3714a9baaae32693c005eed7ef684dd75763bf3a80384d394eaeb9aa72f78852 | missing |\n| \"Table S11\" | e828ce47d3dd991ffca5a421ff3d7f2d8d9a7eca1c463cdefae6a614595df689 | missing |\n| \"Table S12\" | 81f4d9752bf24fe2f92e2e23992d3bb7c920d51b85e05d6f6d90f53fd30f3bb5 | missing |\n| \"Table S13\" | 075c21c7966ce2349ea3f08b8aa5d096187aeb5205180fbe6e108d225cec3189 | missing |\n| \"Table S14\" | aa0e128a6f2b590037c2fb4fbe94c821007d4d95ee957547764aeacb4c5f45b4 | missing |\n| \"Table S15\" | 0d582fdd8805f8b6964c8810c17e285a1ad35d33f2205d11e4bf07c84b45c88e | missing |\n| \"Table S16 \" | be06452378507b9f4900b25170cb883a02d2309b235a3b20e879dac2bf89bb0d | missing |\n| \"Table S17\" | fa59ee71621f41846c66d9b7ac18b1659689043890dccf992da9019c0b3ebc0c | missing |\n| \"Table S18\" | d147d9995e6aca1781d4c3adcb2ed3a8496d3707cb78480c9fc6437dda6bd867 | missing |\n| \"Table S19\" | 1ffbe12c0158badc7eac021362bdd9b45b6673b2ad42f3566e63f41a6f368697 | missing |\n| \"Table S20\" | c6edc7ba0650fae942891414f0f150bedd60c8a4f99b99a59f21ab379468e990 | missing |\n| \"Table S21\" | 3c108c773439e3da749e7bed2a912396a2a19883415ce731ca783f32936c1163 | missing |\n| \"Table S22\" | 40df6885cac165dd77ea62b3a9366aa968f40910e21a21d98daf56361dd581cb | missing |\n| \"Table S23\" | b8c8d7a9d433941179c09c06ec73b5c4ffe4f5fda96a08cbc6b13ee082f52c6f | missing |\n| \"Table S24\" | 00948154d9a9fb625fd11cd45e2ed9f86b1e7efd9f024da8204bca9289028caf | missing |\n| \"Table S25\" | 3e2fb7323343c01fb4c10bdc855f43110849b4b2cfd4f79d36d108b4a2ed9752 | missing |\n| \"Table S26\" | 86c26c6c349cc43ab593f0427c48c081532b65da7a4c2b8aaa53c5a999e58ab8 | missing |\n| \"Table S27\" | 6f933214225799bd48e1b6da62dff3d55d24c04498932ee07492194d5910ed6f | missing |\n| \"Table S28\" | a13c75435402c1c36b06e375087a9c2e201e9690a6990f3b7fb7f2b176b9a7ef | missing |\n| \"Table S29\" | da9566b2bd90476162ef9639f4960687555d37b4223125013062311ddf13b386 | missing |\n| \"Table S30\" | 2cefa39fed71db7464c5833e519b41b57b1305f73f70fd4bdd524ac001e03f27 | missing |\n| \"Table S31\" | 179b8b4551d2ba8652630fbe02ab3473414dfd6e6ccb94369cfd28f2212d6f82 | missing |\n| \"Table S32\" | c7f7210831cf53ea4984609cbb2d6ba775d69541390c4dfc7be615d4b3456102 | missing |\n| \"Table S33\" | f3c5a511f908a3f6953699fa4439af4cae390fe626abe804f1e1aa4eff585489 | missing |\n| \"Table S34\" | 6ae2100870c5ecfa5339a18d61729b6dc63f7eea6e98a136c0de15e549a409bd | missing |\n| \"Table S35\" | bc4be5d8ea95fc85fe03ef8f4833227b0a450aed33433c56b45cfdb9ae1cc0d6 | missing |\n| \"Table S36\" | efc8af564b3b3d79d7f54ace48d0bfce4607ac69d4ee53d05a7bb0239a91abe0 | missing |\n| \"Table S37\" | 7939722cb465b44796894623ebe86bbf48deeddce8669c927c5eb23881c75b33 | missing |\n| \"Table S38\" | 1af6a1f926c2a2f7f208918c223739ec81a9118cdde38cb775338740363de0bd | missing |\n| \"Table S39\" | 916dc24550f5550b222a94deeff9c67b915b4b43720289d20e967cff86a6f4a0 | missing |\n| \"Table S40\" | c4141445c5f9ab87f0753d5715594f52cb94c7b59e1b61307de2f24299bb2ae2 | missing |\n| \"Table S41\" | b952f8fbe888590548a01b294a2c70a1b8498bffb826c63c6664221969b779e7 | missing |\n| \"Table S42\" | 05c5765011189c70cc239ae4db24195f5972d88640e98031cef39311e49ca4fa | missing |\n| \"Table S43\" | baff6d6119f6acf223de4dd2a3c07762d346fb5ee9c3f022b38ba4c25254bfc4 | missing |\n| \"Table S44\" | 8dcabe0e632ab7596076cd46dabd530084a0e22262eb7c8d2ccec91de3b3193c | missing |\n| \"Table S45\" | ad7509106bb6be6f56dc0a55bb198645b03315ebec5679169e39ce5aaf9711a4 | missing |\n| \"Table S46\" | 92e4ee1d5247c9970ed1216af7c1c74c7a2cdfd863d2357f833c446c74cbbba9 | missing |\n| \"Table S47\" | 623f0ea0dbd30962bdd5091cfa859bd9f270245f664de419e216109bce419020 | missing |\n| \"Table S48\" | ea847098762211fda86cf8ff1703cb15990802e09f14f11c25996fe3c8b465ca | missing |\n| \"Table S49\" | d01e669a9d339b5d807816c1d2f418a62a2a8c523d3ab78d31d87792b307bbd1 | missing |\n| \"Table S50\" | 5aae195da71796de7a4a799f1cf41e49f3daaeb1a7d219404bc1ffd9b4f5e487 | missing |\n| \"Table S51\" | 1fdf0a5c7626c242664b04abdd55c3f128b03ea2209dbe2cb6180cf467739afd | missing |\n| \"Table S52\" | 6e0e01632d86473ebe3176e1b839610d0a6b0e9070038ddca36f1fd0c1c02ea3 | missing |\n| \"Table S53\" | 85b2933055b09d28fb7d6737a9a50de136a195bd476a56475f2396a57350201f | missing |\n| \"Table S54 \" | f5285869e33e9f283f7ff81b2b8ec3512c880961a8e21959efc3a918aac55d52 | missing |\n| \"Table S55\" | 879cff0c9d5979d6b97656410d257c993858dc59803f23453ee13bf9be3e7eda | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080456Z-c80fb03d1ad4.jsonl"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e14de8002d7991647568613c059dbfc59fa2d98433061f3b44a4849cc6705d49",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Workbook contents listing table numbers and descriptions, not statistical observations.",
+  "agent_notes": "Contents only: B7:B12 are numeric table identifiers (2.1 through 4.2), not observations. The numeric-cell guard incorrectly flags these despite their inclusion in annotations. Keep contents classification; human review needed for this guard.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "B5"
+    },
+    {
+      "name": "annotations",
+      "cells": "B7:C12"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T08:11:09Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 6 numeric cells, e.g. B7, B8, B9, B10, B11"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080935Z-a236e928acd1",
+    "started_at": "2026-11-03T08:09:36Z",
+    "workbook": "a236e928acd13c7b840e58e9676d5bca7c748c64df2da6d8629303342d2bee1c--Women-s-experiences-of-partner-violence-and-abuse-socio-demographic-characteristics-Tables-2-to-4-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-e25f-74de-83a8-9ab75d11d8b0",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a283fce960d1fb48008585289aa06ecb87dff37e358914264513e18006ca7626",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a236e928acd13c7b840e58e9676d5bca7c748c64df2da6d8629303342d2bee1c--Women-s-experiences-of-partner-violence-and-abuse-socio-demographic-characteristics-Tables-2-to-4-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e14de8002d7991647568613c059dbfc59fa2d98433061f3b44a4849cc6705d49 | missing |\n| \"Table 2.1\" | ea196c6152570c9d6d7912f38aec579c2d471a9c2fe308e62caff3bfbdc91ebb | missing |\n| \"Table 2.2\" | 465aeccff4608e3e1b292cd50cfdf5e3ec857ab5db42d76af9c4f13054b390a0 | missing |\n| \"Table 3.1\" | 08a8437d744127880a9296b203f9e4f9dc2c30481c058415d5d40d6cb9800f39 | missing |\n| \"Table 3.2\" | d51d77c6895fede71304b16eda682f812ca35bcd327e67cc1d8b577d7fc721f6 | missing |\n| \"Table 4.1\" | e48baa922ac5c0e1cc59f79d407a2030265513969a9e944eecbffeaa1ec81cca | missing |\n| \"Table 4.2\" | 4061d4cfd4a29a3319de06e93f16afd02bc86b6e431b22455c0ba6280f885d26 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080935Z-a236e928acd1.jsonl"
+  }
+}

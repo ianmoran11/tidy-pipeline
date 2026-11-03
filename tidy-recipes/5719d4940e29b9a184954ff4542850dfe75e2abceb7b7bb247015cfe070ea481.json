@@ -1,0 +1,115 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5719d4940e29b9a184954ff4542850dfe75e2abceb7b7bb247015cfe070ea481",
+  "sheet": "Guide to finding data",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Navigation matrix identifying table and data cube numbers and available topics; no statistical data table.",
+  "agent_notes": "Numbers in A6:B32 identify tables and data cubes, not statistical observations. The yes/dash matrix is a finding aid.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "release",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A33:A34"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T08:07:44Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 54 numeric cells, e.g. A6, B6, A7, B7, A8"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080641Z-2b46994eaa6c",
+    "started_at": "2026-11-03T08:06:42Z",
+    "workbook": "2b46994eaa6c006247f4c4ae9dbeb68b178ec2c0303b341ecae15ae810dba34a--Guide-to-finding-data-in-the-Corrective-Services-Australia-publication-tables-June-quarter-2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a072-3714-7732-97c9-1706123049cb",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ff02639257123f6f443e557f9186fc2b5f063375ada7af700421ba1f9a856c47",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2b46994eaa6c006247f4c4ae9dbeb68b178ec2c0303b341ecae15ae810dba34a--Guide-to-finding-data-in-the-Corrective-Services-Australia-publication-tables-June-quarter-2026.xlsx`.\n\n- Publication: Corrective Services, Australia (Australian Bureau of Statistics)\n- Release or year: June Quarter 2026\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Guide to finding data\" | 5719d4940e29b9a184954ff4542850dfe75e2abceb7b7bb247015cfe070ea481 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080641Z-2b46994eaa6c.jsonl"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b0675b09070dc0fb8fbe051f9ee277123147951ebb6635d56bf4e1ca393b7382",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Contents listing table numbers and descriptions; no statistical data.",
+  "agent_notes": "Contents only. B7:B10 contain table identifiers 22.1, 22.2, 23.1 and 23.2, not statistical observations. The numeric-cell guard flags these identifiers; retain the correct contents classification for human review.",
+  "validation": {
+    "checked_at": "2026-11-03T08:09:31Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 4 numeric cells, e.g. B7, B8, B9, B10"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080817Z-1499337e4c4e",
+    "started_at": "2026-11-03T08:08:18Z",
+    "workbook": "1499337e4c4eaa6068d7ad2cc33ff23dc045ac81cbc95f6c31fcf49a96e863f3--Women-s-experiences-of-partner-economic-abuse-Tables-22-to-23-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a073-b166-70da-a6de-49e166160633",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "aea9b4dabfe393d0be2c95f1c397c6567f6dae0c726c8bafc000b4f8da4584d3",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1499337e4c4eaa6068d7ad2cc33ff23dc045ac81cbc95f6c31fcf49a96e863f3--Women-s-experiences-of-partner-economic-abuse-Tables-22-to-23-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | b0675b09070dc0fb8fbe051f9ee277123147951ebb6635d56bf4e1ca393b7382 | missing |\n| \"Table 22.1\" | a5aedc2bd88e5d2cb37408203e4d82922cbe9856f64386ae42b3db9094fb6b6b | missing |\n| \"Table 22.2\" | 60061c75f38f621960661324afd0119a8665f059bc1bbdc8540011ced6a84d08 | missing |\n| \"Table 23.1\" | 471fa9bcd5a8961700e7710673ebb0a33da0551a2213e58d75a4960954e8d45a | missing |\n| \"Table 23.2\" | 1f598cf32eb49a1c1f24b66e4dba371fb35b32c61ff8a13ec014a0bec3685435 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080817Z-1499337e4c4e.jsonl"
+  }
+}

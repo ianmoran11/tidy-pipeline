@@ -1,0 +1,105 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a3ef4bb305ebd6615667da1756a23134d6d161ef9e1cabc9558b6ca7b4ebdeb5",
+  "sheet": "Scams",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Data-item codebook for Scams: variable labels, category codes, populations and variable names; no statistical estimates or observations.",
+  "agent_notes": "This is a data-item codebook, not a statistical table. Numeric cells are category codes, sentinel codes or category labels (including years), not estimates. Retain notes classification; the numeric-cell guard requires human review where triggered.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "sheet_description",
+      "cells": "A1"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A4"
+    }
+  ],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T08:11:41Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T081017Z-7631fe2bebf0",
+    "started_at": "2026-11-03T08:10:18Z",
+    "workbook": "7631fe2bebf026a74cd8678ea1ff683c7e56afab5f756b8c009ca480c558f3de--Data-item-list.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a075-862f-7390-8bac-684b261b6eff",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "25a2830c5ca08e24a81cf595e431a55b9ede6122e516d1a8d3c8317900c29743",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `7631fe2bebf026a74cd8678ea1ff683c7e56afab5f756b8c009ca480c558f3de--Data-item-list.xlsx`.\n\n- Publication: Personal Fraud (Australian Bureau of Statistics)\n- Release or year: 2024-25\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 1624b934193bf3aaffdcd45115ac3d1496c2bf4968938b75e1f56f6c2a7bbc70 | missing |\n| \"Demographics\" | 7f014da690e77ffd109035ba961b022d8fd2ad98d61a702d30ec4fe3589e666f | missing |\n| \"Geography\" | 6556eb8427ba39229fa5497e82d6ffd3d40186820bc7e13b794545b211373002 | missing |\n| \"Labour force characteristics\" | c9eeea8732e1d193b74c5613bf7d55c7e8094532ac76b3a29e8bd8a2fc9b1e7b | missing |\n| \"Education\" | d4b36c232e93d302c44ac449de0eb271ddc4842b5b63619fd8480e9cf7d6061a | missing |\n| \"Income\" | dc976e876c96d7a809d115878c3ea2757f908a4d3e3c5ba7e8d4f981f39734c7 | missing |\n| \"Total fraud\" | 443f5ec772a99f2e0096eeeda39d717db0ff096ea20c17bd697c697fd9357583 | missing |\n| \"Card fraud\" | 737acd8ff4339ec5143a7aae52cddb7288777089a5b5b9c52ce81cc06646ee9a | missing |\n| \"Identity fraud\" | 1179ee897361a92f21ff41c506a7caaab02e755a9be1ad1b6d32459b8001e98a | missing |\n| \"Scams\" | a3ef4bb305ebd6615667da1756a23134d6d161ef9e1cabc9558b6ca7b4ebdeb5 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T081017Z-7631fe2bebf0.jsonl"
+  }
+}

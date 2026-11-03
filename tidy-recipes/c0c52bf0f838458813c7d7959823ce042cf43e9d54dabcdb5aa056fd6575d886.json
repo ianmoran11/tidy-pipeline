@@ -1,0 +1,276 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c0c52bf0f838458813c7d7959823ce042cf43e9d54dabcdb5aa056fd6575d886",
+  "sheet": "Table S13",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Six- and twelve-month return counts are cumulative, not disjoint. Denominators are separate measures. Published totals retained.",
+  "new_dimensions": [
+    {
+      "name": "supervision_return_window",
+      "description": "Cumulative follow-up window for return to sentenced youth justice supervision.",
+      "example_labels": [
+        "6 months",
+        "12 months"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A10:A12"
+    },
+    {
+      "name": "source",
+      "cells": "A14"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A3"
+    }
+  ],
+  "tables": [
+    {
+      "name": "B_6_den",
+      "range": "A6:B9",
+      "values_range": "B6:B9",
+      "headers": [
+        {
+          "name": "supervision_duration",
+          "cells": "A6:A9",
+          "direction": "W",
+          "caption": "Length of index sentence"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "supervision_type",
+          "cells": "B3"
+        },
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ]
+    },
+    {
+      "name": "B_6_D",
+      "range": "D6:E9",
+      "values_range": "D6:E9",
+      "headers": [
+        {
+          "name": "supervision_duration",
+          "cells": "A6:A9",
+          "direction": "W",
+          "caption": "Length of index sentence"
+        },
+        {
+          "name": "measure",
+          "cells": "D5:E5",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "supervision_type",
+          "cells": "B3"
+        },
+        {
+          "name": "supervision_return_window",
+          "cells": "D4"
+        }
+      ]
+    },
+    {
+      "name": "B_6_G",
+      "range": "G6:H9",
+      "values_range": "G6:H9",
+      "headers": [
+        {
+          "name": "supervision_duration",
+          "cells": "A6:A9",
+          "direction": "W",
+          "caption": "Length of index sentence"
+        },
+        {
+          "name": "measure",
+          "cells": "G5:H5",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "supervision_type",
+          "cells": "B3"
+        },
+        {
+          "name": "supervision_return_window",
+          "cells": "G4"
+        }
+      ]
+    },
+    {
+      "name": "I_6_den",
+      "range": "I6:I9",
+      "values_range": "I6:I9",
+      "headers": [
+        {
+          "name": "supervision_duration",
+          "cells": "A6:A9",
+          "direction": "W",
+          "caption": "Length of index sentence"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "supervision_type",
+          "cells": "I3"
+        },
+        {
+          "name": "measure",
+          "cells": "I4"
+        }
+      ]
+    },
+    {
+      "name": "I_6_K",
+      "range": "K6:L9",
+      "values_range": "K6:L9",
+      "headers": [
+        {
+          "name": "supervision_duration",
+          "cells": "A6:A9",
+          "direction": "W",
+          "caption": "Length of index sentence"
+        },
+        {
+          "name": "measure",
+          "cells": "K5:L5",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "supervision_type",
+          "cells": "I3"
+        },
+        {
+          "name": "supervision_return_window",
+          "cells": "K4"
+        }
+      ]
+    },
+    {
+      "name": "I_6_N",
+      "range": "N6:O9",
+      "values_range": "N6:O9",
+      "headers": [
+        {
+          "name": "supervision_duration",
+          "cells": "A6:A9",
+          "direction": "W",
+          "caption": "Length of index sentence"
+        },
+        {
+          "name": "measure",
+          "cells": "N5:O5",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "supervision_type",
+          "cells": "I3"
+        },
+        {
+          "name": "supervision_return_window",
+          "cells": "N4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:06:21Z",
+    "tool_version": "0.2.0",
+    "records": 40,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080342Z-c3195c25a908",
+    "started_at": "2026-11-03T08:03:46Z",
+    "workbook": "c3195c25a9087dd1e3dd44644125456f3e777ea6605d69e6dbff2ad4a5397f9b--aihw-juv-146-supplementary-tables-young-people-returning-to-sentenced-youth-justice-supervision-2023-24.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06f-8cb8-7612-a019-bdec23d60608",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "57c404725fc5ee7d0fbb4530b269707eac14beacebd7a356031fdbec9102cfbe",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c3195c25a9087dd1e3dd44644125456f3e777ea6605d69e6dbff2ad4a5397f9b--aihw-juv-146-supplementary-tables-young-people-returning-to-sentenced-youth-justice-supervision-2023-24.xlsx`.\n\n- Publication: Young people returning to sentenced youth justice supervision (Australian Institute of Health and Welfare)\n- Release or year: 2023-24\n- Sheets needing a recipe: 21 of 21\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 2fa619a1bdd230d637eebb5e7b6fdca15c5cb853c4035a9c6dc5f163c8527670 | missing |\n| \"Notes and symbols\" | fc7ceb87c776aa3b54e60293e45e906a018548c4b6acc4f9dfac10e34994fb9e | missing |\n| \"Table S1\" | 0d81c34c6c94482e429c117ffe5d7b8c07f7428bf68f42809345034f002698f8 | missing |\n| \"Table S2\" | 7de8477acfff787c57f3c4de41813cf7085161d4f6c5da9819e982edbf37b114 | missing |\n| \"Table S2a\" | 500e33c38a4e7b73714695e01fe93deaaf6594bd26e42894f4271022db483c30 | missing |\n| \"Table S3\" | bc121ece3a48d9572c1ff94e5834414a3c68dd916f4e1937187c47fb1f8b097b | missing |\n| \"Table 3a\" | 7bfb48ff7d400775337d1aa7623ec9936a0d41f038614d38a799d919edde7362 | missing |\n| \"Table S4\" | fbb8aca9cc1863898bef5ab051e953ae92ab38280fcf158518d5a394e97edeeb | missing |\n| \"Table S5\" | fcd95f939cf9b2462e549cc7c309b246f21088a81883c2a85b76d203e0a9b0b8 | missing |\n| \"Table S6\" | 5092c16e565ff874fb33e8828949bb0bb0194fea3065f1bd7ed798f87a8abcbc | missing |\n| \"Table S7\" | f385eb4edbbcb0db2ef8d0ba93f479fc0cb86835804d5140e9d056384f6c48dc | missing |\n| \"Table S8\" | 1ab99b33a6178da151f1aa0e4a13f04eed856b336449c71e91cfff24ef961add | missing |\n| \"Table S9\" | 37accb3323428df530df8398dd7e6a75931d108688cc733b076b12a305461dce | missing |\n| \"Table S10\" | fa264b9c078225a8b8914a90237cdf455f901cd848dbfdae6516bcbc67767dc3 | missing |\n| \"Table S11\" | a012bd2ceb2e19b020b2cdfa625b0444129d726012ffd8795acf16d6b6adcea1 | missing |\n| \"Table S12\" | 6ca0358539e5eedb3c2cf999868a94e476b07617a95c4874516ffe8f73f85c01 | missing |\n| \"Table S13\" | c0c52bf0f838458813c7d7959823ce042cf43e9d54dabcdb5aa056fd6575d886 | missing |\n| \"Table S14\" | 1338450845708c3eeb5f628e232749f5be09f78c1067215481c41645180032be | missing |\n| \"Table S15\" | 8196187b7f2435837544301a4dd99228668c3821c38573aa58bb4c8ea584f30f | missing |\n| \"Table S16\" | 06ffab064d1c7ec81947ce05c35813d8c8a1057e5b4f11beee5f238b1215a03f | missing |\n| \"Table S17\" | dcc7c9b372c4966fed4daa4d98e2be368c6979b8aa5a5defedb42a5cacb5f0bc | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080342Z-c3195c25a908.jsonl"
+  }
+}

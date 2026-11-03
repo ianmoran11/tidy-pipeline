@@ -1,0 +1,667 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "4061d4cfd4a29a3319de06e93f16afd02bc86b6e431b22455c0ba6280f885d26",
+  "sheet": "Table 4.2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Nested age bands, disability types, family composition, tenure, study and birthplace retain published parent/subtotal rows and all children in the same dimension. Categories overlap; do not sum parent and child rows. Total retained separately. Published footnote markers, including any mismatches on RSE sheets, are preserved. RSE headings distinguish error of estimate from error of proportion.",
+  "new_dimensions": [
+    {
+      "name": "sexual_orientation",
+      "description": "Sexual orientation of the woman."
+    },
+    {
+      "name": "disability_severity",
+      "description": "Severity of disability or restriction."
+    },
+    {
+      "name": "family_composition",
+      "description": "Family composition and household type, including nested family categories."
+    },
+    {
+      "name": "study_status",
+      "description": "Current study status including full-time and part-time study."
+    },
+    {
+      "name": "first_language",
+      "description": "First language spoken as a child."
+    },
+    {
+      "name": "home_language",
+      "description": "Main language spoken at home."
+    },
+    {
+      "name": "housing_tenure",
+      "description": "Tenure type of the household dwelling."
+    },
+    {
+      "name": "housing_suitability",
+      "description": "Housing suitability by bedrooms required or spare."
+    },
+    {
+      "name": "household_cash_flow_status",
+      "description": "Whether the household had cash flow problems in the last 12 months."
+    },
+    {
+      "name": "emergency_funds_capacity",
+      "description": "Whether the household could raise $2,000 for an emergency within a week."
+    },
+    {
+      "name": "life_satisfaction",
+      "description": "Overall life satisfaction score band."
+    },
+    {
+      "name": "self_assessed_health",
+      "description": "Self-assessed health status."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A18,A22,A32,A38,A52,A57,A63,A69,A75,A79,A83,A89,A94,A98,A103,A107,A111,A116,A121,A128"
+    },
+    {
+      "name": "notes",
+      "cells": "A137,A138,A139,A140,A141,A142,A143,A144,A145,A146,A147,A148,A149,A150,A151,A152,A153,A154,A155"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group",
+      "range": "A8:E16",
+      "values_range": "B8:E16",
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A8:A16",
+          "caption": "Age"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "sexual_orientation",
+      "range": "A19:E20",
+      "values_range": "B19:E20",
+      "headers": [
+        {
+          "name": "sexual_orientation",
+          "direction": "W",
+          "cells": "A19:A20",
+          "caption": "Sexual orientation"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "disability_status",
+      "range": "A23:E30",
+      "values_range": "B23:E30",
+      "headers": [
+        {
+          "name": "disability_status",
+          "direction": "W",
+          "cells": "A23:A30",
+          "caption": "Disability status(d)"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "disability_severity",
+      "range": "A33:E36",
+      "values_range": "B33:E36",
+      "headers": [
+        {
+          "name": "disability_severity",
+          "direction": "W",
+          "cells": "A33:A36",
+          "caption": "Disability severity"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "family_composition",
+      "range": "A39:E50",
+      "values_range": "B39:E50",
+      "headers": [
+        {
+          "name": "family_composition",
+          "direction": "W",
+          "cells": "A39:A50",
+          "caption": "Family composition"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status",
+      "range": "A53:E55",
+      "values_range": "B53:E55",
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A53:A55",
+          "caption": "Labour force status"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "study_status",
+      "range": "A58:E61",
+      "values_range": "B58:E61",
+      "headers": [
+        {
+          "name": "study_status",
+          "direction": "W",
+          "cells": "A58:A61",
+          "caption": "Current study status"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification",
+      "range": "A64:E67",
+      "values_range": "B64:E67",
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A64:A67",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth",
+      "range": "A70:E73",
+      "values_range": "B70:E73",
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A70:A73",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "first_language",
+      "range": "A76:E77",
+      "values_range": "B76:E77",
+      "headers": [
+        {
+          "name": "first_language",
+          "direction": "W",
+          "cells": "A76:A77",
+          "caption": "First language spoken as a child"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "home_language",
+      "range": "A80:E81",
+      "values_range": "B80:E81",
+      "headers": [
+        {
+          "name": "home_language",
+          "direction": "W",
+          "cells": "A80:A81",
+          "caption": "Main language spoken at home"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "housing_tenure",
+      "range": "A84:E87",
+      "values_range": "B84:E87",
+      "headers": [
+        {
+          "name": "housing_tenure",
+          "direction": "W",
+          "cells": "A84:A87",
+          "caption": "Housing – Tenure type"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "housing_suitability",
+      "range": "A90:E92",
+      "values_range": "B90:E92",
+      "headers": [
+        {
+          "name": "housing_suitability",
+          "direction": "W",
+          "cells": "A90:A92",
+          "caption": "Housing suitability(k)"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_area",
+      "range": "A95:E96",
+      "values_range": "B95:E96",
+      "headers": [
+        {
+          "name": "capital_city_area",
+          "direction": "W",
+          "cells": "A95:A96",
+          "caption": "Capital city/Balance of state"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "remoteness_area",
+      "range": "A99:E101",
+      "values_range": "B99:E101",
+      "headers": [
+        {
+          "name": "remoteness_area",
+          "direction": "W",
+          "cells": "A99:A101",
+          "caption": "Remoteness area"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "household_cash_flow_status",
+      "range": "A104:E105",
+      "values_range": "B104:E105",
+      "headers": [
+        {
+          "name": "household_cash_flow_status",
+          "direction": "W",
+          "cells": "A104:A105",
+          "caption": "Whether had household cash flow problems in the last 12 months(l)"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "emergency_funds_capacity",
+      "range": "A108:E109",
+      "values_range": "B108:E109",
+      "headers": [
+        {
+          "name": "emergency_funds_capacity",
+          "direction": "W",
+          "cells": "A108:A109",
+          "caption": "Whether household able to raise $2,000 for an emergency within a week"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "life_satisfaction",
+      "range": "A112:E114",
+      "values_range": "B112:E114",
+      "headers": [
+        {
+          "name": "life_satisfaction",
+          "direction": "W",
+          "cells": "A112:A114",
+          "caption": "Overall life satisfaction(m)"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "self_assessed_health",
+      "range": "A117:E119",
+      "values_range": "B117:E119",
+      "headers": [
+        {
+          "name": "self_assessed_health",
+          "direction": "W",
+          "cells": "A117:A119",
+          "caption": "Self-assessed health status"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "household_income_quintile",
+      "range": "A122:E126",
+      "values_range": "B122:E126",
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A122:A126",
+          "caption": "Equivalised household weekly income(n)"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "socioeconomic_area",
+      "range": "A129:E133",
+      "values_range": "B129:E133",
+      "headers": [
+        {
+          "name": "socioeconomic_area",
+          "direction": "W",
+          "cells": "A129:A133",
+          "caption": "Socio-economic index of disadvantage(o)"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A135:E135",
+      "values_range": "B135:E135",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A135:A135"
+        },
+        {
+          "name": "victimisation_status",
+          "direction": "N",
+          "cells": "B5:E5"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:11:13Z",
+    "tool_version": "0.2.0",
+    "records": 348,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080935Z-a236e928acd1",
+    "started_at": "2026-11-03T08:09:36Z",
+    "workbook": "a236e928acd13c7b840e58e9676d5bca7c748c64df2da6d8629303342d2bee1c--Women-s-experiences-of-partner-violence-and-abuse-socio-demographic-characteristics-Tables-2-to-4-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-e25f-74de-83a8-9ab75d11d8b0",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "a283fce960d1fb48008585289aa06ecb87dff37e358914264513e18006ca7626",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a236e928acd13c7b840e58e9676d5bca7c748c64df2da6d8629303342d2bee1c--Women-s-experiences-of-partner-violence-and-abuse-socio-demographic-characteristics-Tables-2-to-4-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e14de8002d7991647568613c059dbfc59fa2d98433061f3b44a4849cc6705d49 | missing |\n| \"Table 2.1\" | ea196c6152570c9d6d7912f38aec579c2d471a9c2fe308e62caff3bfbdc91ebb | missing |\n| \"Table 2.2\" | 465aeccff4608e3e1b292cd50cfdf5e3ec857ab5db42d76af9c4f13054b390a0 | missing |\n| \"Table 3.1\" | 08a8437d744127880a9296b203f9e4f9dc2c30481c058415d5d40d6cb9800f39 | missing |\n| \"Table 3.2\" | d51d77c6895fede71304b16eda682f812ca35bcd327e67cc1d8b577d7fc721f6 | missing |\n| \"Table 4.1\" | e48baa922ac5c0e1cc59f79d407a2030265513969a9e944eecbffeaa1ec81cca | missing |\n| \"Table 4.2\" | 4061d4cfd4a29a3319de06e93f16afd02bc86b6e431b22455c0ba6280f885d26 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080935Z-a236e928acd1.jsonl"
+  }
+}

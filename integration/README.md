@@ -20,7 +20,7 @@ All files are UTF-8 CSV. Missing values are empty fields.
 | Column | Meaning |
 |---|---|
 | `series_id` | The series the value belongs to (`series.csv`) |
-| `period` | Period, with one spelling for each: `2023–24`, `May 2023`, `2014`, `2019–21`. A plain year is a calendar year in Recorded Crime – Victims, and 30 June in Prisoners and child protection |
+| `period` | Period, with one spelling for each: `2023–24`, `May 2023`, `June quarter 2026`, `2014`, `2019–21`. A plain year is a calendar year in Recorded Crime – Victims, RoGS Justice and youth justice, Corrective Services and the Personal Safety surveys, and 30 June in Prisoners, child protection and prison health (`harmonisation/README.md`) |
 | `reference_date` | ISO date the period ends, e.g. `2024-06-30` |
 | `value` | The number, rounded as published. Symbols that mean nil or rounded to zero are `0`; other symbols and blanks are empty |
 | `value_status` | `published`, `blank` (empty cell in the published table), `not_published`, `not_available`, `not_applicable`, `nil_or_rounded_to_zero` |
@@ -47,9 +47,11 @@ A dimension a series doesn't have is empty. Dimension names come from
 `dictionary/dimensions.csv`.
 
 `period_type` is set for periods that aren't a single year: `Pooled 2 years` (`2019–21`
-is 2019–20 and 2020–21 together), `Pooled 3 years`, or `Range of N years` (a change or
-total over a window). These are separate series, so one series has one value per
-`reference_date`.
+is 2019–20 and 2020–21 together), `Pooled 3 years`, `Range of N years` (a change or
+total over a window), `Quarter` (Corrective Services, youth detention) and `Month`
+(Corrective Services). These are separate series, so one series has one value per
+`reference_date`: the December quarter 2025 and the 2025 annual average end on the same
+day.
 
 `measure` says what kind of value it is and `unit` its scale, so a count is `Number` with
 `no.` or `'000`, and a percentage is `Proportion` with `%`. In survey RSE tables

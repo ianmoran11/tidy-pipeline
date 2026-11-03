@@ -1,17 +1,17 @@
-# State at handover (2026-11-02, after adding AIHW and RoGS and removing EEH)
+# State at handover (2026-11-03, after adding the group 2 national publications)
 
 ## Corpus
 
 | | Count |
 |---|---|
-| Workbooks in `source-spreadsheets-xlsx/` (active) | 1,199 (545 from the original package, 654 prepared from the national catalogue) |
+| Workbooks in `source-spreadsheets-xlsx/` (active) | 1,234 (545 from the original package, 689 prepared from the national catalogue) |
 | Archived reference-only copies (`reference-only/`) | 76 (608 sheets) |
-| Sheets in `source_metadata.csv` | 10,902 |
-| Active sheets | 10,294, of which 9,965 are in switched-on releases |
+| Sheets in `source_metadata.csv` | 11,612 |
+| Active sheets | 11,004, of which 10,675 are in switched-on releases |
 
 ## Recipes
 
-10,202 recipe files: 9,965 for the switched-on releases (8,485 data, 987 contents, 493
+10,912 recipe files: 10,675 for the switched-on releases (9,137 data, 1,022 contents, 516
 notes), plus 237 for Employee Earnings and Hours, which is switched off (DECISIONS.md
 32):
 - 3,256 for the original package's active sheets, less the 146 early AIHW and RoGS
@@ -19,12 +19,14 @@ notes), plus 237 for Employee Earnings and Hours, which is switched off (DECISIO
 - 1,953 for the new ABS justice releases (2026-11-01);
 - 3,831 for the two ABS victims publications (2026-11-01/02);
 - 1,324 for AIHW Child protection, AIHW Youth Justice and RoGS Justice (2026-11-02:
-  1,162 new sheets plus the 146 rewritten and 16 pilot sheets redone).
+  1,162 new sheets plus the 146 rewritten and 16 pilot sheets redone);
+- 710 for the 13 group 2 national publications (2026-11-03: 652 data, 35 contents, 23
+  notes).
 
 | Status | Count | Note |
 |---|---|---|
-| validated | 9,416 | |
-| needs_review | 786 | Mostly the validator's false alarm on numbers in contents and notes sheets (ISSUES.md I7); 3 data have isolated numbers outside their tables (I8) |
+| validated | 10,099 | |
+| needs_review | 813 | Mostly the validator's false alarm on numbers in contents and notes sheets (ISSUES.md I7); 3 data have isolated numbers outside their tables (I8); Personal Fraud Table 9b (I37) |
 
 Admitted sheets (switched-on releases) by publication, all with recipes:
 
@@ -38,10 +40,23 @@ Admitted sheets (switched-on releases) by publication, all with recipes:
 | pc-report-on-government-services-justice | 636 |
 | aihw-child-protection-australia | 519 |
 | federal-defendants-australia | 402 |
+| aihw-health-people-australias-prisons | 270 |
 | aihw-youth-justice-australia | 161 |
-| **Total** | **9,965** |
+| partner-violence | 66 |
+| aihw-youth-detention-population-australia | 57 |
+| personal-safety-australia | 52 |
+| pc-rogs-child-protection | 45 |
+| personal-fraud | 37 |
+| corrective-services-australia | 34 |
+| stalking | 33 |
+| pc-rogs-youth-justice | 29 |
+| sexual-violence | 25 |
+| aihw-youth-justice-child-protection | 22 |
+| aihw-young-people-returning-youth-justice | 21 |
+| childhood-abuse | 19 |
+| **Total** | **10,675** |
 
-`agents/queue.csv` (switched-on releases only): 1,154 workbooks, all done.
+`agents/queue.csv` (switched-on releases only): 1,189 workbooks, all done.
 
 The 38 remaining pre-dictionary recipes (EEH and ABS pilot sheets) fail today's
 validator on naming only; `normalise()` maps their names (ISSUES.md I3).
@@ -60,7 +75,9 @@ validator on naming only; `normalise()` maps their names (ISSUES.md I3).
 | Victims publications, the rest | `agents/batch-victims-rest.txt` | 3,592 | 2 h 11 min | $61.28 |
 | AIHW and RoGS, pilot | `agents/batch-aihw-rogs-pilot.txt` | 101 | about 15 min | $1.21 |
 | AIHW and RoGS, the rest | `agents/batch-aihw-rogs-rest.txt` | 1,223 | about 1 h | $15.15 |
-| **All runs** | `agents/runs.csv` | | | **$190.20** (1,198 runs) |
+| National (group 2), pilot | `agents/batch-national-pilot.txt` | 157 | 6 min | $1.89 |
+| National (group 2), the rest | `agents/batch-national-rest.txt` | 553 | 17 min | $5.90 |
+| **All runs** | `agents/runs.csv` | | | **$197.99** (1,233 runs) |
 
 Costs are Pi's estimates at API prices; on the owner's ChatGPT plan they draw on
 subscription allowance instead.
@@ -69,23 +86,25 @@ subscription allowance instead.
 
 | Target | Value |
 |---|---|
-| `data` | 9,965 sheets (every admitted sheet with a recipe) |
+| `data` | 10,675 sheets (every admitted sheet with a recipe) |
 | `data_normalised`, `data_harmonised`, `data_identified` | same records; every record has `period`; 548 lack `reference_date` (the publisher typos `2022–22` and `Dec 208`, and Youth Justice months without a year; ISSUES.md I12, I36) |
-| `integrated/observations.csv` | 4,649,536 rows from 136 releases of 9 publications (3,989,690 before AIHW and RoGS were added and EEH removed); 4,394,724 published numbers; `value_flag`: 11,283 `rse_25_to_50`, 1,953 `rse_over_50`, 108 `footnote`, 60 `revised` |
-| Latest values | 2,536,617 series × period, each with exactly one `is_latest` |
-| `integrated/series.csv` | 705,949 series × 228 columns; every series has a population except 9 Recorded Crime – Victims series; 403 child protection series have no measure (I36) |
-| `integrated/measures.csv`, `sources.csv` | 1,559 measures; 8,485 sheets with data |
-| Values that can't be told apart (two different numbers) | Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Youth Justice 129; Federal Defendants 108; child protection 71; RoGS 0 keys (ISSUES.md I26, I34, I35, I36) |
-| Checks | 79 tests; **no `error`-level failures**; 859 warning failures, all known issues (below) |
-| Admission | 136 of 721 release switches on (`sources/dataset_selection.json`): every release of the four ABS justice and two ABS victims publications, AIHW Child protection 2020–21 to 2024–25, AIHW Youth Justice 2024–25 and RoGS Justice 2020–2026. EEH is off (DECISIONS.md 32). 9,965 admitted sheets, all with recipes |
-| New sources prepared | 654 workbooks downloaded to `source-originals/`, all SHA-matched; 543 converted from XLS (118 with macros), 111 copied; in `source-spreadsheets-xlsx/` |
-| CSV size | 1.3 GB in total (observations 1,014 MB, series 270 MB) |
+| `integrated/observations.csv` | 4,809,257 rows from 149 releases of 22 publications (4,649,536 before group 2); 4,538,809 published numbers; `value_flag`: 12,248 `rse_25_to_50`, 2,133 `rse_over_50`, 108 `footnote`, 60 `revised` |
+| Latest values | 2,695,147 series × period, each with exactly one `is_latest` |
+| `integrated/series.csv` | 769,397 series × 487 columns; every series has a population except 9 Recorded Crime – Victims series; 403 child protection series have no measure (I36); 443 prison health series have no unit (I37) |
+| `integrated/measures.csv`, `sources.csv` | 2,565 measures; 9,137 sheets with data |
+| Values that can't be told apart (two different numbers) | Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Youth Justice 129; Federal Defendants 108; partner violence 108; child protection 71; Personal Fraud 11; sexual violence 4; stalking 4; RoGS and the other group 2 publications 0 keys (ISSUES.md I26, I34, I35, I36, I37) |
+| Checks | 79 tests; **no `error`-level failures**; 905 warning failures, all known issues (below) |
+| Admission | 149 of 721 release switches on (`sources/dataset_selection.json`): every release of the four ABS justice and two ABS victims publications, AIHW Child protection 2020–21 to 2024–25, AIHW Youth Justice 2024–25, RoGS Justice 2020–2026, and the 13 group 2 releases (DECISIONS.md 34). EEH and AIC are off (DECISIONS.md 32, ISSUES.md I37). 10,675 admitted sheets, all with recipes |
+| New sources prepared | 689 workbooks downloaded to `source-originals/`, all SHA-matched; 543 converted from XLS (118 with macros), 146 copied; in `source-spreadsheets-xlsx/`. The 6 AIC workbooks couldn't be downloaded by R (I37) |
+| CSV size | 1.6 GB in total (observations 1,050 MB, series 497 MB) |
 
 Derived by `harmonise()` (records, before the integration work): `reference_date`
 1,728,664; `period` 638,292; `state` 505,204; `court_level` 105,770; `measure` 57,025;
 `unit` 48,524; `estimate_type` 21,795.
 
 Run times (see README "Run times and performance"):
+- 10,675 sheets (2026-11-03): a change to `harmonise()` or `identify()` with new sheets
+  took 40 minutes; a normalisation and harmonisation spec change, 35 minutes.
 - 9,040 sheets (2026-11-02): a code change, or a spec edit that touches every sheet, takes
   about 23 minutes (35 before that day's changes), or 11 minutes without the checks
   (`tar_make(names = integrated_files)`).
@@ -119,13 +138,13 @@ fail on deliberately corrupted data. These warnings remain:
 | `has_title` | 1 sheet (Recorded Crime – Victims) | I34 |
 | `measure_present`, `population_present` | 12 and 1 sheets (child protection; Recorded Crime – Victims) | I34, I36 |
 | `series_have_population_and_measure` | 403 child protection series without a measure, 9 Recorded Crime – Victims without a population | I34, I36 |
-| `values_distinguishable` | 5,845 keys with two different numbers (Crime Victimisation 2,246; Recorded Crime – Victims 1,397; Courts 1,008; Recorded Crime – Offenders 571; Prisoners 315; Youth Justice 129; Federal Defendants 108; child protection 71) | I26, I34, I35, I36 |
-| `states_are_canonical` | 831 sheets: ACT prisoner locations (Prisoners), and "Total" and "Aust cts" in AIHW and RoGS | I11, I36 |
+| `values_distinguishable` | 5,972 keys with two different numbers (as above; group 2 adds 127) | I26, I34, I35, I36, I37 |
+| `states_are_canonical` | 877 sheets: ACT prisoner locations (Prisoners), "Total" and "Aust cts" in AIHW and RoGS, youth detention "Aust excl NT" and "Aust incl NT", RoGS "Aus Gov" | I11, I36, I37 |
 | `no_stacked_characteristics` | 4 sheets | I12 |
 | `reference_dates_present` | 4 sheets: the typos `2022–22` and `Dec 208`, and Youth Justice months without a year | I12, I36 |
 | `series_columns_snake_case` | 1 name, `order outcome` | I35 |
-| `labels_have_one_spelling` | 25 groups | I35 |
-| `none_unrecognised` | 5 texts (`_`, `jki`, `.`, and child protection `<0.1`, `>99.9`) | I31, I36 |
+| `labels_have_one_spelling` | 90 groups (25 before group 2; the 65 new ones involve its labels) | I35, I37 |
+| `none_unrecognised` | 75 texts (`_`, `jki`, `.`, child protection `<0.1`, `>99.9`, and 70 prison health ranges such as `19–57`) | I31, I36, I37 |
 | `recipes_outside_selection` | the 237 EEH recipes, now switched off | DECISIONS.md 32 |
 
 Integration stages (2026-11-01):

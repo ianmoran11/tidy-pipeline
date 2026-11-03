@@ -1,7 +1,8 @@
 # Stage 4: say what each record counts. Two tables in one release often differ only
 # in their title ("Defendants finalised" vs "Defendants with a guilty outcome"), so
-# the title's subject (the text after "Table N", up to the first comma) is looked up
-# in the spec to set population, scope and any other fields it names; title_flags
+# the title's subject (the text after "Table N", up to the first comma, or the
+# publication's own publication_subject_pattern) is looked up in the spec to set
+# population, scope and any other fields it names; title_flags
 # match the title and subtitle (e.g. a cube code) to set further fields. A sheet
 # without a title of its own uses each table's title instead. Labels in
 # replace_labels (e.g. population "Total") give way to the subject's value. A record
@@ -10,15 +11,16 @@
 # Existing record fields are never overwritten. See measures/README.md.
 identify <- function(sheet_result, measure_spec) {
   spec <- measure_spec; pub <- sheet_result$source[["publication_id"]]
+  pattern <- spec$publication_subject_pattern[[pub]] %||% spec$subject_pattern
   sheet_title <- unlist(sheet_result$sheet_metata[["table_title"]])
   # The subject key and the fields a title sets (its subject's entry, then title_flags)
   read_title <- function(title_cells) {
     title <- stringr::str_squish(gsub("\u00a0", " ", paste(title_cells, collapse = " ")))
-    subject <- stringr::str_match(title, stringr::regex(spec$subject_pattern, ignore_case = TRUE))[, 2]
+    subject <- stringr::str_match(title, stringr::regex(pattern, ignore_case = TRUE))[, 2]
     key <- stringr::str_squish(gsub("\\s*\\([a-z0-9]{1,2}\\)", "", tolower(dplyr::coalesce(subject, ""))))
     found <- spec$subjects[[pub]][[key]] %||% list()
     text <- paste(c(title, unlist(sheet_result$sheet_metata[["table_subtitle"]])), collapse = " / ")
-    for (flag in spec$title_flags) {
+    for (flag in c(spec$publication_title_flags[[pub]], spec$title_flags)) {
       if (stringr::str_detect(text, stringr::regex(flag[["pattern"]], ignore_case = TRUE))) found <- c(found, flag[["set"]][setdiff(names(flag[["set"]]), names(found))])
     }
     list(key = key, found = found)

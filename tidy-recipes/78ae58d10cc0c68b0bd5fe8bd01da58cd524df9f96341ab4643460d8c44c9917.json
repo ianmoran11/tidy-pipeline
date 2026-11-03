@@ -1,0 +1,251 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "78ae58d10cc0c68b0bd5fe8bd01da58cd524df9f96341ab4643460d8c44c9917",
+  "sheet": "Table 24.1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All totals retained. Relationship-length rows include mean and median in months; these are published labels, not time bands. na and np retained.",
+  "new_dimensions": [
+    {
+      "name": "incident_recency",
+      "description": "Elapsed time since the most recent incident of partner violence."
+    },
+    {
+      "name": "first_violence_cohabitation",
+      "description": "Whether violence first occurred while living with the previous partner."
+    },
+    {
+      "name": "relationship_length_before_violence",
+      "description": "Length of relationship before the first incident of violence, including published mean and median months."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A11,A15,A19,A23,A27"
+    },
+    {
+      "name": "notes",
+      "cells": "A37:A43"
+    }
+  ],
+  "tables": [
+    {
+      "name": "incident_recency",
+      "range": "A7:C9",
+      "values_range": "B7:C9",
+      "headers": [
+        {
+          "name": "incident_recency",
+          "caption": "When most recent incident of partner violence occurred",
+          "direction": "W",
+          "cells": "A7:A9"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "offender_sex",
+      "range": "A12:C13",
+      "values_range": "B12:C13",
+      "headers": [
+        {
+          "name": "offender_sex",
+          "caption": "Sex of partner",
+          "direction": "W",
+          "cells": "A12:A13"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "number_of_incidents",
+      "range": "A16:C17",
+      "values_range": "B16:C17",
+      "headers": [
+        {
+          "name": "number_of_incidents",
+          "caption": "How often partner violence experienced during relationship ",
+          "direction": "W",
+          "cells": "A16:A17"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "offender_cohabitation",
+      "range": "A20:C21",
+      "values_range": "B20:C21",
+      "headers": [
+        {
+          "name": "offender_cohabitation",
+          "caption": "Whether violence experienced while living together with previous partner",
+          "direction": "W",
+          "cells": "A20:A21"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "first_violence_cohabitation",
+      "range": "A24:C25",
+      "values_range": "B24:C25",
+      "headers": [
+        {
+          "name": "first_violence_cohabitation",
+          "caption": "Whether violence experienced for the first time while living together with previous partner",
+          "direction": "W",
+          "cells": "A24:A25"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_length_before_violence",
+      "range": "A28:C33",
+      "values_range": "B28:C30,B32:C33",
+      "headers": [
+        {
+          "name": "relationship_length_before_violence",
+          "caption": "Length of relationship with previous partner before first incident of violence occurred",
+          "direction": "W",
+          "cells": "A28:A30,A32:A33"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A35:C35",
+      "values_range": "B35:C35",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A35"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:10:59Z",
+    "tool_version": "0.2.0",
+    "records": 34,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080910Z-6764c5e6d27a",
+    "started_at": "2026-11-03T08:09:11Z",
+    "workbook": "6764c5e6d27a3439b9c0dafbdc8d501ad5c3e177d01a7ad6cc3abd4457e7e195--Men-s-experiences-of-partner-violence-Tables-24-to-27-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-7f56-76a9-96e5-bf026acfd6ba",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8c190f6dffabeb0cb5aed3fca91009ffa4669e5bbb441e8477573bd3697d4917",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6764c5e6d27a3439b9c0dafbdc8d501ad5c3e177d01a7ad6cc3abd4457e7e195--Men-s-experiences-of-partner-violence-Tables-24-to-27-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a7c129cf66a8a17f879d5ae9e4c23ff06d6b1a01a04fb067de3bd60578769bb6 | missing |\n| \"Table 24.1\" | 78ae58d10cc0c68b0bd5fe8bd01da58cd524df9f96341ab4643460d8c44c9917 | missing |\n| \"Table 24.2\" | 3577ddab9a0b68f70864e0b327db3014132c8cae373bf805f5925ff073a4d472 | missing |\n| \"Table 25.1\" | da7095e8b6e3dd1e3a884152cd16d50f462ee5744361dbe8a61be9a87d3863ec | missing |\n| \"Table 25.2\" | 6fb6fee5db998c14304bd48fc9dde235c500e3edf199d20b746d240b56abc4d4 | missing |\n| \"Table 26.1\" | 36d13e3a1983827ff5707fd73cbec87c072c38fee432d4493a94573e88494a45 | missing |\n| \"Table 26.2\" | c5fc642d276f2bcfb169319c1cc7ec2256ebd58079a7a7383ead7248f351a4b5 | missing |\n| \"Table 27.1\" | c3feaa6440826ba35420969e8e9a52be77d0dff7d0d8a2b7f1683547a1e06550 | missing |\n| \"Table 27.2\" | 0664fe8a43418d8b07d834693c83c61470d3311d04a252f2b83a69d72abbb4f5 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080910Z-6764c5e6d27a.jsonl"
+  }
+}

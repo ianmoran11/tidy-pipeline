@@ -1,0 +1,193 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "36d13e3a1983827ff5707fd73cbec87c072c38fee432d4493a94573e88494a45",
+  "sheet": "Table 26.1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Was working is a parent subtotal of Took time off and Did not take time off; Not working is a sibling. All rows and overall total retained.",
+  "new_dimensions": [
+    {
+      "name": "partner_violence_anxiety",
+      "description": "Whether anxiety or fear for personal safety was experienced due to partner violence."
+    },
+    {
+      "name": "partner_violence_work_absence",
+      "description": "Working status and whether time was taken off work due to partner violence."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A10,A14"
+    },
+    {
+      "name": "notes",
+      "cells": "A22:A27"
+    }
+  ],
+  "tables": [
+    {
+      "name": "police_reporting_status",
+      "range": "A7:C8",
+      "values_range": "B7:C8",
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "caption": "Whether police ever contacted about violence by partner",
+          "direction": "W",
+          "cells": "A7:A8"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "partner_violence_anxiety",
+      "range": "A11:C12",
+      "values_range": "B11:C12",
+      "headers": [
+        {
+          "name": "partner_violence_anxiety",
+          "caption": "Whether ever experienced anxiety or fear due to partner violence",
+          "direction": "W",
+          "cells": "A11:A12"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "partner_violence_work_absence",
+      "range": "A15:C18",
+      "values_range": "B15:C18",
+      "headers": [
+        {
+          "name": "partner_violence_work_absence",
+          "caption": "Whether took time off work as a result of partner violence",
+          "direction": "W",
+          "cells": "A15:A18"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A20:C20",
+      "values_range": "B20:C20",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A20"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:10:59Z",
+    "tool_version": "0.2.0",
+    "records": 18,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080910Z-6764c5e6d27a",
+    "started_at": "2026-11-03T08:09:11Z",
+    "workbook": "6764c5e6d27a3439b9c0dafbdc8d501ad5c3e177d01a7ad6cc3abd4457e7e195--Men-s-experiences-of-partner-violence-Tables-24-to-27-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-7f56-76a9-96e5-bf026acfd6ba",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8c190f6dffabeb0cb5aed3fca91009ffa4669e5bbb441e8477573bd3697d4917",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `6764c5e6d27a3439b9c0dafbdc8d501ad5c3e177d01a7ad6cc3abd4457e7e195--Men-s-experiences-of-partner-violence-Tables-24-to-27-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a7c129cf66a8a17f879d5ae9e4c23ff06d6b1a01a04fb067de3bd60578769bb6 | missing |\n| \"Table 24.1\" | 78ae58d10cc0c68b0bd5fe8bd01da58cd524df9f96341ab4643460d8c44c9917 | missing |\n| \"Table 24.2\" | 3577ddab9a0b68f70864e0b327db3014132c8cae373bf805f5925ff073a4d472 | missing |\n| \"Table 25.1\" | da7095e8b6e3dd1e3a884152cd16d50f462ee5744361dbe8a61be9a87d3863ec | missing |\n| \"Table 25.2\" | 6fb6fee5db998c14304bd48fc9dde235c500e3edf199d20b746d240b56abc4d4 | missing |\n| \"Table 26.1\" | 36d13e3a1983827ff5707fd73cbec87c072c38fee432d4493a94573e88494a45 | missing |\n| \"Table 26.2\" | c5fc642d276f2bcfb169319c1cc7ec2256ebd58079a7a7383ead7248f351a4b5 | missing |\n| \"Table 27.1\" | c3feaa6440826ba35420969e8e9a52be77d0dff7d0d8a2b7f1683547a1e06550 | missing |\n| \"Table 27.2\" | 0664fe8a43418d8b07d834693c83c61470d3311d04a252f2b83a69d72abbb4f5 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080910Z-6764c5e6d27a.jsonl"
+  }
+}

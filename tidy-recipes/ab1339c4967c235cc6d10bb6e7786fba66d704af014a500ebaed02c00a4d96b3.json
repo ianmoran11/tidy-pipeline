@@ -1,0 +1,172 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "ab1339c4967c235cc6d10bb6e7786fba66d704af014a500ebaed02c00a4d96b3",
+  "sheet": "Table 10.4",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published total and indented component rows are retained; overlapping experience categories are not additive. All-women denominator rows are separate population tables. Recall timeframes and combined estimate/unit headings are preserved verbatim. State is current residence, not necessarily location of experience. Footnotes describe comparability and significance in time series; value markers remain unchanged.",
+  "new_dimensions": [
+    {
+      "name": "experience_timeframe",
+      "description": "Published recall timeframe for Personal Safety Survey experiences: since age 15, before age 15, last two years or last 12 months."
+    },
+    {
+      "name": "childhood_experience",
+      "description": "Personal Safety Survey experiences before age 15: physical or sexual abuse, witnessing partner violence towards parents, and their published combinations."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A20,A22,A23,A24"
+    }
+  ],
+  "tables": [
+    {
+      "name": "experiences",
+      "range": "A5:J16",
+      "values_range": "B8:J11,B13:J16",
+      "meta_data": [
+        {
+          "name": "experience_timeframe",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "childhood_experience",
+          "direction": "W",
+          "cells": "A8:A11,A13:A16"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        }
+      ]
+    },
+    {
+      "name": "population_total",
+      "range": "A18:J18",
+      "values_range": "B18:J18",
+      "meta_data": [
+        {
+          "name": "experience_timeframe",
+          "cells": "B5"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A18"
+        },
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B6:J6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:13:37Z",
+    "tool_version": "0.2.0",
+    "records": 81,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T081043Z-a6ac0c42f847",
+    "started_at": "2026-11-03T08:10:50Z",
+    "workbook": "a6ac0c42f847c395964020a0b60c8a5a5fb8594ea93bcf2b9c82b815e143e125--PSS-State-and-territory-prevalence-and-time-series-Tables-9-to-14-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a076-01a4-77e6-bb87-378fe4c999b1",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "46846f024564da15373fa02d0684a51b9f0e5662b900b3901f850a8d60070e9b",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a6ac0c42f847c395964020a0b60c8a5a5fb8594ea93bcf2b9c82b815e143e125--PSS-State-and-territory-prevalence-and-time-series-Tables-9-to-14-.xlsx`.\n\n- Publication: Personal Safety, Australia (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 21 of 21\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c1d3f434c7f7b187ac62b5c1bf87940a9d314c0c4329b51fd5f2e802beadc071 | missing |\n| \"Table 9.1\" | 7720bf902fcfbe3382bc515d13e03d424ed2addb84190db4466cadb42c09a685 | missing |\n| \"Table 9.2\" | 4f1ed0732034ae3ef3f7a9090f27cc87336b724704f5b5b02c3a83a9ebe44993 | missing |\n| \"Table 9.3\" | 107f8142e33edd2841c04367c7c32da9ac12924ec3170c6040a71203841bb9a4 | missing |\n| \"Table 9.4\" | 4a14d56a5c22ba173d388677f6521bda6dec2642985ca8e4eeaf9cc2b8c99a53 | missing |\n| \"Table 10.1\" | be9287a1fff03728ee1bbe61b9256b78449829ea584aafa770493725c29df902 | missing |\n| \"Table 10.2\" | 1034998da21de84851f73acf981588df01a3421503f36cf0307d1634e4bcb9f7 | missing |\n| \"Table 10.3\" | 6eae979b1a43fb8b7f750d72bdd9fd1b93777e0b30ed0a17b70232296cac047b | missing |\n| \"Table 10.4\" | ab1339c4967c235cc6d10bb6e7786fba66d704af014a500ebaed02c00a4d96b3 | missing |\n| \"Table 11.1\" | 463b418e69deb8feae37d88b858cfc09d6515e7748a070460964657a97d458c2 | missing |\n| \"Table 11.2\" | cad41c7d665fa05c47545e128d5806004c9e084e5baae3765ff36632bc39da75 | missing |\n| \"Table 11.3\" | 722d9cd984752fd49d642bf868f3ca316604805f000545bb63d5d48c957eabb4 | missing |\n| \"Table 11.4\" | df1d20ecb80c61ea347e3ef0581305cd4dcd3d9ee645e0b0d3c3af982c014d53 | missing |\n| \"Table 12.1\" | d11880b24f4bea68fd5051dcf14f927e5c314878a62b9cf4e44ebe498eaf1a41 | missing |\n| \"Table 12.2\" | 5b577409967b4a439ac7e420d34656693885d5c478bbcf36d0a66f9fdf389644 | missing |\n| \"Table 13.1\" | 0406ded5ddf3e4d572fa9a1e8a19b254da2ea63ae599d5300fe016cb28a13885 | missing |\n| \"Table 13.2\" | 12ae7935d82110a884a8a221d8837e94f64e31ba56d9b73a5604b07bed1d2bc1 | missing |\n| \"Table 13.3\" | 1a7e6c1d5d3a6c5762e0d717d560063cb31204f6c2d6bd0a516a28e18a386830 | missing |\n| \"Table 13.4\" | 7d01275a34292db822f0fbfa3ba116f6a2fc907afef88aae92253c9791565f53 | missing |\n| \"Table 14.1\" | 62f30bbce1d3028e63e9958d924a0ab864ed2197ddc1491fc709c3f34b25ab5a | missing |\n| \"Table 14.2\" | 7dccb4f4679f390f93adf72c791d8122137783996626de4725c73da5f8c4e652 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T081043Z-a6ac0c42f847.jsonl"
+  }
+}

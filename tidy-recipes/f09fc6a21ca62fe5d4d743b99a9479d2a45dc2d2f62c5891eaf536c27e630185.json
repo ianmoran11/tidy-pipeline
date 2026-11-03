@@ -1,0 +1,173 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f09fc6a21ca62fe5d4d743b99a9479d2a45dc2d2f62c5891eaf536c27e630185",
+  "sheet": "Table 5.2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published indented parent categories and subtotals are retained, not additive. Labels and footnote markers are unchanged. Population denominator columns are retained separately. Sampling-error headings are estimate_type; combined headings preserve their published wording. Published RSE heading says ('000); preserved verbatim despite the apparent publisher unit typo.",
+  "new_dimensions": [
+    {
+      "name": "violence_form",
+      "description": "Whether violence involved assault, threat, or their combined total."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A27,A28,A29,A30,A31,A32,A33,A34"
+    }
+  ],
+  "tables": [
+    {
+      "name": "violence_8",
+      "range": "A9:D25",
+      "values_range": "B9:D23,B25:D25",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "B7"
+        },
+        {
+          "name": "offender_sex",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "cells": "A9:A23,A25",
+          "direction": "W"
+        },
+        {
+          "name": "crime_type",
+          "cells": "B5",
+          "direction": "NNW"
+        },
+        {
+          "name": "violence_form",
+          "cells": "B6:D6",
+          "direction": "N"
+        }
+      ]
+    },
+    {
+      "name": "population_8",
+      "range": "E9:E25",
+      "values_range": "E9:E23,E25:E25",
+      "meta_data": [
+        {
+          "name": "estimate_type",
+          "cells": "B7"
+        },
+        {
+          "name": "offender_sex",
+          "cells": "A8"
+        }
+      ],
+      "headers": [
+        {
+          "name": "offender_relationship",
+          "cells": "A9:A23,A25",
+          "direction": "W"
+        },
+        {
+          "name": "population",
+          "cells": "E5",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T07:51:23Z",
+    "tool_version": "0.2.0",
+    "records": 64,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T074639Z-d6dd7607c6db",
+    "started_at": "2026-11-03T07:46:40Z",
+    "workbook": "d6dd7607c6db61d02807d15a0a3ad09de9480e365ec2c4d29d3ae57b592a32b0--PSS-National-prevalence-and-time-series-Tables-1-to-8-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a05f-e268-767d-8d77-48933eca741e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3e85d2bf4e2b0c4f1122d8dc31efdb880b73527bbeff27ea90ba470a9c371254",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d6dd7607c6db61d02807d15a0a3ad09de9480e365ec2c4d29d3ae57b592a32b0--PSS-National-prevalence-and-time-series-Tables-1-to-8-.xlsx`.\n\n- Publication: Personal Safety, Australia (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 31 of 31\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 196fc76dce04e28f69b4fea6c18d1ca25acf5aaab9f263b450f90280464082dc | missing |\n| \"Table 1.1\" | 8ee5dd2d9527698be30b51b43f60dcfa04245d24bf84d0d1170c4fa7bf0043d7 | missing |\n| \"Table 1.2\" | 095d661983a25becd1f5fe6002063ba36feff1d21166ce91b67189a0d05e312b | missing |\n| \"Table 1.3\" | 816b0162091d660b6cc66369a117a6c60db6bb414c61a62ced5779e5cb08d47a | missing |\n| \"Table 1.4\" | b65f4584810122d12ac1daf76fc5e0835c603ec7fca4bb7af65aab8a2c68892c | missing |\n| \"Table 2.1\" | bc783ea9ad8637d298b105ed239511fa505690fa52bb07f3752b4e483606c6fd | missing |\n| \"Table 2.2\" | eec622f340b54a77e13d043460eb0fbcc8611e08dc700746139d2959d280f4db | missing |\n| \"Table 2.3\" | c949f0ddf1e4d522d84fa4e116c39ced95b0b2ffd6bdcb65996622ef425b045b | missing |\n| \"Table 2.4\" | 66952e9dcd0c431c73655685aecdc48d3d5e7b475b2269d025fcacd50ae8189f | missing |\n| \"Table 3.1\" | e964e33a871686bfd159a242fa74617034b581dd3f7a308ae3a3a781c5e86eaf | missing |\n| \"Table 3.2\" | 48e4dc5a608b478cad3292746b0e6c8cdac166e11326ec7f96a58299fdc41977 | missing |\n| \"Table 4.1\" | 805564cb3e7357b94c48dfec311f2df610ba9c173dcbbf4dd36b258022837cbd | missing |\n| \"Table 4.2\" | 0b55c5afc3f1d3ab41f04a6dd0070768f3eb31135c8066edd26f39cbb5b7c8ec | missing |\n| \"Table 4.3\" | fe09cf583b73841ebe07933013fa14c6ba7dd54dc376199945410bb35c484b2c | missing |\n| \"Table 4.4\" | 233c4d5e1f5aea34cfd217461f1fe50dba69b8332bff47a8f4aa25f5ae39a947 | missing |\n| \"Table 5.1\" | 088ae9fddd6dd4531c50083d57b1ac47cdf2db87be15fa3d63fac8a0a645f36a | missing |\n| \"Table 5.2\" | f09fc6a21ca62fe5d4d743b99a9479d2a45dc2d2f62c5891eaf536c27e630185 | missing |\n| \"Table 5.3\" | 40dde88091f336b160f5cc84f34354f5f63520c7db1da446216c3a35044b7e9b | missing |\n| \"Table 5.4\" | 36d03d21ccf8918cb0ede0ed4e179830f7a5ee5e871ea8aff4388b0c021d6394 | missing |\n| \"Table 6.1\" | addb28b83b4fcab23e3fc317fc6572cff4892994a23132129a90f0a22b2d74db | missing |\n| \"Table 6.2\" | 39bd68089fa6ab58f2862043ed1813f9db3b3a38f1da823d851c3b694c3faaec | missing |\n| \"Table 6.3\" | 9e261dbdbd2caf4e5e9a68fecea9aa775f51442554afe5d8dff2f47db40cc2fe | missing |\n| \"Table 6.4\" | ad4369463b29bbbecff4ee7c199f1aa52512a2ea9ac158aa6b2aadca48d8940f | missing |\n| \"Table 7.1\" | 53f7bc95ddc86e05414b5e5b54b74073446f0cc63733cd51bc6083f69295084b | missing |\n| \"Table 7.2\" | f783a2b2ecc92478d13be78447d91073a29fa7f66a4a129726bbe1e93dff8a4b | missing |\n| \"Table 7.3\" | 598e7bd8c08262591e31ebc63b79f8b6894c02cc0388eb056bbffb3fcb83641e | missing |\n| \"Table 7.4\" | 7ca0d1c41553ba4a67bdecbed559e243593305db1904a9626a05dbd9523b4ab4 | missing |\n| \"Table 8.1\" | 92c30ad31e47bcf0a362f85c071b749e6bc23fa83760cfd84929bdf7eb144ffb | missing |\n| \"Table 8.2\" | bc21492e9b6a8442440ca2c5c3eb0295de507da803c62bd3b5e508f0015d8d19 | missing |\n| \"Table 8.3\" | 93654162ab15be80c4f57346731c6ff718ceadf6a9ac2a14e83fde377bc0f22a | missing |\n| \"Table 8.4\" | 124a3ed3782d43069fde0e1f6c84d547e9eab6b95b821490498da1e8861da703 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T074639Z-d6dd7607c6db.jsonl"
+  }
+}

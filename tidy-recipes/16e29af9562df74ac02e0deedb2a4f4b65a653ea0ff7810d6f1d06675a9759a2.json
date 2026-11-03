@@ -1,0 +1,187 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "16e29af9562df74ac02e0deedb2a4f4b65a653ea0ff7810d6f1d06675a9759a2",
+  "sheet": "Table 1.1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published indentation retained through unchanged row labels: violence includes physical and sexual violence; emotional abuse by previous partner includes one and more than one previous partner. Keep all aggregate and total rows. Categories overlap in prevalence; multiple experiences use a different denominator (persons with any listed abuse), while prevalence proportions use total persons. Random adjustment prevents exact additivity.",
+  "new_dimensions": [
+    {
+      "name": "partner_abuse_experience",
+      "description": "Published experience of cohabiting-partner violence, emotional abuse or economic abuse since age 15, including combinations, partner attributes and total populations.",
+      "example_labels": [
+        "Violence(b)",
+        "Emotional abuse",
+        "Total persons"
+      ]
+    },
+    {
+      "name": "partner_abuse_summary_type",
+      "description": "Whether partner violence and abuse are summarised as prevalence or multiple experiences.",
+      "example_labels": [
+        "PREVALENCE",
+        "MULTIPLE EXPERIENCES"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A9,A17,A23,A29,A37"
+    },
+    {
+      "name": "notes",
+      "cells": "A44:A53"
+    }
+  ],
+  "tables": [
+    {
+      "name": "prevalence",
+      "range": "A5:G33",
+      "values_range": "B10:G15,B18:G21,B24:G27,B30:G31,B33:G33",
+      "meta_data": [
+        {
+          "name": "partner_abuse_summary_type",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "partner_abuse_experience",
+          "direction": "W",
+          "cells": "A10:A15,A18:A21,A24:A27,A30:A31,A33"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B5:G5"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ]
+    },
+    {
+      "name": "multiple_experiences",
+      "range": "A35:G42",
+      "values_range": "B38:G40,B42:G42",
+      "meta_data": [
+        {
+          "name": "partner_abuse_summary_type",
+          "cells": "A35"
+        }
+      ],
+      "headers": [
+        {
+          "name": "partner_abuse_experience",
+          "direction": "W",
+          "cells": "A38:A40,A42"
+        },
+        {
+          "name": "sex",
+          "direction": "N",
+          "cells": "B5:G5"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,E6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:09:07Z",
+    "tool_version": "0.2.0",
+    "records": 126,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080803Z-052aca875894",
+    "started_at": "2026-11-03T08:08:06Z",
+    "workbook": "052aca8758940195b888b3213e54788f382795e20200d009f08604e2dc839f0d--Partner-violence-and-abuse-prevalence-Table-1-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a073-8250-74a6-a3e9-af36ab5264ab",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8266a78d44b19af2d1135cbb89bb27a4d9b0bd60233ae8d57a3818d45b496430",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `052aca8758940195b888b3213e54788f382795e20200d009f08604e2dc839f0d--Partner-violence-and-abuse-prevalence-Table-1-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 3 of 3\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 762b121b83481660fecfaa9ca25e2740ce96ec3fe2d4e19bf3609facffc868c7 | missing |\n| \"Table 1.1\" | 16e29af9562df74ac02e0deedb2a4f4b65a653ea0ff7810d6f1d06675a9759a2 | missing |\n| \"Table 1.2\" | 7e3014601b38feb198beed10f05c714e42d099d3ff044aad3a24b7f5fef8ff37 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080803Z-052aca875894.jsonl"
+  }
+}

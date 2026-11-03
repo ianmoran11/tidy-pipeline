@@ -1,0 +1,213 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "1f739f4d346cef4549098da6d01b202993a7b49136c3723d8fa07ed24454901e",
+  "sheet": "Table 10.1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All totals and parent subtotals retained. Indented child labels remain in their published dimension, not mutually exclusive categories; support sources, injuries and routine changes may have multiple responses. Column captions preserve the published estimate/proportion or RSE distinction. Age in Table 10 is age at interview. Denominators vary between sections as stated by total labels and footnotes.",
+  "new_dimensions": [
+    {
+      "name": "sexual_assault_support",
+      "description": "Advice or support seeking status and sources after sexual assault, including formal and informal support"
+    },
+    {
+      "name": "incident_crime_perception",
+      "description": "Whether the incident was perceived as a crime at the time"
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A25:A33"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A11,A17"
+    }
+  ],
+  "tables": [
+    {
+      "name": "police_reporting_status",
+      "range": "A8:E9",
+      "values_range": "B8:E9",
+      "headers": [
+        {
+          "name": "police_reporting_status",
+          "direction": "W",
+          "cells": "A8:A9",
+          "caption": "Whether police contacted"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "sexual_assault_support",
+      "range": "A12:E15",
+      "values_range": "B12:E15",
+      "headers": [
+        {
+          "name": "sexual_assault_support",
+          "direction": "W",
+          "cells": "A12:A15",
+          "caption": "Whether sought advice or support"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "incident_crime_perception",
+      "range": "A18:E21",
+      "values_range": "B18:E21",
+      "headers": [
+        {
+          "name": "incident_crime_perception",
+          "direction": "W",
+          "cells": "A18:A21",
+          "caption": "Whether incident perceived as a crime at the time"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A23:E23",
+      "values_range": "B23:E23",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A23:A23"
+        },
+        {
+          "name": "measure",
+          "direction": "NNW",
+          "cells": "B6,D6"
+        },
+        {
+          "name": "age_group",
+          "direction": "N",
+          "cells": "B5:E5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:13:14Z",
+    "tool_version": "0.2.0",
+    "records": 44,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T081105Z-0636a1a955bd",
+    "started_at": "2026-11-03T08:11:06Z",
+    "workbook": "0636a1a955bd16146d4bd5c18931eb7e0c6eadfdf79632a5bcf9f5aefcb0e94f--Women-experiences-of-sexual-assault-by-a-male-Tables-4-to-11-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a076-3f0c-76c2-9362-7ad753febeab",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3063410e84ae636383e9708d3d57fc9990b67957d441d67c388c00cc44b7a766",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0636a1a955bd16146d4bd5c18931eb7e0c6eadfdf79632a5bcf9f5aefcb0e94f--Women-experiences-of-sexual-assault-by-a-male-Tables-4-to-11-.xlsx`.\n\n- Publication: Sexual violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 17 of 17\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | a35253c4635152b75d5d8972d3296fda34df3bba3c3b9b9963451b46fbabff2d | missing |\n| \"Table 4.1\" | c8f6b140125602c5bc7e1793a50f2e2361077a1de9fa6b0e15c79b894fa25c93 | missing |\n| \"Table 4.2\" | 444982ec25cb68568eb6e7e4c28daa6e27ec1ab0997826cc32c685ce6b13abc5 | missing |\n| \"Table 5.1\" | 494a077f16c2e67754881907344e2b0d7572db478a10e73631cc6a474300ff4b | missing |\n| \"Table 5.2\" | e28218e4d87122ce42abb596c733031d17ec8fa3618b314e55d50b16ae99529d | missing |\n| \"Table 6.1\" | 1b6def89c0b1d455e54007071b52c20d832ad9e3e7bce7cbb02ae762694b0612 | missing |\n| \"Table 6.2\" | 168bcc50505c17c50824194f7d8dab8a83fb04033d6160ad3d09a080088b28e3 | missing |\n| \"Table 7.1\" | f14c1b5c0fa3e26bd09843fa30eed8acdfd1911e8ad4c3655a2f7017eb13e2a7 | missing |\n| \"Table 7.2\" | dcf30a51a549c21d78eef3bebfd868d2deb8df95e2e044ba1dc182ec2c05caab | missing |\n| \"Table 8.1\" | 2e22867dea5af925a9cb10bd95154ac4b6ca1abc028b848ad6b42f3824bbe9b2 | missing |\n| \"Table 8.2\" | 77bdc627b5ffcdb2441436cbcb58dc9a055f5f076b36a0a21126ad010847ee6b | missing |\n| \"Table 9.1\" | 520318806c0a8fc6515b81f54cdb7959404a7cbf281078255a352415253a5d70 | missing |\n| \"Table 9.2\" | aa20036c98b7f465d6d47145ffa4e44f0fd34b2af9cb3a0649a0a76a6d19e9e4 | missing |\n| \"Table 10.1\" | 1f739f4d346cef4549098da6d01b202993a7b49136c3723d8fa07ed24454901e | missing |\n| \"Table 10.2\" | 2b93ace4029658bf8c1d69f4932d0c5f9a2ba354e009c1bb4ec05192575c861c | missing |\n| \"Table 11.1\" | 485c442a62b1ceb04fa221d31f894095ec788fb9727b7377c25afae16d940024 | missing |\n| \"Table 11.2\" | 8a15deb785d8097ef96af405af481637cb7ef4790fa62a734007cc6fc8481bad | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T081105Z-0636a1a955bd.jsonl"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6b046a6df3d941d1281ad3c319cbd6a3782ec128f213ee9aa0e31ad7692faa64",
+  "sheet": "Table S133",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Demographic sections are separate marginal distributions, not cross-classifications. Published totals and aggregate rows retained; totals may include unknown demographics. Text symbols and labels preserved. Refer to source notes for exclusions, multiple responses and denominators.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A18,A19,A20,A21,A22,A23"
+    },
+    {
+      "name": "source",
+      "cells": "A24"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4,A7,A10"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_5",
+      "range": "A5:F6",
+      "values_range": "B5,C5,D5,E5,F5,B6,C6,D6,E6,F6",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A5,A6",
+          "direction": "W",
+          "caption": "Sex"
+        },
+        {
+          "name": "measure",
+          "cells": "B3,C3,D3,E3,F3",
+          "direction": "N"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "indigenous_status_8",
+      "range": "A8:F9",
+      "values_range": "B8,C8,D8,E8,F8,B9,C9,D9,E9,F9",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A8,A9",
+          "direction": "W",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "measure",
+          "cells": "B3,C3,D3,E3,F3",
+          "direction": "N"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "age_group_11",
+      "range": "A11:F15",
+      "values_range": "B11,C11,D11,E11,F11,B12,C12,D12,E12,F12,B13,C13,D13,E13,F13,B14,C14,D14,E14,F14,B15,C15,D15,E15,F15",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A11,A12,A13,A14,A15",
+          "direction": "W",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "measure",
+          "cells": "B3,C3,D3,E3,F3",
+          "direction": "N"
+        }
+      ],
+      "meta_data": []
+    },
+    {
+      "name": "population_16",
+      "range": "A16:F16",
+      "values_range": "B16,C16,D16,E16,F16",
+      "headers": [
+        {
+          "name": "population",
+          "cells": "A16",
+          "direction": "W"
+        },
+        {
+          "name": "measure",
+          "cells": "B3,C3,D3,E3,F3",
+          "direction": "N"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:07:17Z",
+    "tool_version": "0.2.0",
+    "records": 50,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T075914Z-a062c8a03977",
+    "started_at": "2026-11-03T07:59:15Z",
+    "workbook": "a062c8a03977bbe1ca414a6c76bdfa4044e6c73bcc4e184f0639a3525eafb39a--aihw-phe-367_health-system-data-tables_national.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06b-6c18-72d9-95be-49e7186d9a03",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ea8d041c87b01935efa0fbddb4cce7ceb347dcb7356c23608c3c30d76930a46f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a062c8a03977bbe1ca414a6c76bdfa4044e6c73bcc4e184f0639a3525eafb39a--aihw-phe-367_health-system-data-tables_national.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 64 of 64\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 58a9044fe9817d1af51395697f6a1f77ffadc27ee9f1c32758fcf6276308266d | missing |\n| \"Notes & symbols\" | 077f7241b96a59f7aa63404ae94734cda67a615b8df8058862d2f700f77d573e | missing |\n| \"Table S108\" | d5cc62f43a0291e980bb563352638c79d7ba9639010c7a06b0cb148b6cc2ab36 | missing |\n| \"Table S109\" | 44257a7597864f06a2d439d9598b1769490ecd5f5525906b64153346ded0e41b | missing |\n| \"Table S110\" | 4576824eae1f654b3833567e21b579a5d0501027eab5cb1b2124dd9589f9bd86 | missing |\n| \"Table S111\" | ddb1aea7eaddec45660c549544f1c1bc9cfffb1c1e4ea22a5dd61bcf4f04445d | missing |\n| \"Table S112\" | 67df439cb519cb422158664a126ff2f30d47411815d8e83d399eb6cdf7eeed9a | missing |\n| \"Table S113\" | 146084a879be58e3a84d9adddc1f8b0cd615d16f8cf674939b7b4cab0b6b91f6 | missing |\n| \"Table S114\" | aa969fca941972810eb761254a0ed6e29459c1830e69f5bd2420a4e9552dd8a1 | missing |\n| \"Table S115\" | 2d1b26e0660166a38a52e42405b564344ada3ed13362d922544242fcc16e90be | missing |\n| \"Table S116\" | 49573d9c8c5fbd12eefbdf7d1de408e0a8818e457eb7d0eac92745e455549164 | missing |\n| \"Table S117\" | 9606556d54b8111ac88f8bd0f383378e25c4d3c3388e70366ca33ba7854ac088 | missing |\n| \"Table S118\" | 8b71a56e4d5567f9ea137bbcfac21f7986cec36852525d7dad609cc6b82e8982 | missing |\n| \"Table S119\" | c28a562b6f084092cf741cb47e2a8be5c4b1bb4baeefab39df8692f6dc3919b8 | missing |\n| \"Table S120\" | caf2f2598fb86b63e40d2860231a213f70eaa5c43ceb0ee2d3dbc3ac9946ea74 | missing |\n| \"Table S121\" | dc1fe09d11b104c3ce54b22bf64e79e41d0f3fa2e85ed9d33d03a0decbb804ff | missing |\n| \"Table S122\" | 44f5cbe24b863385e4779ac4a63cc47dea2368424793ada113b706a4c1656a7c | missing |\n| \"Table S123\" | e245c0afbc5818e35339bfb3171d53ec070a250d1a3e992e2603fb196aa23fe7 | missing |\n| \"Table S124\" | fe81937f6373f3159f0b3080c15c22006508708f258f64fc8827bece6db6d075 | missing |\n| \"Table S125\" | 6f1724a69bf12d9124cde3ae512aadb0cb8bf0d15630ab057fc7ead3eca5f2ae | missing |\n| \"Table S126\" | 2f1378892347de1ef5a6249172251e180f3c315ae77415f28a6348c550e60ce2 | missing |\n| \"Table S127\" | 8e6360e5491869c9834c1910acdf3dcd68139178b244257934746c811884a80a | missing |\n| \"Table S128\" | 81e671ad41b5d3f760212824fdd87595a9c94b913e5f253fc8e300f5a4bb58d0 | missing |\n| \"Table S129\" | dd174dd26162311dcaa70281b0e6da5e7a3137eb59a352fc769f36cdcff0e60c | missing |\n| \"Table S130\" | 00eb124afdb6d7d9d0a08191b95b7be2fc846228805a592956fdf6bf05746afe | missing |\n| \"Table S131\" | 29597d27551c5949e4747321b4d4eac9e9223d130191c69702c13818e82b327d | missing |\n| \"Table S132\" | 26d018fd9baaceaf2dd7c6a0cf9583470a81854232353dbb7117da8b78c720f7 | missing |\n| \"Table S133\" | 6b046a6df3d941d1281ad3c319cbd6a3782ec128f213ee9aa0e31ad7692faa64 | missing |\n| \"Table S134\" | f4e990877ec9a125894088d38640e9ac3184a3cc44fb4b48d39aab3cd24156de | missing |\n| \"Table S135\" | ce26921082255202661d82fcaee147e07f00866af6556cf46c4c84b1e6d1e66d | missing |\n| \"Table S136\" | f9f2dc8a91d1bea93621bda46e9d0caebd0c6ab27fb10ce6428cac370b168eb3 | missing |\n| \"Table S137\" | 790ecb83746774c6d25db65d21fe5a4c429f17537dd8e1bd65d1349a9afb8e13 | missing |\n| \"Table S138\" | 82e30c3b33907896c53db610d9ce35e75e1a4088fdb866d538a526738e919998 | missing |\n| \"Table S139\" | 523de1f766306001fafc37ecd2754fbd30101f47b5826b2179dc9469f0aa3557 | missing |\n| \"Table S140\" | 7c0916cf66e7e00d02e905a2fa0046b32306c080ab4873f866f0f95bcd513230 | missing |\n| \"Table S141\" | e04bc2646e0b8b1d2214fe9b133a762eb78e33334b7e7b22c9cfc0c4920140f6 | missing |\n| \"Table S142\" | 39cbfe0ae3f11aa582c14be7d153b2e3977544a1eeedaf98eaafc8e16b6c79e7 | missing |\n| \"Table S143\" | b524a6fada6b3aa6b6c77afd311df6850ca1f68023ae359f7de7bd0a603d1da6 | missing |\n| \"Table S144\" | b70cc7c4e31c989a94489e9ae048d4629513a921e4f0308002a1187b78cc317a | missing |\n| \"Table S145\" | 5afdab2fcc2d2d92249b4332e6fa155f0d37eb2bd7556d97fc4b51608c2fa46f | missing |\n| \"Table S146\" | 32cb9345078e4c456b6ddd2bf6224aeb8af1b1226223d0a37af4724ecab837de | missing |\n| \"Table S147\" | c28c70948ef194f157c52876b3da2cecc24ae13ce5d31e59262028f64f828eb5 | missing |\n| \"Table S148\" | 235ab01eb23e20c77ecfbbd652cd1666fa6185d11285c499d6367e18b84c4770 | missing |\n| \"Table S149\" | 6035dea0fc45bdfbf520d4ec8962b903569e4f7821e77349f40372407d39d942 | missing |\n| \"Table S150\" | 90ed0e125499d98992f5476190cdaab24cfea7d6eb01e1d5ba7ae04e2539f4ad | missing |\n| \"Table S151\" | b44927784f6ee09d96bf8c29e7239ef05f3adb5c7b5a1279119dc78afa627b40 | missing |\n| \"Table S152\" | c0341bd5c72a59414b8068541fcdd59ff5f66cd71d0b254a9fec2dca11809385 | missing |\n| \"Table S153\" | 13751415677097e179cb44d2982ceab27787fb491d3e972e3cb137cc919e9057 | missing |\n| \"Table S154\" | 803e129c5eabcd1b09b817aca35c9dea9b0a53db958f75f3123bf133b5a65371 | missing |\n| \"Table S155\" | 4476a3d94c86ee066d9244762232e510383a06b996f105aa9836bbd413f7ce80 | missing |\n| \"Table S156\" | 9afbdf6c756b1c65ef0b30fb07c4426adf873b067d6caa53d029709adad72ba6 | missing |\n| \"Table S157\" | 7bc625fe2f956d3beac72f52a986b0a7bf751d7f81fa94b5133a09561edc7835 | missing |\n| \"Table S158\" | 36b28e7ee40ba725e45c997b15962330771e477629b0817cd7e4c4a782a809b2 | missing |\n| \"Table S159\" | 8820c7f2369607c292f71d168f6073c8f224bb82e097fc7232ab3c3c187cb107 | missing |\n| \"Table S160\" | 1903f5e46f4a51a497deab1b780f1c525af77720ecf8ce7e539e9f00ddb55ab3 | missing |\n| \"Table S161\" | c057e5bec889cfcc8f914cc5bd8a7ce07ce640ba31939cdba0cb8b17776b8b2d | missing |\n| \"Table S162\" | c9ea247c3d6a7b37b0d7be535bf2bd09fe795fc5582a358e0245219b4afb74c7 | missing |\n| \"Table S163\" | 04d0d57bcfb23361a7b09b037696e02b1e4e8a0f05488f7533e19b450144242d | missing |\n| \"Table S164\" | 790cd5c18659a30fbf11429354b87b717ceb20480195f3fa9e2cd9b93b6bc582 | missing |\n| \"Table S165\" | 5fb535425e2973228294452c22a00893e6022f94a4677ebf35c5d092ac9d970c | missing |\n| \"Table S166\" | 1b21f877537407635099a1de2927a9c0f22dfb7db80c409aa89c51130fbb8c3d | missing |\n| \"Table S167\" | 1716a2cc5c8d51048bb6494b9240749e8fcd5c72ab3f8a11fe5e937917c1d94d | missing |\n| \"Table S168\" | 6f223646715781c76bb81ccfae3c98d85a62b6e8f30867d128c443c259164004 | missing |\n| \"Table S169\" | f93cd7a44f28404889100f42f76e214d7221d9f827f1cfcee1a5cbba207a56d4 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T075914Z-a062c8a03977.jsonl"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "47a6a6325184a81e6bdc805367a9a754498b7baad876d0900fe37bc6be3e5249",
+  "sheet": "Table 14.2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All totals retained. Behaviour and impact categories are multiple-response and not additive; randomly adjusted estimates may not sum to totals. Life impacted is an aggregate; indented home, work/school, social and changed-contact-detail rows are its overlapping components, retained in the same dimension. RSE column labels retained verbatim as measure and estimate_type. Sex and age of respondents and 20-year scope are in the published title; B5 identifies perpetrator sex and episode scope.",
+  "new_dimensions": [
+    {
+      "name": "stalking_emotional_impact",
+      "description": "Emotional impact of the most recent stalking episode."
+    },
+    {
+      "name": "stalking_life_impact",
+      "description": "Area of life impacted by the most recent stalking episode, including any impact and no impact."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7,A14"
+    },
+    {
+      "name": "notes",
+      "cells": "A24:A27"
+    }
+  ],
+  "tables": [
+    {
+      "name": "stalking_emotional_impact",
+      "range": "A8:C12",
+      "values_range": "B8:C12",
+      "meta_data": [
+        {
+          "name": "offender_sex",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stalking_emotional_impact",
+          "caption": "Emotional impacts of most recent stalking episode(a)",
+          "direction": "W",
+          "cells": "A8:A12"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "stalking_life_impact",
+      "range": "A15:C20",
+      "values_range": "B15:C20",
+      "meta_data": [
+        {
+          "name": "offender_sex",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "stalking_life_impact",
+          "caption": "Areas of life impacted by most recent stalking episode",
+          "direction": "W",
+          "cells": "A15:A20"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "total",
+      "range": "A22:C22",
+      "values_range": "B22:C22",
+      "meta_data": [
+        {
+          "name": "offender_sex",
+          "cells": "B5"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A22"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B6:C6"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:12:55Z",
+    "tool_version": "0.2.0",
+    "records": 24,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T081149Z-1ee86d98e775",
+    "started_at": "2026-11-03T08:11:52Z",
+    "workbook": "1ee86d98e775990b15bd33f75163677b614defb4885f16c0782c6e9162d94473--Men-s-experiences-of-stalking-Tables-13-to-15-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a076-f1e8-771d-8168-fb44807c9cf0",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "cb20e5a56d40e2edc879ab9a5c6262c952cc9bfbaf27a6aa50a3fb88e081dbf0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1ee86d98e775990b15bd33f75163677b614defb4885f16c0782c6e9162d94473--Men-s-experiences-of-stalking-Tables-13-to-15-.xlsx`.\n\n- Publication: Stalking (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6735dbdf1bed6329e4375b3aaf639b4e1020852e3dd2379b56f3764c69aeed52 | missing |\n| \"Table 13.1\" | 8038fb471322c8f39ead284307193588a50e9fd4d911dc4fdccd18c615bb92b6 | missing |\n| \"Table 13.2\" | 888a0a2fdcc2e3c08d7eb6fdfae49fd4822c26aa4ec915aae17f63d658cfa367 | missing |\n| \"Table 14.1\" | 6219b3e1f6b267f03b21e1ee677e45b177b33f3dc8102dc609634310f162b34d | missing |\n| \"Table 14.2\" | 47a6a6325184a81e6bdc805367a9a754498b7baad876d0900fe37bc6be3e5249 | missing |\n| \"Table 15.1\" | 51f5b1e67ea13e5caa25cc44090e41f0773d5022785a8c7ece4c0040f958dc76 | missing |\n| \"Table 15.2\" | c221df77b38200c62ac2ccced59bb279367d64255e1b6cbd8a25a214afac924c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T081149Z-1ee86d98e775.jsonl"
+  }
+}

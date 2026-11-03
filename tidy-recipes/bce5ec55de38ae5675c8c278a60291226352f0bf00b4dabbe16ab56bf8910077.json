@@ -1,0 +1,178 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "bce5ec55de38ae5675c8c278a60291226352f0bf00b4dabbe16ab56bf8910077",
+  "sheet": "Table S1",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Stacked sex, Indigenous identity and age sections are separate tables. The final Total row is retained with age_group as published, but is the overall population total, including unknowns, not merely the sum of displayed ages. No hierarchical subtotals. Published exclusions and self-report/data-collection limitations are retained in notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A8,A11"
+    },
+    {
+      "name": "notes",
+      "cells": "A19:A23"
+    },
+    {
+      "name": "source",
+      "cells": "A24"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex",
+      "range": "A6:F7",
+      "values_range": "B6:C7,E6:F7",
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "A6:A7"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B4:C4,E4:F4"
+        },
+        {
+          "name": "population",
+          "direction": "NNW",
+          "cells": "B3,E3"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status",
+      "range": "A9:F10",
+      "values_range": "B9:C10,E9:F10",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous identity",
+          "direction": "W",
+          "cells": "A9:A10"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B4:C4,E4:F4"
+        },
+        {
+          "name": "population",
+          "direction": "NNW",
+          "cells": "B3,E3"
+        }
+      ]
+    },
+    {
+      "name": "age_group",
+      "range": "A12:F17",
+      "values_range": "B12:C17,E12:F17",
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age group (years)",
+          "direction": "W",
+          "cells": "A12:A17"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B4:C4,E4:F4"
+        },
+        {
+          "name": "population",
+          "direction": "NNW",
+          "cells": "B3,E3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:03:28Z",
+    "tool_version": "0.2.0",
+    "records": 40,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T075914Z-3626c188e317",
+    "started_at": "2026-11-03T07:59:15Z",
+    "workbook": "3626c188e317b28a0a1f347c18a102b1e429c326445970e2d878e854f6c7c5db--aihw-phe-367_demographics-data-tables_national.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06b-6c45-77bb-9965-54d1ae1c31af",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1569c7aac8cdee7786f3c1bfaba9ce009e81024968e72d838d3a53ee723488e0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `3626c188e317b28a0a1f347c18a102b1e429c326445970e2d878e854f6c7c5db--aihw-phe-367_demographics-data-tables_national.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | daca7b937e39a30bccd0ebee168fc79e0cf9c7e21d1ee236a67396cc247afe73 | missing |\n| \"Notes & symbols\" | 0d8cf8685fa561ae4067da059c9e306a75886eeee3e7b7e898c033e5f5240921 | missing |\n| \"Table S1\" | bce5ec55de38ae5675c8c278a60291226352f0bf00b4dabbe16ab56bf8910077 | missing |\n| \"Table S2\" | 08c913c86bab5e522c4627de74adca0f21119230259b70a305a5a6e61b53f0af | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T075914Z-3626c188e317.jsonl"
+  }
+}

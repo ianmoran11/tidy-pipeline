@@ -1,0 +1,347 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "33424db98fe42982efa309c4470389d45a28c93de42e7965a744b1b881cfdcec",
+  "sheet": "Table 28.2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Indented rows retain published hierarchy: More than once and More than one are parent totals; social, economic and threatening/degrading behaviour rows are aggregate totals. Multiple behaviours may overlap. All subtotals and the overall total are retained. Mean/median rows remain in their respective count/duration dimensions; B5's estimate unit does not describe these summary rows, whose labels specify number or months. na and np remain published values.",
+  "new_dimensions": [
+    {
+      "name": "time_since_last_emotional_abuse",
+      "description": "Time elapsed since emotional abuse by a previous partner last occurred."
+    },
+    {
+      "name": "emotional_abuse_frequency",
+      "description": "Frequency with which emotional abuse was experienced."
+    },
+    {
+      "name": "emotional_abuse_behaviour",
+      "description": "Types of emotional abuse behaviours experienced, including aggregated behaviour groups."
+    },
+    {
+      "name": "number_of_emotional_abuse_behaviours",
+      "description": "Number of emotional abuse behaviours experienced, including published mean and median summary rows."
+    },
+    {
+      "name": "relationship_duration_before_emotional_abuse",
+      "description": "Length of relationship before the first incident of emotional abuse, including post-separation onset and mean or median months."
+    },
+    {
+      "name": "emotional_abuse_anxiety_or_fear",
+      "description": "Whether the person experienced anxiety or fear due to emotional abuse."
+    },
+    {
+      "name": "emotionally_abusive_partner_assault_status",
+      "description": "Whether the emotionally abusive partner assaulted or threatened to assault the person."
+    },
+    {
+      "name": "emotional_abuse_cohabitation_status",
+      "description": "Whether emotional abuse was experienced while living together with the previous partner."
+    },
+    {
+      "name": "first_emotional_abuse_cohabitation_status",
+      "description": "Whether emotional abuse first occurred while living together with the previous partner."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A12,A16,A23,A48,A58,A67,A71,A75,A79"
+    },
+    {
+      "name": "notes",
+      "cells": "A85:A92"
+    }
+  ],
+  "tables": [
+    {
+      "name": "time_since_last_emotional_abuse",
+      "range": "A7:C10",
+      "values_range": "B7:C10",
+      "headers": [
+        {
+          "name": "time_since_last_emotional_abuse",
+          "caption": "When emotional abuse last occurred",
+          "direction": "W",
+          "cells": "A7:A10"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "sex",
+      "range": "A13:C14",
+      "values_range": "B13:C14",
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Sex of partner",
+          "direction": "W",
+          "cells": "A13:A14"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "emotional_abuse_frequency",
+      "range": "A17:C21",
+      "values_range": "B17:C21",
+      "headers": [
+        {
+          "name": "emotional_abuse_frequency",
+          "caption": "How often emotional abuse experienced",
+          "direction": "W",
+          "cells": "A17:A21"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "emotional_abuse_behaviour",
+      "range": "A24:C46",
+      "values_range": "B24:C46",
+      "headers": [
+        {
+          "name": "emotional_abuse_behaviour",
+          "caption": "Types of emotional abuse behaviours experienced(b)",
+          "direction": "W",
+          "cells": "A24:A46"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "number_of_emotional_abuse_behaviours",
+      "range": "A49:C56",
+      "values_range": "B49:C53,B55:C56",
+      "headers": [
+        {
+          "name": "number_of_emotional_abuse_behaviours",
+          "caption": "Number of emotional abuse behaviours experienced",
+          "direction": "W",
+          "cells": "A49:A53,A55:A56"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "relationship_duration_before_emotional_abuse",
+      "range": "A59:C65",
+      "values_range": "B59:C62,B64:C65",
+      "headers": [
+        {
+          "name": "relationship_duration_before_emotional_abuse",
+          "caption": "Length of relationship with previous partner before first incident of emotional abuse occurred",
+          "direction": "W",
+          "cells": "A59:A62,A64:A65"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "emotional_abuse_anxiety_or_fear",
+      "range": "A68:C69",
+      "values_range": "B68:C69",
+      "headers": [
+        {
+          "name": "emotional_abuse_anxiety_or_fear",
+          "caption": "Whether ever experienced anxiety or fear due to emotional abuse",
+          "direction": "W",
+          "cells": "A68:A69"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "emotionally_abusive_partner_assault_status",
+      "range": "A72:C73",
+      "values_range": "B72:C73",
+      "headers": [
+        {
+          "name": "emotionally_abusive_partner_assault_status",
+          "caption": "Whether emotionally abusive partner assaulted or threatened to assault",
+          "direction": "W",
+          "cells": "A72:A73"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "emotional_abuse_cohabitation_status",
+      "range": "A76:C77",
+      "values_range": "B76:C77",
+      "headers": [
+        {
+          "name": "emotional_abuse_cohabitation_status",
+          "caption": "Whether emotional abuse experienced while living together with previous partner",
+          "direction": "W",
+          "cells": "A76:A77"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "first_emotional_abuse_cohabitation_status",
+      "range": "A80:C81",
+      "values_range": "B80:C81",
+      "headers": [
+        {
+          "name": "first_emotional_abuse_cohabitation_status",
+          "caption": "Whether emotional abuse experienced for the first time while living together with previous partner",
+          "direction": "W",
+          "cells": "A80:A81"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "range": "A83:C83",
+      "values_range": "B83:C83",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A83:A83"
+        },
+        {
+          "name": "estimate_type",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:10:37Z",
+    "tool_version": "0.2.0",
+    "records": 112,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080936Z-bad3b3c9e9db",
+    "started_at": "2026-11-03T08:09:37Z",
+    "workbook": "bad3b3c9e9db9b1850e5e0f8cdddabe4173e3058a01394e26a3e00df696d4843--Men-s-experiences-of-partner-emotional-abuse-Table-28-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-e3ea-73f8-be1f-5177ebb491a4",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "82c99c21ed35df0db90e78d86aa153cb89237d2af7c85a1f6183fcfb9209a0c1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `bad3b3c9e9db9b1850e5e0f8cdddabe4173e3058a01394e26a3e00df696d4843--Men-s-experiences-of-partner-emotional-abuse-Table-28-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 3 of 3\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 3769a341d858eb9b4b97151339ca0cfcaf1b25629005a675a8cce38297162161 | missing |\n| \"Table 28.1\" | db3b4afc3cc84f2534e9c91f02c5fa7817c6898c9dccc15a920610ddd08f8568 | missing |\n| \"Table 28.2\" | 33424db98fe42982efa309c4470389d45a28c93de42e7965a744b1b881cfdcec | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080936Z-bad3b3c9e9db.jsonl"
+  }
+}

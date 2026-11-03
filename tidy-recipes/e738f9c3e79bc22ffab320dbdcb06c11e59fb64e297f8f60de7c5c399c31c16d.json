@@ -1,0 +1,304 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e738f9c3e79bc22ffab320dbdcb06c11e59fb64e297f8f60de7c5c399c31c16d",
+  "sheet": "Table S107",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals, unknown categories and symbols retained. Separate sex, Indigenous-status and age marginal breakdowns are not joint cross-classifications. Totals may include unknown demographic responses.  Caveats: 1. Only considers prison entrants who reported having a casual sexual partner/s in the past 3 months.",
+  "new_dimensions": [
+    {
+      "name": "protected_sex_frequency",
+      "description": "Frequency of protected sex."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A33,A34,A35,A36,A37,A38"
+    },
+    {
+      "name": "source",
+      "cells": "A39"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A8,A11,A19,A22,A25"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_6_B",
+      "range": "A6:G7",
+      "values_range": "B6:G7",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A6:A7",
+          "caption": "Sex"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_9_B",
+      "range": "A9:G10",
+      "values_range": "B9:G10",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A9:A10",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "age_group_12_B",
+      "range": "A12:G16",
+      "values_range": "B12:G16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12:A16",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "population_17_B",
+      "range": "A17:G17",
+      "values_range": "B17:G17",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A17:A17"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "sex_20_B",
+      "range": "A20:G21",
+      "values_range": "B20:G21",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A20:A21",
+          "caption": "Sex"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_23_B",
+      "range": "A23:G24",
+      "values_range": "B23:G24",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A23:A24",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "age_group_26_B",
+      "range": "A26:G30",
+      "values_range": "B26:G30",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A26:A30",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    },
+    {
+      "name": "population_31_B",
+      "range": "A31:G31",
+      "values_range": "B31:G31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A31:A31"
+        },
+        {
+          "name": "protected_sex_frequency",
+          "direction": "N",
+          "cells": "B3:G3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:08:57Z",
+    "tool_version": "0.2.0",
+    "records": 120,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T075914Z-903f80090ef2",
+    "started_at": "2026-11-03T07:59:15Z",
+    "workbook": "903f80090ef2ce5dc0f658dedff578815e19095565ab187df70e1a573dba13d9--aihw-phe-367_determinants-of-health-data-tables_national.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06b-6c17-76e2-9cac-9bd78415434b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1455eeac65d9623c84ad4ebc50ef5af27a45494d2045b32715dab40b7d625e25",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `903f80090ef2ce5dc0f658dedff578815e19095565ab187df70e1a573dba13d9--aihw-phe-367_determinants-of-health-data-tables_national.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 60 of 60\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c3a5c9e726da2edef9d484e5da7f205dd0f29514d18831d43b57d25c1efa5e07 | missing |\n| \"Notes & symbols\" | 5cebd56b92cff60e672caddab21012c4041a91eb753cd7c7fe2abf07d6b7df72 | missing |\n| \"Table S50\" | 548fad93d910998a085f7f3aee0e4200f08c77fd4ab6785ae8210fe20e599b48 | missing |\n| \"Table S51\" | 195bfc70c976bdb9bf0b819e6e1ba6e0771943c9db4ed9c447b2064cae2aa27c | missing |\n| \"Table S52\" | 1663467b5aff4e7832a2333e877969dcb3d4c6a928faa4c6227143fbdd9cb283 | missing |\n| \"Table S53\" | fee8e28612567665733d7e21acfb1a1a99755ece6566ba46470f2a34cee6dae6 | missing |\n| \"Table S54\" | 63b80dd4a735984557ef8f6d59ae18642a52eda1da9804a5b7b66895c0ad13ea | missing |\n| \"Table S55\" | fb8c48a7a66059ffa87570dd112be98f89e7c0a878879ffa884da78bf331c5ac | missing |\n| \"Table S56\" | b3b8c9d650c28b55021e8590c4c4cdd6dd2569c63ca1eab6e535266ca915cfb5 | missing |\n| \"Table S57\" | 9d716ad93a79a5565bbe1bd9fd1d442950cfcf8280ff1985ac680a0870826aa0 | missing |\n| \"Table S58\" | 6e15d1bda03c2c14846dc2a5de9c460d0d20b1f62ccb58a9f16ed2fb6f73e195 | missing |\n| \"Table S59\" | c7a1d51cef66d94413310a2139ed701636d9e66dbaccaa82707097459c21884c | missing |\n| \"Table S60\" | f79ff0a388b3cfc15f31bc003018fdb622d89757d666cd9cf78f706357fb08f7 | missing |\n| \"Table S61\" | 963fd256bec8a22e8fcc26970bf13395e16cacb223db652e1431f62083eb3938 | missing |\n| \"Table S62\" | 4cf8a7300d1aa64cbdff9f39ab96eb210c99a9a82f4526673eb19fe1318c0aea | missing |\n| \"Table S63\" | f53412c78ec93f942133972ff562dc8857d4f421fc3f04a0655b7ee1f2f0ac80 | missing |\n| \"Table S64\" | 56a8ca61730629464ce6433b48cca2b88bb679588b075d8f2604d6b83548b659 | missing |\n| \"Table S65\" | 17c2886122b61f74a8265c438e7ab7a7f85a620e9117a7ea3f11f835b94dadb8 | missing |\n| \"Table S66\" | 114341c46c68f6f98d1c0545daefec293c5555812964d44782fd2aef313087e7 | missing |\n| \"Table S67\" | 468ed7ac214dee636ae298c9d7292ee211ea7e9e48f0d1303a7665fb7a9b7512 | missing |\n| \"Table S68\" | 5070e6f2f99b5ef5b694c9c0a011572950706a84bcd46454ae1bf7c3ff5aadbd | missing |\n| \"Table S69\" | 7e17ef73f4aac28886d24c6f1fd6285e05bcdd57e754ed27b7679eb43cb6e8e8 | missing |\n| \"Table S70\" | c204c2b1b9974bbb44f9a38578c62588813657655bb57adc7dbc4593fd7e4aa6 | missing |\n| \"Table S71\" | f5057d7c0125fbaa46dd3cfefe7a0204bb441b46bcfdffd174efb8826eda39fb | missing |\n| \"Table S72\" | ad0a98c76fa2ef21013aa82eca451a91eb72c8267deb92e91bb7a99ea24b43b5 | missing |\n| \"Table S73\" | 43c7aaeb89491aa3f4b0c04ffcef3a7c99c4d276dec15496b3b9d923724e0fb6 | missing |\n| \"Table S74\" | 7ee1982aee89569cccb47c5a1d6a42a8cc93fe375d5c256ed712c8e1f2958178 | missing |\n| \"Table S75\" | 45baca4cb273e61bb432fb468ad1fae6219c2630d9af399ddafddd30cf3d383d | missing |\n| \"Table S76\" | 87753d55cc324cd83128b75fa4a5eadad3cad5325b2b4907861502a66a8ac73b | missing |\n| \"Table S77\" | c22f4c6a37f2c8155bdee0025e8cbae3b7b274000177b65e1dc9bcca51573cf8 | missing |\n| \"Table S78\" | b916ef21326ccb4b32dc670f7d38f4412b9e19563eb9a6867648eeaa5d71e373 | missing |\n| \"Table S79\" | 595d225a56cf0c4ab98269cda5af9707e3cbd4e31d9ee15b35d854313b711083 | missing |\n| \"Table S80\" | c4b6f6e662d289259e64e33ff18a19ec475f37d37924922246a0034e6d17822d | missing |\n| \"Table S81\" | 5427da113c816c43a05af38acfbcb2581481818a50154000fe98d8640fb154b8 | missing |\n| \"Table S82\" | 864b7e8f0be229ce09223b64e4df4910c478f9949b985e2c7ee9abd38f81e6b5 | missing |\n| \"Table S83\" | 40fb54c69b65c59fae0c5c2ed2bb058f51976210150923aa713247cd6f581a30 | missing |\n| \"Table S84\" | 9efa3b71967383199f4e14ddf62b532d025b417b73c861f9e921d8aabc0bea1c | missing |\n| \"Table S85\" | b7d052b985f355f8ef0a0940df611a17906ec9eac52e7f1ed6e5d21f37571a9b | missing |\n| \"Table S86\" | c91517434689ec515e1dd086bd753a19ba192108a1f815fcd983ec99492cce07 | missing |\n| \"Table S87\" | a76aeff370f2354711b5a4e0aca2b27ac9683e6452955a13b333198253d84626 | missing |\n| \"Table S88\" | 6effba686169f64f5fc7544a06daffb1da638edd50fdb0c0fbc2bc8b8215bc10 | missing |\n| \"Table S89\" | b6b019b993dd2f2958abfee49340baf358e5798d04e343506a5c4d731e8ed033 | missing |\n| \"Table S90\" | 72dfea36df38c44f84af3ffccef80c8da6e8f505f6a6c1ec24eb207728f6c457 | missing |\n| \"Table S91\" | 834c4e17e807af84bb5a80a3c48ae813f88ef8d2cd2fcd2670bf54edb00242db | missing |\n| \"Table S92\" | cc0ebbf9113b0114530ad420bd64669faa2a55dcfd4d3b32d528fffd9d96051c | missing |\n| \"Table S93\" | d7ce78c88d9b7accc0452506d617f338f65639892f62c2ab122a864625cfb295 | missing |\n| \"Table S94\" | 38bc9e0ec3dd2bd25b53fe3ae5978331ed14bea9e5f104945b1e07376e2ad153 | missing |\n| \"Table S95\" | 3098ce8f447c4a001103c5706784c44d1410224021d003a490fd3c22c27984ca | missing |\n| \"Table S96\" | 9f4a7bfe2118c5aefcbfb8e593f20ba642225a16a5ce190689c1ee795547ad1c | missing |\n| \"Table S97\" | 2dd6017970c788c169697014ff30422e85cf9cde793963632dfb21037f1467e0 | missing |\n| \"Table S98\" | b621a7f348840a957dcec597ce545e66d5cbe7d9817559fa48214fbb66a48aad | missing |\n| \"Table S99\" | 7584b297245bed020bb3cc494d95cb18719ac7ceee98279c42808e723bbb0817 | missing |\n| \"Table S100\" | 9b3acaaf9b1fdd2e6d74cfe481a9236b44318a852943e6944973b7333d5190d7 | missing |\n| \"Table S101\" | 7943d4cd91d2dfa38b50370916802602f2378e64c516fbb6551953d17ea5defb | missing |\n| \"Table S102\" | b14a422306854e4227762b0358a17c15ef6bd157482c9a52cb4d4dca61f0c83a | missing |\n| \"Table S103\" | e81319175dc0f86971f2c20a46cc0ffb6bc115737a70d52280530dcc207b8ab1 | missing |\n| \"Table S104\" | 89470e955dd5356d8b09484a39f94af33ca8d3e107fe066604a5e345d2272e2d | missing |\n| \"Table S105\" | 58b8f1ef25e83b2f3ad23345e1c347e4447095bb7dcaa9bf1816de6afd6b4a03 | missing |\n| \"Table S106\" | 6e0e4cb264d7c3a77cf38e72bb034759b3dc99a0612171140fff743e2e65b32f | missing |\n| \"Table S107\" | e738f9c3e79bc22ffab320dbdcb06c11e59fb64e297f8f60de7c5c399c31c16d | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T075914Z-903f80090ef2.jsonl"
+  }
+}

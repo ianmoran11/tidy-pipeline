@@ -1,0 +1,309 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "141565f78463afd1859ffcf11196b9184f3ec05e555634ebb89e83c75513ddfd",
+  "sheet": "Table S13",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "All published totals and unknowns retained. Demographic sections are separate marginal distributions, not cross-classified. Symbols are preserved as values; notes describe exclusions and denominators.",
+  "new_dimensions": [
+    {
+      "name": "weight_gain_attempt",
+      "description": "Whether the person tried to gain weight in prison",
+      "example_labels": [
+        "Tried to gain weight",
+        "Did not try to\r\ngain weight",
+        "Unknown"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A33,A34,A35,A36,A37"
+    },
+    {
+      "name": "source",
+      "cells": "A38"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A8,A11,A19,A22,A25"
+    }
+  ],
+  "tables": [
+    {
+      "name": "sex_6",
+      "range": "A6:E7",
+      "values_range": "B6:E7",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A6:A7",
+          "caption": "Sex"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_9",
+      "range": "A9:E10",
+      "values_range": "B9:E10",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A9:A10",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "age_group_12",
+      "range": "A12:E16",
+      "values_range": "B12:E16",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A12:A16",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "population_17",
+      "range": "A17:E17",
+      "values_range": "B17:E17",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A17:A17"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "sex_20",
+      "range": "A20:E21",
+      "values_range": "B20:E21",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "A20:A21",
+          "caption": "Sex"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_23",
+      "range": "A23:E24",
+      "values_range": "B23:E24",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "A23:A24",
+          "caption": "Indigenous status"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "age_group_26",
+      "range": "A26:E30",
+      "values_range": "B26:E30",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A26:A30",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    },
+    {
+      "name": "population_31",
+      "range": "A31:E31",
+      "values_range": "B31:E31",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A31:A31"
+        },
+        {
+          "name": "weight_gain_attempt",
+          "direction": "N",
+          "cells": "B3:E3"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:06:04Z",
+    "tool_version": "0.2.0",
+    "records": 80,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T075914Z-d32c1c4a97b4",
+    "started_at": "2026-11-03T07:59:15Z",
+    "workbook": "d32c1c4a97b4548dd38b3095ae513ad600b09b70d34fbb539fe7577777459874--aihw-phe-367_health-status-data-tables_national.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06b-6c1f-7082-8798-af62c76cddd7",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "383a58a14b355bbf741232a9a985baecb82203337ae6a0c0ed2c95b6eb204525",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `d32c1c4a97b4548dd38b3095ae513ad600b09b70d34fbb539fe7577777459874--aihw-phe-367_health-status-data-tables_national.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 49 of 49\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f883428ca5a06561db4d65aeabf301012b104f197097ea1b969bf663ef4a1de4 | missing |\n| \"Notes & symbols\" | ab789ebaa9259c09c7aafd9af41cb0d92478024b5aebb1ab131b55a1bcaba15a | missing |\n| \"Table S3\" | 670b16247fb14491d992468d67ab3c17ffe40c7094988dff12d1072d519ee65f | missing |\n| \"Table S4\" | 343a2f9522e4bd215792728238799e6c221656e5c614ecd7f4e00ebc309c4fd6 | missing |\n| \"Table S5\" | 9c610051b03d1f95e16af3a20c337bce0039100bdd04bbfe8b805ba7d92ed06f | missing |\n| \"Table S6\" | 6106f2d149ccc09ec5ce04e39fb9b0063d83716f92f6dc96818cc1a5359feb44 | missing |\n| \"Table S7\" | a52e0ce7ee91df2992c34c7510a2d5a2527dd098f3e1ceb53fc25d1245a53e5d | missing |\n| \"Table S8\" | 7a95538e891eac4d3d7bf75f1c6f3a316b2ae78d0ef13d0119ab76f4f480b8b5 | missing |\n| \"Table S9\" | cb09a201d72ae9e5fabdc7b5f3ed6be37db1626f59c2fcf736e4c8f529907240 | missing |\n| \"Table S10\" | 95ea64f67bb5b560d9badcc7bd27caf900885520fdaef54086c3055d286a4e1f | missing |\n| \"Table S11\" | 0b8d18b47dc0779baeaf5a16cfa87585c4d8db08fd5d9dd21b9f00dd7df7cfa4 | missing |\n| \"Table S12\" | 302879b286700eb1626ca3d53476ccc99e7d5bd4f7e7733f3c83b1e991705b44 | missing |\n| \"Table S13\" | 141565f78463afd1859ffcf11196b9184f3ec05e555634ebb89e83c75513ddfd | missing |\n| \"Table S14\" | 887559d344b30956fb50f1a175c2fbba64abcc6e7f644d53212a2cb80c1dc28a | missing |\n| \"Table S15\" | 1fe99f5387182bba7f73a99ba1092ba5ba3428dc22d4ae4665857329a2e3affc | missing |\n| \"Table S16\" | 4c662a91ebe359f8ddb42e2ed2956eb982bce7ad3a1f1e08955070eca3ec2d5c | missing |\n| \"Table S17\" | 3c28b25590911fb3fa7cd07945447b4fc3a981ddd0c91200c241c5bc65d2e928 | missing |\n| \"Table S18\" | 8c3d4fe1d8e9565d97ac8d1f3e518dcbafabfa3de2db055f9279ca191cac7259 | missing |\n| \"Table S19\" | e549e8d4951cf5d5fed1c453caba90c1bf0297e058890e93e6c05726c82c6126 | missing |\n| \"Table S20\" | 65b4c713c9bf8ed06093e5ebbd2fc9dadd8b62ef4cdda5cd1b7c5e27034db1c6 | missing |\n| \"Table S21\" | a44f3389a166de8a50ea5c8e30c7137e39c3a4b77b9fe36f445adc813d881f19 | missing |\n| \"Table S22\" | 5b7a473d118ccecfdfa616a79bf9301345c93f0ad311f7b19f23dbb5d0044578 | missing |\n| \"Table S23\" | b48ca97657a85f361dd6a00197879539ed6d1e7857f0a99fd1e407681ead1da2 | missing |\n| \"Table S24\" | f23b95ecce11a1760d65784ea2ce8667d3e4250a891b560337c5611b5ec6017f | missing |\n| \"Table S25\" | 59f4cecbd2da5480e811271e06c0a359cea314d14fc3a5d54a18f3c5c7279372 | missing |\n| \"Table S26\" | 33d3b02839808b6c4ffb5c8e59299f804749df985f71fc70b8ac9eb02fe6e451 | missing |\n| \"Table S27\" | 7ea753701e062ee9eda02b4a4888f4fd808bc024dbf3256674c0b1cf2b0c06c7 | missing |\n| \"Table S28\" | cc66dfaf8f14936d64fc083db64d833d4530dbdec39415a9d17363f8eeccbf46 | missing |\n| \"Table S29\" | 96c1d1167fe8d2c1685b6bd0fc7e0d6fa9f6c54ed20a72cacc70ba4f6619367a | missing |\n| \"Table S30\" | e6c102360413a36ff413151ba072425e42680a4bd3453571172a76235eaaaaaa | missing |\n| \"Table S31\" | 66592eb139979964dcd13e188beafd93951824099efbc91942e4460b9e976cad | missing |\n| \"Table S32\" | b6a7eda130ee40bfcd2836d1c5f578567bc72e932c4cf42ca255b032d34c81d8 | missing |\n| \"Table S33\" | f87a554dc77495ec55692bc803395c953c629a74bad304ce31110cd3623b4b98 | missing |\n| \"Table S34\" | 455840d459bbdc6f7d26f390d6cc390bb1455fcc4099c17b9c6814b30c4fdf35 | missing |\n| \"Table S35\" | a73d9d134cbe07c9d4a39bd88c3ecdf7006a1fc5f1484f198b72320a9324dd97 | missing |\n| \"Table S36\" | 839c569629d9c34eba81c1ff506746bbd1dfc286969c4ec39e5d4e7ee58e953c | missing |\n| \"Table S37\" | f43d37efa1102ce59c43f3c8c2776afaa4e92350104b20002edc8adeb92025bb | missing |\n| \"Table S38\" | ddac477e498fab0090b55030b69949313b05152484272ebea2d98b9387b14636 | missing |\n| \"Table S39\" | 4139b9be70a2b78c763c8823f562d57142b724792bfe616b0a39fcaf3b850327 | missing |\n| \"Table S40\" | b24c783c7da6d3a6ddff0280643f0045df71b9ecc3205f536d715a94d15b30ee | missing |\n| \"Table S41\" | 9eeec44dcb5e8e466aefc17357ea745bc3b5e18472bbe4aac780ca8e9e40213d | missing |\n| \"Table S42\" | 662c5cb9688ea03f48dbdaf1e4b0405873d339b7247e039a17d2ef735bc3a0c5 | missing |\n| \"Table S43\" | 2c605acb1f75a005673aa15203c923de67e212db4ec181c0316f327c23b64410 | missing |\n| \"Table S44\" | abc7b7e38d6a1d90c7aaf065c261ad67dcc28625340b9c989245a3ebbc7effeb | missing |\n| \"Table S45\" | 8c7c9e75232a4d44eaf746c731ec2984ca7142e38965edeaf456f18f6c6310e3 | missing |\n| \"Table S46\" | 4289929b387339407db05416e4341fe47098064e62c0b197798c36144c98d456 | missing |\n| \"Table S47\" | e47bcacf4246d18be2be3316103055b3703fec3f435f4704ce6eeadeb6076f51 | missing |\n| \"Table S48\" | 38a69ad884128f74078e94f80e066b36743c1f4733162fc5f15af097f826ae26 | missing |\n| \"Table S49\" | c825819acf7f5b78c9100eac5e3ab2a1aa7f877c7d459f10f8afd94a498e5e78 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T075914Z-d32c1c4a97b4.jsonl"
+  }
+}

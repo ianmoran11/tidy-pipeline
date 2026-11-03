@@ -1,0 +1,230 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5e1a71f1b7993134f8a3254856f4b96de58e2faa2c7db47dbcbe85d597fb3b4a",
+  "sheet": "Table 29.2",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "1f598cf32eb49a1c1f24b66e4dba371fb35b32c61ff8a13ec014a0bec3685435",
+  "agent_notes": "Restriction, exploitation and sabotage rows are aggregate totals with indented behaviour components; respondents may occur in multiple behaviours. All aggregate and overall totals retained. Mean and median remain published summary labels on the behaviour-count axis; their estimate values are numbers of behaviours, not thousands of men despite the common column caption. RSE columns are sampling errors as explicitly captioned. Preserve na and np values. Partner sex refers to perpetrator, not respondent. Previous-partner and since-age-15 scope is specified in the title and footnotes.",
+  "new_dimensions": [
+    {
+      "name": "time_since_last_economic_abuse",
+      "description": "Elapsed time since economic abuse last occurred by the specified partner.",
+      "example_labels": [
+        "Less than 5 years ago",
+        "20 years ago or more"
+      ]
+    },
+    {
+      "name": "economic_abuse_behaviour",
+      "description": "Economically abusive behaviour experienced, including aggregated restriction, exploitation and sabotage behaviour totals.",
+      "example_labels": [
+        "Economic restriction behaviours(c)",
+        "Damaged, destroyed or stole any of their property"
+      ]
+    },
+    {
+      "name": "number_of_economic_abuse_behaviours",
+      "description": "Number of economic abuse behaviours experienced, including published mean and median summary rows.",
+      "example_labels": [
+        "One to three",
+        "Four or more",
+        "Mean",
+        "Median"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A12,A16,A35"
+    },
+    {
+      "name": "notes",
+      "cells": "A44:A50"
+    }
+  ],
+  "tables": [
+    {
+      "name": "recency",
+      "range": "A7:C10",
+      "values_range": "B7:C10",
+      "headers": [
+        {
+          "name": "time_since_last_economic_abuse",
+          "direction": "W",
+          "cells": "A7:A10",
+          "caption": "When economic abuse last occurred by a previous partner"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "partner_sex",
+      "range": "A13:C14",
+      "values_range": "B13:C14",
+      "headers": [
+        {
+          "name": "offender_sex",
+          "direction": "W",
+          "cells": "A13:A14",
+          "caption": "Sex of partner"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "behaviour",
+      "range": "A17:C33",
+      "values_range": "B17:C33",
+      "headers": [
+        {
+          "name": "economic_abuse_behaviour",
+          "direction": "W",
+          "cells": "A17:A33",
+          "caption": "Types of economically abusive behaviours experienced by most recent economically abusive previous partner(b) "
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "behaviour_count",
+      "range": "A36:C40",
+      "values_range": "B36:C37,B39:C40",
+      "headers": [
+        {
+          "name": "number_of_economic_abuse_behaviours",
+          "direction": "W",
+          "cells": "A36:A37,A39:A40",
+          "caption": "Number of economic abuse behaviours experienced"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    },
+    {
+      "name": "total",
+      "range": "A42:C42",
+      "values_range": "B42:C42",
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A42"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "B5:C5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:10:07Z",
+    "tool_version": "0.2.0",
+    "records": 56,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080912Z-97c02465a355",
+    "started_at": "2026-11-03T08:09:13Z",
+    "workbook": "97c02465a355bf5bba181a87c1292c95c23545a50736b313b059e82ffbb5a649--Men-s-experiences-of-partner-economic-abuse-Table-29-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a074-85e5-769c-8a4f-b6e808b3a7fb",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e7a812147056d302956d25202882c5befc164671e46034b30d6037a04476ccf1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `97c02465a355bf5bba181a87c1292c95c23545a50736b313b059e82ffbb5a649--Men-s-experiences-of-partner-economic-abuse-Table-29-.xlsx`.\n\n- Publication: Partner violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 3 of 3\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | df7ea907c8123c6fdd4a5ee9993aa168b35895d566df90948d630d81680c8d9e | missing |\n| \"Table 29.1\" | ad176c733d2723f005eb95e332def0dacd48548bdd2322d31e2c45b734b909a4 | missing |\n| \"Table 29.2\" | 5e1a71f1b7993134f8a3254856f4b96de58e2faa2c7db47dbcbe85d597fb3b4a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080912Z-97c02465a355.jsonl"
+  }
+}

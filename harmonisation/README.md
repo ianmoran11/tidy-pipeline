@@ -16,13 +16,29 @@ For each record, in order:
    ```json
    "unstack": { "characteristic": { "value_from": "category", "names": { "Sex": "sex" } } }
    ```
-3. **`split`.** A label that carries several dimensions is replaced by them. Keys are
+3. **`combine`, then `split`.** `combine` joins a label to the one that completes it.
+   Keys are the completing dimension; the first `when` pattern that matches the `into`
+   label joins them and sets its `set` fields. Corrective Services puts quarters and
+   months under year headings:
+
+   ```json
+   "combine": { "calendar_year": { "into": "period", "when": [
+     { "pattern": "^(January|…|December)$", "set": { "period_type": "Month" } } ] } }
+   ```
+   `"May"` with `calendar_year` `"2026"` becomes period `"May 2026"`; `calendar_year`
+   is dropped. A label no pattern matches is left as it is.
+
+   `split`: a label that carries several dimensions is replaced by them. Keys are
    the dimension, then the exact label. `null` removes a dimension. Splits may not
    contradict a label already on the record (an error names the sheet and cell),
    except for dimensions listed in `_replace`. `split.period` also sets `period_type`
    for pooled and multi-year periods, which share a `reference_date` with single years
    but are different quantities. Splits run before `from_title`, so a period taken from
    a title gets no `period_type`.
+
+   `publication_split` has the same shape inside a publication's key and is tried first
+   for that publication's sheets, so a label can be split differently there (a survey's
+   `"Estimate"` column is a count; in Crime Victimisation it is something else).
 
    ```json
    "population": { "Non-Indigenous children": { "indigenous_status": "Non-Indigenous", "population": "Children" } },
@@ -47,9 +63,11 @@ For each record, in order:
    normalisation spec.
 5. **`reference_dates`.** `reference_date` (ISO date) is looked up from `period`, first
    in the publication's own object, then in `default`. Financial years end on 30 June,
-   months on their last day, ranges on their last period; plain years are 30 June for
-   Prisoners and child protection, and calendar years (31 December) in RoGS. Periods not
-   listed get no `reference_date`.
+   months and quarters on their last day, ranges on their last period. Plain years are
+   30 June for Prisoners, child protection (AIHW and RoGS) and prison health, and
+   calendar years (31 December) in RoGS Justice and youth justice, Corrective Services
+   (annual averages) and the Personal Safety surveys (1996, 2005, 2012, 2016). Periods
+   not listed get no `reference_date`.
 
 Each record's `.derived` lists the dimensions that steps 3–5 added or changed.
 `row`, `col`, `address` and `.value` never change.

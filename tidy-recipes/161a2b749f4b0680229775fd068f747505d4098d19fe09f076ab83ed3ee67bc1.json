@@ -1,0 +1,142 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "161a2b749f4b0680229775fd068f747505d4098d19fe09f076ab83ed3ee67bc1",
+  "sheet": "Table 1.2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals and indented parent/subtotal rows retained alongside detailed categories; categories may overlap and should not be summed. Labels and footnote markers retained. RSE headings are encoded as estimate_type, including whether they refer to counts or proportions. Childhood abuse is self-reported experience, not child-protection substantiation.",
+  "new_dimensions": [
+    {
+      "name": "childhood_abuse_or_witnessed_violence",
+      "description": "Experience of childhood abuse and/or witnessing partner violence towards parents before age 15."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "notes",
+      "cells": "A21,A22,A23,A24,A25,A26"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "block_1",
+      "range": "A8:G19",
+      "values_range": "B8:G17,B19:G19",
+      "headers": [
+        {
+          "name": "childhood_abuse_or_witnessed_violence",
+          "cells": "A8:A17,A19:A19",
+          "direction": "W",
+          "caption": "Whether experienced abuse or witnessed violence towards a parent by a partner before age 15"
+        },
+        {
+          "name": "sex",
+          "cells": "B5:G5",
+          "direction": "N"
+        },
+        {
+          "name": "estimate_type",
+          "cells": "B6,E6",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:09:24Z",
+    "tool_version": "0.2.0",
+    "records": 66,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080630Z-8d17b4bfd609",
+    "started_at": "2026-11-03T08:06:33Z",
+    "workbook": "8d17b4bfd609954c502b34570db512e6070867f1b906752eb383169c0fbd72b3--Childhood-abuse-and-witnessing-parental-violence-Tables-1-to-7-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a072-17ac-75d2-9060-8bde5c579d4e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "22917a838ba3fc75cecfc902b8a8f0e109f3adbbbc4a9da07e566ea59131aed9",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8d17b4bfd609954c502b34570db512e6070867f1b906752eb383169c0fbd72b3--Childhood-abuse-and-witnessing-parental-violence-Tables-1-to-7-.xlsx`.\n\n- Publication: Childhood abuse (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 19 of 19\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 5073516dbaa7c1a07969bc4e34cc84d278c72a502aebdb1175dd6084b9f2e7ce | missing |\n| \"Table 1.1\" | ff26b10ed1542d2dcef2c80b5a10907ad3ea3f9310c166debbcd6f92ce6ab77a | missing |\n| \"Table 1.2\" | 161a2b749f4b0680229775fd068f747505d4098d19fe09f076ab83ed3ee67bc1 | missing |\n| \"Table 2.1\" | eeb18ddbfb4d6508158dcc58cd785c0c5a75d11dfca14a9ebb0216d4851f274a | missing |\n| \"Table 2.2\" | 3603423f4358932bfb981f09c8560f2d9f000c69ab7675baf84e4101cb5e98ed | missing |\n| \"Table 3.1\" | a7c93806ed9a82f597a7cd5f7225a4e7b6f7e8631f5c4548e2b1d5c0d81b24e6 | missing |\n| \"Table 3.2\" | 6a0f266c3030658a612d8fcaa4ad035f5b16a817b2ef329bcc3933673825757f | missing |\n| \"Table 4.1\" | 54636481f3e459c9468006adb907bf2df5fc992b8a05d59f3bb7de9f3c54dbdc | missing |\n| \"Table 4.2\" | cb7fb04c612b74f73875bf7d476a728542ee290ea4d7902c90a712cec142a04b | missing |\n| \"Table 5.1\" | cc87afd427d524c0571fa18236ff68215bbb1132d3311476f0828deabae14f2c | missing |\n| \"Table 5.2\" | 77404480d7e8d78699830f940d0bda8454fbe33345da5cbacc33cd8156c3a69d | missing |\n| \"Table 6.1\" | 9d2bade0e65ab41954220ad90162f9966a5c85e96d560a0bee7b295ab8068d7c | missing |\n| \"Table 6.2\" | 3df1e8ff01d5a0052a8b0dcd4dbfc88e3677e83e0900f2b9973d91c59cf9e18f | missing |\n| \"Table 6.3\" | 0d832e6dc6ecde40b5fe9fca3be5a8761db6b4dfaf9f5a3313ee29b469524db8 | missing |\n| \"Table 6.4\" | f68c0fb8f1898ddbf0bef3456fdd5b0ee961ea53fdd27de924cc6020e745c5f1 | missing |\n| \"Table 7.1\" | f5b995a52f01de2d576f659f67279a7850919be08284914a74045965966f35c9 | missing |\n| \"Table 7.2\" | a68eb9253501d0e04c5d68513b3d4f550907e4ec94760f3f382a024eb83f9810 | missing |\n| \"Table 7.3\" | b078ecf4b98fdfbf5c31cc40be27fbca66155561d8ea7e1d1c0eb8f42523d7e3 | missing |\n| \"Table 7.4\" | bbe9bda8d96056adfff553568e5caaaa402ff009c499cb491482a58bef6ca894 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080630Z-8d17b4bfd609.jsonl"
+  }
+}

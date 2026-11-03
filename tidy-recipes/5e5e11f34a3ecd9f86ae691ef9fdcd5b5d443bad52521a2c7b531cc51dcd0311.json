@@ -1,0 +1,156 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "5e5e11f34a3ecd9f86ae691ef9fdcd5b5d443bad52521a2c7b531cc51dcd0311",
+  "sheet": "Table S195",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Published totals and unknown categories are retained; text suppression/not-available/zero symbols are values. Number and Per cent are separate measure blocks; no row hierarchy.",
+  "new_dimensions": [
+    {
+      "name": "recent_self_harm_thought_status",
+      "description": "Whether an entrant had thoughts of self-harm in the previous 12 months."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A15,A16,A17,A18,A19,A20"
+    },
+    {
+      "name": "source",
+      "cells": "A21"
+    }
+  ],
+  "tables": [
+    {
+      "name": "number",
+      "range": "A3:J8",
+      "values_range": "B5,C5,D5,E5,F5,G5,H5,I5,J5,B6,C6,D6,E6,F6,G6,H6,I6,J6,B7,C7,D7,E7,F7,G7,H7,I7,J7,B8,C8,D8,E8,F8,G8,H8,I8,J8",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B3:J3"
+        },
+        {
+          "name": "recent_self_harm_thought_status",
+          "direction": "W",
+          "cells": "A5,A6,A7,A8"
+        }
+      ]
+    },
+    {
+      "name": "per_cent",
+      "range": "A9:J13",
+      "values_range": "B10,C10,D10,E10,F10,G10,H10,I10,J10,B11,C11,D11,E11,F11,G11,H11,I11,J11,B12,C12,D12,E12,F12,G12,H12,I12,J12,B13,C13,D13,E13,F13,G13,H13,I13,J13",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B3:J3"
+        },
+        {
+          "name": "recent_self_harm_thought_status",
+          "direction": "W",
+          "cells": "A10,A11,A12,A13"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T07:49:28Z",
+    "tool_version": "0.2.0",
+    "records": 72,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T074639Z-cf6e1b6a8d6e",
+    "started_at": "2026-11-03T07:46:40Z",
+    "workbook": "cf6e1b6a8d6e9d8a34c865aea10ae34dd328699873e9e2b3254a4446516b7b8b--aihw-phe-367_health-status-data-tables_jurisdictional.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a05f-e2b3-75fc-918d-8ebbbb495348",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1b9f74c7b9f0c67177165b322eb4615a1aac42c59e15b9e64d2d1a32e6f1cc26",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cf6e1b6a8d6e9d8a34c865aea10ae34dd328699873e9e2b3254a4446516b7b8b--aihw-phe-367_health-status-data-tables_jurisdictional.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 29 of 29\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 7d839136f4b1ab3ff0cf00c315b8c693fbdc8f9d80603806325720f2fe88a8e8 | missing |\n| \"Notes & symbols\" | f4e1b0dfa2e5f62f5420268b4c36c7966912c1b8dc9745e9881b021947cd9469 | missing |\n| \"Table S176\" | f7ed2690b01b8a0fb429b28ab4f00efe941b2c36df8cb2cbe3affd6ec6033163 | missing |\n| \"Table S177\" | f472baa268d0f28ed859a71519a454869fd80d8457376fef5181fc8d28e582b4 | missing |\n| \"Table S178\" | 10f72cf6901a5f771f06aaffde3392f04b23ba04e92b363804100e554e91907c | missing |\n| \"Table S179\" | b4f608db21d22a172aff84b40d275a90bbe140d248839e3dd963ad6dc68eadfa | missing |\n| \"Table S180\" | a79848a0f036d7ca53420657ee73adf590b55be08779cc40eda14925a5e05638 | missing |\n| \"Table S181\" | a1f4202c28e23a29aaeae94a4e591925d1c9becb65d2bd00fe371888179e02c1 | missing |\n| \"Table S182\" | 94186c7af43d1055c988ca8bd891170fc7795d8a1bcd673321dd7907675e3359 | missing |\n| \"Table S183\" | 5860e751d4ce290f8fa93cb4cf2721ffa3fffc50d5d3fff8225221899ce9227f | missing |\n| \"Table S184\" | e1920e318dad0b7466f2bc90fa65b853555e94605f0efdd2da572f52f3cff1ec | missing |\n| \"Table S185\" | 874b6a39b66dd9f26099e8a4c70cc6a8e2bb064b89e557ada34e09a85425b6d3 | missing |\n| \"Table S186\" | 16ef065ba33f4a652411d65395388498729d7871c0234c2990a835e64182ad51 | missing |\n| \"Table S187\" | 7de492e43e303adcb5ea362b1a68ee23e9f8c5eb739fc8f40a036b79b10ef7b6 | missing |\n| \"Table S188\" | 136b05c234a09ef42d179e9773445d217314a99136e9493d8e7041613a1d5bf0 | missing |\n| \"Table S189\" | fcc40f168bfd13c574431eadeb7859ee170389874752a99fdf2484114fd1ba8c | missing |\n| \"Table S190\" | 1433f034e434fde6a4c1cb6c83f092e930dbd5ede36f90175d3a8e3c92f63c38 | missing |\n| \"Table S191\" | 0ca2aacd4e4e352562dd3f1db5f60a16f26a8238f18f9863ddce677240c502c8 | missing |\n| \"Table S192\" | bc5ab20bfc5a811ccfe4c21b3ae24e70d642724997d90f45d23f06995b23423e | missing |\n| \"Table S193\" | 8a22dcd74f809b490e46622e7a39760a49f0102208b48a0df4f07ede135b5747 | missing |\n| \"Table S194\" | 1c3c58b8105f0ef505bfc5af15e410dcf3168a9384c4633d2bcc0c55ea837755 | missing |\n| \"Table S195\" | 5e5e11f34a3ecd9f86ae691ef9fdcd5b5d443bad52521a2c7b531cc51dcd0311 | missing |\n| \"Table S196\" | e6e8d6d1bffd245100eec47d391bee696a36f653db54e2662210cd03e60d188e | missing |\n| \"Table S197\" | f0b75f730500b01a21c15652354f91cdfb42a4c46433ee0eebdea82687ef246e | missing |\n| \"Table S198\" | 7211e062c851393c8b9bfa41616071152bc548638032030385267e8444ddc2fe | missing |\n| \"Table S199\" | 6f4068712b4a75fe743af56e4896057c915283981c135805a31444a61055877c | missing |\n| \"Table S200\" | 113bd99c5937d3e0b42a9ee98bcfcec824f50ca169c36dc84da25d4d97134f8e | missing |\n| \"Table S201\" | 43b278855be3de198ebed7452033820e5e4d9bf361d3e87a7660210fe8760620 | missing |\n| \"Table S202\" | 0bea2fd4825d1b2aac02e0615ccfbd96b5862b0df7b2933ca71482956298e4c8 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T074639Z-cf6e1b6a8d6e.jsonl"
+  }
+}

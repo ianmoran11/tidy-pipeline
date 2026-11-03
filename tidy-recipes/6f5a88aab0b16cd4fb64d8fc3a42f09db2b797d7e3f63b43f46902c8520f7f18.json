@@ -1,0 +1,223 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6f5a88aab0b16cd4fb64d8fc3a42f09db2b797d7e3f63b43f46902c8520f7f18",
+  "sheet": "Table S216",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "f0b75f730500b01a21c15652354f91cdfb42a4c46433ee0eebdea82687ef246e",
+  "agent_notes": "Totals, unknown categories and published text value symbols are retained. Number and Per cent are separate measures; published labels are unchanged. Separate blocks distinguish prisons allowing and banning smoking.",
+  "new_dimensions": [
+    {
+      "name": "current_smoking_status",
+      "description": "Whether a prison dischargee is currently smoking."
+    },
+    {
+      "name": "prison_smoking_policy",
+      "description": "Whether the prison allows or bans smoking."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A29,A30,A31,A32,A33,A34"
+    },
+    {
+      "name": "source",
+      "cells": "A35"
+    }
+  ],
+  "tables": [
+    {
+      "name": "allows_number",
+      "range": "A4:J9",
+      "values_range": "B6:J9",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B5"
+        },
+        {
+          "name": "prison_smoking_policy",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "current_smoking_status",
+          "direction": "W",
+          "cells": "A6:A9"
+        }
+      ]
+    },
+    {
+      "name": "allows_per_cent",
+      "range": "A10:J14",
+      "values_range": "B11:J14",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B10"
+        },
+        {
+          "name": "prison_smoking_policy",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B4:J4"
+        },
+        {
+          "name": "current_smoking_status",
+          "direction": "W",
+          "cells": "A11:A14"
+        }
+      ]
+    },
+    {
+      "name": "bans_number",
+      "range": "A16:J22",
+      "values_range": "B19:J22",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B18"
+        },
+        {
+          "name": "prison_smoking_policy",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B17:J17"
+        },
+        {
+          "name": "current_smoking_status",
+          "direction": "W",
+          "cells": "A19:A22"
+        }
+      ]
+    },
+    {
+      "name": "bans_per_cent",
+      "range": "A23:J27",
+      "values_range": "B24:J27",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B23"
+        },
+        {
+          "name": "prison_smoking_policy",
+          "cells": "A16"
+        }
+      ],
+      "headers": [
+        {
+          "name": "state",
+          "direction": "N",
+          "cells": "B17:J17"
+        },
+        {
+          "name": "current_smoking_status",
+          "direction": "W",
+          "cells": "A24:A27"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:07:54Z",
+    "tool_version": "0.2.0",
+    "records": 144,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T080333Z-eac1cb0dfa70",
+    "started_at": "2026-11-03T08:03:38Z",
+    "workbook": "eac1cb0dfa70b6aa585d087a4ecd12042ee3d32ee0a957177c6bc2cd27d59271--aihw-phe-367_determinants-of-health-data-tables_jurisdictional.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a06f-6dc1-7058-a057-b82ce53c2f73",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "713468e4dde8fc41136d906abf8dd50da37977ccfeeddb035d4884ebd6becda0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `eac1cb0dfa70b6aa585d087a4ecd12042ee3d32ee0a957177c6bc2cd27d59271--aihw-phe-367_determinants-of-health-data-tables_jurisdictional.xlsx`.\n\n- Publication: The health of people in Australia's prisons (Australian Institute of Health and Welfare)\n- Release or year: 2025\n- Sheets needing a recipe: 25 of 25\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 3608b3268258304f9c1bf0b352df12450bf2198ba3d7671b189a9ff7c3ec2910 | missing |\n| \"Notes & symbols\" | cf93e0835e91b9879498a26dba42e1b959941a61bb01b6ab95fdc7d83e05d74a | missing |\n| \"Table S203\" | 37ebae705ac4d61e1ca9dedd469ff1a395d5b1f3f2622e0928c27f9e9ee87f1b | missing |\n| \"Table S204\" | b79c472f784456573452baf29d1fefa989dcb8086e2607536499e11c31e96162 | missing |\n| \"Table S205\" | 4a089dda854364c5cbf8fd0cd4d9497eeb42b1767b94e67cbf0dccb75fbcf253 | missing |\n| \"Table S206\" | 6f757e8db2b69566db2e0f78c93ccd0f5e1bd02e9398038e1266d840a8bad460 | missing |\n| \"Table S207\" | 0f7feb350b2735ba5135937eefe70b11dcb481d5009b9ea7904a9ba070940827 | missing |\n| \"Table S208\" | 3f78707772000524575b33bd15408825b5dc33243f92ef64dd576b8018f5fef9 | missing |\n| \"Table S209\" | dabfc96be3f23cfef6bb19906c89f27fefb6c1738b29aedc138ce1ded9f33992 | missing |\n| \"Table S210\" | 50bcb8cb11934ccff1e9ffd1cac0c283f129f8d228629b426789648bb9503ce8 | missing |\n| \"Table S211\" | 41ad07f83ac65f17b3271d166e9fa7e1f48cf21859d3486883489742a36474b9 | missing |\n| \"Table S212\" | c70c95b2c192960711a6e1d44d95dc54fbd3160689671b32137a0db40d28f71f | missing |\n| \"Table S213\" | 61aaf5691738761ef7d2f008ba872cd5b96bdd79f439295b5af98b56634725ba | missing |\n| \"Table S214\" | b373fa9f56d6c1e85e74a9cd953aa4e9d15b1683be146e321e0bd238e905f52c | missing |\n| \"Table S215\" | 2e8b4c0ee2f9393a067a489e0026339a8ca5b7aa04402a33ffe0bac6fd1cbba4 | missing |\n| \"Table S216\" | 6f5a88aab0b16cd4fb64d8fc3a42f09db2b797d7e3f63b43f46902c8520f7f18 | missing |\n| \"Table S217\" | c47ccf09c082d664cedb289377af0601072ae057a6409c7919353520f25a933a | missing |\n| \"Table S218\" | 1fedbc458aaa34b70df31356e6f2cba85b1317c31da6919430a3fc74b37d348f | missing |\n| \"Table S219\" | ac7c9a319de3fee3e57071eb7f9a4d1bf0e293122896e409a5f655d0bd4acb0e | missing |\n| \"Table S220\" | dca7b2d8755dc84f56538b78593e36c850474810a0f6462c7cb6a4a98ddddb69 | missing |\n| \"Table S221\" | 0d895bb8b966d19773a8797b3774c7b35d3750d44f442de2e1fab94ab3d53f74 | missing |\n| \"Table S222\" | 9902e81a5d94447806c8cd53873786719f79b1afd24351743b1a3005d05da2df | missing |\n| \"Table S223\" | 7d729ebf3786c5f752ff047ea31221d64a3078ea9c5060cdecee14317489b4a8 | missing |\n| \"Table S224\" | 0a37445baddec1232e5285f18595a22dbf4c28807c7b0ea8a5e8ea9d5bc78a75 | missing |\n| \"Table S225\" | 42e38e308f8600cb013df74d5187b5ab44e637ba9e081768292432fb56512822 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T080333Z-eac1cb0dfa70.jsonl"
+  }
+}

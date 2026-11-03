@@ -1,0 +1,1277 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "48be2120976bf2ae569200f5e90ec75d3d7c0e7a91950854bd753c32161184a3",
+  "sheet": "Table 2.2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Each socio-demographic section is separate. Nested rows and subtotals are retained (disability types under Has disability; family composition; study participation; qualification; birthplace; housing tenure). Disability types overlap and are not additive. B:C refer to sexual violence (assault or total); D is the full women population, not violence prevalence. RSE labels remain as published in measure. Total women includes not stated.",
+  "new_dimensions": [
+    {
+      "name": "sexual_orientation",
+      "description": "Woman's sexual orientation at interview."
+    },
+    {
+      "name": "disability_severity",
+      "description": "Severity of disability, including core activity limitations and schooling or employment restrictions."
+    },
+    {
+      "name": "family_composition",
+      "description": "Family and non-family household composition, including nested family types."
+    },
+    {
+      "name": "current_study_status",
+      "description": "Current study participation and full-time or part-time study."
+    },
+    {
+      "name": "first_language",
+      "description": "First language spoken as a child."
+    },
+    {
+      "name": "main_language_at_home",
+      "description": "Main language spoken at home."
+    },
+    {
+      "name": "housing_tenure",
+      "description": "Housing tenure including ownership, mortgage and renting."
+    },
+    {
+      "name": "housing_suitability",
+      "description": "Bedroom requirements or spare bedrooms based on household composition."
+    },
+    {
+      "name": "capital_city_balance",
+      "description": "Residence in a capital city or balance of state."
+    },
+    {
+      "name": "household_cash_flow_problems",
+      "description": "Whether the household had selected cash flow problems in the last 12 months."
+    },
+    {
+      "name": "emergency_funds_availability",
+      "description": "Whether the household could raise $2,000 for an emergency within a week."
+    },
+    {
+      "name": "life_satisfaction",
+      "description": "Overall life satisfaction score grouped into low, moderate and high."
+    },
+    {
+      "name": "self_assessed_health",
+      "description": "Self-assessed health status."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "release",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A15,A19,A29,A35,A49,A54,A60,A66,A72,A76,A80,A86,A91,A95,A100,A104,A108,A113,A118,A125"
+    },
+    {
+      "name": "notes",
+      "cells": "A134:A153"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group_violence",
+      "range": "A9:C13",
+      "values_range": "B9:C13",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A9:A13",
+          "caption": "Age group (years)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_all_women",
+      "range": "D9:D13",
+      "values_range": "D9:D13",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "A9:A13",
+          "caption": "Age group (years)"
+        }
+      ]
+    },
+    {
+      "name": "sexual_orientation_violence",
+      "range": "A16:C17",
+      "values_range": "B16:C17",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sexual_orientation",
+          "direction": "W",
+          "cells": "A16:A17",
+          "caption": "Sexual orientation"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "sexual_orientation_all_women",
+      "range": "D16:D17",
+      "values_range": "D16:D17",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sexual_orientation",
+          "direction": "W",
+          "cells": "A16:A17",
+          "caption": "Sexual orientation"
+        }
+      ]
+    },
+    {
+      "name": "disability_status_violence",
+      "range": "A20:C27",
+      "values_range": "B20:C27",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "disability_status",
+          "direction": "W",
+          "cells": "A20:A27",
+          "caption": "Disability status(d)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "disability_status_all_women",
+      "range": "D20:D27",
+      "values_range": "D20:D27",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "disability_status",
+          "direction": "W",
+          "cells": "A20:A27",
+          "caption": "Disability status(d)"
+        }
+      ]
+    },
+    {
+      "name": "disability_severity_violence",
+      "range": "A30:C33",
+      "values_range": "B30:C33",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "disability_severity",
+          "direction": "W",
+          "cells": "A30:A33",
+          "caption": "Disability severity"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "disability_severity_all_women",
+      "range": "D30:D33",
+      "values_range": "D30:D33",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "disability_severity",
+          "direction": "W",
+          "cells": "A30:A33",
+          "caption": "Disability severity"
+        }
+      ]
+    },
+    {
+      "name": "family_composition_violence",
+      "range": "A36:C47",
+      "values_range": "B36:C47",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "family_composition",
+          "direction": "W",
+          "cells": "A36:A47",
+          "caption": "Family composition"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "family_composition_all_women",
+      "range": "D36:D47",
+      "values_range": "D36:D47",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "family_composition",
+          "direction": "W",
+          "cells": "A36:A47",
+          "caption": "Family composition"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status_violence",
+      "range": "A50:C52",
+      "values_range": "B50:C52",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A50:A52",
+          "caption": "Labour force status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "labour_force_status_all_women",
+      "range": "D50:D52",
+      "values_range": "D50:D52",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "labour_force_status",
+          "direction": "W",
+          "cells": "A50:A52",
+          "caption": "Labour force status"
+        }
+      ]
+    },
+    {
+      "name": "current_study_status_violence",
+      "range": "A55:C58",
+      "values_range": "B55:C58",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "current_study_status",
+          "direction": "W",
+          "cells": "A55:A58",
+          "caption": "Current study status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "current_study_status_all_women",
+      "range": "D55:D58",
+      "values_range": "D55:D58",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "current_study_status",
+          "direction": "W",
+          "cells": "A55:A58",
+          "caption": "Current study status"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_violence",
+      "range": "A61:C64",
+      "values_range": "B61:C64",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A61:A64",
+          "caption": "Level of highest non-school qualification"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "non_school_qualification_all_women",
+      "range": "D61:D64",
+      "values_range": "D61:D64",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "non_school_qualification",
+          "direction": "W",
+          "cells": "A61:A64",
+          "caption": "Level of highest non-school qualification"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_violence",
+      "range": "A67:C70",
+      "values_range": "B67:C70",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A67:A70",
+          "caption": "Country of birth"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "country_of_birth_all_women",
+      "range": "D67:D70",
+      "values_range": "D67:D70",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "country_of_birth",
+          "direction": "W",
+          "cells": "A67:A70",
+          "caption": "Country of birth"
+        }
+      ]
+    },
+    {
+      "name": "first_language_violence",
+      "range": "A73:C74",
+      "values_range": "B73:C74",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "first_language",
+          "direction": "W",
+          "cells": "A73:A74",
+          "caption": "First language spoken as a child"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "first_language_all_women",
+      "range": "D73:D74",
+      "values_range": "D73:D74",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "first_language",
+          "direction": "W",
+          "cells": "A73:A74",
+          "caption": "First language spoken as a child"
+        }
+      ]
+    },
+    {
+      "name": "main_language_at_home_violence",
+      "range": "A77:C78",
+      "values_range": "B77:C78",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "main_language_at_home",
+          "direction": "W",
+          "cells": "A77:A78",
+          "caption": "Main language spoken at home"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "main_language_at_home_all_women",
+      "range": "D77:D78",
+      "values_range": "D77:D78",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "main_language_at_home",
+          "direction": "W",
+          "cells": "A77:A78",
+          "caption": "Main language spoken at home"
+        }
+      ]
+    },
+    {
+      "name": "housing_tenure_violence",
+      "range": "A81:C84",
+      "values_range": "B81:C84",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "housing_tenure",
+          "direction": "W",
+          "cells": "A81:A84",
+          "caption": "Housing – Tenure type"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "housing_tenure_all_women",
+      "range": "D81:D84",
+      "values_range": "D81:D84",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "housing_tenure",
+          "direction": "W",
+          "cells": "A81:A84",
+          "caption": "Housing – Tenure type"
+        }
+      ]
+    },
+    {
+      "name": "housing_suitability_violence",
+      "range": "A87:C89",
+      "values_range": "B87:C89",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "housing_suitability",
+          "direction": "W",
+          "cells": "A87:A89",
+          "caption": "Housing suitability(l)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "housing_suitability_all_women",
+      "range": "D87:D89",
+      "values_range": "D87:D89",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "housing_suitability",
+          "direction": "W",
+          "cells": "A87:A89",
+          "caption": "Housing suitability(l)"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_balance_violence",
+      "range": "A92:C93",
+      "values_range": "B92:C93",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "capital_city_balance",
+          "direction": "W",
+          "cells": "A92:A93",
+          "caption": "Capital city/Balance of state"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "capital_city_balance_all_women",
+      "range": "D92:D93",
+      "values_range": "D92:D93",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "capital_city_balance",
+          "direction": "W",
+          "cells": "A92:A93",
+          "caption": "Capital city/Balance of state"
+        }
+      ]
+    },
+    {
+      "name": "remoteness_area_violence",
+      "range": "A96:C98",
+      "values_range": "B96:C98",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "remoteness_area",
+          "direction": "W",
+          "cells": "A96:A98",
+          "caption": "Remoteness area"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "remoteness_area_all_women",
+      "range": "D96:D98",
+      "values_range": "D96:D98",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "remoteness_area",
+          "direction": "W",
+          "cells": "A96:A98",
+          "caption": "Remoteness area"
+        }
+      ]
+    },
+    {
+      "name": "household_cash_flow_problems_violence",
+      "range": "A101:C102",
+      "values_range": "B101:C102",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "household_cash_flow_problems",
+          "direction": "W",
+          "cells": "A101:A102",
+          "caption": "Whether had household cash flow problems in the last 12 months(m)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "household_cash_flow_problems_all_women",
+      "range": "D101:D102",
+      "values_range": "D101:D102",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "household_cash_flow_problems",
+          "direction": "W",
+          "cells": "A101:A102",
+          "caption": "Whether had household cash flow problems in the last 12 months(m)"
+        }
+      ]
+    },
+    {
+      "name": "emergency_funds_availability_violence",
+      "range": "A105:C106",
+      "values_range": "B105:C106",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "emergency_funds_availability",
+          "direction": "W",
+          "cells": "A105:A106",
+          "caption": "Whether household able to raise $2,000 for an emergency within a week"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "emergency_funds_availability_all_women",
+      "range": "D105:D106",
+      "values_range": "D105:D106",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "emergency_funds_availability",
+          "direction": "W",
+          "cells": "A105:A106",
+          "caption": "Whether household able to raise $2,000 for an emergency within a week"
+        }
+      ]
+    },
+    {
+      "name": "life_satisfaction_violence",
+      "range": "A109:C111",
+      "values_range": "B109:C111",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "life_satisfaction",
+          "direction": "W",
+          "cells": "A109:A111",
+          "caption": "Overall life satisfaction(n)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "life_satisfaction_all_women",
+      "range": "D109:D111",
+      "values_range": "D109:D111",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "life_satisfaction",
+          "direction": "W",
+          "cells": "A109:A111",
+          "caption": "Overall life satisfaction(n)"
+        }
+      ]
+    },
+    {
+      "name": "self_assessed_health_violence",
+      "range": "A114:C116",
+      "values_range": "B114:C116",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "self_assessed_health",
+          "direction": "W",
+          "cells": "A114:A116",
+          "caption": "Self-assessed health status"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "self_assessed_health_all_women",
+      "range": "D114:D116",
+      "values_range": "D114:D116",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "self_assessed_health",
+          "direction": "W",
+          "cells": "A114:A116",
+          "caption": "Self-assessed health status"
+        }
+      ]
+    },
+    {
+      "name": "equivalised_household_income_violence",
+      "range": "A119:C123",
+      "values_range": "B119:C123",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A119:A123",
+          "caption": "Equivalised household weekly income(o)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "equivalised_household_income_all_women",
+      "range": "D119:D123",
+      "values_range": "D119:D123",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "household_income_quintile",
+          "direction": "W",
+          "cells": "A119:A123",
+          "caption": "Equivalised household weekly income(o)"
+        }
+      ]
+    },
+    {
+      "name": "socioeconomic_area_violence",
+      "range": "A126:C130",
+      "values_range": "B126:C130",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "B5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "socioeconomic_area",
+          "direction": "W",
+          "cells": "A126:A130",
+          "caption": "Socio-economic index of disadvantage(p)"
+        },
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "socioeconomic_area_all_women",
+      "range": "D126:D130",
+      "values_range": "D126:D130",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "D5"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "socioeconomic_area",
+          "direction": "W",
+          "cells": "A126:A130",
+          "caption": "Socio-economic index of disadvantage(p)"
+        }
+      ]
+    },
+    {
+      "name": "total_violence",
+      "range": "A132:C132",
+      "values_range": "B132:C132",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A132"
+        },
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "crime_type",
+          "direction": "N",
+          "cells": "B6:C6"
+        }
+      ]
+    },
+    {
+      "name": "total_all_women",
+      "range": "D132",
+      "values_range": "D132",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "B7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "population",
+          "direction": "W",
+          "cells": "A132"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T08:13:19Z",
+    "tool_version": "0.2.0",
+    "records": 249,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T081120Z-b2f62adf8e2a",
+    "started_at": "2026-11-03T08:11:24Z",
+    "workbook": "b2f62adf8e2a19c183d00bef28707777e6eaa2e9c3250dac6b7a37453925fa3f--Sexual-violence-prevalence-and-socio-demographic-characteristics-Tables-1-to-3-.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a076-8729-73a4-bc31-ce72394e46a9",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "a479c9cf3a710fc9421420445c6747c74f401cd959789f21e7db693815b8af9c",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "5155331da8081af0f198f7c7ff2af69fae0055332602edd4ac735118c456a5bf",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "a6aa231e50baf71c7c52f86a2255b91fdc302cba7b0d5ca892d4d354b50ae5fd"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ac619a707f9aff4c77e4e7df93b84869fc25a7d25f8c9c6d0fc161fb0df1272a",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `b2f62adf8e2a19c183d00bef28707777e6eaa2e9c3250dac6b7a37453925fa3f--Sexual-violence-prevalence-and-socio-demographic-characteristics-Tables-1-to-3-.xlsx`.\n\n- Publication: Sexual violence (Australian Bureau of Statistics)\n- Release or year: 2021-22\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 0c4798310a3578917c4b7fabf1c219ca9b6fc42958fd34b2b21f250dbcaa6e78 | missing |\n| \"Table 1.1\" | 3dc5e04018153db7978d70c69662323e864bab8aa598bd9a7eebdbff595c844f | missing |\n| \"Table 1.2\" | 7d18645274a1e96beb3874c9911a400b91627b9b4939b627e9422a709b248e03 | missing |\n| \"Table 2.1\" | 3aac9a15be96e90dbf9cd7e13963d092285e59337c3db0f96e7e5f83f424e7f6 | missing |\n| \"Table 2.2\" | 48be2120976bf2ae569200f5e90ec75d3d7c0e7a91950854bd753c32161184a3 | missing |\n| \"Table 2.3\" | e674057bd26319961c0b122627e74effa648a1e58fa2c83cce2b19c8075830c8 | missing |\n| \"Table 2.4\" | 2417682b048db581866f5ac0847b7cd4cb6d05be41a8572722a501b4074778c5 | missing |\n| \"Table 3.1\" | 5a01712d30a2b8d02ad0a5d4eb9db65154f4318c7fcba182fa836941c3f9df23 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T081120Z-b2f62adf8e2a.jsonl"
+  }
+}
