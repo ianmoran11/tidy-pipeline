@@ -1,0 +1,713 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c1da96dadf608fcacadab945c6eee728f02efef9d86dc81f9f8a1323a0952ee0",
+  "sheet": "13-Aboriginal DV-detailedoff",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "2025 only. Printed offence divisions, subdivisions, groups and their totals retained at their published hierarchy level. Text suppression/unavailable markers retained. Row-sized tables avoid carrying child labels into parent totals.",
+  "new_dimensions": [
+    {
+      "name": "offence_subdivision",
+      "description": "Published offence subdivision in the BSOC/ANZSOC classification, including subdivision totals."
+    },
+    {
+      "name": "charge_counting_unit",
+      "description": "Whether counts and percentages refer to charges or defendants charged."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8"
+    },
+    {
+      "name": "notes",
+      "cells": "A9,A53,A54,A55,A58,A60,A61,A62"
+    },
+    {
+      "name": "source",
+      "cells": "A57"
+    }
+  ],
+  "tables": [
+    {
+      "name": "row_10",
+      "range": "A10,B10,AA10,AB10,AC10,AD10,AE10,AF10,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA10,AB10,AC10,AD10,AE10,AF10",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B10",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A10"
+        },
+        {
+          "name": "notes",
+          "cells": "AA6"
+        }
+      ]
+    },
+    {
+      "name": "row_11",
+      "range": "B11,AA11,AB11,AC11,AD11,AE11,AF11,B12,AA12,AB12,AC12,AD12,AE12,AF12,B13,AA13,AB13,AC13,AD13,AE13,AF13,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7,A10",
+      "values_range": "AA11,AB11,AC11,AD11,AE11,AF11,AA12,AB12,AC12,AD12,AE12,AF12,AA13,AB13,AC13,AD13,AE13,AF13",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B11,B12,B13",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A10"
+        }
+      ]
+    },
+    {
+      "name": "row_14",
+      "range": "A14,B14,AA14,AB14,AC14,AD14,AE14,AF14,B15,AA15,AB15,AC15,AD15,AE15,AF15,B16,AA16,AB16,AC16,AD16,AE16,AF16,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA14,AB14,AC14,AD14,AE14,AF14,AA15,AB15,AC15,AD15,AE15,AF15,AA16,AB16,AC16,AD16,AE16,AF16",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B14,B15,B16",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A14"
+        }
+      ]
+    },
+    {
+      "name": "row_17",
+      "range": "A17,B17,AA17,AB17,AC17,AD17,AE17,AF17,B18,AA18,AB18,AC18,AD18,AE18,AF18,B19,AA19,AB19,AC19,AD19,AE19,AF19,B20,AA20,AB20,AC20,AD20,AE20,AF20,B21,AA21,AB21,AC21,AD21,AE21,AF21,B22,AA22,AB22,AC22,AD22,AE22,AF22,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA17,AB17,AC17,AD17,AE17,AF17,AA18,AB18,AC18,AD18,AE18,AF18,AA19,AB19,AC19,AD19,AE19,AF19,AA20,AB20,AC20,AD20,AE20,AF20,AA21,AB21,AC21,AD21,AE21,AF21,AA22,AB22,AC22,AD22,AE22,AF22",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B17,B18,B19,B20,B21,B22",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A17"
+        }
+      ]
+    },
+    {
+      "name": "row_23",
+      "range": "A23,B23,AA23,AB23,AC23,AD23,AE23,AF23,B24,AA24,AB24,AC24,AD24,AE24,AF24,B25,AA25,AB25,AC25,AD25,AE25,AF25,B26,AA26,AB26,AC26,AD26,AE26,AF26,B27,AA27,AB27,AC27,AD27,AE27,AF27,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA23,AB23,AC23,AD23,AE23,AF23,AA24,AB24,AC24,AD24,AE24,AF24,AA25,AB25,AC25,AD25,AE25,AF25,AA26,AB26,AC26,AD26,AE26,AF26,AA27,AB27,AC27,AD27,AE27,AF27",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B23,B24,B25,B26,B27",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A23"
+        }
+      ]
+    },
+    {
+      "name": "row_28",
+      "range": "A28,B28,AA28,AB28,AC28,AD28,AE28,AF28,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA28,AB28,AC28,AD28,AE28,AF28",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B28",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A28"
+        }
+      ]
+    },
+    {
+      "name": "row_29",
+      "range": "A29,B29,AA29,AB29,AC29,AD29,AE29,AF29,B30,AA30,AB30,AC30,AD30,AE30,AF30,B31,AA31,AB31,AC31,AD31,AE31,AF31,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA29,AB29,AC29,AD29,AE29,AF29,AA30,AB30,AC30,AD30,AE30,AF30,AA31,AB31,AC31,AD31,AE31,AF31",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B29,B30,B31",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A29"
+        }
+      ]
+    },
+    {
+      "name": "row_32",
+      "range": "A32,B32,AA32,AB32,AC32,AD32,AE32,AF32,B33,AA33,AB33,AC33,AD33,AE33,AF33,B34,AA34,AB34,AC34,AD34,AE34,AF34,B35,AA35,AB35,AC35,AD35,AE35,AF35,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA32,AB32,AC32,AD32,AE32,AF32,AA33,AB33,AC33,AD33,AE33,AF33,AA34,AB34,AC34,AD34,AE34,AF34,AA35,AB35,AC35,AD35,AE35,AF35",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B32,B33,B34,B35",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A32"
+        }
+      ]
+    },
+    {
+      "name": "row_36",
+      "range": "A36,B36,AA36,AB36,AC36,AD36,AE36,AF36,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA36,AB36,AC36,AD36,AE36,AF36",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B36",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A36"
+        }
+      ]
+    },
+    {
+      "name": "row_37",
+      "range": "A37,B37,AA37,AB37,AC37,AD37,AE37,AF37,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA37,AB37,AC37,AD37,AE37,AF37",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B37",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A37"
+        }
+      ]
+    },
+    {
+      "name": "row_38",
+      "range": "A38,B38,AA38,AB38,AC38,AD38,AE38,AF38,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA38,AB38,AC38,AD38,AE38,AF38",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B38",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A38"
+        }
+      ]
+    },
+    {
+      "name": "row_39",
+      "range": "A39,B39,AA39,AB39,AC39,AD39,AE39,AF39,B40,AA40,AB40,AC40,AD40,AE40,AF40,B41,AA41,AB41,AC41,AD41,AE41,AF41,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA39,AB39,AC39,AD39,AE39,AF39,AA40,AB40,AC40,AD40,AE40,AF40,AA41,AB41,AC41,AD41,AE41,AF41",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B39,B40,B41",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A39"
+        }
+      ]
+    },
+    {
+      "name": "row_42",
+      "range": "A42,B42,AA42,AB42,AC42,AD42,AE42,AF42,B43,AA43,AB43,AC43,AD43,AE43,AF43,B44,AA44,AB44,AC44,AD44,AE44,AF44,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA42,AB42,AC42,AD42,AE42,AF42,AA43,AB43,AC43,AD43,AE43,AF43,AA44,AB44,AC44,AD44,AE44,AF44",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B42,B43,B44",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A42"
+        }
+      ]
+    },
+    {
+      "name": "row_45",
+      "range": "A45,B45,AA45,AB45,AC45,AD45,AE45,AF45,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA45,AB45,AC45,AD45,AE45,AF45",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B45",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A45"
+        }
+      ]
+    },
+    {
+      "name": "row_46",
+      "range": "A46,B46,AA46,AB46,AC46,AD46,AE46,AF46,B47,AA47,AB47,AC47,AD47,AE47,AF47,B48,AA48,AB48,AC48,AD48,AE48,AF48,B49,AA49,AB49,AC49,AD49,AE49,AF49,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA46,AB46,AC46,AD46,AE46,AF46,AA47,AB47,AC47,AD47,AE47,AF47,AA48,AB48,AC48,AD48,AE48,AF48,AA49,AB49,AC49,AD49,AE49,AF49",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B46,B47,B48,B49",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A46"
+        }
+      ]
+    },
+    {
+      "name": "row_50",
+      "range": "A50,B50,AA50,AB50,AC50,AD50,AE50,AF50,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA50,AB50,AC50,AD50,AE50,AF50",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B50",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "principal_offence_division",
+          "cells": "A50"
+        }
+      ]
+    },
+    {
+      "name": "row_51",
+      "range": "A51,AA51,AB51,AC51,AD51,AE51,AF51,AA6,AA8,AB8,AC8,AD8,AE8,AF8,AA7,AD7",
+      "values_range": "AA51,AB51,AC51,AD51,AE51,AF51",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A51",
+          "direction": "W",
+          "caption": "Type of offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "AA6",
+          "direction": "NNW"
+        },
+        {
+          "name": "measure",
+          "cells": "AA8,AB8,AC8,AD8,AE8,AF8",
+          "direction": "N"
+        },
+        {
+          "name": "charge_counting_unit",
+          "cells": "AA7,AD7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:15:27Z",
+    "tool_version": "0.2.0",
+    "records": 252,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-55a2ff5eba41",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1ff-7692-a153-afd63055e63b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "635cc0e936a8989d447deea82abf68f6ec0432b87f0f76492bcc47f36aa54db6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx`.\n\n- Publication: BOCSAR — Court and sentencing (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025-12\n- Sheets needing a recipe: 24 of 24\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Cover\" | 72e637347588b3c90d2aa309010934a67d3f4ebc258868ceae619bdf4bb75843 | missing |\n| \"Table Of Contents\" | 77bb2acf10c15605618b4223b230ab9a139a265006be63de6c4852180f93f466 | missing |\n| \"1-Summarybyyear\" | 7c7ec2db61e3b2448c953e8dbd7ad43969845d2e12688b0a928c49124e8f71a9 | missing |\n| \"2-detailedoffence-outcome\" | 5163a850b244cdede73199f53227392aa28e548f2e01c7c6826c148da6f495a4 | missing |\n| \"3-Outcome\" | f08b3b65aa36c4cd8b708b09a3a38a6b9f3556062a5199311fec51cac39b1118 | missing |\n| \"3a-Judge Alone or Jury Trial\" | f2a3aa20fb5ec85662a95e0a04bb0871dcde9c0126b6a9ae78191622cd50cb5b | missing |\n| \"4-Outcome by bail\" | 1deb6fb6af71f6900bd7fe0da3708b1898d360de14bd1e33e15d4e8146df9db3 | missing |\n| \"5-penalty\" | dee1855c5a59f253ebcfba31be789c86121ba4659bfed73948d7dcc7f3821957 | missing |\n| \"5a-detailedpenalty\" | 8323c99ffc1cd761d36cfff6e5dddf3be7f4601c4d11a2819b84616ec3d486ad | missing |\n| \"6-CourtDelay\" | 2ff78106c56e69ec3b8681f5ff8146543281ea266947eaf21b687b1867235e93 | missing |\n| \"8-Appeals\" | 6968187060f0ef4d4091af38b92d8a33dc3465cb4534552596ea33a45d7a63b6 | missing |\n| \"9-DV-detailedoffence\" | eb8519bfc3b56bd54f4a70f1c9ed39e161af3c139a870a677ebf893d3b68f273 | missing |\n| \"10-DV-penalty\" | 7b25ec2c66d2c153a3e80193ec4095648d0f755dc115ca0e3e5a1d4c5e10b63d | missing |\n| \"10a-DV-detailedpenalty\" | b2e45ecb971e0391104307e35f2844e10d6a9c64b49b56a220965398c2751b75 | missing |\n| \"11-Aboriginal summary by year\" | bd945115e4dfae2ccf3cc2c4206f71c32b4afafba63f428aaf629a1cec1791be | missing |\n| \"12-Aboriginal detailed offence\" | 620b55421f1b894d3e832b47687e529cc50c5f549231f4ab18c22e3218562828 | missing |\n| \"13-Aboriginal DV-detailedoff\" | c1da96dadf608fcacadab945c6eee728f02efef9d86dc81f9f8a1323a0952ee0 | missing |\n| \"14-Aboriginal penalty\" | ed47c48ece93abf2415f0f84b48279fd1a755bd36b0fe9581165977d09b8af20 | missing |\n| \"14a-Aboriginal detailedpenalty\" | e1e70e4f1442aa04f468013677d857e3ab017e5fe35e20a12f5761996ee324c7 | missing |\n| \"15-Aboriginal DVpenalty\" | 26751178f9f49ff6203ea65832da8705b588a80ff5413d9985df06ed3a38b148 | missing |\n| \"15a-Aboriginal DVdetailedpen\" | d96fc251ded73d9018cf059b70daa392fd85bbb7e3664ef0c4531cf8e93f4286 | missing |\n| \"16-Number-Percent-custody\" | 250284b74a3b89818c291e5edd8caba586791a2bfcb8308a10bff488ebca9866 | missing |\n| \"17-Custody-Length\" | 1aff5b22c10217bf54236e8b4ce628a8e6299fcf785b4a0c1b6b9d1d6ec1b665 | missing |\n| \"Explanatory Notes\" | 021e1c6499572b70504ce4750e7ac9563d29b59b03c6b38da130b6b5fca91f00 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-55a2ff5eba41.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "C10:Z10,C11:Z11,C12:Z12,C13:Z13,C14:Z14,C15:Z15,C16:Z16,C17:Z17,C18:Z18,C19:Z19,C20:Z20,C21:Z21,C22:Z22,C23:Z23,C24:Z24,C25:Z25,C26:Z26,C27:Z27,C28:Z28,C29:Z29,C30:Z30,C31:Z31,C32:Z32,C33:Z33,C34:Z34,C35:Z35,C36:Z36,C37:Z37,C38:Z38,C39:Z39,C40:Z40,C41:Z41,C42:Z42,C43:Z43,C44:Z44,C45:Z45,C46:Z46,C47:Z47,C48:Z48,C49:Z49,C50:Z50,C51:Z51",
+      "reason": "Earlier annual periods and historical change/trend columns; retain most recent year (2025) only."
+    },
+    {
+      "cells": "C6,I6,O6,U6",
+      "reason": "Earlier-year column headings; 2025 only."
+    }
+  ]
+}

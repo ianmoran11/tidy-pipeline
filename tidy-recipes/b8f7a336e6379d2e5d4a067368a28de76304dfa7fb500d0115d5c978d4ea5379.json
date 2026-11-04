@@ -1,0 +1,627 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b8f7a336e6379d2e5d4a067368a28de76304dfa7fb500d0115d5c978d4ea5379",
+  "sheet": "Gungahlin",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retains the latest four quarters, 2024 Q3 through 2025 Q2; earlier quarters explicitly excluded. Each offence/activity block is separate and all published Total rows are retained as suburb labels; totals must not be added to suburb counts. Offence/activity categories are not principal offences of offenders, so police_offence_or_activity_type is declared. Geography is preserved in the sheet title and suburb labels.",
+  "new_dimensions": [
+    {
+      "name": "police_offence_or_activity_type",
+      "description": "Published ACT Policing offence or other activity category, including traffic and criminal infringement notices; not a principal-offence classification of offenders.",
+      "example_labels": [
+        "Homicide",
+        "Assault - FV",
+        "TINs Speeding",
+        "CINs"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "source",
+      "cells": "A2"
+    }
+  ],
+  "tables": [
+    {
+      "name": "Homicide",
+      "range": "A4:A25,AR5:AU25",
+      "values_range": "AR6:AU25",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A4"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A6:A25"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR5:AU5"
+        }
+      ]
+    },
+    {
+      "name": "Assault - FV",
+      "range": "A27:A48,AR28:AU48",
+      "values_range": "AR29:AU48",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A27"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A29:A48"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR28:AU28"
+        }
+      ]
+    },
+    {
+      "name": "Assault - Non-FV",
+      "range": "A50:A71,AR51:AU71",
+      "values_range": "AR52:AU71",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A50"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A52:A71"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR51:AU51"
+        }
+      ]
+    },
+    {
+      "name": "Sexual Assault",
+      "range": "A73:A94,AR74:AU94",
+      "values_range": "AR75:AU94",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A73"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A75:A94"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR74:AU74"
+        }
+      ]
+    },
+    {
+      "name": "Other offences against a person",
+      "range": "A96:A117,AR97:AU117",
+      "values_range": "AR98:AU117",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A96"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A98:A117"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR97:AU97"
+        }
+      ]
+    },
+    {
+      "name": "Robbery - armed",
+      "range": "A119:A140,AR120:AU140",
+      "values_range": "AR121:AU140",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A119"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A121:A140"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR120:AU120"
+        }
+      ]
+    },
+    {
+      "name": "Robbery - other",
+      "range": "A142:A163,AR143:AU163",
+      "values_range": "AR144:AU163",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A142"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A144:A163"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR143:AU143"
+        }
+      ]
+    },
+    {
+      "name": "Burglary dwellings",
+      "range": "A165:A186,AR166:AU186",
+      "values_range": "AR167:AU186",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A165"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A167:A186"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR166:AU166"
+        }
+      ]
+    },
+    {
+      "name": "Burglary shops",
+      "range": "A188:A209,AR189:AU209",
+      "values_range": "AR190:AU209",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A188"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A190:A209"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR189:AU189"
+        }
+      ]
+    },
+    {
+      "name": "Burglary other",
+      "range": "A211:A232,AR212:AU232",
+      "values_range": "AR213:AU232",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A211"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A213:A232"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR212:AU212"
+        }
+      ]
+    },
+    {
+      "name": "Motor vehicle theft",
+      "range": "A234:A255,AR235:AU255",
+      "values_range": "AR236:AU255",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A234"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A236:A255"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR235:AU235"
+        }
+      ]
+    },
+    {
+      "name": "Theft (excluding Motor Vehicles)",
+      "range": "A257:A278,AR258:AU278",
+      "values_range": "AR259:AU278",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A257"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A259:A278"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR258:AU258"
+        }
+      ]
+    },
+    {
+      "name": "Property damage",
+      "range": "A280:A301,AR281:AU301",
+      "values_range": "AR282:AU301",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A280"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A282:A301"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR281:AU281"
+        }
+      ]
+    },
+    {
+      "name": "Other offences",
+      "range": "A303:A324,AR304:AU324",
+      "values_range": "AR305:AU324",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A303"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A305:A324"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR304:AU304"
+        }
+      ]
+    },
+    {
+      "name": "TINs Speeding",
+      "range": "A326:A347,AR327:AU347",
+      "values_range": "AR328:AU347",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A326"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A328:A347"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR327:AU327"
+        }
+      ]
+    },
+    {
+      "name": "TINs Mobile Use",
+      "range": "A349:A370,AR350:AU370",
+      "values_range": "AR351:AU370",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A349"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A351:A370"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR350:AU350"
+        }
+      ]
+    },
+    {
+      "name": "TINs Seatbelts",
+      "range": "A372:A393,AR373:AU393",
+      "values_range": "AR374:AU393",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A372"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A374:A393"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR373:AU373"
+        }
+      ]
+    },
+    {
+      "name": "TINs Other",
+      "range": "A395:A416,AR396:AU416",
+      "values_range": "AR397:AU416",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A395"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A397:A416"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR396:AU396"
+        }
+      ]
+    },
+    {
+      "name": "CINs",
+      "range": "A418:A439,AR419:AU439",
+      "values_range": "AR420:AU439",
+      "meta_data": [
+        {
+          "name": "police_offence_or_activity_type",
+          "cells": "A418"
+        }
+      ],
+      "headers": [
+        {
+          "name": "suburb",
+          "direction": "W",
+          "cells": "A420:A439"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AR419:AU419"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T19:23:00Z",
+    "tool_version": "0.2.0",
+    "records": 1520,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T191706Z-0302bade00e4",
+    "started_at": "2026-11-03T19:18:40Z",
+    "workbook": "0302bade00e4158f7cad1413412c167eea9d6b13b6a4eaf02ed7dac40af011df--Website-Qtrly-Jun25.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2d9-707b-73be-bc4e-7221ca3037a0",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7a06e8edff24aa94c44278db95557ea12db58a92557f0edb9bc0a69769bc8859",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0302bade00e4158f7cad1413412c167eea9d6b13b6a4eaf02ed7dac40af011df--Website-Qtrly-Jun25.xlsx`.\n\n- Publication: ACT Policing quarterly crime statistics (ACT Policing)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 9 of 9\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Belconnen\" | 027c8e765a9e0bf5609cde48e0462dce2b510f72c42fa79ee6b647f16384e60b | missing |\n| \"Gungahlin\" | b8f7a336e6379d2e5d4a067368a28de76304dfa7fb500d0115d5c978d4ea5379 | missing |\n| \"Inner North\" | ec49efbcf42e7021418c9e8ef7e1eed323bcad0131633a101dc574e522af57cd | missing |\n| \"Inner South\" | 9abc2f1d6ee829882a5d130d7d509479789224fecc0dd1cb955f01de40632229 | missing |\n| \"Weston Creek\" | 03e0f190fc3b16b18326ba7547ad8b77df4b86793a7b65c50eb7bedf19742f88 | missing |\n| \"Molonglo District\" | c9251c51557eac31a9dd7090930ae1ed11f9aafe6afdb5ef2127f90332eaaa97 | missing |\n| \"Woden\" | c5729ba181b04401dfd60ce315ad3e7fd7c4e84a4307c7555cdba6c7491ff00f | missing |\n| \"Tuggeranong\" | 82aa9519965c69bf49d115e3250bc4c7b74fea09c2a1252b83fb8727f29b1b48 | missing |\n| \"Other\" | 52668dacfc84b451753094bbe2157223d27a25cf16a62a72809eaca4d51fe9dc | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T191706Z-0302bade00e4.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B5:AQ25",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B28:AQ48",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B51:AQ71",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B74:AQ94",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B97:AQ117",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B120:AQ140",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B143:AQ163",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B166:AQ186",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B189:AQ209",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B212:AQ232",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B235:AQ255",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B258:AQ278",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B281:AQ301",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B304:AQ324",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B327:AQ347",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B350:AQ370",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B373:AQ393",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B396:AQ416",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    },
+    {
+      "cells": "B419:AQ439",
+      "reason": "Earlier quarters; most recent four quarters only (2024 Q3 to 2025 Q2)."
+    }
+  ]
+}

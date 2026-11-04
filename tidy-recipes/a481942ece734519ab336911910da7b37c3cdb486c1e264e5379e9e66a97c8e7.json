@@ -1,0 +1,91 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a481942ece734519ab336911910da7b37c3cdb486c1e264e5379e9e66a97c8e7",
+  "sheet": "Table of contents ",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Navigation index and publication contact information; numbers identify tabs, not statistical observations.",
+  "agent_notes": "This is a genuine contents sheet. A28:A38 are the eleven tab numbers (1–11), not statistical data. The automatic numeric-cell check incorrectly flags these navigation identifiers; retain contents classification for human review.",
+  "validation": {
+    "checked_at": "2026-11-03T20:46:20Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 11 numeric cells, e.g. A28, A29, A30, A31, A32"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204400Z-cebe4704fa51",
+    "started_at": "2026-11-03T20:44:04Z",
+    "workbook": "cebe4704fa512bbf959decad3ae82d307f5d4c88670782889a74361819350d9e--Domestic_Violence_Statistics.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a327-9d14-7647-8320-73531dc3d753",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "7e4db3c40fe8bf2197d70662b810352efe0a5709b1eb7cbe8ce31358dc4ee6c7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cebe4704fa512bbf959decad3ae82d307f5d4c88670782889a74361819350d9e--Domestic_Violence_Statistics.xlsx`.\n\n- Publication: BOCSAR — Domestic violence (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table of contents \" | a481942ece734519ab336911910da7b37c3cdb486c1e264e5379e9e66a97c8e7 | missing |\n| \"Summary of offences\" | 654e782eb8faa45452da3c82a451c5d2b192a3baf9f51fbc39449895ac6d0a8a | missing |\n| \"Premises type\" | b8c81f7ce7f164a3f4de4548be2ef6f1eb4c2e815e76083d916c00e4d1e79933 | missing |\n| \"Month\" | f5c20305c69a400131e8f266aed25b6fd108f80fee4d1d44f2dfaa0f3d9e20d0 | missing |\n| \"Alcohol related\" | 7854f445d1fdbd7c84991590fa2a7696854bce9b8188163db315cc09ab4d5a01 | missing |\n| \"Time\" | 1c63bcb26c255af81722816015bdf600f489ce63e9a867fea5422dfd2ad1e0a0 | missing |\n| \"Location\" | 659d6ae03709f2f328631d83332e17e6b450ca4c81b9cf6a93ae8dbc59e6adfe | missing |\n| \"Victims\" | 4f0fd7b65eb467204aca784918a2ef53895156e218e23e677453110d6d9a1300 | missing |\n| \"Aboriginality of victims\" | 07ccf5abb8f4fa808ed1210e04721afcfa42adc65a2c8637784e1521a3ebf18f | missing |\n| \"Offenders\" | ea5f1a8833334e483804bb30289dac57b1c3702f25cdebf632364434bf6d2a56 | missing |\n| \"Aboriginality of Offenders\" | 7561d3d5376172b365d789ac7d9543810c5d3996924026e282422c1e73b1d419 | missing |\n| \"POI relationship to victim\" | fd948a53c52bedea6a1c85d8c9925088b1c106cb448482fbedaebb7e312eb17f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204400Z-cebe4704fa51.jsonl"
+  }
+}

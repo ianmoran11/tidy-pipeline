@@ -52,6 +52,7 @@ JSON Schema: `schema/recipe-v0.2.json` in the project root.
 | `tables[].headers` | Labels attached to each value by direction |
 | `name` (headers and `meta_data`) | A dictionary name, or one declared in `new_dimensions`. See `naming.md` |
 | `caption` (optional) | The publisher's caption for the dimension, exactly as printed |
+| `excluded` (optional) | Ranges left out on purpose, each `{ "cells": "A2001:I90000", "reason": "…" }`. Only where `layouts.md` says to (state and territory crime statistics keep the most recent year) |
 
 Cell references: `A1`, `A1:B3`, or comma-separated lists of these with no
 spaces. The same cell may be used by several tables' headers (e.g. a shared

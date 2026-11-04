@@ -1,0 +1,148 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6abfabb3a82a1188bdd16bd7d502050bf82e35ad783eddd8072cf98cecd78594",
+  "sheet": "Possession use of cannabis",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Most recent annual period only: Jul 2025 - Jun 2026. Earlier annual columns B:AB are explicitly excluded. Includes all 130 published area rows and Total NSW* (a statewide total, not an LGA). Number, rate per 100,000 population and rank are separate measures. Published nc values retained; notes explain small-population and Sydney ranking exclusions and the exclusion of correctional-facility incidents. The offence-specific published title is table metadata; no principal-offence counting rule is implied.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    },
+    {
+      "name": "notes",
+      "cells": "A139:A141,A145:A147,A149"
+    },
+    {
+      "name": "source",
+      "cells": "A143"
+    }
+  ],
+  "tables": [
+    {
+      "name": "latest_year_rankings",
+      "range": "A6:A137,AC5:AE137",
+      "values_range": "AC7:AE137",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "local_government_area",
+          "caption": "Local Government Area",
+          "direction": "W",
+          "cells": "A7:A137"
+        },
+        {
+          "name": "period",
+          "direction": "NNW",
+          "cells": "AC5"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "AC6:AE6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:48:51Z",
+    "tool_version": "0.2.0",
+    "records": 393,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204635Z-077f8906ec77",
+    "started_at": "2026-11-03T20:46:36Z",
+    "workbook": "077f8906ec7765ec7fc6c88282de89b9480842772b295cfa1107ca4434022e86--LgaRankings_27_Offences.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a329-eef4-73b5-87f2-700cece9fbb4",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b59b32d5418bc99e44f9f5d4755db987cd0e9be77265b083b92234ac924ceb66",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `077f8906ec7765ec7fc6c88282de89b9480842772b295cfa1107ca4434022e86--LgaRankings_27_Offences.xlsx`.\n\n- Publication: BOCSAR — Local area rankings (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 27 of 27\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Assault - domestic violence\" | 54bbdf31f761950aaad6015e52e1eee235266557db9a3625635c61d3fa3cc23f | missing |\n| \"Assault - non-domestic violence\" | c1470b075a34e160ea6d2e0f28a12e5e3bd004fc8f7c30bf5bcd86872286f524 | missing |\n| \"Sexual Offences\" | b25c1df498906a5d0554a7d126fa8d0324da280647c0057fafc18bafdffc64ce | missing |\n| \"Robbery\" | 630ab3530a8a4a759b45ff29cd14a861c56b09bfd2d6381fab79314dfb5aa7ce | missing |\n| \"Break and enter dwelling\" | fa11740e14e1984fd32e419932a1e5251debccf223ccfc90961e4c2b33bb9772 | missing |\n| \"Break and enter non-dwelling\" | d6c57c0d9a10f43eb1d1808b622ba509829858fda213ed6f6d98b46c1a7a0f14 | missing |\n| \"Motor vehicle theft\" | adf9cf0a2724b63559bb1a17b7a39cfad84aacf11783c7b0ccb28422b099884e | missing |\n| \"Steal from motor vehicle\" | b05391c4f090f065afc60b9b32c2b7f16cc3ecfab25106a149b9d034f5bee069 | missing |\n| \"Steal from retail store\" | 26a03bc7d4dd1b44046932edda9815e87a5ee44e3e01557e866c964bfa971889 | missing |\n| \"Steal from dwelling\" | 5bfe0395c0b0f8b39f0646ce1f77a6f1aaf471ceb000af989566cc3e37a937d1 | missing |\n| \"Steal from person\" | a5085e6952b5b1161cc363fce4705fd1c639742ab67e7293ff09e986bf2d07c8 | missing |\n| \"Fraud\" | 4356d99ac14a04b9be8a6520cdc7335803bc125099b88d6ade65ad295da8c126 | missing |\n| \"Malicious damage to property\" | 167c4e2a54a68f4c2110cab11600eef5fcf8ef809f72a3d1af079ce13dd04795 | missing |\n| \"Harassment threatening\" | 2f03b3abec97d4232e0027b8c14ff7dfd2969d5c740da93b20b4c4bdc5cb347d | missing |\n| \"Receiving stolen goods\" | 85c2b03769656d8460602a3ba0ab65ee66649afe2f829cb1692fdfbb4b06633e | missing |\n| \"Other theft\" | b27e34c4f7cb69a026d2474fda4a889c96c08fb3fc3f5a3913af332bf39adbf7 | missing |\n| \"Arson\" | af9c3bea676ce63fa6c36dea1bfa2de818c2a56da74ac9422cdfa7177604c25a | missing |\n| \"Possession use of cannabis\" | 6abfabb3a82a1188bdd16bd7d502050bf82e35ad783eddd8072cf98cecd78594 | missing |\n| \"Prohibited weapons offences\" | 81628fa912acaec8f6bbe71e4b44941410dad8e953fd52ad4d52b4bb94fd2aaf | missing |\n| \"Trespass\" | 66995012675887ca588f62134b8595d69202b152bfd6f00a264ea65bf58d45cb | missing |\n| \"Offensive conduct\" | 9f9ef7b895d04054c44806118479a8d1fc9d549cd7c833da7374994c170ec1da | missing |\n| \"Offensive language\" | bc169216aaba61ffb0e6ae0e347d2bb93bac2b60446f372235bc163e14b9c248 | missing |\n| \"Liquor offences\" | 4feb5431a48ae84389207312fbcec0cbbcb93e61f886fecb4e31468e07584b9a | missing |\n| \"Breach AVO\" | 9afaa8b8b616e32c85ccda8ea49e525cca3c50acd51945afc4690c6ae149a5bb | missing |\n| \"Breach bail conditions\" | 243741b1e0d15205bd234f3d5ec4565df9693b464b665133195fb935752d4b22 | missing |\n| \"Resist or hinder officer\" | b40d1f65b91db3e5e2e17fa771df4b3c67795b0e4bbb36fff885af82a89254e6 | missing |\n| \"Transport regulatory offences\" | 799514bbf574fe7bf43baacc82ca4b424afd1f980dd46a6c43bb65b1026b5895 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204635Z-077f8906ec77.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B5:AB137",
+      "reason": "Earlier annual periods; most recent year only (Jul 2025 - Jun 2026)."
+    }
+  ]
+}

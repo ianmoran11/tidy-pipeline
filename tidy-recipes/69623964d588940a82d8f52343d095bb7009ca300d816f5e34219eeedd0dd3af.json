@@ -1,0 +1,139 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "69623964d588940a82d8f52343d095bb7009ca300d816f5e34219eeedd0dd3af",
+  "sheet": "Table 03",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Total age-group rows and People sex totals retained. People includes unknown sex and/or age (see workbook Footnotes). Rates and counts are distinct measures; small person counts are confidentialised as described in Contents.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:D1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "affected_family_members",
+      "range": "A2:F55",
+      "values_range": "E2:F55",
+      "headers": [
+        {
+          "name": "period",
+          "cells": "A2:A55",
+          "direction": "W",
+          "caption": "Year"
+        },
+        {
+          "name": "year_ending_month",
+          "cells": "B2:B55",
+          "direction": "W",
+          "caption": "Year ending"
+        },
+        {
+          "name": "sex",
+          "cells": "C2:C55",
+          "direction": "W",
+          "caption": "AFM Sex"
+        },
+        {
+          "name": "age_group",
+          "cells": "D2:D55",
+          "direction": "W",
+          "caption": "AFM Age Group"
+        },
+        {
+          "name": "measure",
+          "cells": "E1:F1",
+          "direction": "N"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:03:10Z",
+    "tool_version": "0.2.0",
+    "records": 108,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T210139Z-0d8ffc28ff8a",
+    "started_at": "2026-11-03T21:01:40Z",
+    "workbook": "0d8ffc28ff8aeeb85f1fb2611bb27e896676c38605cb8b0ba4c3615aecf5e7c9--Data_Tables_Family_Incidents_Visualisation_Year_Ending_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a337-b9d3-73f6-8449-734ba85509b4",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ab7a1dfbb3db6279238e8df9ae11a8b1b172a9481d1592cdc77ca94795ce71cb",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0d8ffc28ff8aeeb85f1fb2611bb27e896676c38605cb8b0ba4c3615aecf5e7c9--Data_Tables_Family_Incidents_Visualisation_Year_Ending_June_2026.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Family incidents (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e75255b2cbd83cdb05e0d79c334ec1efd4f9ed2853128d4d85173e5e41694570 | missing |\n| \"Footnotes\" | 507e88b6e2be96961d504f9dda740e7d80ab181c559da2ab0ec57667f320e621 | missing |\n| \"Table 01\" | 94678557faa1a186bc8319564398a451f12453c5d7a3633fa15972cecdb6ba34 | missing |\n| \"Table 02\" | 9270b48df0dbe14920c59cccf721d4b2cb826483094fb1505a384ec0df3446eb | missing |\n| \"Table 03\" | 69623964d588940a82d8f52343d095bb7009ca300d816f5e34219eeedd0dd3af | missing |\n| \"Table 04\" | aab572aeacc5241f089d9cf3e594a0055e78e93da88262622c50157a3763c723 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T210139Z-0d8ffc28ff8a.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A56:F271",
+      "reason": "Earlier reporting years; most recent year ending June 2026 only."
+    }
+  ]
+}

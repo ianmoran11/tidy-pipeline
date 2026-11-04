@@ -7,7 +7,8 @@
 # Each test returns its failures (none when it passes). A failed "error" test stops the
 # target; "warning" results are only reported. Returns one row per test.
 check_integrated_files <- function(integrated_files, observations, integrated) {
-  tables <- list(observations = observations, series = integrated$series, measures = integrated$measures, sources = integrated$sources)
+  tables <- c(list(observations = observations), stats::setNames(integrated$series, paste0("series/", names(integrated$series))),
+              list(measures = integrated$measures, sources = integrated$sources))  # series: one file per publication
   paths <- stats::setNames(file.path(dirname(integrated_files[1]), paste0(names(tables), ".csv")), names(tables))
   csv <- lapply(paths[file.exists(paths)], data.table::fread, colClasses = "character", na.strings = "", encoding = "UTF-8", strip.white = FALSE)
 

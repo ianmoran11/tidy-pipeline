@@ -16,7 +16,13 @@ t <- tibble::tribble(~x, ~fmt, ~want,
   19.3, "General", "19.3",
   1011.7, "#;##0.00", "1011.7",     # tidyxl's broken built-in 4 (#,##0.00)
   0, "#;##0", "0",                  # built-in 3 (#,##0) shows zero as 0
-  1e6, "General", "1000000")
+  1e6, "General", "1000000",
+  -0.204, "0.0%", "-20.4",          # percentages: the fraction times 100
+  0.5, "0%", "50",
+  0.12345, "0.00%", "12.35",
+  0.0006, "0.0%", "0.1",
+  -0.0349, "0.0%;-0.0%", "-3.5",
+  0.15, '0.0"%"', "0.2")            # a quoted % is text, not a percentage
 t$got <- map2_chr(t$x, t$fmt, published_value)
 print(t %>% mutate(ok = got == want), n = 20)
 

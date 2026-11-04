@@ -1,0 +1,1564 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b2e45ecb971e0391104307e35f2844e10d6a9c64b49b56a220965398c2751b75",
+  "sheet": "10a-DV-detailedpenalty",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "2025 only. Printed offence divisions, subdivisions, groups and their totals retained at their published hierarchy level. Text suppression/unavailable markers retained. Row-sized tables avoid carrying child labels into parent totals.",
+  "new_dimensions": [
+    {
+      "name": "offence_subdivision",
+      "description": "Published offence subdivision in the BSOC/ANZSOC classification, including subdivision totals."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A8,A51,A60,A88,A122"
+    },
+    {
+      "name": "notes",
+      "cells": "A11,A52,A61,A89,A123,A140,A141,A142,A145,A147,A148,A149"
+    },
+    {
+      "name": "source",
+      "cells": "A144"
+    }
+  ],
+  "tables": [
+    {
+      "name": "row_12",
+      "range": "A12,B12,C12,D12,E12,F12,G12,H12,I12,J12,K12,L12,M12,N12,O12,P12,Q12,R12,S12,T12,U12,V12,W12,X12,Y12,Z12,AA12,AB12,AC12,B13,C13,D13,E13,F13,G13,H13,I13,J13,K13,L13,M13,N13,O13,P13,Q13,R13,S13,T13,U13,V13,W13,X13,Y13,Z13,AA13,AB13,AC13,B14,C14,D14,E14,F14,G14,H14,I14,J14,K14,L14,M14,N14,O14,P14,Q14,R14,S14,T14,U14,V14,W14,X14,Y14,Z14,AA14,AB14,AC14,B15,C15,D15,E15,F15,G15,H15,I15,J15,K15,L15,M15,N15,O15,P15,Q15,R15,S15,T15,U15,V15,W15,X15,Y15,Z15,AA15,AB15,AC15,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C12,D12,E12,F12,G12,H12,I12,J12,K12,L12,M12,N12,O12,P12,Q12,R12,S12,T12,U12,V12,W12,X12,Y12,Z12,AA12,AB12,AC12,C13,D13,E13,F13,G13,H13,I13,J13,K13,L13,M13,N13,O13,P13,Q13,R13,S13,T13,U13,V13,W13,X13,Y13,Z13,AA13,AB13,AC13,C14,D14,E14,F14,G14,H14,I14,J14,K14,L14,M14,N14,O14,P14,Q14,R14,S14,T14,U14,V14,W14,X14,Y14,Z14,AA14,AB14,AC14,C15,D15,E15,F15,G15,H15,I15,J15,K15,L15,M15,N15,O15,P15,Q15,R15,S15,T15,U15,V15,W15,X15,Y15,Z15,AA15,AB15,AC15",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B12,B13,B14,B15",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A12"
+        }
+      ]
+    },
+    {
+      "name": "row_16",
+      "range": "A16,B16,C16,D16,E16,F16,G16,H16,I16,J16,K16,L16,M16,N16,O16,P16,Q16,R16,S16,T16,U16,V16,W16,X16,Y16,Z16,AA16,AB16,AC16,B17,C17,D17,E17,F17,G17,H17,I17,J17,K17,L17,M17,N17,O17,P17,Q17,R17,S17,T17,U17,V17,W17,X17,Y17,Z17,AA17,AB17,AC17,B18,C18,D18,E18,F18,G18,H18,I18,J18,K18,L18,M18,N18,O18,P18,Q18,R18,S18,T18,U18,V18,W18,X18,Y18,Z18,AA18,AB18,AC18,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C16,D16,E16,F16,G16,H16,I16,J16,K16,L16,M16,N16,O16,P16,Q16,R16,S16,T16,U16,V16,W16,X16,Y16,Z16,AA16,AB16,AC16,C17,D17,E17,F17,G17,H17,I17,J17,K17,L17,M17,N17,O17,P17,Q17,R17,S17,T17,U17,V17,W17,X17,Y17,Z17,AA17,AB17,AC17,C18,D18,E18,F18,G18,H18,I18,J18,K18,L18,M18,N18,O18,P18,Q18,R18,S18,T18,U18,V18,W18,X18,Y18,Z18,AA18,AB18,AC18",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B16,B17,B18",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A16"
+        }
+      ]
+    },
+    {
+      "name": "row_19",
+      "range": "A19,B19,C19,D19,E19,F19,G19,H19,I19,J19,K19,L19,M19,N19,O19,P19,Q19,R19,S19,T19,U19,V19,W19,X19,Y19,Z19,AA19,AB19,AC19,B20,C20,D20,E20,F20,G20,H20,I20,J20,K20,L20,M20,N20,O20,P20,Q20,R20,S20,T20,U20,V20,W20,X20,Y20,Z20,AA20,AB20,AC20,B21,C21,D21,E21,F21,G21,H21,I21,J21,K21,L21,M21,N21,O21,P21,Q21,R21,S21,T21,U21,V21,W21,X21,Y21,Z21,AA21,AB21,AC21,B22,C22,D22,E22,F22,G22,H22,I22,J22,K22,L22,M22,N22,O22,P22,Q22,R22,S22,T22,U22,V22,W22,X22,Y22,Z22,AA22,AB22,AC22,B23,C23,D23,E23,F23,G23,H23,I23,J23,K23,L23,M23,N23,O23,P23,Q23,R23,S23,T23,U23,V23,W23,X23,Y23,Z23,AA23,AB23,AC23,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C19,D19,E19,F19,G19,H19,I19,J19,K19,L19,M19,N19,O19,P19,Q19,R19,S19,T19,U19,V19,W19,X19,Y19,Z19,AA19,AB19,AC19,C20,D20,E20,F20,G20,H20,I20,J20,K20,L20,M20,N20,O20,P20,Q20,R20,S20,T20,U20,V20,W20,X20,Y20,Z20,AA20,AB20,AC20,C21,D21,E21,F21,G21,H21,I21,J21,K21,L21,M21,N21,O21,P21,Q21,R21,S21,T21,U21,V21,W21,X21,Y21,Z21,AA21,AB21,AC21,C22,D22,E22,F22,G22,H22,I22,J22,K22,L22,M22,N22,O22,P22,Q22,R22,S22,T22,U22,V22,W22,X22,Y22,Z22,AA22,AB22,AC22,C23,D23,E23,F23,G23,H23,I23,J23,K23,L23,M23,N23,O23,P23,Q23,R23,S23,T23,U23,V23,W23,X23,Y23,Z23,AA23,AB23,AC23",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B19,B20,B21,B22,B23",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A19"
+        }
+      ]
+    },
+    {
+      "name": "row_24",
+      "range": "A24,B24,C24,D24,E24,F24,G24,H24,I24,J24,K24,L24,M24,N24,O24,P24,Q24,R24,S24,T24,U24,V24,W24,X24,Y24,Z24,AA24,AB24,AC24,B25,C25,D25,E25,F25,G25,H25,I25,J25,K25,L25,M25,N25,O25,P25,Q25,R25,S25,T25,U25,V25,W25,X25,Y25,Z25,AA25,AB25,AC25,B26,C26,D26,E26,F26,G26,H26,I26,J26,K26,L26,M26,N26,O26,P26,Q26,R26,S26,T26,U26,V26,W26,X26,Y26,Z26,AA26,AB26,AC26,B27,C27,D27,E27,F27,G27,H27,I27,J27,K27,L27,M27,N27,O27,P27,Q27,R27,S27,T27,U27,V27,W27,X27,Y27,Z27,AA27,AB27,AC27,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C24,D24,E24,F24,G24,H24,I24,J24,K24,L24,M24,N24,O24,P24,Q24,R24,S24,T24,U24,V24,W24,X24,Y24,Z24,AA24,AB24,AC24,C25,D25,E25,F25,G25,H25,I25,J25,K25,L25,M25,N25,O25,P25,Q25,R25,S25,T25,U25,V25,W25,X25,Y25,Z25,AA25,AB25,AC25,C26,D26,E26,F26,G26,H26,I26,J26,K26,L26,M26,N26,O26,P26,Q26,R26,S26,T26,U26,V26,W26,X26,Y26,Z26,AA26,AB26,AC26,C27,D27,E27,F27,G27,H27,I27,J27,K27,L27,M27,N27,O27,P27,Q27,R27,S27,T27,U27,V27,W27,X27,Y27,Z27,AA27,AB27,AC27",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B24,B25,B26,B27",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A24"
+        }
+      ]
+    },
+    {
+      "name": "row_28",
+      "range": "A28,B28,C28,D28,E28,F28,G28,H28,I28,J28,K28,L28,M28,N28,O28,P28,Q28,R28,S28,T28,U28,V28,W28,X28,Y28,Z28,AA28,AB28,AC28,B29,C29,D29,E29,F29,G29,H29,I29,J29,K29,L29,M29,N29,O29,P29,Q29,R29,S29,T29,U29,V29,W29,X29,Y29,Z29,AA29,AB29,AC29,B30,C30,D30,E30,F30,G30,H30,I30,J30,K30,L30,M30,N30,O30,P30,Q30,R30,S30,T30,U30,V30,W30,X30,Y30,Z30,AA30,AB30,AC30,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C28,D28,E28,F28,G28,H28,I28,J28,K28,L28,M28,N28,O28,P28,Q28,R28,S28,T28,U28,V28,W28,X28,Y28,Z28,AA28,AB28,AC28,C29,D29,E29,F29,G29,H29,I29,J29,K29,L29,M29,N29,O29,P29,Q29,R29,S29,T29,U29,V29,W29,X29,Y29,Z29,AA29,AB29,AC29,C30,D30,E30,F30,G30,H30,I30,J30,K30,L30,M30,N30,O30,P30,Q30,R30,S30,T30,U30,V30,W30,X30,Y30,Z30,AA30,AB30,AC30",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B28,B29,B30",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A28"
+        }
+      ]
+    },
+    {
+      "name": "row_31",
+      "range": "A31,B31,C31,D31,E31,F31,G31,H31,I31,J31,K31,L31,M31,N31,O31,P31,Q31,R31,S31,T31,U31,V31,W31,X31,Y31,Z31,AA31,AB31,AC31,B32,C32,D32,E32,F32,G32,H32,I32,J32,K32,L32,M32,N32,O32,P32,Q32,R32,S32,T32,U32,V32,W32,X32,Y32,Z32,AA32,AB32,AC32,B33,C33,D33,E33,F33,G33,H33,I33,J33,K33,L33,M33,N33,O33,P33,Q33,R33,S33,T33,U33,V33,W33,X33,Y33,Z33,AA33,AB33,AC33,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C31,D31,E31,F31,G31,H31,I31,J31,K31,L31,M31,N31,O31,P31,Q31,R31,S31,T31,U31,V31,W31,X31,Y31,Z31,AA31,AB31,AC31,C32,D32,E32,F32,G32,H32,I32,J32,K32,L32,M32,N32,O32,P32,Q32,R32,S32,T32,U32,V32,W32,X32,Y32,Z32,AA32,AB32,AC32,C33,D33,E33,F33,G33,H33,I33,J33,K33,L33,M33,N33,O33,P33,Q33,R33,S33,T33,U33,V33,W33,X33,Y33,Z33,AA33,AB33,AC33",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B31,B32,B33",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A31"
+        }
+      ]
+    },
+    {
+      "name": "row_34",
+      "range": "A34,B34,C34,D34,E34,F34,G34,H34,I34,J34,K34,L34,M34,N34,O34,P34,Q34,R34,S34,T34,U34,V34,W34,X34,Y34,Z34,AA34,AB34,AC34,B35,C35,D35,E35,F35,G35,H35,I35,J35,K35,L35,M35,N35,O35,P35,Q35,R35,S35,T35,U35,V35,W35,X35,Y35,Z35,AA35,AB35,AC35,B36,C36,D36,E36,F36,G36,H36,I36,J36,K36,L36,M36,N36,O36,P36,Q36,R36,S36,T36,U36,V36,W36,X36,Y36,Z36,AA36,AB36,AC36,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C34,D34,E34,F34,G34,H34,I34,J34,K34,L34,M34,N34,O34,P34,Q34,R34,S34,T34,U34,V34,W34,X34,Y34,Z34,AA34,AB34,AC34,C35,D35,E35,F35,G35,H35,I35,J35,K35,L35,M35,N35,O35,P35,Q35,R35,S35,T35,U35,V35,W35,X35,Y35,Z35,AA35,AB35,AC35,C36,D36,E36,F36,G36,H36,I36,J36,K36,L36,M36,N36,O36,P36,Q36,R36,S36,T36,U36,V36,W36,X36,Y36,Z36,AA36,AB36,AC36",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B34,B35,B36",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A34"
+        }
+      ]
+    },
+    {
+      "name": "row_37",
+      "range": "A37,B37,C37,D37,E37,F37,G37,H37,I37,J37,K37,L37,M37,N37,O37,P37,Q37,R37,S37,T37,U37,V37,W37,X37,Y37,Z37,AA37,AB37,AC37,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C37,D37,E37,F37,G37,H37,I37,J37,K37,L37,M37,N37,O37,P37,Q37,R37,S37,T37,U37,V37,W37,X37,Y37,Z37,AA37,AB37,AC37",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B37",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A37"
+        }
+      ]
+    },
+    {
+      "name": "row_38",
+      "range": "A38,B38,C38,D38,E38,F38,G38,H38,I38,J38,K38,L38,M38,N38,O38,P38,Q38,R38,S38,T38,U38,V38,W38,X38,Y38,Z38,AA38,AB38,AC38,B39,C39,D39,E39,F39,G39,H39,I39,J39,K39,L39,M39,N39,O39,P39,Q39,R39,S39,T39,U39,V39,W39,X39,Y39,Z39,AA39,AB39,AC39,B40,C40,D40,E40,F40,G40,H40,I40,J40,K40,L40,M40,N40,O40,P40,Q40,R40,S40,T40,U40,V40,W40,X40,Y40,Z40,AA40,AB40,AC40,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C38,D38,E38,F38,G38,H38,I38,J38,K38,L38,M38,N38,O38,P38,Q38,R38,S38,T38,U38,V38,W38,X38,Y38,Z38,AA38,AB38,AC38,C39,D39,E39,F39,G39,H39,I39,J39,K39,L39,M39,N39,O39,P39,Q39,R39,S39,T39,U39,V39,W39,X39,Y39,Z39,AA39,AB39,AC39,C40,D40,E40,F40,G40,H40,I40,J40,K40,L40,M40,N40,O40,P40,Q40,R40,S40,T40,U40,V40,W40,X40,Y40,Z40,AA40,AB40,AC40",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B38,B39,B40",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A38"
+        }
+      ]
+    },
+    {
+      "name": "row_41",
+      "range": "A41,B41,C41,D41,E41,F41,G41,H41,I41,J41,K41,L41,M41,N41,O41,P41,Q41,R41,S41,T41,U41,V41,W41,X41,Y41,Z41,AA41,AB41,AC41,B42,C42,D42,E42,F42,G42,H42,I42,J42,K42,L42,M42,N42,O42,P42,Q42,R42,S42,T42,U42,V42,W42,X42,Y42,Z42,AA42,AB42,AC42,B43,C43,D43,E43,F43,G43,H43,I43,J43,K43,L43,M43,N43,O43,P43,Q43,R43,S43,T43,U43,V43,W43,X43,Y43,Z43,AA43,AB43,AC43,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C41,D41,E41,F41,G41,H41,I41,J41,K41,L41,M41,N41,O41,P41,Q41,R41,S41,T41,U41,V41,W41,X41,Y41,Z41,AA41,AB41,AC41,C42,D42,E42,F42,G42,H42,I42,J42,K42,L42,M42,N42,O42,P42,Q42,R42,S42,T42,U42,V42,W42,X42,Y42,Z42,AA42,AB42,AC42,C43,D43,E43,F43,G43,H43,I43,J43,K43,L43,M43,N43,O43,P43,Q43,R43,S43,T43,U43,V43,W43,X43,Y43,Z43,AA43,AB43,AC43",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B41,B42,B43",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A41"
+        }
+      ]
+    },
+    {
+      "name": "row_44",
+      "range": "A44,B44,C44,D44,E44,F44,G44,H44,I44,J44,K44,L44,M44,N44,O44,P44,Q44,R44,S44,T44,U44,V44,W44,X44,Y44,Z44,AA44,AB44,AC44,B45,C45,D45,E45,F45,G45,H45,I45,J45,K45,L45,M45,N45,O45,P45,Q45,R45,S45,T45,U45,V45,W45,X45,Y45,Z45,AA45,AB45,AC45,B46,C46,D46,E46,F46,G46,H46,I46,J46,K46,L46,M46,N46,O46,P46,Q46,R46,S46,T46,U46,V46,W46,X46,Y46,Z46,AA46,AB46,AC46,B47,C47,D47,E47,F47,G47,H47,I47,J47,K47,L47,M47,N47,O47,P47,Q47,R47,S47,T47,U47,V47,W47,X47,Y47,Z47,AA47,AB47,AC47,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C44,D44,E44,F44,G44,H44,I44,J44,K44,L44,M44,N44,O44,P44,Q44,R44,S44,T44,U44,V44,W44,X44,Y44,Z44,AA44,AB44,AC44,C45,D45,E45,F45,G45,H45,I45,J45,K45,L45,M45,N45,O45,P45,Q45,R45,S45,T45,U45,V45,W45,X45,Y45,Z45,AA45,AB45,AC45,C46,D46,E46,F46,G46,H46,I46,J46,K46,L46,M46,N46,O46,P46,Q46,R46,S46,T46,U46,V46,W46,X46,Y46,Z46,AA46,AB46,AC46,C47,D47,E47,F47,G47,H47,I47,J47,K47,L47,M47,N47,O47,P47,Q47,R47,S47,T47,U47,V47,W47,X47,Y47,Z47,AA47,AB47,AC47",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B44,B45,B46,B47",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A44"
+        }
+      ]
+    },
+    {
+      "name": "row_48",
+      "range": "A48,C48,D48,E48,F48,G48,H48,I48,J48,K48,L48,M48,N48,O48,P48,Q48,R48,S48,T48,U48,V48,W48,X48,Y48,Z48,AA48,AB48,AC48,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A9",
+      "values_range": "C48,D48,E48,F48,G48,H48,I48,J48,K48,L48,M48,N48,O48,P48,Q48,R48,S48,T48,U48,V48,W48,X48,Y48,Z48,AA48,AB48,AC48",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A48",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A9"
+        }
+      ]
+    },
+    {
+      "name": "row_53",
+      "range": "A53,B53,C53,D53,E53,F53,G53,H53,I53,J53,K53,L53,M53,N53,O53,P53,Q53,R53,S53,T53,U53,V53,W53,X53,Y53,Z53,AA53,AB53,AC53,B54,C54,D54,E54,F54,G54,H54,I54,J54,K54,L54,M54,N54,O54,P54,Q54,R54,S54,T54,U54,V54,W54,X54,Y54,Z54,AA54,AB54,AC54,B55,C55,D55,E55,F55,G55,H55,I55,J55,K55,L55,M55,N55,O55,P55,Q55,R55,S55,T55,U55,V55,W55,X55,Y55,Z55,AA55,AB55,AC55,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A50",
+      "values_range": "C53,D53,E53,F53,G53,H53,I53,J53,K53,L53,M53,N53,O53,P53,Q53,R53,S53,T53,U53,V53,W53,X53,Y53,Z53,AA53,AB53,AC53,C54,D54,E54,F54,G54,H54,I54,J54,K54,L54,M54,N54,O54,P54,Q54,R54,S54,T54,U54,V54,W54,X54,Y54,Z54,AA54,AB54,AC54,C55,D55,E55,F55,G55,H55,I55,J55,K55,L55,M55,N55,O55,P55,Q55,R55,S55,T55,U55,V55,W55,X55,Y55,Z55,AA55,AB55,AC55",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B53,B54,B55",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A50"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A53"
+        }
+      ]
+    },
+    {
+      "name": "row_56",
+      "range": "A56,B56,C56,D56,E56,F56,G56,H56,I56,J56,K56,L56,M56,N56,O56,P56,Q56,R56,S56,T56,U56,V56,W56,X56,Y56,Z56,AA56,AB56,AC56,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A50",
+      "values_range": "C56,D56,E56,F56,G56,H56,I56,J56,K56,L56,M56,N56,O56,P56,Q56,R56,S56,T56,U56,V56,W56,X56,Y56,Z56,AA56,AB56,AC56",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B56",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A50"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A56"
+        }
+      ]
+    },
+    {
+      "name": "row_57",
+      "range": "A57,C57,D57,E57,F57,G57,H57,I57,J57,K57,L57,M57,N57,O57,P57,Q57,R57,S57,T57,U57,V57,W57,X57,Y57,Z57,AA57,AB57,AC57,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A50",
+      "values_range": "C57,D57,E57,F57,G57,H57,I57,J57,K57,L57,M57,N57,O57,P57,Q57,R57,S57,T57,U57,V57,W57,X57,Y57,Z57,AA57,AB57,AC57",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A57",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A50"
+        }
+      ]
+    },
+    {
+      "name": "row_62",
+      "range": "A62,B62,C62,D62,E62,F62,G62,H62,I62,J62,K62,L62,M62,N62,O62,P62,Q62,R62,S62,T62,U62,V62,W62,X62,Y62,Z62,AA62,AB62,AC62,B63,C63,D63,E63,F63,G63,H63,I63,J63,K63,L63,M63,N63,O63,P63,Q63,R63,S63,T63,U63,V63,W63,X63,Y63,Z63,AA63,AB63,AC63,B64,C64,D64,E64,F64,G64,H64,I64,J64,K64,L64,M64,N64,O64,P64,Q64,R64,S64,T64,U64,V64,W64,X64,Y64,Z64,AA64,AB64,AC64,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C62,D62,E62,F62,G62,H62,I62,J62,K62,L62,M62,N62,O62,P62,Q62,R62,S62,T62,U62,V62,W62,X62,Y62,Z62,AA62,AB62,AC62,C63,D63,E63,F63,G63,H63,I63,J63,K63,L63,M63,N63,O63,P63,Q63,R63,S63,T63,U63,V63,W63,X63,Y63,Z63,AA63,AB63,AC63,C64,D64,E64,F64,G64,H64,I64,J64,K64,L64,M64,N64,O64,P64,Q64,R64,S64,T64,U64,V64,W64,X64,Y64,Z64,AA64,AB64,AC64",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B62,B63,B64",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A62"
+        }
+      ]
+    },
+    {
+      "name": "row_65",
+      "range": "A65,B65,C65,D65,E65,F65,G65,H65,I65,J65,K65,L65,M65,N65,O65,P65,Q65,R65,S65,T65,U65,V65,W65,X65,Y65,Z65,AA65,AB65,AC65,B66,C66,D66,E66,F66,G66,H66,I66,J66,K66,L66,M66,N66,O66,P66,Q66,R66,S66,T66,U66,V66,W66,X66,Y66,Z66,AA66,AB66,AC66,B67,C67,D67,E67,F67,G67,H67,I67,J67,K67,L67,M67,N67,O67,P67,Q67,R67,S67,T67,U67,V67,W67,X67,Y67,Z67,AA67,AB67,AC67,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C65,D65,E65,F65,G65,H65,I65,J65,K65,L65,M65,N65,O65,P65,Q65,R65,S65,T65,U65,V65,W65,X65,Y65,Z65,AA65,AB65,AC65,C66,D66,E66,F66,G66,H66,I66,J66,K66,L66,M66,N66,O66,P66,Q66,R66,S66,T66,U66,V66,W66,X66,Y66,Z66,AA66,AB66,AC66,C67,D67,E67,F67,G67,H67,I67,J67,K67,L67,M67,N67,O67,P67,Q67,R67,S67,T67,U67,V67,W67,X67,Y67,Z67,AA67,AB67,AC67",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B65,B66,B67",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A65"
+        }
+      ]
+    },
+    {
+      "name": "row_68",
+      "range": "A68,B68,C68,D68,E68,F68,G68,H68,I68,J68,K68,L68,M68,N68,O68,P68,Q68,R68,S68,T68,U68,V68,W68,X68,Y68,Z68,AA68,AB68,AC68,B69,C69,D69,E69,F69,G69,H69,I69,J69,K69,L69,M69,N69,O69,P69,Q69,R69,S69,T69,U69,V69,W69,X69,Y69,Z69,AA69,AB69,AC69,B70,C70,D70,E70,F70,G70,H70,I70,J70,K70,L70,M70,N70,O70,P70,Q70,R70,S70,T70,U70,V70,W70,X70,Y70,Z70,AA70,AB70,AC70,B71,C71,D71,E71,F71,G71,H71,I71,J71,K71,L71,M71,N71,O71,P71,Q71,R71,S71,T71,U71,V71,W71,X71,Y71,Z71,AA71,AB71,AC71,B72,C72,D72,E72,F72,G72,H72,I72,J72,K72,L72,M72,N72,O72,P72,Q72,R72,S72,T72,U72,V72,W72,X72,Y72,Z72,AA72,AB72,AC72,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C68,D68,E68,F68,G68,H68,I68,J68,K68,L68,M68,N68,O68,P68,Q68,R68,S68,T68,U68,V68,W68,X68,Y68,Z68,AA68,AB68,AC68,C69,D69,E69,F69,G69,H69,I69,J69,K69,L69,M69,N69,O69,P69,Q69,R69,S69,T69,U69,V69,W69,X69,Y69,Z69,AA69,AB69,AC69,C70,D70,E70,F70,G70,H70,I70,J70,K70,L70,M70,N70,O70,P70,Q70,R70,S70,T70,U70,V70,W70,X70,Y70,Z70,AA70,AB70,AC70,C71,D71,E71,F71,G71,H71,I71,J71,K71,L71,M71,N71,O71,P71,Q71,R71,S71,T71,U71,V71,W71,X71,Y71,Z71,AA71,AB71,AC71,C72,D72,E72,F72,G72,H72,I72,J72,K72,L72,M72,N72,O72,P72,Q72,R72,S72,T72,U72,V72,W72,X72,Y72,Z72,AA72,AB72,AC72",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B68,B69,B70,B71,B72",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A68"
+        }
+      ]
+    },
+    {
+      "name": "row_73",
+      "range": "A73,B73,C73,D73,E73,F73,G73,H73,I73,J73,K73,L73,M73,N73,O73,P73,Q73,R73,S73,T73,U73,V73,W73,X73,Y73,Z73,AA73,AB73,AC73,B74,C74,D74,E74,F74,G74,H74,I74,J74,K74,L74,M74,N74,O74,P74,Q74,R74,S74,T74,U74,V74,W74,X74,Y74,Z74,AA74,AB74,AC74,B75,C75,D75,E75,F75,G75,H75,I75,J75,K75,L75,M75,N75,O75,P75,Q75,R75,S75,T75,U75,V75,W75,X75,Y75,Z75,AA75,AB75,AC75,B76,C76,D76,E76,F76,G76,H76,I76,J76,K76,L76,M76,N76,O76,P76,Q76,R76,S76,T76,U76,V76,W76,X76,Y76,Z76,AA76,AB76,AC76,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C73,D73,E73,F73,G73,H73,I73,J73,K73,L73,M73,N73,O73,P73,Q73,R73,S73,T73,U73,V73,W73,X73,Y73,Z73,AA73,AB73,AC73,C74,D74,E74,F74,G74,H74,I74,J74,K74,L74,M74,N74,O74,P74,Q74,R74,S74,T74,U74,V74,W74,X74,Y74,Z74,AA74,AB74,AC74,C75,D75,E75,F75,G75,H75,I75,J75,K75,L75,M75,N75,O75,P75,Q75,R75,S75,T75,U75,V75,W75,X75,Y75,Z75,AA75,AB75,AC75,C76,D76,E76,F76,G76,H76,I76,J76,K76,L76,M76,N76,O76,P76,Q76,R76,S76,T76,U76,V76,W76,X76,Y76,Z76,AA76,AB76,AC76",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B73,B74,B75,B76",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A73"
+        }
+      ]
+    },
+    {
+      "name": "row_77",
+      "range": "A77,B77,C77,D77,E77,F77,G77,H77,I77,J77,K77,L77,M77,N77,O77,P77,Q77,R77,S77,T77,U77,V77,W77,X77,Y77,Z77,AA77,AB77,AC77,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C77,D77,E77,F77,G77,H77,I77,J77,K77,L77,M77,N77,O77,P77,Q77,R77,S77,T77,U77,V77,W77,X77,Y77,Z77,AA77,AB77,AC77",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B77",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A77"
+        }
+      ]
+    },
+    {
+      "name": "row_78",
+      "range": "A78,B78,C78,D78,E78,F78,G78,H78,I78,J78,K78,L78,M78,N78,O78,P78,Q78,R78,S78,T78,U78,V78,W78,X78,Y78,Z78,AA78,AB78,AC78,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C78,D78,E78,F78,G78,H78,I78,J78,K78,L78,M78,N78,O78,P78,Q78,R78,S78,T78,U78,V78,W78,X78,Y78,Z78,AA78,AB78,AC78",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B78",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A78"
+        }
+      ]
+    },
+    {
+      "name": "row_79",
+      "range": "A79,B79,C79,D79,E79,F79,G79,H79,I79,J79,K79,L79,M79,N79,O79,P79,Q79,R79,S79,T79,U79,V79,W79,X79,Y79,Z79,AA79,AB79,AC79,B80,C80,D80,E80,F80,G80,H80,I80,J80,K80,L80,M80,N80,O80,P80,Q80,R80,S80,T80,U80,V80,W80,X80,Y80,Z80,AA80,AB80,AC80,B81,C81,D81,E81,F81,G81,H81,I81,J81,K81,L81,M81,N81,O81,P81,Q81,R81,S81,T81,U81,V81,W81,X81,Y81,Z81,AA81,AB81,AC81,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C79,D79,E79,F79,G79,H79,I79,J79,K79,L79,M79,N79,O79,P79,Q79,R79,S79,T79,U79,V79,W79,X79,Y79,Z79,AA79,AB79,AC79,C80,D80,E80,F80,G80,H80,I80,J80,K80,L80,M80,N80,O80,P80,Q80,R80,S80,T80,U80,V80,W80,X80,Y80,Z80,AA80,AB80,AC80,C81,D81,E81,F81,G81,H81,I81,J81,K81,L81,M81,N81,O81,P81,Q81,R81,S81,T81,U81,V81,W81,X81,Y81,Z81,AA81,AB81,AC81",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B79,B80,B81",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A79"
+        }
+      ]
+    },
+    {
+      "name": "row_82",
+      "range": "A82,B82,C82,D82,E82,F82,G82,H82,I82,J82,K82,L82,M82,N82,O82,P82,Q82,R82,S82,T82,U82,V82,W82,X82,Y82,Z82,AA82,AB82,AC82,B83,C83,D83,E83,F83,G83,H83,I83,J83,K83,L83,M83,N83,O83,P83,Q83,R83,S83,T83,U83,V83,W83,X83,Y83,Z83,AA83,AB83,AC83,B84,C84,D84,E84,F84,G84,H84,I84,J84,K84,L84,M84,N84,O84,P84,Q84,R84,S84,T84,U84,V84,W84,X84,Y84,Z84,AA84,AB84,AC84,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C82,D82,E82,F82,G82,H82,I82,J82,K82,L82,M82,N82,O82,P82,Q82,R82,S82,T82,U82,V82,W82,X82,Y82,Z82,AA82,AB82,AC82,C83,D83,E83,F83,G83,H83,I83,J83,K83,L83,M83,N83,O83,P83,Q83,R83,S83,T83,U83,V83,W83,X83,Y83,Z83,AA83,AB83,AC83,C84,D84,E84,F84,G84,H84,I84,J84,K84,L84,M84,N84,O84,P84,Q84,R84,S84,T84,U84,V84,W84,X84,Y84,Z84,AA84,AB84,AC84",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B82,B83,B84",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A82"
+        }
+      ]
+    },
+    {
+      "name": "row_85",
+      "range": "A85,C85,D85,E85,F85,G85,H85,I85,J85,K85,L85,M85,N85,O85,P85,Q85,R85,S85,T85,U85,V85,W85,X85,Y85,Z85,AA85,AB85,AC85,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A59",
+      "values_range": "C85,D85,E85,F85,G85,H85,I85,J85,K85,L85,M85,N85,O85,P85,Q85,R85,S85,T85,U85,V85,W85,X85,Y85,Z85,AA85,AB85,AC85",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A85",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A59"
+        }
+      ]
+    },
+    {
+      "name": "row_90",
+      "range": "A90,B90,C90,D90,E90,F90,G90,H90,I90,J90,K90,L90,M90,N90,O90,P90,Q90,R90,S90,T90,U90,V90,W90,X90,Y90,Z90,AA90,AB90,AC90,B91,C91,D91,E91,F91,G91,H91,I91,J91,K91,L91,M91,N91,O91,P91,Q91,R91,S91,T91,U91,V91,W91,X91,Y91,Z91,AA91,AB91,AC91,B92,C92,D92,E92,F92,G92,H92,I92,J92,K92,L92,M92,N92,O92,P92,Q92,R92,S92,T92,U92,V92,W92,X92,Y92,Z92,AA92,AB92,AC92,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C90,D90,E90,F90,G90,H90,I90,J90,K90,L90,M90,N90,O90,P90,Q90,R90,S90,T90,U90,V90,W90,X90,Y90,Z90,AA90,AB90,AC90,C91,D91,E91,F91,G91,H91,I91,J91,K91,L91,M91,N91,O91,P91,Q91,R91,S91,T91,U91,V91,W91,X91,Y91,Z91,AA91,AB91,AC91,C92,D92,E92,F92,G92,H92,I92,J92,K92,L92,M92,N92,O92,P92,Q92,R92,S92,T92,U92,V92,W92,X92,Y92,Z92,AA92,AB92,AC92",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B90,B91,B92",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A90"
+        }
+      ]
+    },
+    {
+      "name": "row_93",
+      "range": "A93,B93,C93,D93,E93,F93,G93,H93,I93,J93,K93,L93,M93,N93,O93,P93,Q93,R93,S93,T93,U93,V93,W93,X93,Y93,Z93,AA93,AB93,AC93,B94,C94,D94,E94,F94,G94,H94,I94,J94,K94,L94,M94,N94,O94,P94,Q94,R94,S94,T94,U94,V94,W94,X94,Y94,Z94,AA94,AB94,AC94,B95,C95,D95,E95,F95,G95,H95,I95,J95,K95,L95,M95,N95,O95,P95,Q95,R95,S95,T95,U95,V95,W95,X95,Y95,Z95,AA95,AB95,AC95,B96,C96,D96,E96,F96,G96,H96,I96,J96,K96,L96,M96,N96,O96,P96,Q96,R96,S96,T96,U96,V96,W96,X96,Y96,Z96,AA96,AB96,AC96,B97,C97,D97,E97,F97,G97,H97,I97,J97,K97,L97,M97,N97,O97,P97,Q97,R97,S97,T97,U97,V97,W97,X97,Y97,Z97,AA97,AB97,AC97,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C93,D93,E93,F93,G93,H93,I93,J93,K93,L93,M93,N93,O93,P93,Q93,R93,S93,T93,U93,V93,W93,X93,Y93,Z93,AA93,AB93,AC93,C94,D94,E94,F94,G94,H94,I94,J94,K94,L94,M94,N94,O94,P94,Q94,R94,S94,T94,U94,V94,W94,X94,Y94,Z94,AA94,AB94,AC94,C95,D95,E95,F95,G95,H95,I95,J95,K95,L95,M95,N95,O95,P95,Q95,R95,S95,T95,U95,V95,W95,X95,Y95,Z95,AA95,AB95,AC95,C96,D96,E96,F96,G96,H96,I96,J96,K96,L96,M96,N96,O96,P96,Q96,R96,S96,T96,U96,V96,W96,X96,Y96,Z96,AA96,AB96,AC96,C97,D97,E97,F97,G97,H97,I97,J97,K97,L97,M97,N97,O97,P97,Q97,R97,S97,T97,U97,V97,W97,X97,Y97,Z97,AA97,AB97,AC97",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B93,B94,B95,B96,B97",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A93"
+        }
+      ]
+    },
+    {
+      "name": "row_98",
+      "range": "A98,B98,C98,D98,E98,F98,G98,H98,I98,J98,K98,L98,M98,N98,O98,P98,Q98,R98,S98,T98,U98,V98,W98,X98,Y98,Z98,AA98,AB98,AC98,B99,C99,D99,E99,F99,G99,H99,I99,J99,K99,L99,M99,N99,O99,P99,Q99,R99,S99,T99,U99,V99,W99,X99,Y99,Z99,AA99,AB99,AC99,B100,C100,D100,E100,F100,G100,H100,I100,J100,K100,L100,M100,N100,O100,P100,Q100,R100,S100,T100,U100,V100,W100,X100,Y100,Z100,AA100,AB100,AC100,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C98,D98,E98,F98,G98,H98,I98,J98,K98,L98,M98,N98,O98,P98,Q98,R98,S98,T98,U98,V98,W98,X98,Y98,Z98,AA98,AB98,AC98,C99,D99,E99,F99,G99,H99,I99,J99,K99,L99,M99,N99,O99,P99,Q99,R99,S99,T99,U99,V99,W99,X99,Y99,Z99,AA99,AB99,AC99,C100,D100,E100,F100,G100,H100,I100,J100,K100,L100,M100,N100,O100,P100,Q100,R100,S100,T100,U100,V100,W100,X100,Y100,Z100,AA100,AB100,AC100",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B98,B99,B100",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A98"
+        }
+      ]
+    },
+    {
+      "name": "row_101",
+      "range": "A101,B101,C101,D101,E101,F101,G101,H101,I101,J101,K101,L101,M101,N101,O101,P101,Q101,R101,S101,T101,U101,V101,W101,X101,Y101,Z101,AA101,AB101,AC101,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C101,D101,E101,F101,G101,H101,I101,J101,K101,L101,M101,N101,O101,P101,Q101,R101,S101,T101,U101,V101,W101,X101,Y101,Z101,AA101,AB101,AC101",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B101",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A101"
+        }
+      ]
+    },
+    {
+      "name": "row_102",
+      "range": "A102,B102,C102,D102,E102,F102,G102,H102,I102,J102,K102,L102,M102,N102,O102,P102,Q102,R102,S102,T102,U102,V102,W102,X102,Y102,Z102,AA102,AB102,AC102,B103,C103,D103,E103,F103,G103,H103,I103,J103,K103,L103,M103,N103,O103,P103,Q103,R103,S103,T103,U103,V103,W103,X103,Y103,Z103,AA103,AB103,AC103,B104,C104,D104,E104,F104,G104,H104,I104,J104,K104,L104,M104,N104,O104,P104,Q104,R104,S104,T104,U104,V104,W104,X104,Y104,Z104,AA104,AB104,AC104,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C102,D102,E102,F102,G102,H102,I102,J102,K102,L102,M102,N102,O102,P102,Q102,R102,S102,T102,U102,V102,W102,X102,Y102,Z102,AA102,AB102,AC102,C103,D103,E103,F103,G103,H103,I103,J103,K103,L103,M103,N103,O103,P103,Q103,R103,S103,T103,U103,V103,W103,X103,Y103,Z103,AA103,AB103,AC103,C104,D104,E104,F104,G104,H104,I104,J104,K104,L104,M104,N104,O104,P104,Q104,R104,S104,T104,U104,V104,W104,X104,Y104,Z104,AA104,AB104,AC104",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B102,B103,B104",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A102"
+        }
+      ]
+    },
+    {
+      "name": "row_105",
+      "range": "A105,B105,C105,D105,E105,F105,G105,H105,I105,J105,K105,L105,M105,N105,O105,P105,Q105,R105,S105,T105,U105,V105,W105,X105,Y105,Z105,AA105,AB105,AC105,B106,C106,D106,E106,F106,G106,H106,I106,J106,K106,L106,M106,N106,O106,P106,Q106,R106,S106,T106,U106,V106,W106,X106,Y106,Z106,AA106,AB106,AC106,B107,C107,D107,E107,F107,G107,H107,I107,J107,K107,L107,M107,N107,O107,P107,Q107,R107,S107,T107,U107,V107,W107,X107,Y107,Z107,AA107,AB107,AC107,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C105,D105,E105,F105,G105,H105,I105,J105,K105,L105,M105,N105,O105,P105,Q105,R105,S105,T105,U105,V105,W105,X105,Y105,Z105,AA105,AB105,AC105,C106,D106,E106,F106,G106,H106,I106,J106,K106,L106,M106,N106,O106,P106,Q106,R106,S106,T106,U106,V106,W106,X106,Y106,Z106,AA106,AB106,AC106,C107,D107,E107,F107,G107,H107,I107,J107,K107,L107,M107,N107,O107,P107,Q107,R107,S107,T107,U107,V107,W107,X107,Y107,Z107,AA107,AB107,AC107",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B105,B106,B107",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A105"
+        }
+      ]
+    },
+    {
+      "name": "row_108",
+      "range": "A108,B108,C108,D108,E108,F108,G108,H108,I108,J108,K108,L108,M108,N108,O108,P108,Q108,R108,S108,T108,U108,V108,W108,X108,Y108,Z108,AA108,AB108,AC108,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C108,D108,E108,F108,G108,H108,I108,J108,K108,L108,M108,N108,O108,P108,Q108,R108,S108,T108,U108,V108,W108,X108,Y108,Z108,AA108,AB108,AC108",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B108",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A108"
+        }
+      ]
+    },
+    {
+      "name": "row_109",
+      "range": "A109,B109,C109,D109,E109,F109,G109,H109,I109,J109,K109,L109,M109,N109,O109,P109,Q109,R109,S109,T109,U109,V109,W109,X109,Y109,Z109,AA109,AB109,AC109,B110,C110,D110,E110,F110,G110,H110,I110,J110,K110,L110,M110,N110,O110,P110,Q110,R110,S110,T110,U110,V110,W110,X110,Y110,Z110,AA110,AB110,AC110,B111,C111,D111,E111,F111,G111,H111,I111,J111,K111,L111,M111,N111,O111,P111,Q111,R111,S111,T111,U111,V111,W111,X111,Y111,Z111,AA111,AB111,AC111,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C109,D109,E109,F109,G109,H109,I109,J109,K109,L109,M109,N109,O109,P109,Q109,R109,S109,T109,U109,V109,W109,X109,Y109,Z109,AA109,AB109,AC109,C110,D110,E110,F110,G110,H110,I110,J110,K110,L110,M110,N110,O110,P110,Q110,R110,S110,T110,U110,V110,W110,X110,Y110,Z110,AA110,AB110,AC110,C111,D111,E111,F111,G111,H111,I111,J111,K111,L111,M111,N111,O111,P111,Q111,R111,S111,T111,U111,V111,W111,X111,Y111,Z111,AA111,AB111,AC111",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B109,B110,B111",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A109"
+        }
+      ]
+    },
+    {
+      "name": "row_112",
+      "range": "A112,B112,C112,D112,E112,F112,G112,H112,I112,J112,K112,L112,M112,N112,O112,P112,Q112,R112,S112,T112,U112,V112,W112,X112,Y112,Z112,AA112,AB112,AC112,B113,C113,D113,E113,F113,G113,H113,I113,J113,K113,L113,M113,N113,O113,P113,Q113,R113,S113,T113,U113,V113,W113,X113,Y113,Z113,AA113,AB113,AC113,B114,C114,D114,E114,F114,G114,H114,I114,J114,K114,L114,M114,N114,O114,P114,Q114,R114,S114,T114,U114,V114,W114,X114,Y114,Z114,AA114,AB114,AC114,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C112,D112,E112,F112,G112,H112,I112,J112,K112,L112,M112,N112,O112,P112,Q112,R112,S112,T112,U112,V112,W112,X112,Y112,Z112,AA112,AB112,AC112,C113,D113,E113,F113,G113,H113,I113,J113,K113,L113,M113,N113,O113,P113,Q113,R113,S113,T113,U113,V113,W113,X113,Y113,Z113,AA113,AB113,AC113,C114,D114,E114,F114,G114,H114,I114,J114,K114,L114,M114,N114,O114,P114,Q114,R114,S114,T114,U114,V114,W114,X114,Y114,Z114,AA114,AB114,AC114",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B112,B113,B114",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A112"
+        }
+      ]
+    },
+    {
+      "name": "row_115",
+      "range": "A115,B115,C115,D115,E115,F115,G115,H115,I115,J115,K115,L115,M115,N115,O115,P115,Q115,R115,S115,T115,U115,V115,W115,X115,Y115,Z115,AA115,AB115,AC115,B116,C116,D116,E116,F116,G116,H116,I116,J116,K116,L116,M116,N116,O116,P116,Q116,R116,S116,T116,U116,V116,W116,X116,Y116,Z116,AA116,AB116,AC116,B117,C117,D117,E117,F117,G117,H117,I117,J117,K117,L117,M117,N117,O117,P117,Q117,R117,S117,T117,U117,V117,W117,X117,Y117,Z117,AA117,AB117,AC117,B118,C118,D118,E118,F118,G118,H118,I118,J118,K118,L118,M118,N118,O118,P118,Q118,R118,S118,T118,U118,V118,W118,X118,Y118,Z118,AA118,AB118,AC118,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C115,D115,E115,F115,G115,H115,I115,J115,K115,L115,M115,N115,O115,P115,Q115,R115,S115,T115,U115,V115,W115,X115,Y115,Z115,AA115,AB115,AC115,C116,D116,E116,F116,G116,H116,I116,J116,K116,L116,M116,N116,O116,P116,Q116,R116,S116,T116,U116,V116,W116,X116,Y116,Z116,AA116,AB116,AC116,C117,D117,E117,F117,G117,H117,I117,J117,K117,L117,M117,N117,O117,P117,Q117,R117,S117,T117,U117,V117,W117,X117,Y117,Z117,AA117,AB117,AC117,C118,D118,E118,F118,G118,H118,I118,J118,K118,L118,M118,N118,O118,P118,Q118,R118,S118,T118,U118,V118,W118,X118,Y118,Z118,AA118,AB118,AC118",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B115,B116,B117,B118",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A115"
+        }
+      ]
+    },
+    {
+      "name": "row_119",
+      "range": "A119,C119,D119,E119,F119,G119,H119,I119,J119,K119,L119,M119,N119,O119,P119,Q119,R119,S119,T119,U119,V119,W119,X119,Y119,Z119,AA119,AB119,AC119,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A87",
+      "values_range": "C119,D119,E119,F119,G119,H119,I119,J119,K119,L119,M119,N119,O119,P119,Q119,R119,S119,T119,U119,V119,W119,X119,Y119,Z119,AA119,AB119,AC119",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A119",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A87"
+        }
+      ]
+    },
+    {
+      "name": "row_124",
+      "range": "A124,B124,C124,D124,E124,F124,G124,H124,I124,J124,K124,L124,M124,N124,O124,P124,Q124,R124,S124,T124,U124,V124,W124,X124,Y124,Z124,AA124,AB124,AC124,B125,C125,D125,E125,F125,G125,H125,I125,J125,K125,L125,M125,N125,O125,P125,Q125,R125,S125,T125,U125,V125,W125,X125,Y125,Z125,AA125,AB125,AC125,B126,C126,D126,E126,F126,G126,H126,I126,J126,K126,L126,M126,N126,O126,P126,Q126,R126,S126,T126,U126,V126,W126,X126,Y126,Z126,AA126,AB126,AC126,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C124,D124,E124,F124,G124,H124,I124,J124,K124,L124,M124,N124,O124,P124,Q124,R124,S124,T124,U124,V124,W124,X124,Y124,Z124,AA124,AB124,AC124,C125,D125,E125,F125,G125,H125,I125,J125,K125,L125,M125,N125,O125,P125,Q125,R125,S125,T125,U125,V125,W125,X125,Y125,Z125,AA125,AB125,AC125,C126,D126,E126,F126,G126,H126,I126,J126,K126,L126,M126,N126,O126,P126,Q126,R126,S126,T126,U126,V126,W126,X126,Y126,Z126,AA126,AB126,AC126",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B124,B125,B126",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A124"
+        }
+      ]
+    },
+    {
+      "name": "row_127",
+      "range": "A127,B127,C127,D127,E127,F127,G127,H127,I127,J127,K127,L127,M127,N127,O127,P127,Q127,R127,S127,T127,U127,V127,W127,X127,Y127,Z127,AA127,AB127,AC127,B128,C128,D128,E128,F128,G128,H128,I128,J128,K128,L128,M128,N128,O128,P128,Q128,R128,S128,T128,U128,V128,W128,X128,Y128,Z128,AA128,AB128,AC128,B129,C129,D129,E129,F129,G129,H129,I129,J129,K129,L129,M129,N129,O129,P129,Q129,R129,S129,T129,U129,V129,W129,X129,Y129,Z129,AA129,AB129,AC129,B130,C130,D130,E130,F130,G130,H130,I130,J130,K130,L130,M130,N130,O130,P130,Q130,R130,S130,T130,U130,V130,W130,X130,Y130,Z130,AA130,AB130,AC130,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C127,D127,E127,F127,G127,H127,I127,J127,K127,L127,M127,N127,O127,P127,Q127,R127,S127,T127,U127,V127,W127,X127,Y127,Z127,AA127,AB127,AC127,C128,D128,E128,F128,G128,H128,I128,J128,K128,L128,M128,N128,O128,P128,Q128,R128,S128,T128,U128,V128,W128,X128,Y128,Z128,AA128,AB128,AC128,C129,D129,E129,F129,G129,H129,I129,J129,K129,L129,M129,N129,O129,P129,Q129,R129,S129,T129,U129,V129,W129,X129,Y129,Z129,AA129,AB129,AC129,C130,D130,E130,F130,G130,H130,I130,J130,K130,L130,M130,N130,O130,P130,Q130,R130,S130,T130,U130,V130,W130,X130,Y130,Z130,AA130,AB130,AC130",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B127,B128,B129,B130",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A127"
+        }
+      ]
+    },
+    {
+      "name": "row_131",
+      "range": "A131,B131,C131,D131,E131,F131,G131,H131,I131,J131,K131,L131,M131,N131,O131,P131,Q131,R131,S131,T131,U131,V131,W131,X131,Y131,Z131,AA131,AB131,AC131,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C131,D131,E131,F131,G131,H131,I131,J131,K131,L131,M131,N131,O131,P131,Q131,R131,S131,T131,U131,V131,W131,X131,Y131,Z131,AA131,AB131,AC131",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B131",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A131"
+        }
+      ]
+    },
+    {
+      "name": "row_132",
+      "range": "A132,B132,C132,D132,E132,F132,G132,H132,I132,J132,K132,L132,M132,N132,O132,P132,Q132,R132,S132,T132,U132,V132,W132,X132,Y132,Z132,AA132,AB132,AC132,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C132,D132,E132,F132,G132,H132,I132,J132,K132,L132,M132,N132,O132,P132,Q132,R132,S132,T132,U132,V132,W132,X132,Y132,Z132,AA132,AB132,AC132",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B132",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A132"
+        }
+      ]
+    },
+    {
+      "name": "row_133",
+      "range": "A133,B133,C133,D133,E133,F133,G133,H133,I133,J133,K133,L133,M133,N133,O133,P133,Q133,R133,S133,T133,U133,V133,W133,X133,Y133,Z133,AA133,AB133,AC133,B134,C134,D134,E134,F134,G134,H134,I134,J134,K134,L134,M134,N134,O134,P134,Q134,R134,S134,T134,U134,V134,W134,X134,Y134,Z134,AA134,AB134,AC134,B135,C135,D135,E135,F135,G135,H135,I135,J135,K135,L135,M135,N135,O135,P135,Q135,R135,S135,T135,U135,V135,W135,X135,Y135,Z135,AA135,AB135,AC135,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C133,D133,E133,F133,G133,H133,I133,J133,K133,L133,M133,N133,O133,P133,Q133,R133,S133,T133,U133,V133,W133,X133,Y133,Z133,AA133,AB133,AC133,C134,D134,E134,F134,G134,H134,I134,J134,K134,L134,M134,N134,O134,P134,Q134,R134,S134,T134,U134,V134,W134,X134,Y134,Z134,AA134,AB134,AC134,C135,D135,E135,F135,G135,H135,I135,J135,K135,L135,M135,N135,O135,P135,Q135,R135,S135,T135,U135,V135,W135,X135,Y135,Z135,AA135,AB135,AC135",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B133,B134,B135",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A133"
+        }
+      ]
+    },
+    {
+      "name": "row_136",
+      "range": "A136,B136,C136,D136,E136,F136,G136,H136,I136,J136,K136,L136,M136,N136,O136,P136,Q136,R136,S136,T136,U136,V136,W136,X136,Y136,Z136,AA136,AB136,AC136,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C136,D136,E136,F136,G136,H136,I136,J136,K136,L136,M136,N136,O136,P136,Q136,R136,S136,T136,U136,V136,W136,X136,Y136,Z136,AA136,AB136,AC136",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B136",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A136"
+        }
+      ]
+    },
+    {
+      "name": "row_137",
+      "range": "A137,B137,C137,D137,E137,F137,G137,H137,I137,J137,K137,L137,M137,N137,O137,P137,Q137,R137,S137,T137,U137,V137,W137,X137,Y137,Z137,AA137,AB137,AC137,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C137,D137,E137,F137,G137,H137,I137,J137,K137,L137,M137,N137,O137,P137,Q137,R137,S137,T137,U137,V137,W137,X137,Y137,Z137,AA137,AB137,AC137",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "B137",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        },
+        {
+          "name": "principal_offence_division",
+          "cells": "A137"
+        }
+      ]
+    },
+    {
+      "name": "row_138",
+      "range": "A138,C138,D138,E138,F138,G138,H138,I138,J138,K138,L138,M138,N138,O138,P138,Q138,R138,S138,T138,U138,V138,W138,X138,Y138,Z138,AA138,AB138,AC138,C7,C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8,A121",
+      "values_range": "C138,D138,E138,F138,G138,H138,I138,J138,K138,L138,M138,N138,O138,P138,Q138,R138,S138,T138,U138,V138,W138,X138,Y138,Z138,AA138,AB138,AC138",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A138",
+          "direction": "W",
+          "caption": "Type of principal offence (BSOC2023 division and subdivision)"
+        },
+        {
+          "name": "period",
+          "cells": "C7",
+          "direction": "NNW"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "C8,D8,E8,F8,G8,H8,I8,J8,K8,L8,M8,N8,O8,P8,Q8,R8,S8,T8,U8,V8,W8,X8,Y8,Z8,AA8,AB8,AC8",
+          "direction": "N",
+          "caption": "Principal penalty"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A121"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:15:31Z",
+    "tool_version": "0.2.0",
+    "records": 2997,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-55a2ff5eba41",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1ff-7692-a153-afd63055e63b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "635cc0e936a8989d447deea82abf68f6ec0432b87f0f76492bcc47f36aa54db6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx`.\n\n- Publication: BOCSAR — Court and sentencing (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025-12\n- Sheets needing a recipe: 24 of 24\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Cover\" | 72e637347588b3c90d2aa309010934a67d3f4ebc258868ceae619bdf4bb75843 | missing |\n| \"Table Of Contents\" | 77bb2acf10c15605618b4223b230ab9a139a265006be63de6c4852180f93f466 | missing |\n| \"1-Summarybyyear\" | 7c7ec2db61e3b2448c953e8dbd7ad43969845d2e12688b0a928c49124e8f71a9 | missing |\n| \"2-detailedoffence-outcome\" | 5163a850b244cdede73199f53227392aa28e548f2e01c7c6826c148da6f495a4 | missing |\n| \"3-Outcome\" | f08b3b65aa36c4cd8b708b09a3a38a6b9f3556062a5199311fec51cac39b1118 | missing |\n| \"3a-Judge Alone or Jury Trial\" | f2a3aa20fb5ec85662a95e0a04bb0871dcde9c0126b6a9ae78191622cd50cb5b | missing |\n| \"4-Outcome by bail\" | 1deb6fb6af71f6900bd7fe0da3708b1898d360de14bd1e33e15d4e8146df9db3 | missing |\n| \"5-penalty\" | dee1855c5a59f253ebcfba31be789c86121ba4659bfed73948d7dcc7f3821957 | missing |\n| \"5a-detailedpenalty\" | 8323c99ffc1cd761d36cfff6e5dddf3be7f4601c4d11a2819b84616ec3d486ad | missing |\n| \"6-CourtDelay\" | 2ff78106c56e69ec3b8681f5ff8146543281ea266947eaf21b687b1867235e93 | missing |\n| \"8-Appeals\" | 6968187060f0ef4d4091af38b92d8a33dc3465cb4534552596ea33a45d7a63b6 | missing |\n| \"9-DV-detailedoffence\" | eb8519bfc3b56bd54f4a70f1c9ed39e161af3c139a870a677ebf893d3b68f273 | missing |\n| \"10-DV-penalty\" | 7b25ec2c66d2c153a3e80193ec4095648d0f755dc115ca0e3e5a1d4c5e10b63d | missing |\n| \"10a-DV-detailedpenalty\" | b2e45ecb971e0391104307e35f2844e10d6a9c64b49b56a220965398c2751b75 | missing |\n| \"11-Aboriginal summary by year\" | bd945115e4dfae2ccf3cc2c4206f71c32b4afafba63f428aaf629a1cec1791be | missing |\n| \"12-Aboriginal detailed offence\" | 620b55421f1b894d3e832b47687e529cc50c5f549231f4ab18c22e3218562828 | missing |\n| \"13-Aboriginal DV-detailedoff\" | c1da96dadf608fcacadab945c6eee728f02efef9d86dc81f9f8a1323a0952ee0 | missing |\n| \"14-Aboriginal penalty\" | ed47c48ece93abf2415f0f84b48279fd1a755bd36b0fe9581165977d09b8af20 | missing |\n| \"14a-Aboriginal detailedpenalty\" | e1e70e4f1442aa04f468013677d857e3ab017e5fe35e20a12f5761996ee324c7 | missing |\n| \"15-Aboriginal DVpenalty\" | 26751178f9f49ff6203ea65832da8705b588a80ff5413d9985df06ed3a38b148 | missing |\n| \"15a-Aboriginal DVdetailedpen\" | d96fc251ded73d9018cf059b70daa392fd85bbb7e3664ef0c4531cf8e93f4286 | missing |\n| \"16-Number-Percent-custody\" | 250284b74a3b89818c291e5edd8caba586791a2bfcb8308a10bff488ebca9866 | missing |\n| \"17-Custody-Length\" | 1aff5b22c10217bf54236e8b4ce628a8e6299fcf785b4a0c1b6b9d1d6ec1b665 | missing |\n| \"Explanatory Notes\" | 021e1c6499572b70504ce4750e7ac9563d29b59b03c6b38da130b6b5fca91f00 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-55a2ff5eba41.jsonl"
+  }
+}

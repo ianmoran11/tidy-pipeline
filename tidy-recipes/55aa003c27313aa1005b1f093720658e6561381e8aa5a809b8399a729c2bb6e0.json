@@ -1,0 +1,784 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "55aa003c27313aa1005b1f093720658e6561381e8aa5a809b8399a729c2bb6e0",
+  "sheet": "Table 2",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Only latest 12 months (September 2025–August 2026). Published geographic titles distinguish the NT total and seven reporting regions. DV/alcohol detail, overlapping subtotals and totals, and percentage rows are retained. Percentage values remain raw fractions; rate tables have the published per-100,000 unit caption. Provisional-month asterisks remain in period labels.",
+  "new_dimensions": [
+    {
+      "name": "domestic_violence_status",
+      "description": "Whether domestic violence was involved in recorded assault offences.",
+      "example_labels": [
+        "DV involved",
+        "DV not involved"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A4,A23,A42,A61,A80,A99,A118,A137"
+    },
+    {
+      "name": "source",
+      "cells": "A17,A36,A55,A74,A93,A112,A131,A150"
+    },
+    {
+      "name": "notes",
+      "cells": "A18:A20,A37:A39,A56:A58,A75:A77,A94:A96,A113:A115,A132:A134,A151:A153"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5:B5,A24:B24,A43:B43,A62:B62,A81:B81,A100:B100,A119:B119,A138:B138"
+    }
+  ],
+  "tables": [
+    {
+      "name": "area_0_monthly_dv_0",
+      "range": "A6:B7,O5:Z5,O6:Z7",
+      "values_range": "O6:Z7",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B6:B7",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O5:Z5"
+        }
+      ]
+    },
+    {
+      "name": "area_0_monthly_dv_3",
+      "range": "A9:B10,O5:Z5,O9:Z10",
+      "values_range": "O9:Z10",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A9"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B9:B10",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O5:Z5"
+        }
+      ]
+    },
+    {
+      "name": "area_0_monthly_summary",
+      "range": "A8,A11,A12,A13,A14,A15,A16,O5:Z5,O8:Z8,O11:Z11,O12:Z12,O13:Z13,O14:Z14,O15:Z15,O16:Z16",
+      "values_range": "O8:Z8,O11:Z11,O12:Z12,O13:Z13,O14:Z14,O15:Z15,O16:Z16",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A8,A11,A12,A13,A14,A15,A16"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O5:Z5"
+        }
+      ]
+    },
+    {
+      "name": "area_1_monthly_dv_0",
+      "range": "A25:B26,O24:Z24,O25:Z26",
+      "values_range": "O25:Z26",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A22"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A25"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B25:B26",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O24:Z24"
+        }
+      ]
+    },
+    {
+      "name": "area_1_monthly_dv_3",
+      "range": "A28:B29,O24:Z24,O28:Z29",
+      "values_range": "O28:Z29",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A22"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A28"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B28:B29",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O24:Z24"
+        }
+      ]
+    },
+    {
+      "name": "area_1_monthly_summary",
+      "range": "A27,A30,A31,A32,A33,A34,A35,O24:Z24,O27:Z27,O30:Z30,O31:Z31,O32:Z32,O33:Z33,O34:Z34,O35:Z35",
+      "values_range": "O27:Z27,O30:Z30,O31:Z31,O32:Z32,O33:Z33,O34:Z34,O35:Z35",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A22"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A27,A30,A31,A32,A33,A34,A35"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O24:Z24"
+        }
+      ]
+    },
+    {
+      "name": "area_2_monthly_dv_0",
+      "range": "A44:B45,O43:Z43,O44:Z45",
+      "values_range": "O44:Z45",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A41"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B44:B45",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O43:Z43"
+        }
+      ]
+    },
+    {
+      "name": "area_2_monthly_dv_3",
+      "range": "A47:B48,O43:Z43,O47:Z48",
+      "values_range": "O47:Z48",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A41"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A47"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B47:B48",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O43:Z43"
+        }
+      ]
+    },
+    {
+      "name": "area_2_monthly_summary",
+      "range": "A46,A49,A50,A51,A52,A53,A54,O43:Z43,O46:Z46,O49:Z49,O50:Z50,O51:Z51,O52:Z52,O53:Z53,O54:Z54",
+      "values_range": "O46:Z46,O49:Z49,O50:Z50,O51:Z51,O52:Z52,O53:Z53,O54:Z54",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A41"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A46,A49,A50,A51,A52,A53,A54"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O43:Z43"
+        }
+      ]
+    },
+    {
+      "name": "area_3_monthly_dv_0",
+      "range": "A63:B64,O62:Z62,O63:Z64",
+      "values_range": "O63:Z64",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A60"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A63"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B63:B64",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O62:Z62"
+        }
+      ]
+    },
+    {
+      "name": "area_3_monthly_dv_3",
+      "range": "A66:B67,O62:Z62,O66:Z67",
+      "values_range": "O66:Z67",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A60"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A66"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B66:B67",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O62:Z62"
+        }
+      ]
+    },
+    {
+      "name": "area_3_monthly_summary",
+      "range": "A65,A68,A69,A70,A71,A72,A73,O62:Z62,O65:Z65,O68:Z68,O69:Z69,O70:Z70,O71:Z71,O72:Z72,O73:Z73",
+      "values_range": "O65:Z65,O68:Z68,O69:Z69,O70:Z70,O71:Z71,O72:Z72,O73:Z73",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A60"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A65,A68,A69,A70,A71,A72,A73"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O62:Z62"
+        }
+      ]
+    },
+    {
+      "name": "area_4_monthly_dv_0",
+      "range": "A82:B83,O81:Z81,O82:Z83",
+      "values_range": "O82:Z83",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A79"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A82"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B82:B83",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O81:Z81"
+        }
+      ]
+    },
+    {
+      "name": "area_4_monthly_dv_3",
+      "range": "A85:B86,O81:Z81,O85:Z86",
+      "values_range": "O85:Z86",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A79"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A85"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B85:B86",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O81:Z81"
+        }
+      ]
+    },
+    {
+      "name": "area_4_monthly_summary",
+      "range": "A84,A87,A88,A89,A90,A91,A92,O81:Z81,O84:Z84,O87:Z87,O88:Z88,O89:Z89,O90:Z90,O91:Z91,O92:Z92",
+      "values_range": "O84:Z84,O87:Z87,O88:Z88,O89:Z89,O90:Z90,O91:Z91,O92:Z92",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A79"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A84,A87,A88,A89,A90,A91,A92"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O81:Z81"
+        }
+      ]
+    },
+    {
+      "name": "area_5_monthly_dv_0",
+      "range": "A101:B102,O100:Z100,O101:Z102",
+      "values_range": "O101:Z102",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A98"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A101"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B101:B102",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O100:Z100"
+        }
+      ]
+    },
+    {
+      "name": "area_5_monthly_dv_3",
+      "range": "A104:B105,O100:Z100,O104:Z105",
+      "values_range": "O104:Z105",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A98"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A104"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B104:B105",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O100:Z100"
+        }
+      ]
+    },
+    {
+      "name": "area_5_monthly_summary",
+      "range": "A103,A106,A107,A108,A109,A110,A111,O100:Z100,O103:Z103,O106:Z106,O107:Z107,O108:Z108,O109:Z109,O110:Z110,O111:Z111",
+      "values_range": "O103:Z103,O106:Z106,O107:Z107,O108:Z108,O109:Z109,O110:Z110,O111:Z111",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A98"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A103,A106,A107,A108,A109,A110,A111"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O100:Z100"
+        }
+      ]
+    },
+    {
+      "name": "area_6_monthly_dv_0",
+      "range": "A120:B121,O119:Z119,O120:Z121",
+      "values_range": "O120:Z121",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A117"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A120"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B120:B121",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O119:Z119"
+        }
+      ]
+    },
+    {
+      "name": "area_6_monthly_dv_3",
+      "range": "A123:B124,O119:Z119,O123:Z124",
+      "values_range": "O123:Z124",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A117"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A123"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B123:B124",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O119:Z119"
+        }
+      ]
+    },
+    {
+      "name": "area_6_monthly_summary",
+      "range": "A122,A125,A126,A127,A128,A129,A130,O119:Z119,O122:Z122,O125:Z125,O126:Z126,O127:Z127,O128:Z128,O129:Z129,O130:Z130",
+      "values_range": "O122:Z122,O125:Z125,O126:Z126,O127:Z127,O128:Z128,O129:Z129,O130:Z130",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A117"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A122,A125,A126,A127,A128,A129,A130"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O119:Z119"
+        }
+      ]
+    },
+    {
+      "name": "area_7_monthly_dv_0",
+      "range": "A139:B140,O138:Z138,O139:Z140",
+      "values_range": "O139:Z140",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A136"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A139"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B139:B140",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O138:Z138"
+        }
+      ]
+    },
+    {
+      "name": "area_7_monthly_dv_3",
+      "range": "A142:B143,O138:Z138,O142:Z143",
+      "values_range": "O142:Z143",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A136"
+        },
+        {
+          "name": "domestic_violence_status",
+          "cells": "A142"
+        }
+      ],
+      "headers": [
+        {
+          "name": "substance_contribution",
+          "direction": "W",
+          "cells": "B142:B143",
+          "caption": "Alcohol involvement"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O138:Z138"
+        }
+      ]
+    },
+    {
+      "name": "area_7_monthly_summary",
+      "range": "A141,A144,A145,A146,A147,A148,A149,O138:Z138,O141:Z141,O144:Z144,O145:Z145,O146:Z146,O147:Z147,O148:Z148,O149:Z149",
+      "values_range": "O141:Z141,O144:Z144,O145:Z145,O146:Z146,O147:Z147,O148:Z148,O149:Z149",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A136"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A141,A144,A145,A146,A147,A148,A149"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "O138:Z138"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T19:15:27Z",
+    "tool_version": "0.2.0",
+    "records": 1056,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T191232Z-5755e0f61443",
+    "started_at": "2026-11-03T19:12:34Z",
+    "workbook": "5755e0f61443bf128a78fb7c7b9a25511555340cd4cf59833576139878b260bf--NT_crime_statistics_Aug_2026_Website.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2d3-d90d-767d-8c01-54e7f36813e8",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "541d25889c6a7cf1e0337f40a2f259adb5677b5bee8794e93eb4d94346048234",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5755e0f61443bf128a78fb7c7b9a25511555340cd4cf59833576139878b260bf--NT_crime_statistics_Aug_2026_Website.xlsx`.\n\n- Publication: Northern Territory Crime Statistics (Northern Territory Police / Attorney-General's Department)\n- Release or year: 2026-08\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 1fa53047e358029383c417f951654297b65dd271c80d8de8b0b8b7b52e4cbfa9 | missing |\n| \"Table 1\" | 31bd70b7dbed94862c000465fa338a724ad7700298b6489f1270408227ef8eaf | missing |\n| \"Table 2\" | 55aa003c27313aa1005b1f093720658e6561381e8aa5a809b8399a729c2bb6e0 | missing |\n| \"Table 3\" | fd3be0842a5f8bd834e1ada1a55f49d2bdd9eb53999ec0e75e5eaf287676030e | missing |\n| \"Table 4\" | 61fbc02ea3d2fefff7e5fcbd3c262edcf2eb25541f77e520129c35f622195bf6 | missing |\n| \"Glossary\" | 954178ced7105159600af2c09ab4bcc4c68d4c9310d48c372def02326e2879ba | missing |\n| \"Key changes\" | ed151e34552cc96d3ef9119452b84c82830524edc725f9b8ad994789dd412d55 | missing |\n| \"Appendix\" | 1f54a2ebf3fd03264f659c8b9e1ce78f74a2abca96d28be52a55f981239bf5ac | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T191232Z-5755e0f61443.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "C5:N16",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C24:N35",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C43:N54",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C62:N73",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C81:N92",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C100:N111",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C119:N130",
+      "reason": "earlier periods; most recent year only"
+    },
+    {
+      "cells": "C138:N149",
+      "reason": "earlier periods; most recent year only"
+    }
+  ]
+}

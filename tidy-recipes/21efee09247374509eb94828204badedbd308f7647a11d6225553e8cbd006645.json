@@ -1,0 +1,47 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "21efee09247374509eb94828204badedbd308f7647a11d6225553e8cbd006645",
+  "sheet": "Suburb5yrs",
+  "kind": "unsupported",
+  "status": "validated",
+  "reason": "Left out as a duplicate: its most recent year (Jul 2025 - Jun 2026, columns FH:GU) repeats sheet 'Suburb' of this workbook cell for cell, plus rows of zeros, and its earlier years fall outside the most-recent-year rule (references/layouts.md).",
+  "agent_notes": "Set by the orchestrator after checking FH:GU against the companion sheet (identical values).",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1,A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7:C7"
+    },
+    {
+      "name": "source",
+      "cells": "A27873"
+    },
+    {
+      "name": "notes",
+      "cells": "A27874:A27877,A27879,A27881"
+    },
+    {
+      "name": "annotations",
+      "cells": "D4:H4"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T22:00:54Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "excluded": [
+    {
+      "cells": "D8:GU27871",
+      "reason": "Jul 2021 - Jun 2025 are earlier years; Jul 2025 - Jun 2026 is the same data as sheet 'Suburb'."
+    }
+  ]
+}

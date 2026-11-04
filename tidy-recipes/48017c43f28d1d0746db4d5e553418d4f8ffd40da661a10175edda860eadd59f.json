@@ -1,0 +1,155 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "48017c43f28d1d0746db4d5e553418d4f8ffd40da661a10175edda860eadd59f",
+  "sheet": "Table 02",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Kept only the latest annual period, year ending June 2026; earlier years explicitly excluded. Harm flags retain published labels. Blank value cells are omitted, not imputed. Both Victim Reports and Yr % FV of Total retained as distinct measures; offence labels use the CSA classification. ",
+  "new_dimensions": [
+    {
+      "name": "harm_caused_flag",
+      "description": "CSA harm caused classification flag for a victim report.",
+      "example_labels": [
+        "High Harm",
+        "Low Harm",
+        "Medium Harm"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:E1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "victim_reports",
+      "range": "A1:G1666",
+      "values_range": "F2:F1666,G2,G4:G5,G7:G8,G16:G23,G25:G28,G32:G42,G44,G46:G47,G49:G57,G59:G71,G73:G75,G78,G80,G83:G98,G100,G104:G113,G115:G120,G122,G124,G127:G129,G131:G134,G136:G137,G139,G141,G143:G145,G148:G157,G160:G161,G165:G174,G177:G178,G180,G182,G185:G188,G190:G197,G199:G211,G213:G216,G218:G226,G231:G240,G242,G246,G248:G249,G251:G259,G261,G263:G268,G270:G272,G275:G303,G305:G307,G309:G311,G313:G314,G317,G324:G333,G338:G345,G347,G349:G350,G355,G357:G364,G369:G370,G372:G374,G377:G379,G382:G390,G393:G398,G401:G403,G406:G417,G420:G425,G427:G430,G432:G441,G443,G445,G448,G450:G456,G459:G461,G463:G465,G468,G470,G473:G486,G491:G496,G498:G499,G501:G502,G508:G516,G519:G529,G531:G533,G535:G539,G541:G544,G547:G553,G556:G559,G561:G563,G565:G572,G574:G575,G577:G583,G586:G600,G602:G603,G605:G607,G610:G612,G615:G616,G618:G621,G623:G624,G628,G630:G634,G639:G646,G648:G653,G656:G658,G661:G669,G671:G672,G674:G678,G680:G684,G686:G700,G702:G709,G712:G719,G721,G723,G726,G728:G735,G738:G739,G741:G743,G745:G747,G750:G751,G753:G760,G764:G767,G769:G774,G777:G801,G803:G805,G807:G809,G811,G815,G818:G826,G828,G832,G835:G836,G838:G845,G848:G849,G852:G853,G856:G858,G861:G865,G867:G868,G870,G873:G880,G883:G884,G886:G888,G890:G892,G895:G904,G906:G913,G916:G918,G921:G927,G929:G932,G934,G936:G937,G939:G941,G944:G946,G949:G951,G953:G963,G965:G971,G973:G976,G978:G990,G992,G994:G995,G997:G999,G1002:G1004,G1007:G1018,G1020:G1021,G1023:G1025,G1027:G1030,G1033:G1046,G1048,G1050:G1052,G1055:G1064,G1066:G1067,G1069:G1073,G1077:G1086,G1089:G1090,G1092:G1094,G1098:G1100,G1102,G1104:G1108,G1110:G1111,G1113:G1116,G1118,G1120:G1123,G1125:G1134,G1136,G1138,G1141,G1143,G1146:G1156,G1158:G1159,G1161,G1163,G1165:G1167,G1171:G1177,G1179,G1182,G1188,G1190:G1197,G1202,G1204:G1213,G1215,G1217,G1219,G1221:G1224,G1226:G1228,G1230,G1232:G1233,G1237,G1239:G1250,G1253,G1255,G1258:G1264,G1266:G1268,G1270:G1272,G1275:G1276,G1279:G1281,G1284:G1285,G1287:G1292,G1297,G1299,G1301:G1306,G1308,G1310,G1312:G1314,G1316,G1319,G1321:G1331,G1334,G1336:G1343,G1348:G1351,G1353,G1356:G1359,G1361:G1369,G1375:G1378,G1380:G1381,G1383,G1386,G1388,G1390:G1402,G1404:G1406,G1408:G1412,G1414,G1420:G1428,G1430,G1434,G1437,G1439:G1445,G1447:G1450,G1452:G1453,G1458:G1466,G1468:G1473,G1476:G1478,G1481:G1486,G1490:G1497,G1499:G1500,G1502:G1504,G1506:G1508,G1511:G1513,G1516:G1518,G1520:G1526,G1528:G1529,G1533:G1534,G1536:G1543,G1546:G1561,G1563:G1565,G1568,G1571:G1578,G1580,G1585:G1591,G1593:G1596,G1598:G1608,G1610:G1611,G1613:G1615,G1618:G1619,G1622:G1624,G1626:G1634,G1639:G1644,G1647:G1650,G1652:G1659,G1661,G1664",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A1666"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B1666"
+        },
+        {
+          "name": "local_government_area",
+          "caption": "Local Government Area",
+          "direction": "W",
+          "cells": "C2:C1666"
+        },
+        {
+          "name": "victim_offence",
+          "caption": "Offence Group",
+          "direction": "W",
+          "cells": "D2:D1666"
+        },
+        {
+          "name": "harm_caused_flag",
+          "caption": "Harm Caused Flag",
+          "direction": "W",
+          "cells": "E2:E1666"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F1:G1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:05:55Z",
+    "tool_version": "0.2.0",
+    "records": 2888,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T210339Z-a0ee03e96472",
+    "started_at": "2026-11-03T21:03:41Z",
+    "workbook": "a0ee03e96472132f49b7d7d28ca12e8fdae1b5a6cce83e1043e18e15d20828eb--Data_Tables_LGA_Harm_Caused_Visualisation_Year_Ending_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a339-9537-7327-9b2e-ec9fadcaa95e",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9af22eb9008d84dbb284577ffd010226f36af69bb53d880810b1e84f26e00c90",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a0ee03e96472132f49b7d7d28ca12e8fdae1b5a6cce83e1043e18e15d20828eb--Data_Tables_LGA_Harm_Caused_Visualisation_Year_Ending_June_2026.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Harm Caused (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 276bb657ccd6064d4c69d5cb9b1040967c43acf94ae8efe39fed566eaccd5ff0 | missing |\n| \"Footnotes\" | 692e5fb27d77b741aba1b893acb567e9ec1c1d824fc288e9b1558a5eeb3fe1f5 | missing |\n| \"Table 01\" | 02ff87d83f493e03497f529a6cc5fc0ecc94e6d2909924506787d70afa09220e | missing |\n| \"Table 02\" | 48017c43f28d1d0746db4d5e553418d4f8ffd40da661a10175edda860eadd59f | missing |\n| \"Table 03\" | 6e9769c63883e031f0a56e8e4c5ff9e4ad48e1ce66267f88e817bb64b91e4978 | missing |\n| \"Table 04\" | b045eb5031fcbe7692c002c2f5c2bd6d73a38cf0ae8efb4138930f4d729cbc5a | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T210339Z-a0ee03e96472.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A1667:G16109",
+      "reason": "Earlier years; most recent annual period only (year ending June 2026)."
+    }
+  ]
+}

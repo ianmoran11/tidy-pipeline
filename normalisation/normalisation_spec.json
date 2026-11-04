@@ -144,7 +144,24 @@
     "suicide_self_harm_risk": "suicide_self_harm_risk_status",
     "head_injury_in_prison_status": "prison_head_injury_status",
     "self_harm_in_prison_status": "prison_self_harm_status",
-    "population_reference_date": "scope"
+    "population_reference_date": "scope",
+    "incident_day_of_week": "day_of_week",
+    "incident_time_band": "time_of_day",
+    "incident_time_of_day": "time_of_day",
+    "incident_start_time": "time_of_day",
+    "family_incident_flag": "family_incident_status",
+    "ivo_application_status": "intervention_order_application_status",
+    "unsentenced_movement": "unsentenced_movement_type",
+    "bail_breach_offence_status": "breach_bail_offence_status",
+    "justice_data_source": "reporting_agency",
+    "bail_decision_agency": "reporting_agency",
+    "domestic_violence_related_status": "domestic_violence_status",
+    "alcohol_related_status": "substance_contribution",
+    "recorded_offence_category": "incident_offence_category",
+    "recorded_offence_subcategory": "incident_offence_subcategory",
+    "criminal_incident_offence": "recorded_incident_offence",
+    "incident_offence": "recorded_incident_offence",
+    "criminal_incident_charge_status": "incident_charge_status"
   },
   "clean": [
     {
@@ -710,7 +727,13 @@
       "Traffic & vehicle regulatory offences": "Traffic and vehicle regulatory offences",
       "Unlawful entry with intent/ burglary, break and enter": "Unlawful entry with intent/burglary, break and enter",
       "Unlawful entry with intent / burglary, break and enter": "Unlawful entry with intent/burglary, break and enter",
-      "Unlawful entry with intent / Burglary, Break and enter": "Unlawful entry with intent/burglary, break and enter"
+      "Unlawful entry with intent / Burglary, Break and enter": "Unlawful entry with intent/burglary, break and enter",
+      "Acts that threaten, harass, or control": "Acts that threaten, harass or control",
+      "Breach Apprehended Violence Order": "Breach apprehended violence order",
+      "Breach of restraining order - violence": "Breach of restraining order – violence",
+      "Coercive control": "Coercive Control",
+      "Manslaughter^": "Manslaughter",
+      "Murder^": "Murder"
     },
     "occupation": {
       "1111 Chief executives and managing directors ": "1111 Chief executives and managing directors",
@@ -2898,7 +2921,41 @@
       "Aged 20–24 years": "20–24 years",
       "Under 18": "Under 18 years",
       "Under 18 Years": "Under 18 years",
-      "Under 20": "Under 20 years"
+      "Under 20": "Under 20 years",
+      "00 - 17 years": "00-17 years",
+      "10 - 11 years": "10–11 years",
+      "10-17": "10 - 17",
+      "10 - 17 years": "10–17 years",
+      "12-14 years": "12–14 years",
+      "12 - 17 years": "12-17 years",
+      "15-17 years": "15–17 years",
+      "15-19 years": "15–19 years",
+      "18-19 years": "18–19 years",
+      "18 - 24": "18-24",
+      "18 - 24 years": "18–24 years",
+      "18-24 years": "18–24 years",
+      "18-24* years": "18–24 years",
+      "25 - 29 years": "25–29 years",
+      "25 - 34 years": "25–34 years",
+      "25-34 years": "25–34 years",
+      "25 - 44": "25-44",
+      "30 - 34 years": "30–34 years",
+      "35 - 39 years": "35–39 years",
+      "35-39 years": "35–39 years",
+      "35 - 44 years": "35–44 years",
+      "40 - 44 years": "40–44 years",
+      "40-44 years": "40–44 years",
+      "45-49 years": "45–49 years",
+      "45 - 54 years": "45–54 years",
+      "45-54 years": "45–54 years",
+      "45 - 64 years": "45–64 years",
+      "50-54 years": "50–54 years",
+      "55-59 years": "55–59 years",
+      "55-64 years": "55–64 years",
+      "60-64 years": "60–64 years",
+      "Missing / Unknown": "Missing / unknown",
+      "Missing/Unknown": "Missing / unknown",
+      "Missing/unknown": "Missing / unknown"
     },
     "indigenous_status": {
       "\r\nAboriginal \r\n& Torres Strait Islander": "Aboriginal and Torres Strait Islander",
@@ -3011,7 +3068,9 @@
       "RSE OF PERSONS": "RSE of persons",
       "Unknowns": "Unknown",
       "All Children": "All children",
-      "DEFENDANTS": "Defendants"
+      "DEFENDANTS": "Defendants",
+      "(All)": "All",
+      "Total*": "Total"
     },
     "sentence_length": {
       "                      Life(f)": "Life",
@@ -3310,7 +3369,9 @@
       "NON-COURT ACTION": "Non-court action",
       "TOTAL": "Total",
       "Total Proceedings": "Total proceedings",
-      "TOTAL PROCEEDINGS": "Total proceedings"
+      "TOTAL PROCEEDINGS": "Total proceedings",
+      "Court diversion^": "Court diversion",
+      "Other^^^": "Other"
     },
     "child_protection_component": {
       "Children in notifications(a)": "Children in notifications",
@@ -4075,7 +4136,21 @@
       "Unlawful entry with intent involving the taking of property": "Unlawful entry with intent - involving the taking of property",
       "Unlawful entry with intent - Involving the taking of property": "Unlawful entry with intent - involving the taking of property",
       "Unlawful entry with intent- other": "Unlawful entry with intent - other",
-      "Unlawful entry with intent - Other": "Unlawful entry with intent - other"
+      "Unlawful entry with intent - Other": "Unlawful entry with intent - other",
+      "Armed Robbery": "Armed robbery",
+      "Attempted murder~": "Attempted murder",
+      "Break and enter non- dwelling": "Break and enter non-dwelling",
+      "Driving Causing Death": "Driving causing death",
+      "Manslaughter *": "Manslaughter",
+      "Manslaughter^": "Manslaughter",
+      "Murder *": "Murder",
+      "Murder**": "Murder",
+      "Murder^": "Murder",
+      "Other drug offences": "Other Drug Offences",
+      "Other offences against the person": "Other Offences Against the Person",
+      "Other sexual offences": "Other Sexual Offences",
+      "Sexual Offences": "Sexual offences",
+      "Unarmed Robbery": "Unarmed robbery"
     },
     "justice_institution": {
       "POLICE": "Police",
@@ -4087,7 +4162,8 @@
       "UNLAWFUL ENTRY WITH INTENT": "Unlawful entry with intent",
       "UEWI": "Uewi",
       "HOMICIDE AND RELATED OFFENCES": "Homicide and related offences",
-      "Unlawful Entry With Intent": "Unlawful entry with intent"
+      "Unlawful Entry With Intent": "Unlawful entry with intent",
+      "Drug offences": "Drug Offences"
     },
     "police_investigation_outcome_group": {
       "FINALISED": "Finalised"
@@ -4157,7 +4233,30 @@
       "Total Other": "Total other",
       "work/place of study": "Work/place of study",
       "Work/Place of study": "Work/place of study",
-      "Work / place of study": "Work/place of study"
+      "Work / place of study": "Work/place of study",
+      "ADULT ENTERTAINMENT": "Adult entertainment",
+      "Adult Entertainment": "Adult entertainment",
+      "BUSINESS/COMMERCIAL": "Business / Commercial",
+      "CARPARK": "Carpark",
+      "EDUCATION": "Education",
+      "Firearm Premises": "Firearm premises",
+      "HEALTH": "Health",
+      "INDUSTRIAL": "Industrial",
+      "LAW ENFORCEMENT": "Law enforcement",
+      "Law Enforcement": "Law enforcement",
+      "LICENSED PREMISE": "Licensed Premise",
+      "MARINE TRANSPORT": "Marine transport",
+      "OUTDOOR/PUBLIC PLACE": "Outdoor/public place",
+      "Outdoor / Public Place": "Outdoor/public place",
+      "PUBLIC TRANSPORT": "Public transport",
+      "Public Transport": "Public transport",
+      "RECREATION": "Recreation",
+      "RESIDENTIAL": "Residential",
+      "RURAL INDUSTRY": "Rural industry",
+      "Total~": "Total",
+      "UNKNOWN": "Unknown",
+      "UTILITIES": "Utilities",
+      "VEHICLE": "Vehicle"
     },
     "indicator": {
       "Federal Offences": "Federal offences"
@@ -4189,7 +4288,14 @@
     },
     "offender_relationship": {
       "Intimate Partner": "Intimate partner",
-      "Known Person": "Known person"
+      "Known Person": "Known person",
+      "Cannot be determined": "Cannot Be Determined",
+      "Current Partner": "Current partner",
+      "Former partner": "Former Partner",
+      "Non Family Member": "Non-family member",
+      "Non family member": "Non-family member",
+      "Not related/ associated": "Not Related/Associated",
+      "Total - Intimate partner": "Total intimate partner"
     },
     "offender_relationship_group": {
       "Known to Victim": "Known to victim"
@@ -4215,13 +4321,15 @@
       "Mobile phone/PDA/BlackBerry": "Mobile phone/PDA/Blackberry",
       "Mobile phone/PDA/Blackberry/Personal Electronic equipment": "Mobile phone/PDA/Blackberry/Personal electronic equipment",
       "Purse/Wallet/Handbag": "Purse/wallet/handbag",
-      "Purse/Wallet/Handbag (including contents)": "Purse/wallet/handbag (including contents)"
+      "Purse/Wallet/Handbag (including contents)": "Purse/wallet/handbag (including contents)",
+      "Tv/Vcr": "TV/VCR"
     },
     "weapon_type": {
       "Bat/Bar/Club": "Bat/bar/club",
       "Bottle/Glass": "Bottle/glass",
       "Other Weapon": "Other weapon",
-      "Weapon n.f.d.": "Weapon n.f.d"
+      "Weapon n.f.d.": "Weapon n.f.d",
+      "Knife*": "Knife"
     },
     "weapon_use": {
       "Weapon Used": "Weapon used"
@@ -4229,6 +4337,72 @@
     "scope": {
       "Population at 30 June": "At 30 June",
       "Population at 31 December": "At 31 December"
+    },
+    "bail_status": {
+      "Warrant executed - Police custody": "Warrant executed – Police custody"
+    },
+    "custody_location": {
+      "In Custody": "In custody"
+    },
+    "deception_mode": {
+      "Business documents": "Business Documents",
+      "Mobile phone used": "Mobile Phone Used"
+    },
+    "local_government_area": {
+      "Interstate/Overseas": "Interstate/overseas",
+      "Ku-Ring-Gai": "Ku-ring-gai",
+      "NSW Total*": "NSW Total",
+      "Total NSW*": "Total NSW"
+    },
+    "recorded_incident_offence": {
+      "Coercive Control**": "Coercive Control"
+    },
+    "region": {
+      "Far West And Orana": "Far West and Orana",
+      "Greater Sydney*": "Greater Sydney",
+      "Hunter Valley Exc Newcastle": "Hunter Valley exc Newcastle",
+      "New England And North West": "New England and North West",
+      "Newcastle And Lake Macquarie": "Newcastle and Lake Macquarie",
+      "NSW*": "NSW",
+      "Regional NSW*": "Regional NSW",
+      "Southern Highlands And Shoalhaven": "Southern Highlands and Shoalhaven",
+      "Sydney - Baulkham Hills And Hawkesbury": "Sydney - Baulkham Hills and Hawkesbury",
+      "Sydney - City And Inner South": "Sydney - City and Inner South",
+      "Sydney - North Sydney And Hornsby": "Sydney - North Sydney and Hornsby",
+      "Sydney - Outer West And Blue Mountains": "Sydney - Outer West and Blue Mountains",
+      "Total NSW**": "Total NSW"
+    },
+    "sexual_assault_reporting_pathway": {
+      "Sexual assault reporting option (SARO)": "Sexual Assault Reporting Option (SARO)"
+    },
+    "sexual_assault_victim_reporting_category": {
+      "Child Victim Reported When Adult": "Child victim reported when adult",
+      "Child Victim Reported When Child": "Child victim reported when child",
+      "Total^": "Total",
+      "Total~": "Total"
+    },
+    "substance_contribution": {
+      "Alcohol Related*": "Alcohol Related",
+      "Alcohol Related^": "Alcohol Related"
+    },
+    "suburb": {
+      "FLYNN": "Flynn",
+      "FORREST": "Forrest",
+      "GORDON": "Gordon",
+      "KINGSTON": "Kingston",
+      "LYONS": "Lyons",
+      "MACARTHUR": "Macarthur",
+      "OXLEY": "Oxley",
+      "RED HILL": "Red Hill"
+    },
+    "time_to_report": {
+      "Total~": "Total"
+    },
+    "trend_window": {
+      "10 year trend": "10-year trend",
+      "2 year trend": "2-year trend",
+      "20 year trend": "20-year trend",
+      "5 year trend": "5-year trend"
     }
   }
 }

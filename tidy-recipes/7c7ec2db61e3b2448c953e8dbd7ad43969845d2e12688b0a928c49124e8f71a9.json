@@ -1,0 +1,1955 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "7c7ec2db61e3b2448c953e8dbd7ad43969845d2e12688b0a928c49124e8f71a9",
+  "sheet": "1-Summarybyyear",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "2025 only. Printed offence divisions, subdivisions, groups and their totals retained at their published hierarchy level. Text suppression/unavailable markers retained. Row-sized tables avoid carrying child labels into parent totals.",
+  "new_dimensions": [
+    {
+      "name": "bail_status",
+      "description": "Defendant bail status at finalisation."
+    },
+    {
+      "name": "committal_type",
+      "description": "Whether committed for trial or sentence."
+    },
+    {
+      "name": "court_summary_topic",
+      "description": "Published topic defining a court summary statistics block."
+    },
+    {
+      "name": "sentence_summary_item",
+      "description": "Penalty count, proportion or mean sentence duration as published."
+    },
+    {
+      "name": "court_delay_stage",
+      "description": "Stage of court proceedings for which delay is reported."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A392,A393,A394,A396,A399,A401,A402,A403"
+    },
+    {
+      "name": "source",
+      "cells": "A398"
+    }
+  ],
+  "tables": [
+    {
+      "name": "row_9",
+      "range": "A9,F9,F6,A7,F78,F154,F243,F320",
+      "values_range": "F9",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A9",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "notes",
+          "cells": "F6,F78,F154,F243,F320"
+        }
+      ]
+    },
+    {
+      "name": "row_12",
+      "range": "A12,F12,A13,F13,A14,F14,A15,F15,F6,A7,A11",
+      "values_range": "F12,F13,F14,F15",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A12,A13,A14,A15",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A11"
+        }
+      ]
+    },
+    {
+      "name": "row_18",
+      "range": "A18,F18,A19,F19,A20,F20,A21,F21,F6,A7,A17",
+      "values_range": "F18,F19,F20,F21",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A18,A19,A20,A21",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A17"
+        }
+      ]
+    },
+    {
+      "name": "row_24",
+      "range": "A24,F24,A25,F25,A26,F26,A27,F27,A28,F28,F6,A7,A23",
+      "values_range": "F24,F25,F26,F27,F28",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A24,A25,A26,A27,A28",
+          "direction": "W",
+          "caption": "Age group"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A23"
+        }
+      ]
+    },
+    {
+      "name": "row_31",
+      "range": "A31,F31,A32,F32,F6,A7,A30",
+      "values_range": "F31,F32",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "A31,A32",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A30"
+        }
+      ]
+    },
+    {
+      "name": "row_35",
+      "range": "A35,F35,A36,F36,A37,F37,A38,F38,A39,F39,A40,F40,A41,F41,F6,A7,A34",
+      "values_range": "F35,F36,F37,F38,F39,F40,F41",
+      "headers": [
+        {
+          "name": "bail_status",
+          "cells": "A35,A36,A37,A38,A39,A40,A41",
+          "direction": "W",
+          "caption": "Bail status at finalisation (companies excluded)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A34"
+        }
+      ]
+    },
+    {
+      "name": "row_44",
+      "range": "A44,F44,A45,F45,A46,F46,A47,F47,A48,F48,A49,F49,A50,F50,A51,F51,A52,F52,A53,F53,A54,F54,A55,F55,A56,F56,A57,F57,A58,F58,A59,F59,A60,F60,A61,F61,A62,F62,F6,A7,A43",
+      "values_range": "F44,F45,F46,F47,F48,F49,F50,F51,F52,F53,F54,F55,F56,F57,F58,F59,F60,F61,F62",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62",
+          "direction": "W",
+          "caption": "Defendants found guilty by principal offence (BSOC2023 division)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A43"
+        }
+      ]
+    },
+    {
+      "name": "row_65",
+      "range": "A65,F65,A68,F68,A71,F71,A73,F73,A74,F74,A75,F75,A76,F76,F6,A7,A64",
+      "values_range": "F65,F68,F71,F73,F74,F75,F76",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A65,A68,A71,A73,A74,A75,A76",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A64"
+        }
+      ]
+    },
+    {
+      "name": "row_66",
+      "range": "A66,F66,A67,F67,F6,A7,A64,A65",
+      "values_range": "F66,F67",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A66,A67",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A64"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A65"
+        }
+      ]
+    },
+    {
+      "name": "row_69",
+      "range": "A69,F69,A70,F70,F6,A7,A64,A68",
+      "values_range": "F69,F70",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A69,A70",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A64"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A68"
+        }
+      ]
+    },
+    {
+      "name": "row_72",
+      "range": "A72,F72,F6,A7,A64,A71",
+      "values_range": "F72",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A72",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A64"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A71"
+        }
+      ]
+    },
+    {
+      "name": "row_80",
+      "range": "A80,F80,F6,A78",
+      "values_range": "F80",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A80",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        }
+      ]
+    },
+    {
+      "name": "row_83",
+      "range": "A83,F83,A84,F84,F6,A78,A82",
+      "values_range": "F83,F84",
+      "headers": [
+        {
+          "name": "committal_type",
+          "cells": "A83,A84",
+          "direction": "W",
+          "caption": "Type of committal"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A82"
+        }
+      ]
+    },
+    {
+      "name": "row_87",
+      "range": "A87,F87,A88,F88,F6,A78,A86",
+      "values_range": "F87,F88",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A87,A88",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A86"
+        }
+      ]
+    },
+    {
+      "name": "row_91",
+      "range": "A91,F91,A92,F92,A93,F93,F6,A78,A90",
+      "values_range": "F91,F92,F93",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A91,A92,A93",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A90"
+        }
+      ]
+    },
+    {
+      "name": "row_96",
+      "range": "A96,F96,A97,F97,A98,F98,A99,F99,F6,A78,A95",
+      "values_range": "F96,F97,F98,F99",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A96,A97,A98,A99",
+          "direction": "W",
+          "caption": "Age group"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A95"
+        }
+      ]
+    },
+    {
+      "name": "row_102",
+      "range": "A102,F102,A103,F103,F6,A78,A101",
+      "values_range": "F102,F103",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "A102,A103",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A101"
+        }
+      ]
+    },
+    {
+      "name": "row_106",
+      "range": "A106,F106,A107,F107,A108,F108,A109,F109,A110,F110,A111,F111,F6,A78,A105",
+      "values_range": "F106,F107,F108,F109,F110,F111",
+      "headers": [
+        {
+          "name": "bail_status",
+          "cells": "A106,A107,A108,A109,A110,A111",
+          "direction": "W",
+          "caption": "Bail status at finalisation (companies excluded)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A105"
+        }
+      ]
+    },
+    {
+      "name": "row_114",
+      "range": "A114,F114,A115,F115,A116,F116,A117,F117,F6,A78,A113",
+      "values_range": "F114,F115,F116,F117",
+      "headers": [
+        {
+          "name": "court_delay_stage",
+          "cells": "A114,A115,A116,A117",
+          "direction": "W",
+          "caption": "Court delay (median days) (a)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A113"
+        }
+      ]
+    },
+    {
+      "name": "row_120",
+      "range": "A120,F120,A121,F121,A122,F122,A123,F123,A124,F124,A125,F125,A126,F126,A127,F127,A128,F128,A129,F129,A130,F130,A131,F131,A132,F132,A133,F133,A134,F134,A135,F135,A136,F136,A137,F137,A138,F138,F6,A78,A119",
+      "values_range": "F120,F121,F122,F123,F124,F125,F126,F127,F128,F129,F130,F131,F132,F133,F134,F135,F136,F137,F138",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A120,A121,A122,A123,A124,A125,A126,A127,A128,A129,A130,A131,A132,A133,A134,A135,A136,A137,A138",
+          "direction": "W",
+          "caption": "Defendants found guilty by principal offence (BSOC2023 division)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A119"
+        }
+      ]
+    },
+    {
+      "name": "row_141",
+      "range": "A141,F141,A144,F144,A147,F147,A149,F149,A150,F150,A151,F151,A152,F152,F6,A78,A140",
+      "values_range": "F141,F144,F147,F149,F150,F151,F152",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A141,A144,A147,A149,A150,A151,A152",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A140"
+        }
+      ]
+    },
+    {
+      "name": "row_142",
+      "range": "A142,F142,A143,F143,F6,A78,A140,A141",
+      "values_range": "F142,F143",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A142,A143",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A140"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A141"
+        }
+      ]
+    },
+    {
+      "name": "row_145",
+      "range": "A145,F145,A146,F146,F6,A78,A140,A144",
+      "values_range": "F145,F146",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A145,A146",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A140"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A144"
+        }
+      ]
+    },
+    {
+      "name": "row_148",
+      "range": "A148,F148,F6,A78,A140,A147",
+      "values_range": "F148",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A148",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A78"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A140"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A147"
+        }
+      ]
+    },
+    {
+      "name": "row_156",
+      "range": "A156,F156,F6,A154",
+      "values_range": "F156",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A156",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        }
+      ]
+    },
+    {
+      "name": "row_159",
+      "range": "A159,F159,A160,F160,F6,A154,A158",
+      "values_range": "F159,F160",
+      "headers": [
+        {
+          "name": "committal_type",
+          "cells": "A159,A160",
+          "direction": "W",
+          "caption": "Type of committal"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A158"
+        }
+      ]
+    },
+    {
+      "name": "row_163",
+      "range": "A163,F163,A164,F164,F6,A154,A162",
+      "values_range": "F163,F164",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "A163,A164",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A162"
+        }
+      ]
+    },
+    {
+      "name": "row_167",
+      "range": "A167,F167,A168,F168,A169,F169,F6,A154,A166",
+      "values_range": "F167,F168,F169",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A167,A168,A169",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A166"
+        }
+      ]
+    },
+    {
+      "name": "row_172",
+      "range": "A172,F172,A173,F173,A174,F174,A175,F175,F6,A154,A171",
+      "values_range": "F172,F173,F174,F175",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A172,A173,A174,A175",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A171"
+        }
+      ]
+    },
+    {
+      "name": "row_178",
+      "range": "A178,F178,A179,F179,A180,F180,A181,F181,A182,F182,F6,A154,A177",
+      "values_range": "F178,F179,F180,F181,F182",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A178,A179,A180,A181,A182",
+          "direction": "W",
+          "caption": "Age group"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A177"
+        }
+      ]
+    },
+    {
+      "name": "row_185",
+      "range": "A185,F185,A186,F186,F6,A154,A184",
+      "values_range": "F185,F186",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "A185,A186",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A184"
+        }
+      ]
+    },
+    {
+      "name": "row_189",
+      "range": "A189,F189,A190,F190,A191,F191,A192,F192,A193,F193,A194,F194,F6,A154,A188",
+      "values_range": "F189,F190,F191,F192,F193,F194",
+      "headers": [
+        {
+          "name": "bail_status",
+          "cells": "A189,A190,A191,A192,A193,A194",
+          "direction": "W",
+          "caption": "Bail status at finalisation (companies excluded)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A188"
+        }
+      ]
+    },
+    {
+      "name": "row_198",
+      "range": "A198,F198,A199,F199,A200,F200,A201,F201,F6,A154,A196,A197",
+      "values_range": "F198,F199,F200,F201",
+      "headers": [
+        {
+          "name": "court_delay_stage",
+          "cells": "A198,A199,A200,A201",
+          "direction": "W",
+          "caption": "Court delay (median days) (a)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A196"
+        },
+        {
+          "name": "method_of_finalisation",
+          "cells": "A197"
+        }
+      ]
+    },
+    {
+      "name": "row_203",
+      "range": "A203,F203,A204,F204,A205,F205,A206,F206,F6,A154,A196,A202",
+      "values_range": "F203,F204,F205,F206",
+      "headers": [
+        {
+          "name": "court_delay_stage",
+          "cells": "A203,A204,A205,A206",
+          "direction": "W",
+          "caption": "Court delay (median days) (a)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A196"
+        },
+        {
+          "name": "method_of_finalisation",
+          "cells": "A202"
+        }
+      ]
+    },
+    {
+      "name": "row_209",
+      "range": "A209,F209,A210,F210,A211,F211,A212,F212,A213,F213,A214,F214,A215,F215,A216,F216,A217,F217,A218,F218,A219,F219,A220,F220,A221,F221,A222,F222,A223,F223,A224,F224,A225,F225,A226,F226,A227,F227,F6,A154,A208",
+      "values_range": "F209,F210,F211,F212,F213,F214,F215,F216,F217,F218,F219,F220,F221,F222,F223,F224,F225,F226,F227",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A209,A210,A211,A212,A213,A214,A215,A216,A217,A218,A219,A220,A221,A222,A223,A224,A225,A226,A227",
+          "direction": "W",
+          "caption": "Defendants found guilty by principal offence (BSOC2023 division)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A208"
+        }
+      ]
+    },
+    {
+      "name": "row_230",
+      "range": "A230,F230,A233,F233,A236,F236,A238,F238,A239,F239,A240,F240,A241,F241,F6,A154,A229",
+      "values_range": "F230,F233,F236,F238,F239,F240,F241",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A230,A233,A236,A238,A239,A240,A241",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A229"
+        }
+      ]
+    },
+    {
+      "name": "row_231",
+      "range": "A231,F231,A232,F232,F6,A154,A229,A230",
+      "values_range": "F231,F232",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A231,A232",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A229"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A230"
+        }
+      ]
+    },
+    {
+      "name": "row_234",
+      "range": "A234,F234,A235,F235,F6,A154,A229,A233",
+      "values_range": "F234,F235",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A234,A235",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A229"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A233"
+        }
+      ]
+    },
+    {
+      "name": "row_237",
+      "range": "A237,F237,F6,A154,A229,A236",
+      "values_range": "F237",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A237",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A154"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A229"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A236"
+        }
+      ]
+    },
+    {
+      "name": "row_245",
+      "range": "A245,F245,F6,A243",
+      "values_range": "F245",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A245",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        }
+      ]
+    },
+    {
+      "name": "row_248",
+      "range": "A248,F248,A249,F249,A250,F250,A251,F251,F6,A243,A247",
+      "values_range": "F248,F249,F250,F251",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A248,A249,A250,A251",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A247"
+        }
+      ]
+    },
+    {
+      "name": "row_254",
+      "range": "A254,F254,A255,F255,A256,F256,A257,F257,F6,A243,A253",
+      "values_range": "F254,F255,F256,F257",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A254,A255,A256,A257",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A253"
+        }
+      ]
+    },
+    {
+      "name": "row_260",
+      "range": "A260,F260,A261,F261,A262,F262,A263,F263,A264,F264,F6,A243,A259",
+      "values_range": "F260,F261,F262,F263,F264",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A260,A261,A262,A263,A264",
+          "direction": "W",
+          "caption": "Age group"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A259"
+        }
+      ]
+    },
+    {
+      "name": "row_267",
+      "range": "A267,F267,A268,F268,F6,A243,A266",
+      "values_range": "F267,F268",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "A267,A268",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A266"
+        }
+      ]
+    },
+    {
+      "name": "row_271",
+      "range": "A271,F271,A272,F272,A273,F273,A274,F274,A275,F275,A276,F276,A277,F277,F6,A243,A270",
+      "values_range": "F271,F272,F273,F274,F275,F276,F277",
+      "headers": [
+        {
+          "name": "bail_status",
+          "cells": "A271,A272,A273,A274,A275,A276,A277",
+          "direction": "W",
+          "caption": "Bail status at finalisation (companies excluded)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A270"
+        }
+      ]
+    },
+    {
+      "name": "row_280",
+      "range": "A280,F280,A281,F281,A282,F282,A283,F283,F6,A243,A279",
+      "values_range": "F280,F281,F282,F283",
+      "headers": [
+        {
+          "name": "court_delay_stage",
+          "cells": "A280,A281,A282,A283",
+          "direction": "W",
+          "caption": "Court delay (median days) (a)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A279"
+        }
+      ]
+    },
+    {
+      "name": "row_286",
+      "range": "A286,F286,A287,F287,A288,F288,A289,F289,A290,F290,A291,F291,A292,F292,A293,F293,A294,F294,A295,F295,A296,F296,A297,F297,A298,F298,A299,F299,A300,F300,A301,F301,A302,F302,A303,F303,A304,F304,F6,A243,A285",
+      "values_range": "F286,F287,F288,F289,F290,F291,F292,F293,F294,F295,F296,F297,F298,F299,F300,F301,F302,F303,F304",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A286,A287,A288,A289,A290,A291,A292,A293,A294,A295,A296,A297,A298,A299,A300,A301,A302,A303,A304",
+          "direction": "W",
+          "caption": "Defendants found guilty by principal offence (BSOC2023 division)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A285"
+        }
+      ]
+    },
+    {
+      "name": "row_307",
+      "range": "A307,F307,A310,F310,A313,F313,A315,F315,A316,F316,A317,F317,A318,F318,F6,A243,A306",
+      "values_range": "F307,F310,F313,F315,F316,F317,F318",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A307,A310,A313,A315,A316,A317,A318",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A306"
+        }
+      ]
+    },
+    {
+      "name": "row_308",
+      "range": "A308,F308,A309,F309,F6,A243,A306,A307",
+      "values_range": "F308,F309",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A308,A309",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A306"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A307"
+        }
+      ]
+    },
+    {
+      "name": "row_311",
+      "range": "A311,F311,A312,F312,F6,A243,A306,A310",
+      "values_range": "F311,F312",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A311,A312",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A306"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A310"
+        }
+      ]
+    },
+    {
+      "name": "row_314",
+      "range": "A314,F314,F6,A243,A306,A313",
+      "values_range": "F314",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A314",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A243"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A306"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A313"
+        }
+      ]
+    },
+    {
+      "name": "row_322",
+      "range": "A322,F322,F6,A320",
+      "values_range": "F322",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A322",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        }
+      ]
+    },
+    {
+      "name": "row_325",
+      "range": "A325,F325,A326,F326,F6,A320,A324",
+      "values_range": "F325,F326",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A325,A326",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A324"
+        }
+      ]
+    },
+    {
+      "name": "row_329",
+      "range": "A329,F329,A330,F330,A331,F331,F6,A320,A328",
+      "values_range": "F329,F330,F331",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A329,A330,A331",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A328"
+        }
+      ]
+    },
+    {
+      "name": "row_334",
+      "range": "A334,F334,A335,F335,A336,F336,A337,F337,F6,A320,A333",
+      "values_range": "F334,F335,F336,F337",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A334,A335,A336,A337",
+          "direction": "W",
+          "caption": "Age group"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A333"
+        }
+      ]
+    },
+    {
+      "name": "row_340",
+      "range": "A340,F340,A341,F341,F6,A320,A339",
+      "values_range": "F340,F341",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "A340,A341",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A339"
+        }
+      ]
+    },
+    {
+      "name": "row_344",
+      "range": "A344,F344,A345,F345,A346,F346,A347,F347,A348,F348,A349,F349,A350,F350,F6,A320,A343",
+      "values_range": "F344,F345,F346,F347,F348,F349,F350",
+      "headers": [
+        {
+          "name": "bail_status",
+          "cells": "A344,A345,A346,A347,A348,A349,A350",
+          "direction": "W",
+          "caption": "Bail status at finalisation (companies excluded)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A343"
+        }
+      ]
+    },
+    {
+      "name": "row_353",
+      "range": "A353,F353,A354,F354,A355,F355,F6,A320,A352",
+      "values_range": "F353,F354,F355",
+      "headers": [
+        {
+          "name": "court_delay_stage",
+          "cells": "A353,A354,A355",
+          "direction": "W",
+          "caption": "Court delay (median days) (a)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A352"
+        }
+      ]
+    },
+    {
+      "name": "row_358",
+      "range": "A358,F358,A359,F359,A360,F360,A361,F361,A362,F362,A363,F363,A364,F364,A365,F365,A366,F366,A367,F367,A368,F368,A369,F369,A370,F370,A371,F371,A372,F372,A373,F373,A374,F374,A375,F375,A376,F376,F6,A320,A357",
+      "values_range": "F358,F359,F360,F361,F362,F363,F364,F365,F366,F367,F368,F369,F370,F371,F372,F373,F374,F375,F376",
+      "headers": [
+        {
+          "name": "principal_offence",
+          "cells": "A358,A359,A360,A361,A362,A363,A364,A365,A366,A367,A368,A369,A370,A371,A372,A373,A374,A375,A376",
+          "direction": "W",
+          "caption": "Defendants found guilty by principal offence (BSOC2023 division)"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A357"
+        }
+      ]
+    },
+    {
+      "name": "row_379",
+      "range": "A379,F379,A382,F382,A385,F385,A387,F387,A388,F388,A389,F389,A390,F390,F6,A320,A378",
+      "values_range": "F379,F382,F385,F387,F388,F389,F390",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A379,A382,A385,A387,A388,A389,A390",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A378"
+        }
+      ]
+    },
+    {
+      "name": "row_380",
+      "range": "A380,F380,A381,F381,F6,A320,A378,A379",
+      "values_range": "F380,F381",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A380,A381",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A378"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A379"
+        }
+      ]
+    },
+    {
+      "name": "row_383",
+      "range": "A383,F383,A384,F384,F6,A320,A378,A382",
+      "values_range": "F383,F384",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A383,A384",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A378"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A382"
+        }
+      ]
+    },
+    {
+      "name": "row_386",
+      "range": "A386,F386,F6,A320,A378,A385",
+      "values_range": "F386",
+      "headers": [
+        {
+          "name": "sentence_summary_item",
+          "cells": "A386",
+          "direction": "W",
+          "caption": "Defendants found guilty by penalty"
+        },
+        {
+          "name": "period",
+          "cells": "F6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A320"
+        },
+        {
+          "name": "court_summary_topic",
+          "cells": "A378"
+        },
+        {
+          "name": "principal_sentence",
+          "cells": "A385"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:14:33Z",
+    "tool_version": "0.2.0",
+    "records": 284,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-55a2ff5eba41",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1ff-7692-a153-afd63055e63b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "635cc0e936a8989d447deea82abf68f6ec0432b87f0f76492bcc47f36aa54db6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx`.\n\n- Publication: BOCSAR — Court and sentencing (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025-12\n- Sheets needing a recipe: 24 of 24\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Cover\" | 72e637347588b3c90d2aa309010934a67d3f4ebc258868ceae619bdf4bb75843 | missing |\n| \"Table Of Contents\" | 77bb2acf10c15605618b4223b230ab9a139a265006be63de6c4852180f93f466 | missing |\n| \"1-Summarybyyear\" | 7c7ec2db61e3b2448c953e8dbd7ad43969845d2e12688b0a928c49124e8f71a9 | missing |\n| \"2-detailedoffence-outcome\" | 5163a850b244cdede73199f53227392aa28e548f2e01c7c6826c148da6f495a4 | missing |\n| \"3-Outcome\" | f08b3b65aa36c4cd8b708b09a3a38a6b9f3556062a5199311fec51cac39b1118 | missing |\n| \"3a-Judge Alone or Jury Trial\" | f2a3aa20fb5ec85662a95e0a04bb0871dcde9c0126b6a9ae78191622cd50cb5b | missing |\n| \"4-Outcome by bail\" | 1deb6fb6af71f6900bd7fe0da3708b1898d360de14bd1e33e15d4e8146df9db3 | missing |\n| \"5-penalty\" | dee1855c5a59f253ebcfba31be789c86121ba4659bfed73948d7dcc7f3821957 | missing |\n| \"5a-detailedpenalty\" | 8323c99ffc1cd761d36cfff6e5dddf3be7f4601c4d11a2819b84616ec3d486ad | missing |\n| \"6-CourtDelay\" | 2ff78106c56e69ec3b8681f5ff8146543281ea266947eaf21b687b1867235e93 | missing |\n| \"8-Appeals\" | 6968187060f0ef4d4091af38b92d8a33dc3465cb4534552596ea33a45d7a63b6 | missing |\n| \"9-DV-detailedoffence\" | eb8519bfc3b56bd54f4a70f1c9ed39e161af3c139a870a677ebf893d3b68f273 | missing |\n| \"10-DV-penalty\" | 7b25ec2c66d2c153a3e80193ec4095648d0f755dc115ca0e3e5a1d4c5e10b63d | missing |\n| \"10a-DV-detailedpenalty\" | b2e45ecb971e0391104307e35f2844e10d6a9c64b49b56a220965398c2751b75 | missing |\n| \"11-Aboriginal summary by year\" | bd945115e4dfae2ccf3cc2c4206f71c32b4afafba63f428aaf629a1cec1791be | missing |\n| \"12-Aboriginal detailed offence\" | 620b55421f1b894d3e832b47687e529cc50c5f549231f4ab18c22e3218562828 | missing |\n| \"13-Aboriginal DV-detailedoff\" | c1da96dadf608fcacadab945c6eee728f02efef9d86dc81f9f8a1323a0952ee0 | missing |\n| \"14-Aboriginal penalty\" | ed47c48ece93abf2415f0f84b48279fd1a755bd36b0fe9581165977d09b8af20 | missing |\n| \"14a-Aboriginal detailedpenalty\" | e1e70e4f1442aa04f468013677d857e3ab017e5fe35e20a12f5761996ee324c7 | missing |\n| \"15-Aboriginal DVpenalty\" | 26751178f9f49ff6203ea65832da8705b588a80ff5413d9985df06ed3a38b148 | missing |\n| \"15a-Aboriginal DVdetailedpen\" | d96fc251ded73d9018cf059b70daa392fd85bbb7e3664ef0c4531cf8e93f4286 | missing |\n| \"16-Number-Percent-custody\" | 250284b74a3b89818c291e5edd8caba586791a2bfcb8308a10bff488ebca9866 | missing |\n| \"17-Custody-Length\" | 1aff5b22c10217bf54236e8b4ce628a8e6299fcf785b4a0c1b6b9d1d6ec1b665 | missing |\n| \"Explanatory Notes\" | 021e1c6499572b70504ce4750e7ac9563d29b59b03c6b38da130b6b5fca91f00 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-55a2ff5eba41.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B7:E7,B9:E9,G9:J9,B12:E12,G12:J12,B13:E13,G13:J13,B14:E14,G14:J14,B15:E15,G15:J15,B18:E18,G18:J18,B19:E19,G19:J19,B20:E20,G20:J20,B21:E21,G21:J21,B24:E24,G24:J24,B25:E25,G25:J25,B26:E26,G26:J26,B27:E27,G27:J27,B28:E28,G28:J28,B31:E31,G31:J31,B32:E32,G32:J32,B35:E35,G35:J35,B36:E36,G36:J36,B37:E37,G37:J37,B38:E38,G38:J38,B39:E39,G39:J39,B40:E40,G40:J40,B41:E41,G41:J41,B44:E44,G44:J44,B45:E45,G45:J45,B46:E46,G46:J46,B47:E47,G47:J47,B48:E48,G48:J48,B49:E49,G49:J49,B50:E50,G50:J50,B51:E51,G51:J51,B52:E52,G52:J52,B53:E53,G53:J53,B54:E54,G54:J54,B55:E55,G55:J55,B56:E56,G56:J56,B57:E57,G57:J57,B58:E58,G58:J58,B59:E59,G59:J59,B60:E60,G60:J60,B61:E61,G61:J61,B62:E62,G62:J62,B65:E65,G65:J65,B66:E66,G66:J66,B67:E67,G67:J67,B68:E68,G68:J68,B69:E69,G69:J69,B70:E70,G70:J70,B71:E71,G71:J71,B72:E72,G72:J72,B73:E73,G73:J73,B74:E74,G74:J74,B75:E75,G75:J75,B76:E76,G76:J76,B78:E78,B80:E80,G80:J80,B83:E83,G83:J83,B84:E84,G84:J84,B87:E87,G87:J87,B88:E88,G88:J88,B91:E91,G91:J91,B92:E92,G92:J92,B93:E93,G93:J93,B96:E96,G96:J96,B97:E97,G97:J97,B98:E98,G98:J98,B99:E99,G99:J99,B102:E102,G102:J102,B103:E103,G103:J103,B106:E106,G106:J106,B107:E107,G107:J107,B108:E108,G108:J108,B109:E109,G109:J109,B110:E110,G110:J110,B111:E111,G111:J111,B114:E114,G114:J114,B115:E115,G115:J115,B116:E116,G116:J116,B117:E117,G117:J117,B120:E120,G120:J120,B121:E121,G121:J121,B122:E122,G122:J122,B123:E123,G123:J123,B124:E124,G124:J124,B125:E125,G125:J125,B126:E126,G126:J126,B127:E127,G127:J127,B128:E128,G128:J128,B129:E129,G129:J129,B130:E130,G130:J130,B131:E131,G131:J131,B132:E132,G132:J132,B133:E133,G133:J133,B134:E134,G134:J134,B135:E135,G135:J135,B136:E136,G136:J136,B137:E137,G137:J137,B138:E138,G138:J138,B141:E141,G141:J141,B142:E142,G142:J142,B143:E143,G143:J143,B144:E144,G144:J144,B145:E145,G145:J145,B146:E146,G146:J146,B147:E147,G147:J147,B148:E148,G148:J148,B149:E149,G149:J149,B150:E150,G150:J150,B151:E151,G151:J151,B152:E152,G152:J152,B154:E154,B156:E156,G156:J156,B159:E159,G159:J159,B160:E160,G160:J160,B163:E163,G163:J163,B164:E164,G164:J164,B167:E167,G167:J167,B168:E168,G168:J168,B169:E169,G169:J169,B172:E172,G172:J172,B173:E173,G173:J173,B174:E174,G174:J174,B175:E175,G175:J175,B178:E178,G178:J178,B179:E179,G179:J179,B180:E180,G180:J180,B181:E181,G181:J181,B182:E182,G182:J182,B185:E185,G185:J185,B186:E186,G186:J186,B189:E189,G189:J189,B190:E190,G190:J190,B191:E191,G191:J191,B192:E192,G192:J192,B193:E193,G193:J193,B194:E194,G194:J194,B198:E198,G198:J198,B199:E199,G199:J199,B200:E200,G200:J200,B201:E201,G201:J201,B203:E203,G203:J203,B204:E204,G204:J204,B205:E205,G205:J205,B206:E206,G206:J206,B209:E209,G209:J209,B210:E210,G210:J210,B211:E211,G211:J211,B212:E212,G212:J212,B213:E213,G213:J213,B214:E214,G214:J214,B215:E215,G215:J215,B216:E216,G216:J216,B217:E217,G217:J217,B218:E218,G218:J218,B219:E219,G219:J219,B220:E220,G220:J220,B221:E221,G221:J221,B222:E222,G222:J222,B223:E223,G223:J223,B224:E224,G224:J224,B225:E225,G225:J225,B226:E226,G226:J226,B227:E227,G227:J227,B230:E230,G230:J230,B231:E231,G231:J231,B232:E232,G232:J232,B233:E233,G233:J233,B234:E234,G234:J234,B235:E235,G235:J235,B236:E236,G236:J236,B237:E237,G237:J237,B238:E238,G238:J238,B239:E239,G239:J239,B240:E240,G240:J240,B241:E241,G241:J241,B243:E243,B245:E245,G245:J245,B248:E248,G248:J248,B249:E249,G249:J249,B250:E250,G250:J250,B251:E251,G251:J251,B254:E254,G254:J254,B255:E255,G255:J255,B256:E256,G256:J256,B257:E257,G257:J257,B260:E260,G260:J260,B261:E261,G261:J261,B262:E262,G262:J262,B263:E263,G263:J263,B264:E264,G264:J264,B267:E267,G267:J267,B268:E268,G268:J268,B271:E271,G271:J271,B272:E272,G272:J272,B273:E273,G273:J273,B274:E274,G274:J274,B275:E275,G275:J275,B276:E276,G276:J276,B277:E277,G277:J277,B280:E280,G280:J280,B281:E281,G281:J281,B282:E282,G282:J282,B283:E283,G283:J283,B286:E286,G286:J286,B287:E287,G287:J287,B288:E288,G288:J288,B289:E289,G289:J289,B290:E290,G290:J290,B291:E291,G291:J291,B292:E292,G292:J292,B293:E293,G293:J293,B294:E294,G294:J294,B295:E295,G295:J295,B296:E296,G296:J296,B297:E297,G297:J297,B298:E298,G298:J298,B299:E299,G299:J299,B300:E300,G300:J300,B301:E301,G301:J301,B302:E302,G302:J302,B303:E303,G303:J303,B304:E304,G304:J304,B307:E307,G307:J307,B308:E308,G308:J308,B309:E309,G309:J309,B310:E310,G310:J310,B311:E311,G311:J311,B312:E312,G312:J312,B313:E313,G313:J313,B314:E314,G314:J314,B315:E315,G315:J315,B316:E316,G316:J316,B317:E317,G317:J317,B318:E318,G318:J318,B320:E320,B322:E322,G322:J322,B325:E325,G325:J325,B326:E326,G326:J326,B329:E329,G329:J329,B330:E330,G330:J330,B331:E331,G331:J331,B334:E334,G334:J334,B335:E335,G335:J335,B336:E336,G336:J336,B337:E337,G337:J337,B340:E340,G340:J340,B341:E341,G341:J341,B344:E344,G344:J344,B345:E345,G345:J345,B346:E346,G346:J346,B347:E347,G347:J347,B348:E348,G348:J348,B349:E349,G349:J349,B350:E350,G350:J350,B353:E353,G353:J353,B354:E354,G354:J354,B355:E355,G355:J355,B358:E358,G358:J358,B359:E359,G359:J359,B360:E360,G360:J360,B361:E361,G361:J361,B362:E362,G362:J362,B363:E363,G363:J363,B364:E364,G364:J364,B365:E365,G365:J365,B366:E366,G366:J366,B367:E367,G367:J367,B368:E368,G368:J368,B369:E369,G369:J369,B370:E370,G370:J370,B371:E371,G371:J371,B372:E372,G372:J372,B373:E373,G373:J373,B374:E374,G374:J374,B375:E375,G375:J375,B376:E376,G376:J376,B379:E379,G379:J379,B380:E380,G380:J380,B381:E381,G381:J381,B382:E382,G382:J382,B383:E383,G383:J383,B384:E384,G384:J384,B385:E385,G385:J385,B386:E386,G386:J386,B387:E387,G387:J387,B388:E388,G388:J388,B389:E389,G389:J389,B390:E390,G390:J390",
+      "reason": "Earlier annual periods and historical change/trend columns; retain most recent year (2025) only."
+    },
+    {
+      "cells": "B6,C6,D6,E6,B78,C78,D78,E78,B154,C154,D154,E154,B243,C243,D243,E243,B320,C320,D320,E320",
+      "reason": "Earlier-year column headings; 2025 only."
+    }
+  ]
+}

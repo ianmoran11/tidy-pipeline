@@ -26,7 +26,11 @@ For each record, in order:
      { "pattern": "^(January|…|December)$", "set": { "period_type": "Month" } } ] } }
    ```
    `"May"` with `calendar_year` `"2026"` becomes period `"May 2026"`; `calendar_year`
-   is dropped. A label no pattern matches is left as it is.
+   is dropped. A label no pattern matches is left as it is. The state crime statistics
+   join Victoria's `year_ending_month` to its `Year` ("2026 June", split to "2025–26"),
+   a NSW month to its reporting year ("April NSW Recorded Crime Statistics July 2025 -
+   June 2026", split to "April 2026"), and the AJI dashboard's `incident_value_basis`
+   to a "Value" column ("Value Incident rate", split to measure `Rate`).
 
    `split`: a label that carries several dimensions is replaced by them. Keys are
    the dimension, then the exact label. `null` removes a dimension. Splits may not
@@ -55,6 +59,9 @@ For each record, in order:
    ```json
    { "dimension": "state", "pattern": "(?<![A-Za-z])(New South Wales|…)(?![A-Za-z])", "values": { "new south wales": "NSW" } }
    ```
+   NSW trend tables name only their span ("NSW Recorded Crime Statistics July 2016 to
+   June 2026"); a rule takes the 12 months ending where it ends ("2025–26"), the year
+   their counts, rates and ranks are for and their trends run to.
    **`fallback_periods`.** A record still without `period` takes the release's
    reference period from `source_metadata.csv`, mapped through this object
    (`"2009-10": "2009–10"`, `"2021-05": "May 2021"`). A period not listed is used as it
@@ -66,8 +73,10 @@ For each record, in order:
    months and quarters on their last day, ranges on their last period. Plain years are
    30 June for Prisoners, child protection (AIHW and RoGS) and prison health, and
    calendar years (31 December) in RoGS Justice and youth justice, Corrective Services
-   (annual averages) and the Personal Safety surveys (1996, 2005, 2012, 2016). Periods
-   not listed get no `reference_date`.
+   (annual averages) and the Personal Safety surveys (1996, 2005, 2012, 2016), and in
+   the state crime statistics except Victoria's data tables (years ending June) and NT
+   ("2026" is the 12 months ending August 2026). Periods not listed get no
+   `reference_date`.
 
 Each record's `.derived` lists the dimensions that steps 3–5 added or changed.
 `row`, `col`, `address` and `.value` never change.

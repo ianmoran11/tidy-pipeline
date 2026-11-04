@@ -6,19 +6,24 @@
 # It also reports series without a population or measure, and labels with more than one
 # spelling. Each test returns its failures (none when it passes). A failed "error" test
 # stops the target; "warning" results are only reported. Returns one row per test.
-check_integrated <- function(integrated, data_identified, integration_spec) {
-  obs <- integrated$observations; series <- integrated$series; measures <- integrated$measures; sources <- integrated$sources
+check_integrated <- function(integrated, assembled, integration_spec) {
+  obs <- integrated$observations; measures <- integrated$measures; sources <- integrated$sources
+  # series is one table per publication; the tests read its columns across all of them
+  tables <- c(list(observations = obs), stats::setNames(integrated$series, paste0("series/", names(integrated$series))), list(measures = measures, sources = sources))
+  column <- function(col) unlist(lapply(integrated$series, function(s) s[[col]] %||% rep(NA_character_, nrow(s))), use.names = FALSE)
+  series <- list(series_id = column("series_id"), measure_id = column("measure_id"), publication_id = column("publication_id"),
+                 population = column("population"), measure = column("measure"))
 
-  # The four tables exist with the columns later stages and analysts read
+  # The tables exist with the columns later stages and analysts read
   tables_have_columns <- function() {
     need <- list(observations = c("series_id", "period", "reference_date", "published_text", "sheet_sha256", "address", "derived"),
                  series = c("series_id", "measure_id", "publication_id", "population", "measure"),
                  measures = c("measure_id", "publication_id", "series"), sources = c(unlist(integration_spec$source_fields), "title"))
-    unlist(lapply(names(need), function(t) sprintf("%s lacks column %s", t, setdiff(need[[t]], names(integrated[[t]])))))
+    unlist(lapply(names(tables), function(t) sprintf("%s lacks column %s", t, setdiff(need[[sub("/.*", "", t)]], names(tables[[t]])))))
   }
-  # One observation per record of data_identified
+  # One observation per record of data_identified (each sheet's count, from assemble_sheet())
   one_row_per_record <- function() {
-    n <- sum(vapply(data_identified, function(s) sum(lengths(lapply(s$tables, `[[`, "tidy_table_list"))), 1L))
+    n <- sum(vapply(assembled, function(p) as.integer(p$records %||% 0L), 1L))
     if (n != nrow(obs)) sprintf("%d observations; data_identified has %d records", nrow(obs), n)
   }
   # No cell appears twice
@@ -61,13 +66,17 @@ check_integrated <- function(integrated, data_identified, integration_spec) {
             ifelse(is.na(series$population[bad]), "population", "measure"))
   }
   # Column names in series are snake_case, as in dictionary/dimensions.csv
-  series_columns_snake_case <- function() sprintf("column '%s'", names(series)[!grepl("^[a-z][a-z0-9_]*$", names(series))])
+  series_columns_snake_case <- function() {
+    cols <- unique(unlist(lapply(integrated$series, names), use.names = FALSE))
+    sprintf("column '%s'", cols[!grepl("^[a-z][a-z0-9_]*$", cols)])
+  }
   # Labels in a column that differ only by case, spacing or punctuation are probably one
   # label, and split one series in two (known gaps: ISSUES.md I35)
   labels_have_one_spelling <- function() {
     fold <- function(x) trimws(gsub("[^a-z0-9%$<>+]+", " ", gsub("&", " and ", tolower(x), fixed = TRUE)))
-    unlist(lapply(setdiff(names(series), c("series_id", "measure_id", "publication_id")), function(col) {
-      l <- unique(series[[col]]); l <- l[!is.na(l)]
+    cols <- unique(unlist(lapply(integrated$series, names), use.names = FALSE))
+    unlist(lapply(setdiff(cols, c("series_id", "measure_id", "publication_id")), function(col) {
+      l <- unique(unlist(lapply(integrated$series, function(s) unique(s[[col]])), use.names = FALSE)); l <- l[!is.na(l)]
       spellings <- split(l, fold(l)); spellings <- spellings[lengths(spellings) > 1]
       sprintf("%s: %s", rep(col, length(spellings)), vapply(spellings, paste, "", collapse = " | "))
     }), use.names = FALSE)

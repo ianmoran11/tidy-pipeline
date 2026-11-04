@@ -1,0 +1,138 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0a75bfe07217c29b2af9b0bd7d2109782fa16f2d18a103f2f1c3460514a34184",
+  "sheet": "Premises Type",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "451016b8c83f8c102ae936c1082d07307b1ec845620a222325c73cc4f865c411",
+  "agent_notes": "Published Total premises row retained.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A31:A32,A34"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "premises",
+      "range": "A6:J29",
+      "values_range": "B7:J29",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "direction": "W",
+          "cells": "A7:A29",
+          "caption": "Premises type"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "B6:J6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:32:06Z",
+    "tool_version": "0.2.0",
+    "records": 207,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T203102Z-8dc84fc356ce",
+    "started_at": "2026-11-03T20:31:04Z",
+    "workbook": "8dc84fc356ce5216fa7c78fdaee1f1e6b16c7ddae2e9897b5ab8ac3d427623b0--WentworthLGA.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a31b-b3e5-76ba-919d-094db12f4c17",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "aa9726e25919f41546e60e067f4c257eebd580409ac390734a1e4891f5dc5db6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `8dc84fc356ce5216fa7c78fdaee1f1e6b16c7ddae2e9897b5ab8ac3d427623b0--WentworthLGA.xlsx`.\n\n- Publication: BOCSAR — Crime statistics by LGA (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Summary of offences\" | 4d8621e7c4cd88558080d0f9ef7e9a4a9e9e0521456d6cc4c55b89b640a921be | missing |\n| \"Premises Type\" | 0a75bfe07217c29b2af9b0bd7d2109782fa16f2d18a103f2f1c3460514a34184 | missing |\n| \"Victims\" | 912a812be02130c8ef5d3374118e8170d4275046815762254c14417b68643cbf | missing |\n| \"Offenders\" | 0eb233cd16efeceb45b4a7ad392d1c5589985bea75e835ce6378641a0d6f20e8 | missing |\n| \"Alcohol Related\" | 8d8997c77d7b33c543ac97b184fcee82557ba302c76e1c05587096bf84dbf02f | missing |\n| \"Month\" | 82b702e938190713cbb3cde934d592c15826ad3014f65069a9a4e37d30ce246b | missing |\n| \"Time\" | ab108872cb50bc13a881fefd5e822912097a1c6c8174c306d76353b8e14a6ade | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T203102Z-8dc84fc356ce.jsonl"
+  }
+}

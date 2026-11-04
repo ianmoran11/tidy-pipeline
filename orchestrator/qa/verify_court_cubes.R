@@ -5,7 +5,7 @@
 #   2. 2009–10 cubes 6–8 against 2010–11 tables that name their court level in the title.
 # Expected: 2 and 6 = Higher, 3 and 7 = Magistrates', 4 and 8 = Children's Courts.
 suppressMessages({library(dplyr); library(stringr); library(tidyr)})
-obs <- targets::tar_read(observations); it <- targets::tar_read(integrated); src <- it$sources; ser <- it$series
+obs <- targets::tar_read(observations); it <- targets::tar_read(integrated); src <- it$sources; ser <- it$series[["criminal-courts-australia"]]
 dims <- setdiff(names(ser), c("series_id", "measure_id", "court_level", "population", "scope"))
 ser$key <- do.call(paste, c(as.list(ser[dims]), sep = "|"))
 x <- obs %>% filter(value_status == "published") %>% left_join(src %>% select(sheet_sha256, xlsx_file, title), by = "sheet_sha256") %>%

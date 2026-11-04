@@ -1,0 +1,165 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e1703aae7d624592fd6fa6e9bf1198cbc1c53f1c9fe8c6484790fe8facf1bee8",
+  "sheet": "New South Wales",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retained latest annual counts (Jul 2025 - Jun 2026) and corresponding population rates; excluded nine earlier annual count columns. Retained both published trend columns as the current trend snapshot, with their full measure/timeframe captions and text values (including Stable and nc) unchanged. Counts are numbers of recorded incidents, not persons' principal offences; recorded_incident_offence is declared accordingly. Flat offence list; no subtotal rows or hierarchy indicated. Note A69 refers to five- and two-year tests although N4 says ten-year: preserved publisher wording without correction.",
+  "new_dimensions": [
+    {
+      "name": "recorded_incident_offence",
+      "description": "Published offence type of criminal incidents recorded by NSW Police, rather than a person's principal offence or a victimisation survey crime type.",
+      "example_labels": [
+        "Murder *",
+        "Domestic violence related assault",
+        "Breach bail conditions"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4"
+    },
+    {
+      "name": "notes",
+      "cells": "A68:A69,A72:A75"
+    },
+    {
+      "name": "source",
+      "cells": "A71"
+    }
+  ],
+  "tables": [
+    {
+      "name": "incident_counts",
+      "range": "A4:A66,K4:K66",
+      "values_range": "K5:K66",
+      "headers": [
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "A5:A66"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "K4"
+        }
+      ]
+    },
+    {
+      "name": "current_rates_and_trend_snapshot",
+      "range": "L4:N66",
+      "values_range": "L5:N66",
+      "headers": [
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "A5:A66"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "L4:N4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:52:50Z",
+    "tool_version": "0.2.0",
+    "records": 248,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205200Z-f7e57df40460",
+    "started_at": "2026-11-03T20:52:01Z",
+    "workbook": "f7e57df40460bd3de57d555f470f683a04d532db4bfa1697ca34185a2b666025--NSW_trends.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32e-e5e8-72dd-a7e9-492ae2624a35",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "195b47bf02560179c28f6b5d935e19ba41922e8573784c58d5ac2d9e8bce2ecc",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f7e57df40460bd3de57d555f470f683a04d532db4bfa1697ca34185a2b666025--NSW_trends.xlsx`.\n\n- Publication: BOCSAR — Trend data files (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"New South Wales\" | e1703aae7d624592fd6fa6e9bf1198cbc1c53f1c9fe8c6484790fe8facf1bee8 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205200Z-f7e57df40460.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B4:J66",
+      "reason": "Earlier annual periods; retain only the most recent financial year, Jul 2025 - Jun 2026."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "451fab8fe6b84b96e629d31f8e3d90e113012aa3d1cb06929440eb812620caa6",
+  "sheet": "3. Young People Long-Term",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Fixed 2015 reference cohort: all cumulative follow-up windows (1–10 years) retained; these are durations, not annual periods. Total is the fixed offence-specific denominator, printed only in column L; denominator records have no follow-up-year label. Same/any offence blocks are distinct. Published proportions retained as stored fractions; offence labels retained verbatim, including truncated wording.",
+  "new_dimensions": [
+    {
+      "name": "reoffending_offence_scope",
+      "description": "Whether reoffending is with the same principal reference offence or any offence.",
+      "example_labels": [
+        "Reoffended with same offence",
+        "Reoffended with any offence"
+      ]
+    },
+    {
+      "name": "reoffending_follow_up_year",
+      "description": "Cumulative follow-up window in years since the fixed 2015 reference contact, not a calendar period.",
+      "example_labels": [
+        "1",
+        "2",
+        "10"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_number",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A113:A116,A119:A120"
+    },
+    {
+      "name": "source",
+      "cells": "A118"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "B6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "scope_7_reoffending",
+      "range": "A8:L9,A11:L12,A14:L15,A17:L18,A20:L21,A23:L24,A26:L27,A29:L30,A32:L33,A35:L36,A38:L39,A41:L42,A44:L45,A47:L48,A50:L51,A53:L54,A56:L57",
+      "values_range": "C8:L9,C11:L12,C14:L15,C17:L18,C20:L21,C23:L24,C26:L27,C29:L30,C32:L33,C35:L36,C38:L39,C41:L42,C44:L45,C47:L48,C50:L51,C53:L54,C56:L57",
+      "meta_data": [
+        {
+          "name": "reoffending_offence_scope",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "WNW",
+          "cells": "A8,A11,A14,A17,A20,A23,A26,A29,A32,A35,A38,A41,A44,A47,A50,A53,A56"
+        },
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B8:B9,B11:B12,B14:B15,B17:B18,B20:B21,B23:B24,B26:B27,B29:B30,B32:B33,B35:B36,B38:B39,B41:B42,B44:B45,B47:B48,B50:B51,B53:B54,B56:B57"
+        },
+        {
+          "name": "reoffending_follow_up_year",
+          "caption": "Years to reoffend",
+          "direction": "N",
+          "cells": "C6:L6"
+        }
+      ]
+    },
+    {
+      "name": "scope_7_denominator",
+      "range": "B10:L10,B13:L13,B16:L16,B19:L19,B22:L22,B25:L25,B28:L28,B31:L31,B34:L34,B37:L37,B40:L40,B43:L43,B46:L46,B49:L49,B52:L52,B55:L55,B58:L58",
+      "values_range": "L10,L13,L16,L19,L22,L25,L28,L31,L34,L37,L40,L43,L46,L49,L52,L55,L58",
+      "meta_data": [
+        {
+          "name": "reoffending_offence_scope",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "WNW",
+          "cells": "A8,A11,A14,A17,A20,A23,A26,A29,A32,A35,A38,A41,A44,A47,A50,A53,A56"
+        },
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B10,B13,B16,B19,B22,B25,B28,B31,B34,B37,B40,B43,B46,B49,B52,B55,B58"
+        }
+      ]
+    },
+    {
+      "name": "scope_60_reoffending",
+      "range": "A61:L62,A64:L65,A67:L68,A70:L71,A73:L74,A76:L77,A79:L80,A82:L83,A85:L86,A88:L89,A91:L92,A94:L95,A97:L98,A100:L101,A103:L104,A106:L107,A109:L110",
+      "values_range": "C61:L62,C64:L65,C67:L68,C70:L71,C73:L74,C76:L77,C79:L80,C82:L83,C85:L86,C88:L89,C91:L92,C94:L95,C97:L98,C100:L101,C103:L104,C106:L107,C109:L110",
+      "meta_data": [
+        {
+          "name": "reoffending_offence_scope",
+          "cells": "A60"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "WNW",
+          "cells": "A61,A64,A67,A70,A73,A76,A79,A82,A85,A88,A91,A94,A97,A100,A103,A106,A109"
+        },
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B61:B62,B64:B65,B67:B68,B70:B71,B73:B74,B76:B77,B79:B80,B82:B83,B85:B86,B88:B89,B91:B92,B94:B95,B97:B98,B100:B101,B103:B104,B106:B107,B109:B110"
+        },
+        {
+          "name": "reoffending_follow_up_year",
+          "caption": "Years to reoffend",
+          "direction": "N",
+          "cells": "C6:L6"
+        }
+      ]
+    },
+    {
+      "name": "scope_60_denominator",
+      "range": "B63:L63,B66:L66,B69:L69,B72:L72,B75:L75,B78:L78,B81:L81,B84:L84,B87:L87,B90:L90,B93:L93,B96:L96,B99:L99,B102:L102,B105:L105,B108:L108,B111:L111",
+      "values_range": "L63,L66,L69,L72,L75,L78,L81,L84,L87,L90,L93,L96,L99,L102,L105,L108,L111",
+      "meta_data": [
+        {
+          "name": "reoffending_offence_scope",
+          "cells": "A60"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "WNW",
+          "cells": "A61,A64,A67,A70,A73,A76,A79,A82,A85,A88,A91,A94,A97,A100,A103,A106,A109"
+        },
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "B63,B66,B69,B72,B75,B78,B81,B84,B87,B90,B93,B96,B99,B102,B105,B108,B111"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:51:15Z",
+    "tool_version": "0.2.0",
+    "records": 714,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204928Z-e045ac72bc75",
+    "started_at": "2026-11-03T20:49:29Z",
+    "workbook": "e045ac72bc7515018320eda000d3d3ab85eaed965de1cc160a44b616ff226319--Reoffending_in_NSW_2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32c-931f-722d-8248-127bdecab82c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1b9aad17d2e4c109f670ff79f0478360583aa7b4d6a8547e36aad00d38338bd3",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e045ac72bc7515018320eda000d3d3ab85eaed965de1cc160a44b616ff226319--Reoffending_in_NSW_2025.xlsx`.\n\n- Publication: BOCSAR — Re offending (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"1. Young People Court\" | 66ff2412635bf845ff4accee280dadaffb79c863e7e7eedcc2944756c0009777 | missing |\n| \"2. Young People Exiting Custody\" | c39c658fdee25a17a081061a313d9c78ad43cb77159a219f972965560d278892 | missing |\n| \"3. Young People Long-Term\" | 451fab8fe6b84b96e629d31f8e3d90e113012aa3d1cb06929440eb812620caa6 | missing |\n| \"4. Adults Court\" | 75cb2fa7ec2197e7a7551ec5ae7031cdba36aa80578bee9285fdeff5e8a05a56 | missing |\n| \"5. Adults Exiting Custody\" | 3f1fb462b0d86b89427e817be0b72e19bac8ff67459fdf95e8396d3317ac90bf | missing |\n| \"6. Adults Court Long-Term\" | af785772b4e5ac281d116e23c178336b198153cb0979f95f212cacc7680c5ffd | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204928Z-e045ac72bc75.jsonl"
+  }
+}

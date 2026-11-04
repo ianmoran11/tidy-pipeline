@@ -1,0 +1,121 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "74b24caf4f72a78c65616b6e64e957b4282a4b07de9526f60d771608077767ea",
+  "sheet": "LGA5yrs",
+  "kind": "unsupported",
+  "status": "validated",
+  "reason": "Left out as a duplicate: its most recent year (Jul 2025 - Jun 2026, columns FH:GU) repeats sheet 'LGA' of this workbook cell for cell, plus rows of zeros, and its earlier years fall outside the most-recent-year rule (references/layouts.md).",
+  "agent_notes": "Set by the orchestrator after checking FH:GU against the companion sheet (identical values).",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "release",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A1065:A1066,A1069:A1072"
+    },
+    {
+      "name": "source",
+      "cells": "A1068"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:35:41Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-cd6f3d410fc1",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "cd6f3d410fc10818e42ec053e641494df9953c0ff4f1e05ebd3b0353de1e48a6--LGA_Alcohol_Related_Time_Day.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1d8-77a1-b525-b67aa0d7a3d2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ddd174e363db6539a5af173b3d1feada0866545981e59c826a81cec84fdb2bd2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cd6f3d410fc10818e42ec053e641494df9953c0ff4f1e05ebd3b0353de1e48a6--LGA_Alcohol_Related_Time_Day.xlsx`.\n\n- Publication: BOCSAR — Alcohol related violence (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"LGA\" | 87aba5fc2ef87e9e5cd2c625b824df4b3768710f1188068d91a805396acf5b7e | missing |\n| \"LGA5yrs\" | 74b24caf4f72a78c65616b6e64e957b4282a4b07de9526f60d771608077767ea | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-cd6f3d410fc1.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "D8:GU1063",
+      "reason": "Jul 2021 - Jun 2025 are earlier years; Jul 2025 - Jun 2026 is the same data as sheet 'LGA'."
+    }
+  ]
+}

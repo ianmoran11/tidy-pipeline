@@ -1,0 +1,276 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f2a3aa20fb5ec85662a95e0a04bb0871dcde9c0126b6a9ae78191622cd50cb5b",
+  "sheet": "3a-Judge Alone or Jury Trial",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "2025 only. Printed offence divisions, subdivisions, groups and their totals retained at their published hierarchy level. Text suppression/unavailable markers retained. Row-sized tables avoid carrying child labels into parent totals.",
+  "new_dimensions": [
+    {
+      "name": "trial_type",
+      "description": "Whether trial was heard by judge alone or jury."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_number",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A9,B9,A24,B24"
+    },
+    {
+      "name": "notes",
+      "cells": "A5,A36,A37,A40,A42,A43,A44"
+    },
+    {
+      "name": "source",
+      "cells": "A39"
+    }
+  ],
+  "tables": [
+    {
+      "name": "row_10",
+      "range": "A10,B10,G10,G7,A7,G22",
+      "values_range": "G10",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "B10",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "G7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "trial_type",
+          "cells": "A10"
+        },
+        {
+          "name": "notes",
+          "cells": "G7,G22"
+        }
+      ]
+    },
+    {
+      "name": "row_11",
+      "range": "B11,G11,B12,G12,B13,G13,B14,G14,G7,A7,A10",
+      "values_range": "G11,G12,G13,G14",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "B11,B12,B13,B14",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "G7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "trial_type",
+          "cells": "A10"
+        }
+      ]
+    },
+    {
+      "name": "row_15",
+      "range": "A15,B15,G15,B16,G16,B17,G17,B18,G18,B19,G19,G7,A7",
+      "values_range": "G15,G16,G17,G18,G19",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "B15,B16,B17,B18,B19",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "G7",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A7"
+        },
+        {
+          "name": "trial_type",
+          "cells": "A15"
+        }
+      ]
+    },
+    {
+      "name": "row_25",
+      "range": "A25,B25,G25,B26,G26,B27,G27,B28,G28,B29,G29,G22,A22",
+      "values_range": "G25,G26,G27,G28,G29",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "B25,B26,B27,B28,B29",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "G22",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A22"
+        },
+        {
+          "name": "trial_type",
+          "cells": "A25"
+        }
+      ]
+    },
+    {
+      "name": "row_30",
+      "range": "A30,B30,G30,B31,G31,B32,G32,B33,G33,B34,G34,G22,A22",
+      "values_range": "G30,G31,G32,G33,G34",
+      "headers": [
+        {
+          "name": "method_of_finalisation",
+          "cells": "B30,B31,B32,B33,B34",
+          "direction": "W",
+          "caption": "Outcome of court appearance"
+        },
+        {
+          "name": "period",
+          "cells": "G22",
+          "direction": "NNW"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "court_level",
+          "cells": "A22"
+        },
+        {
+          "name": "trial_type",
+          "cells": "A30"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:14:30Z",
+    "tool_version": "0.2.0",
+    "records": 20,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-55a2ff5eba41",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1ff-7692-a153-afd63055e63b",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "635cc0e936a8989d447deea82abf68f6ec0432b87f0f76492bcc47f36aa54db6",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `55a2ff5eba41ec660e730daeb4ae5d1ae605f705b45ee7ab8f658cf070ecb15b--New_South_Wales_Criminal_Courts_Statistics_Jan_2021-Dec_2025.xlsx`.\n\n- Publication: BOCSAR — Court and sentencing (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025-12\n- Sheets needing a recipe: 24 of 24\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Cover\" | 72e637347588b3c90d2aa309010934a67d3f4ebc258868ceae619bdf4bb75843 | missing |\n| \"Table Of Contents\" | 77bb2acf10c15605618b4223b230ab9a139a265006be63de6c4852180f93f466 | missing |\n| \"1-Summarybyyear\" | 7c7ec2db61e3b2448c953e8dbd7ad43969845d2e12688b0a928c49124e8f71a9 | missing |\n| \"2-detailedoffence-outcome\" | 5163a850b244cdede73199f53227392aa28e548f2e01c7c6826c148da6f495a4 | missing |\n| \"3-Outcome\" | f08b3b65aa36c4cd8b708b09a3a38a6b9f3556062a5199311fec51cac39b1118 | missing |\n| \"3a-Judge Alone or Jury Trial\" | f2a3aa20fb5ec85662a95e0a04bb0871dcde9c0126b6a9ae78191622cd50cb5b | missing |\n| \"4-Outcome by bail\" | 1deb6fb6af71f6900bd7fe0da3708b1898d360de14bd1e33e15d4e8146df9db3 | missing |\n| \"5-penalty\" | dee1855c5a59f253ebcfba31be789c86121ba4659bfed73948d7dcc7f3821957 | missing |\n| \"5a-detailedpenalty\" | 8323c99ffc1cd761d36cfff6e5dddf3be7f4601c4d11a2819b84616ec3d486ad | missing |\n| \"6-CourtDelay\" | 2ff78106c56e69ec3b8681f5ff8146543281ea266947eaf21b687b1867235e93 | missing |\n| \"8-Appeals\" | 6968187060f0ef4d4091af38b92d8a33dc3465cb4534552596ea33a45d7a63b6 | missing |\n| \"9-DV-detailedoffence\" | eb8519bfc3b56bd54f4a70f1c9ed39e161af3c139a870a677ebf893d3b68f273 | missing |\n| \"10-DV-penalty\" | 7b25ec2c66d2c153a3e80193ec4095648d0f755dc115ca0e3e5a1d4c5e10b63d | missing |\n| \"10a-DV-detailedpenalty\" | b2e45ecb971e0391104307e35f2844e10d6a9c64b49b56a220965398c2751b75 | missing |\n| \"11-Aboriginal summary by year\" | bd945115e4dfae2ccf3cc2c4206f71c32b4afafba63f428aaf629a1cec1791be | missing |\n| \"12-Aboriginal detailed offence\" | 620b55421f1b894d3e832b47687e529cc50c5f549231f4ab18c22e3218562828 | missing |\n| \"13-Aboriginal DV-detailedoff\" | c1da96dadf608fcacadab945c6eee728f02efef9d86dc81f9f8a1323a0952ee0 | missing |\n| \"14-Aboriginal penalty\" | ed47c48ece93abf2415f0f84b48279fd1a755bd36b0fe9581165977d09b8af20 | missing |\n| \"14a-Aboriginal detailedpenalty\" | e1e70e4f1442aa04f468013677d857e3ab017e5fe35e20a12f5761996ee324c7 | missing |\n| \"15-Aboriginal DVpenalty\" | 26751178f9f49ff6203ea65832da8705b588a80ff5413d9985df06ed3a38b148 | missing |\n| \"15a-Aboriginal DVdetailedpen\" | d96fc251ded73d9018cf059b70daa392fd85bbb7e3664ef0c4531cf8e93f4286 | missing |\n| \"16-Number-Percent-custody\" | 250284b74a3b89818c291e5edd8caba586791a2bfcb8308a10bff488ebca9866 | missing |\n| \"17-Custody-Length\" | 1aff5b22c10217bf54236e8b4ce628a8e6299fcf785b4a0c1b6b9d1d6ec1b665 | missing |\n| \"Explanatory Notes\" | 021e1c6499572b70504ce4750e7ac9563d29b59b03c6b38da130b6b5fca91f00 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-55a2ff5eba41.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "C10:F10,C11:F11,C12:F12,C13:F13,C14:F14,C15:F15,C16:F16,C17:F17,C18:F18,C19:F19,C25:F25,C26:F26,C27:F27,C28:F28,C29:F29,C30:F30,C31:F31,C32:F32,C33:F33,C34:F34",
+      "reason": "Earlier annual periods and historical change/trend columns; retain most recent year (2025) only."
+    },
+    {
+      "cells": "C7,D7,E7,F7,C22,D22,E22,F22",
+      "reason": "Earlier-year column headings; 2025 only."
+    }
+  ]
+}

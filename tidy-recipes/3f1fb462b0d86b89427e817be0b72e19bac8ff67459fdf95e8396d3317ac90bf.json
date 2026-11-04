@@ -1,0 +1,283 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "3f1fb462b0d86b89427e817be0b72e19bac8ff67459fdf95e8396d3317ac90bf",
+  "sheet": "5. Adults Exiting Custody",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest annual reference cohort is 2024 (not release year). Earlier cohorts excluded. Each category spans three measure rows: Number Reoffending, % reoffending, and Total (reference-cohort denominator). Same/any offence blocks are distinct; overall and demographic figures concern any qualifying reoffence. Proportions retained as stored fractions. Published offence wording retained verbatim; Aboriginal and Non-Aboriginal counts may not sum to overall totals because of missing status.",
+  "new_dimensions": [
+    {
+      "name": "prior_court_appearance_count",
+      "description": "Number of prior court occurrences before the reference justice contact.",
+      "example_labels": [
+        "0 occurrences",
+        "1 occurrences",
+        "2–4 occurrences",
+        "5+ occurrences"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A4"
+    },
+    {
+      "name": "table_number",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A73:A76,A79:A80"
+    },
+    {
+      "name": "source",
+      "cells": "A78"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "B6,A12,A20,A37,A45,A59"
+    }
+  ],
+  "tables": [
+    {
+      "name": "overall",
+      "range": "A7:B10,AA8:AA10",
+      "values_range": "AA8:AA10",
+      "meta_data": [
+        {
+          "name": "population",
+          "cells": "A7"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "caption": "Reoffended within 12 months",
+          "direction": "W",
+          "cells": "B8:B10"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AA6"
+        }
+      ]
+    },
+    {
+      "name": "sex_12",
+      "range": "A13:B18,AA13:AA18",
+      "values_range": "AA13:AA18",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "sex",
+          "caption": "Gender",
+          "direction": "WNW",
+          "cells": "A13,A16"
+        },
+        {
+          "name": "measure",
+          "caption": "Reoffended within 12 months",
+          "direction": "W",
+          "cells": "B13:B18"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AA6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_20",
+      "range": "A21:B35,AA21:AA35",
+      "values_range": "AA21:AA35",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "age_group",
+          "caption": "Age group (years)",
+          "direction": "WNW",
+          "cells": "A21,A24,A27,A30,A33"
+        },
+        {
+          "name": "measure",
+          "caption": "Reoffended within 12 months",
+          "direction": "W",
+          "cells": "B21:B35"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AA6"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_37",
+      "range": "A38:B43,AA38:AA43",
+      "values_range": "AA38:AA43",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "caption": "Aboriginality",
+          "direction": "WNW",
+          "cells": "A38,A41"
+        },
+        {
+          "name": "measure",
+          "caption": "Reoffended within 12 months",
+          "direction": "W",
+          "cells": "B38:B43"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AA6"
+        }
+      ]
+    },
+    {
+      "name": "previous_adult_imprisonment_count_45",
+      "range": "A46:B57,AA46:AA57",
+      "values_range": "AA46:AA57",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "previous_adult_imprisonment_count",
+          "caption": "Prior prison",
+          "direction": "WNW",
+          "cells": "A46,A49,A52,A55"
+        },
+        {
+          "name": "measure",
+          "caption": "Reoffended within 12 months",
+          "direction": "W",
+          "cells": "B46:B57"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AA6"
+        }
+      ]
+    },
+    {
+      "name": "prior_court_appearance_count_59",
+      "range": "A60:B71,AA60:AA71",
+      "values_range": "AA60:AA71",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "prior_court_appearance_count",
+          "caption": "Prior court",
+          "direction": "WNW",
+          "cells": "A60,A63,A66,A69"
+        },
+        {
+          "name": "measure",
+          "caption": "Reoffended within 12 months",
+          "direction": "W",
+          "cells": "B60:B71"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AA6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:51:14Z",
+    "tool_version": "0.2.0",
+    "records": 54,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204928Z-e045ac72bc75",
+    "started_at": "2026-11-03T20:49:29Z",
+    "workbook": "e045ac72bc7515018320eda000d3d3ab85eaed965de1cc160a44b616ff226319--Reoffending_in_NSW_2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32c-931f-722d-8248-127bdecab82c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1b9aad17d2e4c109f670ff79f0478360583aa7b4d6a8547e36aad00d38338bd3",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `e045ac72bc7515018320eda000d3d3ab85eaed965de1cc160a44b616ff226319--Reoffending_in_NSW_2025.xlsx`.\n\n- Publication: BOCSAR — Re offending (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025\n- Sheets needing a recipe: 6 of 6\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"1. Young People Court\" | 66ff2412635bf845ff4accee280dadaffb79c863e7e7eedcc2944756c0009777 | missing |\n| \"2. Young People Exiting Custody\" | c39c658fdee25a17a081061a313d9c78ad43cb77159a219f972965560d278892 | missing |\n| \"3. Young People Long-Term\" | 451fab8fe6b84b96e629d31f8e3d90e113012aa3d1cb06929440eb812620caa6 | missing |\n| \"4. Adults Court\" | 75cb2fa7ec2197e7a7551ec5ae7031cdba36aa80578bee9285fdeff5e8a05a56 | missing |\n| \"5. Adults Exiting Custody\" | 3f1fb462b0d86b89427e817be0b72e19bac8ff67459fdf95e8396d3317ac90bf | missing |\n| \"6. Adults Court Long-Term\" | af785772b4e5ac281d116e23c178336b198153cb0979f95f212cacc7680c5ffd | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204928Z-e045ac72bc75.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "C6:Z71",
+      "reason": "Earlier annual cohorts 2000–2023; most recent annual cohort (2024) only."
+    }
+  ]
+}

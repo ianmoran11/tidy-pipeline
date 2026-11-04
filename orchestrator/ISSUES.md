@@ -211,8 +211,10 @@ The recipes are correct but hard to review.
 - `process_recipe()` output field is spelled `sheet_metata`.
 - Error cells (`#N/A`) are not in the `coalesce()` and become `NA`. There are none in
   the current corpus.
-- `published_value()` keeps the stored number for percentage, scientific, fraction
-  and `General` formats. None are used by value cells today.
+- `published_value()` keeps the stored number for scientific, fraction and `General`
+  formats. None are used by value cells today. Percentage formats are shown as Excel
+  shows them since 2026-11-04 (DECISIONS.md 41): the state data have about 27,000 such
+  value cells, and Crime Victimisation 126.
 - `TIDYXL_BUILTIN_FIXES` assumes `"#;##0"`-style strings always come from Excel's
   built-ins. A custom format with that exact text would be misread.
 
@@ -299,8 +301,9 @@ Not tried:
 - **8 workers instead of 6:** about 10% faster on 1,000 sheets, but it leaves little CPU
   for anything else and wasn't tested for heat over a full rebuild.
 - **Cheaper checks.**
-- Assembling per sheet in its own branch would make `assemble()` incremental, at the cost
-  of 9,040 more branches.
+
+Done 2026-11-04: assembling per sheet in its own branch (`assembled`, DECISIONS.md 39).
+It was needed for memory, and it also makes assembly incremental.
 
 ### I34. Victims publications: leftovers and overnight judgement calls
 All 3,831 sheets of the two ABS victims publications (39 releases) have recipes and are
@@ -605,7 +608,151 @@ Leftovers:
   reports 90 groups (25 before). Within group 2, case, dash and spacing variants were
   made one.
 - **Width:** `series.csv` has 487 columns (497 MB), because the surveys and prison health
-  add 259 single-topic dimensions.
+  add 259 single-topic dimensions. Resolved 2026-11-04: series are now one file per
+  publication, with only its own columns (DECISIONS.md 40).
+
+### I38. State and territory crime statistics: judgement calls and leftovers
+Added 2026-11-04 (DECISIONS.md 36–38): the latest release of each Excel series, most
+recent year only. 47 publications, 213 workbooks, 1,525 sheets (1,402 data):
+
+| | Publications | Workbooks | Sheets |
+|---|---|---|---|
+| NSW BOCSAR | 25 | 169 | 1,142 |
+| Victoria, Crime Statistics Agency | 17 | 39 | 337 |
+| WA Police | 1 | 1 | 25 |
+| ACT Policing | 1 | 1 | 9 |
+| NT Police | 1 | 1 | 8 |
+| Queensland Police | 2 | 2 | 4 |
+
+They add 1,021,679 values (973,003 published numbers) in 712,192 series from 1,402 sheets
+with data:
+
+| | Values | Series |
+|---|---|---|
+| NSW BOCSAR | 702,022 | 446,109 |
+| Victoria, Crime Statistics Agency | 259,957 | 248,874 |
+| WA Police | 26,244 | 12,087 |
+| Queensland Police | 18,336 | 1,528 |
+| ACT Policing | 10,088 | 2,522 |
+| NT Police | 5,032 | 1,072 |
+
+Every series has a population and a measure, and every value has a period and a
+reference date. No value text is unrecognised. Statuses: 33,487 `not_calculated`, 8,973
+`no_significant_trend`, 3,259 `not_published`, 2,686 `nil_or_rounded_to_zero`, 229
+`not_available`, 42 `blank`. The earlier publications are unchanged, value for value,
+except 126 Crime Victimisation cells formatted as percentages (DECISIONS.md 41).
+
+Judgement calls, each a rule in `qa/seeds/seed_state_specs.R` or in the recipes, for the
+owner to confirm:
+- **Most recent year:** a table's latest annual period, or its latest 12 months or 4
+  quarters. 556 recipes list the earlier periods in `excluded`, with a reason. Trend and
+  change columns that end at the latest year ("10-year trend", "2-year change") are kept.
+  So are populations and rates for that year.
+- **Duplicates left out** (10 sheets, kind `unsupported`, each naming the sheet it
+  repeats; the suburb sheet below is an 11th `unsupported` sheet):
+  - NSW alcohol-related violence: `LGA5yrs` and `Suburb5yrs`, whose latest year repeats
+    `LGA` and `Suburb` cell for cell;
+  - NSW custody: the eight `*_data` sheets, long-format copies of the titled tables.
+    The titled tables also say whether they count adults or young people.
+- **Periods:**
+  - A 12-month span ending in June is a financial year ("2025–26"), and one ending in
+    December a calendar year ("2025"). Any other is "Year ending March 2026".
+  - Longer spans are ranges ("2021–22 to 2025–26", period type "Range of 5 years").
+  - Months, quarters and days become "April 2026", "September quarter 2024" and
+    "1 April 2026".
+  - Plain years are calendar years (31 December): court finalisations, re-offending
+    cohorts and the Victorian Aboriginal Justice Indicators (AJI) dashboard. There are
+    two exceptions:
+    - Victoria's data tables, where "Year 2026" with "Year ending June" becomes
+      "2025–26";
+    - NT, where "2026" is the 12 months ending August 2026.
+  - NSW trend tables name only their span ("July 2016 to June 2026"). Their counts,
+    rates and ranks are taken to be for the span's last 12 months.
+  - Trend and change columns get the latest year as `period` and a measure such as
+    "10-year trend". A trend is a significance test: where it's significant BOCSAR prints
+    the average annual percentage change ("Up 4.2%" is 4.2; some tables store the number,
+    formatted as a percentage), else "Stable" (status `no_significant_trend`).
+  - Trends have no unit of their own. A trend of rates has the rate's unit from its
+    title ("per 100,000 population"), and that is the only label telling it from the
+    trend of counts beside it. A unit `% per year` was tried and made 30 such pairs
+    identical.
+  - COVID breaches: "Total" is the year ending January 2023.
+  - The releases dated "2025-12" (AJI, NSW Closing the Gap targets) fall back to "2025".
+  - NSW BOCSAR's offence seriousness ranking has no period of its own, so each ranking
+    gets the one its notes give (owner's choice, 2026-11-04):
+    - the median sentence ranking was revised in 2018 from court data for 2013 to 2017,
+      so it is "2013 to 2017";
+    - the median statutory maximum ranking is also "2013 to 2017". This is inferred: the
+      notes don't date it, but footnote b treats it as built from the same cases;
+    - the National Offence Index and its ranking are ABS's 2009 edition, "2009"
+      (31 December, like the other plain years).
+- **Who is counted:**
+  - A heading's "Victim Reports" or "Unique Alleged Offenders" becomes `population`.
+  - Every title gives a population (rules in `who_rules`). Untitled tables get the
+    publication's default population.
+  - In the AJI dashboard, titles say whose records a table counts, and headings say what
+    is counted. The first becomes `population`; the second, `counted_entity`.
+  - AJI's victims table (Table 10) ranks LGAs by count and by rate in one "Value Rank"
+    column, told apart only by its unit. Its measures are "Rank by count" and "Rank by
+    rate".
+- **Values** (DECISIONS.md 41):
+  - BOCSAR's `nc` is `not_calculated`, `1 to 4` is `not_published`, and `Stable` is
+    `no_significant_trend`.
+  - "Up 4.2%" and "Down 4.2%" are 4.2 and -4.2, "1.9 p.p" is 1.9, and "11.1x" is 11.1.
+  - Percentage-formatted cells are the percentage shown, not the stored fraction.
+  - The ranking's one "." is `not_available`.
+- **One spelling per label:** 133 state labels that differed only by case, spacing,
+  punctuation or a footnote marker take one spelling. Where the earlier publications have
+  one, theirs is used ("55-64 years" becomes "55–64 years"). Otherwise it's the plainest
+  common one ("Far West And Orana" becomes "Far West and Orana", "FLYNN" becomes
+  "Flynn"). Labels the specs split are left alone.
+- **Repeated headings:** three NSW court workbooks repeat their column headings four
+  times down the sheet, and the agent had taken those 24 cells per sheet as values ("%
+  proven"). They were removed from the recipes, which then validated.
+- **Aboriginal status:** NSW and Victoria's "Aboriginal" and "Aboriginal and/or Torres
+  Strait Islander" are `indigenous_status` "Aboriginal and Torres Strait Islander", and
+  "non-Aboriginal" is "Non-Indigenous", in these publications only. Both agencies write
+  "Aboriginal" for Aboriginal and/or Torres Strait Islander people.
+- **Victoria's tables** have no title rows. Their titles come from each workbook's
+  Contents sheet (`sheet_titles`, DECISIONS.md 38).
+- **Merged names:** where two agents named one concept differently, one name was kept
+  (e.g. `incident_time_band` → `time_of_day`, `ivo_application_status` →
+  `intervention_order_application_status`). The 98 new dictionary names are marked for
+  owner review.
+- **Suburbs:** NSW alcohol-related violence by suburb (806,080 values for one year, mostly
+  zeros) is left out at the owner's request (DECISIONS.md 40). It would have been 848,000
+  of the 2.3 million series. The LGA workbook stays.
+- **Relationship type:** in NSW sexual assault table 9, the second block (H7:K26) is
+  excluded. It has no heading or period, and its family rows don't add to its family
+  total, so its labels can't be trusted.
+
+Leftovers:
+- **Unmapped headings** (no measure or unit beyond the default `Number`):
+  - NSW court delay stages ("Arrest to committal", in days);
+  - murder "Total … relationship*" columns.
+- **Values that can't be told apart:**
+  - NSW trend data files (9 keys): the 2025 rates published at different precision on
+    two sheets (879.1 on the graph data, 879.07 in the totals);
+  - young people in the justice system (8 keys): "n.c." on one sheet, a number on
+    another.
+- **No title rows:** `has_title` warns on 250 state sheets: Victoria's tables (titled from
+  their Contents sheets instead, DECISIONS.md 38) and the untitled data extracts. Every
+  record still gets a population from the publication.
+- **Spellings:** `labels_have_one_spelling` reports 97 groups (90 before the state data).
+  Nine involve state labels, mostly labels the seed's own rules make from titles or
+  headings ("Nt Balance" for NT's "NT Balance", unit "per 1,000 population)", AJI
+  population titles with and without a trailing comma), plus `indigenous_status` "Total~"
+  and "(All)", which the one-spelling rule leaves alone because the specs split that
+  dimension.
+- **Not admitted:**
+  - ACT Policing's monthly crime statistics: the site returns 403 to scripts.
+  - NSW BOCSAR's criminal offences, domestic violence and sexual assault `.xlsm`
+    workbooks: they need conversion with Excel's macro setting (DECISIONS.md 24).
+  - The CSV and PDF series: Queensland, SA, Tasmania, the WA reports and the NT PDFs.
+- **Older releases:** 421 workbooks of older state releases were downloaded before the
+  scope became the most recent year. They are switched off, and take about 750 MB in
+  each of `source-originals/` and `source-spreadsheets-xlsx/`.
+- **Validator false alarm:** 11 contents and notes sheets are `needs_review` (I7).
 
 ## Resolved (for reference; do not redo)
 

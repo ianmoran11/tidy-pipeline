@@ -1,0 +1,188 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "fd10b1eef5fa9ae4f6a291c55defb653d0572455e786f7b7cec6737917a667f9",
+  "sheet": "Table 05",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest year ending June 2026 only. CSA offence hierarchy levels and all published labels retained. Counts and rates are separate measures. See workbook Contents and Footnotes for confidentiality adjustments, exclusions and investigation status definitions.",
+  "new_dimensions": [
+    {
+      "name": "csa_offence_subdivision",
+      "description": "CSA Victoria recorded-offence classification subdivision."
+    },
+    {
+      "name": "csa_offence_subgroup",
+      "description": "CSA Victoria recorded-offence classification subgroup."
+    },
+    {
+      "name": "csa_offence_code",
+      "description": "Published offence code identifying the recorded statutory offence."
+    },
+    {
+      "name": "csa_offence_description",
+      "description": "Published description of the recorded statutory offence."
+    },
+    {
+      "name": "offence_act_name",
+      "description": "Name of the Act under which the offence is recorded."
+    },
+    {
+      "name": "offence_statutory_reference",
+      "description": "Published statutory reference for the recorded offence."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:H1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "recorded_offences_latest_year",
+      "range": "A1:I1880",
+      "values_range": "I2:I1880",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A1880"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B1880"
+        },
+        {
+          "name": "csa_offence_subdivision",
+          "caption": "Offence Subdivision",
+          "direction": "W",
+          "cells": "C2:C1880"
+        },
+        {
+          "name": "csa_offence_subgroup",
+          "caption": "Offence Subgroup",
+          "direction": "W",
+          "cells": "D2:D1880"
+        },
+        {
+          "name": "csa_offence_code",
+          "caption": "Offence Code",
+          "direction": "W",
+          "cells": "E2:E1880"
+        },
+        {
+          "name": "csa_offence_description",
+          "caption": "Offence Description",
+          "direction": "W",
+          "cells": "F2:F1880"
+        },
+        {
+          "name": "offence_act_name",
+          "caption": "Act Name",
+          "direction": "W",
+          "cells": "G2:G1880"
+        },
+        {
+          "name": "offence_statutory_reference",
+          "caption": "Statutory Reference",
+          "direction": "W",
+          "cells": "H2:H1880"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "I1:I1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:13:20Z",
+    "tool_version": "0.2.0",
+    "records": 1879,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T210904Z-26c75237ea02",
+    "started_at": "2026-11-03T21:09:05Z",
+    "workbook": "26c75237ea02bb17762e1f0ef280978c198d9c463828ab70b79da1cb44e24025--Data_Tables_Recorded_Offences_Visualisation_Year_Ending_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a33e-82c8-766c-a571-efcef0dd03df",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "0a5de5aeab8df7f6396898428096ee1f5b78f0d94e8adc96d35fd318189eb788",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `26c75237ea02bb17762e1f0ef280978c198d9c463828ab70b79da1cb44e24025--Data_Tables_Recorded_Offences_Visualisation_Year_Ending_June_2026.xlsx`.\n\n- Publication: Crime Statistics Agency Data tables - Recorded offences (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | e7e51ee0f6b1548b6c032bc2ede8cc59c6b724293cc533e76fcdd0b50f7e8b7b | missing |\n| \"Footnotes\" | db16c734b2a1280d159750ebf057c7122c29acf3a3e87e80b02a7bb3e83cb428 | missing |\n| \"Table 01\" | 16dcc3e055e15a3bdfb4fc819e4ecb0435852e956a66befbc81d77b004fce874 | missing |\n| \"Table 02\" | b0086a4f28700b822bf1d533becaf399e236b3eba286ec2b53107db82809e2a2 | missing |\n| \"Table 03\" | 9803c10a2e35f9ab58c881ed16ceb2f40d5b24d72ab6db70e72adce4ed3d4ef4 | missing |\n| \"Table 04\" | 3ad6793568a8579002eb7fe52066ef69606af11b719183e05709e57fdd99c99b | missing |\n| \"Table 05\" | fd10b1eef5fa9ae4f6a291c55defb653d0572455e786f7b7cec6737917a667f9 | missing |\n| \"Table 06\" | e46faafa71b7ca02b36f7402d67c7bf3fcfdab18e2e2fbdf8fb740c5fb16c4c6 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T210904Z-26c75237ea02.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A1881:I17575",
+      "reason": "Earlier years; most recent year only (year ending June 2026 retained)."
+    }
+  ]
+}

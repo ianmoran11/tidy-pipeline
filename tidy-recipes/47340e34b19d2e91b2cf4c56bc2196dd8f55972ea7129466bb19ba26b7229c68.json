@@ -1,0 +1,149 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "47340e34b19d2e91b2cf4c56bc2196dd8f55972ea7129466bb19ba26b7229c68",
+  "sheet": "3. Offenders by age",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest annual period only. Drug type spans eight rows and method of proceeding spans four rows. Age totals and total drug block retained. Alleged offender records are not distinct people; see published notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5:C5"
+    },
+    {
+      "name": "source",
+      "cells": "A66"
+    },
+    {
+      "name": "notes",
+      "cells": "A63:A64,A67:A69,A71:A72"
+    }
+  ],
+  "tables": [
+    {
+      "name": "offenders",
+      "range": "A6:C61,M5:M61",
+      "values_range": "M6:M61",
+      "headers": [
+        {
+          "name": "illicit_drug_type",
+          "direction": "WNW",
+          "cells": "A6,A14,A22,A30,A38,A46,A54",
+          "caption": "Drug Type                              "
+        },
+        {
+          "name": "method_of_proceeding",
+          "direction": "WNW",
+          "cells": "B6,B10,B14,B18,B22,B26,B30,B34,B38,B42,B46,B50,B54,B58",
+          "caption": "Method of proceeding"
+        },
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "C6:C61",
+          "caption": "Age"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "M5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:46:37Z",
+    "tool_version": "0.2.0",
+    "records": 56,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204450Z-10ff11a3b4f9",
+    "started_at": "2026-11-03T20:44:51Z",
+    "workbook": "10ff11a3b4f9755e8b8a576dcc53a996ebbc059da8e57234e2b113d219f73672--Use_possess_illicit_drugs.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a328-5485-7023-b6eb-5b5d6eb17b53",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "1cfa06856562abf330ffcca0d104701c199d15d377e6dbb482704fc08ff56d11",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `10ff11a3b4f9755e8b8a576dcc53a996ebbc059da8e57234e2b113d219f73672--Use_possess_illicit_drugs.xlsx`.\n\n- Publication: BOCSAR — Drug offences (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"1. Trends\" | 3d50dea9a7f968d4c657ef142d4d031cd8f69752f18fa740d65bbddb179af6cc | missing |\n| \"2. Rates\" | 9baafde7a75612c429943f22bb690c38b651411c7ad36e3e47c734d901b8334f | missing |\n| \"3. Offenders by age\" | 47340e34b19d2e91b2cf4c56bc2196dd8f55972ea7129466bb19ba26b7229c68 | missing |\n| \"4. Penalties\" | 5bd6af57d385429850e7a8b31e944278e1926f19ca1e7ea306acf9fdeea0da58 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204450Z-10ff11a3b4f9.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "D6:L61",
+      "reason": "Earlier annual periods; most recent year only."
+    }
+  ]
+}

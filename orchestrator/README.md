@@ -39,6 +39,7 @@ tidy-recipes/*.json ─────> recipe_sheets (with recipe_md5)
                           └─> data_normalised   normalise()        normalisation/normalisation_spec.json
                                └─> data_harmonised  harmonise()    harmonisation/harmonisation_spec.json
                                     └─> data_identified  identify()   measures/measure_spec.json
+                                         └─> assembled  assemble_sheet()  one branch per sheet: records → columns
                                          └─> integrated  assemble()      integration/integration_spec.json
                                               └─> observations_typed  type_values()  integration/value_spec.json
                                                    └─> observations  reconcile()     integration/reconcile_spec.json
@@ -65,8 +66,9 @@ tidy-recipes/*.json ─────> recipe_sheets (with recipe_md5)
 - **`identify()`** (`R/identify.R`) adds what each record counts (`population`,
   `scope`, `measure`, …) from the title's subject, the subtitle and the unit. See
   `measures/README.md`.
-- **`assemble()`, `type_values()`, `reconcile()`** turn the sheets into the integrated
-  dataset: `observations`, `series`, `measures` and `sources`, with numeric values,
+- **`assemble_sheet()`, `assemble()`, `type_values()`, `reconcile()`** turn the sheets
+  into the integrated dataset (`assemble_sheet()` per sheet, so the whole dataset is never
+  held as records): `observations`, `series`, `measures` and `sources`, with numeric values,
   value statuses and every release's value (the latest flagged). It's written to
   `integrated/*.csv`. See `integration/README.md`, which is also the data dictionary.
   `tar_read(integration_gaps)` reports values that can't be told apart and series
@@ -145,7 +147,9 @@ pressure.
 What sets the times now:
 - **Full and spec-change rebuilds:** worker time per sheet: normalise 0.07 s, harmonise
   0.09 s, identify 0.05 s, checks 0.34 s. The checks are the largest part.
-- **Every change:** `assemble()` rereads all sheets (about 1.5 min in a build).
+- **Every change:** `assemble()` binds every sheet's columns (`assembled`). Before
+  2026-11-04 it reread every sheet's records (about 1.5 min in a build, and 22 GB of
+  memory once the state crime statistics were in).
 
 Run `targets::tar_prune()` now and then: stale branch records from old runs slow
 `targets` down (it took the store from 816 to 334 MB).

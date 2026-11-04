@@ -1,0 +1,143 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "2c9a70ae13319ade86577e4bf3f5de2dbf4b133d30e00fdce1010bcc54b1ea3a",
+  "sheet": "Month",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "3adc6ebd7e9fbb721af2822a442587c91a91e1b378b01bdda9ee14c8f85dfe0d",
+  "agent_notes": "Months are within July 2025–June 2026: July–December 2025 and January–June 2026; counts are by occurrence, not reporting date. In Custody is a custody-location category, not a local government area.",
+  "new_dimensions": [
+    {
+      "name": "reporting_period",
+      "description": "Annual window containing the published month-of-occurrence distribution."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A41,A43:A44,A46"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "month",
+      "range": "A6:M39",
+      "values_range": "B7:M39",
+      "meta_data": [
+        {
+          "name": "custody_location",
+          "cells": "A5"
+        },
+        {
+          "name": "reporting_period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A7:A39",
+          "caption": "Offence type"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:35:35Z",
+    "tool_version": "0.2.0",
+    "records": 396,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T203435Z-ae84978c558c",
+    "started_at": "2026-11-03T20:34:36Z",
+    "workbook": "ae84978c558c17ae0118356c653b6a596b69e5a2d08064339e4dd75fd86044f1--InCustody.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a31e-f0f1-75b7-9b7e-44121a35754f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "67e4b1f9091da73142d030a4daad4f6b99006059fe52d50a8b41d99159bf4d06",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ae84978c558c17ae0118356c653b6a596b69e5a2d08064339e4dd75fd86044f1--InCustody.xlsx`.\n\n- Publication: BOCSAR — Crime statistics by LGA (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Summary of offences\" | f3b82c8f74012262dd847b782253a0bdb4526f2db28b092e597285b8e2439063 | missing |\n| \"Premises Type\" | 7d4e2bae6562eaf11024816526a2a19ace010b8c860f100dee82d26308a93463 | missing |\n| \"Victims\" | a8ea51151b1244843b81c39d48f43e2d625a85f5521a040545b504fe53d97da4 | missing |\n| \"Offenders\" | 415f4a71fb511a348ed59c3ef0cb791a2ceb5966e8e51a8f353e57a04059ee74 | missing |\n| \"Alcohol Related\" | a0e5e15d1bc229a426fb231097724f1ef4163f9ce5b384ed99a2aaa3cb0be978 | missing |\n| \"Month\" | 2c9a70ae13319ade86577e4bf3f5de2dbf4b133d30e00fdce1010bcc54b1ea3a | missing |\n| \"Time\" | 658c78856f012663621c31d210cd86132a5d19fd9b0d7614fd9f4fd71f19ffe4 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T203435Z-ae84978c558c.jsonl"
+  }
+}

@@ -110,3 +110,35 @@ reported…`. Do this:
   `estimate_type`.
 
 Asterisks on values (`*2.9`) are RSE quality markers. Keep them in the value.
+
+## State and territory crime statistics: the most recent year only
+
+Police and crime statistics agency workbooks (Victoria's Crime Statistics Agency, NSW
+BOCSAR, NT, WA, ACT and Queensland police) often hold 10–30 years in hundreds of
+thousands of rows. Only the most recent year goes into the pipeline:
+- **Most recent year:** the latest annual period (Victoria: the rows with the latest
+  `Year`, e.g. 2026 with `Year ending` June); for a monthly or quarterly series, the
+  latest 12 months or 4 quarters; for a financial-year series, the latest financial
+  year. A table without periods (rankings, a snapshot) is kept whole. Decide this per
+  table, from the data, not from the release name.
+- **Tables:** each table's `range` and `values_range` cover only those rows or columns,
+  plus the header rows. Long tables sorted by year put the latest year in one block
+  (Victorian tables list the latest `Year` first). Use comma-separated ranges if the
+  cells aren't contiguous.
+- **`excluded`:** list the rows or columns of earlier periods you left out, e.g.
+  `"excluded": [{ "cells": "A38862:I371542", "reason": "earlier years; most recent year only" }]`.
+  `run_recipe` then accepts the numbers there. Never exclude a cell of the most recent
+  year, and never use `excluded` in other publications.
+- **A sheet whose most recent year repeats another sheet** (NSW alcohol-related
+  violence: `LGA5yrs` ends with the same year as `LGA`): check the values are the same,
+  then make it `kind` `unsupported` with a `reason` naming the other sheet, and
+  `excluded` covering its numbers.
+- **Places:** `local_government_area`, `police_region`, `police_district`,
+  `police_division`, `police_service_area`, `suburb`, `postcode`, and `region` for other
+  publisher regions (NT reporting regions, SA4). Use `state` only for a state or
+  territory.
+- **Long tables** (`Year`, `Year ending`, `Local Government Area`, `Offence Division`, …,
+  `Offence Count`, `Rate per 100,000 population`): every descriptive column is a header
+  with direction `W`; each value column's heading is a header named `measure`, direction
+  `N`. `Year` is `period` and `Year ending` (the month a 12-month year ends in) is
+  `year_ending_month`.

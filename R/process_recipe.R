@@ -19,6 +19,15 @@ process_recipe <- function(source_metadata_df, recipe_path ){
 
     # Read by name: tidyxl's numeric sheet index does not always follow workbook tab order
     sheet_df <- tidyxl::xlsx_cells(path = xlsx_path, sheets = sheet_metadata_df$sheets)
+    # Only the box around the cells the recipe names: a state crime recipe may cover the
+    # latest year's rows of a 370,000-row sheet
+    refs <- unlist(rapply(spec_ls[c("meta_data", "tables")], function(x) x, how = "unlist"))
+    refs <- refs[grepl("^[A-Z]{1,3}[0-9]+(:[A-Z]{1,3}[0-9]+)?(,[A-Z]{1,3}[0-9]+(:[A-Z]{1,3}[0-9]+)?)*$", refs)]
+    if (length(refs)) {
+        corners <- cellranger::as.cell_addr_v(unlist(stringr::str_extract_all(refs, "[A-Z]{1,3}[0-9]+")), strict = FALSE)
+        rows <- range(cellranger::addr_row(corners)); cols <- range(cellranger::addr_col(corners))
+        sheet_df <- sheet_df[sheet_df$row >= rows[1] & sheet_df$row <= rows[2] & sheet_df$col >= cols[1] & sheet_df$col <= cols[2], ]
+    }
     # Number formats, so numbers are output as published (displayed), not as stored
     num_formats <- tidyxl::xlsx_formats(xlsx_path)$local$numFmt
     sheet_data <- sheet_df %>% mutate(.value = coalesce(character,published_value(numeric, num_formats[local_format_id]),as.character(date),as.character(logical))) %>% select(row,col,address,.value)

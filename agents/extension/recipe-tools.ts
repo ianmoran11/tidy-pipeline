@@ -27,7 +27,7 @@ import { Type, type TSchema } from "typebox";
 
 const SCRIPT = "agents/tools/recipe_tools.R";
 const RECIPE_DIR = "tidy-recipes";
-const TIMEOUT_MS = 180_000;
+const TIMEOUT_MS = 300_000;
 
 const fastMode = process.env.RECIPE_FAST === "1";
 const FAST_PROVIDER = "openai-codex";

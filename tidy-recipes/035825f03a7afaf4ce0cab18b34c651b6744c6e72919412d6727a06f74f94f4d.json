@@ -1,0 +1,204 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "035825f03a7afaf4ce0cab18b34c651b6744c6e72919412d6727a06f74f94f4d",
+  "sheet": "Data",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Only annual 2025 values retained; all published changes ending in 2025 kept, including n.a. Parent offence categories span subcategories; no parent subtotal values. Murder label spans three measure rows. Published proportions are stored as fractions; changes retain p.p text. Murder and manslaughter count victims rather than incidents (Notes sheet).",
+  "new_dimensions": [
+    {
+      "name": "recorded_incident_offence",
+      "description": "Offence classification of police-recorded criminal incidents, including offences without an individual victim; not a principal-offence classification of offenders.",
+      "example_labels": [
+        "Murder *",
+        "Possession and/or use of cocaine"
+      ]
+    },
+    {
+      "name": "recorded_incident_offence_group",
+      "description": "Published parent offence category for police-recorded criminal incident offences.",
+      "example_labels": [
+        "Homicide",
+        "Drug offences"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5:C5"
+    },
+    {
+      "name": "notes",
+      "cells": "AD6:AD7,A196:A197,A199"
+    },
+    {
+      "name": "source",
+      "cells": "A194:A195"
+    }
+  ],
+  "tables": [
+    {
+      "name": "annual_legal_action",
+      "range": "A5:C191,W5:W191",
+      "values_range": "W6:W191",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "recorded_incident_offence_group",
+          "caption": "Offence category",
+          "direction": "WNW",
+          "cells": "A6,A18,A27,A33,A36,A45,A48,A51,A54,A57,A90,A93,A96,A144,A147,A159,A162,A165,A168,A186,A189"
+        },
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence sub-category",
+          "direction": "WNW",
+          "cells": "B6,B9:B191"
+        },
+        {
+          "name": "measure",
+          "caption": "Whether proceedings commenced within 90 days of reporting",
+          "direction": "W",
+          "cells": "C6:C191"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "W5"
+        }
+      ]
+    },
+    {
+      "name": "legal_action_rate_change",
+      "range": "Y5:AA5,Y8:AA8,Y11:AA11,Y14:AA14,Y17:AA17,Y20:AA20,Y23:AA23,Y26:AA26,Y29:AA29,Y32:AA32,Y35:AA35,Y38:AA38,Y41:AA41,Y44:AA44,Y47:AA47,Y50:AA50,Y53:AA53,Y56:AA56,Y59:AA59,Y62:AA62,Y65:AA65,Y68:AA68,Y71:AA71,Y74:AA74,Y77:AA77,Y80:AA80,Y83:AA83,Y86:AA86,Y89:AA89,Y92:AA92,Y95:AA95,Y98:AA98,Y101:AA101,Y104:AA104,Y107:AA107,Y110:AA110,Y113:AA113,Y116:AA116,Y119:AA119,Y122:AA122,Y125:AA125,Y128:AA128,Y131:AA131,Y134:AA134,Y137:AA137,Y140:AA140,Y143:AA143,Y146:AA146,Y149:AA149,Y152:AA152,Y155:AA155,Y158:AA158,Y161:AA161,Y164:AA164,Y167:AA167,Y170:AA170,Y173:AA173,Y176:AA176,Y179:AA179,Y182:AA182,Y185:AA185,Y188:AA188,Y191:AA191",
+      "values_range": "Y8:AA8,Y11:AA11,Y14:AA14,Y17:AA17,Y20:AA20,Y23:AA23,Y26:AA26,Y29:AA29,Y32:AA32,Y35:AA35,Y38:AA38,Y41:AA41,Y44:AA44,Y47:AA47,Y50:AA50,Y53:AA53,Y56:AA56,Y59:AA59,Y62:AA62,Y65:AA65,Y68:AA68,Y71:AA71,Y74:AA74,Y77:AA77,Y80:AA80,Y83:AA83,Y86:AA86,Y89:AA89,Y92:AA92,Y95:AA95,Y98:AA98,Y101:AA101,Y104:AA104,Y107:AA107,Y110:AA110,Y113:AA113,Y116:AA116,Y119:AA119,Y122:AA122,Y125:AA125,Y128:AA128,Y131:AA131,Y134:AA134,Y137:AA137,Y140:AA140,Y143:AA143,Y146:AA146,Y149:AA149,Y152:AA152,Y155:AA155,Y158:AA158,Y161:AA161,Y164:AA164,Y167:AA167,Y170:AA170,Y173:AA173,Y176:AA176,Y179:AA179,Y182:AA182,Y185:AA185,Y188:AA188,Y191:AA191",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "Y3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "recorded_incident_offence_group",
+          "caption": "Offence category",
+          "direction": "WNW",
+          "cells": "A6,A18,A27,A33,A36,A45,A48,A51,A54,A57,A90,A93,A96,A144,A147,A159,A162,A165,A168,A186,A189"
+        },
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence sub-category",
+          "direction": "WNW",
+          "cells": "B6,B9:B191"
+        },
+        {
+          "name": "measure",
+          "caption": "Whether proceedings commenced within 90 days of reporting",
+          "direction": "W",
+          "cells": "C6:C191"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "Y5:AA5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:50:24Z",
+    "tool_version": "0.2.0",
+    "records": 372,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204905Z-4b5882cc976b",
+    "started_at": "2026-11-03T20:49:07Z",
+    "workbook": "4b5882cc976b4b6368156250ab2b07daeb3d68d2c449db9ebbf292e6e672e323--Trends_in_90-day_legal_action_rate.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32c-3a81-70e8-8384-7aaea168bbb5",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "eded998a37337fdf027c35b47993b03134773fc7e294cde47d0d03b73606ea08",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4b5882cc976b4b6368156250ab2b07daeb3d68d2c449db9ebbf292e6e672e323--Trends_in_90-day_legal_action_rate.xlsx`.\n\n- Publication: BOCSAR — Police clear up rates (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Data\" | 035825f03a7afaf4ce0cab18b34c651b6744c6e72919412d6727a06f74f94f4d | missing |\n| \"Notes\" | 1ae7e1ea76102d7a2f675cdc2730b25d3bc7d1a19ae9caf65dfa4252d46da466 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204905Z-4b5882cc976b.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "D5:V191",
+      "reason": "Earlier years 2006–2024; most recent annual year 2025 only."
+    }
+  ]
+}

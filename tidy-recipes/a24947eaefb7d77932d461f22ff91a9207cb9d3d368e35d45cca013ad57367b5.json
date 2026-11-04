@@ -1,0 +1,218 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "a24947eaefb7d77932d461f22ff91a9207cb9d3d368e35d45cca013ad57367b5",
+  "sheet": "Table 2a",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retains December 2025 annual snapshot and all four 2025 quarterly snapshots; earlier periods excluded per BOCSAR rule. SA4 regions, Unknown and Interstate/overseas retained. Annual NSW total retained; quarterly Aboriginal and total NSW custody populations encoded separately as measures rather than regions. Annual December and quarterly December repeat published snapshots, distinguished by table titles. 'na' and ratio strings preserved.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5,A46"
+    },
+    {
+      "name": "notes",
+      "cells": "A39:A40,A81:A83,B5,L5,N5"
+    },
+    {
+      "name": "source",
+      "cells": "A80"
+    }
+  ],
+  "tables": [
+    {
+      "name": "latest_count",
+      "range": "A7:A37,K6:K37",
+      "values_range": "K7:K37",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "region",
+          "direction": "W",
+          "cells": "A7:A37",
+          "caption": "Statistical Area "
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "latest_comparisons",
+      "range": "A7:A37,L6:P37",
+      "values_range": "L7:P37",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A3"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "region",
+          "direction": "W",
+          "cells": "A7:A37",
+          "caption": "Statistical Area "
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "L6:P6"
+        }
+      ]
+    },
+    {
+      "name": "quarterly_region",
+      "range": "A47:A76,AI46:AL76",
+      "values_range": "AI47:AL76",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "region",
+          "direction": "W",
+          "cells": "A47:A76",
+          "caption": "Statistical Area "
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AI46:AL46"
+        }
+      ]
+    },
+    {
+      "name": "quarterly_population_totals",
+      "range": "A77:A78,AI77:AL78",
+      "values_range": "AI77:AL78",
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A44"
+        }
+      ],
+      "headers": [
+        {
+          "name": "measure",
+          "direction": "W",
+          "cells": "A77:A78"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "AI46:AL46"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:51:54Z",
+    "tool_version": "0.2.0",
+    "records": 314,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204953Z-3d092659cbcc",
+    "started_at": "2026-11-03T20:49:54Z",
+    "workbook": "3d092659cbccafee7c9d0ae833cdf0f49cbb21ab2c3a130d8e0f00e59265e5e8--Aboriginal_adults_contacts_with_the_justice_system_by_region_-_December_25.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32c-f450-721e-98d2-02bb2041e091",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ed82311227304f050e6e2cc90e932d2731586b5900a5818ced76c2615c9e0004",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `3d092659cbccafee7c9d0ae833cdf0f49cbb21ab2c3a130d8e0f00e59265e5e8--Aboriginal_adults_contacts_with_the_justice_system_by_region_-_December_25.xlsx`.\n\n- Publication: BOCSAR — Target 10 (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2025-12\n- Sheets needing a recipe: 5 of 5\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | c8a9b4ee84a1a9cd5fd073fe6bd0d8422b37d428ab4ba3520d5e97cdad8cfa34 | missing |\n| \"Table 1a\" | de363a59d4fa4c1b3d1e93337406070a54d662a096d128fca365016659fc8333 | missing |\n| \"Table 1b\" | bdf6a3d8f789f2add24b763b88e32a57c00e9e3f426b2393fe737a3e834105cf | missing |\n| \"Table 2a\" | a24947eaefb7d77932d461f22ff91a9207cb9d3d368e35d45cca013ad57367b5 | missing |\n| \"Table 2b\" | c7a585050da8cd6facb06687a9fe52de4690e633c3394ef3ee9ad18253e772a1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204953Z-3d092659cbcc.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B6:J37",
+      "reason": "Earlier annual snapshots or years; most recent year only."
+    },
+    {
+      "cells": "B46:AH78",
+      "reason": "Earlier quarters; latest four quarters (2025) only."
+    }
+  ]
+}

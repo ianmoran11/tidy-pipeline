@@ -1,0 +1,917 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "818b1ef1b50d30189506c550df747af5ac196a58ebafc169591c6a536e0aa4ba",
+  "sheet": "1. Summary",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "276ad1331ab9579253f69251e66a77332cb2c1cab3c423d60d0280a691ae24ec",
+  "agent_notes": "Latest annual observations retained with all published latest-period change/trend statistics, including longer comparison intervals. Unknown categories have no trend where blank. Regional parent subtotals and totals retained alongside indented children. Median/average days separated from duration bands; remand and sentenced populations distinguished. Separate titled blocks preserve overall/male/female and Aboriginal reporting populations.",
+  "new_dimensions": [
+    {
+      "name": "change_measure",
+      "description": "Published change or trend statistic and comparison interval."
+    },
+    {
+      "name": "time_in_custody",
+      "description": "Published time spent in custody bands."
+    },
+    {
+      "name": "custody_discharge_type",
+      "description": "Published custody discharge or transition type."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4,A8,A11,A15,A19,A23,A43,A77,A78,A88,A89,A100,A108,A112,A116"
+    }
+  ],
+  "tables": [
+    {
+      "name": "population_7_latest",
+      "range": "A7,K7",
+      "values_range": "K7",
+      "headers": [
+        {
+          "name": "population",
+          "cells": "A7",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "population_7_change",
+      "range": "A7,L7,M7,N7,O7,P7,Q7",
+      "values_range": "L7,M7,N7,O7,P7,Q7",
+      "headers": [
+        {
+          "name": "population",
+          "cells": "A7",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "legal_status_9_latest",
+      "range": "A9,A10,K9,K10",
+      "values_range": "K9,K10",
+      "headers": [
+        {
+          "name": "legal_status",
+          "cells": "A9,A10",
+          "direction": "W",
+          "caption": "Legal status"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "legal_status_9_change",
+      "range": "A9,A10,L9,M9,N9,O9,P9,Q9,L10,M10,N10,O10,P10,Q10",
+      "values_range": "L9,M9,N9,O9,P9,Q9,L10,M10,N10,O10,P10,Q10",
+      "headers": [
+        {
+          "name": "legal_status",
+          "cells": "A9,A10",
+          "direction": "W",
+          "caption": "Legal status"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "sex_12_latest",
+      "range": "A12,A13,A14,K12,K13,K14",
+      "values_range": "K12,K13,K14",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A12,A13,A14",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "sex_12_change",
+      "range": "A12,A13,A14,L12,M12,N12,O12,P12,Q12,L13,M13,N13,O13,P13,Q13",
+      "values_range": "L12,M12,N12,O12,P12,Q12,L13,M13,N13,O13,P13,Q13",
+      "headers": [
+        {
+          "name": "sex",
+          "cells": "A12,A13,A14",
+          "direction": "W",
+          "caption": "Gender"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_16_latest",
+      "range": "A16,A17,A18,K16,K17,K18",
+      "values_range": "K16,K17,K18",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A16,A17,A18",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status_16_change",
+      "range": "A16,A17,A18,L16,M16,N16,O16,P16,Q16,L17,M17,N17,O17,P17,Q17",
+      "values_range": "L16,M16,N16,O16,P16,Q16,L17,M17,N17,O17,P17,Q17",
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "cells": "A16,A17,A18",
+          "direction": "W",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_20_latest",
+      "range": "A20,A21,A22,K20,K21,K22",
+      "values_range": "K20,K21,K22",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A20,A21,A22",
+          "direction": "W",
+          "caption": "Age"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "age_group_20_change",
+      "range": "A20,A21,A22,L20,M20,N20,O20,P20,Q20,L21,M21,N21,O21,P21,Q21,L22,M22,N22,O22,P22,Q22",
+      "values_range": "L20,M20,N20,O20,P20,Q20,L21,M21,N21,O21,P21,Q21,L22,M22,N22,O22,P22,Q22",
+      "headers": [
+        {
+          "name": "age_group",
+          "cells": "A20,A21,A22",
+          "direction": "W",
+          "caption": "Age"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "most_serious_offence_24_latest",
+      "range": "A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,K24,K25,K26,K27,K28,K29,K30,K31,K32,K33,K34,K35,K36,K37,K38,K39,K40,K41,K42",
+      "values_range": "K24,K25,K26,K27,K28,K29,K30,K31,K32,K33,K34,K35,K36,K37,K38,K39,K40,K41,K42",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42",
+          "direction": "W",
+          "caption": "Most Serious Offence"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "most_serious_offence_24_change",
+      "range": "A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,L24,M24,N24,O24,P24,Q24,L25,M25,N25,O25,P25,Q25,L26,M26,N26,O26,P26,Q26,L27,M27,N27,O27,P27,Q27,L28,M28,N28,O28,P28,Q28,L29,M29,N29,O29,P29,Q29,L30,M30,N30,O30,P30,Q30,L31,M31,N31,O31,P31,Q31,L32,M32,N32,O32,P32,Q32,L33,M33,N33,O33,P33,Q33,L34,M34,N34,O34,P34,Q34,L35,M35,N35,O35,P35,Q35,L36,M36,N36,O36,P36,Q36,L37,M37,N37,O37,P37,Q37,L38,M38,N38,O38,P38,Q38,L39,M39,N39,O39,P39,Q39,L40,M40,N40,O40,P40,Q40,L41,M41,N41,O41,P41,Q41",
+      "values_range": "L24,M24,N24,O24,P24,Q24,L25,M25,N25,O25,P25,Q25,L26,M26,N26,O26,P26,Q26,L27,M27,N27,O27,P27,Q27,L28,M28,N28,O28,P28,Q28,L29,M29,N29,O29,P29,Q29,L30,M30,N30,O30,P30,Q30,L31,M31,N31,O31,P31,Q31,L32,M32,N32,O32,P32,Q32,L33,M33,N33,O33,P33,Q33,L34,M34,N34,O34,P34,Q34,L35,M35,N35,O35,P35,Q35,L36,M36,N36,O36,P36,Q36,L37,M37,N37,O37,P37,Q37,L38,M38,N38,O38,P38,Q38,L39,M39,N39,O39,P39,Q39,L40,M40,N40,O40,P40,Q40,L41,M41,N41,O41,P41,Q41",
+      "headers": [
+        {
+          "name": "most_serious_offence",
+          "cells": "A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42",
+          "direction": "W",
+          "caption": "Most Serious Offence"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "region_44_latest",
+      "range": "A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76,K44,K45,K46,K47,K48,K49,K50,K51,K52,K53,K54,K55,K56,K57,K58,K59,K60,K61,K62,K63,K64,K65,K66,K67,K68,K69,K70,K71,K72,K73,K74,K75,K76",
+      "values_range": "K44,K45,K46,K47,K48,K49,K50,K51,K52,K53,K54,K55,K56,K57,K58,K59,K60,K61,K62,K63,K64,K65,K66,K67,K68,K69,K70,K71,K72,K73,K74,K75,K76",
+      "headers": [
+        {
+          "name": "region",
+          "cells": "A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76",
+          "direction": "W",
+          "caption": "SA4 of residence"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        }
+      ]
+    },
+    {
+      "name": "region_44_change",
+      "range": "A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76,L44,M44,N44,O44,P44,Q44,L45,M45,N45,O45,P45,Q45,L46,M46,N46,O46,P46,Q46,L47,M47,N47,O47,P47,Q47,L48,M48,N48,O48,P48,Q48,L49,M49,N49,O49,P49,Q49,L50,M50,N50,O50,P50,Q50,L51,M51,N51,O51,P51,Q51,L52,M52,N52,O52,P52,Q52,L53,M53,N53,O53,P53,Q53,L54,M54,N54,O54,P54,Q54,L55,M55,N55,O55,P55,Q55,L56,M56,N56,O56,P56,Q56,L57,M57,N57,O57,P57,Q57,L58,M58,N58,O58,P58,Q58,L59,M59,N59,O59,P59,Q59,L60,M60,N60,O60,P60,Q60,L61,M61,N61,O61,P61,Q61,L62,M62,N62,O62,P62,Q62,L63,M63,N63,O63,P63,Q63,L64,M64,N64,O64,P64,Q64,L65,M65,N65,O65,P65,Q65,L66,M66,N66,O66,P66,Q66,L67,M67,N67,O67,P67,Q67,L68,M68,N68,O68,P68,Q68,L69,M69,N69,O69,P69,Q69,L70,M70,N70,O70,P70,Q70,L71,M71,N71,O71,P71,Q71,L72,M72,N72,O72,P72,Q72,L73,M73,N73,O73,P73,Q73,L74,M74,N74,O74,P74,Q74,L75,M75,N75,O75,P75,Q75",
+      "values_range": "L44,M44,N44,O44,P44,Q44,L45,M45,N45,O45,P45,Q45,L46,M46,N46,O46,P46,Q46,L47,M47,N47,O47,P47,Q47,L48,M48,N48,O48,P48,Q48,L49,M49,N49,O49,P49,Q49,L50,M50,N50,O50,P50,Q50,L51,M51,N51,O51,P51,Q51,L52,M52,N52,O52,P52,Q52,L53,M53,N53,O53,P53,Q53,L54,M54,N54,O54,P54,Q54,L55,M55,N55,O55,P55,Q55,L56,M56,N56,O56,P56,Q56,L57,M57,N57,O57,P57,Q57,L58,M58,N58,O58,P58,Q58,L59,M59,N59,O59,P59,Q59,L60,M60,N60,O60,P60,Q60,L61,M61,N61,O61,P61,Q61,L62,M62,N62,O62,P62,Q62,L63,M63,N63,O63,P63,Q63,L64,M64,N64,O64,P64,Q64,L65,M65,N65,O65,P65,Q65,L66,M66,N66,O66,P66,Q66,L67,M67,N67,O67,P67,Q67,L68,M68,N68,O68,P68,Q68,L69,M69,N69,O69,P69,Q69,L70,M70,N70,O70,P70,Q70,L71,M71,N71,O71,P71,Q71,L72,M72,N72,O72,P72,Q72,L73,M73,N73,O73,P73,Q73,L74,M74,N74,O74,P74,Q74,L75,M75,N75,O75,P75,Q75",
+      "headers": [
+        {
+          "name": "region",
+          "cells": "A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76",
+          "direction": "W",
+          "caption": "SA4 of residence"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        }
+      ]
+    },
+    {
+      "name": "measure_79_latest",
+      "range": "A79,A80,K79,K80",
+      "values_range": "K79,K80",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A79,A80",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A77"
+        }
+      ]
+    },
+    {
+      "name": "measure_79_change",
+      "range": "A79,A80,L79,M79,N79,O79,P79,Q79,L80,M80,N80,O80,P80,Q80",
+      "values_range": "L79,M79,N79,O79,P79,Q79,L80,M80,N80,O80,P80,Q80",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A79,A80",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A77"
+        }
+      ]
+    },
+    {
+      "name": "time_in_custody_81_latest",
+      "range": "A81,A82,A83,A84,A85,A86,A87,K81,K82,K83,K84,K85,K86,K87",
+      "values_range": "K81,K82,K83,K84,K85,K86,K87",
+      "headers": [
+        {
+          "name": "time_in_custody",
+          "cells": "A81,A82,A83,A84,A85,A86,A87",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A77"
+        }
+      ]
+    },
+    {
+      "name": "time_in_custody_81_change",
+      "range": "A81,A82,A83,A84,A85,A86,A87,L81,M81,N81,O81,P81,Q81,L82,M82,N82,O82,P82,Q82,L83,M83,N83,O83,P83,Q83,L84,M84,N84,O84,P84,Q84,L85,M85,N85,O85,P85,Q85,L86,M86,N86,O86,P86,Q86,L87,M87,N87,O87,P87,Q87",
+      "values_range": "L81,M81,N81,O81,P81,Q81,L82,M82,N82,O82,P82,Q82,L83,M83,N83,O83,P83,Q83,L84,M84,N84,O84,P84,Q84,L85,M85,N85,O85,P85,Q85,L86,M86,N86,O86,P86,Q86,L87,M87,N87,O87,P87,Q87",
+      "headers": [
+        {
+          "name": "time_in_custody",
+          "cells": "A81,A82,A83,A84,A85,A86,A87",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A77"
+        }
+      ]
+    },
+    {
+      "name": "measure_90_latest",
+      "range": "A90,A91,K90,K91",
+      "values_range": "K90,K91",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A90,A91",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A88"
+        }
+      ]
+    },
+    {
+      "name": "measure_90_change",
+      "range": "A90,A91,L90,M90,N90,O90,P90,Q90,L91,M91,N91,O91,P91,Q91",
+      "values_range": "L90,M90,N90,O90,P90,Q90,L91,M91,N91,O91,P91,Q91",
+      "headers": [
+        {
+          "name": "measure",
+          "cells": "A90,A91",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A88"
+        }
+      ]
+    },
+    {
+      "name": "time_in_custody_92_latest",
+      "range": "A92,A93,A94,A95,A96,A97,K92,K93,K94,K95,K96,K97",
+      "values_range": "K92,K93,K94,K95,K96,K97",
+      "headers": [
+        {
+          "name": "time_in_custody",
+          "cells": "A92,A93,A94,A95,A96,A97",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A88"
+        }
+      ]
+    },
+    {
+      "name": "time_in_custody_92_change",
+      "range": "A92,A93,A94,A95,A96,A97,L92,M92,N92,O92,P92,Q92,L93,M93,N93,O93,P93,Q93,L94,M94,N94,O94,P94,Q94,L95,M95,N95,O95,P95,Q95,L96,M96,N96,O96,P96,Q96,L97,M97,N97,O97,P97,Q97",
+      "values_range": "L92,M92,N92,O92,P92,Q92,L93,M93,N93,O93,P93,Q93,L94,M94,N94,O94,P94,Q94,L95,M95,N95,O95,P95,Q95,L96,M96,N96,O96,P96,Q96,L97,M97,N97,O97,P97,Q97",
+      "headers": [
+        {
+          "name": "time_in_custody",
+          "cells": "A92,A93,A94,A95,A96,A97",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L6:Q6",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A6"
+        },
+        {
+          "name": "period",
+          "cells": "K6"
+        },
+        {
+          "name": "legal_status",
+          "cells": "A88"
+        }
+      ]
+    },
+    {
+      "name": "legal_status_103_latest",
+      "range": "A103,A104,A105,K103,K104,K105",
+      "values_range": "K103,K104,K105",
+      "headers": [
+        {
+          "name": "legal_status",
+          "cells": "A103,A104,A105",
+          "direction": "W",
+          "caption": "Legal status"
+        },
+        {
+          "name": "period",
+          "cells": "K102",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A102"
+        }
+      ]
+    },
+    {
+      "name": "legal_status_103_change",
+      "range": "A103,A104,A105,L103,M103,N103,O103,P103,Q103,L104,M104,N104,O104,P104,Q104,L105,M105,N105,O105,P105,Q105",
+      "values_range": "L103,M103,N103,O103,P103,Q103,L104,M104,N104,O104,P104,Q104,L105,M105,N105,O105,P105,Q105",
+      "headers": [
+        {
+          "name": "legal_status",
+          "cells": "A103,A104,A105",
+          "direction": "W",
+          "caption": "Legal status"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L102:Q102",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A102"
+        },
+        {
+          "name": "period",
+          "cells": "K102"
+        }
+      ]
+    },
+    {
+      "name": "custody_discharge_type_111_latest",
+      "range": "A111,K111",
+      "values_range": "K111",
+      "headers": [
+        {
+          "name": "custody_discharge_type",
+          "cells": "A111",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K110",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A110"
+        }
+      ]
+    },
+    {
+      "name": "custody_discharge_type_111_change",
+      "range": "A111,L111,M111,N111,O111,P111,Q111",
+      "values_range": "L111,M111,N111,O111,P111,Q111",
+      "headers": [
+        {
+          "name": "custody_discharge_type",
+          "cells": "A111",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L110:Q110",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A110"
+        },
+        {
+          "name": "period",
+          "cells": "K110"
+        }
+      ]
+    },
+    {
+      "name": "custody_discharge_type_113_latest",
+      "range": "A113,A114,A115,K113,K114,K115",
+      "values_range": "K113,K114,K115",
+      "headers": [
+        {
+          "name": "custody_discharge_type",
+          "cells": "A113,A114,A115",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K110",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A110"
+        }
+      ]
+    },
+    {
+      "name": "custody_discharge_type_113_change",
+      "range": "A113,A114,A115,L113,M113,N113,O113,P113,Q113,L114,M114,N114,O114,P114,Q114,L115,M115,N115,O115,P115,Q115",
+      "values_range": "L113,M113,N113,O113,P113,Q113,L114,M114,N114,O114,P114,Q114,L115,M115,N115,O115,P115,Q115",
+      "headers": [
+        {
+          "name": "custody_discharge_type",
+          "cells": "A113,A114,A115",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L110:Q110",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A110"
+        },
+        {
+          "name": "period",
+          "cells": "K110"
+        }
+      ]
+    },
+    {
+      "name": "custody_discharge_type_117_latest",
+      "range": "A117,A118,A119,K117,K118,K119",
+      "values_range": "K117,K118,K119",
+      "headers": [
+        {
+          "name": "custody_discharge_type",
+          "cells": "A117,A118,A119",
+          "direction": "W"
+        },
+        {
+          "name": "period",
+          "cells": "K110",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A110"
+        }
+      ]
+    },
+    {
+      "name": "custody_discharge_type_117_change",
+      "range": "A117,A118,A119,L117,M117,N117,O117,P117,Q117,L118,M118,N118,O118,P118,Q118,L119,M119,N119,O119,P119,Q119",
+      "values_range": "L117,M117,N117,O117,P117,Q117,L118,M118,N118,O118,P118,Q118,L119,M119,N119,O119,P119,Q119",
+      "headers": [
+        {
+          "name": "custody_discharge_type",
+          "cells": "A117,A118,A119",
+          "direction": "W"
+        },
+        {
+          "name": "change_measure",
+          "cells": "L110:Q110",
+          "direction": "N"
+        }
+      ],
+      "meta_data": [
+        {
+          "name": "table_title",
+          "cells": "A110"
+        },
+        {
+          "name": "period",
+          "cells": "K110"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:48:25Z",
+    "tool_version": "0.2.0",
+    "records": 613,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204342Z-f27d7ac68211",
+    "started_at": "2026-11-03T20:43:43Z",
+    "workbook": "f27d7ac682110f815edd597132ea5db58128d9147d01ada0cd0d97467310d4b8--Youth_Custody_Report_-_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a327-49ee-7520-ae51-9449d1338f88",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "bf77e46d50cf004945b2434525678b8469ec2f6b4832849b0d883ae5085079aa",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `f27d7ac682110f815edd597132ea5db58128d9147d01ada0cd0d97467310d4b8--Youth_Custody_Report_-_June_2026.xlsx`.\n\n- Publication: BOCSAR — Custody (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2026-06\n- Sheets needing a recipe: 16 of 16\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Cover\" | 63d0d04cdba8e5086a352f3a97d1232a294bff7eedb31a8bf17da608ce5c2ad7 | missing |\n| \"Table of contents\" | e1eb47c4e6d04380be8de1aeb463bb998fbfa2a50ee8bdcfc55fd563c87f8085 | missing |\n| \"1. Summary\" | 818b1ef1b50d30189506c550df747af5ac196a58ebafc169591c6a536e0aa4ba | missing |\n| \"2. Aboriginal Summary\" | 9eafec0bdb2db17db2cee3314329f94dfa22c1621986f9e6c357844d49d31ba0 | missing |\n| \"3. Custody population\" | 00565ca8476241f9d079a9f5be1ce665bdfd3b9aecb2fa2c21ec95e3c2a5f0f1 | missing |\n| \"4. Population by offence\" | 0053c4974d8df1e169c2b0c5d18610a95f539abb62502a6d51637527c0fafb06 | missing |\n| \"5. Population by SA4\" | 3a0c1e3bc754407466a2521800619d515fb8898a0fa2b8ec56b7a75f50416db2 | missing |\n| \"6. Custody receptions\" | 9597fb6296760f17a9b17749f4d12ccb4938cd5b36a4812877e9fb2069036d2c | missing |\n| \"7. Custody discharges\" | 9e1bb34f11dda072c674393c72d6f2bb8e014b2d10f507edac6b40d238071c66 | missing |\n| \"8. Remand to Sentenced\" | 7448e4148ed2e2428a5a74b6c78a3d3a08f02ee37ccb42193a76007d27479341 | missing |\n| \"9. Time on remand\" | 21f0b2a09d1ad4b6c07f596814680d55069920f36ee885b4cbbeb58a8805defe | missing |\n| \"10. Aboriginal time on remand\" | f081fed6d42a442dcbcd47c326c12c17d77690fe5ca3063976d1dfc87b1ed9c5 | missing |\n| \"stock_data\" | 7f9277e57ecd26ed6e8113657ace1f0332749fe251890429192d0a9711f55914 | missing |\n| \"reception_data\" | 728f11ccaf0395f63d0a8f6d40b144bf179c355fc6161d54fb5165036291ade9 | missing |\n| \"discharge_data\" | 7e196481c9ad7bc6b815717d3d4afcc298bf435550ac9c4971e880ee0ad3f771 | missing |\n| \"remand_to_sentenced_data\" | 4311b168484abf84d5227c44de3c621014ec440acd0c161c638e45ca98579cb4 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204342Z-f27d7ac68211.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B1:J119",
+      "reason": "Earlier annual observations; latest year only."
+    }
+  ]
+}

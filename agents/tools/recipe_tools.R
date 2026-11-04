@@ -429,6 +429,7 @@ validate_spec <- function(path, meta) {
   }
 
   check_meta(spec$meta_data, "sheet", "sheet")
+  for (ex in spec$excluded %||% list()) check_cells(ex$cells, "excluded")
 
   if (kind == "data") {
     tables <- spec$tables
@@ -511,8 +512,13 @@ run_checks <- function(path, meta) {
   failures <- character()
 
   sheet_meta_addrs <- unlist(map(spec$meta_data %||% list(), ~ expand_excel_range(.x$cells)))
+  # Ranges left out on purpose, each with a reason (state crime statistics keep only the
+  # most recent year; references/layouts.md)
+  excluded <- unique(unlist(map(spec$excluded %||% list(), ~ expand_excel_range(.x$cells))))
+  if (some(spec$excluded %||% list(), ~ nchar(str_trim(.x$reason %||% "")) < 10)) failures <- c(failures, "every excluded range needs a reason")
 
   if (spec$kind != "data") {
+    numeric_cells <- setdiff(numeric_cells, excluded)
     if (length(numeric_cells)) {
       failures <- c(failures, paste0("kind ", spec$kind, " but the sheet has ", length(numeric_cells),
                                      " numeric cells, e.g. ", str_flatten(first_n(numeric_cells, 5), ", ")))
@@ -584,18 +590,22 @@ run_checks <- function(path, meta) {
   labelled <- bind_rows(map(result$tables, function(res) {
     meta <- res$meta_data_list[!names(res$meta_data_list) %in% not_labels]
     table_key <- paste(names(meta), map_chr(meta, ~ paste(.x, collapse = " ")), sep = "=", collapse = "|")
-    map_dfr(res$tidy_table_list, function(rec) {
-      l <- rec[!names(rec) %in% c("row", "col", "address", ".value")]; l <- l[order(names(l))]
-      tibble(key = paste(table_key, paste(names(l), map_chr(l, ~ paste(.x, collapse = " ")), sep = "=", collapse = "|"), sep = "||"),
-             value = as.character(rec[[".value"]] %||% NA), address = rec[["address"]])
-    })
+    # One string per record, not one tibble: a sheet can have 800,000 records
+    recs <- res$tidy_table_list
+    if (!length(recs)) return(NULL)
+    tibble(key = paste(table_key, map_chr(recs, function(rec) {
+             l <- rec[!names(rec) %in% c("row", "col", "address", ".value")]; l <- l[order(names(l))]
+             paste(names(l), map_chr(l, ~ paste(.x, collapse = " ")), sep = "=", collapse = "|")
+           }), sep = "||"),
+           value = map_chr(recs, ~ as.character(.x[[".value"]] %||% NA)),
+           address = map_chr(recs, ~ .x[["address"]]))
   }))
   clashes <- labelled %>% filter(!is.na(value)) %>% group_by(key) %>% filter(n_distinct(value) > 1) %>% summarise(cells = str_flatten(first_n(address, 3), ", "), .groups = "drop")
   if (nrow(clashes)) failures <- c(failures, paste0(nrow(clashes), " groups of value cells have the same labels but different values, e.g. ", clashes$cells[1],
                                                     ". Add the label that tells them apart (references/layouts.md, \"Cells that differ only by position\")"))
 
   table_areas <- unique(unlist(map(spec$tables, ~ expand_excel_range(.x$range))))
-  numeric_outside <- setdiff(numeric_cells, table_areas)
+  numeric_outside <- setdiff(numeric_cells, c(table_areas, excluded))
   if (length(numeric_outside)) failures <- c(failures, paste0(length(numeric_outside), " numeric cells are outside every table range, e.g. ", str_flatten(first_n(numeric_outside, 8), ", ")))
   text_outside <- setdiff(nonblank, c(table_areas, all_referenced))
 
@@ -606,6 +616,7 @@ run_checks <- function(path, meta) {
     records = sum(map_int(table_reports, "records")),
     double_covered = length(double_covered),
     numeric_outside_tables = length(numeric_outside),
+    numeric_excluded = length(intersect(numeric_cells, excluded)),
     unreferenced_text_outside_tables = as.list(first_n(text_outside, 10)),
     r_warnings = as.list(first_n(messages, 5)),
     passed = length(failures) == 0,

@@ -1,0 +1,133 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "7896e62b3ef1a87f8d12927868c1c9abd6536fb072e4c64b2547ddee88cadd48",
+  "sheet": "Table 02",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Unique female Aboriginal alleged offenders, 2025. Overall age rows and VICTORIA totals retained; these are not additive to constituent rows. Homelessness refers to any time in the last two years. Confidentialised person counts 1–3 are published as 2. RAJAC is a publisher reporting region.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1,B1,C1,D1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "data",
+      "range": "A1:E121",
+      "values_range": "E2:E121",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A121"
+        },
+        {
+          "name": "region",
+          "caption": "RAJAC",
+          "direction": "W",
+          "cells": "B2:B121"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age Range",
+          "direction": "W",
+          "cells": "C2:C121"
+        },
+        {
+          "name": "homelessness_status",
+          "caption": "Homelessness Status",
+          "direction": "W",
+          "cells": "D2:D121"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "E1:E1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:54:31Z",
+    "tool_version": "0.2.0",
+    "records": 120,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205304Z-0f80be3c3d13",
+    "started_at": "2026-11-03T20:53:05Z",
+    "workbook": "0f80be3c3d134e290737de74e2ec9060a63010b66ec2af07c0ce215e05dc0d3e--AJI-Women-and-Girls-Year-Ending-December-2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32f-dcf1-75bc-bb11-f255ead30938",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "0af5414a64e543fc7f27d916791e537dcdf57351ee55e53634c263f9375366b1",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0f80be3c3d134e290737de74e2ec9060a63010b66ec2af07c0ce215e05dc0d3e--AJI-Women-and-Girls-Year-Ending-December-2025.xlsx`.\n\n- Publication: Crime Statistics Agency - Aboriginal Justice Indicators dashboard (Crime Statistics Agency Victoria)\n- Release or year: 2025-12\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 051cf5399f567c21eee3d7fe9a0c6ea0b612a6a02d9481f27ebdd81cc4d5613e | missing |\n| \"Footnotes\" | be36fe86b7235ef04575b072c16cf78adf83f92b97cb14aae8f39aaeea898263 | missing |\n| \"Table 01\" | c0804697970d9a2a573bc0c7eb29d93ceeb49a02320083eea82aabc43db0f54d | missing |\n| \"Table 02\" | 7896e62b3ef1a87f8d12927868c1c9abd6536fb072e4c64b2547ddee88cadd48 | missing |\n| \"Table 03\" | fe29bbbb4d3ada03818588800527293c7e9ae06428ddea51ab4eead71fc87747 | missing |\n| \"Table 04\" | eae738070225f2c773eb67449d0ade5d5ccd2ddfd20c6b7819aaf5ddd02b2b1e | missing |\n| \"Table 05\" | 81cc204d7fc43de473894c2f1346d67835a37ae44b0dee70ca0cef70c396d65e | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205304Z-0f80be3c3d13.jsonl"
+  }
+}

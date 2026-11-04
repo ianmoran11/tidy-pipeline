@@ -1,0 +1,143 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "cff9c2303e7d8a6739b2d6ce0a7ec121efab90698b87a6cb827afb755f61b58d",
+  "sheet": "Month",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "3adc6ebd7e9fbb721af2822a442587c91a91e1b378b01bdda9ee14c8f85dfe0d",
+  "agent_notes": "Months are within July 2025–June 2026: July–December 2025 and January–June 2026; counts are by occurrence, not reporting date.",
+  "new_dimensions": [
+    {
+      "name": "reporting_period",
+      "description": "Annual window containing the published month-of-occurrence distribution."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A41,A43:A44,A46"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6"
+    }
+  ],
+  "tables": [
+    {
+      "name": "month",
+      "range": "A6:M39",
+      "values_range": "B7:M39",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "reporting_period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A7:A39",
+          "caption": "Offence type"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "B6:M6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:34:28Z",
+    "tool_version": "0.2.0",
+    "records": 396,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T203327Z-9ffba86e2e19",
+    "started_at": "2026-11-03T20:33:29Z",
+    "workbook": "9ffba86e2e193da08dbb805357054d19c0d10f5f091896b49c5faa0dd24d39e5--OberonLGA.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a31d-eb3d-7654-902d-4e042c624878",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "8880d723976b28f4decdc2d0aaf582adbc031a643241a45c5be45b0551860f5c",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9ffba86e2e193da08dbb805357054d19c0d10f5f091896b49c5faa0dd24d39e5--OberonLGA.xlsx`.\n\n- Publication: BOCSAR — Crime statistics by LGA (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Summary of offences\" | 307f761946331fdb47f1cf54debd7a8a80cbfe77a403dca24baa3c9df41b21fa | missing |\n| \"Premises Type\" | 88cf956430454f64990f7e68f5e4e0d1317fd6492b17099bd6a90e5bad8f57f4 | missing |\n| \"Victims\" | 557074b32e0784dcf19cd3252eaa393e45672398f0d6161b5b238aeea22547fd | missing |\n| \"Offenders\" | a705dee4aea1ed3006ac3a033771928e25bb2f904269c95abbb5930c80ffbc3e | missing |\n| \"Alcohol Related\" | 1a27f9ce4e2f0c98082a617e978c901a5b3610afa1ff00fe38d008175b03e27f | missing |\n| \"Month\" | cff9c2303e7d8a6739b2d6ce0a7ec121efab90698b87a6cb827afb755f61b58d | missing |\n| \"Time\" | 1264a9a5fbb6d7e9c522c7fd5ce14007fa6c8f6aa14b556a6c052aa6d70d7775 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T203327Z-9ffba86e2e19.jsonl"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "087b0efd5af5217b53f74939a7af52d4fd4b1fd892b61333020e2d91fd7268fd",
+  "sheet": "2.Offences - Annual",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest year July 2025–June 2026 only. Total NSW, offence totals and method totals retained alongside detail: overlapping totals must not be summed together. Counts are legal actions for each BSOC 2023 offence, not persons' principal offences. Transport NSW camera matters are excluded by publisher; pre-2025 classifications are not directly comparable.",
+  "new_dimensions": [
+    {
+      "name": "driving_offence_type",
+      "description": "Driving offence type under BOCSAR BSOC 2023, counting legal actions for each offence rather than a person's principal offence.",
+      "example_labels": [
+        "Driving causing death",
+        "Drink-driving - Special range PCA",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "release",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5:C5"
+    },
+    {
+      "name": "notes",
+      "cells": "A13107:A13111,A13113:A13115"
+    },
+    {
+      "name": "source",
+      "cells": "A13112"
+    }
+  ],
+  "tables": [
+    {
+      "name": "driving_offences",
+      "range": "A5:C13105,M5:M13105",
+      "values_range": "M6:M13105",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "local_government_area",
+          "caption": "Local Government Area where the offence occurred",
+          "direction": "W",
+          "cells": "A6:A13105"
+        },
+        {
+          "name": "driving_offence_type",
+          "caption": "Driving offence type",
+          "direction": "W",
+          "cells": "B6:B13105"
+        },
+        {
+          "name": "method_of_proceeding",
+          "caption": "Method of legal proceeding",
+          "direction": "W",
+          "cells": "C6:C13105"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "M5:M5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T19:23:01Z",
+    "tool_version": "0.2.0",
+    "records": 13100,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T191104Z-c0aaf298015b",
+    "started_at": "2026-11-03T19:11:05Z",
+    "workbook": "c0aaf298015ba5de74f615a392db35de3129fd47670fb8a11f3a73c43bab9f8b--Driving_offences.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2d2-7cd4-7652-9906-4cf36178d43f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "bd3ab592becb7f1d1fccbffeb48ba27efe0f80f11ae563df33e310570c64b896",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c0aaf298015ba5de74f615a392db35de3129fd47670fb8a11f3a73c43bab9f8b--Driving_offences.xlsx`.\n\n- Publication: BOCSAR — Driving offences (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 4 of 4\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"1.Explanatory Notes\" | 6b90a047de33769aabbd9239718cf814aac71592aecfe7d665c5a48653385d40 | missing |\n| \"2.Offences - Annual\" | 087b0efd5af5217b53f74939a7af52d4fd4b1fd892b61333020e2d91fd7268fd | missing |\n| \"3.Offences - Monthly\" | f6c0368482c4baa857f5bce9ba2be5c916bd779bf05a3a07bdfc33524cf766d7 | missing |\n| \"4.Offence Rate - Annual\" | f531a68386698f834d7f1b82036df79c6a4682d8d7eb9f0380876bbc63dc09f6 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T191104Z-c0aaf298015b.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "D5:L13105",
+      "reason": "Earlier periods; most recent year only (Jul 2025 - Jun 2026)."
+    }
+  ]
+}

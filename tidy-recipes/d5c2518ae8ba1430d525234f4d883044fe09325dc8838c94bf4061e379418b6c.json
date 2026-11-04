@@ -1,0 +1,173 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d5c2518ae8ba1430d525234f4d883044fe09325dc8838c94bf4061e379418b6c",
+  "sheet": "Table 05",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Most recent annual period only: year ending June 2026. Earlier years explicitly excluded. All published totals and labels retained. Confidential counts 1–3 are assigned 2 when calculating totals. From 1 October 2025 ages 10–11 are excluded following changes in criminal responsibility age. Offence information is not available for all initial grants; warrant charge, bail no charge and no offence information categories retained. Schedule categories reflect selected Bail Act 1977 Schedule 1/2 offence types, not all situations covered by the Act.",
+  "new_dimensions": [
+    {
+      "name": "bail_decision_agency",
+      "description": "Agency or court providing the bail decision data, published as Data Source.",
+      "example_labels": [
+        "Victoria Police"
+      ]
+    },
+    {
+      "name": "bail_offence_type",
+      "description": "Offence-information context of a Victoria Police initial bail granted decision.",
+      "example_labels": [
+        "Bail charges",
+        "Bail no charge",
+        "No offence information",
+        "Warrant charge"
+      ]
+    },
+    {
+      "name": "bail_act_schedule",
+      "description": "Bail Act schedule offence classification or non-charge/missing-information context of the initial bail granted decision.",
+      "example_labels": [
+        "No scheduled offence",
+        "Schedule 1 offences",
+        "Schedule 2 offences"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:E1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "initial_bail_granted",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A7"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B7"
+        },
+        {
+          "name": "bail_decision_agency",
+          "caption": "Data Source",
+          "direction": "W",
+          "cells": "C2:C7"
+        },
+        {
+          "name": "bail_offence_type",
+          "caption": "Bail Offence Type",
+          "direction": "W",
+          "cells": "D2:D7"
+        },
+        {
+          "name": "bail_act_schedule",
+          "caption": "Bail Act Schedule",
+          "direction": "W",
+          "cells": "E2:E7"
+        },
+        {
+          "name": "measure",
+          "caption": "Record Count",
+          "direction": "N",
+          "cells": "F1"
+        }
+      ],
+      "range": "A1:F7",
+      "values_range": "F2:F7"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:01:31Z",
+    "tool_version": "0.2.0",
+    "records": 6,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205955Z-c0e4e62fa01d",
+    "started_at": "2026-11-03T20:59:57Z",
+    "workbook": "c0e4e62fa01dc6782f8a227339420a4991224e01ffc86706f9e45d8eaae3b6fe--Victoria_Police_Data_Tables_Bail_Visualisation_Year_Ending_June_2026_0.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a336-2676-71f4-93fa-18ef55bf8c0f",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "36b500ebb8877021ef3a8e6929acba292494a029c5ca1cddd9754e90cca529e7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c0e4e62fa01dc6782f8a227339420a4991224e01ffc86706f9e45d8eaae3b6fe--Victoria_Police_Data_Tables_Bail_Visualisation_Year_Ending_June_2026_0.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Bail statistics (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 341a056089372eff35efbd3abdd95e0395d48c3d4ce9f6b4a083c4f2ee3ef842 | missing |\n| \"Footnotes\" | c2350111f8e3f8aaca3d8c63ebae1f16f52c7e4fdfc42a3f2d9914c7cd40dba3 | missing |\n| \"Table 01\" | 2c69083a39c1ef438808ab0faaf1d09d7790dbd197544dc2d4bd47cba5729031 | missing |\n| \"Table 02\" | 617e6cf6c3fb9bedce84de1ede66bfb9c10ce007b1b6b1e114f71dd3381a0a9f | missing |\n| \"Table 03\" | d435e2a9eca8c813404551feb4d418238e871655d1e466e726f247698c84540b | missing |\n| \"Table 04\" | 0ab3e9afac163d7b9d303d6bb3d0ec0c7b33938978289d38a0d476bf7f29c447 | missing |\n| \"Table 05\" | d5c2518ae8ba1430d525234f4d883044fe09325dc8838c94bf4061e379418b6c | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205955Z-c0e4e62fa01d.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A8:F49",
+      "reason": "earlier years; most recent year only"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Published (displayed) values: the stored number rounded the way Excel shows it
 # under the cell's number format, e.g. 2.37887238760836 with format "0.0" -> "2.4".
+# A percentage format shows the stored fraction times 100: -0.204 with "0.0%" -> "-20.4"
+# (the % sign itself is the unit, as in tables that print percentages as plain numbers).
 
 # tidyxl 1.0.10 misreports Excel's built-in formats 3, 4 and 37-40 with ";" in
 # place of the thousands separator ("#;##0.00" for "#,##0.00"), which reads as
@@ -18,23 +20,32 @@ fix_numfmt <- function(numfmt) {
   ifelse(is.na(fixed), numfmt, fixed)
 }
 
-# Decimal places shown by an Excel number format for a value of this sign.
-# NA for formats left as stored: General, text, percentages, scientific, fractions.
-format_decimals <- function(numfmt, x) {
+# The format section that applies to a value of this sign, without quoted text, escaped
+# characters, [colour/locale] blocks and _/* padding
+format_section <- function(numfmt, x) {
   numfmt <- fix_numfmt(numfmt)
   mapply(function(fmt, v) {
-    if (is.na(fmt) || fmt %in% c("General", "@")) return(NA_integer_)
-    # drop quoted text, escaped characters, [colour/locale] blocks and _/* padding
-    f <- gsub('"[^"]*"|\\\\.|\\[[^]]*\\]|[_*].', "", fmt)
-    sections <- strsplit(f, ";", fixed = TRUE)[[1]]
-    s <- if (!is.na(v) && v < 0 && length(sections) >= 2) sections[2]
-         else if (!is.na(v) && v == 0 && length(sections) >= 3) sections[3]
-         else sections[1]
-    if (grepl("[eE][+-]|/|%", s)) return(NA_integer_)
-    dec <- regmatches(s, regexpr("(?<=\\.)[0#?]+", s, perl = TRUE))
-    if (length(dec)) nchar(dec) else 0L
+    if (is.na(fmt)) return(NA_character_)
+    sections <- strsplit(gsub('"[^"]*"|\\\\.|\\[[^]]*\\]|[_*].', "", fmt), ";", fixed = TRUE)[[1]]
+    if (!length(sections)) return("")
+    if (!is.na(v) && v < 0 && length(sections) >= 2) sections[2]
+    else if (!is.na(v) && v == 0 && length(sections) >= 3) sections[3]
+    else sections[1]
   }, numfmt, x, USE.NAMES = FALSE)
 }
+
+# Decimal places shown by an Excel number format for a value of this sign.
+# NA for formats left as stored: General, text, scientific, fractions.
+format_decimals <- function(numfmt, x) {
+  vapply(format_section(numfmt, x), function(s) {
+    if (is.na(s) || s %in% c("General", "@") || grepl("[eE][+-]|/", s)) return(NA_integer_)
+    dec <- regmatches(s, regexpr("(?<=\\.)[0#?]+", s, perl = TRUE))
+    if (length(dec)) nchar(dec) else 0L
+  }, 1L, USE.NAMES = FALSE)
+}
+
+# TRUE where the format shows the value as a percentage
+format_percent <- function(numfmt, x) grepl("%", format_section(numfmt, x), fixed = TRUE)
 
 # Round like Excel's display: take the 15-significant-digit decimal form and round
 # half away from zero. R's round() differs: round(2.5) is 2, round(2.675, 2) is 2.67.
@@ -72,6 +83,8 @@ format_stars <- function(numfmt, x) {
 }
 
 published_value <- function(x, numfmt) {
+  if (!length(x)) return(character())  # a sheet with no cells (an xlsm's VBA module)
+  pct <- format_percent(numfmt, x); x[pct] <- x[pct] * 100
   d <- format_decimals(numfmt, x)
   text <- number_text(ifelse(is.na(d), x, excel_round(x, d)))
   stars <- format_stars(numfmt, x)

@@ -1,0 +1,158 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "2308f84db9af87860b2c6b6ea7b6fde9f9a7e0ac1faa4a2089f2e9fb393926b2",
+  "sheet": "Time",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "89e79cfd2cdb663b4a801e158da136cf8db7351be03320811135c450e6ab8e79",
+  "agent_notes": "Published labels and whitespace retained.",
+  "new_dimensions": [
+    {
+      "name": "day_of_week",
+      "description": "Day of week of the criminal incident."
+    },
+    {
+      "name": "incident_time_band",
+      "description": "Six-hour clock-time band in which the criminal incident occurred.",
+      "example_labels": [
+        "12-6am",
+        "6am-12pm",
+        "12-6pm",
+        "6pm-12am"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A42,A44:A45,A47"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7"
+    }
+  ],
+  "tables": [
+    {
+      "name": "time",
+      "range": "A6:AC40",
+      "values_range": "B8:AC40",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "direction": "W",
+          "cells": "A8:A40",
+          "caption": "Offence type"
+        },
+        {
+          "name": "day_of_week",
+          "direction": "NNW",
+          "cells": "B6,F6,J6,N6,R6,V6,Z6"
+        },
+        {
+          "name": "incident_time_band",
+          "direction": "N",
+          "cells": "B7:AC7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:27:50Z",
+    "tool_version": "0.2.0",
+    "records": 924,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T202629Z-5c0dc2d756be",
+    "started_at": "2026-11-03T20:26:30Z",
+    "workbook": "5c0dc2d756bed549f61a1096b4e9513e82c1b99bef7d8d21ff7cb4cd4d016bfa--WoollahraLGA.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a317-8681-7425-abc3-227a3778bf66",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "08a8aa4ec2ae2dac5a286f33647746525fad17bfc312f5c5a934c8818f656eb8",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5c0dc2d756bed549f61a1096b4e9513e82c1b99bef7d8d21ff7cb4cd4d016bfa--WoollahraLGA.xlsx`.\n\n- Publication: BOCSAR — Crime statistics by LGA (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Summary of offences\" | b3326287a61088b969dede1796b6f44895e1f40f4662b70260a67b777722cb7e | missing |\n| \"Premises Type\" | fb2ce1b5f8bceee2c5c14a0caa14485ae559caec33bb844f7f58c8631f71168a | missing |\n| \"Victims\" | d61ecb998610ccf98e250388ea66a9e6a9a251928ead8fcfaff14ee0373db77f | missing |\n| \"Offenders\" | c10216551a4718cdf02ca5061e32b8544f280c33c7c2fc32728f4d8e3ba63a7d | missing |\n| \"Alcohol Related\" | fba81b60680b0139c37619700709d9bce0a7373b4a5035ab25401af100840183 | missing |\n| \"Month\" | 9f36ba05c35e5f8e28f8c71869a5a59ca5dddc3372b4cf5fa89dd10fbe63cf54 | missing |\n| \"Time\" | 2308f84db9af87860b2c6b6ea7b6fde9f9a7e0ac1faa4a2089f2e9fb393926b2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T202629Z-5c0dc2d756be.jsonl"
+  }
+}

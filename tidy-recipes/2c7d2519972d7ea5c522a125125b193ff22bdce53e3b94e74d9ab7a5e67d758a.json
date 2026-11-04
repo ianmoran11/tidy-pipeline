@@ -1,0 +1,194 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "2c7d2519972d7ea5c522a125125b193ff22bdce53e3b94e74d9ab7a5e67d758a",
+  "sheet": "Offenders",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "f8ed8447ce752a19b9cb2cf70981442c57a7347000096ec9b315986c4bc94709",
+  "agent_notes": "Published five-year pooled snapshot July 2021–June 2026; no annual breakdown is available, so retained whole. Unknown demographics excluded by publisher; suppression strings preserved.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "notes",
+      "cells": "A17,A19,A21,A23:A24,A26"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6,A7,A12,A14"
+    }
+  ],
+  "tables": [
+    {
+      "name": "age_group",
+      "range": "B7:R11",
+      "values_range": "C7:R11",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "age_group",
+          "direction": "W",
+          "cells": "B7:B11",
+          "caption": "Age"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "C6:R6"
+        }
+      ]
+    },
+    {
+      "name": "sex",
+      "range": "B12:R13",
+      "values_range": "C12:R13",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "sex",
+          "direction": "W",
+          "cells": "B12:B13",
+          "caption": "Gender"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "C6:R6"
+        }
+      ]
+    },
+    {
+      "name": "indigenous_status",
+      "range": "B14:R15",
+      "values_range": "C14:R15",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "A1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "indigenous_status",
+          "direction": "W",
+          "cells": "B14:B15",
+          "caption": "Aboriginality"
+        },
+        {
+          "name": "principal_offence",
+          "direction": "N",
+          "cells": "C6:R6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:41:24Z",
+    "tool_version": "0.2.0",
+    "records": 144,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204025Z-ee638d071677",
+    "started_at": "2026-11-03T20:40:29Z",
+    "workbook": "ee638d0716774a46fc1c3cde694bcae38705e2fdcf860c513a9fd2d10e24f4b6--KiamaLGA.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a324-53db-7323-9801-e7892d6d6e29",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "03d30cfd3648c54fcf6e01e7453fb813f51f89fdc38c389264792eedb99f2901",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ee638d0716774a46fc1c3cde694bcae38705e2fdcf860c513a9fd2d10e24f4b6--KiamaLGA.xlsx`.\n\n- Publication: BOCSAR — Crime statistics by LGA (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Summary of offences\" | 5dfb36e49432e84ba2a806919f59e67a169c6f5438ff5a3b15cd59413aeabe0a | missing |\n| \"Premises Type\" | 3bdf7d7d0c8529a6f61887dd48706a8cc1f8ee40eca1ae4de3ccf80ddd5157fd | missing |\n| \"Victims\" | 4fc9c2df56598a340ee5bac27284fcdd717a0c57ebdb89a46db1991c27912370 | missing |\n| \"Offenders\" | 2c7d2519972d7ea5c522a125125b193ff22bdce53e3b94e74d9ab7a5e67d758a | missing |\n| \"Alcohol Related\" | 1452fb3c73fa702f8af38cb9db7cc45059a30a018a8d671b902b1286a49c4700 | missing |\n| \"Month\" | 1c32755dab5601ebc4d52358740e907718e60c26b4865f6e2fbea2ade850ecad | missing |\n| \"Time\" | 101356267329bf62c62aa6eb69f1101cd902409a283e531a316115e6d9c92643 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204025Z-ee638d071677.jsonl"
+  }
+}

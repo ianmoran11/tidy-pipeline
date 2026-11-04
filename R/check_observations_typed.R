@@ -11,6 +11,7 @@ check_observations_typed <- function(observations_typed, observations, value_spe
   spec <- value_spec; new <- observations_typed
   text <- stringr::str_squish(new$published_text)
   for (mk in spec$markers) text <- sub(mk[["pattern"]], "", text, perl = TRUE)  # as type_values() reads it
+  for (rw in spec$rewrites) text <- sub(rw[["pattern"]], rw[["replacement"]], text, perl = TRUE)
   symbols <- purrr::map_dfr(spec$symbols, function(s) tibble::tibble(status = purrr::map_chr(s, "status"), value = purrr::map_dbl(s, ~ as.numeric(.x[["value"]] %||% NA))))
   where <- function(bad) { bad <- bad %in% TRUE; sprintf("%s %s: '%s' -> %s (%s)", new$sheet_sha256[bad], new$address[bad], text[bad], new$value[bad], new$value_status[bad]) }
 

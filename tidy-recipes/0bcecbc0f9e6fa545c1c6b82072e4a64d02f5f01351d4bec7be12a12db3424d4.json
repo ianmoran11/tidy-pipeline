@@ -1,0 +1,187 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "0bcecbc0f9e6fa545c1c6b82072e4a64d02f5f01351d4bec7be12a12db3424d4",
+  "sheet": "Table 13",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest annual period 2025 only; earlier years and explicit previous-year count columns excluded. Current-year ranks and percentage changes retained. RAJAC is the publisher reporting region. Overall and VICTORIA totals retained, not additive to component rows. Published fractional percentages preserved. Blank percentage changes (previous year zero) omitted from values ranges. Person counts 1–3 are confidentialised to 2. CSA offence hierarchy and labels retained as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1,B1,C1,D1,E1,F1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "alleged_offender_incident_count_current_year",
+      "range": "A1:E1,A2:E1261,G1,G2:G1261",
+      "values_range": "G2:G1261",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "RAJAC",
+          "direction": "W",
+          "cells": "A2:A1261"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "B2:B1261"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age Range",
+          "direction": "W",
+          "cells": "C2:C1261"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence Division",
+          "direction": "W",
+          "cells": "D2:D1261"
+        },
+        {
+          "name": "method_of_proceeding",
+          "caption": "Principal Offence Outcome",
+          "direction": "W",
+          "cells": "E2:E1261"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G1"
+        }
+      ]
+    },
+    {
+      "name": "percentage_change",
+      "range": "H1,H2:H1261",
+      "values_range": "H2:H2,H6:H7,H9:H11,H13:H16,H20:H20,H24:H24,H27:H29,H31:H31,H34:H35,H37:H39,H41:H44,H48:H57,H59:H59,H62:H63,H66:H66,H69:H69,H76:H77,H79:H86,H90:H101,H104:H105,H108:H108,H111:H113,H115:H115,H118:H119,H121:H127,H135:H135,H139:H140,H143:H143,H146:H146,H150:H150,H153:H154,H163:H164,H167:H168,H174:H175,H177:H178,H181:H183,H185:H185,H188:H189,H192:H192,H195:H196,H199:H199,H202:H202,H205:H206,H209:H211,H216:H217,H219:H220,H223:H225,H227:H227,H230:H231,H234:H234,H237:H238,H241:H241,H244:H244,H247:H248,H251:H255,H258:H263,H265:H269,H272:H273,H276:H276,H279:H280,H283:H283,H286:H287,H289:H291,H293:H298,H300:H311,H314:H315,H318:H318,H321:H323,H325:H325,H328:H329,H331:H340,H342:H353,H356:H357,H360:H360,H363:H365,H367:H367,H370:H371,H373:H380,H383:H392,H395:H395,H398:H398,H412:H413,H415:H422,H426:H427,H429:H429,H431:H431,H433:H434,H436:H436,H440:H442,H444:H444,H447:H448,H457:H459,H461:H464,H467:H476,H478:H479,H482:H484,H486:H486,H489:H490,H496:H497,H499:H506,H508:H508,H510:H511,H513:H514,H517:H521,H524:H525,H528:H528,H531:H532,H535:H535,H538:H539,H541:H543,H545:H548,H551:H557,H559:H561,H563:H563,H566:H567,H570:H570,H573:H574,H577:H577,H580:H580,H583:H590,H592:H599,H601:H605,H608:H609,H612:H612,H615:H616,H619:H619,H622:H623,H625:H632,H634:H634,H636:H641,H643:H644,H646:H647,H650:H651,H654:H654,H657:H661,H664:H665,H667:H669,H671:H675,H678:H687,H689:H689,H691:H693,H696:H696,H699:H700,H703:H703,H706:H707,H709:H718,H720:H731,H733:H735,H738:H738,H741:H745,H748:H749,H751:H759,H762:H763,H765:H766,H769:H773,H776:H777,H780:H780,H783:H784,H787:H787,H790:H791,H793:H794,H797:H800,H804:H813,H815:H815,H818:H819,H822:H822,H825:H826,H829:H829,H832:H843,H846:H857,H860:H861,H864:H864,H867:H868,H871:H871,H874:H884,H888:H889,H891:H892,H895:H897,H899:H899,H902:H902,H906:H906,H909:H910,H913:H913,H916:H917,H919:H920,H923:H926,H930:H935,H937:H939,H941:H941,H944:H945,H948:H948,H951:H952,H954:H955,H958:H959,H961:H963,H965:H968,H972:H977,H979:H981,H983:H983,H986:H987,H990:H990,H993:H994,H996:H997,H1000:H1001,H1003:H1005,H1007:H1025,H1028:H1029,H1032:H1032,H1035:H1039,H1042:H1043,H1045:H1067,H1069:H1072,H1074:H1074,H1077:H1081,H1084:H1109,H1111:H1114,H1116:H1116,H1119:H1123,H1126:H1136,H1139:H1143,H1145:H1145,H1147:H1150,H1154:H1155,H1158:H1158,H1161:H1162,H1171:H1179,H1182:H1186,H1188:H1193,H1196:H1198,H1200:H1200,H1203:H1203,H1205:H1205,H1207:H1207,H1210:H1210,H1213:H1214,H1216:H1221,H1223:H1235,H1238:H1240,H1242:H1242,H1245:H1247,H1249:H1249,H1252:H1252,H1255:H1261",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "RAJAC",
+          "direction": "W",
+          "cells": "A2:A1261"
+        },
+        {
+          "name": "sex",
+          "caption": "Sex",
+          "direction": "W",
+          "cells": "B2:B1261"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age Range",
+          "direction": "W",
+          "cells": "C2:C1261"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence Division",
+          "direction": "W",
+          "cells": "D2:D1261"
+        },
+        {
+          "name": "method_of_proceeding",
+          "caption": "Principal Offence Outcome",
+          "direction": "W",
+          "cells": "E2:E1261"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "H1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:07:19Z",
+    "tool_version": "0.2.0",
+    "records": 2060,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205551Z-c724e56e0107",
+    "started_at": "2026-11-03T20:55:52Z",
+    "workbook": "c724e56e0107e0c230edb674c45bb0136fbcda37825dfd655f738d12bd32e189--AJI-Alleged-Offending-Year-Ending-December2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a332-6a7e-710f-b771-03225401a03c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b0329cafdeef22059a8670c614b541869fc065492402b94971699e794a16ac99",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c724e56e0107e0c230edb674c45bb0136fbcda37825dfd655f738d12bd32e189--AJI-Alleged-Offending-Year-Ending-December2025.xlsx`.\n\n- Publication: Crime Statistics Agency - Aboriginal Justice Indicators dashboard (Crime Statistics Agency Victoria)\n- Release or year: 2025-12\n- Sheets needing a recipe: 18 of 18\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f0b5000cb5398f828aaef496f0318973f109fd68ab907cc81f68265af8723d0f | missing |\n| \"Footnotes\" | ade68117c905d1cb2d4acdf0f728e438e77573444acb3adbe5e89b7ee9b4a11a | missing |\n| \"Table 01\" | f0d8b6e981a64904e83153386cef63efa2fce8efbde49a6221481c226789b1ef | missing |\n| \"Table 02\" | 0c51f1971604c2200eb1c19cc471bd09c423adf6c2f779ad3e773f2649611e37 | missing |\n| \"Table 03\" | 3054e2496e45f8bdf53396de0ecc3c1a1f2abb8e52dc44cec6ea463cc56686f4 | missing |\n| \"Table 04\" | f52d361bed07425f4ea67fc71a531b77c9692d6390937cfa5595d4e16fe164f6 | missing |\n| \"Table 05\" | 4c61ce04574f5cf332bb2f1cdfff92171d6a909a1d0f8426497776a9575edda9 | missing |\n| \"Table 06\" | ca4b9fc82ec56c4eb3f42eb95806811350016445be6cc9df5409391f32a561a8 | missing |\n| \"Table 07\" | 3d96e4891d46e34d5c9b08fab6bd8ce495cdb0e4e738917550cbdd9f2683fef2 | missing |\n| \"Table 08\" | c637b16e251e19cd732ec501b341e9b9dc69ae4f81a541875514b174de168900 | missing |\n| \"Table 09\" | 826c8b9d96e6be0f7aa5bfc08887ec6262ce47db05f70bc8fc63c837252ef2e7 | missing |\n| \"Table 10\" | a1e0346125c273e18fd39c97bcb5f98e9cfc41a24a75c704d7728d9b53089f16 | missing |\n| \"Table 11\" | 3a2ed69251422a413ad65b6d0f7f66372263927a80d89b9cfc94887914647221 | missing |\n| \"Table 12\" | 812c5822772cd706ece7247b3ad5e253ce737712af9b251b48c9995d93886d19 | missing |\n| \"Table 13\" | 0bcecbc0f9e6fa545c1c6b82072e4a64d02f5f01351d4bec7be12a12db3424d4 | missing |\n| \"Table 14\" | e62a8f441d02e128f316713a7a6b36cc8b13cc9c0bf91fb7b6a068f1b07a6ce1 | missing |\n| \"Table 15\" | 92db2e6d13aaa2bb9e5fdbddec576a000e3e73658b9797ae3c1739ae4dc147b1 | missing |\n| \"Table 16\" | 6f80cecb98d726a578d0fb0e62684d063729397ccd746e49d841f54cc6b46ff9 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205551Z-c724e56e0107.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "F2:F1261",
+      "reason": "Previous-year values (2024); most recent year only."
+    }
+  ]
+}

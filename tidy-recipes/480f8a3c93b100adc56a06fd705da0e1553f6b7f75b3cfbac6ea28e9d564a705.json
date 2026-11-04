@@ -1,0 +1,171 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "480f8a3c93b100adc56a06fd705da0e1553f6b7f75b3cfbac6ea28e9d564a705",
+  "sheet": "Table 17",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "276b20f96455c8b9244e6e4146c2faa8a983963c12baf996c8ce7904f6455b6f",
+  "agent_notes": "Only year ending June 2026 retained. OTH means other party. Published labels, leading spaces and confidentiality-adjusted counts are unchanged. DHHS geography uses region; RAJAC is a separate geography. Publisher excludes unknown Indigenous status.",
+  "new_dimensions": [
+    {
+      "name": "rajac_region",
+      "description": "Regional Aboriginal Justice Advisory Committee (RAJAC) region recorded for the other party.",
+      "example_labels": [
+        "Barwon South West",
+        "Grampians",
+        "South Metropolitan"
+      ]
+    },
+    {
+      "name": "ivo_application_status",
+      "description": "Whether an intervention order (IVO) was applied for in the family incident.",
+      "example_labels": [
+        "IVO Applied for",
+        "IVO Not applied for"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:F1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "other_parties",
+      "range": "A1:G77",
+      "values_range": "G2:G77",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A77"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B77"
+        },
+        {
+          "name": "region",
+          "caption": "DHHS Region",
+          "direction": "W",
+          "cells": "C2:C77"
+        },
+        {
+          "name": "rajac_region",
+          "caption": "RAJAC Region",
+          "direction": "W",
+          "cells": "D2:D77"
+        },
+        {
+          "name": "ivo_application_status",
+          "caption": "Outcome",
+          "direction": "W",
+          "cells": "E2:E77"
+        },
+        {
+          "name": "indigenous_status",
+          "caption": "OTH Indigenous Status",
+          "direction": "W",
+          "cells": "F2:F77"
+        },
+        {
+          "name": "measure",
+          "caption": "OTH Counter",
+          "direction": "N",
+          "cells": "G1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:09:54Z",
+    "tool_version": "0.2.0",
+    "records": 76,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T210749Z-9c2dc0bfbea2",
+    "started_at": "2026-11-03T21:07:50Z",
+    "workbook": "9c2dc0bfbea24570c71b1015aee75e0b23709cfa3f0d6859794b79082a2323cb--Indigenous_Data_Tables_LGA_Family_Incidents_OTHs_Visualisation_Year_Ending_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a33d-6028-744c-a02c-3ce952d20122",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "275445df55c174e1b05854145b153b8197cabd3a645ed7974634927be7baf199",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9c2dc0bfbea24570c71b1015aee75e0b23709cfa3f0d6859794b79082a2323cb--Indigenous_Data_Tables_LGA_Family_Incidents_OTHs_Visualisation_Year_Ending_June_2026.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Indigenous Family Incidents (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f3012a3e0865dc91789a599f51daa1b68b3cd240c17d9d2224f7070282e726e7 | missing |\n| \"Footnotes\" | de2a9b2a9ff03226354fad57110ab3546a4fae02af825204b422d9b1343ec27d | missing |\n| \"Table 11\" | 3d3446ef869aca7ac592a4f7c4a585cf82635777c0820a5774c5eb2538e3440c | missing |\n| \"Table 12\" | 28044bdd05eafe611faad920183bb54c37659a3557d923220911c142371eb525 | missing |\n| \"Table 13\" | 8994a83847e96a86b1a1b9d8e1b1dcc86fe416d7341f0af9f5968cd1019944b9 | missing |\n| \"Table 14\" | e3ffc0678bcc3765cd4d08c0e1797f63a6f5861f676e64d4775bd2f48ce08364 | missing |\n| \"Table 15\" | 4fbdcaf8855bb7457a368f7ea266fbb79d46f361e0f78e8d2fbcec98e5445efb | missing |\n| \"Table 16\" | ed01197c3e6f0baca1d696b184dcfbfdadfe8cee9744f17688f6adc86fc5a920 | missing |\n| \"Table 17\" | 480f8a3c93b100adc56a06fd705da0e1553f6b7f75b3cfbac6ea28e9d564a705 | missing |\n| \"Table 18\" | 632b86074cf43f4df4c50b7847072530ca3bde64a4d2da48c4f7c69d63afd623 | missing |\n| \"Table 19\" | 48d32d968c57fb593e35ff5445b56bedef3b84b6e696f2f06d99568c0fdaf1cd | missing |\n| \"Table 20\" | 675b30ae1c87aa06cf4203796a65c610b3b593cef1d75357be4fb0771a2048f6 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T210749Z-9c2dc0bfbea2.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A78:G381",
+      "reason": "Earlier years (2022–2025); most recent annual period only."
+    }
+  ]
+}

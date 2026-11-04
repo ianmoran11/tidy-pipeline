@@ -1,0 +1,139 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "73df2f1b10d4874047816353e557cea9776a4f629dcb41678d170c1b9f60748c",
+  "sheet": "Population 10 to 17 - by LGA",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest population year 2025 only. Values are ERP for ages 10 to 17. LGA merger caveat retained in notes.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "source",
+      "cells": "A1,A141"
+    },
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A136,A138"
+    }
+  ],
+  "tables": [
+    {
+      "name": "resident_population",
+      "range": "A6:A134,U5:U134",
+      "values_range": "U6:U134",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A3"
+        }
+      ],
+      "headers": [
+        {
+          "name": "local_government_area",
+          "caption": "LGA of residence",
+          "direction": "W",
+          "cells": "A6:A134"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "U5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:54:03Z",
+    "tool_version": "0.2.0",
+    "records": 129,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205225Z-4344f6789a3f",
+    "started_at": "2026-11-03T20:52:26Z",
+    "workbook": "4344f6789a3fb90d6a9b8956ad3e659c256060e9c07183749d559c1c1f6aaf60--Trends_in_youth_legal_proceedings_quarterly_report.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32f-4507-76dd-85da-d3021088b37c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9d6311d1c49ec003952bca5e4b76781398b0a944baf638593ff2ff6426076798",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `4344f6789a3fb90d6a9b8956ad3e659c256060e9c07183749d559c1c1f6aaf60--Trends_in_youth_legal_proceedings_quarterly_report.xlsx`.\n\n- Publication: BOCSAR — Young people (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 8 of 8\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table of contents\" | 8154102f69b85517030c0b3705e19b55f23deda1c98de94ac7283531c70a4d1e | missing |\n| \"Table 1\" | 692e440aa4ec8aa1e75189ca2a4d2b2336e98c57bbb9f9ed4716f613ef187de7 | missing |\n| \"Table 2\" | cc6b83adcfd2c0dcb2fcbc4898faf92c23f0eb03e03aa19cf9962057319dff39 | missing |\n| \"Table 3\" | eef23b35c9892c98cbfc3fd1bb448712a587270c8436df7a625454b0a8eb8466 | missing |\n| \"Table 4\" | cd66576045fdb2e4f81ea1f76465774c7c717b11731a85328d4b15b985287b29 | missing |\n| \"Population 10 to 17 - by SA4\" | 7325f2a1dfd3656f188e1a66d72c26e35a2ff4010d7cf49e277066bd491e53fe | missing |\n| \"Population 10 to 17 - by LGA\" | 73df2f1b10d4874047816353e557cea9776a4f629dcb41678d170c1b9f60748c | missing |\n| \"Notes\" | f641b79343bd4807232dce0be8666a059dc0514a1410ba0fe97bfd0bb9c73dd1 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205225Z-4344f6789a3f.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "B5:T134",
+      "reason": "Earlier population years (2006–2024); most recent year only (2025)."
+    }
+  ]
+}

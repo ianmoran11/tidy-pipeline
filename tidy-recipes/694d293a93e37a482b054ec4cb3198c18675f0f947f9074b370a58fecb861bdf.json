@@ -1,0 +1,94 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "694d293a93e37a482b054ec4cb3198c18675f0f947f9074b370a58fecb861bdf",
+  "sheet": "Dates",
+  "kind": "notes",
+  "status": "needs_review",
+  "reason": "Extraction control metadata (financial year, run date and month ending); no statistical table.",
+  "agent_notes": "Extraction control metadata only: latest financial year 2025-26, run date 2026-07-06, month ending 6. C2=6 is a control month number, not a statistical observation; non-data numeric-cell guard requires review.",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T19:36:05Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind notes but the sheet has 1 numeric cells, e.g. C2"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T191212Z-5777ffc6018f",
+    "started_at": "2026-11-03T19:12:13Z",
+    "workbook": "5777ffc6018fddba9cf10cd4d82fcd6b2e58c73feabd3bae062facf98231ccc5--wa-police-force-crime-timeseries.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2d3-869f-705c-98ce-745a4fb93393",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "6faa164d7d43ae2bc680e70d186205ab5487a687cc0ee01e0095d0cea3d45572",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `5777ffc6018fddba9cf10cd4d82fcd6b2e58c73feabd3bae062facf98231ccc5--wa-police-force-crime-timeseries.xlsx`.\n\n- Publication: WA Police crime time series (Western Australia Police Force)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 25 of 25\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Regions\" | 487ae582d68033b15d757182d8fc6a093db624f1a22c0413dc8d19c30a5fa7e8 | missing |\n| \"Data\" | 0f4920dd0f153ae9cfe15cdbdbfd412bf8757ba1376ffefa341950da466dd73b | missing |\n| \"Offences\" | cd652702aacce448fc7c54f2a307e181725c4407135c4ca3ee2bf3886287526f | missing |\n| \"Dates\" | 694d293a93e37a482b054ec4cb3198c18675f0f947f9074b370a58fecb861bdf | missing |\n| \"Contents\" | 4b78d8540804b97d04d15fafc482540a07f65c237285b49c0f719fd3952b5710 | missing |\n| \"Explanatory Notes\" | 190ae13a77d91f9093c9095a2417cde8035b85737513525489dab2fe0869133f | missing |\n| \"Glossary\" | be8e91b8a6ca533b0d57f2b1f599a148f822665cd4654aa507cc6f03a16e4fc9 | missing |\n| \"Western Australia\" | aa25f8412252f0a399e3ac625358ad6bb159aead533c1f5d1e669f55e1d3078c | missing |\n| \"Metropolitan Region\" | fa1ee5b140c2d7d83aadc89b1fcb6d6837be10ee9444d97d6d39d4334d88acb9 | missing |\n| \"Regional WA Region\" | b76a0a640f9c0cd2ad9906fb564bd7daf4396d8c16d1f1025bfa6c4e7ee76adf | missing |\n| \"Armadale District\" | e3d6039a32b69f45e090da5a5fe4e818ff28826788fcbe49dbdc525e7f313aa9 | missing |\n| \"Cannington District\" | 6dfca0c445e7ba8d28e1bbea7bf1473ee2cc86a5897988bb4da3ee97c5fcf487 | missing |\n| \"Fremantle District\" | 154cf37d8f36a87cfa8dcc76564bab5eb36f5064e337f92c24180e9720cde5f1 | missing |\n| \"Joondalup District\" | 082e71bbb1d726d066d7f5c7067ceb0404319b0cfcecd73df1fc41ed05b388c2 | missing |\n| \"Mandurah District\" | 1a76930c43edd9e51537cccb9f4aae34732623dcd4aea50538374230aab66976 | missing |\n| \"Midland District\" | a3bb398577f6f85683dd637668a49903d6255bbd90d9e945f651fadd2e5e8d74 | missing |\n| \"Mirrabooka District\" | a524bf371be10f34d3a6c60762abbed77ebdec1df75828b7da1540ae14b0f2d2 | missing |\n| \"Perth District\" | 4cc3335389e63597a0d277c82b677f03a2946447d83e2afd8a15ce6edd7a35ef | missing |\n| \"Goldfields-Esperance District\" | 7455ebfae95c8fee63ab396b2f41829723ec8508ec75d108dfd67defdcbaa1ed | missing |\n| \"Great Southern District\" | 7369d5c2de29c77621f8ae399335e87041fa96582952eca4d2d61767bb0ac16b | missing |\n| \"Kimberley District\" | 7d7d8f9a350c236d0a31f3092912a61719a2457fd100c539a6f3848cf83b8467 | missing |\n| \"Mid West-Gascoyne District\" | a0fb964d2e9d84c568f357d49cbd7d4e1ad12f6d1b9f142c494d4f44b65314d6 | missing |\n| \"Pilbara District\" | 5b62ad9e392749f8bef2d71aac4b6deab8e1252fa4e01f8183de17aebc2dce01 | missing |\n| \"South West District\" | 93753d20d94c7d92fdb4ba9e5feffa834ce10b8a9abb540c2b034055612a184a | missing |\n| \"Wheatbelt District\" | 7e23015c6fd4a1688d175eb424e94eaf107dd273efcaa1123f3d7c2c4e254b39 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T191212Z-5777ffc6018f.jsonl"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "1ff4707cd775c82b990b2bcb20bd44c7c767ff32e298ef53740d6c9916bb9163",
+  "sheet": "Table 05",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Most recent annual period only: year ending June 2026. All published totals retained; totals may include unknown demographic or offence information not separately reported. See workbook Footnotes for suppression and coverage caveats, including data to 25 June 2026 and exclusion of ages 10–11 from 1 October 2025.",
+  "new_dimensions": [
+    {
+      "name": "bail_outcome",
+      "description": "Decision on a bail application.",
+      "example_labels": [
+        "Bail granted",
+        "Bail refused",
+        "Bail revoked"
+      ]
+    },
+    {
+      "name": "bail_act_schedule",
+      "description": "Bail Act scheduled offence classification considered in the bail application.",
+      "example_labels": [
+        "No scheduled offence",
+        "Schedule 1 offences",
+        "Schedule 2 offences",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:E1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "bail_applications",
+      "range": "A1:F13",
+      "values_range": "F2:F13",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A13"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B13"
+        },
+        {
+          "name": "court_level",
+          "caption": "Data source",
+          "direction": "W",
+          "cells": "C2:C13"
+        },
+        {
+          "name": "bail_outcome",
+          "caption": "Bail Outcome",
+          "direction": "W",
+          "cells": "D2:D13"
+        },
+        {
+          "name": "bail_act_schedule",
+          "caption": "Bail Act Schedule",
+          "direction": "W",
+          "cells": "E2:E13"
+        },
+        {
+          "name": "measure",
+          "caption": "Record Count",
+          "direction": "N",
+          "cells": "F1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T19:12:06Z",
+    "tool_version": "0.2.0",
+    "records": 12,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T191104Z-0f39d37dbac8",
+    "started_at": "2026-11-03T19:11:05Z",
+    "workbook": "0f39d37dbac863a7009cd9e858db00f184a279f6bda47190c36e90a4a9edb263--Magistrates-_Court_Data_Tables_Bail_Visualisation_Year_Ending_June_2026_0.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2d2-7ce0-7540-b179-95e536510630",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "74c2c5a16faf0ba102173fbcfb36b615cd59fb7008f784c421d74c38ea6b2da0",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `0f39d37dbac863a7009cd9e858db00f184a279f6bda47190c36e90a4a9edb263--Magistrates-_Court_Data_Tables_Bail_Visualisation_Year_Ending_June_2026_0.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Bail statistics (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 16c0e5247b1fb05e8733f715ce197155d7b03e1500351763143b9fe9cbd1a492 | missing |\n| \"Footnotes\" | 28cff374646c4318904e30753a9ac3e258fac0cb7060ac83001e6f922a70a15e | missing |\n| \"Table 01\" | 6cc997f74b0f88146ad5653ea9cd1044837420dabd62b9424d9bd1c729a6ddd8 | missing |\n| \"Table 02\" | 075c77b5da984d6ecfc2e5dd15cf3904b18fa6a3aa48386ae10da27fea915b25 | missing |\n| \"Table 03\" | 45d6dcd16321f3ced507a8211a9f1512814f7e593763b88985701c8043e4d55c | missing |\n| \"Table 04\" | 225e66fe3fc38d2a984599d035973c1320cc0a2c5ba118d779fcff1930b4dfc4 | missing |\n| \"Table 05\" | 1ff4707cd775c82b990b2bcb20bd44c7c767ff32e298ef53740d6c9916bb9163 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T191104Z-0f39d37dbac8.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A14:F73",
+      "reason": "earlier years; most recent year only"
+    }
+  ]
+}

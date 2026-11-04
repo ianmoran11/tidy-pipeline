@@ -1,0 +1,156 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "824732c9b2905c93dedcdc15adca47cc6b18595179070b8fe82d3ff4d320f768",
+  "sheet": "with UE and UUMV",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retain latest 12 months: October 2025–September 2026. Published offence aggregate columns (Other Homicide, Assault, Sexual Offences, Robbery, Other Offences Against the Person, Offences Against the Person) coexist with their component columns; do not sum across offence labels. Uncaptioned AF is a sequential source row index, preserved as annotations, not a victim count.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:B1"
+    },
+    {
+      "name": "annotations",
+      "cells": "AF299:AF310,AF608:AF619,AF917:AF928,AF1226:AF1237,AF1535:AF1546,AF1844:AF1855,AF2153:AF2164"
+    }
+  ],
+  "tables": [
+    {
+      "name": "reported_victims",
+      "range": "A1:AF1,A299:AF310,A608:AF619,A917:AF928,A1226:AF1237,A1535:AF1546,A1844:AF1855,A2153:AF2164",
+      "values_range": "C299:AE310,C608:AE619,C917:AE928,C1226:AE1237,C1535:AE1546,C1844:AE1855,C2153:AE2164",
+      "headers": [
+        {
+          "name": "police_region",
+          "caption": "Region",
+          "direction": "W",
+          "cells": "A299:A310,A608:A619,A917:A928,A1226:A1237,A1535:A1546,A1844:A1855,A2153:A2164"
+        },
+        {
+          "name": "period",
+          "caption": "Month Year",
+          "direction": "W",
+          "cells": "B299:B310,B608:B619,B917:B928,B1226:B1237,B1535:B1546,B1844:B1855,B2153:B2164"
+        },
+        {
+          "name": "victim_offence",
+          "direction": "N",
+          "cells": "C1:AE1"
+        }
+      ],
+      "meta_data": []
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T19:27:15Z",
+    "tool_version": "0.2.0",
+    "records": 2436,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T192305Z-ad029dc60cf1",
+    "started_at": "2026-11-03T19:23:07Z",
+    "workbook": "ad029dc60cf174891c00ad7025e0d820f16014777cfd50a197b43b54101b5a49--Region_Reported_victims_Number.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2dd-8b66-72f3-9b76-c73dc5fe86fa",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "e6d12581a6d80c1b0bc50c4a4c5fa54c539d0f123cbf1cb56b850d538e1bdd9e",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `ad029dc60cf174891c00ad7025e0d820f16014777cfd50a197b43b54101b5a49--Region_Reported_victims_Number.xlsx`.\n\n- Publication: Victim numbers—police region—monthly from Jan 2001 (Queensland Police Service)\n- Release or year: 2001-01\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Region_Reported_victims_Number\" | 1b5c78a37546b4ed6b4cf057631f6ac7f2ac8d4e1ac497324f0563faac3a9ed7 | missing |\n| \"with UE and UUMV\" | 824732c9b2905c93dedcdc15adca47cc6b18595179070b8fe82d3ff4d320f768 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T192305Z-ad029dc60cf1.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A2:AF298",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    },
+    {
+      "cells": "A311:AF607",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    },
+    {
+      "cells": "A620:AF916",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    },
+    {
+      "cells": "A929:AF1225",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    },
+    {
+      "cells": "A1238:AF1534",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    },
+    {
+      "cells": "A1547:AF1843",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    },
+    {
+      "cells": "A1856:AF2152",
+      "reason": "Earlier months; retain latest 12 months, October 2025 to September 2026 only."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "b39b1abd1cc446e55632545eb146515f672590c8ac1cedd1b0076d3db85a9872",
+  "sheet": "Local Government Area",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retains latest annual incident counts (July 2025–June 2026) and all published current rate, rank and trend snapshot columns; excludes earlier annual counts. Trend headings preserve their distinct two- and ten-year windows. 'nc', Stable and percentage trend strings remain values. Offence labels and footnote markers are unchanged. In Custody is retained as a published special entry in the LGA column, not interpreted as a council. No hierarchy or subtotal rows were removed. Counts have period labels; rates, ranks and trends have full published measure headings including reference windows.",
+  "new_dimensions": [
+    {
+      "name": "criminal_incident_offence",
+      "description": "Published offence type of criminal incidents recorded by NSW Police, rather than the principal offence of an offender or the offence of a victim.",
+      "example_labels": [
+        "Murder *",
+        "Domestic violence related assault",
+        "Breach bail conditions"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4:B4"
+    },
+    {
+      "name": "notes",
+      "cells": "A8128:A8130,A8133:A8136"
+    },
+    {
+      "name": "source",
+      "cells": "A8132"
+    }
+  ],
+  "tables": [
+    {
+      "name": "latest_annual_incident_counts",
+      "range": "A4:B8126,L4:L8126",
+      "values_range": "L5:L8126",
+      "headers": [
+        {
+          "name": "local_government_area",
+          "caption": "Local Government Area",
+          "direction": "W",
+          "cells": "A5:A8126"
+        },
+        {
+          "name": "criminal_incident_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "B5:B8126"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "L4"
+        }
+      ]
+    },
+    {
+      "name": "latest_rates_ranks_and_trends",
+      "range": "A4:B8126,M4:P8126",
+      "values_range": "M5:P8126",
+      "headers": [
+        {
+          "name": "local_government_area",
+          "caption": "Local Government Area",
+          "direction": "W",
+          "cells": "A5:A8126"
+        },
+        {
+          "name": "criminal_incident_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "B5:B8126"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "M4:P4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:55:52Z",
+    "tool_version": "0.2.0",
+    "records": 40610,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205159Z-abf50dfa5122",
+    "started_at": "2026-11-03T20:52:01Z",
+    "workbook": "abf50dfa5122882bcaea7866b7a2c8a426ae5d9f3fe35d3ea018c690ab4ed968--LGA_trends.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32e-e3bc-73ad-9db8-9150064248e8",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "341a598d376b91c4ab7c3002ddde9a4aab434f8e7408861dc9dfe25d546e27eb",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `abf50dfa5122882bcaea7866b7a2c8a426ae5d9f3fe35d3ea018c690ab4ed968--LGA_trends.xlsx`.\n\n- Publication: BOCSAR — Trend data files (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Local Government Area\" | b39b1abd1cc446e55632545eb146515f672590c8ac1cedd1b0076d3db85a9872 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205159Z-abf50dfa5122.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "C4:K8126",
+      "reason": "Earlier annual periods; retain only the most recent year, Jul 2025 - Jun 2026. Published latest rates, ranks and trend snapshots are retained."
+    }
+  ]
+}

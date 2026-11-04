@@ -1,0 +1,94 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "456deae7557334ddbe6fa87155af94cb61f966b50078a344da42f8522a573484",
+  "sheet": "Table of contents ",
+  "kind": "contents",
+  "status": "needs_review",
+  "reason": "Table of contents, release details and publisher contact information; numbers identify tabs, not statistical observations.",
+  "agent_notes": "This is a contents sheet, not a statistical table. A28:A33,A35,A37:A39 contain tab identifiers 1–10, matching the table names in column C. The numeric-cell guard falsely flags these navigation identifiers; retain contents classification for human review.",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T20:03:23Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": [
+      "kind contents but the sheet has 10 numeric cells, e.g. A28, A29, A30, A31, A32"
+    ]
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-a0cea4c5ed82",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "a0cea4c5ed827b8c075f10a87ce1bfca95aba06fe6c832a1e6d16e2f69876b0a--External_AVO_Tables_26Q2.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1ca-701d-8214-0d35a5b36137",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9fbf0163c75f50e0e2998818471110a0a6d04253ff54386806a5de651811ae4b",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `a0cea4c5ed827b8c075f10a87ce1bfca95aba06fe6c832a1e6d16e2f69876b0a--External_AVO_Tables_26Q2.xlsx`.\n\n- Publication: BOCSAR — Apprehended violence orders (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 11 of 11\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Table of contents \" | 456deae7557334ddbe6fa87155af94cb61f966b50078a344da42f8522a573484 | missing |\n| \"AVO numbers\" | 6e1ae1edea7b0d396a249f3493628f5f20e0b6236b49fc4f386919e8d1a9ec71 | missing |\n| \"AVO rates\" | 01bb3050728d220bfeb51157ce7875511c9fa3fcc246f89a39de5b43efe42ec5 | missing |\n| \"Defendants\" | a1459b50e78209a5e52d735bca621c2c9b3029589e9f89d6d1bdd0cd2d7a3cc1 | missing |\n| \"Aboriginality of defendants\" | 7b7b0a0abf9639db85893fcad2c1b406364734b47ac304edadd649ec1cf143e5 | missing |\n| \"Protected persons\" | 71464397aca7dca234594389bad19dab4dc25aff5573e32ddfa956da568141e5 | missing |\n| \"Breach AVO numbers\" | d1b6c3adc92905d93c249a7f06e54a5f73bb5be99d24b7f7ff4a3880293a67e5 | missing |\n| \"Breach AVO rates\" | b56c16c4428bae9d5bdd3347e67e0086585cf4413dd3119454d72d8f10f554b3 | missing |\n| \"AVOs in force numbers\" | 040343dfd8c8aca29ba118025fddb986eb8927de750cc3bfe13aacbc89905cfe | missing |\n| \"AVOs in force pop rate\" | 6dbaae9fb4d20a040330d84b8b11f8c35ee4fe8e3cf6053f9f0d7b71e86e057c | missing |\n| \"AVOs in force breach rate\" | 48591ee587f772d31f99d237a9adfa62942eecaa6fa01858f654d227a416d5bd | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-a0cea4c5ed82.jsonl"
+  }
+}

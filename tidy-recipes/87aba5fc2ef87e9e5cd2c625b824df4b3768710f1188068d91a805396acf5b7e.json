@@ -1,0 +1,189 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "87aba5fc2ef87e9e5cd2c625b824df4b3768710f1188068d91a805396acf5b7e",
+  "sheet": "LGA",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retains all published geographic rows, including Total NSW and In Custody, and every day/time subtotal and grand total. LGA labels span eight rows; offence labels span two alcohol-flag rows. The combined A5 stub caption is split into its three printed dimension captions (hence caption-match warnings). Clock-time label '6pm - < 12pm' is preserved verbatim, not corrected. Alcohol flag is mapped to substance_contribution; publisher caveats retained in notes. The sole annual period is July 2025-June 2026, taken verbatim from A1. New dimensions distinguish incident offences from offender principal offences, calendar weekdays and incident clock-time bands from perceived-safety daytime/nighttime context.",
+  "new_dimensions": [
+    {
+      "name": "recorded_incident_offence",
+      "description": "Offence type of incidents recorded by NSW Police, not an offender's principal offence or a victim count.",
+      "example_labels": [
+        "Domestic violence related assault",
+        "Offensive conduct"
+      ]
+    },
+    {
+      "name": "day_of_week",
+      "description": "Day of the week on which the incident occurred, including the all-days Total.",
+      "example_labels": [
+        "Sunday",
+        "Monday",
+        "Total"
+      ]
+    },
+    {
+      "name": "incident_time_of_day",
+      "description": "Published clock-time band when the incident occurred, including the all-times Total.",
+      "example_labels": [
+        "12am - < 6am",
+        "6pm - < 12pm",
+        "Total"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A3"
+    },
+    {
+      "name": "release",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5"
+    },
+    {
+      "name": "notes",
+      "cells": "A1056:A1057,A1060:A1063"
+    },
+    {
+      "name": "source",
+      "cells": "A1059"
+    }
+  ],
+  "tables": [
+    {
+      "name": "incident_counts",
+      "range": "A7:AQ1054,D5:AQ6",
+      "values_range": "D7:AQ1054",
+      "meta_data": [
+        {
+          "name": "period",
+          "cells": "A1"
+        },
+        {
+          "name": "measure",
+          "cells": "A2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "local_government_area",
+          "caption": "Incident LGA",
+          "direction": "WNW",
+          "cells": "A7,A15,A23,A31,A39,A47,A55,A63,A71,A79,A87,A95,A103,A111,A119,A127,A135,A143,A151,A159,A167,A175,A183,A191,A199,A207,A215,A223,A231,A239,A247,A255,A263,A271,A279,A287,A295,A303,A311,A319,A327,A335,A343,A351,A359,A367,A375,A383,A391,A399,A407,A415,A423,A431,A439,A447,A455,A463,A471,A479,A487,A495,A503,A511,A519,A527,A535,A543,A551,A559,A567,A575,A583,A591,A599,A607,A615,A623,A631,A639,A647,A655,A663,A671,A679,A687,A695,A703,A711,A719,A727,A735,A743,A751,A759,A767,A775,A783,A791,A799,A807,A815,A823,A831,A839,A847,A855,A863,A871,A879,A887,A895,A903,A911,A919,A927,A935,A943,A951,A959,A967,A975,A983,A991,A999,A1007,A1015,A1023,A1031,A1039,A1047"
+        },
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence type",
+          "direction": "WNW",
+          "cells": "B7,B9,B11,B13,B15,B17,B19,B21,B23,B25,B27,B29,B31,B33,B35,B37,B39,B41,B43,B45,B47,B49,B51,B53,B55,B57,B59,B61,B63,B65,B67,B69,B71,B73,B75,B77,B79,B81,B83,B85,B87,B89,B91,B93,B95,B97,B99,B101,B103,B105,B107,B109,B111,B113,B115,B117,B119,B121,B123,B125,B127,B129,B131,B133,B135,B137,B139,B141,B143,B145,B147,B149,B151,B153,B155,B157,B159,B161,B163,B165,B167,B169,B171,B173,B175,B177,B179,B181,B183,B185,B187,B189,B191,B193,B195,B197,B199,B201,B203,B205,B207,B209,B211,B213,B215,B217,B219,B221,B223,B225,B227,B229,B231,B233,B235,B237,B239,B241,B243,B245,B247,B249,B251,B253,B255,B257,B259,B261,B263,B265,B267,B269,B271,B273,B275,B277,B279,B281,B283,B285,B287,B289,B291,B293,B295,B297,B299,B301,B303,B305,B307,B309,B311,B313,B315,B317,B319,B321,B323,B325,B327,B329,B331,B333,B335,B337,B339,B341,B343,B345,B347,B349,B351,B353,B355,B357,B359,B361,B363,B365,B367,B369,B371,B373,B375,B377,B379,B381,B383,B385,B387,B389,B391,B393,B395,B397,B399,B401,B403,B405,B407,B409,B411,B413,B415,B417,B419,B421,B423,B425,B427,B429,B431,B433,B435,B437,B439,B441,B443,B445,B447,B449,B451,B453,B455,B457,B459,B461,B463,B465,B467,B469,B471,B473,B475,B477,B479,B481,B483,B485,B487,B489,B491,B493,B495,B497,B499,B501,B503,B505,B507,B509,B511,B513,B515,B517,B519,B521,B523,B525,B527,B529,B531,B533,B535,B537,B539,B541,B543,B545,B547,B549,B551,B553,B555,B557,B559,B561,B563,B565,B567,B569,B571,B573,B575,B577,B579,B581,B583,B585,B587,B589,B591,B593,B595,B597,B599,B601,B603,B605,B607,B609,B611,B613,B615,B617,B619,B621,B623,B625,B627,B629,B631,B633,B635,B637,B639,B641,B643,B645,B647,B649,B651,B653,B655,B657,B659,B661,B663,B665,B667,B669,B671,B673,B675,B677,B679,B681,B683,B685,B687,B689,B691,B693,B695,B697,B699,B701,B703,B705,B707,B709,B711,B713,B715,B717,B719,B721,B723,B725,B727,B729,B731,B733,B735,B737,B739,B741,B743,B745,B747,B749,B751,B753,B755,B757,B759,B761,B763,B765,B767,B769,B771,B773,B775,B777,B779,B781,B783,B785,B787,B789,B791,B793,B795,B797,B799,B801,B803,B805,B807,B809,B811,B813,B815,B817,B819,B821,B823,B825,B827,B829,B831,B833,B835,B837,B839,B841,B843,B845,B847,B849,B851,B853,B855,B857,B859,B861,B863,B865,B867,B869,B871,B873,B875,B877,B879,B881,B883,B885,B887,B889,B891,B893,B895,B897,B899,B901,B903,B905,B907,B909,B911,B913,B915,B917,B919,B921,B923,B925,B927,B929,B931,B933,B935,B937,B939,B941,B943,B945,B947,B949,B951,B953,B955,B957,B959,B961,B963,B965,B967,B969,B971,B973,B975,B977,B979,B981,B983,B985,B987,B989,B991,B993,B995,B997,B999,B1001,B1003,B1005,B1007,B1009,B1011,B1013,B1015,B1017,B1019,B1021,B1023,B1025,B1027,B1029,B1031,B1033,B1035,B1037,B1039,B1041,B1043,B1045,B1047,B1049,B1051,B1053"
+        },
+        {
+          "name": "substance_contribution",
+          "caption": "Whether flagged as alcohol related",
+          "direction": "W",
+          "cells": "C7:C1054"
+        },
+        {
+          "name": "day_of_week",
+          "direction": "NNW",
+          "cells": "D5,I5,N5,S5,X5,AC5,AH5,AM5"
+        },
+        {
+          "name": "incident_time_of_day",
+          "direction": "N",
+          "cells": "D6:AQ6"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:06:45Z",
+    "tool_version": "0.2.0",
+    "records": 41920,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T200136Z-cd6f3d410fc1",
+    "started_at": "2026-11-03T20:01:37Z",
+    "workbook": "cd6f3d410fc10818e42ec053e641494df9953c0ff4f1e05ebd3b0353de1e48a6--LGA_Alcohol_Related_Time_Day.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a300-c1d8-77a1-b525-b67aa0d7a3d2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ddd174e363db6539a5af173b3d1feada0866545981e59c826a81cec84fdb2bd2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `cd6f3d410fc10818e42ec053e641494df9953c0ff4f1e05ebd3b0353de1e48a6--LGA_Alcohol_Related_Time_Day.xlsx`.\n\n- Publication: BOCSAR — Alcohol related violence (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 2 of 2\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"LGA\" | 87aba5fc2ef87e9e5cd2c625b824df4b3768710f1188068d91a805396acf5b7e | missing |\n| \"LGA5yrs\" | 74b24caf4f72a78c65616b6e64e957b4282a4b07de9526f60d771608077767ea | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T200136Z-cd6f3d410fc1.jsonl"
+  }
+}

@@ -3,7 +3,7 @@
 # Usage: Rscript orchestrator/qa/integration_conflicts.R <publication_id> [n_examples] [numbers|all]
 suppressMessages({library(dplyr); library(purrr); library(stringr)})
 args <- commandArgs(TRUE); pub <- args[1]; n <- as.integer(args[2] %||% 3); kind <- args[3] %||% "numbers"
-obs <- targets::tar_read(observations); it <- targets::tar_read(integrated); src <- it$sources; ser <- it$series
+obs <- targets::tar_read(observations); it <- targets::tar_read(integrated); src <- it$sources; ser <- it$series[[pub]]
 cf <- targets::tar_read(integration_gaps)$conflicts %>% filter(publication_id == pub, kind == "all" | numbers > 1)
 cat(nrow(cf), "conflicting keys\n")
 x <- obs %>% semi_join(cf, by = c("release_id", "series_id", "period")) %>% left_join(src %>% select(sheet_sha256, title, xlsx_file, sheet), by = "sheet_sha256")

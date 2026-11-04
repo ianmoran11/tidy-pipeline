@@ -1,0 +1,460 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "d5804a0fbdca193049bb2d2c649abb410a5c5064ebbdc0c05cd3c933d333ee33",
+  "sheet": "Summary of offences",
+  "kind": "data",
+  "status": "validated",
+  "template_from": "910c16ba5da0b04032a21e423939da6c2ba1760a9f42991e229c6f7fd03b3650",
+  "agent_notes": "Latest annual counts and rates retained; current two-year/ten-year trend statistics, ranks and ratios also retained as snapshot measures. Offence group headings span subtypes; major offences overlap detailed categories (not additive). Murder and manslaughter count victims. Published trend fractions, Stable/nc** and ratio '-' retained unchanged. Rank only populated for rows 9–20.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A3"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A7:B7"
+    },
+    {
+      "name": "notes",
+      "cells": "A74:A87,A89:A90,A92"
+    }
+  ],
+  "tables": [
+    {
+      "name": "C_subtype",
+      "range": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24,C26,C27,C28,C33,C34,C35,C36,C37,C38,C40,C41,C42,C43,C44,C45,C46,C47,C48,C49,C50,C51,C52,C53,C54,C55,C57,C58,C59,C60,C64,C65,C66,C67,C68,C69,C7",
+      "values_range": "C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24,C26,C27,C28,C33,C34,C35,C36,C37,C38,C40,C41,C42,C43,C44,C45,C46,C47,C48,C49,C50,C51,C52,C53,C54,C55,C57,C58,C59,C60,C64,C65,C66,C67,C68,C69",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence type ",
+          "direction": "W",
+          "cells": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence group ",
+          "direction": "WNW",
+          "cells": "A8,A21,A24,A25,A26,A29,A30,A31,A32,A33,A39,A40,A56,A57,A61,A62,A63,A64,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7"
+        }
+      ]
+    },
+    {
+      "name": "C_standalone",
+      "range": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71,C25,C29,C30,C31,C32,C39,C56,C61,C62,C63,C70,C71,C7",
+      "values_range": "C25,C29,C30,C31,C32,C39,C56,C61,C62,C63,C70,C71",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence group ",
+          "direction": "W",
+          "cells": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "C7"
+        }
+      ]
+    },
+    {
+      "name": "D_subtype",
+      "range": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D26,D27,D28,D33,D34,D35,D36,D37,D38,D40,D41,D42,D43,D44,D45,D46,D47,D48,D49,D50,D51,D52,D53,D54,D55,D57,D58,D59,D60,D64,D65,D66,D67,D68,D69,D7",
+      "values_range": "D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D26,D27,D28,D33,D34,D35,D36,D37,D38,D40,D41,D42,D43,D44,D45,D46,D47,D48,D49,D50,D51,D52,D53,D54,D55,D57,D58,D59,D60,D64,D65,D66,D67,D68,D69",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence type ",
+          "direction": "W",
+          "cells": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence group ",
+          "direction": "WNW",
+          "cells": "A8,A21,A24,A25,A26,A29,A30,A31,A32,A33,A39,A40,A56,A57,A61,A62,A63,A64,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "D7"
+        }
+      ]
+    },
+    {
+      "name": "D_standalone",
+      "range": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71,D25,D29,D30,D31,D32,D39,D56,D61,D62,D63,D70,D71,D7",
+      "values_range": "D25,D29,D30,D31,D32,D39,D56,D61,D62,D63,D70,D71",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence group ",
+          "direction": "W",
+          "cells": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "D7"
+        }
+      ]
+    },
+    {
+      "name": "E_subtype",
+      "range": "B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,E9,E10,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20,E7",
+      "values_range": "E9,E10,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence type ",
+          "direction": "W",
+          "cells": "B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence group ",
+          "direction": "WNW",
+          "cells": "A8,A21,A24,A25,A26,A29,A30,A31,A32,A33,A39,A40,A56,A57,A61,A62,A63,A64,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "E7"
+        }
+      ]
+    },
+    {
+      "name": "F_subtype",
+      "range": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69,F8,F9,F10,F11,F12,F13,F14,F15,F16,F17,F18,F19,F20,F21,F22,F23,F24,F26,F27,F28,F33,F34,F35,F36,F37,F38,F40,F41,F42,F43,F44,F45,F46,F47,F48,F49,F50,F51,F52,F53,F54,F55,F57,F58,F59,F60,F64,F65,F66,F67,F68,F69,F7",
+      "values_range": "F8,F9,F10,F11,F12,F13,F14,F15,F16,F17,F18,F19,F20,F21,F22,F23,F24,F26,F27,F28,F33,F34,F35,F36,F37,F38,F40,F41,F42,F43,F44,F45,F46,F47,F48,F49,F50,F51,F52,F53,F54,F55,F57,F58,F59,F60,F64,F65,F66,F67,F68,F69",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence type ",
+          "direction": "W",
+          "cells": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence group ",
+          "direction": "WNW",
+          "cells": "A8,A21,A24,A25,A26,A29,A30,A31,A32,A33,A39,A40,A56,A57,A61,A62,A63,A64,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F7"
+        }
+      ]
+    },
+    {
+      "name": "F_standalone",
+      "range": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71,F25,F29,F30,F31,F32,F39,F56,F61,F62,F63,F70,F71,F7",
+      "values_range": "F25,F29,F30,F31,F32,F39,F56,F61,F62,F63,F70,F71",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "period",
+          "cells": "C1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence group ",
+          "direction": "W",
+          "cells": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F7"
+        }
+      ]
+    },
+    {
+      "name": "P_subtype",
+      "range": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69,P8,P9,P10,P11,P12,P13,P14,P15,P16,P17,P18,P19,P20,P21,P22,P23,P24,P26,P27,P28,P33,P34,P35,P36,P37,P38,P40,P41,P42,P43,P44,P45,P46,P47,P48,P49,P50,P51,P52,P53,P54,P55,P57,P58,P59,P60,P64,P65,P66,P67,P68,P69,P7",
+      "values_range": "P8,P9,P10,P11,P12,P13,P14,P15,P16,P17,P18,P19,P20,P21,P22,P23,P24,P26,P27,P28,P33,P34,P35,P36,P37,P38,P40,P41,P42,P43,P44,P45,P46,P47,P48,P49,P50,P51,P52,P53,P54,P55,P57,P58,P59,P60,P64,P65,P66,P67,P68,P69",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "measure",
+          "cells": "G6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence type ",
+          "direction": "W",
+          "cells": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence group ",
+          "direction": "WNW",
+          "cells": "A8,A21,A24,A25,A26,A29,A30,A31,A32,A33,A39,A40,A56,A57,A61,A62,A63,A64,A70,A71"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "P7"
+        }
+      ]
+    },
+    {
+      "name": "P_standalone",
+      "range": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71,P25,P29,P30,P31,P32,P39,P56,P61,P62,P63,P70,P71,P7",
+      "values_range": "P25,P29,P30,P31,P32,P39,P56,P61,P62,P63,P70,P71",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "measure",
+          "cells": "G6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence group ",
+          "direction": "W",
+          "cells": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "P7"
+        }
+      ]
+    },
+    {
+      "name": "Z_subtype",
+      "range": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69,Z8,Z9,Z10,Z11,Z12,Z13,Z14,Z15,Z16,Z17,Z18,Z19,Z20,Z21,Z22,Z23,Z24,Z26,Z27,Z28,Z33,Z34,Z35,Z36,Z37,Z38,Z40,Z41,Z42,Z43,Z44,Z45,Z46,Z47,Z48,Z49,Z50,Z51,Z52,Z53,Z54,Z55,Z57,Z58,Z59,Z60,Z64,Z65,Z66,Z67,Z68,Z69,Z7",
+      "values_range": "Z8,Z9,Z10,Z11,Z12,Z13,Z14,Z15,Z16,Z17,Z18,Z19,Z20,Z21,Z22,Z23,Z24,Z26,Z27,Z28,Z33,Z34,Z35,Z36,Z37,Z38,Z40,Z41,Z42,Z43,Z44,Z45,Z46,Z47,Z48,Z49,Z50,Z51,Z52,Z53,Z54,Z55,Z57,Z58,Z59,Z60,Z64,Z65,Z66,Z67,Z68,Z69",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "measure",
+          "cells": "Q6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence type ",
+          "direction": "W",
+          "cells": "B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B21,B22,B23,B24,B26,B27,B28,B33,B34,B35,B36,B37,B38,B40,B41,B42,B43,B44,B45,B46,B47,B48,B49,B50,B51,B52,B53,B54,B55,B57,B58,B59,B60,B64,B65,B66,B67,B68,B69"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence group ",
+          "direction": "WNW",
+          "cells": "A8,A21,A24,A25,A26,A29,A30,A31,A32,A33,A39,A40,A56,A57,A61,A62,A63,A64,A70,A71"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "Z7"
+        }
+      ]
+    },
+    {
+      "name": "Z_standalone",
+      "range": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71,Z25,Z29,Z30,Z31,Z32,Z39,Z56,Z61,Z62,Z63,Z70,Z71,Z7",
+      "values_range": "Z25,Z29,Z30,Z31,Z32,Z39,Z56,Z61,Z62,Z63,Z70,Z71",
+      "meta_data": [
+        {
+          "name": "local_government_area",
+          "cells": "A5"
+        },
+        {
+          "name": "measure",
+          "cells": "Q6"
+        }
+      ],
+      "headers": [
+        {
+          "name": "principal_offence",
+          "caption": "Offence group ",
+          "direction": "W",
+          "cells": "A25,A29,A30,A31,A32,A39,A56,A61,A62,A63,A70,A71"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "Z7"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:27:01Z",
+    "tool_version": "0.2.0",
+    "records": 332,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T202605Z-564610c66b95",
+    "started_at": "2026-11-03T20:26:06Z",
+    "workbook": "564610c66b950746662b48b069fbe0ae3ac77364f860c629c92139118ec2973a--TweedLGA.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a317-2b1a-72d5-8397-27428578e9d1",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "ec3562928a2c330752e340a5b8c9b22e6934d1604b5c2d8c4b3a5d299ff49a08",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `564610c66b950746662b48b069fbe0ae3ac77364f860c629c92139118ec2973a--TweedLGA.xlsx`.\n\n- Publication: BOCSAR — Crime statistics by LGA (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 7 of 7\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Summary of offences\" | d5804a0fbdca193049bb2d2c649abb410a5c5064ebbdc0c05cd3c933d333ee33 | missing |\n| \"Premises Type\" | eb18d51a87bacd02e95ce896ac6ddd94aee7ae878b1cdb7e2cd04d068d3d2857 | missing |\n| \"Victims\" | a275c2c9848abd60654891da86653595a23b25ffe28632659878046b6771fd93 | missing |\n| \"Offenders\" | da22a18aace40523fdc7cb909c598f42af7bb2596cd862f05df4cf26ae78fede | missing |\n| \"Alcohol Related\" | 73f36fd74647229fa4e27d15588ef592be07283467c8b13a32ca0c8f6c4efe77 | missing |\n| \"Month\" | 2bdebe76ea870fc631ee3e7e2bd588a61c30fb2db725593312709b054f524373 | missing |\n| \"Time\" | f9ff5f789834e4e9a1939cfa0124a81df04fe97b16fa20919b9226d078dab82f | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T202605Z-564610c66b95.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "G7:O71,Q7:Y71",
+      "reason": "Earlier annual periods; most recent year only."
+    }
+  ]
+}

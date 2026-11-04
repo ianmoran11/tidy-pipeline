@@ -1,0 +1,151 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "e2bcedff3c06454e94abead6ed6f7f04ed77b41ad3a2391d659849c564cbec38",
+  "sheet": "Table 06",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Most recent annual period only: 2026, year ending June. Published totals retained, including People, Total and Total People where present. Indigenous Total People includes unknown status. CSA offence divisions and lower classifications are preserved as published, including combined categories; repeated classification labels do not imply additional subtotal records.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:F1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "latest_year",
+      "range": "A2:G226",
+      "values_range": "G2:G226",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A226"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B226"
+        },
+        {
+          "name": "method_of_proceeding",
+          "caption": "Outcome",
+          "direction": "W",
+          "cells": "C2:C226"
+        },
+        {
+          "name": "principal_offence_division",
+          "caption": "Offence Division",
+          "direction": "W",
+          "cells": "D2:D226"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Offence Subdivision",
+          "direction": "W",
+          "cells": "E2:E226"
+        },
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "F2:F226"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:06:07Z",
+    "tool_version": "0.2.0",
+    "records": 225,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T210431Z-9cc71bbae0af",
+    "started_at": "2026-11-03T21:04:32Z",
+    "workbook": "9cc71bbae0af1c57467eee60f1e2e569d88f5598f772fa6d77683f42d6d8084c--Indigenous_Data_Tables_Alleged_Offender_Incidents_Visualisation_Year_Ending_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a33a-595e-73ae-8a10-b0a9143e9639",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "9aab44619a5766c11725b4c8350de633e140f423c6fac711c1033267711ad83f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `9cc71bbae0af1c57467eee60f1e2e569d88f5598f772fa6d77683f42d6d8084c--Indigenous_Data_Tables_Alleged_Offender_Incidents_Visualisation_Year_Ending_June_2026.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Indigenous Alleged Offender Incidents (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 10 of 10\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 35ea08dcf1ff065cb8d775925eb320b98d0087dc06d90fb41b3bcf02e9392621 | missing |\n| \"Footnotes\" | de59857f89e8ce4ea1865a7dea1540f157831e4e596fbc7a274a75a5eb33ad0e | missing |\n| \"Table 01\" | ed1731c8e295c6f46e3da996b9dce37c079c9c19d5b29b92153cba0cf96d31ff | missing |\n| \"Table 02\" | 79d219b236d98ea4b4616fabe4c4ade0e78f05aa64e93d32b7018812e8789ea2 | missing |\n| \"Table 03\" | a6eb46d8c45bf0378293f29c5d5c66f13a0e512328d8abb660b48eb236e9bbb4 | missing |\n| \"Table 04\" | e081a20352652cf9ff46f2be03bf2fdf0945162522dadb254a8c2a0506e1b645 | missing |\n| \"Table 05\" | 74ba320c5d0cab94f5c8683e3effbd17434366f9f9d5d6b8c2ddb56d8c4d6da8 | missing |\n| \"Table 06\" | e2bcedff3c06454e94abead6ed6f7f04ed77b41ad3a2391d659849c564cbec38 | missing |\n| \"Table 07\" | a18b7521edee2bc6106f7c7cbec4d1ca2b0188aa0f9eb77687418ce1bebe1540 | missing |\n| \"Table 08\" | 7a63de99e336753ffb9cd3853063c3cb4c3c5ec60cdcc07a1aed3906e97b8277 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T210431Z-9cc71bbae0af.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A227:G2162",
+      "reason": "earlier years; most recent year only"
+    }
+  ]
+}

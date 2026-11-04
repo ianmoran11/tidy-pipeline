@@ -1,0 +1,91 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "6b06f51a6ab85a7bc27e98971644ce710154677d55c0e7b4b9398b5cde8b1636",
+  "sheet": "Contents",
+  "kind": "contents",
+  "status": "validated",
+  "reason": "Workbook contents and general explanatory notes; no statistical table.",
+  "new_dimensions": [],
+  "meta_data": [],
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T20:57:28Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205338Z-22b43a99852d",
+    "started_at": "2026-11-03T20:53:40Z",
+    "workbook": "22b43a99852d18a1f560ee5c4420c2f892931fb787b997fadd6153636abb5f96--AJI-Family-Violence-Year-Ending-December-2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a330-681e-753a-b781-6c340d8124e2",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "f885ac82cea558142f42837173ed3ea9e671cf802f34db0f44d4487c9d5ccbfb",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `22b43a99852d18a1f560ee5c4420c2f892931fb787b997fadd6153636abb5f96--AJI-Family-Violence-Year-Ending-December-2025.xlsx`.\n\n- Publication: Crime Statistics Agency - Aboriginal Justice Indicators dashboard (Crime Statistics Agency Victoria)\n- Release or year: 2025-12\n- Sheets needing a recipe: 23 of 23\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | 6b06f51a6ab85a7bc27e98971644ce710154677d55c0e7b4b9398b5cde8b1636 | missing |\n| \"Footnotes\" | e8b41b0e20567a317b674176f73bdba61738e5b09088c1b295bd08487c166eb8 | missing |\n| \"Table 01\" | 07c6c00a3d5625de86c62fc62ffe78648b9f76e758890fda8ee7b18fe13c10fa | missing |\n| \"Table 02\" | b5e033bd5c3c4caf4a76ca961af1c5019a9e3c2dcccc872d5e0120e6cb25c105 | missing |\n| \"Table 03\" | d04d8f51d633a617adaa076642c3d851c1ff314156ab8b2e727cbd6529f4013b | missing |\n| \"Table 04\" | 9bf91afca940f41e7f31f2d23c32c3de8e184c372a5a4ca3a6d53090c8b41688 | missing |\n| \"Table 05\" | 0a9e81ba7a1708709a38952c5a7708b29f49fe1048ad85ea0c01ea40e10a1deb | missing |\n| \"Table 06\" | 54671f87a386cce0f872ebe79653cc047da92077825c26c9bb85c3ccdfd18fad | missing |\n| \"Table 07\" | 6c5ae90173d55ceb9f534013b300705d66c7503f7a228063fee95e63e3ea6877 | missing |\n| \"Table 08\" | 8a4f0aa915e54c21ec265343f2c26311bd7bce7c029f3ea45a03b723d99df59e | missing |\n| \"Table 09\" | f205fa3dd55559172dec989c14e867edd5f09788650551519adf1c963ba50b4e | missing |\n| \"Table 10\" | 42c0b8c3a887612411feafe827b189f1e46d4bac1f898b6f300f3337bac3cac1 | missing |\n| \"Table 11\" | 2f5dd772015838f6eb272bf112a36a61c3f58c9240451ad8f2cb0f944763a6a3 | missing |\n| \"Table 12\" | 1f106f83305de9fc16a9080c918b5dbd0e11fdd2c070e14980e230d422966d2d | missing |\n| \"Table 13\" | 842b16693ecf5405333acfccc9ac791fea8ef58e00d3af3de8da700f9cdd1e5f | missing |\n| \"Table 14\" | 488551d5ec4df1be2d7e922f2cf9d19bc062f4228d352d3ad62c0465e22faced | missing |\n| \"Table 15\" | 81133b1638d1e2e506f2524b0c3e20a52dc3861e38bccd2f1a9cac5c0c116f63 | missing |\n| \"Table 16\" | 3e6712d542820dcf2f21ba9255fd1f77479c6cf76f6d7373326d2303d668962b | missing |\n| \"Table 17\" | 3f9bdc4a1f1325518ffdc927b5946c695ec8e4107f5b31dbcee5b929a0ee9b68 | missing |\n| \"Table 18\" | d66f79e57151e4736ffa05881bd50f92da04e5c7ad625d54c95741e588f4003c | missing |\n| \"Table 19\" | 89c4a073e0f7b47d07753113487b3026ff27c758c26d3092f4ae8288cd84ff54 | missing |\n| \"Table 20\" | be40845a53488cc3977abf4a23786f02e7829fcbe8705c2dce443f5151a4142e | missing |\n| \"Table 21\" | 92dd5d526f5878ed0dd8b3cca621cd6e6cbf86ae51e1a61c0eaab284eaf7ea75 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205338Z-22b43a99852d.jsonl"
+  }
+}

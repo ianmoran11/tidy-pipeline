@@ -17,7 +17,7 @@ release.
 | File | One row per |
 |---|---|
 | `observations.csv` | published value: series, period, reference date, value, status (published / not published / not available / blank …), quality flag (e.g. relative standard error 25–50%), release, whether it's the latest release's value, source sheet and cell |
-| `series.csv` | series: publication, what is counted (population, measure, unit, estimate type …) and one column per dimension (state, sex, age group, offence, court level …) |
+| `series/<publication_id>.csv` | series, one file per publication: what is counted (population, measure, unit, estimate type …) and one column per dimension the publication uses (state, sex, age group, offence, court level …). The 2026-11-02 release has one `series.csv` for all publications instead |
 | `measures.csv` | measure: the measure catalogue |
 | `sources.csv` | source sheet: publication, release, workbook, sheet, title |
 
@@ -56,7 +56,7 @@ erDiagram
         string state
         string sex
         string age_group
-        string principal_offence "and about 180 more dimension columns"
+        string principal_offence "and the publication's other dimensions"
     }
     MEASURES {
         string measure_id PK
@@ -95,9 +95,9 @@ name.
 ```r
 library(dplyr)
 obs <- readr::read_csv("observations.csv")
-series <- readr::read_csv("series.csv")
+series <- readr::read_csv("series/prisoners-australia.csv")
 obs |> filter(is_latest) |> inner_join(series, by = "series_id") |>
-  filter(publication_id == "prisoners-australia", measure == "Imprisonment rate")
+  filter(measure == "Imprisonment rate")
 ```
 
 ## How it works
@@ -132,6 +132,7 @@ flowchart TD
             norm["data_normalised<br/>normalise()"]
             harm["data_harmonised<br/>harmonise()"]
             iden["data_identified<br/>identify()"]
+            asms["assembled<br/>assemble_sheet()"]
         end
         subgraph WHOLE["whole dataset"]
             asm["integrated<br/>assemble()"]
@@ -139,7 +140,7 @@ flowchart TD
             recon["observations<br/>reconcile()"]
         end
         csv[("integrated/*.csv")]
-        selected --> data --> norm --> harm --> iden --> asm --> typ --> recon --> csv
+        selected --> data --> norm --> harm --> iden --> asms --> asm --> typ --> recon --> csv
     end
     sel --> selected
     meta --> selected

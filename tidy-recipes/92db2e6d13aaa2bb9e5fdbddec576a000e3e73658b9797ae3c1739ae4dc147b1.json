@@ -1,0 +1,193 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "92db2e6d13aaa2bb9e5fdbddec576a000e3e73658b9797ae3c1739ae4dc147b1",
+  "sheet": "Table 15",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest annual period 2025 only; earlier years and explicit previous-year count columns excluded. Current-year ranks and percentage changes retained. RAJAC is the publisher reporting region. Overall and VICTORIA totals retained, not additive to component rows. Published fractional percentages preserved. Blank percentage changes (previous year zero) omitted from values ranges. Person counts 1–3 are confidentialised to 2. CSA offence hierarchy and labels retained as published.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1,B1,C1,E1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "rank_current_year",
+      "range": "A1:C1,A2:C91,D1,D2:D91",
+      "values_range": "D2:D91",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "RAJAC",
+          "direction": "W",
+          "cells": "A2:A91"
+        },
+        {
+          "name": "age_group",
+          "caption": "Adult/Child Status",
+          "direction": "W",
+          "cells": "B2:B91"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Offence Subdivision",
+          "direction": "W",
+          "cells": "C2:C91"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "D1"
+        }
+      ]
+    },
+    {
+      "name": "alleged_offender_incident_count_current_year",
+      "range": "F1,F2:F91",
+      "values_range": "F2:F91",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "RAJAC",
+          "direction": "W",
+          "cells": "A2:A91"
+        },
+        {
+          "name": "age_group",
+          "caption": "Adult/Child Status",
+          "direction": "W",
+          "cells": "B2:B91"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Offence Subdivision",
+          "direction": "W",
+          "cells": "C2:C91"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "F1"
+        }
+      ]
+    },
+    {
+      "name": "percentage_change",
+      "range": "G1,G2:G91",
+      "values_range": "G2:G3,G5:G21,G23:G66,G68:G91",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "RAJAC",
+          "direction": "W",
+          "cells": "A2:A91"
+        },
+        {
+          "name": "age_group",
+          "caption": "Adult/Child Status",
+          "direction": "W",
+          "cells": "B2:B91"
+        },
+        {
+          "name": "principal_offence",
+          "caption": "Offence Subdivision",
+          "direction": "W",
+          "cells": "C2:C91"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:07:15Z",
+    "tool_version": "0.2.0",
+    "records": 267,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205551Z-c724e56e0107",
+    "started_at": "2026-11-03T20:55:52Z",
+    "workbook": "c724e56e0107e0c230edb674c45bb0136fbcda37825dfd655f738d12bd32e189--AJI-Alleged-Offending-Year-Ending-December2025.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a332-6a7e-710f-b771-03225401a03c",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "b0329cafdeef22059a8670c614b541869fc065492402b94971699e794a16ac99",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `c724e56e0107e0c230edb674c45bb0136fbcda37825dfd655f738d12bd32e189--AJI-Alleged-Offending-Year-Ending-December2025.xlsx`.\n\n- Publication: Crime Statistics Agency - Aboriginal Justice Indicators dashboard (Crime Statistics Agency Victoria)\n- Release or year: 2025-12\n- Sheets needing a recipe: 18 of 18\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f0b5000cb5398f828aaef496f0318973f109fd68ab907cc81f68265af8723d0f | missing |\n| \"Footnotes\" | ade68117c905d1cb2d4acdf0f728e438e77573444acb3adbe5e89b7ee9b4a11a | missing |\n| \"Table 01\" | f0d8b6e981a64904e83153386cef63efa2fce8efbde49a6221481c226789b1ef | missing |\n| \"Table 02\" | 0c51f1971604c2200eb1c19cc471bd09c423adf6c2f779ad3e773f2649611e37 | missing |\n| \"Table 03\" | 3054e2496e45f8bdf53396de0ecc3c1a1f2abb8e52dc44cec6ea463cc56686f4 | missing |\n| \"Table 04\" | f52d361bed07425f4ea67fc71a531b77c9692d6390937cfa5595d4e16fe164f6 | missing |\n| \"Table 05\" | 4c61ce04574f5cf332bb2f1cdfff92171d6a909a1d0f8426497776a9575edda9 | missing |\n| \"Table 06\" | ca4b9fc82ec56c4eb3f42eb95806811350016445be6cc9df5409391f32a561a8 | missing |\n| \"Table 07\" | 3d96e4891d46e34d5c9b08fab6bd8ce495cdb0e4e738917550cbdd9f2683fef2 | missing |\n| \"Table 08\" | c637b16e251e19cd732ec501b341e9b9dc69ae4f81a541875514b174de168900 | missing |\n| \"Table 09\" | 826c8b9d96e6be0f7aa5bfc08887ec6262ce47db05f70bc8fc63c837252ef2e7 | missing |\n| \"Table 10\" | a1e0346125c273e18fd39c97bcb5f98e9cfc41a24a75c704d7728d9b53089f16 | missing |\n| \"Table 11\" | 3a2ed69251422a413ad65b6d0f7f66372263927a80d89b9cfc94887914647221 | missing |\n| \"Table 12\" | 812c5822772cd706ece7247b3ad5e253ce737712af9b251b48c9995d93886d19 | missing |\n| \"Table 13\" | 0bcecbc0f9e6fa545c1c6b82072e4a64d02f5f01351d4bec7be12a12db3424d4 | missing |\n| \"Table 14\" | e62a8f441d02e128f316713a7a6b36cc8b13cc9c0bf91fb7b6a068f1b07a6ce1 | missing |\n| \"Table 15\" | 92db2e6d13aaa2bb9e5fdbddec576a000e3e73658b9797ae3c1739ae4dc147b1 | missing |\n| \"Table 16\" | 6f80cecb98d726a578d0fb0e62684d063729397ccd746e49d841f54cc6b46ff9 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205551Z-c724e56e0107.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "E2:E91",
+      "reason": "Previous-year values (2024); most recent year only."
+    }
+  ]
+}

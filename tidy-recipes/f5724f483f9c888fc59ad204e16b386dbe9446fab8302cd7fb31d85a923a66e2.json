@@ -1,0 +1,241 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "f5724f483f9c888fc59ad204e16b386dbe9446fab8302cd7fb31d85a923a66e2",
+  "sheet": "Public Transport",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Retains latest 12 monthly observations July 2025–June 2026, excluding July 2024–June 2025. Preserves published two-year trend/annual percent change as a separate measure, including Stable and nc. Offence groups with detailed types retain both hierarchy levels; rows with no offence type use the group as the offence label and are not inferred subtotals. Dictionary victim_offence and victim_offence_group describe published police-recorded offence categories here; values count incidents, not victims. Premises labels and footnote markers preserved exactly.",
+  "new_dimensions": [],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2:A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A5:C5"
+    },
+    {
+      "name": "notes",
+      "cells": "A309:A311,A313:A316"
+    },
+    {
+      "name": "source",
+      "cells": "A312"
+    }
+  ],
+  "tables": [
+    {
+      "name": "detailed_monthly",
+      "range": "A6:C10,A12:C14,A17:C24,A27:C40,A42:C45,A48:C53,A56:C61,A63:C65,A68:C75,A78:C89,A91:C94,A97:C100,A103:C107,A109:C112,A114:C118,A120:C123,A125:C127,A130:C134,A137:C144,A146:C152,A154:C157,A159:C162,A165:C169,A171:C172,A174:C179,A182:C187,A189:C197,A199:C202,A204:C207,A210:C212,A214:C216,A218:C219,A221:C223,A226:C230,A233:C237,A239:C241,A244:C247,A249:C253,A255:C260,A262:C264,A266:C266,A269:C275,A278:C285,A288:C295,A297:C300,A302:C305,P6:AA10,P12:AA14,P17:AA24,P27:AA40,P42:AA45,P48:AA53,P56:AA61,P63:AA65,P68:AA75,P78:AA89,P91:AA94,P97:AA100,P103:AA107,P109:AA112,P114:AA118,P120:AA123,P125:AA127,P130:AA134,P137:AA144,P146:AA152,P154:AA157,P159:AA162,P165:AA169,P171:AA172,P174:AA179,P182:AA187,P189:AA197,P199:AA202,P204:AA207,P210:AA212,P214:AA216,P218:AA219,P221:AA223,P226:AA230,P233:AA237,P239:AA241,P244:AA247,P249:AA253,P255:AA260,P262:AA264,P266:AA266,P269:AA275,P278:AA285,P288:AA295,P297:AA300,P302:AA305",
+      "values_range": "P6:AA10,P12:AA14,P17:AA24,P27:AA40,P42:AA45,P48:AA53,P56:AA61,P63:AA65,P68:AA75,P78:AA89,P91:AA94,P97:AA100,P103:AA107,P109:AA112,P114:AA118,P120:AA123,P125:AA127,P130:AA134,P137:AA144,P146:AA152,P154:AA157,P159:AA162,P165:AA169,P171:AA172,P174:AA179,P182:AA187,P189:AA197,P199:AA202,P204:AA207,P210:AA212,P214:AA216,P218:AA219,P221:AA223,P226:AA230,P233:AA237,P239:AA241,P244:AA247,P249:AA253,P255:AA260,P262:AA264,P266:AA266,P269:AA275,P278:AA285,P288:AA295,P297:AA300,P302:AA305",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Premises",
+          "direction": "W",
+          "cells": "A6:A10,A12:A14,A17:A24,A27:A40,A42:A45,A48:A53,A56:A61,A63:A65,A68:A75,A78:A89,A91:A94,A97:A100,A103:A107,A109:A112,A114:A118,A120:A123,A125:A127,A130:A134,A137:A144,A146:A152,A154:A157,A159:A162,A165:A169,A171:A172,A174:A179,A182:A187,A189:A197,A199:A202,A204:A207,A210:A212,A214:A216,A218:A219,A221:A223,A226:A230,A233:A237,A239:A241,A244:A247,A249:A253,A255:A260,A262:A264,A266:A266,A269:A275,A278:A285,A288:A295,A297:A300,A302:A305"
+        },
+        {
+          "name": "victim_offence_group",
+          "caption": "Offence group",
+          "direction": "W",
+          "cells": "B6:B10,B12:B14,B17:B24,B27:B40,B42:B45,B48:B53,B56:B61,B63:B65,B68:B75,B78:B89,B91:B94,B97:B100,B103:B107,B109:B112,B114:B118,B120:B123,B125:B127,B130:B134,B137:B144,B146:B152,B154:B157,B159:B162,B165:B169,B171:B172,B174:B179,B182:B187,B189:B197,B199:B202,B204:B207,B210:B212,B214:B216,B218:B219,B221:B223,B226:B230,B233:B237,B239:B241,B244:B247,B249:B253,B255:B260,B262:B264,B266:B266,B269:B275,B278:B285,B288:B295,B297:B300,B302:B305"
+        },
+        {
+          "name": "victim_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "C6:C10,C12:C14,C17:C24,C27:C40,C42:C45,C48:C53,C56:C61,C63:C65,C68:C75,C78:C89,C91:C94,C97:C100,C103:C107,C109:C112,C114:C118,C120:C123,C125:C127,C130:C134,C137:C144,C146:C152,C154:C157,C159:C162,C165:C169,C171:C172,C174:C179,C182:C187,C189:C197,C199:C202,C204:C207,C210:C212,C214:C216,C218:C219,C221:C223,C226:C230,C233:C237,C239:C241,C244:C247,C249:C253,C255:C260,C262:C264,C266:C266,C269:C275,C278:C285,C288:C295,C297:C300,C302:C305"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "P5:AA5"
+        }
+      ]
+    },
+    {
+      "name": "detailed_trend",
+      "range": "A6:C10,A12:C14,A17:C24,A27:C40,A42:C45,A48:C53,A56:C61,A63:C65,A68:C75,A78:C89,A91:C94,A97:C100,A103:C107,A109:C112,A114:C118,A120:C123,A125:C127,A130:C134,A137:C144,A146:C152,A154:C157,A159:C162,A165:C169,A171:C172,A174:C179,A182:C187,A189:C197,A199:C202,A204:C207,A210:C212,A214:C216,A218:C219,A221:C223,A226:C230,A233:C237,A239:C241,A244:C247,A249:C253,A255:C260,A262:C264,A266:C266,A269:C275,A278:C285,A288:C295,A297:C300,A302:C305,AB6:AB10,AB12:AB14,AB17:AB24,AB27:AB40,AB42:AB45,AB48:AB53,AB56:AB61,AB63:AB65,AB68:AB75,AB78:AB89,AB91:AB94,AB97:AB100,AB103:AB107,AB109:AB112,AB114:AB118,AB120:AB123,AB125:AB127,AB130:AB134,AB137:AB144,AB146:AB152,AB154:AB157,AB159:AB162,AB165:AB169,AB171:AB172,AB174:AB179,AB182:AB187,AB189:AB197,AB199:AB202,AB204:AB207,AB210:AB212,AB214:AB216,AB218:AB219,AB221:AB223,AB226:AB230,AB233:AB237,AB239:AB241,AB244:AB247,AB249:AB253,AB255:AB260,AB262:AB264,AB266:AB266,AB269:AB275,AB278:AB285,AB288:AB295,AB297:AB300,AB302:AB305",
+      "values_range": "AB6:AB10,AB12:AB14,AB17:AB24,AB27:AB40,AB42:AB45,AB48:AB53,AB56:AB61,AB63:AB65,AB68:AB75,AB78:AB89,AB91:AB94,AB97:AB100,AB103:AB107,AB109:AB112,AB114:AB118,AB120:AB123,AB125:AB127,AB130:AB134,AB137:AB144,AB146:AB152,AB154:AB157,AB159:AB162,AB165:AB169,AB171:AB172,AB174:AB179,AB182:AB187,AB189:AB197,AB199:AB202,AB204:AB207,AB210:AB212,AB214:AB216,AB218:AB219,AB221:AB223,AB226:AB230,AB233:AB237,AB239:AB241,AB244:AB247,AB249:AB253,AB255:AB260,AB262:AB264,AB266:AB266,AB269:AB275,AB278:AB285,AB288:AB295,AB297:AB300,AB302:AB305",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Premises",
+          "direction": "W",
+          "cells": "A6:A10,A12:A14,A17:A24,A27:A40,A42:A45,A48:A53,A56:A61,A63:A65,A68:A75,A78:A89,A91:A94,A97:A100,A103:A107,A109:A112,A114:A118,A120:A123,A125:A127,A130:A134,A137:A144,A146:A152,A154:A157,A159:A162,A165:A169,A171:A172,A174:A179,A182:A187,A189:A197,A199:A202,A204:A207,A210:A212,A214:A216,A218:A219,A221:A223,A226:A230,A233:A237,A239:A241,A244:A247,A249:A253,A255:A260,A262:A264,A266:A266,A269:A275,A278:A285,A288:A295,A297:A300,A302:A305"
+        },
+        {
+          "name": "victim_offence_group",
+          "caption": "Offence group",
+          "direction": "W",
+          "cells": "B6:B10,B12:B14,B17:B24,B27:B40,B42:B45,B48:B53,B56:B61,B63:B65,B68:B75,B78:B89,B91:B94,B97:B100,B103:B107,B109:B112,B114:B118,B120:B123,B125:B127,B130:B134,B137:B144,B146:B152,B154:B157,B159:B162,B165:B169,B171:B172,B174:B179,B182:B187,B189:B197,B199:B202,B204:B207,B210:B212,B214:B216,B218:B219,B221:B223,B226:B230,B233:B237,B239:B241,B244:B247,B249:B253,B255:B260,B262:B264,B266:B266,B269:B275,B278:B285,B288:B295,B297:B300,B302:B305"
+        },
+        {
+          "name": "victim_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "C6:C10,C12:C14,C17:C24,C27:C40,C42:C45,C48:C53,C56:C61,C63:C65,C68:C75,C78:C89,C91:C94,C97:C100,C103:C107,C109:C112,C114:C118,C120:C123,C125:C127,C130:C134,C137:C144,C146:C152,C154:C157,C159:C162,C165:C169,C171:C172,C174:C179,C182:C187,C189:C197,C199:C202,C204:C207,C210:C212,C214:C216,C218:C219,C221:C223,C226:C230,C233:C237,C239:C241,C244:C247,C249:C253,C255:C260,C262:C264,C266:C266,C269:C275,C278:C285,C288:C295,C297:C300,C302:C305"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "AB5"
+        }
+      ]
+    },
+    {
+      "name": "unsplit_monthly",
+      "range": "A11:B11,A15:B16,A25:B26,A41:B41,A46:B47,A54:B55,A62:B62,A66:B67,A76:B77,A90:B90,A95:B96,A101:B102,A108:B108,A113:B113,A119:B119,A124:B124,A128:B129,A135:B136,A145:B145,A153:B153,A158:B158,A163:B164,A170:B170,A173:B173,A180:B181,A188:B188,A198:B198,A203:B203,A208:B209,A213:B213,A217:B217,A220:B220,A224:B225,A231:B232,A238:B238,A242:B243,A248:B248,A254:B254,A261:B261,A265:B265,A267:B268,A276:B277,A286:B287,A296:B296,A301:B301,A306:B307,P11:AA11,P15:AA16,P25:AA26,P41:AA41,P46:AA47,P54:AA55,P62:AA62,P66:AA67,P76:AA77,P90:AA90,P95:AA96,P101:AA102,P108:AA108,P113:AA113,P119:AA119,P124:AA124,P128:AA129,P135:AA136,P145:AA145,P153:AA153,P158:AA158,P163:AA164,P170:AA170,P173:AA173,P180:AA181,P188:AA188,P198:AA198,P203:AA203,P208:AA209,P213:AA213,P217:AA217,P220:AA220,P224:AA225,P231:AA232,P238:AA238,P242:AA243,P248:AA248,P254:AA254,P261:AA261,P265:AA265,P267:AA268,P276:AA277,P286:AA287,P296:AA296,P301:AA301,P306:AA307",
+      "values_range": "P11:AA11,P15:AA16,P25:AA26,P41:AA41,P46:AA47,P54:AA55,P62:AA62,P66:AA67,P76:AA77,P90:AA90,P95:AA96,P101:AA102,P108:AA108,P113:AA113,P119:AA119,P124:AA124,P128:AA129,P135:AA136,P145:AA145,P153:AA153,P158:AA158,P163:AA164,P170:AA170,P173:AA173,P180:AA181,P188:AA188,P198:AA198,P203:AA203,P208:AA209,P213:AA213,P217:AA217,P220:AA220,P224:AA225,P231:AA232,P238:AA238,P242:AA243,P248:AA248,P254:AA254,P261:AA261,P265:AA265,P267:AA268,P276:AA277,P286:AA287,P296:AA296,P301:AA301,P306:AA307",
+      "meta_data": [
+        {
+          "name": "measure",
+          "cells": "A2"
+        }
+      ],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Premises",
+          "direction": "W",
+          "cells": "A11:A11,A15:A16,A25:A26,A41:A41,A46:A47,A54:A55,A62:A62,A66:A67,A76:A77,A90:A90,A95:A96,A101:A102,A108:A108,A113:A113,A119:A119,A124:A124,A128:A129,A135:A136,A145:A145,A153:A153,A158:A158,A163:A164,A170:A170,A173:A173,A180:A181,A188:A188,A198:A198,A203:A203,A208:A209,A213:A213,A217:A217,A220:A220,A224:A225,A231:A232,A238:A238,A242:A243,A248:A248,A254:A254,A261:A261,A265:A265,A267:A268,A276:A277,A286:A287,A296:A296,A301:A301,A306:A307"
+        },
+        {
+          "name": "victim_offence",
+          "caption": "Offence group",
+          "direction": "W",
+          "cells": "B11:B11,B15:B16,B25:B26,B41:B41,B46:B47,B54:B55,B62:B62,B66:B67,B76:B77,B90:B90,B95:B96,B101:B102,B108:B108,B113:B113,B119:B119,B124:B124,B128:B129,B135:B136,B145:B145,B153:B153,B158:B158,B163:B164,B170:B170,B173:B173,B180:B181,B188:B188,B198:B198,B203:B203,B208:B209,B213:B213,B217:B217,B220:B220,B224:B225,B231:B232,B238:B238,B242:B243,B248:B248,B254:B254,B261:B261,B265:B265,B267:B268,B276:B277,B286:B287,B296:B296,B301:B301,B306:B307"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "P5:AA5"
+        }
+      ]
+    },
+    {
+      "name": "unsplit_trend",
+      "range": "A11:B11,A15:B16,A25:B26,A41:B41,A46:B47,A54:B55,A62:B62,A66:B67,A76:B77,A90:B90,A95:B96,A101:B102,A108:B108,A113:B113,A119:B119,A124:B124,A128:B129,A135:B136,A145:B145,A153:B153,A158:B158,A163:B164,A170:B170,A173:B173,A180:B181,A188:B188,A198:B198,A203:B203,A208:B209,A213:B213,A217:B217,A220:B220,A224:B225,A231:B232,A238:B238,A242:B243,A248:B248,A254:B254,A261:B261,A265:B265,A267:B268,A276:B277,A286:B287,A296:B296,A301:B301,A306:B307,AB11:AB11,AB15:AB16,AB25:AB26,AB41:AB41,AB46:AB47,AB54:AB55,AB62:AB62,AB66:AB67,AB76:AB77,AB90:AB90,AB95:AB96,AB101:AB102,AB108:AB108,AB113:AB113,AB119:AB119,AB124:AB124,AB128:AB129,AB135:AB136,AB145:AB145,AB153:AB153,AB158:AB158,AB163:AB164,AB170:AB170,AB173:AB173,AB180:AB181,AB188:AB188,AB198:AB198,AB203:AB203,AB208:AB209,AB213:AB213,AB217:AB217,AB220:AB220,AB224:AB225,AB231:AB232,AB238:AB238,AB242:AB243,AB248:AB248,AB254:AB254,AB261:AB261,AB265:AB265,AB267:AB268,AB276:AB277,AB286:AB287,AB296:AB296,AB301:AB301,AB306:AB307",
+      "values_range": "AB11:AB11,AB15:AB16,AB25:AB26,AB41:AB41,AB46:AB47,AB54:AB55,AB62:AB62,AB66:AB67,AB76:AB77,AB90:AB90,AB95:AB96,AB101:AB102,AB108:AB108,AB113:AB113,AB119:AB119,AB124:AB124,AB128:AB129,AB135:AB136,AB145:AB145,AB153:AB153,AB158:AB158,AB163:AB164,AB170:AB170,AB173:AB173,AB180:AB181,AB188:AB188,AB198:AB198,AB203:AB203,AB208:AB209,AB213:AB213,AB217:AB217,AB220:AB220,AB224:AB225,AB231:AB232,AB238:AB238,AB242:AB243,AB248:AB248,AB254:AB254,AB261:AB261,AB265:AB265,AB267:AB268,AB276:AB277,AB286:AB287,AB296:AB296,AB301:AB301,AB306:AB307",
+      "meta_data": [],
+      "headers": [
+        {
+          "name": "incident_location",
+          "caption": "Premises",
+          "direction": "W",
+          "cells": "A11:A11,A15:A16,A25:A26,A41:A41,A46:A47,A54:A55,A62:A62,A66:A67,A76:A77,A90:A90,A95:A96,A101:A102,A108:A108,A113:A113,A119:A119,A124:A124,A128:A129,A135:A136,A145:A145,A153:A153,A158:A158,A163:A164,A170:A170,A173:A173,A180:A181,A188:A188,A198:A198,A203:A203,A208:A209,A213:A213,A217:A217,A220:A220,A224:A225,A231:A232,A238:A238,A242:A243,A248:A248,A254:A254,A261:A261,A265:A265,A267:A268,A276:A277,A286:A287,A296:A296,A301:A301,A306:A307"
+        },
+        {
+          "name": "victim_offence",
+          "caption": "Offence group",
+          "direction": "W",
+          "cells": "B11:B11,B15:B16,B25:B26,B41:B41,B46:B47,B54:B55,B62:B62,B66:B67,B76:B77,B90:B90,B95:B96,B101:B102,B108:B108,B113:B113,B119:B119,B124:B124,B128:B129,B135:B136,B145:B145,B153:B153,B158:B158,B163:B164,B170:B170,B173:B173,B180:B181,B188:B188,B198:B198,B203:B203,B208:B209,B213:B213,B217:B217,B220:B220,B224:B225,B231:B232,B238:B238,B242:B243,B248:B248,B254:B254,B261:B261,B265:B265,B267:B268,B276:B277,B286:B287,B296:B296,B301:B301,B306:B307"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "AB5"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:49:44Z",
+    "tool_version": "0.2.0",
+    "records": 3926,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T204833Z-27ec19c65d71",
+    "started_at": "2026-11-03T20:48:35Z",
+    "workbook": "27ec19c65d714e66cdf748ee68a736c95896e8f426ff7ff53bebb45311c63e2e--Offences_On_Public_Transport.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32b-be73-71a5-a12a-e9bce388bf49",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "5ebbda84b37fdef6d45727f82076810f8edc3aa8ad5e5d15f3354a4f1f2d1425",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `27ec19c65d714e66cdf748ee68a736c95896e8f426ff7ff53bebb45311c63e2e--Offences_On_Public_Transport.xlsx`.\n\n- Publication: BOCSAR — Open datasets (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Public Transport\" | f5724f483f9c888fc59ad204e16b386dbe9446fab8302cd7fb31d85a923a66e2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T204833Z-27ec19c65d71.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "D5:O307",
+      "reason": "Earlier monthly periods July 2024–June 2025; retain latest 12 months July 2025–June 2026 only."
+    }
+  ]
+}

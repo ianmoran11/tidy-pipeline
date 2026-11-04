@@ -1,0 +1,102 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "61998ef8d1ac265e507aecff3c37252183bfa742b8cc9e319fc6a33c6ef545ec",
+  "sheet": "Table 03",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Most recent year only (year ending June 2026, rows 2-38861); earlier years excluded. Written by the agent; submitted manually because validation took longer than the tool limit.",
+  "new_dimensions": [
+    {
+      "name": "csa_offence_division",
+      "description": "CSA Victoria recorded-offence classification offence division, not a principal-offence or victim counting rule."
+    },
+    {
+      "name": "csa_offence_subdivision",
+      "description": "CSA Victoria recorded-offence classification offence subdivision, not a principal-offence or victim counting rule."
+    },
+    {
+      "name": "csa_offence_subgroup",
+      "description": "CSA Victoria recorded-offence classification offence subgroup, not a principal-offence or victim counting rule."
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:H1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "recorded_offences_latest_year",
+      "range": "A1:I38861",
+      "values_range": "I2:I38861",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A38861"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B38861"
+        },
+        {
+          "name": "local_government_area",
+          "caption": "Local Government Area",
+          "direction": "W",
+          "cells": "C2:C38861"
+        },
+        {
+          "name": "postcode",
+          "caption": "Postcode",
+          "direction": "W",
+          "cells": "D2:D38861"
+        },
+        {
+          "name": "suburb",
+          "caption": "Suburb/Town Name",
+          "direction": "W",
+          "cells": "E2:E38861"
+        },
+        {
+          "name": "csa_offence_division",
+          "caption": "Offence Division",
+          "direction": "W",
+          "cells": "F2:F38861"
+        },
+        {
+          "name": "csa_offence_subdivision",
+          "caption": "Offence Subdivision",
+          "direction": "W",
+          "cells": "G2:G38861"
+        },
+        {
+          "name": "csa_offence_subgroup",
+          "caption": "Offence Subgroup",
+          "direction": "W",
+          "cells": "H2:H38861"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "I1:I1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T19:58:20Z",
+    "tool_version": "0.2.0",
+    "records": 38860,
+    "failures": []
+  },
+  "excluded": [
+    {
+      "cells": "A38862:I371542",
+      "reason": "Earlier years; most recent year only (year ending June 2026 retained)."
+    }
+  ]
+}

@@ -13,7 +13,8 @@ print(as.data.frame(f %>% filter(sheet_sha256 %in% new) %>% group_by(target, tes
   summarise(sheets = n(), failures = sum(n_failed), e.g. = str_trunc(first(examples), 90), .groups = "drop")), row.names = FALSE)
 
 o <- targets::tar_read(observations); it <- targets::tar_read(integrated); src <- it$sources
-no <- o %>% filter(sheet_sha256 %in% new); ns <- it$series %>% filter(series_id %in% no$series_id)
+no <- o %>% filter(sheet_sha256 %in% new)
+ns <- bind_rows(lapply(it$series, function(s) s[s$series_id %in% no$series_id, c("series_id", "publication_id", "population", "measure")]))
 cat("\nobservations:", nrow(no), "| sheets with data:", n_distinct(no$sheet_sha256), "\nstatuses:", paste(names(table(no$value_status)), table(no$value_status), collapse = ", "), "\n")
 cat("series:", nrow(ns), "| without population:", sum(is.na(ns$population)), "| without measure:", sum(is.na(ns$measure)), "\n")
 cat("\n== unrecognised value text\n"); print(no %>% filter(value_status == "unrecognised") %>% count(published_text, sort = TRUE) %>% head(10))

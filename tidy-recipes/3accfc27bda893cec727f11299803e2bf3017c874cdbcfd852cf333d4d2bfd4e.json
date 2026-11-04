@@ -1,0 +1,43 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "3accfc27bda893cec727f11299803e2bf3017c874cdbcfd852cf333d4d2bfd4e",
+  "sheet": "Suburb",
+  "kind": "unsupported",
+  "status": "validated",
+  "reason": "Left out at the owner's request (2026-11-04): 806,080 values for one year (July 2025 to June 2026) by suburb, offence, day and time, mostly zeros. They were 848,000 of the integrated dataset's 2.29 million series. The LGA workbook (LGA_Alcohol_Related_Time_Day.xlsx, sheet LGA) has the same breakdown by LGA.",
+  "agent_notes": "Set by the orchestrator at the owner's request. The data recipe it replaces covered the sheet's one year in full; its table is listed in excluded.",
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A2"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A1,A3"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A6:C6"
+    },
+    {
+      "name": "source",
+      "cells": "A20160"
+    },
+    {
+      "name": "notes",
+      "cells": "A20161:A20164,A20166,A20168"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-04T03:27:16Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "excluded": [
+    {
+      "cells": "D7:AQ20158",
+      "reason": "The suburb table, left out with the sheet (see reason)."
+    }
+  ]
+}

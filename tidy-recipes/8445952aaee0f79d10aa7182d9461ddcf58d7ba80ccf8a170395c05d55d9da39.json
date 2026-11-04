@@ -1,0 +1,177 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "8445952aaee0f79d10aa7182d9461ddcf58d7ba80ccf8a170395c05d55d9da39",
+  "sheet": "Statistical Area",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Kept latest annual counts (July 2025–June 2026) and current published rate/trend snapshot; earlier annual counts excluded. Counts have period labels; rates and two-/ten-year trends retain full measure captions including their reference windows. Region is the publisher's Statistical Area (SA4), with 'In Custody' retained as published. All offence categories and asterisk markers retained. New recorded_incident_offence distinguishes police-recorded incident categories from principal-offence and victim classifications. Trend note mentions five/two years whereas column caption says ten/two years; preserved without correction. No subtotal hierarchy is introduced.",
+  "new_dimensions": [
+    {
+      "name": "recorded_incident_offence",
+      "description": "Offence type of criminal incidents recorded by NSW Police, not a principal-offence or victim counting classification.",
+      "example_labels": [
+        "Murder *",
+        "Domestic violence related assault",
+        "Breach bail conditions"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "table_title",
+      "cells": "A1"
+    },
+    {
+      "name": "table_subtitle",
+      "cells": "A2"
+    },
+    {
+      "name": "stub_heading",
+      "cells": "A4:B4"
+    },
+    {
+      "name": "notes",
+      "cells": "A1804:A1805,A1808:A1811"
+    },
+    {
+      "name": "source",
+      "cells": "A1807"
+    }
+  ],
+  "tables": [
+    {
+      "name": "incident_counts",
+      "range": "A4:B1802,L4:L1802",
+      "values_range": "L5:L1802",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "Statistical Area",
+          "direction": "W",
+          "cells": "A5:A1802"
+        },
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "B5:B1802"
+        },
+        {
+          "name": "period",
+          "direction": "N",
+          "cells": "L4"
+        }
+      ]
+    },
+    {
+      "name": "current_rates_and_trends",
+      "range": "M4:O1802",
+      "values_range": "M5:O1802",
+      "headers": [
+        {
+          "name": "region",
+          "caption": "Statistical Area",
+          "direction": "W",
+          "cells": "A5:A1802"
+        },
+        {
+          "name": "recorded_incident_offence",
+          "caption": "Offence type",
+          "direction": "W",
+          "cells": "B5:B1802"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "M4:O4"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T20:52:59Z",
+    "tool_version": "0.2.0",
+    "records": 7192,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205127Z-939d280a17c8",
+    "started_at": "2026-11-03T20:51:28Z",
+    "workbook": "939d280a17c8e9057f0535229e02303467bbaaaf71e9150661eb695de7501645--SA_trends.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a32e-61f9-7096-8d0b-c4bab6bf7fcb",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "3fa5c16e248eb9965b6e193b61a6911b5031917bde53c426fe6105fb225b98a2",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `939d280a17c8e9057f0535229e02303467bbaaaf71e9150661eb695de7501645--SA_trends.xlsx`.\n\n- Publication: BOCSAR — Trend data files (NSW Bureau of Crime Statistics and Research)\n- Release or year: Current file checked 2026-11-01\n- Sheets needing a recipe: 1 of 1\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Statistical Area\" | 8445952aaee0f79d10aa7182d9461ddcf58d7ba80ccf8a170395c05d55d9da39 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205127Z-939d280a17c8.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "C4:K1802",
+      "reason": "Earlier annual periods; most recent year only (July 2025–June 2026)."
+    }
+  ]
+}

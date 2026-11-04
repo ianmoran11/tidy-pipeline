@@ -1,0 +1,160 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "78375662151f2999540a0b8c0e014d3402be847ee6cb8d63bba6aa8eb636962a",
+  "sheet": "Table 08",
+  "kind": "data",
+  "status": "validated",
+  "agent_notes": "Latest year only: year ending June 2026. Labels and any published totals retained exactly. DFFH and RAJAC are separate regional classifications. Offence divisions/subdivisions follow the CSA classification, not ANZSOC. Published confidentiality adjustments and exclusions apply; see workbook Contents and Footnotes.",
+  "new_dimensions": [
+    {
+      "name": "rajac_region",
+      "description": "Regional Aboriginal Justice Advisory Committee (RAJAC) region recorded for the alleged offender incident.",
+      "example_labels": [
+        "Barwon South West",
+        "Grampians"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1,B1,C1,D1,E1,F1"
+    }
+  ],
+  "tables": [
+    {
+      "name": "alleged_offender_incidents",
+      "range": "A1:G397",
+      "values_range": "G2:G397",
+      "headers": [
+        {
+          "name": "period",
+          "caption": "Year",
+          "direction": "W",
+          "cells": "A2:A397"
+        },
+        {
+          "name": "year_ending_month",
+          "caption": "Year ending",
+          "direction": "W",
+          "cells": "B2:B397"
+        },
+        {
+          "name": "age_group",
+          "caption": "Age Group",
+          "direction": "W",
+          "cells": "C2:C397"
+        },
+        {
+          "name": "region",
+          "caption": "DFFH Region",
+          "direction": "W",
+          "cells": "D2:D397"
+        },
+        {
+          "name": "rajac_region",
+          "caption": "RAJAC Region",
+          "direction": "W",
+          "cells": "E2:E397"
+        },
+        {
+          "name": "indigenous_status",
+          "caption": "Indigenous Status",
+          "direction": "W",
+          "cells": "F2:F397"
+        },
+        {
+          "name": "measure",
+          "direction": "N",
+          "cells": "G1"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T21:08:17Z",
+    "tool_version": "0.2.0",
+    "records": 396,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T210400Z-2c253cc22676",
+    "started_at": "2026-11-03T21:04:02Z",
+    "workbook": "2c253cc22676cf2a89da5099a67b980a98e870eac53b349a095048fd9c9b674d--Indigenous_Data_Tables_LGA_Alleged_Offenders_Visualisation_Year_Ending_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a339-e5ea-77ee-83c0-ab548f1d61c3",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "896ebd7d023d6cba8df50518041fbb8fb7ec3c697e39bbfa940d0b666247fcd7",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `2c253cc22676cf2a89da5099a67b980a98e870eac53b349a095048fd9c9b674d--Indigenous_Data_Tables_LGA_Alleged_Offenders_Visualisation_Year_Ending_June_2026.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Indigenous Alleged Offender Incidents (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 15 of 15\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | f9f020156553d408f74b2884c4414335a36b154da23b90ce3ffc6e3a9ba909e2 | missing |\n| \"Footnotes\" | 79f8067ab59912dba8d94dd8a1cfa7188bf4bd84d236fb5768a05d4341396761 | missing |\n| \"Table 01\" | 925f38626a8725aa6d0f814daf5df457260c996687518d1d8e241b9f92f6e387 | missing |\n| \"Table 02\" | 4a4a5cafa669724c02d042f8bfea69c770a4b5f04daac8f994250290265449c3 | missing |\n| \"Table 03\" | 11ddea30dfe56bf719a636b4f467bbb854fabc2cca9c131522987d00c7a8da4d | missing |\n| \"Table 04\" | 24effb2abfe2f81968e830310f2423bd8a65fb3c314d6e05cfc2358d164f5f93 | missing |\n| \"Table 05\" | ebfe9b976e2c591562e0a54b6026a700463d2e8f3c7a69b25df2302a1e427c0f | missing |\n| \"Table 06\" | db6df785a6045a871f5ce377423f3bf8f6ab6f74fd9bc7ae925aa2e743ef9797 | missing |\n| \"Table 07\" | bc47c0906e726f84336084faa56728c84b7fb7d4b0087bb12b235c0441f3c9cb | missing |\n| \"Table 08\" | 78375662151f2999540a0b8c0e014d3402be847ee6cb8d63bba6aa8eb636962a | missing |\n| \"Table 09\" | 68a109438d1b1f98e53b278528159426a29b78bd433d9df0d0a6027ad22c2526 | missing |\n| \"Table 10\" | 45f52e70cf629d5da5716e64a01e323e1bad35649c15b64847eac8bbafe39b94 | missing |\n| \"Table 11\" | fd71b241b9211d85dcfb2b566910b1fad4af20adef6f1217d5eb7b6d9b491021 | missing |\n| \"Table 12\" | b2c68091d93ce2c4d05c35d1827d61e71ec0df74959c82c41755d6b5d1faccab | missing |\n| \"Table 13\" | 824d15f0326125441c12b981cd7193f235ca50fb51de2a8787ad218b592a9396 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T210400Z-2c253cc22676.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "A398:G4100",
+      "reason": "Earlier years; most recent year only (year ending June 2026)."
+    }
+  ]
+}

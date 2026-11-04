@@ -4,7 +4,8 @@
 # publication's own publication_subject_pattern) is looked up in the spec to set
 # population, scope and any other fields it names; title_flags
 # match the title and subtitle (e.g. a cube code) to set further fields. A sheet
-# without a title of its own uses each table's title instead. Labels in
+# without a title of its own uses the one sheet_titles gives it (from the workbook's
+# contents sheet), else each table's title. Labels in
 # replace_labels (e.g. population "Total") give way to the subject's value. A record
 # still without a measure gets one from its unit or the publication's default, and a
 # record still without a unit gets one from its measure (unit_from_measure).
@@ -13,6 +14,8 @@ identify <- function(sheet_result, measure_spec) {
   spec <- measure_spec; pub <- sheet_result$source[["publication_id"]]
   pattern <- spec$publication_subject_pattern[[pub]] %||% spec$subject_pattern
   sheet_title <- unlist(sheet_result$sheet_metata[["table_title"]])
+  # A sheet titled only on its workbook's contents sheet (Victoria's CSA tables) has that title in sheet_titles
+  if (!length(sheet_title)) sheet_title <- unlist(spec$sheet_titles[[sheet_result$source[["sheet_sha256"]]]])
   # The subject key and the fields a title sets (its subject's entry, then title_flags)
   read_title <- function(title_cells) {
     title <- stringr::str_squish(gsub("\u00a0", " ", paste(title_cells, collapse = " ")))

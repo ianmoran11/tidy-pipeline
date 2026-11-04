@@ -1,0 +1,90 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "fcd0cf9f76aba7ba3310b57145dd23e1d422e113a374f2c0c45583d0815b3139",
+  "sheet": "Footnotes",
+  "kind": "notes",
+  "status": "validated",
+  "reason": "Table-specific footnotes and definitions; no statistical data table.",
+  "agent_notes": "Non-data sheet.",
+  "tables": [],
+  "validation": {
+    "checked_at": "2026-11-03T21:02:07Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T205951Z-aca407de3c48",
+    "started_at": "2026-11-03T20:59:54Z",
+    "workbook": "aca407de3c482749c4961bf480cb48de6be911e820096c9472e623d03bd28494--Youth_Justice_Data_Tables_Bail_Visualisation_Year_Ending_June_2026_0.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a336-1a52-7547-895c-926de40ffc65",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "dde9c3eb4f840121ccf73ed77ae3014df02bf551387674b621e715f1e991f85f",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `aca407de3c482749c4961bf480cb48de6be911e820096c9472e623d03bd28494--Youth_Justice_Data_Tables_Bail_Visualisation_Year_Ending_June_2026_0.xlsx`.\n\n- Publication: Crime Statistics Agency Data Tables - Bail statistics (Crime Statistics Agency Victoria)\n- Release or year: 2026-06\n- Sheets needing a recipe: 12 of 12\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Contents\" | bbcd9aa614a0aa806bcb40baceb16ec9e4706b47793f6f2d40a8641627b7aa38 | missing |\n| \"Footnotes\" | fcd0cf9f76aba7ba3310b57145dd23e1d422e113a374f2c0c45583d0815b3139 | missing |\n| \"Table 01\" | 118154901b1cd46362f490b0ab91105c12ae632df147923569e216ad4187cb84 | missing |\n| \"Pivot 01\" | 8ed4e1c479378b40c74baf0575455d143c6dcdf02323e37a8edb6058ac306fa2 | missing |\n| \"Table 02\" | cd8d566134ac9b0eb7185bf3f85546047972612e177a38b9712791abd1d90b47 | missing |\n| \"Pivot 02\" | d739d20f73cdd60d0f307f4950d1bc9de03c3db8d77b446fd36e4af836681f7d | missing |\n| \"Table 03\" | bfc707a33aec0de86b8863ece48a2cebcbe3862e9989685664ea4e89a1452503 | missing |\n| \"Pivot 03\" | 68bb55c30d15e0dfb154c4b9c3682c6d1b264bf0fb025401877b7ac8ab0c3bae | missing |\n| \"Table 04\" | ec8ed2f9d7bfcbcd86f4883055152d8f0b3ec8a7f5f9aadab6f9deb182e624ec | missing |\n| \"Pivot 04\" | d86e2652226d5a6c97a70f59712edf84b69166cb10875b98caf7c6e47e678214 | missing |\n| \"Table 05\" | 5d09d2468681fbc1cfb56d68aab0d540db6966611446e2c41c2e547f07e07571 | missing |\n| \"Pivot 05\" | 0a35dce53762e5196689d21a8cf7d1829e27bc3566daad9c698e397cd2e7b443 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T205951Z-aca407de3c48.jsonl"
+  }
+}

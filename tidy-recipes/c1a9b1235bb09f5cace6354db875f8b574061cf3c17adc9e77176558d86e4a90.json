@@ -1,0 +1,101 @@
+{
+  "version": "0.2",
+  "sheet_sha256": "c1a9b1235bb09f5cace6354db875f8b574061cf3c17adc9e77176558d86e4a90",
+  "sheet": "reception_data",
+  "kind": "unsupported",
+  "status": "validated",
+  "reason": "Left out as a duplicate: a long-format copy of table(s) 6. Custody receptions of this workbook, which do say they count adults. This sheet does not, and the adult and youth workbooks are one release, so its records could not be told apart.",
+  "agent_notes": "Set by the orchestrator; June 2026 totals match the titled tables (stock: 13,960 adults, 208 young people).",
+  "meta_data": [
+    {
+      "name": "stub_heading",
+      "cells": "A1:D1"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-11-03T22:22:38Z",
+    "tool_version": "0.2.0",
+    "records": 0,
+    "failures": []
+  },
+  "generation": {
+    "method": "agent",
+    "run_id": "20261103T191104Z-1088a2bf48fc",
+    "started_at": "2026-11-03T19:11:05Z",
+    "workbook": "1088a2bf48fc2a19b07a43d50a3bd8b330cab69505dac54a050c08b7f445acfc--Adult_Custody_Report_-_June_2026.xlsx",
+    "agent": {
+      "harness": "pi",
+      "pi_version": "1.4.0",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking_level": "medium",
+      "fast_mode": false,
+      "service_tier": null,
+      "session_id": "01a1a2d2-7cd3-77f8-a40f-b9a7da225fbe",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "codemode",
+        "list_workbook_sheets",
+        "sheet_grid",
+        "find_template_recipes",
+        "validate_recipe",
+        "run_recipe",
+        "submit_recipe"
+      ],
+      "pi_args": [
+        "--print",
+        "--mode",
+        "json",
+        "--no-session",
+        "--approve",
+        "--no-extensions",
+        "-e",
+        "builtin:codemode",
+        "-e",
+        "agents/extension/recipe-tools.ts",
+        "--no-skills",
+        "--skill",
+        "agents/skills/tidy-recipe-authoring",
+        "--no-context-files",
+        "--no-prompt-templates",
+        "--model",
+        "openai-codex/gpt-6.1-sol",
+        "--thinking",
+        "medium",
+        "--tools",
+        "read,write,edit,codemode,list_workbook_sheets,sheet_grid,find_template_recipes,validate_recipe,run_recipe,submit_recipe"
+      ]
+    },
+    "skill": {
+      "name": "tidy-recipe-authoring",
+      "path": "agents/skills/tidy-recipe-authoring",
+      "files": {
+        "examples/table-34-time-series-blocks.json": "e6e1372b9417852674fdba811a70f20fa9b50b1f94bba5fb9221d371f3344d56",
+        "examples/table-38-sex-blocks-with-spacers.json": "90928f85c35797cbde8242ccc5115354e4e7b9e0cc0e9f931435122b395bf071",
+        "references/layouts.md": "5e9f4b3532863e5a87b27aa71874c700e5cec76b8794262d0ce2b984f832a70f",
+        "references/naming.md": "a7894121da906b576ee64c95905f9483ee9f091ff38c605b52c88b888ea27c0d",
+        "references/recipe-format.md": "443d9c67f4deda81dc1e2a81c69c82c4117f8f77891c15093f9d91cf045671d2",
+        "SKILL.md": "c47f2da24316f165b71de20c821b1d190523cf892160cee449dc83b6fc5bb990"
+      }
+    },
+    "dictionary": {
+      "path": "dictionary/dimensions.csv",
+      "sha256": "ac14a99f77fcaea80fce8acc5f341cdeab4164e9cf83752b4d67be47283341a2"
+    },
+    "prompt": {
+      "template": "agents/prompts/worker.md",
+      "template_sha256": "7b35520d5beb1aef65f2fdc184f32b10edede25ac8979477598208da07ad820a",
+      "sha256": "67de86313c9d4656bb3b5c802efbe74870cdadef9b540bb6a3f88ad6cf943261",
+      "text": "/skill:tidy-recipe-authoring\n\nCreate tidy recipes for workbook `1088a2bf48fc2a19b07a43d50a3bd8b330cab69505dac54a050c08b7f445acfc--Adult_Custody_Report_-_June_2026.xlsx`.\n\n- Publication: BOCSAR — Custody (NSW Bureau of Crime Statistics and Research)\n- Release or year: 2026-06\n- Sheets needing a recipe: 16 of 16\n\n| sheet | sheet_sha256 | current recipe |\n|---|---|---|\n| \"Cover\" | 5b4ed6426624d0ca8233eb89d6014f48f82057a20e37b1df8fcbccbb6217e582 | missing |\n| \"Table of contents\" | 97d52fbd2a582ca798f7abfdb50e3bceeaa2e17f5b5a3f0476257df06f8c53eb | missing |\n| \"1. Summary\" | 276ad1331ab9579253f69251e66a77332cb2c1cab3c423d60d0280a691ae24ec | missing |\n| \"2. Aboriginal Summary\" | f156ef454662f1d90a77287413030314bddbf2d7c52a371082b4823835cae50c | missing |\n| \"3. Custody population\" | 112aecfc979dc82dc2534dd60d0e89f3b4f270ec6c7b0d72eeea639a46961f99 | missing |\n| \"4. Population by offence\" | 9d9a6ef2d88d13afd215f2d3b7b003ee3843243df65e1ddd7a859196c35341dc | missing |\n| \"5. Population by SA4\" | 371ae3e10015de30c555ec75f53c925571d2956c036418c1b50bff03385ba78d | missing |\n| \"6. Custody receptions\" | fe6e2af3c0cf2ae3633e7a6dea98853a41d20647fc04fce5340abd44eddac59e | missing |\n| \"7. Custody discharges\" | cded3d3f4b2ae4ed43a88f9d93bce4a50b964a256b3ab87790342183c81d05b5 | missing |\n| \"8. Remand to Sentenced\" | 2f6eeb75aa5761171d0dfa29e26c35fed0ca94570c177bc6382a5eada77ca332 | missing |\n| \"9. Time on remand\" | f6b2e7414be31bb6a9a4267542df35799cff49a70fc630e93ecd0f56e0719d58 | missing |\n| \"10. Aboriginal time on remand\" | 96e712c9541f9c46de702c189024fa2ac787dd7a7a7a8cdb71abff3b974499d7 | missing |\n| \"stock_data\" | 3b193bef290234273e19476f109aaf7d76ca37dfe6edc6c201b8257615ae30fb | missing |\n| \"reception_data\" | c1a9b1235bb09f5cace6354db875f8b574061cf3c17adc9e77176558d86e4a90 | missing |\n| \"discharge_data\" | 15605730a1520543bb38c6e77bd8a4a7a4f92c8fd45d3f12d1d10d1606cb915c | missing |\n| \"remand_to_sentenced_data\" | 9c2b88ffb082c30d6296cf594e8ebedf2b0dd1e9020e6ec4adcf99c6fc5f4ad2 | missing |\n\nRelated workbooks:\n- None\n\nWork through every sheet listed above using the skill's workflow. Use\n`codemode` scripts to call the recipe tools, and batch the work: for example,\nlist the workbook and check templates for all sheets in one script, then read\ngrids and test recipes a few sheets at a time. Keep script output short.\n\nName dimensions from `dictionary/dimensions.csv` (see the skill's\n`references/naming.md`); declare any name it lacks in `new_dimensions`.\n\nWrite each recipe to `tidy-recipes/<sheet_sha256>.json` and finish every sheet\nwith `submit_recipe`. You may only write recipe files for this workbook.\n\nEnd with one line per sheet: `sheet | kind | status | records | remaining failures`."
+    },
+    "log": "agents/logs/20261103T191104Z-1088a2bf48fc.jsonl"
+  },
+  "excluded": [
+    {
+      "cells": "E2:E1553",
+      "reason": "Monthly counts from 2013 (earlier months fall outside the most-recent-year rule; July 2025 to June 2026 is in the titled tables)."
+    }
+  ]
+}
