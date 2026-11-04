@@ -7,10 +7,14 @@ to its source workbook and cell.
 
 **The dataset:** download the zipped CSVs from the
 [latest release](https://github.com/ianmoran11/tidy-pipeline/releases/latest). It holds
-3,989,690 values in 721,701 series from 129 releases of 10 publications by the ABS,
-AIHW and Productivity Commission (2001–2025). `integration/README.md` is the data
-dictionary. The 1,199 source spreadsheets (XLSX, with a manifest of SHA-256 hashes and
-publisher URLs) are in the
+5,830,936 values (5,511,812 published numbers) in 1,481,589 series from 196 releases of
+69 publications: the ABS, AIHW and Productivity Commission (2001–2026), and the most
+recent year of the state and territory crime statistics (NSW BOCSAR, Victoria's Crime
+Statistics Agency, Queensland, WA, NT and ACT). `integration/README.md` is the data
+dictionary. Most of it is CC BY 4.0; the WA and ACT police data are for non-commercial
+use only (`DATA-LICENSE.md`). The source spreadsheets are in `source-spreadsheets-xlsx/`;
+the first 1,199 (XLSX, with a manifest of SHA-256 hashes and publisher URLs) are also in
+the
 [sources-2026-11-02](https://github.com/ianmoran11/tidy-pipeline/releases/tag/sources-2026-11-02)
 release.
 
@@ -210,4 +214,5 @@ development is not included.
   ([`LICENSE`](LICENSE)). Any use is fine.
 - **The publishers' statistics** (the spreadsheets in `source-spreadsheets-xlsx/` and
   the integrated dataset derived from them): Creative Commons Attribution 4.0, which
-  allows any use with attribution. See [`DATA-LICENSE.md`](DATA-LICENSE.md).
+  allows any use with attribution, except the WA Police and ACT Policing data, which are
+  for non-commercial use only. See [`DATA-LICENSE.md`](DATA-LICENSE.md).

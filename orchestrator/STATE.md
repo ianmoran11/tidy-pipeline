@@ -190,8 +190,10 @@ Integration stages (2026-11-01):
    - say whether to keep the 421 older-release workbooks (about 1.5 GB);
    - convert the three NSW `.xlsm` series with the Excel macro setting, if wanted;
    - the AIC files (I37) and ACT monthly statistics (403) can be added by hand.
-10. **The next GitHub release** will have `series/` (one file per publication) instead of
-    `series.csv` (DECISIONS.md 40). The README already describes it.
+10. **Licences (`DATA-LICENSE.md`):** WA Police and ACT Policing data aren't CC BY. They're
+    in the repo and the `v2026-11-04` release marked non-commercial (owner's choice). ACT
+    Policing's own terms couldn't be read (403); confirming them with ACT Policing would
+    settle it.
 
 ## Recommended next steps
 
@@ -219,8 +221,10 @@ Integration stages (2026-11-01):
 ## Git and GitHub
 
 **Published 2026-11-02:** https://github.com/ianmoran11/tidy-pipeline (public, MIT; data
-CC BY 4.0, see `DATA-LICENSE.md`).
-- Release `v2026-11-02` (marked latest) holds the zipped integrated CSVs (160 MB) and their
+CC BY 4.0 except WA Police and ACT Policing, non-commercial; see `DATA-LICENSE.md`).
+- Release `v2026-11-04` (marked latest) holds the integrated CSVs with the state crime
+  statistics, series as one file per publication.
+- Release `v2026-11-02` holds the earlier zipped integrated CSVs (160 MB) and their
   SHA-256.
 - Release `sources-2026-11-02` (not marked latest, so the README's "latest release" link
   stays on the dataset) holds the zipped source XLSX: 1,199 workbooks plus 76
